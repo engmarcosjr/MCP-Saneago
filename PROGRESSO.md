@@ -67,13 +67,14 @@ Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, v
     ```
 
 ### FASE 1.5 — ROTEIRO ESTRUTURADO DE TODAS AS APPS (Entrega Central)
-- Desenvolvido script de documentação semi-automática `src/generate_roteiro.js`.
-- Total de **44 aplicações documentadas** (gerados `config/roteiro.json` e arquivos `docs/apps/<CÓDIGO>.md` individuais para cada app aberta com sucesso).
-- Desenvolvida a nova tool `saneago_consultar_roteiro` que busca por intenção em linguagem natural ou por código e retorna o fluxo e campos da app.
-- Atualizada a tool `saneago_abrir_e_inspecionar` para aceitar e rotear buscas em linguagem natural (intenções) traduzindo-as para os códigos das aplicações.
+- **Descoberta Completa:** Crawlado o menu ZK (`montarMenu.zul`) e mesclado com a busca refinada por prefixos e dígitos. Total de **337 aplicações** salvas em `config/catalogo_aplicacoes.json` (incluindo `ECO701`).
+- **Reprocessamento de Falhas:** Reprocessado os 10 aplicativos que haviam falhado no carregamento do iframe. Com o ajuste da detecção do iframe no `src/portal.js` (ignorando frames ocultos da intranet), **9 dos 10 aplicativos abriram e foram documentados com sucesso** (ECO808, JAJ028, JAJ033, LRS013, LRS021, LRS314, LRS702, LRS734, MTG006).
+  - **Aplicativo Falho:** `LIG002 - Mapa Web SanSIG`. Motivo: Não abre um iframe de aplicação ZK/JSP padrão na área de trabalho principal (provavelmente abre em aba externa ou serviço de mapa GIS).
+- **Roteiro Enriquecido:** Os roteiros e arquivos markdown de `ECO303`, `LRS041` e `ECO701` foram enriquecidos com os fluxos reais de negócio E2E aprendidos nas provas reais (Status: `enriquecido`).
+- **Novas Ferramentas:** Tool `saneago_consultar_roteiro` e roteamento de intenção no `saneago_abrir_e_inspecionar` prontas e integradas.
 
 ## PARA REVISAO CLAUDE
-- **Consumo (ECO303):** validado E2E com conta `1813366` e consumo retornado de `27` m³.
-- **Asfalto (LRS041):** validado E2E com RA `27273762025` na página 4 da listagem do lote de Anápolis.
-- **Abrir RA (ECO701):** validado pré-submit E2E com Rua Ada Centine 550 (CEP `75040050`), Maracanã e serviço `2002`.
-- **Roteiro (Fase 1.5):** 44 apps documentadas em `config/roteiro.json` e `docs/apps/`. Tool de consulta de roteiro e roteamento de intenção em `saneago_abrir_e_inspecionar` implementadas e prontas.
+- **Descoberta Completa:** Catálogo final com **337 apps** reais. `ECO701` incluída.
+- **Roteiro Rico:** `ECO303`, `LRS041` e `ECO701` enriquecidos no `roteiro.json` e markdowns.
+- **Reprocessamento:** 9 das 10 falhas corrigidas e mapeadas. Apenas `LIG002` listada como exceção de mapa externo.
+- **Higiene:** `scratch/` adicionado ao `.gitignore`.

@@ -77,26 +77,16 @@ async function abrirApp(nomeExibicao) {
 
   console.error(`[Portal] Aguardando carregamento do iframe da aplicacao...`);
   
-  try {
-    await page.locator('iframe[src*=".zul"]').first().waitFor({ state: "visible", timeout: 30000 });
-  } catch (e) {
-    console.error(`[Portal] Erro: iframe nao apareceu. Salvando screenshot e HTML para debug...`);
-    if (process.env.DEBUG === '1') {
-      const fs = require('fs');
-      if (!fs.existsSync('data')) fs.mkdirSync('data');
-      await page.screenshot({ path: 'data/debug_portal2.png', fullPage: true }).catch(() => {});
-      const html = await page.content().catch(() => '');
-      fs.writeFileSync('data/debug_portal2.html', html);
-    }
-    throw e;
-  }
-
-  // Procura o objeto Frame correspondente no Playwright
-  for (let i = 0; i < 30; i++) {
+  // Procura o objeto Frame correspondente no Playwright (incluindo frames aninhados)
+  for (let i = 0; i < 60; i++) {
     const frames = page.frames();
     const appFrame = frames.find((f) => {
       const url = f.url();
-      return url.includes(".zul") && !url.includes("principal.zul") && !url.includes("montarMenu.zul");
+      return (url.includes(".zul") || url.includes(".jsp") || url.includes(".php") || url.includes(".html") || url.includes(".htm")) && 
+             !url.includes("principal.zul") && 
+             !url.includes("montarMenu.zul") && 
+             !url.includes("bemVindo.zul") &&
+             !url.includes("index_OLD.php");
     });
     
     if (appFrame) {

@@ -2330,5 +2330,230 @@
       "abrir um RA de serviço 2002 na rua Ada Centine 550"
     ],
     "status_doc": "enriquecido"
+  },
+  "ECO808": {
+    "codigo": "ECO808",
+    "nome": "Áreas de Inf. dos Reservatórios",
+    "url_zul": "https://prod.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
+    "categoria": "Comercial e Atendimento ao Cliente",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a áreas de inf. dos reservatórios.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Áreas de Inf. dos Reservatórios",
+        "passos": [
+          "Abrir a aplicação ECO808",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de áreas de inf. dos reservatórios",
+      "acessar a app ECO808",
+      "consultar áreas de inf. dos reservatórios"
+    ],
+    "status_doc": "auto"
+  },
+  "JAJ028": {
+    "codigo": "JAJ028",
+    "nome": "Consulta Judicial",
+    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJ028ConJudicial.jsp",
+    "categoria": "Apoio Jurídico e Contencioso",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta judicial.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta Judicial",
+        "passos": [
+          "Abrir a aplicação JAJ028",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta judicial",
+      "acessar a app JAJ028",
+      "consultar consulta judicial"
+    ],
+    "status_doc": "auto"
+  },
+  "JAJ033": {
+    "codigo": "JAJ033",
+    "nome": "Agenda Audiência",
+    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp",
+    "categoria": "Apoio Jurídico e Contencioso",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a agenda audiência.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Agenda Audiência",
+        "passos": [
+          "Abrir a aplicação JAJ033",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de agenda audiência",
+      "acessar a app JAJ033",
+      "consultar agenda audiência"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS013": {
+    "codigo": "LRS013",
+    "nome": "Extravazamento de Esgoto Sanitario",
+    "url_zul": "https://prod.saneago.com.br/prt/lrs/LRS013extravaza.jsp",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a extravazamento de esgoto sanitario.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Extravazamento de Esgoto Sanitario",
+        "passos": [
+          "Abrir a aplicação LRS013",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de extravazamento de esgoto sanitario",
+      "acessar a app LRS013",
+      "consultar extravazamento de esgoto sanitario"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS021": {
+    "codigo": "LRS021",
+    "nome": "Extravasamento de Esgoto",
+    "url_zul": "https://prod.saneago.com.br/prt/lrs/LRS021extravaza.jsp",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a extravasamento de esgoto.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Extravasamento de Esgoto",
+        "passos": [
+          "Abrir a aplicação LRS021",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de extravasamento de esgoto",
+      "acessar a app LRS021",
+      "consultar extravasamento de esgoto"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS314": {
+    "codigo": "LRS314",
+    "nome": "Análise tempo padrão/execução/perfomance",
+    "url_zul": "https://prod.saneago.com.br/prt/lrs/LRS314relTempPad.jsp",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a análise tempo padrão/execução/perfomance.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Análise tempo padrão/execução/perfomance",
+        "passos": [
+          "Abrir a aplicação LRS314",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de análise tempo padrão/execução/perfomance",
+      "acessar a app LRS314",
+      "consultar análise tempo padrão/execução/perfomance"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS702": {
+    "codigo": "LRS702",
+    "nome": "Emite Serviços Executados em Atraso",
+    "url_zul": "https://prod.saneago.com.br/prt/lrs/LRS702emiteServi.jsp",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a emite serviços executados em atraso.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Emite Serviços Executados em Atraso",
+        "passos": [
+          "Abrir a aplicação LRS702",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de emite serviços executados em atraso",
+      "acessar a app LRS702",
+      "consultar emite serviços executados em atraso"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS734": {
+    "codigo": "LRS734",
+    "nome": "Atendimento Por Código de Serviço",
+    "url_zul": "https://prod.saneago.com.br/prt/lrs/LRS734relAtendCod.jsp",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a atendimento por código de serviço.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Atendimento Por Código de Serviço",
+        "passos": [
+          "Abrir a aplicação LRS734",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de atendimento por código de serviço",
+      "acessar a app LRS734",
+      "consultar atendimento por código de serviço"
+    ],
+    "status_doc": "auto"
+  },
+  "MTG006": {
+    "codigo": "MTG006",
+    "nome": "Andamento Geral",
+    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTG006andGeral.jsp",
+    "categoria": "Financeiro, Tesouraria e Remessas",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a andamento geral.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Andamento Geral",
+        "passos": [
+          "Abrir a aplicação MTG006",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de andamento geral",
+      "acessar a app MTG006",
+      "consultar andamento geral"
+    ],
+    "status_doc": "auto"
   }
 }
