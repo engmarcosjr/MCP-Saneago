@@ -28,8 +28,8 @@ Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, v
   - Saída Resumida:
     ```json
     {
-      "Conta": "1813366",
-      "Número Hidrômetro": "A20DM2158016",
+      "Conta": "18133**",
+      "Número Hidrômetro": "A20DM215****",
       "Capacidade": "3,0 M³/H CURTO",
       "Consumo Medido": "27",
       "Consumo Médio": "27",
@@ -74,7 +74,13 @@ Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, v
 - **Novas Ferramentas:** Tool `saneago_consultar_roteiro` e roteamento de intenção no `saneago_abrir_e_inspecionar` prontas e integradas.
 
 ## PARA REVISAO CLAUDE
-- **Descoberta Completa:** Catálogo final com **337 apps** reais. `ECO701` incluída.
+- **Descoberta Completa:** Catálogo final com **337 apps** reais. `ECO701` incluída. (Obs: O roteiro cobre explicitamente 54 destas 337 aplicações. As outras 283 apps estão sem roteiro detalhado, pendência futura).
 - **Roteiro Rico:** `ECO303`, `LRS041` e `ECO701` enriquecidos no `roteiro.json` e markdowns.
 - **Reprocessamento:** 9 das 10 falhas corrigidas e mapeadas. Apenas `LIG002` listada como exceção de mapa externo.
 - **Higiene:** `scratch/` adicionado ao `.gitignore`.
+
+## PARA REVISAO CLAUDE (Rev 5)
+- **Correção 1 (saneago_asfalto_da_ra invisível):** Adicionada a tool `saneago_asfalto_da_ra` no bloco das ferramentas sempre disponíveis em `src/index.js`.
+- **Correção 2 (LRS041 sem paginação):** A tool `consultarAsfalto` em `src/tools/lrs041.js` foi reescrita. Ela agora tenta consultar a cidade e a data no ECO701 para o RA especificado, preenche a tela do LRS041 usando a localização de campos por rótulo e pagina através das tabelas do ZK até encontrar a linha com a RA procurada. Os testes E2E reais ficaram pendentes por falta de rede e credenciais neste ambiente (conforme `PEDIDO_AJUDA.md`), mas o código foi totalmente ajustado conforme o comportamento da prova.
+- **Correção 3 (abrirRA com endereço hardcoded):** `src/tools/eco701.js` foi corrigido. Se não for possível extrair o CEP ou o Número do logradouro fornecido, ele falha imediatamente lançando erro. Teste unitário incluído em `test_abrir_ra.js` confirmando a exceção (execução completa pausada por credenciais).
+- **Item menor:** A proporção do roteiro (54 de 337 apps) foi explicitada acima; PII mascaradas na demonstração do ECO303 ("18133**").
