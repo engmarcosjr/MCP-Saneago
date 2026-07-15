@@ -1,5 +1,326 @@
-{
-  "registro_atendimento": "ECO701",
-  "atendimento_agendado": "ECO715",
-  "consulta_fatura": "ECO616"
-}
+[
+  {
+    "codigo": "A0009",
+    "nome": "CAESAN",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "A0074",
+    "nome": "EMP.LIC.INTER.PARTICULAR-SUREH",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "A3000",
+    "nome": "CHEFE DE GABINETE",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP002",
+    "nome": "Contracheque",
+    "url_zul": "/prt/bap/BAP002ContraCheque.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP004",
+    "nome": "Atualização CTPS",
+    "url_zul": "/bap/BAP004AtualizarCTPS.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP005",
+    "nome": "Emissão de Frequência",
+    "url_zul": "/bap/BAP005EmitirFrequencia.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP008",
+    "nome": "Comprovante de Rendimentos",
+    "url_zul": "/prt/bap/BAP008ComprovanteRendimentos.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP012",
+    "nome": "Enviar Declaração IRPF",
+    "url_zul": "/prt/bap/BAP012EnviaDeclaracao.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP025",
+    "nome": "Agendamento/Alteração de Férias",
+    "url_zul": "/prt/bap/BAP025SolicitaFerias.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP028",
+    "nome": "Enviar Nota Fiscal",
+    "url_zul": "/prt/bap/BAP028EnviaNotaDependente.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "BAP032",
+    "nome": "Definir Adiantamento de 13° Salário",
+    "url_zul": "/prt/bap/BAP032AdiantamentoDecimoTerceiro.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "D2000",
+    "nome": "PRESIDENCIA",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "D4008",
+    "nome": "COMISSÃO DE AVALIAÇÃO DE DOCUMENTOS E ACESSO",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "D4014",
+    "nome": "COMISSÃO DE ÉTICA DA SANEAGO",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "D4015",
+    "nome": "COMITÊ ESTRATÉGICO DA SANEAGO",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "D4065",
+    "nome": "COMITÊ DE PESSOAS, ELEGIB. SUCESSÃO E REMUNERAÇÃO",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "ECO303",
+    "nome": "Acerta Leitura/Consumo",
+    "url_zul": "/prt/eco/ECO303AcertaLeituraConsumo.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "ECO411",
+    "nome": "Abertura de Financiamento",
+    "url_zul": "/prt/eco/ECO411AberturaFinanciamento.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "ECO489",
+    "nome": "Comunicado de Esgoto Sanitário",
+    "url_zul": "/prt/eco/ECO489ComunicadoEsgoto.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "ECO808",
+    "nome": "Áreas de Inf. dos Reservatórios",
+    "url_zul": "/prt/eco/ECO808AreaInfRes.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "FGC068",
+    "nome": "Consulta Contrato Saneago x SAP",
+    "url_zul": "/prt/fgc/FGC068ConsultarContratoSaneagoSAP.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "G0064",
+    "nome": "GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HFI032",
+    "nome": "Acompanhar Transf. de Bens Patrimoniais",
+    "url_zul": "/prt/hfi/HFI032AcompanharTransfBemPatr.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HFI034",
+    "nome": "Consulta de Bens Patrimoniais",
+    "url_zul": "/prt/hfi/HFI034ConsultaBensPatrimoniais.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HVW001",
+    "nome": "Distância entre cidade",
+    "url_zul": "/prt/hvw/HVW001DistanciaCidade.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HVW009",
+    "nome": "Conta",
+    "url_zul": "/prt/hvw/HVW009PrestarContas.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HVW031",
+    "nome": "Impressão Termo",
+    "url_zul": "/prt/hvw/HVW031ReimpressaoTermo.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "HVW034",
+    "nome": "Fornecedor por Despesa",
+    "url_zul": "/prt/hvw/HVW034RelatorioFornecedorDespesa.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "JAJ028",
+    "nome": "Consulta Judicial",
+    "url_zul": "/prt/jaj/JAJ028ConJudicial.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "JAJ033",
+    "nome": "Agenda Audiência",
+    "url_zul": "/prt/jaj/JAJ033agendaAudi.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "JAJ036",
+    "nome": "Consulta Processo Conta",
+    "url_zul": "/prt/jaj/JAJ036ConsultaProcessoConta.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "JAJ042",
+    "nome": "Consulta Cobrança",
+    "url_zul": "/prt/jaj/JAJ042conCobranca.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "JAJ060",
+    "nome": "Rodízio de Processos",
+    "url_zul": "/prt/jaj/JAJ060RodizioProcesso.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "KRT003",
+    "nome": "Consulta AVTO",
+    "url_zul": "/prt/krt/KRT003ConsultarAvto.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "KRT028",
+    "nome": "Lista para Análise",
+    "url_zul": "/prt/krt/KRT028ListaAnalise.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "KRT029",
+    "nome": "Análise e Encaminhamento",
+    "url_zul": "/prt/krt/KRT029AnaliseEncaminhamento.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "KRT037",
+    "nome": "Relatórios Gerenciais",
+    "url_zul": "/prt/krt/KRT037RelatoriosGerenciais.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LIG002",
+    "nome": "Mapa Web SanSIG",
+    "url_zul": "https://sansig.saneago.com.br/",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS013",
+    "nome": "Extravazamento de Esgoto Sanitario",
+    "url_zul": "/prt/lrs/LRS013extravaza.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS021",
+    "nome": "Extravasamento de Esgoto",
+    "url_zul": "/prt/lrs/LRS021extravaza.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS041",
+    "nome": "Relatório de recomposição asfáltica",
+    "url_zul": "/prt/lrs/LRS041RelatorioRecomposicaoAsfaltica.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS100",
+    "nome": "Manter estoque de Material por viatura",
+    "url_zul": "/prt/lrs/LRS100ManterEstoqueMaterialPorViatura.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS130",
+    "nome": "Equipes",
+    "url_zul": "/prt/lrs/LRS130ManterEquipe.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS272",
+    "nome": "Acompanhar Atendimento",
+    "url_zul": "/prt/lrs/LRS272MonitorarAtendimento.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS314",
+    "nome": "Análise tempo padrão/execução/perfomance",
+    "url_zul": "/prt/lrs/LRS314relTempPad.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS360",
+    "nome": "Materiais Utilizados do SIPSAP",
+    "url_zul": "/prt/lrs/LRS360ResumoMaterial.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS702",
+    "nome": "Emite Serviços Executados em Atraso",
+    "url_zul": "/prt/lrs/LRS702emiteServi.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "LRS734",
+    "nome": "Atendimento Por Código de Serviço",
+    "url_zul": "/prt/lrs/LRS734relAtendCod.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "MTG001",
+    "nome": "Capturar Remessa",
+    "url_zul": "/prt/mtg/MTG001CapturarRemessa.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "MTG006",
+    "nome": "Andamento Geral",
+    "url_zul": "/prt/mtg/MTG006andGeral.jsp",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "MTG011",
+    "nome": "Arquivos Retorno com Erros",
+    "url_zul": "/prt/mtg/MTG011ArquivosRetornoComErro.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "MTG020",
+    "nome": "Consulta Fila de Relatórios PDF",
+    "url_zul": "/prt/mtg/MTG020RelatorioUsuarioVirtual.zul",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "S0072",
+    "nome": "SUPER. DE RECURSOS HUMANOS",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  },
+  {
+    "codigo": "S0087",
+    "nome": "CHEFIA DE GABINETE",
+    "url_zul": "",
+    "origem": "busca_listcell"
+  }
+]

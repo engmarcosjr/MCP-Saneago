@@ -129,8 +129,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_abrir_e_inspecionar": {
         const { nomeAplicacao } = request.params.arguments;
         
-        // Verifica se usou uma chave do catalogo, senao usa o valor direto
-        const query = catalogo[nomeAplicacao] || nomeAplicacao;
+        // Verifica se usou uma chave do catalogo (array de objetos)
+        const appInfo = catalogo.find(app => app.codigo === nomeAplicacao || app.nome.toLowerCase().includes(nomeAplicacao.toLowerCase()));
+        const query = appInfo ? appInfo.codigo : nomeAplicacao;
         
         activeFrame = await abrirApp(query);
         const relatorio = await inspecionarTela(activeFrame);
