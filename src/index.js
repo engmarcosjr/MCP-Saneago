@@ -47,13 +47,13 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     },
     {
       name: "saneago_abrir_e_inspecionar",
-      description: "Abre uma aplicacao pelo nome ou codigo e inspeciona sua tela inicial, retornando os campos interativos (inputs, botoes) com seus respectivos IDs ZK.",
+      description: "Abre uma aplicacao pelo nome, codigo ou intencao/objetivo e inspeciona sua tela inicial, retornando os campos interativos (inputs, botoes) com seus respectivos IDs ZK.",
       inputSchema: {
         type: "object",
         properties: {
           nomeAplicacao: {
             type: "string",
-            description: "Nome ou codigo da aplicacao (ex: ECO701)",
+            description: "Nome, codigo ou intencao/objetivo da aplicacao (ex: 'ECO701', 'abrir RA' ou 'volume consumido')",
           },
         },
         required: ["nomeAplicacao"],
@@ -88,22 +88,21 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
     },
     {
-      name: "saneago_asfalto_da_ra",
-      description: "Verifica o asfalto lancado para um RA ou Rua em uma data especifica (app LRS041).",
+      name: "saneago_consultar_roteiro",
+      description: "Consulta o roteiro estruturado das aplicacoes buscando por intencao em linguagem natural ou codigo da app.",
       inputSchema: {
         type: "object",
         properties: {
-          ra: {
+          intencao: {
             type: "string",
-            description: "O numero do RA ou o nome da Rua",
+            description: "Intencao em linguagem natural (ex: 'volume consumido')",
           },
-          data: {
+          codigo: {
             type: "string",
-            description: "Data para consulta (DD/MM/AAAA)",
-          },
-        },
-        required: ["ra", "data"],
-      },
+            description: "Codigo da aplicacao (ex: ECO303)",
+          }
+        }
+      }
     }
   ];
 
@@ -185,10 +184,31 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
       case "saneago_abrir_e_inspecionar": {
         const { nomeAplicacao } = request.params.arguments;
+        let query = nomeAplicacao;
         
-        // Verifica se usou uma chave do catalogo (array de objetos)
-        const appInfo = catalogo.find(app => app.codigo === nomeAplicacao || app.nome.toLowerCase().includes(nomeAplicacao.toLowerCase()));
-        const query = appInfo ? appInfo.codigo : nomeAplicacao;
+        // Tenta achar no roteiro por intencao/codigo primeiro
+        try {
+          const roteiro = require("../config/roteiro.json");
+          const queryLower = nomeAplicacao.toLowerCase();
+          
+          if (roteiro[nomeAplicacao.toUpperCase()]) {
+            query = nomeAplicacao.toUpperCase();
+          } else {
+            const matchedApp = Object.values(roteiro).find(app => {
+              return app.nome.toLowerCase().includes(queryLower) ||
+                     app.o_que_faz.toLowerCase().includes(queryLower) ||
+                     app.exemplos_intencao.some(ex => ex.toLowerCase().includes(queryLower));
+            });
+            if (matchedApp) {
+              query = matchedApp.codigo;
+            }
+          }
+        } catch (e) {
+          const appInfo = catalogo.find(app => app.codigo === nomeAplicacao || app.nome.toLowerCase().includes(nomeAplicacao.toLowerCase()));
+          if (appInfo) {
+            query = appInfo.codigo;
+          }
+        }
         
         activeFrame = await abrirApp(query);
         const relatorio = await inspecionarTela(activeFrame);
@@ -363,6 +383,45 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         } catch (error) {
           throw error;
         }
+      }
+      
+      case "saneago_consultar_roteiro": {
+        const { intencao, codigo } = request.params.arguments;
+        let roteiro = {};
+        try {
+          roteiro = require("../config/roteiro.json");
+        } catch (e) {
+          throw new Error("Roteiro nao encontrado. Certifique-se de que a Fase 1.5 foi executada.");
+        }
+        
+        let resultado = [];
+        if (codigo) {
+          const app = roteiro[codigo.toUpperCase()];
+          if (app) resultado.push(app);
+        } else if (intencao) {
+          const query = intencao.toLowerCase();
+          for (const key of Object.keys(roteiro)) {
+            const app = roteiro[key];
+            const matchName = app.nome.toLowerCase().includes(query);
+            const matchOQueFaz = app.o_que_faz.toLowerCase().includes(query);
+            const matchExemplos = app.exemplos_intencao.some(ex => ex.toLowerCase().includes(query));
+            const matchCodigo = app.codigo.toLowerCase().includes(query);
+            if (matchName || matchOQueFaz || matchExemplos || matchCodigo) {
+              resultado.push(app);
+            }
+          }
+        } else {
+          resultado = Object.values(roteiro);
+        }
+        
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
       }
 
       default:

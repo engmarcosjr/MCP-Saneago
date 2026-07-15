@@ -1,0 +1,2275 @@
+{
+  "A0009": {
+    "codigo": "A0009",
+    "nome": "CAESAN",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a caesan.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "sQtMm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar CAESAN",
+        "passos": [
+          "Abrir a aplicação A0009",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de caesan",
+      "acessar a app A0009",
+      "consultar caesan"
+    ],
+    "status_doc": "auto"
+  },
+  "A0074": {
+    "codigo": "A0074",
+    "nome": "EMP.LIC.INTER.PARTICULAR-SUREH",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a emp.lic.inter.particular-sureh.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "uIyYm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar EMP.LIC.INTER.PARTICULAR-SUREH",
+        "passos": [
+          "Abrir a aplicação A0074",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de emp.lic.inter.particular-sureh",
+      "acessar a app A0074",
+      "consultar emp.lic.inter.particular-sureh"
+    ],
+    "status_doc": "auto"
+  },
+  "A3000": {
+    "codigo": "A3000",
+    "nome": "CHEFE DE GABINETE",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a chefe de gabinete.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "hOUQm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar CHEFE DE GABINETE",
+        "passos": [
+          "Abrir a aplicação A3000",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de chefe de gabinete",
+      "acessar a app A3000",
+      "consultar chefe de gabinete"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP002": {
+    "codigo": "BAP002",
+    "nome": "Contracheque",
+    "url_zul": "/prt/bap/BAP002ContraCheque.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a contracheque.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "kU4Uk0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "kU4Ul0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Contracheque",
+        "passos": [
+          "Abrir a aplicação BAP002",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de contracheque",
+      "acessar a app BAP002",
+      "consultar contracheque"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP004": {
+    "codigo": "BAP004",
+    "nome": "Atualização CTPS",
+    "url_zul": "/bap/BAP004AtualizarCTPS.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a atualização ctps.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Informações após data:",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "sFhD30"
+      },
+      {
+        "label": "Cancelar",
+        "id": "sFhD40"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Atualização CTPS",
+        "passos": [
+          "Abrir a aplicação BAP004",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de atualização ctps",
+      "acessar a app BAP004",
+      "consultar atualização ctps"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP005": {
+    "codigo": "BAP005",
+    "nome": "Emissão de Frequência",
+    "url_zul": "/bap/BAP005EmitirFrequencia.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a emissão de frequência.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Referência:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "h8bW10"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Emissão de Frequência",
+        "passos": [
+          "Abrir a aplicação BAP005",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de emissão de frequência",
+      "acessar a app BAP005",
+      "consultar emissão de frequência"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP008": {
+    "codigo": "BAP008",
+    "nome": "Comprovante de Rendimentos",
+    "url_zul": "/prt/bap/BAP008ComprovanteRendimentos.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comprovante de rendimentos.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Ano Calendário:",
+        "tipo": "combobox"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "wYnN60"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Comprovante de Rendimentos",
+        "passos": [
+          "Abrir a aplicação BAP008",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comprovante de rendimentos",
+      "acessar a app BAP008",
+      "consultar comprovante de rendimentos"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP012": {
+    "codigo": "BAP012",
+    "nome": "Enviar Declaração IRPF",
+    "url_zul": "/prt/bap/BAP012EnviaDeclaracao.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a enviar declaração irpf.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Tipo de Documento:",
+        "tipo": "combobox"
+      },
+      {
+        "label": "Competência:",
+        "tipo": "combobox"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Enviar",
+        "id": "kUEX80"
+      },
+      {
+        "label": "Cancelar",
+        "id": "kUEXa0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Enviar Declaração IRPF",
+        "passos": [
+          "Abrir a aplicação BAP012",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de enviar declaração irpf",
+      "acessar a app BAP012",
+      "consultar enviar declaração irpf"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP025": {
+    "codigo": "BAP025",
+    "nome": "Agendamento/Alteração de Férias",
+    "url_zul": "/prt/bap/BAP025SolicitaFerias.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a agendamento/alteração de férias.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data de Admissão:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias de direito:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias falta:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias Lic. Médica",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias Lic. Remunerada",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. meses Lic. Não Remunerada",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Inconsistência",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Dt. Últ. Atualização",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Saldo de Férias:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Quantidade de dias:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Observações:",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Calendário de Férias",
+        "id": "kV8W03"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Agendamento/Alteração de Férias",
+        "passos": [
+          "Abrir a aplicação BAP025",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de agendamento/alteração de férias",
+      "acessar a app BAP025",
+      "consultar agendamento/alteração de férias"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP028": {
+    "codigo": "BAP028",
+    "nome": "Enviar Nota Fiscal",
+    "url_zul": "/prt/bap/BAP028EnviaNotaDependente.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a enviar nota fiscal.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Referência Serviço:",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Data Emissão:",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Número Nota Fiscal:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Série Nota Fiscal:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Valor:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "CPF:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "570,00",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "570,00",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "570,00",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "480,00",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "576,73",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Cancelar",
+        "id": "yPnX30"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXy4"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnX_5"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXc5"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXe5"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXr5"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXt5"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnX56"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnX76"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXk6"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yPnXm6"
+      },
+      {
+        "label": "OK",
+        "id": "yPnXh4"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Enviar Nota Fiscal",
+        "passos": [
+          "Abrir a aplicação BAP028",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de enviar nota fiscal",
+      "acessar a app BAP028",
+      "consultar enviar nota fiscal"
+    ],
+    "status_doc": "auto"
+  },
+  "BAP032": {
+    "codigo": "BAP032",
+    "nome": "Definir Adiantamento de 13° Salário",
+    "url_zul": "/prt/bap/BAP032AdiantamentoDecimoTerceiro.zul",
+    "categoria": "Recursos Humanos e Pessoal",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a definir adiantamento de 13° salário.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Referência:",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Incluir",
+        "id": "kEUG40"
+      },
+      {
+        "label": "Cancelar",
+        "id": "kEUG70"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Definir Adiantamento de 13° Salário",
+        "passos": [
+          "Abrir a aplicação BAP032",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de definir adiantamento de 13° salário",
+      "acessar a app BAP032",
+      "consultar definir adiantamento de 13° salário"
+    ],
+    "status_doc": "auto"
+  },
+  "D2000": {
+    "codigo": "D2000",
+    "nome": "PRESIDENCIA",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a presidencia.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "lAiPm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar PRESIDENCIA",
+        "passos": [
+          "Abrir a aplicação D2000",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de presidencia",
+      "acessar a app D2000",
+      "consultar presidencia"
+    ],
+    "status_doc": "auto"
+  },
+  "D4008": {
+    "codigo": "D4008",
+    "nome": "COMISSÃO DE AVALIAÇÃO DE DOCUMENTOS E ACESSO",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comissão de avaliação de documentos e acesso.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "d8wSm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar COMISSÃO DE AVALIAÇÃO DE DOCUMENTOS E ACESSO",
+        "passos": [
+          "Abrir a aplicação D4008",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comissão de avaliação de documentos e acesso",
+      "acessar a app D4008",
+      "consultar comissão de avaliação de documentos e acesso"
+    ],
+    "status_doc": "auto"
+  },
+  "D4014": {
+    "codigo": "D4014",
+    "nome": "COMISSÃO DE ÉTICA DA SANEAGO",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comissão de ética da saneago.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "cZYGm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar COMISSÃO DE ÉTICA DA SANEAGO",
+        "passos": [
+          "Abrir a aplicação D4014",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comissão de ética da saneago",
+      "acessar a app D4014",
+      "consultar comissão de ética da saneago"
+    ],
+    "status_doc": "auto"
+  },
+  "D4015": {
+    "codigo": "D4015",
+    "nome": "COMITÊ ESTRATÉGICO DA SANEAGO",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comitê estratégico da saneago.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "p7xLm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar COMITÊ ESTRATÉGICO DA SANEAGO",
+        "passos": [
+          "Abrir a aplicação D4015",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comitê estratégico da saneago",
+      "acessar a app D4015",
+      "consultar comitê estratégico da saneago"
+    ],
+    "status_doc": "auto"
+  },
+  "D4065": {
+    "codigo": "D4065",
+    "nome": "COMITÊ DE PESSOAS, ELEGIB. SUCESSÃO E REMUNERAÇÃO",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comitê de pessoas, elegib. sucessão e remuneração.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "rBYJm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar COMITÊ DE PESSOAS, ELEGIB. SUCESSÃO E REMUNERAÇÃO",
+        "passos": [
+          "Abrir a aplicação D4065",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comitê de pessoas, elegib. sucessão e remuneração",
+      "acessar a app D4065",
+      "consultar comitê de pessoas, elegib. sucessão e remuneração"
+    ],
+    "status_doc": "auto"
+  },
+  "ECO303": {
+    "codigo": "ECO303",
+    "nome": "Acerta Leitura/Consumo",
+    "url_zul": "/prt/eco/ECO303AcertaLeituraConsumo.zul",
+    "categoria": "Comercial e Atendimento ao Cliente",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a acerta leitura/consumo.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "cISMx"
+      },
+      {
+        "label": "Cancelar",
+        "id": "cISMy"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Acerta Leitura/Consumo",
+        "passos": [
+          "Abrir a aplicação ECO303",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de acerta leitura/consumo",
+      "acessar a app ECO303",
+      "consultar acerta leitura/consumo"
+    ],
+    "status_doc": "auto"
+  },
+  "ECO411": {
+    "codigo": "ECO411",
+    "nome": "Abertura de Financiamento",
+    "url_zul": "/prt/eco/ECO411AberturaFinanciamento.zul",
+    "categoria": "Comercial e Atendimento ao Cliente",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a abertura de financiamento.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Número do Financiamento",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "tO1Kw"
+      },
+      {
+        "label": "Cancelar",
+        "id": "tO1Kx"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Abertura de Financiamento",
+        "passos": [
+          "Abrir a aplicação ECO411",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de abertura de financiamento",
+      "acessar a app ECO411",
+      "consultar abertura de financiamento"
+    ],
+    "status_doc": "auto"
+  },
+  "ECO489": {
+    "codigo": "ECO489",
+    "nome": "Comunicado de Esgoto Sanitário",
+    "url_zul": "/prt/eco/ECO489ComunicadoEsgoto.zul",
+    "categoria": "Comercial e Atendimento ao Cliente",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comunicado de esgoto sanitário.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Quadra",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Grupo de faturamento",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Rota",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "z2pC84"
+      },
+      {
+        "label": "Cancelar",
+        "id": "z2pC94"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Comunicado de Esgoto Sanitário",
+        "passos": [
+          "Abrir a aplicação ECO489",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de comunicado de esgoto sanitário",
+      "acessar a app ECO489",
+      "consultar comunicado de esgoto sanitário"
+    ],
+    "status_doc": "auto"
+  },
+  "FGC068": {
+    "codigo": "FGC068",
+    "nome": "Consulta Contrato Saneago x SAP",
+    "url_zul": "/prt/fgc/FGC068ConsultarContratoSaneagoSAP.zul",
+    "categoria": "Contratos e Integração SAP",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta contrato saneago x sap.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Contrato:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "/",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "pPcQn"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta Contrato Saneago x SAP",
+        "passos": [
+          "Abrir a aplicação FGC068",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta contrato saneago x sap",
+      "acessar a app FGC068",
+      "consultar consulta contrato saneago x sap"
+    ],
+    "status_doc": "auto"
+  },
+  "G0064": {
+    "codigo": "G0064",
+    "nome": "GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a gerência de planejamento de recursos humanos.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "pKRUm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
+        "passos": [
+          "Abrir a aplicação G0064",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de gerência de planejamento de recursos humanos",
+      "acessar a app G0064",
+      "consultar gerência de planejamento de recursos humanos"
+    ],
+    "status_doc": "auto"
+  },
+  "HFI032": {
+    "codigo": "HFI032",
+    "nome": "Acompanhar Transf. de Bens Patrimoniais",
+    "url_zul": "/prt/hfi/HFI032AcompanharTransfBemPatr.zul",
+    "categoria": "Patrimônio e Bens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a acompanhar transf. de bens patrimoniais.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "à",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "à",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Nº inventário",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Status",
+        "tipo": "combobox"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "jAHKz1"
+      },
+      {
+        "label": "Novo",
+        "id": "jAHK_2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "jAHK02"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Acompanhar Transf. de Bens Patrimoniais",
+        "passos": [
+          "Abrir a aplicação HFI032",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de acompanhar transf. de bens patrimoniais",
+      "acessar a app HFI032",
+      "consultar acompanhar transf. de bens patrimoniais"
+    ],
+    "status_doc": "auto"
+  },
+  "HFI034": {
+    "codigo": "HFI034",
+    "nome": "Consulta de Bens Patrimoniais",
+    "url_zul": "/prt/hfi/HFI034ConsultaBensPatrimoniais.zul",
+    "categoria": "Patrimônio e Bens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta de bens patrimoniais.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Nº Inventário:",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "dHAY90"
+      },
+      {
+        "label": "Cancelar",
+        "id": "dHAYd0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta de Bens Patrimoniais",
+        "passos": [
+          "Abrir a aplicação HFI034",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta de bens patrimoniais",
+      "acessar a app HFI034",
+      "consultar consulta de bens patrimoniais"
+    ],
+    "status_doc": "auto"
+  },
+  "HVW001": {
+    "codigo": "HVW001",
+    "nome": "Distância entre cidade",
+    "url_zul": "/prt/hvw/HVW001DistanciaCidade.zul",
+    "categoria": "Prestação de Contas e Viagens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a distância entre cidade.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Distância (Km):",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "fYSYt0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "fYSYx0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Distância entre cidade",
+        "passos": [
+          "Abrir a aplicação HVW001",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de distância entre cidade",
+      "acessar a app HVW001",
+      "consultar distância entre cidade"
+    ],
+    "status_doc": "auto"
+  },
+  "HVW009": {
+    "codigo": "HVW009",
+    "nome": "Conta",
+    "url_zul": "/prt/hvw/HVW009PrestarContas.zul",
+    "categoria": "Prestação de Contas e Viagens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a conta.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Nº Solicitação:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Tipo Empregado:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Motivo Viagem:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Programação:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data prevista de saída:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data prevista de chegada:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Despesas:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Tipo:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Outras Despesas:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Desp. Hospedagem:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Desp. Refeição",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data de saída:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data de chegada:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Valor de diárias calculadas:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de diárias realizadas:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor diárias cartão:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Hospedagem calculado:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Hospedagem realizado:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Refeição calculado:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Refeição realizado:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas cartão:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Saque:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor diárias reembolso:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas reembolso:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no cartão:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no reembolso:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas adiantamento:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Diarias no Adiantamento:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no Adiantamento:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor a receber:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor a recolher:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Acerto final:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Atividades realizadas:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Status da viagem:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data da prestação:",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Matrícula da prestação:",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Situação da prestação:",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "bT8V9h"
+      },
+      {
+        "label": "Cancelar",
+        "id": "bT8Vfh"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Conta",
+        "passos": [
+          "Abrir a aplicação HVW009",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de conta",
+      "acessar a app HVW009",
+      "consultar conta"
+    ],
+    "status_doc": "auto"
+  },
+  "HVW031": {
+    "codigo": "HVW031",
+    "nome": "Impressão Termo",
+    "url_zul": "/prt/hvw/HVW031ReimpressaoTermo.zul",
+    "categoria": "Prestação de Contas e Viagens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a impressão termo.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Relatório",
+        "id": "vMqPz"
+      },
+      {
+        "label": "Cancelar",
+        "id": "vMqP_0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Impressão Termo",
+        "passos": [
+          "Abrir a aplicação HVW031",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de impressão termo",
+      "acessar a app HVW031",
+      "consultar impressão termo"
+    ],
+    "status_doc": "auto"
+  },
+  "HVW034": {
+    "codigo": "HVW034",
+    "nome": "Fornecedor por Despesa",
+    "url_zul": "/prt/hvw/HVW034RelatorioFornecedorDespesa.zul",
+    "categoria": "Prestação de Contas e Viagens",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a fornecedor por despesa.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "jACBp0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "jACBq0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Fornecedor por Despesa",
+        "passos": [
+          "Abrir a aplicação HVW034",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de fornecedor por despesa",
+      "acessar a app HVW034",
+      "consultar fornecedor por despesa"
+    ],
+    "status_doc": "auto"
+  },
+  "JAJ036": {
+    "codigo": "JAJ036",
+    "nome": "Consulta Processo Conta",
+    "url_zul": "/prt/jaj/JAJ036ConsultaProcessoConta.zul",
+    "categoria": "Apoio Jurídico e Contencioso",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta processo conta.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Número de conta/DV",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "u2BBk"
+      },
+      {
+        "label": "Cancelar",
+        "id": "u2BBl"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta Processo Conta",
+        "passos": [
+          "Abrir a aplicação JAJ036",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta processo conta",
+      "acessar a app JAJ036",
+      "consultar consulta processo conta"
+    ],
+    "status_doc": "auto"
+  },
+  "JAJ042": {
+    "codigo": "JAJ042",
+    "nome": "Consulta Cobrança",
+    "url_zul": "/prt/jaj/JAJ042conCobranca.zul",
+    "categoria": "Apoio Jurídico e Contencioso",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta cobrança.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Conta:",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "aFwU80"
+      },
+      {
+        "label": "Cancelar",
+        "id": "aFwU90"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta Cobrança",
+        "passos": [
+          "Abrir a aplicação JAJ042",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta cobrança",
+      "acessar a app JAJ042",
+      "consultar consulta cobrança"
+    ],
+    "status_doc": "auto"
+  },
+  "JAJ060": {
+    "codigo": "JAJ060",
+    "nome": "Rodízio de Processos",
+    "url_zul": "/prt/jaj/JAJ060RodizioProcesso.zul",
+    "categoria": "Apoio Jurídico e Contencioso",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a rodízio de processos.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "yLJAt0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "yLJAv0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Rodízio de Processos",
+        "passos": [
+          "Abrir a aplicação JAJ060",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de rodízio de processos",
+      "acessar a app JAJ060",
+      "consultar rodízio de processos"
+    ],
+    "status_doc": "auto"
+  },
+  "KRT003": {
+    "codigo": "KRT003",
+    "nome": "Consulta AVTO",
+    "url_zul": "/prt/krt/KRT003ConsultarAvto.zul",
+    "categoria": "Controle de Processos e AVTO",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta avto.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Avto",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Avto",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Inicial",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Final",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Empreendimento",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Empreendedor",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "CPF/CNPJ:",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "g2hXx2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "g2hX_3"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta AVTO",
+        "passos": [
+          "Abrir a aplicação KRT003",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta avto",
+      "acessar a app KRT003",
+      "consultar consulta avto"
+    ],
+    "status_doc": "auto"
+  },
+  "KRT028": {
+    "codigo": "KRT028",
+    "nome": "Lista para Análise",
+    "url_zul": "/prt/krt/KRT028ListaAnalise.zul",
+    "categoria": "Controle de Processos e AVTO",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a lista para análise.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Lista para Análise",
+        "passos": [
+          "Abrir a aplicação KRT028",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de lista para análise",
+      "acessar a app KRT028",
+      "consultar lista para análise"
+    ],
+    "status_doc": "auto"
+  },
+  "KRT029": {
+    "codigo": "KRT029",
+    "nome": "Análise e Encaminhamento",
+    "url_zul": "/prt/krt/KRT029AnaliseEncaminhamento.zul",
+    "categoria": "Controle de Processos e AVTO",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a análise e encaminhamento.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Análise e Encaminhamento",
+        "passos": [
+          "Abrir a aplicação KRT029",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de análise e encaminhamento",
+      "acessar a app KRT029",
+      "consultar análise e encaminhamento"
+    ],
+    "status_doc": "auto"
+  },
+  "KRT037": {
+    "codigo": "KRT037",
+    "nome": "Relatórios Gerenciais",
+    "url_zul": "/prt/krt/KRT037RelatoriosGerenciais.zul",
+    "categoria": "Controle de Processos e AVTO",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a relatórios gerenciais.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Acessar Relatórios Gerenciais",
+        "passos": [
+          "Abrir a aplicação KRT037",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de relatórios gerenciais",
+      "acessar a app KRT037",
+      "consultar relatórios gerenciais"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS041": {
+    "codigo": "LRS041",
+    "nome": "Relatório de recomposição asfáltica",
+    "url_zul": "/prt/lrs/LRS041RelatorioRecomposicaoAsfaltica.zul",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a relatório de recomposição asfáltica.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "a",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "a61Ru1"
+      },
+      {
+        "label": "Cancelar",
+        "id": "a61Rv1"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Relatório de recomposição asfáltica",
+        "passos": [
+          "Abrir a aplicação LRS041",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de relatório de recomposição asfáltica",
+      "acessar a app LRS041",
+      "consultar relatório de recomposição asfáltica"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS100": {
+    "codigo": "LRS100",
+    "nome": "Manter estoque de Material por viatura",
+    "url_zul": "/prt/lrs/LRS100ManterEstoqueMaterialPorViatura.zul",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a manter estoque de material por viatura.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Veículo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Listar Todas",
+        "id": "iDzL41"
+      },
+      {
+        "label": "Consultar",
+        "id": "iDzL43"
+      },
+      {
+        "label": "Cancelar",
+        "id": "iDzLb3"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Manter estoque de Material por viatura",
+        "passos": [
+          "Abrir a aplicação LRS100",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de manter estoque de material por viatura",
+      "acessar a app LRS100",
+      "consultar manter estoque de material por viatura"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS130": {
+    "codigo": "LRS130",
+    "nome": "Equipes",
+    "url_zul": "/prt/lrs/LRS130ManterEquipe.zul",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a equipes.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Código da Equipe:",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "nPJSg2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "nPJSk2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Equipes",
+        "passos": [
+          "Abrir a aplicação LRS130",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de equipes",
+      "acessar a app LRS130",
+      "consultar equipes"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS272": {
+    "codigo": "LRS272",
+    "nome": "Acompanhar Atendimento",
+    "url_zul": "/prt/lrs/LRS272MonitorarAtendimento.zul",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a acompanhar atendimento.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": ":",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": ":",
+        "tipo": "combobox"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "yKQWh0"
+      },
+      {
+        "label": "Filtros",
+        "id": "yKQWi0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "yKQWj0"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "yKQWd1"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Acompanhar Atendimento",
+        "passos": [
+          "Abrir a aplicação LRS272",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de acompanhar atendimento",
+      "acessar a app LRS272",
+      "consultar acompanhar atendimento"
+    ],
+    "status_doc": "auto"
+  },
+  "LRS360": {
+    "codigo": "LRS360",
+    "nome": "Materiais Utilizados do SIPSAP",
+    "url_zul": "/prt/lrs/LRS360ResumoMaterial.zul",
+    "categoria": "Logística, Redes e Serviços de Campo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a materiais utilizados do sipsap.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Mês/Ano:",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "xM2Z_4"
+      },
+      {
+        "label": "Cancelar",
+        "id": "xM2Z04"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Materiais Utilizados do SIPSAP",
+        "passos": [
+          "Abrir a aplicação LRS360",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de materiais utilizados do sipsap",
+      "acessar a app LRS360",
+      "consultar materiais utilizados do sipsap"
+    ],
+    "status_doc": "auto"
+  },
+  "MTG001": {
+    "codigo": "MTG001",
+    "nome": "Capturar Remessa",
+    "url_zul": "/prt/mtg/MTG001CapturarRemessa.zul",
+    "categoria": "Financeiro, Tesouraria e Remessas",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a capturar remessa.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "tTIOz"
+      },
+      {
+        "label": "Cancelar",
+        "id": "tTIO_0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Capturar Remessa",
+        "passos": [
+          "Abrir a aplicação MTG001",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de capturar remessa",
+      "acessar a app MTG001",
+      "consultar capturar remessa"
+    ],
+    "status_doc": "auto"
+  },
+  "MTG011": {
+    "codigo": "MTG011",
+    "nome": "Arquivos Retorno com Erros",
+    "url_zul": "/prt/mtg/MTG011ArquivosRetornoComErro.zul",
+    "categoria": "Financeiro, Tesouraria e Remessas",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a arquivos retorno com erros.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "kO0Dz"
+      },
+      {
+        "label": "Cancelar",
+        "id": "kO0D_0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Arquivos Retorno com Erros",
+        "passos": [
+          "Abrir a aplicação MTG011",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de arquivos retorno com erros",
+      "acessar a app MTG011",
+      "consultar arquivos retorno com erros"
+    ],
+    "status_doc": "auto"
+  },
+  "MTG020": {
+    "codigo": "MTG020",
+    "nome": "Consulta Fila de Relatórios PDF",
+    "url_zul": "/prt/mtg/MTG020RelatorioUsuarioVirtual.zul",
+    "categoria": "Financeiro, Tesouraria e Remessas",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta fila de relatórios pdf.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Nome do Arquivo:",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Data Inicial:",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Data Final:",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Filtrar",
+        "id": "w5STs"
+      },
+      {
+        "label": "Limpar Filtros",
+        "id": "w5STt"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STk9"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STu9"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5ST3a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STda"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STna"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STxa"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5ST6b"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STgb"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5STqb"
+      },
+      {
+        "label": "Sem Rotulo",
+        "id": "w5ST_c"
+      },
+      {
+        "label": "Atualizar",
+        "id": "w5STq0"
+      },
+      {
+        "label": "Excluir Selecionados",
+        "id": "w5STr0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar Consulta Fila de Relatórios PDF",
+        "passos": [
+          "Abrir a aplicação MTG020",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de consulta fila de relatórios pdf",
+      "acessar a app MTG020",
+      "consultar consulta fila de relatórios pdf"
+    ],
+    "status_doc": "auto"
+  },
+  "S0072": {
+    "codigo": "S0072",
+    "nome": "SUPER. DE RECURSOS HUMANOS",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a super. de recursos humanos.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "kJtCm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar SUPER. DE RECURSOS HUMANOS",
+        "passos": [
+          "Abrir a aplicação S0072",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de super. de recursos humanos",
+      "acessar a app S0072",
+      "consultar super. de recursos humanos"
+    ],
+    "status_doc": "auto"
+  },
+  "S0087": {
+    "codigo": "S0087",
+    "nome": "CHEFIA DE GABINETE",
+    "url_zul": "",
+    "categoria": "Outros / Administrativo",
+    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a chefia de gabinete.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "dWeWm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Acessar CHEFIA DE GABINETE",
+        "passos": [
+          "Abrir a aplicação S0087",
+          "Preencher campos na tela inicial"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "abrir a tela de chefia de gabinete",
+      "acessar a app S0087",
+      "consultar chefia de gabinete"
+    ],
+    "status_doc": "auto"
+  }
+}

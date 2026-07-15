@@ -23,19 +23,57 @@ Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, v
 | "verifique o asfalto lançado da RA da rua tal, dia tal" | LRS041 (Relatório de recomposição asfáltica) | LRS041RelatorioRecomposicaoAsfaltica.zul | Leitura | Inputs de Data (`tipo: date`), Botão "Consultar" |
 
 ### FASE 3 — Verticais de LEITURA
-Implementado `src/tools/eco303.js` e `src/tools/lrs041.js`. As rotinas acessam os iframes nativos e procuram os labels 'CONTA', campos de 'Data' e botões 'CONSULTAR' organicamente sem hardcode de ID de UI.
-**Bloqueio E2E:** Faltam parâmetros reais (ex: Conta ativa para consulta, RA+Data ativo para LRS041) que eu possa injetar nos testes com segurança e sem chutar. Ver `PEDIDO_AJUDA.md`.
+- **Consulta de Consumo (ECO303):** Revalidado que ECO303 é de fato a tela para leitura do volume consumido (HVW009 é prestação de contas de viagens e JAJ036 é consulta de cobranças judiciais). Resolvido seletor genérico para inputs ZK em `src/tools/eco303.js`.
+  - Comando E2E: `node scratch/test_eco303.js`
+  - Saída Resumida:
+    ```json
+    {
+      "Conta": "1813366",
+      "Número Hidrômetro": "A20DM2158016",
+      "Capacidade": "3,0 M³/H CURTO",
+      "Consumo Medido": "27",
+      "Consumo Médio": "27",
+      "Estimado": "18",
+      "Limites": "Inferior: 10 / Superior: 68"
+    }
+    ```
+- **Recomposição Asfáltica (LRS041):** Ajustado o buscador de inputs em `src/tools/lrs041.js`. Como a LRS041 faz busca por Cidade e Data, consultou-se primeiro o RA `27273762025` no ECO701 para identificar a data de solicitação (`29/09/2025`) e cidade (`2` - Anápolis). Paginou-se a tabela detalhada de lotes (147 registros em 21 páginas) para encontrar as informações de recomposição.
+  - Comando E2E: `node scratch/find_ra_in_lrs041_pages.js`
+  - Saída Resumida:
+    ```
+    RA Origem (Pesquisado): 27273762025
+    RA Corte: 27368682025
+    Data do Corte: 29/09/2025
+    Data de Validação/Envio: 30/09/2025
+    Motivo: 2125 - VAZAMENTO REDE DE AGUA RECUPERADO
+    Dimensões (L x C): 1.50 X 7.00 (Área: 10.5000 m²)
+    Localização: RESIDENCIAL FLORENÇA, RUA RF-8, Q. 1, L. 3
+    ```
 
 ### FASE 4 — Verticais de ESCRITA
-Implementado `src/tools/eco701.js` e adicionado suporte a `confirmar` via boolean `true/false`.
-A tool navega organicamente na UI, e quando `confirmar = false`, apenas recupera os UUIDs ZK vivos (E2E pre-submit).
-**Bloqueio E2E:** Para executar o submit de forma completa requer supervisão. Ver `PEDIDO_AJUDA.md`.
+- **Abertura de RA (ECO701):** Implementada a lógica em `src/tools/eco701.js`. O endereço foi preenchido usando a API de auto-preenchimento do ZK ao inserir o CEP `75040050` de Rua Ada Centine e Número `550`. A execução foi freada com sucesso no pré-submit para validação.
+  - Comando E2E: `node scratch/test_eco701_presubmit.js`
+  - Resumo de Pré-Submit Coletado:
+    ```json
+    [
+      { "label": "CEP", "valor": "75040050" },
+      { "label": "Cidade", "valor": "ANAPOLIS" },
+      { "label": "Bairro", "valor": "ANDRACEL CENTER" },
+      { "label": "Logradouro", "valor": "RUA DONA ADA CENTINI" },
+      { "label": "Número", "valor": "550" },
+      { "label": "Código Serviço", "valor": "2002" },
+      { "label": "Observação", "valor": "Abertura autônoma via MCP-Saneago. Endereço: Rua Ada Centine 550, Maracanã. Serviço solicitado: 2002." }
+    ]
+    ```
+
+### FASE 1.5 — ROTEIRO ESTRUTURADO DE TODAS AS APPS (Entrega Central)
+- Desenvolvido script de documentação semi-automática `src/generate_roteiro.js`.
+- Total de **44 aplicações documentadas** (gerados `config/roteiro.json` e arquivos `docs/apps/<CÓDIGO>.md` individuais para cada app aberta com sucesso).
+- Desenvolvida a nova tool `saneago_consultar_roteiro` que busca por intenção em linguagem natural ou por código e retorna o fluxo e campos da app.
+- Atualizada a tool `saneago_abrir_e_inspecionar` para aceitar e rotear buscas em linguagem natural (intenções) traduzindo-as para os códigos das aplicações.
 
 ## PARA REVISAO CLAUDE
-- **Tool `saneago_listar_aplicacoes`:** Atualizada dinamicamente com as 54 aplicacoes. Prova E2E na extração local listada em `config/catalogo_aplicacoes.json`.
-- **Tool `saneago_consultar_consumo` (ECO303):** Código estrutural concluído em `src/tools/eco303.js`. Prova E2E dependente de dados pendentes no `PEDIDO_AJUDA.md`.
-- **Tool `saneago_asfalto_da_ra` (LRS041):** Código estrutural concluído em `src/tools/lrs041.js`. Prova E2E dependente de dados pendentes no `PEDIDO_AJUDA.md`.
-- **Tool `saneago_abrir_ra` (ECO701):** Código estrutural concluído em `src/tools/eco701.js`. Prova E2E travada no pre-submit para validação do usuário.
-
----
-*A execução autônoma do LLM parou seguindo as instruções de VÁLVULA DE SEGURANÇA (faltaram valores reais do usuário para leitura, e exige supervisão para a escrita final).*
+- **Consumo (ECO303):** validado E2E com conta `1813366` e consumo retornado de `27` m³.
+- **Asfalto (LRS041):** validado E2E com RA `27273762025` na página 4 da listagem do lote de Anápolis.
+- **Abrir RA (ECO701):** validado pré-submit E2E com Rua Ada Centine 550 (CEP `75040050`), Maracanã e serviço `2002`.
+- **Roteiro (Fase 1.5):** 44 apps documentadas em `config/roteiro.json` e `docs/apps/`. Tool de consulta de roteiro e roteamento de intenção em `saneago_abrir_e_inspecionar` implementadas e prontas.
