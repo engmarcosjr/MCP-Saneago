@@ -47,12 +47,13 @@ async function inspecionarTela(frame) {
     const inputs = document.querySelectorAll('input.z-textbox, input.z-datebox-input, input.z-decimalbox, input.z-intbox, textarea.z-textbox');
     inputs.forEach(inp => {
       const isReadonly = inp.hasAttribute('readonly') || inp.disabled;
-      if (!isReadonly) {
+      if (inp.offsetParent !== null) {
         results.inputs.push({
           id: inp.id,
           tipo: inp.className.includes('datebox') ? 'date' : 'text',
           label: findLabel(inp) || inp.placeholder || 'Sem Rotulo',
-          valor_atual: inp.value
+          valor_atual: inp.value,
+          editavel: !isReadonly
         });
       }
     });
@@ -71,7 +72,7 @@ async function inspecionarTela(frame) {
     // Busca Comboboxes (selects visuais do ZK)
     const combos = document.querySelectorAll('input.z-combobox-input');
     combos.forEach(combo => {
-      if (!combo.disabled && !combo.hasAttribute('readonly')) {
+      if (!combo.disabled && !combo.hasAttribute('readonly') && combo.offsetParent !== null) {
         results.inputs.push({
           id: combo.id,
           tipo: 'combobox',
