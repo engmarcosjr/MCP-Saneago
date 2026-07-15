@@ -5,3 +5,4 @@ config/credentials.json
 *.png
 *.log
 data/
+scratch/
