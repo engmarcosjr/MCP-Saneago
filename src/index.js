@@ -56,6 +56,20 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         },
         required: ["nomeAplicacao"],
       },
+    },
+    {
+      name: "saneago_eco701_consultar_ra",
+      description: "Abre o ECO701, consulta o Registro de Atendimento (RA) especificado e retorna os dados da tela (textos e inputs).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA a ser consultado (ex: 1812692026)",
+          },
+        },
+        required: ["ra"],
+      },
     }
   ];
 
@@ -91,20 +105,6 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
         },
         required: ["elementId"],
-      },
-    });
-    tools.push({
-      name: "saneago_eco701_consultar_ra",
-      description: "Abre o ECO701, consulta o Registro de Atendimento (RA) especificado e retorna os dados da tela (textos e inputs).",
-      inputSchema: {
-        type: "object",
-        properties: {
-          ra: {
-            type: "string",
-            description: "O numero do RA a ser consultado (ex: 1812692026)",
-          },
-        },
-        required: ["ra"],
       },
     });
   }
@@ -203,8 +203,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "saneago_eco701_consultar_ra": {
-        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
-        
         const { ra } = request.params.arguments;
         activeFrame = await abrirApp("ECO701");
         const appUrl = activeFrame.url();
