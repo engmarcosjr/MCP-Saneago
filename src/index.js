@@ -103,6 +103,24 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           }
         }
       }
+    },
+    {
+      name: "saneago_asfalto_da_ra",
+      description: "Consulta o asfalto lancado de um RA especifico buscando a cidade e data de corte no ECO701 e paginando no LRS041.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA a ser consultado",
+          },
+          data: {
+            type: "string",
+            description: "Data para busca, se ja conhecida (opcional, será inferida se nao passada)",
+          }
+        },
+        required: ["ra"],
+      }
     }
   ];
 
