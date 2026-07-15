@@ -1,43 +1,26 @@
 # Progresso - MCP-Saneago
 
-## Estado Atual
-- **Etapa 1 (Sessão):** Concluída. Reuso de cookie/sessão implementado via Playwright em `src/session.js`.
-- **Etapa 2 (Abertura de App):** Concluída. A função `abrirApp` em `src/portal.js` abre corretamente as aplicações (lidando com os novos iframes e listboxes de busca).
-- **Etapa 3 (Inspetor de Tela):** Concluída. O script `src/inspector.js` consegue ler o DOM do ZK, extrair `inputs`, `buttons`, e `comboboxes`, inferindo os `labels` e `editavel`.
-- **Etapa 4 (Executor por UI):** Concluída. As funções `preencherCampo` e `clicarBotao` em `src/executor.js` interagem com os elementos e esperam o tempo de resposta do ZK e requisições AJAX.
-- **Etapa 5 (Catálogo):** Concluída. Arquivo `config/catalogo_aplicacoes.json` criado com o de/para dos apps.
-- **Etapa 6 (Ferramentas MCP):** Concluída. Servidor MCP implementado em `src/index.js` utilizando `@modelcontextprotocol/sdk` conectando as funcoes implementadas aos *handlers* do MCP com protocolo Stdio.
-  - Adicionado `SANEAGO_ALLOW_WRITE` para proteger operacoes de escrita e auditoria em `.auth/audit.log`. As tools puramente de consulta (`saneago_eco701_consultar_ra`, `saneago_listar_aplicacoes`, `saneago_abrir_e_inspecionar`) foram mantidas fora do gate de bloqueio (são always-available).
-  - Criada tool vertical `saneago_eco701_consultar_ra` validada E2E. PII de logs e artefatos mascarados (LGPD).
+## Estado Anterior (Infraestrutura MCP)
+- **Etapas 1-6:** Concluídas. Reuso de sessão viva (`src/session.js`), navegação em iframes ZK e listboxes de busca (`src/portal.js`), inspeção via DOM vivo (`src/inspector.js`), execução de UI com espera de resposta (`src/executor.js`), integração com MCP Stdio SDK (`src/index.js`), flag `SANEAGO_ALLOW_WRITE` para proteção. E2E estrutural de UI comprovado.
 
-## Validacao E2E da Tool Vertical
-Comando exato executado:
-\`\`\`bash
-node src/test_e2e.js 1812692026
-\`\`\`
+## Execução Autônoma Gemini - Correção de Rumo
 
-Saida resumida dos campos retornados:
-\`\`\`json
-{
-  "inputs": [
-    { "id": "s5fMq", "label": "Número da Conta/DV", "valor_atual": "", "editavel": false },
-    { "id": "s5fMy5", "label": "CPFCNPJ", "valor_atual": "", "editavel": true },
-    { "id": "s5fM46", "label": "CEP", "valor_atual": "", "editavel": true },
-    { "id": "s5fMd8", "label": "Número", "valor_atual": "s/n", "editavel": true },
-    { "id": "s5fM7e", "label": "Nome", "valor_atual": "LUIS C***", "editavel": true },
-    { "id": "s5fMne", "label": "Telefone", "valor_atual": "(62)", "editavel": true },
-    { "id": "s5fMoe", "label": "Telefone", "valor_atual": "9****-5739", "editavel": true },
-    { "id": "s5fM0f", "label": "Observação", "valor_atual": "CANCELADO POR: M*** - 20 de janeiro de 2026...", "editavel": false }
-  ]
-}
-\`\`\`
-*(Alguns campos em branco/sem rotulo omitidos por brevidade)*
+### FASE 1 — Descoberta de todas as aplicações
+Criado o script `src/discover.js` que se autenticou via Playwright e varreu a busca (`Buscar...`) iterando sobre prefixos `ECO`, `SAN`, `MTG`, `PSS` e de `A` a `Z`. A extração analisou cada `.z-listcell` das `.z-listitem` renderizadas.
+- Comando: `node src/discover.js`
+- Contagem de apps: **54 aplicações mapeadas**
+- Amostra: `CAESAN` (A0009), `Contracheque` (BAP002), `Abertura de Financiamento` (ECO411), `Consulta Contrato Saneago x SAP` (FGC068), `Capturar Remessa` (MTG001), `CHEFIA DE GABINETE` (S0087).
+- Fonte usada: Busca via interface, parseando o `z-listcell` (`origem: "busca_listcell"`).
+- Artefato: `config/catalogo_aplicacoes.json` atualizado.
 
-## Desvios de UI (Rede Social Corporativa)
-Em comparacao ao \`co701_discover.js\` (antigo), o portal atual ("Rede Social Corporativa") exige os seguintes desvios:
-1. **Busca:** O aplicativo nao esta em menus ou arvore tradicional; a busca requer interagir com um input genérico (placeholder "Buscar...") e digitar sequencialmente (\`pressSequentially\`).
-2. **Lista e Click:** O ZK responde com um \`z-listbox\`. O clique na linha (\`z-listitem\`) apenas seleciona, sendo necessario encontrar o \`<button>\` interno com icone para disparar a acao real (\`locator('button').first().click()\`).
-3. **Iframes Aninhados:** A aplicacao pode carregar primeiro dentro de um frame \`montarMenu.zul\`, que engloba um frame filho \`.zul\` final (ex: \`ECO701RegistroAtendimento.zul\`). A extracao localiza iterativamente nos \`frames()\` do playwright ignorando os conhecidos de portal. Validamos que a captura do frame filho e real e interativa.
+### FASE 2 — Mapa de intenções
+Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, validados através do script de apoio `test_apps.js` (que usou `saneago_abrir_e_inspecionar` para extrair botões e campos visíveis de ECO303, LRS041 e ECO701).
 
-## Próximo Passo
-- O projeto `MCP-Saneago` está estruturalmente pronto para testes integrados ao Claude/Gemini. As validacoes E2E comprovaram a robustez do executor via UI.
+| Intenção (Exemplo) | App/Código | Tela `.zul` | Leitura/Escrita | Campos-chave |
+|---|---|---|---|---|
+| "abre uma RA na rua tal" | ECO701 (Registro de Atendimento) | ECO701RegistroAtendimento.zul | Escrita | Número da Conta, Botões "Incluir" / "Consultar" |
+| "qual o volume consumido pela conta X" | ECO303 (Acerta Leitura/Consumo) | ECO303AcertaLeituraConsumo.zul | Leitura | Conta, Botão "Consultar" |
+| "verifique o asfalto lançado da RA da rua tal, dia tal" | LRS041 (Relatório de recomposição asfáltica) | LRS041RelatorioRecomposicaoAsfaltica.zul | Leitura | Inputs de Data (`tipo: date`), Botão "Consultar" |
+
+---
+*Status Atual: Avançando para a Fase 3 (Verticais de Leitura).*
