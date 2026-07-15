@@ -1,7 +1,7 @@
-const { abrirApp } = require("./portal");
-const { preencherCampo, clicarBotao } = require("./executor");
-const { inspecionarTela } = require("./inspector");
-const { logAudit } = require("./audit");
+const { abrirApp } = require("../portal");
+const { preencherCampo, clicarBotao } = require("../executor");
+const { inspecionarTela } = require("../inspector");
+const { logAudit } = require("../audit");
 
 async function consultarConsumo(conta) {
   const frame = await abrirApp("ECO303");
@@ -16,9 +16,10 @@ async function consultarConsumo(conta) {
       let btnId = null;
       
       for (const lb of labels) {
-        if (norm(lb.textContent) === 'CONTA') {
+        const lbText = norm(lb.textContent).replace(':', '').trim();
+        if (lbText === 'CONTA') {
           const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-          const inputs = Array.from(scope.querySelectorAll('input[type="text"]')).filter(visible);
+          const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
           // O input editavel da conta e o que queremos preencher
           const editavel = inputs.find(i => !i.disabled && !i.readOnly);
           if (editavel) {

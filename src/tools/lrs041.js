@@ -18,7 +18,7 @@ async function consultarAsfalto(raRua, data) {
       let btnId = null;
 
       // Inputs de texto sao RA, etc. Tem 3 text e 2 dates.
-      const textInputs = Array.from(document.querySelectorAll('input[type="text"]')).filter(visible).filter(i => !i.disabled && !i.readOnly && !i.className.includes('z-datebox'));
+      const textInputs = Array.from(document.querySelectorAll('input')).filter(visible).filter(i => !i.disabled && !i.readOnly && !i.className.includes('z-datebox'));
       // A primeira caixa editavel e provavelmente o numero do RA
       if (textInputs.length > 0) {
         inputRaId = textInputs[0].id;
