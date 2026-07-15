@@ -147,3 +147,35 @@ Criar `src/discover.js` que enumera TODAS as aplicações visíveis ao perfil e 
 Saída: array `[{codigo, nome, url_zul, origem}]`, deduplicado e ordenado. Rodar de verdade, colar no PROGRESSO.md a **contagem** de apps e uma amostra. **Depois** disso, priorizar verticais pela lista real.
 
 **Ao revisar (Revisão 4):** confirmar que `discover.js` rodou contra o portal, que o catálogo tem N>>3 apps reais, e que a fonte usada não foi replay manual de `/zkau`.
+
+---
+
+# REVISÃO 4 — 2026-07-15 (Claude)
+
+Revisado a execução autônoma pós "Correção de Rumo" (commits `6dea3f6`..`859a8e9`, FASES 1→4 do `EXECUCAO_GEMINI.md`). **A descoberta e o roteiro (entrega central) estão bons e provados. Mas 2 das 3 verticais novas têm defeitos que bloqueiam uso: uma tool está invisível ao LLM e outra pode abrir RA em endereço errado. Aprovado parcialmente; 3 correções obrigatórias.**
+
+## ✅ Passou
+1. **FASE 1/1.5 — descoberta real e completa.** `src/discover.js` (menu `montarMenu.zul` + busca refinada) gerou catálogo com **337 apps** (verifiquei o JSON: 337 entradas, ECO701 incluída). Sem replay `/zkau` — as ocorrências de `zkau` no código são só `waitForResponse` (espera de AJAX, legítimo).
+2. **Roteiro estruturado + roteamento por intenção.** `config/roteiro.json` com 54 apps (51 `auto`, 3 `enriquecido`), 54 markdowns em `docs/apps/`, tool `saneago_consultar_roteiro` read-only sempre disponível, e `saneago_abrir_e_inspecionar` aceitando intenção. É a arquitetura pedida.
+3. **Reprocessamento:** 9/10 apps falhas corrigidas via ajuste de detecção de iframe no `portal.js`; `LIG002` documentada como exceção plausível (mapa GIS externo).
+4. **Higiene de protocolo MCP:** zero `console.log` nos módulos carregados pelo servidor (`index/portal/session/inspector/executor/audit/tools`); os `console.log` restantes estão só em scripts CLI standalone (`discover.js`, `generate_roteiro.js` etc.), que não rodam sob stdio MCP. OK.
+5. **Gate de escrita preservado:** `preencher_campo`/`clicar_botao`/`abrir_ra` só sob `SANEAGO_ALLOW_WRITE`; `abrir_ra` exige `confirmar: true` + auditoria; e o Gemini **parou corretamente antes de submeter RA real** (PEDIDO_AJUDA.md), como mandava a FASE 4.
+6. `scratch/` no `.gitignore`; nenhum segredo novo commitado.
+
+## ❌ Correções obrigatórias (bloqueiam uso)
+1. **`saneago_asfalto_da_ra` está INVISÍVEL ao LLM.** O `case` existe no CallTool (`src/index.js:371`), mas a tool **não foi adicionada ao array do ListTools** (nem no bloco read-only nem no de escrita). Resultado: o cliente MCP nunca lista a tool e a intenção "asfalto lançado" não funciona. Adicionar a definição dela ao bloco de tools sempre disponíveis (é read-only).
+2. **A vertical LRS041 não implementa o fluxo que foi provado.** A prova E2E do PROGRESSO usou `scratch/find_ra_in_lrs041_pages.js`: consultou o RA no ECO701 para obter **cidade + data**, preencheu LRS041 por cidade/período e **paginou 21 páginas** da tabela de lotes. Já a tool `consultarAsfalto` (`src/tools/lrs041.js:21-24`) apenas preenche **"o primeiro input de texto editável"** com o RA e clica Consultar — heurística **posicional** (viola o princípio nº 5 de âncora por rótulo) e **sem paginação**. Ou seja: a prova não prova a tool; a tool como está provavelmente não devolve o asfalto de uma RA. Portar para a tool o fluxo real do scratch (ECO701 → cidade/data → LRS041 → paginação até achar a RA).
+3. **`abrirRA` tem endereço hardcoded como default — risco de RA em endereço ERRADO.** `src/tools/eco701.js:30-31`: `cep = "75040050"` e `numero = "550"` ("default para Ada Centine"). Se o usuário passar um endereço **sem CEP** (caso normal: "abre uma RA na rua tal"), a tool preenche silenciosamente o CEP da Rua Ada Centini e prepara/submete a RA **no lugar errado**. Para uma tool de ESCRITA isso é inaceitável. Corrigir: sem CEP extraível → **falhar pedindo o CEP** (ou resolver rua→CEP explicitamente); nunca assumir default. Idem `numero`.
+
+## ⚠️ Menor / dívida (não bloqueiam)
+4. **Roteiro cobre 54 de 337 apps.** O brief pedia ~54 (foi escrito quando o catálogo tinha 54), então não é descumprimento — mas o `PROGRESSO.md` deve declarar explicitamente que **283 apps do catálogo estão sem roteiro** (pendência futura), senão a frase "roteiro de todas as apps" engana.
+5. **Provas E2E vivem em `scratch/` gitignorado** — os scripts de prova não estão versionados; a evidência não é reproduzível a partir do repo. Considerar mover os testes E2E "oficiais" para `tests/e2e/` versionado (sem PII).
+6. **PII leve no `PROGRESSO.md`:** conta real `1813366` + nº de hidrômetro + endereços residenciais com quadra/lote. Menos sensível que nome/telefone, mas seguir mascarando (ex.: `18133**`).
+7. **Caminho pós-submit do `abrirRA` nunca foi executado** (clique em "Gerar RA" + captura do popup) — código não provado. Esperado nesta fase; validar na submissão supervisionada.
+8. **`servico` sem validação** no `abrirRA`: espera código numérico (ex.: `2002`) num `z-intbox`, mas aceita texto livre sem checar.
+
+## Pendência que é DO USUÁRIO (PEDIDO_AJUDA.md)
+- Fornecer conta/RA/data reais para E2E adicionais e decidir quando fazer a **submissão supervisionada** da primeira RA real (FASE 4). Recomendo só depois das correções 1–3.
+
+## Veredito
+Descoberta + roteiro + roteamento: **aprovados**. Verticais: `consultar_consumo` ok; `asfalto_da_ra` e `abrir_ra` **reprovadas até corrigir os itens 1–3** (itens 1 e 3 são rápidos; o 2 exige portar o fluxo do scratch para a tool). Os itens 1–3 viram o próximo prompt do Gemini.
