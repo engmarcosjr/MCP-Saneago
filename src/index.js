@@ -13,7 +13,9 @@ const { inspecionarTela } = require("./inspector");
 const { preencherCampo, clicarBotao } = require("./executor");
 const { closeSession } = require("./session");
 const { logAudit } = require("./audit");
-
+const { consultarConsumo } = require("./tools/eco303");
+const { consultarAsfalto } = require("./tools/lrs041");
+const { abrirRA } = require("./tools/eco701");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
 
@@ -70,6 +72,38 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         },
         required: ["ra"],
       },
+    },
+    {
+      name: "saneago_consultar_consumo",
+      description: "Consulta o volume consumido de uma conta especifica no aplicativo ECO303.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          conta: {
+            type: "string",
+            description: "O numero da conta a ser consultada",
+          },
+        },
+        required: ["conta"],
+      },
+    },
+    {
+      name: "saneago_asfalto_da_ra",
+      description: "Verifica o asfalto lancado para um RA ou Rua em uma data especifica (app LRS041).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA ou o nome da Rua",
+          },
+          data: {
+            type: "string",
+            description: "Data para consulta (DD/MM/AAAA)",
+          },
+        },
+        required: ["ra", "data"],
+      },
     }
   ];
 
@@ -105,6 +139,29 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
         },
         required: ["elementId"],
+      },
+    });
+
+    tools.push({
+      name: "saneago_abrir_ra",
+      description: "Cria e abre uma RA no ECO701 para o servico e endereco indicados. Requer o parametro confirmar: true para efetivar.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          endereco: {
+            type: "string",
+            description: "O endereco da ocorrencia",
+          },
+          servico: {
+            type: "string",
+            description: "O tipo de servico solicitado",
+          },
+          confirmar: {
+            type: "boolean",
+            description: "Deve ser true para submeter. Se false, apenas descreve o que sera feito.",
+          }
+        },
+        required: ["endereco", "servico", "confirmar"],
       },
     });
   }
@@ -203,6 +260,25 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         }
       }
 
+      case "saneago_abrir_ra": {
+        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        
+        const { endereco, servico, confirmar } = request.params.arguments;
+        try {
+          const resultado = await abrirRA(endereco, servico, confirmar);
+          return {
+            content: [
+              {
+                type: "text",
+                text: resultado.message + (resultado.relatorio ? `\n\nRelatorio do frame inicial: ${JSON.stringify(resultado.relatorio)}` : ""),
+              },
+            ],
+          };
+        } catch (error) {
+          throw error;
+        }
+      }
+
       case "saneago_eco701_consultar_ra": {
         const { ra } = request.params.arguments;
         activeFrame = await abrirApp("ECO701");
@@ -251,6 +327,40 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           };
         } catch (error) {
           logAudit("saneago_eco701_consultar_ra", appUrl, `RA ${ra}`, `ERRO: ${error.message}`);
+          throw error;
+        }
+      }
+
+      case "saneago_consultar_consumo": {
+        const { conta } = request.params.arguments;
+        try {
+          const resultado = await consultarConsumo(conta);
+          return {
+            content: [
+              {
+                type: "text",
+                text: `Conta ${conta} consultada.\nTexto visivel na tela:\n${resultado.text}\n\nCampos da tela:\n${JSON.stringify(resultado.relatorio, null, 2)}`,
+              },
+            ],
+          };
+        } catch (error) {
+          throw error;
+        }
+      }
+
+      case "saneago_asfalto_da_ra": {
+        const { ra, data } = request.params.arguments;
+        try {
+          const resultado = await consultarAsfalto(ra, data);
+          return {
+            content: [
+              {
+                type: "text",
+                text: `RA/Rua ${ra} consultado para a data ${data}.\nTexto visivel na tela:\n${resultado.text}\n\nCampos da tela:\n${JSON.stringify(resultado.relatorio, null, 2)}`,
+              },
+            ],
+          };
+        } catch (error) {
           throw error;
         }
       }

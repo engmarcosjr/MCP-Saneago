@@ -64,3 +64,86 @@ Rodar/inspecionar a tool `saneago_eco701_consultar_ra` com uma RA real. Precisa:
 - Pode fiar em `id`/`uuid` capturados numa sessão → quebram na próxima.
 - Pode tentar contornar login (stealth, credenciais hardcoded) se não tiver rede/credencial → reprovar e pedir ambiente correto.
 - Pode emendar todas as etapas num commit só → dificulta revisão; pedir para fatiar.
+
+---
+
+# REVISÃO 1 — 2026-07-15 (Claude)
+
+Revisado após Gemini concluir as 6 etapas (commits `42795ef`..`ccd639b`). Estrutura boa e disciplina de commits ok (1 por etapa). **Mas há 1 bug fatal, 0 validação real e a camada de segurança não foi feita. Reprovado para uso; precisa de correção.**
+
+## ✅ Passou
+- **Princípio 1 (o mais importante):** executor usa UI viva (`.click()`/`.fill()`/`.blur()` + espera AJAX). **Zero replay de `/zkau` montado à mão.** Correto.
+- Commits fatiados por etapa, mensagens ok.
+- `.gitignore` cobre `.auth/`, `config/credentials.json`, `*.png`, `*.log`; nenhum segredo commitado; `data/` está untracked (`git status` = `?? data/`).
+- Inspector infere `label` por proximidade de `.z-label` (atende parcialmente "âncora por rótulo").
+- `session.js` reusa `storageState`, mantém browser vivo, trata login/expiração de senha.
+
+## ❌ Crítico (bloqueia uso)
+1. **`console.log` corrompe o protocolo MCP (fatal).** 23 ocorrências em `session.js`/`portal.js`/`inspector.js`/`executor.js`. Num servidor MCP stdio, **stdout é o canal JSON-RPC** — qualquer `console.log` quebra o cliente na 1ª chamada de tool. Devem virar `console.error` (stderr). O banner em `index.js` já usa `console.error` corretamente; o resto não.
+2. **Nunca foi validado end-to-end.** `PROGRESSO.md` diz "estruturalmente pronto para testes" — ou seja, **não rodou contra o portal de verdade**. Não há evidência de que consulta uma RA. Os `data/debug_*.png/html` sugerem que a UI deu trabalho. A prova de fogo (`saneago_eco701_consultar_ra`) foi trocada por tools genéricas e nunca exercida.
+3. **Camada de segurança do plano ausente.** `preencher_campo`/`clicar_botao` executam direto: **sem separação read-only vs escrita, sem confirmação, sem `audit.js`/`audit.log`.** Contraria os princípios 2/3 e a seção 4 do PLAN.md.
+
+## ⚠️ Menor / dívida
+4. **Portal mudou** ("Rede Social Corporativa", placeholder `Buscar...`, `getByRole('row')`) — `portal.js` divergiu do `co701_discover.js`. **Desvio não registrado no PROGRESSO.md** (era obrigatório). Precisa provar que a abertura de app funciona nessa UI nova.
+5. **Escrita de debug no caminho de produção:** `abrirApp` grava screenshot + HTML autenticado a cada chamada. Poluição e dado autenticado em disco. Colocar `data/` no `.gitignore` e condicionar debug a uma flag `DEBUG`.
+6. **Âncora por `id` ZK:** aceitável só porque inspeciona→age no mesmo frame vivo e re-inspeciona após clicar. Documentar que o `id` só vale na sessão viva atual; nunca persistir/reusar entre sessões.
+7. `PROGRESSO.md` raso: sem comando de teste, sem saída, sem desvios. Não seguiu o combinado.
+8. Sem testes offline reais em `tests/` (os `test_stageN.js` exigem portal). Singleton global `activeFrame`/`activePage` (ok p/ 1 usuário).
+
+## Próximos passos exigidos (viram o prompt do Gemini)
+1. Trocar todo `console.log` por `console.error` em `src/*.js` (exceto stdout do protocolo).
+2. Adicionar `data/` ao `.gitignore`; remover escrita de debug do fluxo normal (só sob `DEBUG=1`).
+3. Implementar `src/audit.js` + gate de confirmação para escrita; flag `SANEAGO_ALLOW_WRITE` (default off) que só então registra as tools de escrita.
+4. Criar tool vertical `saneago_eco701_consultar_ra(RA)` e **rodar de verdade** contra o portal; colar no `PROGRESSO.md` o comando e a saída (campos da RA).
+5. Registrar no `PROGRESSO.md` o desvio da UI nova do portal, com o que foi testado.
+
+---
+
+# REVISÃO 2 — 2026-07-15 (Claude)
+
+Revisado após Gemini corrigir a Revisão 1 (commits `1742423`..`177a9ec`). **Os 3 bloqueios da Rev 1 foram resolvidos e o E2E foi provado de verdade. Aprovado com 2 correções (uma regressão de design + 1 privacidade).**
+
+## ✅ Corrigido / provado
+1. **`console.log` → `console.error`:** zero `console.log` restante em `src/` (fora de testes). Protocolo MCP stdio não será mais corrompido. ✅
+2. **E2E REAL — o item que faltava.** `node src/test_e2e.js 1812692026` rodou contra o portal e devolveu dados reais da tela (conta, CEP, nome, telefone, observação com histórico de cancelamento). **O encanamento inteiro funciona ponta a ponta.** Prova colada no `PROGRESSO.md`. ✅
+3. **Gate de escrita + auditoria:** `SANEAGO_ALLOW_WRITE` (default off); `src/audit.js` grava em `.auth/audit.log` (gitignorado); tools de escrita envelopadas em try/catch com log de SUCESSO/ERRO. ✅
+4. **`data/` no `.gitignore`** e debug sob flag. Sem artefatos untracked. ✅
+5. **Desvio da UI ("Rede Social Corporativa") documentado** no `PROGRESSO.md` (busca por `Buscar...`, z-listbox, iframes aninhados `montarMenu.zul`→`.zul`). ✅
+
+## ❌ Correções pendentes
+6. **REGRESSÃO — tool de leitura trancada atrás do write gate.** `saneago_eco701_consultar_ra` é **consulta (read-only)**, mas está dentro do bloco `if (ALLOW_WRITE)` (registro na linha ~97) e com `if (!ALLOW_WRITE) throw` (linha ~206). Resultado: em modo read-only o LLM **nem enxerga nem executa** a tool que é justamente a prova segura do projeto. Consultar um RA não altera dado. Mover `saneago_eco701_consultar_ra` para as tools **sempre disponíveis** (junto de `listar_aplicacoes` e `abrir_e_inspecionar`) e remover o `if (!ALLOW_WRITE) throw` do case dela. Só `preencher_campo` e `clicar_botao` ficam atrás do gate.
+7. **PRIVACIDADE — dado pessoal real commitado.** `PROGRESSO.md` (git-tracked) contém nome e telefone reais de um cidadão (RA 1812692026: "LUIS CLAUDIO", telefone). Mascarar na saída de exemplo (ex.: `LUIS C***`, `(62) 9****-5739`) e evitar colar PII real em arquivo versionado. Obs.: já entrou no histórico do git; para uso interno/privado basta mascarar daqui pra frente, mas não colar RA real de novo.
+
+## Veredito
+Núcleo **funciona e está provado**. Faltam só os itens 6 (5 min, corrige a lógica read-only) e 7 (higiene de PII). Depois disso, considero pronto para uso interno em modo read-only, e escrita só sob `SANEAGO_ALLOW_WRITE` com supervisão.
+
+---
+
+# REVISÃO 3 (fechamento) — 2026-07-15 (Claude)
+
+Commits `3b1b599` e `b94313a`. **APROVADO. Pronto para uso interno.**
+
+- Item 6 ✅ `saneago_eco701_consultar_ra` agora registrada FORA do `if (ALLOW_WRITE)` (linha ~61, sempre disponível) e o `if (!ALLOW_WRITE) throw` foi removido do case dela; o gate permanece só em `preencher_campo`/`clicar_botao`.
+- Item 7 ✅ PII mascarada no `PROGRESSO.md` ("LUIS C***", telefone/observação removidos).
+
+**Estado final:** UI viva sem replay `/zkau`; E2E provado; read-only por padrão (listar, abrir/inspecionar, consultar RA); escrita só sob `SANEAGO_ALLOW_WRITE` com auditoria em `.auth/audit.log`. Sem pendências de revisão. Melhorias futuras opcionais (não bloqueiam): tratar sessão expirada no meio da operação; testes offline em `tests/`; nota de que o `id` ZK só vale na sessão viva atual.
+
+---
+
+# CORREÇÃO DE RUMO — 2026-07-15 (Claude)
+
+**O objetivo real do usuário:** que o MCP exponha TODAS as aplicações do portal ZK, ao ponto de falar em linguagem natural ("abre uma RA na rua tal", "volume consumido da conta X", "asfalto lançado da RA/dia"). Escopo confirmado: **só portal ZK** (ECO7xx/ECO6xx...).
+
+**Gap descoberto:** a Etapa 2 (crawler/descoberta) do PLAN.md **nunca foi feita de verdade** — o Gemini curou 3 apps à mão. Falta o **levantamento automático de todas as aplicações** que o perfil do usuário acessa.
+
+**Arquitetura correta para o objetivo (reforço):** cada intenção em linguagem natural = **uma tool de negócio (vertical)** mapeada e provada E2E, como o `eco701_consultar_ra`. As tools genéricas (abrir/preencher/clicar) não servem para "abre uma RA na rua tal" — muito frágil. O caminho é: (1) descobrir TODAS as apps, (2) construir verticais uma a uma pela lista real.
+
+## PRÓXIMA TAREFA — Script de descoberta (Etapa 2 refeita)
+Criar `src/discover.js` que enumera TODAS as aplicações visíveis ao perfil e regenera `config/catalogo_aplicacoes.json`. Fontes, da mais limpa à mais bruta:
+1. Frame `montarMenu.zul` (construtor do menu) — extrair código + nome + `.zul` de cada app.
+2. Capturar rede no load do portal (`page.on('response')`) — se houver endpoint JSON de menu, usar (padrão ANATOMIA_ZKAU).
+3. Fallback: varrer a busca "Buscar..." por prefixos e agregar `z-listitem` únicos.
+
+Saída: array `[{codigo, nome, url_zul, origem}]`, deduplicado e ordenado. Rodar de verdade, colar no PROGRESSO.md a **contagem** de apps e uma amostra. **Depois** disso, priorizar verticais pela lista real.
+
+**Ao revisar (Revisão 4):** confirmar que `discover.js` rodou contra o portal, que o catálogo tem N>>3 apps reais, e que a fonte usada não foi replay manual de `/zkau`.
