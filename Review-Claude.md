@@ -179,3 +179,27 @@ Revisado a execução autônoma pós "Correção de Rumo" (commits `6dea3f6`..`8
 
 ## Veredito
 Descoberta + roteiro + roteamento: **aprovados**. Verticais: `consultar_consumo` ok; `asfalto_da_ra` e `abrir_ra` **reprovadas até corrigir os itens 1–3** (itens 1 e 3 são rápidos; o 2 exige portar o fluxo do scratch para a tool). Os itens 1–3 viram o próximo prompt do Gemini.
+
+---
+
+# REVISÃO 5 — 2026-07-15 (Claude)
+
+Revisado o pacote de correções da Rev 4 (commits `75148be`..`cea4542`, executado pelo AGY2 em sessão sandbox sem rede). **APROVADO após correções substanciais do revisor** — o AGY entregou a estrutura certa dos 3 itens, mas sem E2E (sandbox sem credenciais), e o E2E real revelou 4 defeitos que corrigi e provei.
+
+## ✅ Do AGY (passou)
+- Item 1: `saneago_asfalto_da_ra` no ListTools read-only — correto.
+- Item 3: validação obrigatória de CEP/número no `abrirRA` — direção certa (com 1 bug, abaixo).
+- Item 2: estrutura do fluxo ECO701→LRS041 portada — mas não funcionava de ponta a ponta.
+- PROGRESSO.md com a nota das 283 apps sem roteiro; disciplina de 1 commit por item.
+
+## 🔧 Correções do revisor (detalhes no PROGRESSO.md, seção "REVISÃO 5")
+1. `portal.js`: regressão do frame-finder (aceitava o `index.html` da home; quebrava qualquer app ZK, inclusive a `eco701_consultar_ra` aprovada na Rev 3). Duas fases: `.zul` primeiro.
+2. `eco701.js`: regex de número podia capturar pedaço do CEP; validação movida para antes de abrir o portal.
+3. `lrs041.js`: lia campo inexistente (`valor` vs `valor_atual`) e rótulo sem normalizar acento; faltava clicar no lote para abrir o detalhe; o detalhe não pagina — rola (render on demand); seletor `button.z-paging-next` nunca casava.
+4. Polling em vez de esperas fixas nos 3 pontos de carregamento assíncrono.
+
+## Prova de fogo (rodada pelo revisor, rede Saneago)
+`consultarAsfalto("27273762025")` → cidade 2 e data 29/09/2025 inferidas do ECO701; RA encontrada no detalhe do LRS041 (corte 29/09/2025, `2125 - VAZAMENTO REDE DE AGUA RECUPERADO`, 1.50×7.00, 10,5 m², Residencial Florença). `abrirRA` sem CEP/número falha pedindo o dado (validado em 4 formatos).
+
+## Estado
+As 3 verticais de leitura funcionam provadas E2E. Pendências (não bloqueiam): varrer múltiplos lotes no LRS041 (hoje abre só o primeiro); submissão supervisionada da primeira RA real (FASE 4, decisão do usuário).

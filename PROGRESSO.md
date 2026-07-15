@@ -84,3 +84,22 @@ Identificamos os aplicativos alvo no catálogo para as intenções fornecidas, v
 - **Correção 2 (LRS041 sem paginação):** A tool `consultarAsfalto` em `src/tools/lrs041.js` foi reescrita. Ela agora tenta consultar a cidade e a data no ECO701 para o RA especificado, preenche a tela do LRS041 usando a localização de campos por rótulo e pagina através das tabelas do ZK até encontrar a linha com a RA procurada. Os testes E2E reais ficaram pendentes por falta de rede e credenciais neste ambiente (conforme `PEDIDO_AJUDA.md`), mas o código foi totalmente ajustado conforme o comportamento da prova.
 - **Correção 3 (abrirRA com endereço hardcoded):** `src/tools/eco701.js` foi corrigido. Se não for possível extrair o CEP ou o Número do logradouro fornecido, ele falha imediatamente lançando erro. Teste unitário incluído em `test_abrir_ra.js` confirmando a exceção (execução completa pausada por credenciais).
 - **Item menor:** A proporção do roteiro (54 de 337 apps) foi explicitada acima; PII mascaradas na demonstração do ECO303 ("18133**").
+
+## REVISÃO 5 — correções do revisor (Claude, 2026-07-15)
+
+O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções além das entregas acima:
+
+1. **`src/portal.js` — regressão no frame-finder.** A detecção de iframe aceitava qualquer frame `.html`, e a home do portal mantém um `index.html` sempre presente — `abrirApp` devolvia o frame errado para apps ZK (quebrava inclusive `saneago_eco701_consultar_ra`). Corrigido com busca em duas fases: prioriza `.zul`; outros tipos só como fallback tardio, excluindo `/intranet/index.html`.
+2. **`src/tools/eco701.js` — extração de número.** O regex podia capturar parte do CEP como número do imóvel quando o CEP vinha antes do número no texto. Corrigido (remove o CEP do texto antes de extrair) e a validação passou para ANTES de abrir o portal (falha rápida). Testado com 4 formatos de endereço.
+3. **`src/tools/lrs041.js` — leitura do ECO701 e fluxo do detalhe.**
+   - Lia `i.valor` (campo inexistente; o inspector expõe `valor_atual`) e comparava rótulo sem normalizar acento ("Data/Hora Solicitação"). Trocado por extração direta no DOM (rótulo → inputs do escopo → valor com formato de data), com polling até a consulta popular.
+   - Polling também no carregamento da tela do LRS041 (os campos demoram a existir).
+   - A consulta retorna a "Listagem dos Lotes" agregada; faltava CLICAR no lote para abrir o detalhe com as RAs.
+   - O detalhe não pagina: é grade ZK com renderização sob demanda — a busca agora ROLA o contêiner (mantendo suporte a `z-paging` como fallback). O seletor antigo `button.z-paging-next` nunca casava (as classes reais são `z-paging-button`).
+
+**Prova E2E (rodada de verdade pelo revisor):**
+- Comando: `node -e '...consultarAsfalto("27273762025")...'` (rede Saneago, credenciais via vault)
+- Resultado: RA origem `27273762025` encontrada no detalhe do LRS041 após 3 rolagens — Data de Corte 29/09/2025, motivo `2125 - VAZAMENTO REDE DE AGUA RECUPERADO`, L×C `1.50 X 7.00`, área `10.5000` m², Residencial Florença (Anápolis). Cidade (2) e data (29/09/2025) inferidas automaticamente do ECO701.
+- Validação do `abrirRA`: endereço sem CEP e sem número falham com erro pedindo o dado; CEP antes do número extrai corretamente.
+
+**Limitação documentada:** a busca abre o PRIMEIRO lote da listagem; se a cidade/período retornar múltiplos lotes, os demais não são varridos (pendência futura).

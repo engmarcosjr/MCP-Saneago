@@ -77,18 +77,29 @@ async function abrirApp(nomeExibicao) {
 
   console.error(`[Portal] Aguardando carregamento do iframe da aplicacao...`);
   
-  // Procura o objeto Frame correspondente no Playwright (incluindo frames aninhados)
+  // Procura o objeto Frame correspondente no Playwright (incluindo frames aninhados).
+  // Duas fases: prioriza frames .zul (apps ZK); só aceita outros tipos (.jsp/.php/.html)
+  // como fallback tardio, porque a home do portal mantém um frame index.html sempre
+  // presente que, aceito de imediato, é retornado no lugar do .zul ainda carregando.
+  const naoEhFrameDeApp = (url) =>
+    url.includes("principal.zul") ||
+    url.includes("montarMenu.zul") ||
+    url.includes("bemVindo.zul") ||
+    url.includes("index_OLD.php") ||
+    url.includes("/intranet/index.html");
+
   for (let i = 0; i < 60; i++) {
     const frames = page.frames();
-    const appFrame = frames.find((f) => {
-      const url = f.url();
-      return (url.includes(".zul") || url.includes(".jsp") || url.includes(".php") || url.includes(".html") || url.includes(".htm")) && 
-             !url.includes("principal.zul") && 
-             !url.includes("montarMenu.zul") && 
-             !url.includes("bemVindo.zul") &&
-             !url.includes("index_OLD.php");
-    });
-    
+    let appFrame = frames.find((f) => f.url().includes(".zul") && !naoEhFrameDeApp(f.url()));
+
+    if (!appFrame && i >= 20) {
+      appFrame = frames.find((f) => {
+        const url = f.url();
+        return (url.includes(".jsp") || url.includes(".php") || url.includes(".html") || url.includes(".htm")) &&
+               !naoEhFrameDeApp(url);
+      });
+    }
+
     if (appFrame) {
       console.error(`[Portal] Frame encontrado! URL: ${appFrame.url()}`);
       

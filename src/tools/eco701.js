@@ -4,9 +4,35 @@ const { inspecionarTela } = require("../inspector");
 const { logAudit } = require("../audit");
 
 async function abrirRA(endereco, servico, confirmar) {
+  // Valida o endereço ANTES de abrir o portal (falha rápida, sem gastar sessão)
+  const cepMatch = endereco.match(/\d{5}-?\d{3}/);
+  if (!cepMatch) {
+    throw new Error("Não foi possível extrair o CEP do endereço informado. Por favor, forneça o CEP (ex: 75040-050).");
+  }
+  const cep = cepMatch[0].replace("-", "");
+
+  // Número do imóvel: remove o CEP do texto antes de procurar dígitos,
+  // senão um endereço com CEP antes do número capturaria parte do CEP.
+  const enderecoSemCep = endereco.replace(cepMatch[0], " ");
+  const numMatch = enderecoSemCep.match(/(?:nº|num\.?|numero|n\.?)\s*(\d+)/i);
+  let numero;
+  if (numMatch) {
+    numero = numMatch[1];
+  } else {
+    const parts = enderecoSemCep.split(/,|\s+/);
+    const possibleNum = parts.find(p => /^\d+$/.test(p));
+    if (possibleNum) {
+      numero = possibleNum;
+    }
+  }
+
+  if (!numero) {
+    throw new Error("Não foi possível extrair o número do endereço. Por favor, informe o número do local.");
+  }
+
   const frame = await abrirApp("ECO701");
   const appUrl = frame.url();
-  
+
   try {
     // 1. Clicar no botão Incluir
     const btnIncluirId = await frame.evaluate(() => {
@@ -25,30 +51,6 @@ async function abrirRA(endereco, servico, confirmar) {
 
     // 2. Localizar os campos do formulário
     let relatorio = await inspecionarTela(frame);
-    
-    // Tenta extrair CEP de 8 dígitos do endereço
-    const cepMatch = endereco.match(/\d{5}-?\d{3}/);
-    if (!cepMatch) {
-      throw new Error("Não foi possível extrair o CEP do endereço informado. Por favor, forneça o CEP (ex: 75040-050).");
-    }
-    const cep = cepMatch[0].replace("-", "");
-    
-    // Tenta extrair Número do endereço (e.g. "nº 550" ou "550")
-    const numMatch = endereco.match(/(?:nº|num|numero)?\s*(\d+)/i);
-    let numero;
-    if (numMatch && numMatch[1] !== cep) {
-      numero = numMatch[1];
-    } else {
-      const parts = endereco.split(/,|\s+/);
-      const possibleNum = parts.find(p => /^\d+$/.test(p) && p !== cep);
-      if (possibleNum) {
-        numero = possibleNum;
-      }
-    }
-    
-    if (!numero) {
-      throw new Error("Não foi possível extrair o número do endereço. Por favor, informe o número do local.");
-    }
 
     // Achar campo CEP
     const cepInput = relatorio.inputs.find(i => i.label === "CEP");
