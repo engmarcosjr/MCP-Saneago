@@ -4,3 +4,4 @@ config/credentials.json
 .env
 *.png
 *.log
+data/

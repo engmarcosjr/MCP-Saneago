@@ -33,12 +33,14 @@ async function abrirApp(nomeExibicao) {
   await page.waitForResponse(response => response.url().includes('/zkau') && response.status() === 200, { timeout: 10000 }).catch(() => {});
   await page.waitForTimeout(2000); // Aguarda renderizacao
 
-  // Tira um screenshot do estado atual para debug
-  const fs = require('fs');
-  if (!fs.existsSync('data')) fs.mkdirSync('data');
-  await page.screenshot({ path: 'data/debug_search.png', fullPage: true }).catch(() => {});
-  const html = await page.content().catch(() => '');
-  fs.writeFileSync('data/debug_search.html', html);
+  // Tira um screenshot do estado atual para debug se a variavel de ambiente permitir
+  if (process.env.DEBUG === '1') {
+    const fs = require('fs');
+    if (!fs.existsSync('data')) fs.mkdirSync('data');
+    await page.screenshot({ path: 'data/debug_search.png', fullPage: true }).catch(() => {});
+    const html = await page.content().catch(() => '');
+    fs.writeFileSync('data/debug_search.html', html);
+  }
 
   console.error(`[Portal] Aguardando resultado na lista de Aplicações...`);
   
@@ -79,11 +81,13 @@ async function abrirApp(nomeExibicao) {
     await page.locator('iframe[src*=".zul"]').first().waitFor({ state: "visible", timeout: 30000 });
   } catch (e) {
     console.error(`[Portal] Erro: iframe nao apareceu. Salvando screenshot e HTML para debug...`);
-    const fs = require('fs');
-    if (!fs.existsSync('data')) fs.mkdirSync('data');
-    await page.screenshot({ path: 'data/debug_portal2.png', fullPage: true }).catch(() => {});
-    const html = await page.content().catch(() => '');
-    fs.writeFileSync('data/debug_portal2.html', html);
+    if (process.env.DEBUG === '1') {
+      const fs = require('fs');
+      if (!fs.existsSync('data')) fs.mkdirSync('data');
+      await page.screenshot({ path: 'data/debug_portal2.png', fullPage: true }).catch(() => {});
+      const html = await page.content().catch(() => '');
+      fs.writeFileSync('data/debug_portal2.html', html);
+    }
     throw e;
   }
 
