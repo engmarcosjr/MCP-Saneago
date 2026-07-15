@@ -93,6 +93,20 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         required: ["elementId"],
       },
     });
+    tools.push({
+      name: "saneago_eco701_consultar_ra",
+      description: "Abre o ECO701, consulta o Registro de Atendimento (RA) especificado e retorna os dados da tela (textos e inputs).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA a ser consultado (ex: 1812692026)",
+          },
+        },
+        required: ["ra"],
+      },
+    });
   }
 
   return { tools };
@@ -184,6 +198,60 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           };
         } catch (error) {
           logAudit("saneago_clicar_botao", appUrl, `Botao ${elementId}`, `ERRO: ${error.message}`);
+          throw error;
+        }
+      }
+
+      case "saneago_eco701_consultar_ra": {
+        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        
+        const { ra } = request.params.arguments;
+        activeFrame = await abrirApp("ECO701");
+        const appUrl = activeFrame.url();
+        
+        try {
+          // localiza o campo "Numero do RA" usando a heuristica padrao
+          const ids = await activeFrame.locator('body').evaluate(() => {
+            const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
+            const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+            const labels = Array.from(document.querySelectorAll('label, span, div, td'));
+            for (const lb of labels) {
+              if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
+              const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
+              const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
+              if (inputs.length) return { raInputId: inputs[0].id };
+            }
+            return { raInputId: null };
+          });
+          
+          if (!ids.raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial');
+          
+          await preencherCampo(activeFrame, ids.raInputId, ra);
+          
+          const btn = activeFrame.getByRole('button', { name: /consultar/i }).first();
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+          } else {
+            await activeFrame.locator(`#${ids.raInputId}`).press('Enter');
+          }
+          
+          await activeFrame.page().waitForTimeout(3000); // Aguarda consulta carregar
+          logAudit("saneago_eco701_consultar_ra", appUrl, `RA ${ra}`, "SUCESSO");
+          
+          // Retorna os dados da tela
+          const text = await activeFrame.locator('body').innerText();
+          const relatorioPos = await inspecionarTela(activeFrame);
+          
+          return {
+            content: [
+              {
+                type: "text",
+                text: `RA ${ra} consultado.\nTexto visivel na tela:\n${text}\n\nCampos da tela:\n${JSON.stringify(relatorioPos, null, 2)}`,
+              },
+            ],
+          };
+        } catch (error) {
+          logAudit("saneago_eco701_consultar_ra", appUrl, `RA ${ra}`, `ERRO: ${error.message}`);
           throw error;
         }
       }
