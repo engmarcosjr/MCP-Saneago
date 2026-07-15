@@ -12,14 +12,14 @@ async function abrirApp(nomeExibicao) {
   const session = await getOrCreateSession();
   const page = session.page;
 
-  console.log(`[Portal] Navegando para a home para limpar abas abertas...`);
+  console.error(`[Portal] Navegando para a home para limpar abas abertas...`);
   await page.goto(PRINCIPAL_URL, { waitUntil: "networkidle", timeout: 60000 });
 
   // Na interface nova (Rede Social Corporativa), o campo de busca tem placeholder Buscar...
   const appInput = page.getByPlaceholder(/Buscar/i).first();
   await appInput.waitFor({ state: "visible", timeout: 30000 });
 
-  console.log(`[Portal] Buscando aplicativo: "${nomeExibicao}"...`);
+  console.error(`[Portal] Buscando aplicativo: "${nomeExibicao}"...`);
   await appInput.click();
   await appInput.fill(""); 
   
@@ -29,7 +29,7 @@ async function abrirApp(nomeExibicao) {
   // Digita sequencialmente para acionar o filtro dinamico do ZK
   await appInput.pressSequentially(codigoApp, { delay: 100 });
   
-  console.log(`[Portal] Aguardando resposta do ZK apos digitar...`);
+  console.error(`[Portal] Aguardando resposta do ZK apos digitar...`);
   await page.waitForResponse(response => response.url().includes('/zkau') && response.status() === 200, { timeout: 10000 }).catch(() => {});
   await page.waitForTimeout(2000); // Aguarda renderizacao
 
@@ -40,7 +40,7 @@ async function abrirApp(nomeExibicao) {
   const html = await page.content().catch(() => '');
   fs.writeFileSync('data/debug_search.html', html);
 
-  console.log(`[Portal] Aguardando resultado na lista de Aplicações...`);
+  console.error(`[Portal] Aguardando resultado na lista de Aplicações...`);
   
   // Aguarda aparecer a linha com o nome do aplicativo
   const safeRegex = nomeExibicao.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&').replace(/\s+/g, '\\s*');
@@ -49,23 +49,23 @@ async function abrirApp(nomeExibicao) {
   
   try {
     await opcao.waitFor({ state: "visible", timeout: 5000 });
-    console.log(`[Portal] Opcao encontrada na lista, clicando no botao...`);
+    console.error(`[Portal] Opcao encontrada na lista, clicando no botao...`);
     await opcao.locator('button').first().click();
   } catch (e) {
-    console.log(`[Portal] Opcao nao encontrada na lista pelo nome completo. Tentando apenas pelo codigo...`);
+    console.error(`[Portal] Opcao nao encontrada na lista pelo nome completo. Tentando apenas pelo codigo...`);
     const opcaoCodigo = page.getByRole("row", { name: new RegExp(codigoApp, "i") }).first();
     if (await opcaoCodigo.isVisible().catch(() => false)) {
-      console.log(`[Portal] OpcaoCodigo encontrada, clicando no botao...`);
+      console.error(`[Portal] OpcaoCodigo encontrada, clicando no botao...`);
       await opcaoCodigo.locator('button').first().click();
     } else {
-      console.log(`[Portal] Nenhuma opcao visivel, pressionando Enter na busca...`);
+      console.error(`[Portal] Nenhuma opcao visivel, pressionando Enter na busca...`);
       await appInput.press("Enter");
       await page.waitForResponse(response => response.url().includes('/zkau') && response.status() === 200, { timeout: 10000 }).catch(() => {});
       await page.waitForTimeout(2000);
       
       const opcaoPosEnter = page.getByRole("row", { name: new RegExp(codigoApp, "i") }).first();
       if (await opcaoPosEnter.isVisible().catch(() => false)) {
-        console.log(`[Portal] Opcao encontrada pos-enter, clicando no botao...`);
+        console.error(`[Portal] Opcao encontrada pos-enter, clicando no botao...`);
         await opcaoPosEnter.locator('button').first().click();
       } else {
         throw new Error(`Aplicacao ${codigoApp} nao encontrada na busca.`);
@@ -73,7 +73,7 @@ async function abrirApp(nomeExibicao) {
     }
   }
 
-  console.log(`[Portal] Aguardando carregamento do iframe da aplicacao...`);
+  console.error(`[Portal] Aguardando carregamento do iframe da aplicacao...`);
   
   try {
     await page.locator('iframe[src*=".zul"]').first().waitFor({ state: "visible", timeout: 30000 });
@@ -96,7 +96,7 @@ async function abrirApp(nomeExibicao) {
     });
     
     if (appFrame) {
-      console.log(`[Portal] Frame encontrado! URL: ${appFrame.url()}`);
+      console.error(`[Portal] Frame encontrado! URL: ${appFrame.url()}`);
       
       // Aguarda a pagina do frame terminar de carregar
       await appFrame.waitForLoadState("domcontentloaded").catch(() => {});

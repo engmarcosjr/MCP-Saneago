@@ -6,7 +6,7 @@
  * @returns {Promise<Object>} JSON estruturado com os elementos encontrados
  */
 async function inspecionarTela(frame) {
-  console.log(`[Inspector] Inspecionando frame: ${frame.url()}`);
+  console.error(`[Inspector] Inspecionando frame: ${frame.url()}`);
   
   // Extrai informacoes executando um script no contexto do frame
   const elementos = await frame.evaluate(() => {

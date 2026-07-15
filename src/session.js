@@ -61,7 +61,7 @@ async function doLoginIfNeeded(page, credentials) {
     return false;
   }
 
-  console.log(`[Session] Realizando login na Intranet Saneago usando credenciais de: ${credentials.source}...`);
+  console.error(`[Session] Realizando login na Intranet Saneago usando credenciais de: ${credentials.source}...`);
   const userInput = page.locator('input[type="text"], input[name*="user" i], input[id*="user" i], input[name*="login" i]').first();
   await userInput.fill(credentials.usuario);
   await passInput.fill(credentials.senha);
@@ -77,9 +77,9 @@ async function doLoginIfNeeded(page, credentials) {
   await page.waitForLoadState("networkidle", { timeout: 45000 }).catch(() => {});
   
   // Aguarda ate o campo de login desaparecer, indicando login realizado
-  console.log("[Session] Aguardando a tela de login sumir...");
+  console.error("[Session] Aguardando a tela de login sumir...");
   await passInput.waitFor({ state: "hidden", timeout: 30000 }).catch((e) => {
-    console.log("[Session] Aviso: campo de senha nao sumiu no tempo limite.", e.message);
+    console.error("[Session] Aviso: campo de senha nao sumiu no tempo limite.", e.message);
   });
   
   // Tratamento para aviso de senha expirando/expirada
@@ -93,10 +93,10 @@ async function doLoginIfNeeded(page, credentials) {
       }
     }
   } catch (e) {
-    console.log("[Session] Erro ao tratar expiracao de senha (ignorado):", e.message);
+    console.error("[Session] Erro ao tratar expiracao de senha (ignorado):", e.message);
   }
 
-  console.log("[Session] Login concluido com sucesso.");
+  console.error("[Session] Login concluido com sucesso.");
   return true;
 }
 
@@ -119,12 +119,12 @@ async function getOrCreateSession() {
         }
       }
     } catch (e) {
-      console.log("[Session] Erro ao validar sessao ativa, reiniciando...", e.message);
+      console.error("[Session] Erro ao validar sessao ativa, reiniciando...", e.message);
       await closeSession().catch(() => {});
     }
   }
 
-  console.log("[Session] Iniciando novo navegador...");
+  console.error("[Session] Iniciando novo navegador...");
   activeBrowser = await chromium.launch({ headless: true });
   
   // Tenta carregar storageState existente
@@ -136,7 +136,7 @@ async function getOrCreateSession() {
 
   if (fs.existsSync(storageStatePath)) {
     contextOptions.storageState = storageStatePath;
-    console.log("[Session] Carregando cookies de sessao anteriores...");
+    console.error("[Session] Carregando cookies de sessao anteriores...");
   }
 
   activeContext = await activeBrowser.newContext(contextOptions);
@@ -149,7 +149,7 @@ async function getOrCreateSession() {
     if (loggedIn) {
       // Salva novos cookies
       await activeContext.storageState({ path: storageStatePath });
-      console.log("[Session] Novos cookies salvos em storage-state.json");
+      console.error("[Session] Novos cookies salvos em storage-state.json");
     }
   } catch (e) {
     console.error("[Session] Falha ao inicializar a pagina:", e);
