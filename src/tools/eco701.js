@@ -26,27 +26,28 @@ async function abrirRA(endereco, servico, confirmar) {
     // 2. Localizar os campos do formulário
     let relatorio = await inspecionarTela(frame);
     
-    // Determinar o CEP e Número a partir do endereço
-    let cep = "75040050"; // default para Ada Centine
-    let numero = "550"; // default para Ada Centine
-    
     // Tenta extrair CEP de 8 dígitos do endereço
     const cepMatch = endereco.match(/\d{5}-?\d{3}/);
-    if (cepMatch) {
-      cep = cepMatch[0].replace("-", "");
+    if (!cepMatch) {
+      throw new Error("Não foi possível extrair o CEP do endereço informado. Por favor, forneça o CEP (ex: 75040-050).");
     }
+    const cep = cepMatch[0].replace("-", "");
     
     // Tenta extrair Número do endereço (e.g. "nº 550" ou "550")
     const numMatch = endereco.match(/(?:nº|num|numero)?\s*(\d+)/i);
-    if (numMatch && !cepMatch) {
+    let numero;
+    if (numMatch && numMatch[1] !== cep) {
       numero = numMatch[1];
     } else {
-      // Se tiver CEP, o número costuma vir após o CEP ou no fim
       const parts = endereco.split(/,|\s+/);
       const possibleNum = parts.find(p => /^\d+$/.test(p) && p !== cep);
       if (possibleNum) {
         numero = possibleNum;
       }
+    }
+    
+    if (!numero) {
+      throw new Error("Não foi possível extrair o número do endereço. Por favor, informe o número do local.");
     }
 
     // Achar campo CEP
