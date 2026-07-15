@@ -12,6 +12,7 @@ const { abrirApp } = require("./portal");
 const { inspecionarTela } = require("./inspector");
 const { preencherCampo, clicarBotao } = require("./executor");
 const { closeSession } = require("./session");
+const { logAudit } = require("./audit");
 
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -28,67 +29,73 @@ const server = new Server(
   }
 );
 
+const ALLOW_WRITE = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
+
 // Definicao das Ferramentas
 server.setRequestHandler(ListToolsRequestSchema, async () => {
-  return {
-    tools: [
-      {
-        name: "saneago_listar_aplicacoes",
-        description: "Lista as aplicacoes da Saneago disponiveis no catalogo para interacao automatizada.",
-        inputSchema: {
-          type: "object",
-          properties: {},
-          required: [],
-        },
+  const tools = [
+    {
+      name: "saneago_listar_aplicacoes",
+      description: "Lista as aplicacoes da Saneago disponiveis no catalogo para interacao automatizada.",
+      inputSchema: {
+        type: "object",
+        properties: {},
+        required: [],
       },
-      {
-        name: "saneago_abrir_e_inspecionar",
-        description: "Abre uma aplicacao pelo nome ou codigo e inspeciona sua tela inicial, retornando os campos interativos (inputs, botoes) com seus respectivos IDs ZK.",
-        inputSchema: {
-          type: "object",
-          properties: {
-            nomeAplicacao: {
-              type: "string",
-              description: "Nome ou codigo da aplicacao (ex: ECO701)",
-            },
+    },
+    {
+      name: "saneago_abrir_e_inspecionar",
+      description: "Abre uma aplicacao pelo nome ou codigo e inspeciona sua tela inicial, retornando os campos interativos (inputs, botoes) com seus respectivos IDs ZK.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          nomeAplicacao: {
+            type: "string",
+            description: "Nome ou codigo da aplicacao (ex: ECO701)",
           },
-          required: ["nomeAplicacao"],
         },
+        required: ["nomeAplicacao"],
       },
-      {
-        name: "saneago_preencher_campo",
-        description: "Preenche um campo de texto ou data em uma aplicacao ja aberta. A aplicacao deve ter sido aberta com saneago_abrir_e_inspecionar antes.",
-        inputSchema: {
-          type: "object",
-          properties: {
-            elementId: {
-              type: "string",
-              description: "ID do elemento ZK a ser preenchido (obtido via inspecao)",
-            },
-            valor: {
-              type: "string",
-              description: "O valor a ser preenchido",
-            },
+    }
+  ];
+
+  if (ALLOW_WRITE) {
+    tools.push({
+      name: "saneago_preencher_campo",
+      description: "Preenche um campo de texto ou data em uma aplicacao ja aberta. A aplicacao deve ter sido aberta com saneago_abrir_e_inspecionar antes.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          elementId: {
+            type: "string",
+            description: "ID do elemento ZK a ser preenchido (obtido via inspecao)",
           },
-          required: ["elementId", "valor"],
-        },
-      },
-      {
-        name: "saneago_clicar_botao",
-        description: "Clica em um botao de uma aplicacao ja aberta e retorna a nova inspecao da tela (caso a interface tenha mudado).",
-        inputSchema: {
-          type: "object",
-          properties: {
-            elementId: {
-              type: "string",
-              description: "ID do botao ZK a ser clicado (obtido via inspecao)",
-            },
+          valor: {
+            type: "string",
+            description: "O valor a ser preenchido",
           },
-          required: ["elementId"],
         },
+        required: ["elementId", "valor"],
       },
-    ],
-  };
+    });
+    
+    tools.push({
+      name: "saneago_clicar_botao",
+      description: "Clica em um botao de uma aplicacao ja aberta e retorna a nova inspecao da tela (caso a interface tenha mudado).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          elementId: {
+            type: "string",
+            description: "ID do botao ZK a ser clicado (obtido via inspecao)",
+          },
+        },
+        required: ["elementId"],
+      },
+    });
+  }
+
+  return { tools };
 });
 
 // Execucao das Ferramentas
@@ -125,43 +132,60 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "saneago_preencher_campo": {
+        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        
         const { elementId, valor } = request.params.arguments;
         
         if (!activeFrame) {
           throw new Error("Nenhuma aplicacao esta aberta. Use saneago_abrir_e_inspecionar primeiro.");
         }
         
-        await preencherCampo(activeFrame, elementId, valor);
-        
-        return {
-          content: [
-            {
-              type: "text",
-              text: `Campo ${elementId} preenchido com "${valor}".`,
-            },
-          ],
-        };
+        const appUrl = activeFrame.url();
+        try {
+          await preencherCampo(activeFrame, elementId, valor);
+          logAudit("saneago_preencher_campo", appUrl, `Campo ${elementId} = ${valor}`, "SUCESSO");
+          return {
+            content: [
+              {
+                type: "text",
+                text: `Campo ${elementId} preenchido com "${valor}".`,
+              },
+            ],
+          };
+        } catch (error) {
+          logAudit("saneago_preencher_campo", appUrl, `Campo ${elementId} = ${valor}`, `ERRO: ${error.message}`);
+          throw error;
+        }
       }
 
       case "saneago_clicar_botao": {
+        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        
         const { elementId } = request.params.arguments;
         
         if (!activeFrame) {
           throw new Error("Nenhuma aplicacao esta aberta. Use saneago_abrir_e_inspecionar primeiro.");
         }
         
-        await clicarBotao(activeFrame, elementId);
-        
-        const relatorioPos = await inspecionarTela(activeFrame);
-        
-        return {
-          content: [
-            {
-              type: "text",
-              text: `Botao ${elementId} clicado.\nNovo estado da tela:\n${JSON.stringify(relatorioPos, null, 2)}`,
-            },
-          ],
-        };
+        const appUrl = activeFrame.url();
+        try {
+          await clicarBotao(activeFrame, elementId);
+          logAudit("saneago_clicar_botao", appUrl, `Botao ${elementId}`, "SUCESSO");
+          
+          const relatorioPos = await inspecionarTela(activeFrame);
+          
+          return {
+            content: [
+              {
+                type: "text",
+                text: `Botao ${elementId} clicado.\nNovo estado da tela:\n${JSON.stringify(relatorioPos, null, 2)}`,
+              },
+            ],
+          };
+        } catch (error) {
+          logAudit("saneago_clicar_botao", appUrl, `Botao ${elementId}`, `ERRO: ${error.message}`);
+          throw error;
+        }
       }
 
       default:
