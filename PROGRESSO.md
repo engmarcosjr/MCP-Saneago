@@ -170,3 +170,11 @@ O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções a
 **Nota de padrão descoberta:** as URLs reais das telas usam o código SEM o "V" infixo do catálogo (`PGTV510` → `PGT510...zul`) — não usar `url.includes(codigo)` como asserção de identidade da tela.
 
 **Veredito: APROVADO.** Colisões resolvidas e provadas E2E. Correções do revisor: este registro, contagem 223→227 e amend do commit com coautoria dupla (o AGY commitou diretamente, contra o protocolo — commit não havia sido pushado).
+
+
+### FASE 4 — correções da forma de atendimento (AGY2)
+- Modificado `src/tools/eco701.js` para adicionar a seleção do combobox de Forma de Atendimento (padrão: "3 - INTERNO").
+- Modificado `src/tools/eco701.js` para tratar e detectar erros de validação (ex: "É necessário informar") após o clique em Gerar RA.
+- Modificado `src/tools/eco701.js` para extrair e retornar o "Número do RA" após o sucesso.
+- Modificado `src/index.js` para incluir o parâmetro `formaAtendimento` no `inputSchema` de `saneago_abrir_ra`.
+- Modificado `scratch/test_eco701_supervisionado.js` para aceitar a flag `--forma`.

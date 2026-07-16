@@ -176,6 +176,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           confirmar: {
             type: "boolean",
             description: "Deve ser true para submeter. Se false, apenas descreve o que sera feito.",
+          },
+          formaAtendimento: {
+            type: "string",
+            description: "Forma de atendimento selecionada (ex: '3 - INTERNO', '1 - TELEFONE')",
+            default: "3 - INTERNO"
           }
         },
         required: ["endereco", "servico", "confirmar"],
@@ -301,9 +306,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_abrir_ra": {
         if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
         
-        const { endereco, servico, confirmar } = request.params.arguments;
+        const { endereco, servico, confirmar, formaAtendimento } = request.params.arguments;
         try {
-          const resultado = await abrirRA(endereco, servico, confirmar);
+          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento);
           return {
             content: [
               {
