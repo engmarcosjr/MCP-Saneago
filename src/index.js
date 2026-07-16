@@ -9,7 +9,7 @@ const {
 
 const catalogo = require("../config/catalogo_aplicacoes.json");
 const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
+const { inspecionarTela, aguardarInputPorRotulo } = require("./inspector");
 const { preencherCampo, clicarBotao } = require("./executor");
 const { closeSession } = require("./session");
 const { logAudit } = require("./audit");
@@ -328,33 +328,17 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const appUrl = activeFrame.url();
         
         try {
-          let ids = { raInputId: null };
-          for (let i = 0; i < 20; i++) {
-            ids = await activeFrame.locator('body').evaluate(() => {
-              const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-              const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-              const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-              for (const lb of labels) {
-                if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-                const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-                const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
-                if (inputs.length) return { raInputId: inputs[0].id };
-              }
-              return { raInputId: null };
-            });
-            if (ids.raInputId) break;
-            await activeFrame.page().waitForTimeout(500);
-          }
+          const raInputId = await aguardarInputPorRotulo(activeFrame, 'NUMERO DO RA');
           
-          if (!ids.raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial do ECO701 apos aguardar carregamento');
+          if (!raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial do ECO701 apos aguardar carregamento');
           
-          await preencherCampo(activeFrame, ids.raInputId, ra);
+          await preencherCampo(activeFrame, raInputId, ra);
           
           const btn = activeFrame.getByRole('button', { name: /consultar/i }).first();
           if (await btn.isVisible().catch(() => false)) {
             await btn.click();
           } else {
-            await activeFrame.locator(`#${ids.raInputId}`).press('Enter');
+            await activeFrame.locator(`#${raInputId}`).press('Enter');
           }
           
           await activeFrame.page().waitForTimeout(3000); // Aguarda consulta carregar

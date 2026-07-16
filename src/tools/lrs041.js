@@ -1,6 +1,6 @@
 const { abrirApp } = require("../portal");
 const { preencherCampo, clicarBotao } = require("../executor");
-const { inspecionarTela } = require("../inspector");
+const { inspecionarTela, aguardarInputPorRotulo } = require("../inspector");
 const { logAudit } = require("../audit");
 
 // Localiza por rótulo os campos da tela de filtro do LRS041 (Cidade, período e botão Consultar).
@@ -50,32 +50,16 @@ async function consultarAsfalto(raOrigem, data) {
     console.error(`[LRS041] Consultando RA ${raOrigem} no ECO701 para descobrir data/cidade...`);
     const frameEco = await abrirApp("ECO701");
     
-    let idsEco = { raInputId: null };
-    for (let i = 0; i < 20; i++) {
-      idsEco = await frameEco.locator('body').evaluate(() => {
-        const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-        const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-        const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-        for (const lb of labels) {
-          if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-          const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-          const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
-          if (inputs.length) return { raInputId: inputs[0].id };
-        }
-        return { raInputId: null };
-      });
-      if (idsEco.raInputId) break;
-      await frameEco.page().waitForTimeout(500);
-    }
+    const raInputId = await aguardarInputPorRotulo(frameEco, 'NUMERO DO RA');
     
-    if (idsEco.raInputId) {
-      await preencherCampo(frameEco, idsEco.raInputId, raOrigem);
+    if (raInputId) {
+      await preencherCampo(frameEco, raInputId, raOrigem);
       
       const btn = frameEco.getByRole('button', { name: /consultar/i }).first();
       if (await btn.isVisible().catch(() => false)) {
         await btn.click();
       } else {
-        await frameEco.locator(`#${idsEco.raInputId}`).press('Enter');
+        await frameEco.locator(`#${raInputId}`).press('Enter');
       }
       
       // A consulta popula a tela de forma assíncrona; faz polling até a data aparecer.

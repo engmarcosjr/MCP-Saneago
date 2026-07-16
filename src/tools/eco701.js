@@ -1,6 +1,6 @@
 const { abrirApp } = require("../portal");
 const { preencherCampo } = require("../executor");
-const { inspecionarTela } = require("../inspector");
+const { inspecionarTela, aguardarInputPorRotulo } = require("../inspector");
 const { logAudit } = require("../audit");
 
 async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INTERNO") {
@@ -141,30 +141,19 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
     });
 
     if (comboId) {
-      // Abre o combobox
-      await frame.evaluate((id) => {
-        const input = document.getElementById(id);
-        const combo = input.closest('.z-combobox');
-        const btn = combo.querySelector('.z-combobox-button, a, i');
-        if (btn) btn.click(); else input.click();
+      console.error(`[AbrirRA] Preenchendo Forma de Atendimento (${comboId}) com ${formaAtendimento}...`);
+      await preencherCampo(frame, comboId, formaAtendimento);
+      await frame.locator(`#${comboId}`).press("Tab");
+      await frame.page().waitForTimeout(1000); // Aguarda onSelect do ZK
+
+      const valorFinal = await frame.evaluate((id) => {
+        return document.getElementById(id).value;
       }, comboId);
-      await frame.page().waitForTimeout(1500);
 
-      // Clica na opção correspondente
-      const clicked = await frame.evaluate((formaStr) => {
-        const itens = Array.from(document.querySelectorAll('.z-combobox-popup .z-comboitem, .z-comboitem'));
-        const item = itens.find(i => i.innerText.trim().toUpperCase() === formaStr.toUpperCase());
-        if (item) {
-          item.click();
-          return true;
-        }
-        return false;
-      }, formaAtendimento);
-
-      if (!clicked) {
-        throw new Error(`Não foi possível encontrar a opção "${formaAtendimento}" na lista de Forma de Atendimento.`);
+      const norm = (s) => (s || '').replace(/\s+/g, ' ').trim().toUpperCase();
+      if (norm(valorFinal) !== norm(formaAtendimento)) {
+        throw new Error(`Não foi possível selecionar a Forma de Atendimento "${formaAtendimento}". Valor no campo ficou: "${valorFinal}"`);
       }
-      await frame.page().waitForTimeout(1000);
     } else {
       console.error(`[AbrirRA] Combobox 'Forma de Atendimento' não encontrado.`);
     }
@@ -201,6 +190,10 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
       }).filter(item => item.valor && item.valor.trim() !== "");
     });
 
+    if (!comboId) {
+      resumo.push({ label: "Forma de Atendimento", valor: "NÃO ENCONTRADA NA TELA" });
+    }
+
     const isWriteAllowed = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
 
     if (!confirmar) {
@@ -216,30 +209,59 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
       throw new Error("Ações de escrita reais estão bloqueadas pelo ambiente (SANEAGO_ALLOW_WRITE).");
     }
 
+    if (!comboId) {
+      throw new Error("Não é possível gerar RA: o campo obrigatório 'Forma de Atendimento' não foi encontrado na tela.");
+    }
+
     if (!ids.btnGerarId) {
       throw new Error("Botão 'Gerar RA' não encontrado no formulário");
     }
 
     console.error(`[AbrirRA] Clicando no botão 'Gerar RA' (${ids.btnGerarId})...`);
     await frame.locator(`#${ids.btnGerarId}`).click();
-    await frame.page().waitForTimeout(8000); // Aguarda criação do RA
+    
+    // Polling do resultado
+    let numeroRA = null;
+    let errorMsg = null;
+    for (let i = 0; i < 30; i++) {
+      await frame.page().waitForTimeout(1000);
 
-    // Verifica mensagens de validação (erro)
-    const errorMsg = await frame.evaluate(() => {
-      // Procura por caixas de erro/mensagem ativas
-      const msgBoxes = Array.from(document.querySelectorAll('.z-messagebox, .z-errbox, .z-notification'));
-      const visibleMsgBoxes = msgBoxes.filter(el => el.getBoundingClientRect().width > 0);
-      if (visibleMsgBoxes.length > 0) {
-        return visibleMsgBoxes.map(el => el.innerText.trim()).join(" | ");
+      const raId = await aguardarInputPorRotulo(frame, 'NUMERO DO RA', { tentativas: 1, intervalo: 0 });
+      if (raId) {
+        const val = await frame.evaluate((id) => document.getElementById(id).value, raId);
+        if (val && val.trim()) {
+          numeroRA = val.trim();
+          break; // Sucesso
+        }
       }
-      
-      // Procura no texto da página por alertas conhecidos
-      const text = document.body.innerText;
-      if (text.includes("É necessário informar") || text.includes("Erro")) {
-        return "Detectada mensagem de erro ou validação no texto da página.";
-      }
-      return null;
-    });
+
+      errorMsg = await frame.evaluate(() => {
+        const msgBoxes = Array.from(document.querySelectorAll('.z-errbox, .z-messagebox-error, .z-notification-error'));
+        const visibleMsgBoxes = msgBoxes.filter(el => el.getBoundingClientRect().width > 0);
+        if (visibleMsgBoxes.length > 0) {
+          return visibleMsgBoxes.map(el => el.innerText.trim()).join(" | ");
+        }
+        
+        const text = document.body.innerText;
+        if (text.includes("É necessário informar")) {
+          return "Detectada mensagem de erro ou validação no texto da página.";
+        }
+        return null;
+      });
+
+      if (errorMsg) break;
+    }
+
+    if (numeroRA) {
+      const popupText = await frame.locator('body').innerText();
+      logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (SUBMETIDO)`, "SUCESSO");
+      return {
+        success: true,
+        numeroRA,
+        message: `RA submetido com sucesso! Retorno do portal:\n${popupText}`,
+        resumo
+      };
+    }
 
     if (errorMsg) {
       logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (ERRO DE VALIDACAO)`, "ERRO");
@@ -250,27 +272,10 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
       };
     }
 
-    // Extrair Número do RA da tela
-    const numeroRA = await frame.evaluate(() => {
-      const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-      const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-      for (const lb of labels) {
-        if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-        const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-        const inputs = Array.from(scope.querySelectorAll('input')).filter(el => el.getBoundingClientRect().width > 0);
-        if (inputs.length && inputs[0].value) return inputs[0].value;
-      }
-      return null;
-    });
-
-    // Captura o texto do popup de confirmação do ZK
-    const popupText = await frame.locator('body').innerText();
-    logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (SUBMETIDO)`, "SUCESSO");
-
+    logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (INDETERMINADO)`, "ERRO");
     return {
-      success: true,
-      numeroRA,
-      message: `RA submetido com sucesso! Retorno do portal:\n${popupText}`,
+      success: false,
+      message: "Resultado INDETERMINADO: o portal não retornou um número de RA nem uma mensagem de erro em tempo hábil. VERIFIQUE MANUALMENTE no portal se o RA foi aberto antes de tentar novamente.",
       resumo
     };
 

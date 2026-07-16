@@ -178,3 +178,12 @@ O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções a
 - Modificado `src/tools/eco701.js` para extrair e retornar o "Número do RA" após o sucesso.
 - Modificado `src/index.js` para incluir o parâmetro `formaAtendimento` no `inputSchema` de `saneago_abrir_ra`.
 - Modificado `scratch/test_eco701_supervisionado.js` para aceitar a flag `--forma`.
+
+### FASE 4 — correções da Revisão 8 (AGY3, revisado por Claude, 2026-07-16)
+Pacote executado pelo AGY3 (Gemini 3.1 Pro, sandbox sem rede) a partir da REVISÃO 8 do `Review-Claude.md`; detalhes em `RELATORIO_REV8.md`.
+- **Item 1:** detecção de erro pós-submit restrita a `.z-errbox`/`.z-messagebox-error`/`.z-notification-error` + frase "É necessário informar"; critério decisivo de sucesso = campo "Número do RA" preenchido; sem número nem erro em 30 s → `success:false` INDETERMINADO com instrução de verificação manual (nunca retry automático).
+- **Item 2:** Forma de Atendimento agora via `preencherCampo` + Tab (dispara onChange do ZK) com verificação do `value` final normalizado; abandonado o `.click()` no `.z-comboitem`.
+- **Item 3:** combo ausente entra no `resumo` do pré-submit como "NÃO ENCONTRADA NA TELA" e aborta a submissão real antes do "Gerar RA".
+- **Item 4:** helper `aguardarInputPorRotulo` criado em `src/inspector.js`; 3 cópias da heurística eliminadas (`index.js`, `lrs041.js`, `eco701.js`); `waitForTimeout(8000)` pós-submit substituído por polling de até 30 s.
+- **Revisão (Claude):** diff lido na íntegra, fiel à especificação; `node --check` verde nos 4 arquivos (reproduzido pelo revisor). Notas não bloqueantes: `press("Tab")` redundante após `preencherCampo` (que já faz blur) e verificação da combo por igualdade estrita pode exigir ajuste se o ZK autocompletar com texto extra — validar no E2E.
+- **Pendência (gate da FASE 4):** prova E2E supervisionada — primeiro pré-submit `node scratch/test_eco701_supervisionado.js` (sem `--confirmar`), depois submissão real com Marcos Jr presente.
