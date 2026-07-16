@@ -1,0 +1,1117 @@
+{
+  "Contracheque": {
+    "modulo": "Administração Pessoal",
+    "menu": "Consulta",
+    "nome": "Contracheque"
+  },
+  "Comprovante de Rendimentos": {
+    "modulo": "Administração Pessoal",
+    "menu": "Consulta",
+    "nome": "Comprovante de Rendimentos"
+  },
+  "Escala de Férias": {
+    "modulo": "Administração Pessoal",
+    "menu": "Consulta",
+    "nome": "Escala de Férias"
+  },
+  "Definir Adiantamento de 13° Salário": {
+    "modulo": "Administração Pessoal",
+    "menu": "Consulta",
+    "nome": "Definir Adiantamento de 13° Salário"
+  },
+  "Atualização CTPS": {
+    "modulo": "Administração Pessoal",
+    "menu": "Relatório",
+    "nome": "Atualização CTPS"
+  },
+  "Emissão de Frequência": {
+    "modulo": "Administração Pessoal",
+    "menu": "Relatório",
+    "nome": "Emissão de Frequência"
+  },
+  "Enviar Declaração IRPF": {
+    "modulo": "Administração Pessoal",
+    "menu": "Relatório",
+    "nome": "Enviar Declaração IRPF"
+  },
+  "Enviar Nota Fiscal": {
+    "modulo": "Administração Pessoal",
+    "menu": "Cadastro",
+    "nome": "Enviar Nota Fiscal"
+  },
+  "Agendamento/Alteração de Férias": {
+    "modulo": "Administração Pessoal",
+    "menu": "Cadastro",
+    "nome": "Agendamento/Alteração de Férias"
+  },
+  "Rodízio de Processos": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Cobrança",
+    "nome": "Rodízio de Processos"
+  },
+  "Consulta Cobrança": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Consulta",
+    "nome": "Consulta Cobrança"
+  },
+  "Consulta Processo Conta": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Consulta",
+    "nome": "Consulta Processo Conta"
+  },
+  "Relatório de Contas Com o Escritório": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Relatório",
+    "nome": "Relatório de Contas Com o Escritório"
+  },
+  "Agenda Audiência": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Judicial",
+    "nome": "Agenda Audiência"
+  },
+  "Consulta Judicial": {
+    "modulo": "Apoio Jurídico",
+    "menu": "Judicial",
+    "nome": "Consulta Judicial"
+  },
+  "Relação Mensal Duração Serviço Encerrado": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Relação Mensal Duração Serviço Encerrado"
+  },
+  "Relação Mensal de Serviços Atendidos": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Relação Mensal de Serviços Atendidos"
+  },
+  "Análise tempo padrão/execução/perfomance": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Análise tempo padrão/execução/perfomance"
+  },
+  "Serviços Executados no Interior": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Serviços Executados no Interior"
+  },
+  "Emite Serviços Executados em Atraso": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Emite Serviços Executados em Atraso"
+  },
+  "Índices do SIPSAP": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Índices do SIPSAP"
+  },
+  "Atendimento Serv. p/ UO e Período": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Atendimento Serv. p/ UO e Período"
+  },
+  "Atendimento P/ Atendente e Período": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Atendimento P/ Atendente e Período"
+  },
+  "Paralisações no Abastecimento de Água": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Paralisações no Abastecimento de Água"
+  },
+  "Extravasamento de Esgoto": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Extravasamento de Esgoto"
+  },
+  "Serviços Comerciais Executados": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Serviços Comerciais Executados"
+  },
+  "Atendimento Por Período": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Atendimento Por Período"
+  },
+  "Atendimento Por Cidade": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Atendimento Por Cidade"
+  },
+  "Atendimento Por Código de Serviço": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Atendimento Por Código de Serviço"
+  },
+  "RA-RI por Cidade e Bairro": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "RA-RI por Cidade e Bairro"
+  },
+  "Indicadores do SIPSAP por Período": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Indicadores do SIPSAP por Período"
+  },
+  "Relação de Serviços Executados": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Relação de Serviços Executados"
+  },
+  "Materiais Utilizados do SIPSAP": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Materiais Utilizados do SIPSAP"
+  },
+  "Resumo de Vazamentos": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Resumo de Vazamentos"
+  },
+  "Serviço executado por conta": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Serviço executado por conta"
+  },
+  "Relatório de recomposição asfáltica": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Relatório de recomposição asfáltica"
+  },
+  "Resumo dos Serviços": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Resumo dos Serviços"
+  },
+  "Monitoramento de Atendimento": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Relatório",
+    "nome": "Monitoramento de Atendimento"
+  },
+  "Distribuição de Serviço": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Distribuição de Serviço"
+  },
+  "Serviço Executado no Interior": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Serviço Executado no Interior"
+  },
+  "Extravazamento de Esgoto Sanitario": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Extravazamento de Esgoto Sanitario"
+  },
+  "Cadastrar situação do distrito SIPSAP": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Cadastrar situação do distrito SIPSAP"
+  },
+  "Serviço resposta por serviço solicitação": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Serviço resposta por serviço solicitação"
+  },
+  "Lançamento de serviços executados": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Lançamento de serviços executados"
+  },
+  "Manter estoque de Material por viatura": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Manter estoque de Material por viatura"
+  },
+  "Equipes": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Equipes"
+  },
+  "Ocorrências de Esgoto por RA": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Consulta",
+    "nome": "Ocorrências de Esgoto por RA"
+  },
+  "Ocorrências de Esgoto por Endereço": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Consulta",
+    "nome": "Ocorrências de Esgoto por Endereço"
+  },
+  "Consulta RA's com D.S.": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Consulta",
+    "nome": "Consulta RA's com D.S."
+  },
+  "RA Pendente": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Consulta",
+    "nome": "RA Pendente"
+  },
+  "Acompanhar Atendimento": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Consulta",
+    "nome": "Acompanhar Atendimento"
+  },
+  "Validar Corte de Asfalto": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Corte de Asfalto",
+    "nome": "Validar Corte de Asfalto"
+  },
+  "Atendimento": {
+    "modulo": "ATENDIMENTO AO CLIENTE",
+    "menu": "Portal de Atendimento",
+    "nome": "Atendimento"
+  },
+  "Protocolo de Atendimento": {
+    "modulo": "ATENDIMENTO AO CLIENTE",
+    "menu": "Consulta",
+    "nome": "Protocolo de Atendimento"
+  },
+  "Planejamento de Recadastramento": {
+    "modulo": "Cadastro Comercial",
+    "menu": "Rotas",
+    "nome": "Planejamento de Recadastramento"
+  },
+  "Autorizar Rotas para Distribuição": {
+    "modulo": "Cadastro Comercial",
+    "menu": "Rotas",
+    "nome": "Autorizar Rotas para Distribuição"
+  },
+  "Distribuição de Rotas": {
+    "modulo": "Cadastro Comercial",
+    "menu": "Rotas",
+    "nome": "Distribuição de Rotas"
+  },
+  "Rel. de Produtividade do Recadastramento": {
+    "modulo": "Cadastro Comercial",
+    "menu": "Rotas",
+    "nome": "Rel. de Produtividade do Recadastramento"
+  },
+  "Registrar Inventário de Bens": {
+    "modulo": "Contabilidade Patrimonial",
+    "menu": "Cadastro",
+    "nome": "Registrar Inventário de Bens"
+  },
+  "Solicitar Transferência Bem Patrimonial": {
+    "modulo": "Contabilidade Patrimonial",
+    "menu": "Transferência de Bens",
+    "nome": "Solicitar Transferência Bem Patrimonial"
+  },
+  "Acompanhar Transf. de Bens Patrimoniais": {
+    "modulo": "Contabilidade Patrimonial",
+    "menu": "Transferência de Bens",
+    "nome": "Acompanhar Transf. de Bens Patrimoniais"
+  },
+  "Consulta de Bens Patrimoniais": {
+    "modulo": "Contabilidade Patrimonial",
+    "menu": "Transferência de Bens",
+    "nome": "Consulta de Bens Patrimoniais"
+  },
+  "Registrar Parecer Transferências de Bens": {
+    "modulo": "Contabilidade Patrimonial",
+    "menu": "Transferência de Bens",
+    "nome": "Registrar Parecer Transferências de Bens"
+  },
+  "Lista para Análise": {
+    "modulo": "Controle de AVTOs",
+    "menu": "AVTO",
+    "nome": "Lista para Análise"
+  },
+  "Consulta AVTO": {
+    "modulo": "Controle de AVTOs",
+    "menu": "AVTO",
+    "nome": "Consulta AVTO"
+  },
+  "Relatórios Gerenciais": {
+    "modulo": "Controle de AVTOs",
+    "menu": "Relatórios",
+    "nome": "Relatórios Gerenciais"
+  },
+  "Manutenção": {
+    "modulo": "Controle de Viagens",
+    "menu": "Cartão",
+    "nome": "Manutenção"
+  },
+  "Impressão Termo": {
+    "modulo": "Controle de Viagens",
+    "menu": "Cartão",
+    "nome": "Impressão Termo"
+  },
+  "Manter Empregados com Cartão Viagem": {
+    "modulo": "Controle de Viagens",
+    "menu": "Cartão",
+    "nome": "Manter Empregados com Cartão Viagem"
+  },
+  "Solicitação Viagem": {
+    "modulo": "Controle de Viagens",
+    "menu": "Solicitação",
+    "nome": "Solicitação Viagem"
+  },
+  "Conta": {
+    "modulo": "Controle de Viagens",
+    "menu": "Prestação",
+    "nome": "Conta"
+  },
+  "Prestar Contas Cartão Corporativo": {
+    "modulo": "Controle de Viagens",
+    "menu": "Prestação",
+    "nome": "Prestar Contas Cartão Corporativo"
+  },
+  "Distância entre cidade": {
+    "modulo": "Controle de Viagens",
+    "menu": "Manutenção",
+    "nome": "Distância entre cidade"
+  },
+  "Atividades": {
+    "modulo": "Controle Atividades",
+    "menu": "Cadastro",
+    "nome": "Atividades"
+  },
+  "Melhorias Previstas": {
+    "modulo": "Controle Atividades",
+    "menu": "Cadastro",
+    "nome": "Melhorias Previstas"
+  },
+  "Atividades Diárias": {
+    "modulo": "Controle Atividades",
+    "menu": "Relatório",
+    "nome": "Atividades Diárias"
+  },
+  "Relaciona Contas Condomínio": {
+    "modulo": "COMERCIAL - WEBCOM",
+    "menu": "Cadastro",
+    "nome": "Relaciona Contas Condomínio"
+  },
+  "Abertura de Financiamento": {
+    "modulo": "COMERCIAL - WEBCOM",
+    "menu": "Faturamento",
+    "nome": "Abertura de Financiamento"
+  },
+  "Controle de NFAg": {
+    "modulo": "COMERCIAL - WEBCOM",
+    "menu": "Faturamento",
+    "nome": "Controle de NFAg"
+  },
+  "WEBCOM - Vídeo Aulas": {
+    "modulo": "COMERCIAL - WEBCOM",
+    "menu": "Diversos",
+    "nome": "WEBCOM - Vídeo Aulas"
+  },
+  "Solicitar Titularidade": {
+    "modulo": "COMERCIAL - WEBCOM",
+    "menu": "Titularidade",
+    "nome": "Solicitar Titularidade"
+  },
+  "Consulta de documentos digitalizados": {
+    "modulo": "CONTROLE DE DOCUMENTOS",
+    "menu": "Documentos",
+    "nome": "Consulta de documentos digitalizados"
+  },
+  "IQA Anual": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Relatório",
+    "nome": "IQA Anual"
+  },
+  "Demonstrativo Qtdes de Contas por Bairro": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Relatório",
+    "nome": "Demonstrativo Qtdes de Contas por Bairro"
+  },
+  "Gráfico do IQA Médio por Cidade": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Relatório",
+    "nome": "Gráfico do IQA Médio por Cidade"
+  },
+  "Irregularidades": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Relatório",
+    "nome": "Irregularidades"
+  },
+  "Resumo das Irregularidades": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Relatório",
+    "nome": "Resumo das Irregularidades"
+  },
+  "Cadastro de Mananciais/Bacias": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Cadastro",
+    "nome": "Cadastro de Mananciais/Bacias"
+  },
+  "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA": {
+    "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
+    "menu": "Consulta",
+    "nome": "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA"
+  },
+  "Cadastro de Cidade": {
+    "modulo": "Dados Corporativos",
+    "menu": "Cadastro",
+    "nome": "Cadastro de Cidade"
+  },
+  "Logradouro": {
+    "modulo": "Dados Corporativos",
+    "menu": "Cadastro",
+    "nome": "Logradouro"
+  },
+  "Relaciona Logradouro - Bairro": {
+    "modulo": "Dados Corporativos",
+    "menu": "Cadastro",
+    "nome": "Relaciona Logradouro - Bairro"
+  },
+  "Cep Correios": {
+    "modulo": "Dados Corporativos",
+    "menu": "Consulta",
+    "nome": "Cep Correios"
+  },
+  "Consulta de RDs": {
+    "modulo": "Gestão de Documentos",
+    "menu": "Consulta",
+    "nome": "Consulta de RDs"
+  },
+  "Requisição Obras/Serviços": {
+    "modulo": "Gestão Contratos",
+    "menu": "Requisição",
+    "nome": "Requisição Obras/Serviços"
+  },
+  "Consulta Processo Licitatório": {
+    "modulo": "Gestão Contratos",
+    "menu": "Contratação",
+    "nome": "Consulta Processo Licitatório"
+  },
+  "Contratos por UO, Cidade, Forn. e Gestor": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Contratos por UO, Cidade, Forn. e Gestor"
+  },
+  "Fornecedor": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Fornecedor"
+  },
+  "Processo": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Processo"
+  },
+  "Orçamento de Programas": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Orçamento de Programas"
+  },
+  "Requisições por Gestor": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Requisições por Gestor"
+  },
+  "Requisições por UO": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Requisições por UO"
+  },
+  "Contratos por Gestor": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Contratos por Gestor"
+  },
+  "Consulta Contrato Saneago x SAP": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Consulta Contrato Saneago x SAP"
+  },
+  "Unidades Consumidoras de Energia": {
+    "modulo": "Gestão Energética",
+    "menu": "Cadastro",
+    "nome": "Unidades Consumidoras de Energia"
+  },
+  "Interrupção de Energia": {
+    "modulo": "Gestão Energética",
+    "menu": "Cadastro",
+    "nome": "Interrupção de Energia"
+  },
+  "Cadastro de Veículo": {
+    "modulo": "Gestão Transporte",
+    "menu": "Veículos",
+    "nome": "Cadastro de Veículo"
+  },
+  "Cadastro de Motorista": {
+    "modulo": "Gestão Transporte",
+    "menu": "Motoristas",
+    "nome": "Cadastro de Motorista"
+  },
+  "Nova Ordem de Tráfego": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Nova Ordem de Tráfego"
+  },
+  "Registro Offline": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Registro Offline"
+  },
+  "Resumo": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Resumo"
+  },
+  "Ordem de Tráfego em Reserva": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Ordem de Tráfego em Reserva"
+  },
+  "Empregados Ordem de Tráfego": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Empregados Ordem de Tráfego"
+  },
+  "Veículos Próprios": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Veículos Próprios"
+  },
+  "Gastos por Periodo": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Gastos por Periodo"
+  },
+  "Ordens de Tráfego p/ Período e Situação": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Ordens de Tráfego p/ Período e Situação"
+  },
+  "Motoristas": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Motoristas"
+  },
+  "Veiculos Alugados": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Veiculos Alugados"
+  },
+  "Ordem de tráfego por motorista": {
+    "modulo": "Gestão Transporte",
+    "menu": "Relatórios",
+    "nome": "Ordem de tráfego por motorista"
+  },
+  "Consumo Master por Cidade": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Consumo Master por Cidade"
+  },
+  "Compara Consumos Medidos": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Compara Consumos Medidos"
+  },
+  "Contratos a Vencer": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Contratos a Vencer"
+  },
+  "Consumo e Faturamento Individualizados": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Consumo e Faturamento Individualizados"
+  },
+  "Cliente por Faixa de Consumo": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Cliente por Faixa de Consumo"
+  },
+  "Controle do Envio do Resumo": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Consulta",
+    "nome": "Controle do Envio do Resumo"
+  },
+  "Faturamento": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Gráfico",
+    "nome": "Faturamento"
+  },
+  "Contrato Comercial": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Cadastro",
+    "nome": "Contrato Comercial"
+  },
+  "Resumo de Faturamento": {
+    "modulo": "Grandes Clientes Web",
+    "menu": "Cadastro",
+    "nome": "Resumo de Faturamento"
+  },
+  "Fale com Compliance": {
+    "modulo": "GESTÃO DE GOVERNANÇA",
+    "menu": "Compliance",
+    "nome": "Fale com Compliance"
+  },
+  "Previsto X Executado": {
+    "modulo": "GESTÃO DE OBRAS",
+    "menu": "Consulta",
+    "nome": "Previsto X Executado"
+  },
+  "Consulta Empreendimento": {
+    "modulo": "GESTÃO DE OBRAS",
+    "menu": "Consulta",
+    "nome": "Consulta Empreendimento"
+  },
+  "Cadastro de Ocorrêcias nas Amostras": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Operação",
+    "nome": "Cadastro de Ocorrêcias nas Amostras"
+  },
+  "Ocorrências nas Análises": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Operação",
+    "nome": "Ocorrências nas Análises"
+  },
+  "Consultar Amostras": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Consulta",
+    "nome": "Consultar Amostras"
+  },
+  "Amostras Liberadas por Período": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Consulta",
+    "nome": "Amostras Liberadas por Período"
+  },
+  "Laudos Laboratoriais": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Relatório",
+    "nome": "Laudos Laboratoriais"
+  },
+  "Relatório do IQEt por data": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Relatório",
+    "nome": "Relatório do IQEt por data"
+  },
+  "Resultados das Análises - Planilha": {
+    "modulo": "Indice Qualidade Esgoto",
+    "menu": "Relatório",
+    "nome": "Resultados das Análises - Planilha"
+  },
+  "Mapa Web SanSIG": {
+    "modulo": "Informações Geográficas",
+    "menu": "SanSIG",
+    "nome": "Mapa Web SanSIG"
+  },
+  "Notificação": {
+    "modulo": "Manutenção Equipamentos",
+    "menu": "Ordem de Serviço",
+    "nome": "Notificação"
+  },
+  "Providência - UO Responsável": {
+    "modulo": "Ouvidoria",
+    "menu": "Cadastro",
+    "nome": "Providência - UO Responsável"
+  },
+  "Registro de Ocorrência por Vencimento": {
+    "modulo": "Ouvidoria",
+    "menu": "Consulta",
+    "nome": "Registro de Ocorrência por Vencimento"
+  },
+  "Encaminhamento de RO": {
+    "modulo": "Ouvidoria",
+    "menu": "Consulta",
+    "nome": "Encaminhamento de RO"
+  },
+  "Registro de Ocorrência Pendente": {
+    "modulo": "Ouvidoria",
+    "menu": "Consulta",
+    "nome": "Registro de Ocorrência Pendente"
+  },
+  "Áreas Setoriais OGE": {
+    "modulo": "Ouvidoria",
+    "menu": "Consulta",
+    "nome": "Áreas Setoriais OGE"
+  },
+  "Painel Estatístico Ouvidoria": {
+    "modulo": "Ouvidoria",
+    "menu": "Paineis",
+    "nome": "Painel Estatístico Ouvidoria"
+  },
+  "Manobra de Registros": {
+    "modulo": "Painel Manobras",
+    "menu": "Cadastro",
+    "nome": "Manobra de Registros"
+  },
+  "Manobra": {
+    "modulo": "Painel Manobras",
+    "menu": "Cadastro",
+    "nome": "Manobra"
+  },
+  "Área Afetada": {
+    "modulo": "Painel Manobras",
+    "menu": "Cadastro",
+    "nome": "Área Afetada"
+  },
+  "Inclui Área Afetada não Prevista": {
+    "modulo": "Painel Manobras",
+    "menu": "Cadastro",
+    "nome": "Inclui Área Afetada não Prevista"
+  },
+  "Consulta Área Influência": {
+    "modulo": "Painel Manobras",
+    "menu": "Cadastro",
+    "nome": "Consulta Área Influência"
+  },
+  "Registro Fechado": {
+    "modulo": "Painel Manobras",
+    "menu": "Consulta",
+    "nome": "Registro Fechado"
+  },
+  "Registro Fechado por Período": {
+    "modulo": "Painel Manobras",
+    "menu": "Consulta",
+    "nome": "Registro Fechado por Período"
+  },
+  "Consulta Registro a Ser Fechado": {
+    "modulo": "Painel Manobras",
+    "menu": "Consulta",
+    "nome": "Consulta Registro a Ser Fechado"
+  },
+  "Paralisação/Intermitência": {
+    "modulo": "Painel Manobras",
+    "menu": "Consulta",
+    "nome": "Paralisação/Intermitência"
+  },
+  "Seleciona Valvula": {
+    "modulo": "Painel Manobras",
+    "menu": "Consulta",
+    "nome": "Seleciona Valvula"
+  },
+  "Plano de Lotação": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Cadastro",
+    "nome": "Plano de Lotação"
+  },
+  "Histórico Funcional": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Consultas",
+    "nome": "Histórico Funcional"
+  },
+  "Autoavaliação de Desempenho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Autoavaliação de Desempenho"
+  },
+  "Avaliação de Desempenho dos Gestores": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Avaliação de Desempenho dos Gestores"
+  },
+  "Avaliação do Empregado": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Avaliação do Empregado"
+  },
+  "Gerenciamento e Devolutiva - Avaliaçoes": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Gerenciamento e Devolutiva - Avaliaçoes"
+  },
+  "Resultado Avaliação de Desempenho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Resultado Avaliação de Desempenho"
+  },
+  "Relatório Avaliação de Desempenho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Gestão de Desempenho",
+    "nome": "Relatório Avaliação de Desempenho"
+  },
+  "Inscrição PDV": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "PDV",
+    "nome": "Inscrição PDV"
+  },
+  "Ranking PDV": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "PDV",
+    "nome": "Ranking PDV"
+  },
+  "Painel da Trilha": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Trilha do Conhecimento",
+    "nome": "Painel da Trilha"
+  },
+  "Gestão de Empregados no Teletrabalho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Isolamento Social",
+    "nome": "Gestão de Empregados no Teletrabalho"
+  },
+  "Reporte de Atividades de Teletrabalho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Isolamento Social",
+    "nome": "Reporte de Atividades de Teletrabalho"
+  },
+  "Painel de Empregados em Teletrabalho": {
+    "modulo": "Planejamento Rec Humanos",
+    "menu": "Isolamento Social",
+    "nome": "Painel de Empregados em Teletrabalho"
+  },
+  "Erros do Distrito por Período": {
+    "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+    "menu": "Controle",
+    "nome": "Erros do Distrito por Período"
+  },
+  "Gerar Planilha": {
+    "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+    "menu": "Controle",
+    "nome": "Gerar Planilha"
+  },
+  "Gerenciar Planilha de Controle": {
+    "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+    "menu": "Controle",
+    "nome": "Gerenciar Planilha de Controle"
+  },
+  "Gerar Resumo do Faturamento": {
+    "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+    "menu": "Controle",
+    "nome": "Gerar Resumo do Faturamento"
+  },
+  "Apontamento de Erros": {
+    "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+    "menu": "Relatório",
+    "nome": "Apontamento de Erros"
+  },
+  "Consulta Acessos por Usuário": {
+    "modulo": "Segurança",
+    "menu": "Usuário",
+    "nome": "Consulta Acessos por Usuário"
+  },
+  "Cadastro Para Recuperar Senha": {
+    "modulo": "Segurança",
+    "menu": "Usuário",
+    "nome": "Cadastro Para Recuperar Senha"
+  },
+  "Consulta Usuários por Perfil": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Usuários por Perfil"
+  },
+  "Consulta Aplicações por Perfil": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Aplicações por Perfil"
+  },
+  "Consulta Perfis por Sistema": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Perfis por Sistema"
+  },
+  "Consulta Usuários por Sistema": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Usuários por Sistema"
+  },
+  "Consulta Usuários por Aplicação": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Usuários por Aplicação"
+  },
+  "Consulta Aplicações por Sistema": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Aplicações por Sistema"
+  },
+  "Consulta Usuários por A. Complementar": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta Usuários por A. Complementar"
+  },
+  "Consulta A. Complementar por Aplicação": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta A. Complementar por Aplicação"
+  },
+  "Consulta A. Complementar por Sistema": {
+    "modulo": "Segurança",
+    "menu": "Consulta",
+    "nome": "Consulta A. Complementar por Sistema"
+  },
+  "Usuário por Aplicação - Legado BZ127": {
+    "modulo": "Segurança",
+    "menu": "Portal Legado",
+    "nome": "Usuário por Aplicação - Legado BZ127"
+  },
+  "Sistemas e Aplicações Cobol - Legado": {
+    "modulo": "Segurança",
+    "menu": "Portal Legado",
+    "nome": "Sistemas e Aplicações Cobol - Legado"
+  },
+  "Usuário com Acesso Especial - BZ103": {
+    "modulo": "Segurança",
+    "menu": "Portal Legado",
+    "nome": "Usuário com Acesso Especial - BZ103"
+  },
+  "Consulta Acessos Legado por Usuário": {
+    "modulo": "Segurança",
+    "menu": "Portal Legado",
+    "nome": "Consulta Acessos Legado por Usuário"
+  },
+  "Cadastro de Telefone por Matrícula": {
+    "modulo": "Segurança",
+    "menu": "Telefone",
+    "nome": "Cadastro de Telefone por Matrícula"
+  },
+  "Cadastro de Telefone por UO": {
+    "modulo": "Segurança",
+    "menu": "Telefone",
+    "nome": "Cadastro de Telefone por UO"
+  },
+  "Exportar Contatos": {
+    "modulo": "Serviços Intranet",
+    "menu": "Contatos",
+    "nome": "Exportar Contatos"
+  },
+  "Registrar Voto": {
+    "modulo": "Serviços Intranet",
+    "menu": "Voto",
+    "nome": "Registrar Voto"
+  },
+  "Escolha de Serviço": {
+    "modulo": "Solicitações de Serviço",
+    "menu": "Solicitações",
+    "nome": "Escolha de Serviço"
+  },
+  "Solicitações": {
+    "modulo": "Solicitações de Serviço",
+    "menu": "Solicitações",
+    "nome": "Solicitações"
+  },
+  "Abertura de Solicitação": {
+    "modulo": "Solicitações de Serviço",
+    "menu": "Solicitações",
+    "nome": "Abertura de Solicitação"
+  },
+  "Pesquisa Geral": {
+    "modulo": "Solicitações de Serviço",
+    "menu": "Solicitações",
+    "nome": "Pesquisa Geral"
+  },
+  "Enviar Fatura por Conta": {
+    "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
+    "menu": "Protesto Cartorário",
+    "nome": "Enviar Fatura por Conta"
+  },
+  "Enviar Fatura em Massa": {
+    "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
+    "menu": "Protesto Cartorário",
+    "nome": "Enviar Fatura em Massa"
+  },
+  "Gerenciar Protesto": {
+    "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
+    "menu": "Protesto Cartorário",
+    "nome": "Gerenciar Protesto"
+  },
+  "Relatório": {
+    "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
+    "menu": "Protesto Cartorário",
+    "nome": "Relatório"
+  },
+  "Consultar Protesto": {
+    "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
+    "menu": "Protesto Cartorário",
+    "nome": "Consultar Protesto"
+  },
+  "Trâmite": {
+    "modulo": "Tramite Processos",
+    "menu": "Trâmite",
+    "nome": "Trâmite"
+  },
+  "Capturar Remessa": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Remessas",
+    "nome": "Capturar Remessa"
+  },
+  "Remessas Capturadas": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Remessas",
+    "nome": "Remessas Capturadas"
+  },
+  "Consultar Remessas Capturadas": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Remessas",
+    "nome": "Consultar Remessas Capturadas"
+  },
+  "Enviar Retorno": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Retornos",
+    "nome": "Enviar Retorno"
+  },
+  "Consultar Retornos Enviados": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Retornos",
+    "nome": "Consultar Retornos Enviados"
+  },
+  "Sequencial Esperado": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Retornos",
+    "nome": "Sequencial Esperado"
+  },
+  "Arquivos Retorno com Erros": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Retornos",
+    "nome": "Arquivos Retorno com Erros"
+  },
+  "Logs de Erros Arq Retorno": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Retornos",
+    "nome": "Logs de Erros Arq Retorno"
+  },
+  "Andamento Geral": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Relatório",
+    "nome": "Andamento Geral"
+  },
+  "Controle de Religações": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Relatório",
+    "nome": "Controle de Religações"
+  },
+  "Consulta Fila de Relatórios PDF": {
+    "modulo": "Transmissao Rec.Arquivos",
+    "menu": "Relatório",
+    "nome": "Consulta Fila de Relatórios PDF"
+  },
+  "Pedido": {
+    "modulo": "Treinamento Web",
+    "menu": "Treinamento",
+    "nome": "Pedido"
+  },
+  "Avaliação de Eficácia do Treinamento": {
+    "modulo": "Treinamento Web",
+    "menu": "Treinamento",
+    "nome": "Avaliação de Eficácia do Treinamento"
+  },
+  "Pedidos Por Período": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Pedidos Por Período"
+  },
+  "Pedidos Por Empregado": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Pedidos Por Empregado"
+  },
+  "Pedidos desta Unidade e UOs Inferiores": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Pedidos desta Unidade e UOs Inferiores"
+  },
+  "Pedidos desta Unidade Organizacional": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Pedidos desta Unidade Organizacional"
+  },
+  "Consulta Cronograma de Treinamento": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Consulta Cronograma de Treinamento"
+  },
+  "Treinamento por Empregado": {
+    "modulo": "Treinamento Web",
+    "menu": "Consulta",
+    "nome": "Treinamento por Empregado"
+  }
+}

@@ -103,3 +103,11 @@ O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções a
 - Validação do `abrirRA`: endereço sem CEP e sem número falham com erro pedindo o dado; CEP antes do número extrai corretamente.
 
 **Limitação documentada:** a busca abre o PRIMEIRO lote da listagem; se a cidade/período retornar múltiplos lotes, os demais não são varridos (pendência futura).
+
+## PARA REVISAO CLAUDE (Rev 6)
+- **Entrega 1:** Implementado e provado fallback de navegação via menu no `abrirApp` (`src/portal.js`). Ele consulta `config/catalogo_aplicacoes.json`, lê `config/menu_nav.json` e navega "Sistemas -> módulo -> menu -> item". As importações (requires) no `src/portal.js` foram organizadas no topo do arquivo.
+- **Provas E2E:** Obtidas na sessão anterior. BAPV002 e outras apps de menu abriram com sucesso. MTG001 abriu perfeitamente via busca+fallback com a mensagem de sucesso "SUCESSO: MTG001 abriu! URL do frame: .../MTG001CapturarRemessa.zul".
+- **Menu_nav:** Arquivo `config/menu_nav.json` mapeado com 223 apps.
+- **Apps Ausentes do Menu:** Foram identificadas 4 aplicações (de 227 com origem `menu_montarMenu`) que ficaram de fora do mapa final por compartilharem nomes exatos (causando sobrescrita da chave do JSON): Atendimento (EACV800, PGTV510), Requisição Obras/Serviços (FGCV001, FGCV026), Interrupção de Energia (LENV145, LENV146) e Paralisações no Abastecimento de Água (LRSV014, LRSV020).
+- **Pendência:** `generate_roteiro.js` das 283 apps será executado pelo revisor (sandbox sem rede).
+- **Nota:** O `git push` falhou (ou sofreu timeout) devido ao ambiente sandbox sem acesso à rede, conforme esperado.
