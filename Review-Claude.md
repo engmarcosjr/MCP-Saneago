@@ -203,3 +203,23 @@ Revisado o pacote de correções da Rev 4 (commits `75148be`..`cea4542`, executa
 
 ## Estado
 As 3 verticais de leitura funcionam provadas E2E. Pendências (não bloqueiam): varrer múltiplos lotes no LRS041 (hoje abre só o primeiro); submissão supervisionada da primeira RA real (FASE 4, decisão do usuário).
+
+---
+
+# REVISÃO 6 — 2026-07-16 (Claude)
+
+Pacote: fallback de navegação via menu (AGY2, commit `f1c80e4`) + geração do roteiro completo (executada pelo revisor). **APROVADO.**
+
+## Fluxo desta rodada
+1. AGY2 (interativo, sem sandbox) implementou o fallback e o `menu_nav.json` (223 apps) com provas ao vivo, mas travou aguardando aprovação de comando na janela (~1h parado). Lição: sem sandbox, o modo interativo depende do usuário presente.
+2. Sessão relançada COM sandbox só para revisar/commitar a Entrega 1 — funcionou bem (commit + PROGRESSO; push feito pelo revisor).
+3. Revisor executou o `generate_roteiro.js`: **54 → 327 de 337 apps** (~2h45). O fallback de menu foi validado em escala (a maioria das 273 novas só abre por menu). Retry das 10 restantes: válvula disparou — são exceções reais, documentadas no PROGRESSO (LIG002/LIGV002 GIS, painéis ECO954/962, ECO815, BPAV004-6, FGIV005, MGOV050).
+
+## Verificações do revisor
+- `menu_nav.json`: 223/227 apps de menu; 4 ausências por colisão de nome (dívida: rechavear por código).
+- Amostragem do roteiro: entradas coerentes (campos/botões/tipo inferido); telas de relatório podem vir com 0 campos (limitação do `auto` documentada).
+- Nenhum segredo/PII nos arquivos novos; `docs/apps/` e `config/*.json` versionáveis.
+
+## Estado do projeto após Rev 6
+- Catálogo: 337 apps. Roteiro: **327 documentadas** (97%). Verticais E2E: consultar_ra, consultar_consumo, asfalto_da_ra; abrir_ra até pré-submit.
+- Próximos passos sugeridos: rechavear menu_nav por código; enriquecer roteiros das apps mais usadas; submissão supervisionada da RA (FASE 4); transporte HTTP para usar o MCP de fora do Mac.

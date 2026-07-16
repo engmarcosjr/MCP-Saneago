@@ -111,3 +111,28 @@ O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções a
 - **Apps Ausentes do Menu:** Foram identificadas 4 aplicações (de 227 com origem `menu_montarMenu`) que ficaram de fora do mapa final por compartilharem nomes exatos (causando sobrescrita da chave do JSON): Atendimento (EACV800, PGTV510), Requisição Obras/Serviços (FGCV001, FGCV026), Interrupção de Energia (LENV145, LENV146) e Paralisações no Abastecimento de Água (LRSV014, LRSV020).
 - **Pendência:** `generate_roteiro.js` das 283 apps será executado pelo revisor (sandbox sem rede).
 - **Nota:** O `git push` falhou (ou sofreu timeout) devido ao ambiente sandbox sem acesso à rede, conforme esperado.
+
+## REVISÃO 6 — roteiro completo (Claude, 2026-07-16)
+
+**Execução do `generate_roteiro.js` pelo revisor (rede Saneago, madrugada de 15→16/07):**
+- Rodada principal: ~2h45, **273 apps novas documentadas** (54 → 327 de 337), ~96% de aproveitamento.
+- O **fallback de navegação via menu (Entrega 1 do AGY) carregou o peso**: as apps de RH, recadastramento, protesto cartorário, gestão de transporte etc. não existem na busca do portal e abriram todas via "Sistemas → módulo → menu → item" do `menu_nav.json`. Validação E2E em escala do código da Entrega 1.
+- Retry das faltantes: válvula de segurança disparou (5 erros consecutivos) — as 10 restantes são exceções reais, não transientes.
+
+**Estado final: 327 de 337 apps roteirizadas** (324 `auto` + 3 `enriquecido`), 327 markdowns em `docs/apps/`.
+
+**Exceções (10 apps sem roteiro, com motivo):**
+| Código | Nome | Motivo provável |
+|---|---|---|
+| LIG002 / LIGV002 | Mapa Web SanSIG | Mapa GIS externo; não abre iframe ZK padrão (exceção já conhecida da Rev 4) |
+| ECO954 / ECO962 | Painel de Religação / de Cortes | Painéis que não carregam iframe `.zul` padrão (frame não encontrado após timeout) |
+| ECO815 | Coletânea de Diretrizes Comerciais | Frame não encontrado (provável documento/anexo, não app ZK) |
+| BPAV004/005/006 | Teletrabalho (gestão/reporte/painel) | Frame não encontrado via menu (módulo possivelmente com carregamento não padrão) |
+| FGIV005 | Consulta de documentos digitalizados | Frame não encontrado (provável visualizador externo) |
+| MGOV050 | Painel Estatístico Ouvidoria | Frame não encontrado (provável painel/dashboard não-ZK) |
+
+**Limitações do rascunho `auto` (não bloqueiam):**
+- Telas de relatório que renderizam direto podem registrar 0 campos/0 botões (ex.: PGTV912).
+- `o_que_faz`/`exemplos_intencao` são inferidos do nome — o enriquecimento com fluxo real de negócio (status `enriquecido`) continua sendo feito por demanda, como em ECO303/LRS041/ECO701.
+- IDs ZK dos botões nos markdowns valem só para a sessão viva em que foram capturados (referência estrutural, não seletor).
+- Dívida registrada: `menu_nav.json` chaveado por NOME — 4 pares de apps homônimas colidem (8 códigos, 4 perdidos); rechavear por código em rodada futura.
