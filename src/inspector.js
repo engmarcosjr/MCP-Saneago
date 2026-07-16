@@ -99,7 +99,9 @@ async function inspecionarTela(frame) {
 async function aguardarInputPorRotulo(frame, rotulo, { tentativas = 20, intervalo = 500 } = {}) {
   const rotuloBusca = rotulo.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
   for (let i = 0; i < tentativas; i++) {
-    const inputId = await frame.locator('body').evaluate((textoBusca) => {
+    // frame.evaluate (não locator.evaluate): no locator, o 1º parâmetro é o
+    // elemento e o argumento chega no 2º — textoBusca receberia o <body>.
+    const inputId = await frame.evaluate((textoBusca) => {
       const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
       const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
       const labels = Array.from(document.querySelectorAll('label, span, div, td'));
