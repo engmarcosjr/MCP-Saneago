@@ -328,21 +328,25 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const appUrl = activeFrame.url();
         
         try {
-          // localiza o campo "Numero do RA" usando a heuristica padrao
-          const ids = await activeFrame.locator('body').evaluate(() => {
-            const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-            const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-            const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-            for (const lb of labels) {
-              if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-              const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-              const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
-              if (inputs.length) return { raInputId: inputs[0].id };
-            }
-            return { raInputId: null };
-          });
+          let ids = { raInputId: null };
+          for (let i = 0; i < 20; i++) {
+            ids = await activeFrame.locator('body').evaluate(() => {
+              const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
+              const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+              const labels = Array.from(document.querySelectorAll('label, span, div, td'));
+              for (const lb of labels) {
+                if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
+                const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
+                const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
+                if (inputs.length) return { raInputId: inputs[0].id };
+              }
+              return { raInputId: null };
+            });
+            if (ids.raInputId) break;
+            await activeFrame.page().waitForTimeout(500);
+          }
           
-          if (!ids.raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial');
+          if (!ids.raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial do ECO701 apos aguardar carregamento');
           
           await preencherCampo(activeFrame, ids.raInputId, ra);
           

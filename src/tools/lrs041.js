@@ -50,18 +50,23 @@ async function consultarAsfalto(raOrigem, data) {
     console.error(`[LRS041] Consultando RA ${raOrigem} no ECO701 para descobrir data/cidade...`);
     const frameEco = await abrirApp("ECO701");
     
-    const idsEco = await frameEco.locator('body').evaluate(() => {
-      const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-      const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-      const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-      for (const lb of labels) {
-        if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-        const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-        const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
-        if (inputs.length) return { raInputId: inputs[0].id };
-      }
-      return { raInputId: null };
-    });
+    let idsEco = { raInputId: null };
+    for (let i = 0; i < 20; i++) {
+      idsEco = await frameEco.locator('body').evaluate(() => {
+        const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
+        const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+        const labels = Array.from(document.querySelectorAll('label, span, div, td'));
+        for (const lb of labels) {
+          if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
+          const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
+          const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
+          if (inputs.length) return { raInputId: inputs[0].id };
+        }
+        return { raInputId: null };
+      });
+      if (idsEco.raInputId) break;
+      await frameEco.page().waitForTimeout(500);
+    }
     
     if (idsEco.raInputId) {
       await preencherCampo(frameEco, idsEco.raInputId, raOrigem);
