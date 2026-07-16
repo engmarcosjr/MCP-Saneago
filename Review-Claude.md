@@ -223,3 +223,31 @@ Pacote: fallback de navegação via menu (AGY2, commit `f1c80e4`) + geração do
 ## Estado do projeto após Rev 6
 - Catálogo: 337 apps. Roteiro: **327 documentadas** (97%). Verticais E2E: consultar_ra, consultar_consumo, asfalto_da_ra; abrir_ra até pré-submit.
 - Próximos passos sugeridos: rechavear menu_nav por código; enriquecer roteiros das apps mais usadas; submissão supervisionada da RA (FASE 4); transporte HTTP para usar o MCP de fora do Mac.
+
+---
+
+# REVISÃO 8 — 2026-07-16 (Claude)
+
+Pacote revisado: commits `b0e195f` (AGY2 — Forma de Atendimento + validação estrita no ECO701) e `6e2c071` (Marcos Jr — polling do campo "Número do RA" no `index.js` e `lrs041.js`), feitos após a Rev 7. `node --check` verde nos 3 arquivos. **Nenhum dos dois foi provado E2E** (o AGY rodou em sandbox sem rede; o polling foi escrito direto). **Veredito: APROVADO COM RESSALVAS — itens 1 e 2 são bloqueantes para a submissão real da FASE 4.**
+
+## 🔴 Bloqueante (corrigir ANTES da submissão supervisionada)
+
+1. **Detecção de erro pós-submit dá falso positivo — risco de RA duplicada.** `src/tools/eco701.js:238`: `text.includes("Erro")` varre o `innerText` do body inteiro; qualquer ocorrência da substring "Erro" em menu, rodapé ou label faz a tool retornar `success:false` **depois que o RA já pode ter sido criado**. O chamador (LLM) vai reagir tentando de novo → RA duplicada no portal. Pior: `.z-notification` (linha 230) é a classe que o ZK também usa para mensagens de **sucesso** — um "RA gerado com sucesso!" em notification viraria `success:false`. Corrigir: (a) restringir a busca a classes de erro (`.z-errbox`, `.z-messagebox-error`, `.z-notification-error`) e à frase específica de validação; (b) se a incerteza persistir, verificar se o "Número do RA" foi preenchido — RA numerado = sucesso, independentemente de texto solto na página.
+
+2. **Clique no comboitem provavelmente não commita o valor no ZK.** `eco701.js:154-162` usa `.click()` DOM puro no `.z-comboitem`; comboboxes ZK normalmente exigem a sequência `mousedown`/`mouseup` (ou o próprio widget via `zk.Widget.$()`) para enviar o evento `onSelect` ao servidor — o clique sintético tende a fechar o popup sem setar o valor. Além disso o seletor `.z-comboitem` **não é escopado ao popup deste combobox** (ZK renderiza popups soltos no body): se outra combo tiver item de texto igual, clica no item errado. E a comparação `=== formaStr.toUpperCase()` é exata — se o portal exibir "3-INTERNO" (sem espaços) ou com sufixo, nunca casa. Alternativa mais robusta e já usada no projeto: `preencherCampo` no input da combo (digitar "3 - INTERNO") + `Enter`/`Tab`, que dispara o `onChange` do ZK, com verificação posterior do `input.value`.
+
+## 🟡 Ressalvas (não bloqueiam, mas anotar)
+
+3. **Combobox não encontrado → prossegue em silêncio.** `eco701.js:168-170`: se o rótulo "Forma de Atendimento" não for achado, só loga e segue para o submit. Para uma escrita que se anuncia "estrita", o pré-submit (`confirmar:false`) deveria reportar no `resumo` que a forma NÃO foi selecionada, e o submit real deveria falhar explicitamente se o campo for obrigatório.
+
+4. **Regressão de padrão: esperas fixas.** A Rev 5 substituiu `waitForTimeout` por polling nos pontos assíncronos; o código novo da combo volta a usar 1500/1000/8000 ms fixos (`eco701.js:151,167,225`). Os 8s pós-"Gerar RA" são o pior caso: se o portal demorar 9s, a leitura de erro/número roda sobre a tela ainda antiga. Trocar por polling do resultado (aparição do nº do RA ou de caixa de erro).
+
+5. **Duplicação: a heurística "achar input pelo rótulo NUMERO DO RA" agora existe em 3 lugares** (`index.js` case eco701, `lrs041.js`, e variante em `eco701.js:254`), duas delas com o mesmo loop de polling copiado e colado (commit `6e2c071`). Extrair helper único (ex.: `aguardarInputPorRotulo(frame, rotulo, {tentativas, intervalo})` no `inspector.js`) antes que a quarta cópia apareça.
+
+## 📋 Processo
+
+6. **Commit `6e2c071` fora do protocolo:** sem corpo ("o que fez / como testou / pendências"), sem coautoria, **sem push** (branch local `ahead 1` do origin) e sem registro no PROGRESSO.md. A mensagem diz `fix(eco701)` mas os arquivos tocados são `index.js` e `lrs041.js`.
+7. A pendência declarada no `b0e195f` continua de pé: **prova E2E supervisionada** (pré-submit com a combo + submissão real) é o gate da FASE 4. Recomendo rodar o pré-submit (`node scratch/test_eco701_supervisionado.js` sem `--confirmar`) para provar os itens 1–3 da combo **antes** de qualquer `--confirmar`.
+
+## Estado
+Leitura: inalterada (3 verticais provadas). Escrita (`abrir_ra`): avançou de forma correta em intenção (forma de atendimento, detecção de validação, extração do nº do RA), mas os mecanismos novos não foram provados e os itens 1–2 podem causar **falso erro/RA duplicada** ou **forma não selecionada de fato**. Correções 1–4 são pequenas e podem ir num único pacote para o AGY, com prova E2E de pré-submit pelo revisor em seguida.
