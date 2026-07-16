@@ -86,9 +86,9 @@ async function abrirApp(nomeExibicao) {
         }
         const menuNav = JSON.parse(fs.readFileSync(menuNavPath, 'utf8'));
         
-        const nav = menuNav[appInfo.nome];
+        const nav = menuNav[codigoApp];
         if (!nav) {
-            throw new Error(`Aplicacao ${codigoApp} (${appInfo.nome}) nao encontrada no menu_nav.json. Execute o discovery.`);
+            throw new Error(`Aplicacao ${codigoApp} nao encontrada no menu_nav.json. Execute o discovery.`);
         }
         
         console.error(`[Portal] Navegando via menu: ${nav.modulo} -> ${nav.menu} -> ${nav.nome}`);

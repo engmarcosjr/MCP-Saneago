@@ -136,3 +136,12 @@ O E2E pendente foi executado pelo revisor na rede Saneago e exigiu correções a
 - `o_que_faz`/`exemplos_intencao` são inferidos do nome — o enriquecimento com fluxo real de negócio (status `enriquecido`) continua sendo feito por demanda, como em ECO303/LRS041/ECO701.
 - IDs ZK dos botões nos markdowns valem só para a sessão viva em que foram capturados (referência estrutural, não seletor).
 - Dívida registrada: `menu_nav.json` chaveado por NOME — 4 pares de apps homônimas colidem (8 códigos, 4 perdidos); rechavear por código em rodada futura.
+
+## REVISÃO 7 — menu_nav por código (Antigravity, 2026-07-16)
+
+**Resolução da dívida das colisões de nomes homônimos:**
+- **Autenticação via GCP:** O usuário autenticou o `gcloud` localmente no terminal da sessão do Antigravity, permitindo o download seguro das credenciais por meio do utilitário `secrets-pull` e gerando o `config/credentials.json`.
+- **Mapeamento dinâmico de homônimos:** Criado e rodado o script `scratch/discover_homonimos_caminhos.js` que clica especificamente nas 4 opções de menu colidentes e captura a URL final do iframe associada.
+- **Rechaveamento por Código:** O script `scratch/generate_menu_nav.js` foi reescrito para mapear a navegação indexada pelo **código único do aplicativo** (ex: `BAPV002`, `EACV800`, `PGTV510`) em vez do nome de exibição. Foi implementada uma lógica de resolução estática com desempate manual baseada nos caminhos de menu reais obtidos.
+- **Execução e Prova:** O script `scratch/generate_menu_nav.js` foi executado com sucesso e regenerou `config/menu_nav.json` indexando as 223 aplicações por seu código único. O arquivo `src/portal.js` foi atualizado para consultar a navegação a partir do código do aplicativo (`menuNav[codigoApp]`).
+- **Validação de Teste:** O script `scratch/test_apps_fallback.js` foi executado para provar que a navegação e abertura de aplicações que dependem de fallback via menu (como `BAPV002` e `AGDV001`) continuam funcionando com total correção e livre de colisões.

@@ -1,1115 +1,1135 @@
 {
-  "Contracheque": {
+  "BAPV002": {
     "modulo": "Administração Pessoal",
     "menu": "Consulta",
     "nome": "Contracheque"
   },
-  "Comprovante de Rendimentos": {
+  "BAPV008": {
     "modulo": "Administração Pessoal",
     "menu": "Consulta",
     "nome": "Comprovante de Rendimentos"
   },
-  "Escala de Férias": {
+  "BAPV030": {
     "modulo": "Administração Pessoal",
     "menu": "Consulta",
     "nome": "Escala de Férias"
   },
-  "Definir Adiantamento de 13° Salário": {
+  "BAPV032": {
     "modulo": "Administração Pessoal",
     "menu": "Consulta",
     "nome": "Definir Adiantamento de 13° Salário"
   },
-  "Atualização CTPS": {
+  "BAPV004": {
     "modulo": "Administração Pessoal",
     "menu": "Relatório",
     "nome": "Atualização CTPS"
   },
-  "Emissão de Frequência": {
+  "BAPV005": {
     "modulo": "Administração Pessoal",
     "menu": "Relatório",
     "nome": "Emissão de Frequência"
   },
-  "Enviar Declaração IRPF": {
+  "BAPV012": {
     "modulo": "Administração Pessoal",
     "menu": "Relatório",
     "nome": "Enviar Declaração IRPF"
   },
-  "Enviar Nota Fiscal": {
+  "BAPV028": {
     "modulo": "Administração Pessoal",
     "menu": "Cadastro",
     "nome": "Enviar Nota Fiscal"
   },
-  "Agendamento/Alteração de Férias": {
+  "BAPV025": {
     "modulo": "Administração Pessoal",
     "menu": "Cadastro",
     "nome": "Agendamento/Alteração de Férias"
   },
-  "Rodízio de Processos": {
+  "JAJV060": {
     "modulo": "Apoio Jurídico",
     "menu": "Cobrança",
     "nome": "Rodízio de Processos"
   },
-  "Consulta Cobrança": {
+  "JAJV042": {
     "modulo": "Apoio Jurídico",
     "menu": "Consulta",
     "nome": "Consulta Cobrança"
   },
-  "Consulta Processo Conta": {
+  "JAJV036": {
     "modulo": "Apoio Jurídico",
     "menu": "Consulta",
     "nome": "Consulta Processo Conta"
   },
-  "Relatório de Contas Com o Escritório": {
+  "JAJV044": {
     "modulo": "Apoio Jurídico",
     "menu": "Relatório",
     "nome": "Relatório de Contas Com o Escritório"
   },
-  "Agenda Audiência": {
+  "JAJV033": {
     "modulo": "Apoio Jurídico",
     "menu": "Judicial",
     "nome": "Agenda Audiência"
   },
-  "Consulta Judicial": {
+  "JAJV028": {
     "modulo": "Apoio Jurídico",
     "menu": "Judicial",
     "nome": "Consulta Judicial"
   },
-  "Relação Mensal Duração Serviço Encerrado": {
+  "LRSV301": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Relação Mensal Duração Serviço Encerrado"
   },
-  "Relação Mensal de Serviços Atendidos": {
+  "LRSV363": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Relação Mensal de Serviços Atendidos"
   },
-  "Análise tempo padrão/execução/perfomance": {
+  "LRSV314": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Análise tempo padrão/execução/perfomance"
   },
-  "Serviços Executados no Interior": {
+  "LRSV018": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Serviços Executados no Interior"
   },
-  "Emite Serviços Executados em Atraso": {
+  "LRSV702": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Emite Serviços Executados em Atraso"
   },
-  "Índices do SIPSAP": {
+  "LRSV019": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Índices do SIPSAP"
   },
-  "Atendimento Serv. p/ UO e Período": {
+  "LRSV730": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Atendimento Serv. p/ UO e Período"
   },
-  "Atendimento P/ Atendente e Período": {
+  "LRSV731": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Atendimento P/ Atendente e Período"
   },
-  "Paralisações no Abastecimento de Água": {
+  "LRSV020": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Paralisações no Abastecimento de Água"
   },
-  "Extravasamento de Esgoto": {
+  "LRSV021": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Extravasamento de Esgoto"
   },
-  "Serviços Comerciais Executados": {
+  "LRSV022": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Serviços Comerciais Executados"
   },
-  "Atendimento Por Período": {
+  "LRSV732": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Atendimento Por Período"
   },
-  "Atendimento Por Cidade": {
+  "LRSV733": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Atendimento Por Cidade"
   },
-  "Atendimento Por Código de Serviço": {
+  "LRSV734": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Atendimento Por Código de Serviço"
   },
-  "RA-RI por Cidade e Bairro": {
+  "LRSV735": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "RA-RI por Cidade e Bairro"
   },
-  "Indicadores do SIPSAP por Período": {
+  "LRSV024": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Indicadores do SIPSAP por Período"
   },
-  "Relação de Serviços Executados": {
+  "LRSV701": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Relação de Serviços Executados"
   },
-  "Materiais Utilizados do SIPSAP": {
+  "LRSV360": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Materiais Utilizados do SIPSAP"
   },
-  "Resumo de Vazamentos": {
+  "LRSV036": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Resumo de Vazamentos"
   },
-  "Serviço executado por conta": {
+  "LRSV037": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Serviço executado por conta"
   },
-  "Relatório de recomposição asfáltica": {
+  "LRSV041": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Relatório de recomposição asfáltica"
   },
-  "Resumo dos Serviços": {
+  "LRSV330": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Resumo dos Serviços"
   },
-  "Monitoramento de Atendimento": {
+  "LRSV009": {
     "modulo": "Atendimento ao Publico",
     "menu": "Relatório",
     "nome": "Monitoramento de Atendimento"
   },
-  "Distribuição de Serviço": {
+  "LRSV014": {
+    "modulo": "Atendimento ao Publico",
+    "menu": "Cadastro",
+    "nome": "Paralisações no Abastecimento de Água"
+  },
+  "LRSV010": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Distribuição de Serviço"
   },
-  "Serviço Executado no Interior": {
+  "LRSV012": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Serviço Executado no Interior"
   },
-  "Extravazamento de Esgoto Sanitario": {
+  "LRSV013": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Extravazamento de Esgoto Sanitario"
   },
-  "Cadastrar situação do distrito SIPSAP": {
+  "LRSV017": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Cadastrar situação do distrito SIPSAP"
   },
-  "Serviço resposta por serviço solicitação": {
+  "LRSV030": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Serviço resposta por serviço solicitação"
   },
-  "Lançamento de serviços executados": {
+  "LRSV105": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Lançamento de serviços executados"
   },
-  "Manter estoque de Material por viatura": {
+  "LRSV100": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Manter estoque de Material por viatura"
   },
-  "Equipes": {
+  "LRSV130": {
     "modulo": "Atendimento ao Publico",
     "menu": "Cadastro",
     "nome": "Equipes"
   },
-  "Ocorrências de Esgoto por RA": {
+  "LRSV015": {
     "modulo": "Atendimento ao Publico",
     "menu": "Consulta",
     "nome": "Ocorrências de Esgoto por RA"
   },
-  "Ocorrências de Esgoto por Endereço": {
+  "LRSV016": {
     "modulo": "Atendimento ao Publico",
     "menu": "Consulta",
     "nome": "Ocorrências de Esgoto por Endereço"
   },
-  "Consulta RA's com D.S.": {
+  "LRSV208": {
     "modulo": "Atendimento ao Publico",
     "menu": "Consulta",
     "nome": "Consulta RA's com D.S."
   },
-  "RA Pendente": {
+  "LRSV002": {
     "modulo": "Atendimento ao Publico",
     "menu": "Consulta",
     "nome": "RA Pendente"
   },
-  "Acompanhar Atendimento": {
+  "LRSV272": {
     "modulo": "Atendimento ao Publico",
     "menu": "Consulta",
     "nome": "Acompanhar Atendimento"
   },
-  "Validar Corte de Asfalto": {
+  "LRSV034": {
     "modulo": "Atendimento ao Publico",
     "menu": "Corte de Asfalto",
     "nome": "Validar Corte de Asfalto"
   },
-  "Atendimento": {
+  "EACV800": {
     "modulo": "ATENDIMENTO AO CLIENTE",
     "menu": "Portal de Atendimento",
     "nome": "Atendimento"
   },
-  "Protocolo de Atendimento": {
+  "EACV005": {
     "modulo": "ATENDIMENTO AO CLIENTE",
     "menu": "Consulta",
     "nome": "Protocolo de Atendimento"
   },
-  "Planejamento de Recadastramento": {
+  "ECAV003": {
     "modulo": "Cadastro Comercial",
     "menu": "Rotas",
     "nome": "Planejamento de Recadastramento"
   },
-  "Autorizar Rotas para Distribuição": {
+  "ECAV004": {
     "modulo": "Cadastro Comercial",
     "menu": "Rotas",
     "nome": "Autorizar Rotas para Distribuição"
   },
-  "Distribuição de Rotas": {
+  "ECAV001": {
     "modulo": "Cadastro Comercial",
     "menu": "Rotas",
     "nome": "Distribuição de Rotas"
   },
-  "Rel. de Produtividade do Recadastramento": {
+  "ECAV002": {
     "modulo": "Cadastro Comercial",
     "menu": "Rotas",
     "nome": "Rel. de Produtividade do Recadastramento"
   },
-  "Registrar Inventário de Bens": {
+  "HFIV001": {
     "modulo": "Contabilidade Patrimonial",
     "menu": "Cadastro",
     "nome": "Registrar Inventário de Bens"
   },
-  "Solicitar Transferência Bem Patrimonial": {
+  "HFIV031": {
     "modulo": "Contabilidade Patrimonial",
     "menu": "Transferência de Bens",
     "nome": "Solicitar Transferência Bem Patrimonial"
   },
-  "Acompanhar Transf. de Bens Patrimoniais": {
+  "HFIV032": {
     "modulo": "Contabilidade Patrimonial",
     "menu": "Transferência de Bens",
     "nome": "Acompanhar Transf. de Bens Patrimoniais"
   },
-  "Consulta de Bens Patrimoniais": {
+  "HFIV034": {
     "modulo": "Contabilidade Patrimonial",
     "menu": "Transferência de Bens",
     "nome": "Consulta de Bens Patrimoniais"
   },
-  "Registrar Parecer Transferências de Bens": {
+  "HFIV033": {
     "modulo": "Contabilidade Patrimonial",
     "menu": "Transferência de Bens",
     "nome": "Registrar Parecer Transferências de Bens"
   },
-  "Lista para Análise": {
+  "KRTV028": {
     "modulo": "Controle de AVTOs",
     "menu": "AVTO",
     "nome": "Lista para Análise"
   },
-  "Consulta AVTO": {
+  "KRTV003": {
     "modulo": "Controle de AVTOs",
     "menu": "AVTO",
     "nome": "Consulta AVTO"
   },
-  "Relatórios Gerenciais": {
+  "KRTV037": {
     "modulo": "Controle de AVTOs",
     "menu": "Relatórios",
     "nome": "Relatórios Gerenciais"
   },
-  "Manutenção": {
+  "HVWV019": {
     "modulo": "Controle de Viagens",
     "menu": "Cartão",
     "nome": "Manutenção"
   },
-  "Impressão Termo": {
+  "HVWV031": {
     "modulo": "Controle de Viagens",
     "menu": "Cartão",
     "nome": "Impressão Termo"
   },
-  "Manter Empregados com Cartão Viagem": {
+  "HVWV018": {
     "modulo": "Controle de Viagens",
     "menu": "Cartão",
     "nome": "Manter Empregados com Cartão Viagem"
   },
-  "Solicitação Viagem": {
+  "HVWV006": {
     "modulo": "Controle de Viagens",
     "menu": "Solicitação",
     "nome": "Solicitação Viagem"
   },
-  "Conta": {
+  "HVWV009": {
     "modulo": "Controle de Viagens",
     "menu": "Prestação",
     "nome": "Conta"
   },
-  "Prestar Contas Cartão Corporativo": {
+  "HVWV050": {
     "modulo": "Controle de Viagens",
     "menu": "Prestação",
     "nome": "Prestar Contas Cartão Corporativo"
   },
-  "Distância entre cidade": {
+  "HVWV001": {
     "modulo": "Controle de Viagens",
     "menu": "Manutenção",
     "nome": "Distância entre cidade"
   },
-  "Atividades": {
+  "GCAV001": {
     "modulo": "Controle Atividades",
     "menu": "Cadastro",
     "nome": "Atividades"
   },
-  "Melhorias Previstas": {
+  "GCAV003": {
     "modulo": "Controle Atividades",
     "menu": "Cadastro",
     "nome": "Melhorias Previstas"
   },
-  "Atividades Diárias": {
+  "GCAV002": {
     "modulo": "Controle Atividades",
     "menu": "Relatório",
     "nome": "Atividades Diárias"
   },
-  "Relaciona Contas Condomínio": {
+  "ECOV112": {
     "modulo": "COMERCIAL - WEBCOM",
     "menu": "Cadastro",
     "nome": "Relaciona Contas Condomínio"
   },
-  "Abertura de Financiamento": {
+  "ECOV411": {
     "modulo": "COMERCIAL - WEBCOM",
     "menu": "Faturamento",
     "nome": "Abertura de Financiamento"
   },
-  "Controle de NFAg": {
+  "ECOV413": {
     "modulo": "COMERCIAL - WEBCOM",
     "menu": "Faturamento",
     "nome": "Controle de NFAg"
   },
-  "WEBCOM - Vídeo Aulas": {
+  "ECOV830": {
     "modulo": "COMERCIAL - WEBCOM",
     "menu": "Diversos",
     "nome": "WEBCOM - Vídeo Aulas"
   },
-  "Solicitar Titularidade": {
+  "ECOV010": {
     "modulo": "COMERCIAL - WEBCOM",
     "menu": "Titularidade",
     "nome": "Solicitar Titularidade"
   },
-  "Consulta de documentos digitalizados": {
+  "FGIV005": {
     "modulo": "CONTROLE DE DOCUMENTOS",
     "menu": "Documentos",
     "nome": "Consulta de documentos digitalizados"
   },
-  "IQA Anual": {
+  "LQAV079": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Relatório",
     "nome": "IQA Anual"
   },
-  "Demonstrativo Qtdes de Contas por Bairro": {
+  "LQAV071": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Relatório",
     "nome": "Demonstrativo Qtdes de Contas por Bairro"
   },
-  "Gráfico do IQA Médio por Cidade": {
+  "LQAV081": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Relatório",
     "nome": "Gráfico do IQA Médio por Cidade"
   },
-  "Irregularidades": {
+  "LQAV082": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Relatório",
     "nome": "Irregularidades"
   },
-  "Resumo das Irregularidades": {
+  "LQAV083": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Relatório",
     "nome": "Resumo das Irregularidades"
   },
-  "Cadastro de Mananciais/Bacias": {
+  "LQAV028": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Cadastro",
     "nome": "Cadastro de Mananciais/Bacias"
   },
-  "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA": {
+  "LQAV036": {
     "modulo": "CONTROLE DE QUALIDADE DA ÁGUA",
     "menu": "Consulta",
     "nome": "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA"
   },
-  "Cadastro de Cidade": {
+  "MPSV005": {
     "modulo": "Dados Corporativos",
     "menu": "Cadastro",
     "nome": "Cadastro de Cidade"
   },
-  "Logradouro": {
+  "MPSV540": {
     "modulo": "Dados Corporativos",
     "menu": "Cadastro",
     "nome": "Logradouro"
   },
-  "Relaciona Logradouro - Bairro": {
+  "MPSV541": {
     "modulo": "Dados Corporativos",
     "menu": "Cadastro",
     "nome": "Relaciona Logradouro - Bairro"
   },
-  "Cep Correios": {
+  "MPSV543": {
     "modulo": "Dados Corporativos",
     "menu": "Consulta",
     "nome": "Cep Correios"
   },
-  "Consulta de RDs": {
+  "AGDV001": {
     "modulo": "Gestão de Documentos",
     "menu": "Consulta",
     "nome": "Consulta de RDs"
   },
-  "Requisição Obras/Serviços": {
+  "FGCV001": {
     "modulo": "Gestão Contratos",
     "menu": "Requisição",
     "nome": "Requisição Obras/Serviços"
   },
-  "Consulta Processo Licitatório": {
+  "FGCV025": {
     "modulo": "Gestão Contratos",
     "menu": "Contratação",
     "nome": "Consulta Processo Licitatório"
   },
-  "Contratos por UO, Cidade, Forn. e Gestor": {
+  "FGCV026": {
+    "modulo": "Gestão Contratos",
+    "menu": "Consulta",
+    "nome": "Requisição Obras/Serviços"
+  },
+  "FGCV037": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Contratos por UO, Cidade, Forn. e Gestor"
   },
-  "Fornecedor": {
+  "FGCV028": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Fornecedor"
   },
-  "Processo": {
+  "FGCV018": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Processo"
   },
-  "Orçamento de Programas": {
+  "FGCV052": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Orçamento de Programas"
   },
-  "Requisições por Gestor": {
+  "FGCV033": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Requisições por Gestor"
   },
-  "Requisições por UO": {
+  "FGCV032": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Requisições por UO"
   },
-  "Contratos por Gestor": {
+  "FGCV303": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Contratos por Gestor"
   },
-  "Consulta Contrato Saneago x SAP": {
+  "FGCV068": {
     "modulo": "Gestão Contratos",
     "menu": "Consulta",
     "nome": "Consulta Contrato Saneago x SAP"
   },
-  "Unidades Consumidoras de Energia": {
+  "LENV110": {
     "modulo": "Gestão Energética",
     "menu": "Cadastro",
     "nome": "Unidades Consumidoras de Energia"
   },
-  "Interrupção de Energia": {
+  "LENV145": {
     "modulo": "Gestão Energética",
     "menu": "Cadastro",
     "nome": "Interrupção de Energia"
   },
-  "Cadastro de Veículo": {
+  "LENV146": {
+    "modulo": "Gestão Energética",
+    "menu": "Relatório",
+    "nome": "Interrupção de Energia"
+  },
+  "PGTV301": {
     "modulo": "Gestão Transporte",
     "menu": "Veículos",
     "nome": "Cadastro de Veículo"
   },
-  "Cadastro de Motorista": {
+  "PGTV401": {
     "modulo": "Gestão Transporte",
     "menu": "Motoristas",
     "nome": "Cadastro de Motorista"
   },
-  "Nova Ordem de Tráfego": {
+  "PGTV500": {
     "modulo": "Gestão Transporte",
     "menu": "Ordem Tráfego",
     "nome": "Nova Ordem de Tráfego"
   },
-  "Registro Offline": {
+  "PGTV510": {
+    "modulo": "Gestão Transporte",
+    "menu": "Ordem Tráfego",
+    "nome": "Atendimento"
+  },
+  "PGTV504": {
     "modulo": "Gestão Transporte",
     "menu": "Ordem Tráfego",
     "nome": "Registro Offline"
   },
-  "Resumo": {
+  "PGTV505": {
     "modulo": "Gestão Transporte",
     "menu": "Ordem Tráfego",
     "nome": "Resumo"
   },
-  "Ordem de Tráfego em Reserva": {
+  "PGTV507": {
     "modulo": "Gestão Transporte",
     "menu": "Ordem Tráfego",
     "nome": "Ordem de Tráfego em Reserva"
   },
-  "Empregados Ordem de Tráfego": {
+  "PGTV511": {
     "modulo": "Gestão Transporte",
     "menu": "Ordem Tráfego",
     "nome": "Empregados Ordem de Tráfego"
   },
-  "Veículos Próprios": {
+  "PGTV909": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Veículos Próprios"
   },
-  "Gastos por Periodo": {
+  "PGTV910": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Gastos por Periodo"
   },
-  "Ordens de Tráfego p/ Período e Situação": {
+  "PGTV912": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Ordens de Tráfego p/ Período e Situação"
   },
-  "Motoristas": {
+  "PGTV916": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Motoristas"
   },
-  "Veiculos Alugados": {
+  "PGTV917": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Veiculos Alugados"
   },
-  "Ordem de tráfego por motorista": {
+  "PGTV918": {
     "modulo": "Gestão Transporte",
     "menu": "Relatórios",
     "nome": "Ordem de tráfego por motorista"
   },
-  "Consumo Master por Cidade": {
+  "EGWV003": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Consumo Master por Cidade"
   },
-  "Compara Consumos Medidos": {
+  "EGWV004": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Compara Consumos Medidos"
   },
-  "Contratos a Vencer": {
+  "EGWV305": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Contratos a Vencer"
   },
-  "Consumo e Faturamento Individualizados": {
+  "EGWV313": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Consumo e Faturamento Individualizados"
   },
-  "Cliente por Faixa de Consumo": {
+  "EGWV401": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Cliente por Faixa de Consumo"
   },
-  "Controle do Envio do Resumo": {
+  "EGWV006": {
     "modulo": "Grandes Clientes Web",
     "menu": "Consulta",
     "nome": "Controle do Envio do Resumo"
   },
-  "Faturamento": {
+  "EGWV402": {
     "modulo": "Grandes Clientes Web",
     "menu": "Gráfico",
     "nome": "Faturamento"
   },
-  "Contrato Comercial": {
+  "EGWV001": {
     "modulo": "Grandes Clientes Web",
     "menu": "Cadastro",
     "nome": "Contrato Comercial"
   },
-  "Resumo de Faturamento": {
+  "EGWV005": {
     "modulo": "Grandes Clientes Web",
     "menu": "Cadastro",
     "nome": "Resumo de Faturamento"
   },
-  "Fale com Compliance": {
+  "FGOV002": {
     "modulo": "GESTÃO DE GOVERNANÇA",
     "menu": "Compliance",
     "nome": "Fale com Compliance"
   },
-  "Previsto X Executado": {
+  "KOCV004": {
     "modulo": "GESTÃO DE OBRAS",
     "menu": "Consulta",
     "nome": "Previsto X Executado"
   },
-  "Consulta Empreendimento": {
+  "KOCV005": {
     "modulo": "GESTÃO DE OBRAS",
     "menu": "Consulta",
     "nome": "Consulta Empreendimento"
   },
-  "Cadastro de Ocorrêcias nas Amostras": {
+  "LQEV018": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Operação",
     "nome": "Cadastro de Ocorrêcias nas Amostras"
   },
-  "Ocorrências nas Análises": {
+  "LQEV028": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Operação",
     "nome": "Ocorrências nas Análises"
   },
-  "Consultar Amostras": {
+  "LQEV025": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Consulta",
     "nome": "Consultar Amostras"
   },
-  "Amostras Liberadas por Período": {
+  "LQEV029": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Consulta",
     "nome": "Amostras Liberadas por Período"
   },
-  "Laudos Laboratoriais": {
+  "LQEV027": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Relatório",
     "nome": "Laudos Laboratoriais"
   },
-  "Relatório do IQEt por data": {
+  "LQEV039": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Relatório",
     "nome": "Relatório do IQEt por data"
   },
-  "Resultados das Análises - Planilha": {
+  "LQEV030": {
     "modulo": "Indice Qualidade Esgoto",
     "menu": "Relatório",
     "nome": "Resultados das Análises - Planilha"
   },
-  "Mapa Web SanSIG": {
+  "LIGV002": {
     "modulo": "Informações Geográficas",
     "menu": "SanSIG",
     "nome": "Mapa Web SanSIG"
   },
-  "Notificação": {
+  "GMQV001": {
     "modulo": "Manutenção Equipamentos",
     "menu": "Ordem de Serviço",
     "nome": "Notificação"
   },
-  "Providência - UO Responsável": {
+  "MGOV012": {
     "modulo": "Ouvidoria",
     "menu": "Cadastro",
     "nome": "Providência - UO Responsável"
   },
-  "Registro de Ocorrência por Vencimento": {
+  "MGOV021": {
     "modulo": "Ouvidoria",
     "menu": "Consulta",
     "nome": "Registro de Ocorrência por Vencimento"
   },
-  "Encaminhamento de RO": {
+  "MGOV029": {
     "modulo": "Ouvidoria",
     "menu": "Consulta",
     "nome": "Encaminhamento de RO"
   },
-  "Registro de Ocorrência Pendente": {
+  "MGOV033": {
     "modulo": "Ouvidoria",
     "menu": "Consulta",
     "nome": "Registro de Ocorrência Pendente"
   },
-  "Áreas Setoriais OGE": {
+  "MGOV059": {
     "modulo": "Ouvidoria",
     "menu": "Consulta",
     "nome": "Áreas Setoriais OGE"
   },
-  "Painel Estatístico Ouvidoria": {
+  "MGOV050": {
     "modulo": "Ouvidoria",
     "menu": "Paineis",
     "nome": "Painel Estatístico Ouvidoria"
   },
-  "Manobra de Registros": {
+  "GPMV001": {
     "modulo": "Painel Manobras",
     "menu": "Cadastro",
     "nome": "Manobra de Registros"
   },
-  "Manobra": {
+  "GPMV002": {
     "modulo": "Painel Manobras",
     "menu": "Cadastro",
     "nome": "Manobra"
   },
-  "Área Afetada": {
+  "GPMV006": {
     "modulo": "Painel Manobras",
     "menu": "Cadastro",
     "nome": "Área Afetada"
   },
-  "Inclui Área Afetada não Prevista": {
+  "GPMV007": {
     "modulo": "Painel Manobras",
     "menu": "Cadastro",
     "nome": "Inclui Área Afetada não Prevista"
   },
-  "Consulta Área Influência": {
+  "GPMV005": {
     "modulo": "Painel Manobras",
     "menu": "Cadastro",
     "nome": "Consulta Área Influência"
   },
-  "Registro Fechado": {
+  "GPMV010": {
     "modulo": "Painel Manobras",
     "menu": "Consulta",
     "nome": "Registro Fechado"
   },
-  "Registro Fechado por Período": {
+  "GPMV015": {
     "modulo": "Painel Manobras",
     "menu": "Consulta",
     "nome": "Registro Fechado por Período"
   },
-  "Consulta Registro a Ser Fechado": {
+  "GPMV020": {
     "modulo": "Painel Manobras",
     "menu": "Consulta",
     "nome": "Consulta Registro a Ser Fechado"
   },
-  "Paralisação/Intermitência": {
+  "GPMV016": {
     "modulo": "Painel Manobras",
     "menu": "Consulta",
     "nome": "Paralisação/Intermitência"
   },
-  "Seleciona Valvula": {
+  "GPMV003": {
     "modulo": "Painel Manobras",
     "menu": "Consulta",
     "nome": "Seleciona Valvula"
   },
-  "Plano de Lotação": {
+  "BPAV001": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Cadastro",
     "nome": "Plano de Lotação"
   },
-  "Histórico Funcional": {
+  "BPAV433": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Consultas",
     "nome": "Histórico Funcional"
   },
-  "Autoavaliação de Desempenho": {
+  "BPAV359": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Autoavaliação de Desempenho"
   },
-  "Avaliação de Desempenho dos Gestores": {
+  "BPAV360": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Avaliação de Desempenho dos Gestores"
   },
-  "Avaliação do Empregado": {
+  "BPAV354": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Avaliação do Empregado"
   },
-  "Gerenciamento e Devolutiva - Avaliaçoes": {
+  "BPAV361": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Gerenciamento e Devolutiva - Avaliaçoes"
   },
-  "Resultado Avaliação de Desempenho": {
+  "BPAV356": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Resultado Avaliação de Desempenho"
   },
-  "Relatório Avaliação de Desempenho": {
+  "BPAV358": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Gestão de Desempenho",
     "nome": "Relatório Avaliação de Desempenho"
   },
-  "Inscrição PDV": {
+  "BPAV372": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "PDV",
     "nome": "Inscrição PDV"
   },
-  "Ranking PDV": {
+  "BPAV373": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "PDV",
     "nome": "Ranking PDV"
   },
-  "Painel da Trilha": {
+  "BPAV604": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Trilha do Conhecimento",
     "nome": "Painel da Trilha"
   },
-  "Gestão de Empregados no Teletrabalho": {
+  "BPAV004": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Isolamento Social",
     "nome": "Gestão de Empregados no Teletrabalho"
   },
-  "Reporte de Atividades de Teletrabalho": {
+  "BPAV005": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Isolamento Social",
     "nome": "Reporte de Atividades de Teletrabalho"
   },
-  "Painel de Empregados em Teletrabalho": {
+  "BPAV006": {
     "modulo": "Planejamento Rec Humanos",
     "menu": "Isolamento Social",
     "nome": "Painel de Empregados em Teletrabalho"
   },
-  "Erros do Distrito por Período": {
+  "ECSV006": {
     "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
     "menu": "Controle",
     "nome": "Erros do Distrito por Período"
   },
-  "Gerar Planilha": {
+  "ECSV007": {
     "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
     "menu": "Controle",
     "nome": "Gerar Planilha"
   },
-  "Gerenciar Planilha de Controle": {
+  "ECSV009": {
     "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
     "menu": "Controle",
     "nome": "Gerenciar Planilha de Controle"
   },
-  "Gerar Resumo do Faturamento": {
+  "ECSV010": {
     "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
     "menu": "Controle",
     "nome": "Gerar Resumo do Faturamento"
   },
-  "Apontamento de Erros": {
+  "ECSV008": {
     "modulo": "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
     "menu": "Relatório",
     "nome": "Apontamento de Erros"
   },
-  "Consulta Acessos por Usuário": {
+  "MSSV420": {
     "modulo": "Segurança",
     "menu": "Usuário",
     "nome": "Consulta Acessos por Usuário"
   },
-  "Cadastro Para Recuperar Senha": {
+  "MSSV005": {
     "modulo": "Segurança",
     "menu": "Usuário",
     "nome": "Cadastro Para Recuperar Senha"
   },
-  "Consulta Usuários por Perfil": {
+  "MSSV430": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Usuários por Perfil"
   },
-  "Consulta Aplicações por Perfil": {
+  "MSSV450": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Aplicações por Perfil"
   },
-  "Consulta Perfis por Sistema": {
+  "MSSV470": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Perfis por Sistema"
   },
-  "Consulta Usuários por Sistema": {
+  "MSSV460": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Usuários por Sistema"
   },
-  "Consulta Usuários por Aplicação": {
+  "MSSV480": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Usuários por Aplicação"
   },
-  "Consulta Aplicações por Sistema": {
+  "MSSV490": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Aplicações por Sistema"
   },
-  "Consulta Usuários por A. Complementar": {
+  "MSSV402": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta Usuários por A. Complementar"
   },
-  "Consulta A. Complementar por Aplicação": {
+  "MSSV550": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta A. Complementar por Aplicação"
   },
-  "Consulta A. Complementar por Sistema": {
+  "MSSV401": {
     "modulo": "Segurança",
     "menu": "Consulta",
     "nome": "Consulta A. Complementar por Sistema"
   },
-  "Usuário por Aplicação - Legado BZ127": {
+  "MSSV503": {
     "modulo": "Segurança",
     "menu": "Portal Legado",
     "nome": "Usuário por Aplicação - Legado BZ127"
   },
-  "Sistemas e Aplicações Cobol - Legado": {
+  "MSSV502": {
     "modulo": "Segurança",
     "menu": "Portal Legado",
     "nome": "Sistemas e Aplicações Cobol - Legado"
   },
-  "Usuário com Acesso Especial - BZ103": {
+  "MSSV500": {
     "modulo": "Segurança",
     "menu": "Portal Legado",
     "nome": "Usuário com Acesso Especial - BZ103"
   },
-  "Consulta Acessos Legado por Usuário": {
+  "MSSV126": {
     "modulo": "Segurança",
     "menu": "Portal Legado",
     "nome": "Consulta Acessos Legado por Usuário"
   },
-  "Cadastro de Telefone por Matrícula": {
+  "MSSV008": {
     "modulo": "Segurança",
     "menu": "Telefone",
     "nome": "Cadastro de Telefone por Matrícula"
   },
-  "Cadastro de Telefone por UO": {
+  "MSSV009": {
     "modulo": "Segurança",
     "menu": "Telefone",
     "nome": "Cadastro de Telefone por UO"
   },
-  "Exportar Contatos": {
+  "MSIV001": {
     "modulo": "Serviços Intranet",
     "menu": "Contatos",
     "nome": "Exportar Contatos"
   },
-  "Registrar Voto": {
+  "MSIV070": {
     "modulo": "Serviços Intranet",
     "menu": "Voto",
     "nome": "Registrar Voto"
   },
-  "Escolha de Serviço": {
+  "GSIV006": {
     "modulo": "Solicitações de Serviço",
     "menu": "Solicitações",
     "nome": "Escolha de Serviço"
   },
-  "Solicitações": {
+  "GSIV005": {
     "modulo": "Solicitações de Serviço",
     "menu": "Solicitações",
     "nome": "Solicitações"
   },
-  "Abertura de Solicitação": {
+  "GSIV007": {
     "modulo": "Solicitações de Serviço",
     "menu": "Solicitações",
     "nome": "Abertura de Solicitação"
   },
-  "Pesquisa Geral": {
+  "GSIV013": {
     "modulo": "Solicitações de Serviço",
     "menu": "Solicitações",
     "nome": "Pesquisa Geral"
   },
-  "Enviar Fatura por Conta": {
+  "ECNV003": {
     "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
     "menu": "Protesto Cartorário",
     "nome": "Enviar Fatura por Conta"
   },
-  "Enviar Fatura em Massa": {
+  "ECNV004": {
     "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
     "menu": "Protesto Cartorário",
     "nome": "Enviar Fatura em Massa"
   },
-  "Gerenciar Protesto": {
+  "ECNV005": {
     "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
     "menu": "Protesto Cartorário",
     "nome": "Gerenciar Protesto"
   },
-  "Relatório": {
+  "ECNV006": {
     "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
     "menu": "Protesto Cartorário",
     "nome": "Relatório"
   },
-  "Consultar Protesto": {
+  "ECNV007": {
     "modulo": "SISTEMA DE PROTESTO CARTORÁRIO",
     "menu": "Protesto Cartorário",
     "nome": "Consultar Protesto"
   },
-  "Trâmite": {
+  "GSPV102": {
     "modulo": "Tramite Processos",
     "menu": "Trâmite",
     "nome": "Trâmite"
   },
-  "Capturar Remessa": {
+  "MTGV001": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Remessas",
     "nome": "Capturar Remessa"
   },
-  "Remessas Capturadas": {
+  "MTGV005": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Remessas",
     "nome": "Remessas Capturadas"
   },
-  "Consultar Remessas Capturadas": {
+  "MTGV008": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Remessas",
     "nome": "Consultar Remessas Capturadas"
   },
-  "Enviar Retorno": {
+  "MTGV002": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Retornos",
     "nome": "Enviar Retorno"
   },
-  "Consultar Retornos Enviados": {
+  "MTGV009": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Retornos",
     "nome": "Consultar Retornos Enviados"
   },
-  "Sequencial Esperado": {
+  "MTGV010": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Retornos",
     "nome": "Sequencial Esperado"
   },
-  "Arquivos Retorno com Erros": {
+  "MTGV011": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Retornos",
     "nome": "Arquivos Retorno com Erros"
   },
-  "Logs de Erros Arq Retorno": {
+  "MTGV012": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Retornos",
     "nome": "Logs de Erros Arq Retorno"
   },
-  "Andamento Geral": {
+  "MTGV006": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Relatório",
     "nome": "Andamento Geral"
   },
-  "Controle de Religações": {
+  "MTGV016": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Relatório",
     "nome": "Controle de Religações"
   },
-  "Consulta Fila de Relatórios PDF": {
+  "MTGV020": {
     "modulo": "Transmissao Rec.Arquivos",
     "menu": "Relatório",
     "nome": "Consulta Fila de Relatórios PDF"
   },
-  "Pedido": {
+  "BTWV001": {
     "modulo": "Treinamento Web",
     "menu": "Treinamento",
     "nome": "Pedido"
   },
-  "Avaliação de Eficácia do Treinamento": {
+  "BTWV055": {
     "modulo": "Treinamento Web",
     "menu": "Treinamento",
     "nome": "Avaliação de Eficácia do Treinamento"
   },
-  "Pedidos Por Período": {
+  "BTWV002": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Pedidos Por Período"
   },
-  "Pedidos Por Empregado": {
+  "BTWV022": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Pedidos Por Empregado"
   },
-  "Pedidos desta Unidade e UOs Inferiores": {
+  "BTWV024": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Pedidos desta Unidade e UOs Inferiores"
   },
-  "Pedidos desta Unidade Organizacional": {
+  "BTWV025": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Pedidos desta Unidade Organizacional"
   },
-  "Consulta Cronograma de Treinamento": {
+  "BTWV057": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Consulta Cronograma de Treinamento"
   },
-  "Treinamento por Empregado": {
+  "BTWV062": {
     "modulo": "Treinamento Web",
     "menu": "Consulta",
     "nome": "Treinamento por Empregado"
