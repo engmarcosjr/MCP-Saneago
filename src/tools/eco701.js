@@ -141,16 +141,52 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
     });
 
     if (comboId) {
-      console.error(`[AbrirRA] Preenchendo Forma de Atendimento (${comboId}) com ${formaAtendimento}...`);
-      await preencherCampo(frame, comboId, formaAtendimento);
-      await frame.locator(`#${comboId}`).press("Tab");
-      await frame.page().waitForTimeout(1000); // Aguarda onSelect do ZK
+      console.error(`[AbrirRA] Selecionando Forma de Atendimento (${comboId}) = ${formaAtendimento}...`);
+      const norm = (s) => (s || '').replace(/\s+/g, ' ').trim().toUpperCase();
 
-      const valorFinal = await frame.evaluate((id) => {
-        return document.getElementById(id).value;
+      const comboInfo = await frame.evaluate((id) => {
+        const input = document.getElementById(id);
+        const combo = input.closest('.z-combobox');
+        const btn = combo ? combo.querySelector('.z-combobox-button') : null;
+        return {
+          readonly: input.readOnly,
+          popupId: input.getAttribute('aria-controls'),
+          btnId: btn ? btn.id : null,
+        };
       }, comboId);
 
-      const norm = (s) => (s || '').replace(/\s+/g, ' ').trim().toUpperCase();
+      if (!comboInfo.readonly) {
+        // Combo editável: digitar dispara o onChange do ZK no blur
+        await preencherCampo(frame, comboId, formaAtendimento);
+        await frame.locator(`[id="${comboId}"]`).press("Tab");
+      } else {
+        // Combo select-only (input readonly): abre o popup e clica no item
+        // com evento real do Playwright (dispara o onSelect do ZK)
+        if (!comboInfo.btnId || !comboInfo.popupId) {
+          throw new Error("Combobox 'Forma de Atendimento' é readonly e não expôs botão/popup para seleção.");
+        }
+        await frame.locator(`[id="${comboInfo.btnId}"]`).click();
+        const popup = frame.locator(`[id="${comboInfo.popupId}"]`);
+        await popup.waitFor({ state: "visible", timeout: 10000 });
+        const alvo = new RegExp(
+          formaAtendimento.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*'),
+          'i'
+        );
+        const item = popup.locator('.z-comboitem', { hasText: alvo }).first();
+        if (!(await item.isVisible().catch(() => false))) {
+          const opcoes = await popup.locator('.z-comboitem').allInnerTexts().catch(() => []);
+          throw new Error(`Opção "${formaAtendimento}" não encontrada na Forma de Atendimento. Opções visíveis: ${JSON.stringify(opcoes)}`);
+        }
+        await item.click();
+      }
+
+      // Aguarda o roundtrip do ZK refletir o valor no input (polling)
+      let valorFinal = "";
+      for (let i = 0; i < 10; i++) {
+        valorFinal = await frame.evaluate((id) => document.getElementById(id).value, comboId);
+        if (norm(valorFinal) === norm(formaAtendimento)) break;
+        await frame.page().waitForTimeout(500);
+      }
       if (norm(valorFinal) !== norm(formaAtendimento)) {
         throw new Error(`Não foi possível selecionar a Forma de Atendimento "${formaAtendimento}". Valor no campo ficou: "${valorFinal}"`);
       }

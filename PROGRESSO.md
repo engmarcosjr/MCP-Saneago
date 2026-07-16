@@ -187,3 +187,10 @@ Pacote executado pelo AGY3 (Gemini 3.1 Pro, sandbox sem rede) a partir da REVIS�
 - **Item 4:** helper `aguardarInputPorRotulo` criado em `src/inspector.js`; 3 cópias da heurística eliminadas (`index.js`, `lrs041.js`, `eco701.js`); `waitForTimeout(8000)` pós-submit substituído por polling de até 30 s.
 - **Revisão (Claude):** diff lido na íntegra, fiel à especificação; `node --check` verde nos 4 arquivos (reproduzido pelo revisor). Notas não bloqueantes: `press("Tab")` redundante após `preencherCampo` (que já faz blur) e verificação da combo por igualdade estrita pode exigir ajuste se o ZK autocompletar com texto extra — validar no E2E.
 - **Pendência (gate da FASE 4):** prova E2E supervisionada — primeiro pré-submit `node scratch/test_eco701_supervisionado.js` (sem `--confirmar`), depois submissão real com Marcos Jr presente.
+
+### FASE 4 — E2E de pré-submit + correção do revisor (Claude, 2026-07-16)
+O E2E de pré-submit derrubou a abordagem do item 2 da Rev 8: o input da combo "Forma de Atendimento" (`*-real`) é **readonly** (combo select-only do ZK) — digitar via `preencherCampo` nunca funcionaria (timeout de `fill` em elemento não editável). Correção do revisor em `eco701.js`: detecta `input.readOnly`; se readonly, abre o popup pelo botão da combo e clica no `.z-comboitem` com clique real do Playwright (dispara o `onSelect` do ZK), escopado pelo `aria-controls` do input; se editável, mantém o caminho de digitação. Verificação do `value` final por polling; opção inexistente gera erro listando as opções visíveis.
+
+**Prova E2E (pré-submit, rede Saneago):** `node scratch/test_eco701_supervisionado.js` → Forma de Atendimento = "3 - INTERNO" selecionada e verificada; auto-fill do CEP ok (ANAPOLIS / BAIRRO MARACANA / RUA DONA ADA CENTINI); serviço 2002 = "RECLAMACAO SOBRE FALTA DE AGUA", Classificação "1 - Reclamação"; parou no PREVIEW sem escrita. Nota menor: o `resumo` traz rótulos "Sem Rotulo" e pares estranhos ("Nome"="F", "CPF"="J") — heurística de rotulagem do resumo imprecisa, não afeta o preenchimento (dívida cosmética).
+
+**Gate restante da FASE 4:** submissão real com `--confirmar`, supervisionada por Marcos Jr.
