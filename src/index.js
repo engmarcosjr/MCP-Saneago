@@ -223,6 +223,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 
 // Execucao das Ferramentas
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
+  console.error(`[MCP-Saneago] tool=${request.params.name} started`);
   try {
     switch (request.params.name) {
       case "saneago_listar_aplicacoes":
@@ -476,12 +477,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         throw new Error(`Ferramenta desconhecida: ${request.params.name}`);
     }
   } catch (error) {
+    console.error(`[MCP-Saneago] tool=${request.params.name} failed: ${error.message}`);
     return {
       isError: true,
       content: [
         {
           type: "text",
-          text: `Erro executando ferramenta ${request.params.name}:\n${error.message}\n${error.stack}`,
+          text: `Erro executando ferramenta ${request.params.name}: ${error.message}`,
         },
       ],
     };
