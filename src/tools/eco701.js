@@ -353,8 +353,23 @@ async function abrirRA(
     // Polling do resultado
     let numeroRA = null;
     let errorMsg = null;
+    let dialogoAberto = null;
     for (let i = 0; i < 30; i++) {
       await frame.page().waitForTimeout(1000);
+
+      // Dialogo modal do ZK (confirmacao ou aviso) que o polling antigo nao
+      // enxergava: se ficar aberto sem resposta, o submit fica pendurado e o
+      // resultado sai INDETERMINADO sem explicacao. Capturar texto e botoes.
+      dialogoAberto = await frame.evaluate(() => {
+        const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+        const caixas = Array.from(document.querySelectorAll('.z-messagebox-window, .z-window-modal, .z-window-highlighted'))
+          .filter(visible);
+        if (!caixas.length) return null;
+        return caixas.map(c => ({
+          texto: c.innerText.trim().slice(0, 500),
+          botoes: Array.from(c.querySelectorAll('button')).filter(visible).map(b => b.innerText.trim()),
+        }));
+      });
 
       const raId = await aguardarInputPorRotulo(frame, 'NUMERO DO RA', { tentativas: 1, intervalo: 0 });
       if (raId) {
@@ -363,6 +378,14 @@ async function abrirRA(
           numeroRA = val.trim();
           break; // Sucesso
         }
+      }
+
+      // Um dialogo modal com mensagem (ex.: "REGRA 7 — servico so para clientes
+      // com numero de conta") e um desfecho DETERMINADO de falha, nao um
+      // indeterminado: o portal recusou a RA por regra de negocio.
+      if (dialogoAberto && dialogoAberto.length) {
+        errorMsg = dialogoAberto.map(d => d.texto.replace(/\n(OK|Cancelar|Sim|Não|Nao)$/i, '').replace(/\n/g, ' — ').trim()).join(" | ");
+        break;
       }
 
       errorMsg = await frame.evaluate((jaPresentes) => {
@@ -397,19 +420,38 @@ async function abrirRA(
     }
 
     if (errorMsg) {
-      logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (ERRO DE VALIDACAO)`, "ERRO");
+      logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (ERRO DE VALIDACAO: ${errorMsg})`, "ERRO");
       return {
         success: false,
         message: `Falha na submissão. Mensagem do portal: ${errorMsg}`,
-        resumo
+        resumo,
+        dialogoAberto
       };
+    }
+
+    // INDETERMINADO: salvar evidencias para o post-mortem (a sessao fecha logo
+    // depois e o estado da tela se perde).
+    const evidencias = {};
+    try {
+      const ts = new Date().toISOString().replace(/[:.]/g, '-');
+      const path = require('path');
+      const base = path.join(__dirname, '..', '..', 'scratch', `indeterminado_${ts}`);
+      await frame.page().screenshot({ path: `${base}.png`, fullPage: true });
+      const fs = require('fs');
+      fs.writeFileSync(`${base}.txt`, await frame.locator('body').innerText());
+      evidencias.screenshot = `${base}.png`;
+      evidencias.textoTela = `${base}.txt`;
+    } catch (e) {
+      evidencias.erro = `Falha ao salvar evidencias: ${e.message}`;
     }
 
     logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (INDETERMINADO)`, "ERRO");
     return {
       success: false,
       message: "Resultado INDETERMINADO: o portal não retornou um número de RA nem uma mensagem de erro em tempo hábil. VERIFIQUE MANUALMENTE no portal se o RA foi aberto antes de tentar novamente.",
-      resumo
+      resumo,
+      dialogoAberto,
+      evidencias
     };
 
   } catch (error) {

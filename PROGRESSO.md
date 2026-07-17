@@ -320,3 +320,29 @@ nunca comparar byte a byte.
 
 **Gate restante da FASE 4:** submissão real com `--confirmar` + `SANEAGO_ALLOW_WRITE=1`,
 supervisionada por Marcos Jr — agora sobre o driver ZK. Commit pendente de autorização.
+
+### FASE 4 — 1ª submissão real completa: REGRA 7 (conta obrigatória) e detecção de diálogo (Claude + Marcos Jr, 2026-07-16)
+
+**Marco:** primeira submissão real em que TODAS as validações de campo passaram — o fluxo
+via driver ZK preencheu tudo, clicou "Gerar RA" e o portal respondeu. Duas rodadas deram
+`INDETERMINADO` (o polling só reconhecia campo "Número do RA" ou `.z-errbox`, cego para
+diálogos modais). Marcos Jr confirmou no portal: **nenhuma RA criada** nas duas.
+
+**Instrumentação (Claude):** o polling passou a capturar janelas modais do ZK
+(`.z-messagebox-window`/`.z-window-modal`) com texto e botões (`dialogoAberto`), e o
+INDETERMINADO salva screenshot full-page + texto da tela em `scratch/indeterminado_*`.
+
+**Causa raiz (não é bug — é regra de negócio):** modal "Comercial — Serviço disponível
+apenas para clientes com número de conta. **( REGRA 7 )**". O serviço 2002 (Reclamação
+sobre falta de água) exige vínculo com **Número da Conta/DV** (campo no topo da tela, ao
+lado do Número do RA, que o `abrirRA` nunca preencheu). Screenshot:
+`scratch/indeterminado_2026-07-17T01-55-15-723Z.png`.
+
+**Correção de código:** diálogo modal com mensagem agora é desfecho DETERMINADO de falha
+(devolve o texto da regra e loga em `audit`), não mais INDETERMINADO. Não fecha o modal
+automaticamente com "OK" para não mascarar (a sessão é descartada após).
+
+**Decisão de negócio pendente (Marcos Jr):** (a) adicionar parâmetro `numeroConta` ao
+`abrirRA`/schema para serviços que exigem conta (REGRA 7), e/ou (b) validar o E2E de
+escrita com um serviço que NÃO exige conta. O gate técnico da FASE 4 está provado ponta a
+ponta — só falta um serviço/insumo que passe pela regra comercial.
