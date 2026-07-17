@@ -346,3 +346,64 @@ automaticamente com "OK" para não mascarar (a sessão é descartada após).
 `abrirRA`/schema para serviços que exigem conta (REGRA 7), e/ou (b) validar o E2E de
 escrita com um serviço que NÃO exige conta. O gate técnico da FASE 4 está provado ponta a
 ponta — só falta um serviço/insumo que passe pela regra comercial.
+
+---
+
+## PARALISAÇÃO (2026-07-16) — estado de parada e como retomar
+
+Projeto **paralisado por decisão de Marcos Jr** após provar o gate técnico da FASE 4.
+Repo limpo e pushado (`master`, GitHub `engmarcosjr/MCP-Saneago`). Retomar por aqui.
+
+### O que ficou PRONTO e PROVADO
+- **Driver ZK client API** (`src/executor.js`): `setarCampoZk`, `confirmarCampoZk`,
+  `clicarZk`, `selecionarComboZk` — dirige o motor cliente do ZK (`zk.Widget`/`zAu`) em
+  vez de simular digitação. Elimina a classe de bugs de corrida (truncamento, `62`→`(26)`).
+  Prova: 8 rodadas de pré-submit do ECO701 verdes, nome 29/29 chars íntegro.
+- **ECO701 (escrita)** migrado para o driver; fluxo completo (Incluir → CEP+autofill →
+  cliente/contato/telefone → serviço → número → observação → combo → Gerar RA) funcionando
+  ponta a ponta. Detecção de diálogo modal do ZK e evidências no INDETERMINADO.
+- **Leitura** (`eco303`, `lrs041`) intactas e provadas — NÃO migradas de propósito (ver
+  diretriz abaixo).
+- **Catálogo**: 327/337 apps roteirizadas; `menu_nav.json` por código; 8 homônimos provados.
+
+### ÚNICO bloqueio ao E2E de escrita — é de NEGÓCIO, não técnico
+O serviço de teste **2002 (Reclamação sobre falta de água) exige Número da Conta/DV**
+(**REGRA 7**). O fluxo tecnicamente completa; o portal recusa por regra comercial. Nenhuma
+RA foi criada. Para fechar o E2E de escrita, escolher UM dos caminhos:
+- **(A)** Adicionar parâmetro `numeroConta` ao `abrirRA` + schema (`src/index.js`),
+  preencher o campo "Número da Conta/DV" (topo da tela, ao lado de "Número do RA").
+  Precisa de um número de conta de teste válido.
+- **(B)** Testar com um serviço que NÃO exige conta (tipicamente ligados a logradouro/rede,
+  não a imóvel). Precisa descobrir/confirmar um código de serviço assim.
+
+### DIRETRIZ — adoção do driver ZK (decisão Marcos Jr + Claude, 2026-07-16)
+**NÃO migrar as tools em massa.** Justificativa:
+- O driver é COMPARTILHADO (mora no `executor.js`); "migrar" é trocar chamadas, não
+  reescrever — já está disponível para qualquer tela.
+- Ele só resolve a corrida de DIGITAÇÃO (campo longo no meio de sequência com autofill).
+  As consultas (`eco303`/`lrs041`) preenchem 1-2 campos curtos de busca e clicam Consultar
+  — o bug não ocorre ali, e ambas estão provadas. Trocar = risco de regressão sem ganho.
+- Cada tipo de widget novo exige captura de eventos própria antes de migrar (a combo do
+  ECO701 provou: replicar a captura não bastou, precisou de `open()`/`setValue` client-side).
+
+**Padrão para o futuro:** toda tela de ESCRITA nova nasce no driver ZK (é onde a corrida
+morde). `eco303`/`lrs041` ficam como estão; migrar só se derem problema de digitação, caso
+a caso e com captura. As 327 apps restantes são roteiros (sem código) — nada a migrar.
+
+**Método para qualquer widget novo:** instrumentar `zAu.send` (padrão de
+`scratch/diag_zk_capture_eventos.js` / `diag_zk_capture_combo.js`), fazer a interação REAL
+uma vez, capturar o fluxo de eventos e replicar. Nunca inventar payload de evento.
+
+### Pendências antigas ainda abertas (não bloqueiam a retomada)
+- Logradouro por nome retorna 0 resultados (sem CEP); ambiguidade nome→código nos bandboxes
+  (caso "MARACANA" = 8 bairros) — se implementar endereço sem CEP, LISTAR e PERGUNTAR.
+- LRS041 varre só o 1º lote da listagem.
+- 283 apps com roteiro só `auto` (inferido, não provado E2E).
+- Guarda de confirmação humana no fluxo do Telegram antes de `confirmar: true`.
+
+### Referências
+- Plano da metodologia: `docs/PLANO_ZK_CLIENT_API.md`
+- Relatório da execução (Codex): `RELATORIO_ZK_API.md`
+- Provas read-only: `scratch/diag_zk_widget_api.js`, `diag_zk_capture_eventos.js`,
+  `diag_zk_capture_combo.js`
+- Evidência da REGRA 7: `scratch/indeterminado_2026-07-17T01-55-15-723Z.png`

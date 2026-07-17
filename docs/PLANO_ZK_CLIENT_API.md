@@ -1,6 +1,18 @@
 # Plano — Migração do executor para a API cliente do ZK
 
-**Data:** 2026-07-16 · **Autor:** Claude (revisor) + Marcos Jr · **Status:** prova de conceito APROVADA, implementação pendente
+**Data:** 2026-07-16 · **Autor:** Claude (revisor) + Marcos Jr · **Status:** IMPLEMENTADO e provado no ECO701 (FASES A–C). Projeto paralisado antes do gate de escrita real (bloqueio de negócio, REGRA 7 — ver `PROGRESSO.md`).
+
+## 0. Diretriz de escopo (decisão 2026-07-16) — NÃO migrar em massa
+
+O driver ZK é **compartilhado** (`src/executor.js`) — já está disponível para todas as
+tools; não há "refazer aplicação por aplicação". Ele resolve apenas a **corrida de
+digitação** (campo longo no meio de sequência com autofill mexendo na tela), que é um
+problema de telas de ESCRITA. As consultas (`eco303`/`lrs041`) preenchem poucos campos
+curtos de busca e estão provadas — **não** devem ser migradas (risco de regressão sem
+ganho). Padrão: **toda tela de escrita nova nasce no driver ZK**; leitura fica como está,
+migra só se der problema de digitação, caso a caso e com captura de eventos. As 327 apps
+do catálogo são roteiros (sem código) — nada a migrar. Detalhe e justificativa completa na
+seção "PARALISAÇÃO" do `PROGRESSO.md`.
 
 ## 1. Contexto e motivação
 
