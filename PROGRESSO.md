@@ -197,3 +197,126 @@ O E2E de pré-submit derrubou a abordagem do item 2 da Rev 8: o input da combo "
 
 ### FASE 4 — hotfix do helper `aguardarInputPorRotulo` (Claude, 2026-07-16)
 O teste do chatbot DAN01 (consulta de RA via chat) revelou bug no helper da Rev 8 que a revisão estática não pegou: `locator('body').evaluate((textoBusca) => ...)` — no `locator.evaluate` do Playwright o 1º parâmetro é o **elemento**, e o argumento chega no 2º; `textoBusca` recebia o `<body>` e o `includes` nunca casava (helper sempre retornava null → "Campo Numero do RA nao encontrado"). Corrigido para `frame.evaluate(fn, arg)`. Prova E2E: `scratch/test_aguardar_input.js` → campo localizado no ECO701 real. Lição: o E2E de pré-submit não exercita o helper (só o pós-submit e as consultas) — cada caminho novo precisa da própria prova.
+
+### FASE 4 — 1ª submissão real: campo obrigatório + bug de truncamento (Claude, 2026-07-16)
+
+Primeira execução de `--confirmar` na rede Saneago (supervisionada por Marcos Jr). **Nenhuma RA foi criada** — a validação do portal barrou antes.
+
+**1. Falso positivo descartado (e a janela fechada).** O 1º retorno foi "Detectada mensagem de erro ou validação no texto da página" — vinda do ramo de texto solto, sem `.z-errbox` visível. Isso levantou a suspeita de falso positivo (a Rev 8 deixou a janela aberta: uma frase estática na tela abortaria o polling no 1º segundo e reportaria falha **mesmo com a RA sendo gerada**). Investigado com uma linha de base pré-submit: `validacaoPreSubmit: []` provou que a frase **nasceu do clique** — erro real, RA não criada (audit log só com `ERRO DE VALIDACAO`). Correção em `eco701.js`: captura das validações antes do clique e, no pós-submit, **só contam mensagens novas**; a mensagem real do portal é devolvida em vez do texto genérico.
+
+**2. Campo obrigatório descoberto:** `É necessário informar o(a) nome do cliente/interessado.` O `abrirRA` nunca preencheu o solicitante. A tela tem dois blocos com rótulo "Nome": o do cliente (linha que também traz CPF/CNPJ e os radios F/J de tipo de pessoa) e o de contato (maxlength 30). Desempate implementado pela presença de "CPF" no escopo da linha. Novo parâmetro obrigatório `nomeCliente` em `abrirRA` e no `inputSchema` de `saneago_abrir_ra` (descrição instrui a **pedir ao usuário, nunca inventar**), com falha rápida antes de abrir sessão.
+
+**3. Bug sério: truncamento silencioso de campos de texto.** O nome saía cortado, em ponto **diferente a cada execução** (9, 11, 23 chars — o campo aceita 70). Diagnóstico: isolado, o campo segura os 29 chars por 6s (nada de eco atrasado do ZK); dentro da sequência real, **o autofill do CEP deixa o ZK mexendo na tela e engole teclas do `pressSequentially`**. Afeta qualquer campo de texto longo — inclusive a **Observação**, que podia estar sendo gravada pela metade sem ninguém notar. Correção em `src/executor.js`: `preencherCampo` mantém a digitação sequencial (provada para CEP/serviço) mas **verifica o valor final e reescreve com `fill()` atômico** até bater; se ainda divergir após 3 tentativas, **lança erro** — preenchimento parcial não pode virar dado gravado.
+
+**4. Rotulagem do `resumo` corrigida** (era dívida cosmética; virou bloqueio de diagnóstico). A heurística antiga andava por `previousElementSibling`/`parentElement`, pulava para células erradas da tabela ZK e rotulava os radios de tipo de pessoa como `"Nome"="F"` / `"CPF"="J"`. Nova: `.z-label` visível mais próximo **antes do input em ordem de documento**, ignorando labels que são só pontuação (a tela renderiza o texto e o ":" como labels separados). Prova: `Sem Rotulo` sumiu; `UO Executora`, `Cidade`, `Bairro`, `Logradouro` saem corretos. **Resíduo:** os radios F/J ainda herdam o rótulo "Nome" (ficam depois dele na ordem do DOM) — legível, não perfeito. Isso importa além da estética: o `resumo` é o que um humano lê antes de autorizar a escrita.
+
+**Provas E2E (rede Saneago, read-only):** `scratch/diag_eco701_campos.js` (48 campos com rótulo real), `scratch/diag_eco701_solicitante.js` (identifica o campo do nome por largura/maxlength/linha), `scratch/diag_truncamento_nome.js` (isolado: sem truncamento), `scratch/diag_truncamento_sequencia.js` (na sequência: trunca; com a correção: íntegro após todos os passos). Preview final: nome completo no `resumo`, `validacaoPreSubmit: []`.
+
+**Gate restante da FASE 4:** submissão real com `--confirmar` (agora com `--nome`), supervisionada.
+
+**Nota de processo:** a trava `SANEAGO_ALLOW_WRITE` foi questionada ("o chatbot vai ter que escrever"). Decisão: **manter** — ela é escopo por deployment (uma linha no `env` da config MCP do chatbot), e é a única guarda que o modelo não alcança; o `confirmar: true` é parâmetro do `inputSchema`, ou seja, **preenchido pelo próprio modelo, sem humano no laço**. A guarda que falta é confirmação humana no fluxo do Telegram antes do `confirmar: true` — pendência registrada.
+
+### FASE 4 — hotfix: botão "Incluir" com polling (Claude, 2026-07-16)
+A 2ª tentativa de submissão real morreu em `Botão 'Incluir' não encontrado na tela inicial do ECO701` — falha **intermitente**: o `abrirRA` procurava o botão numa única `frame.evaluate()` logo após o frame aparecer, mas o ZK ainda não terminou de renderizar. Os scripts de diagnóstico já mascaravam isso com `waitForTimeout(3000)`; o código de produção não tinha espera nenhuma. Corrigido com polling de até 10s (20 × 500ms), no mesmo padrão já usado no resto do arquivo. Prova: preview verde. **Lição repetida:** toda espera fixa (ou ausência de espera) contra o ZK é bug latente — o padrão do projeto é polling.
+
+### FASE 4 — contato obrigatório, máscaras e o CEP genérico (Claude + Marcos Jr, 2026-07-16)
+
+**3ª submissão real:** nome do cliente **aceito**; o portal revelou o próximo obrigatório — `É necessário informar o(a) nome do contato.` (a validação entrega um campo por vez). Nenhuma RA criada.
+
+**Contato implementado.** Novos parâmetros `nomeContato` e `telefoneContato` em `abrirRA`, com padrão `SANEAGO` / `6299999999` (decisão do usuário: o bot **pergunta** se há contato real; o padrão só entra quando não há — coerente com `3 - INTERNO`, em que quem abre é a própria empresa). Campo do contato desempatado pelo escopo da linha ("HORA CONTATO", vs. "CPF" na do cliente) e cortado no `maxLength` do campo (30, contra 70 do cliente). Telefone é dividido em DDD (4) + número (9).
+
+**Máscaras: a verificação estrita estava errada.** Os campos de telefone reformatam o que é digitado (`62` → `(62)`, `99999999` → `99999999_`). A comparação por igualdade estrita introduzida no hotfix anterior brigava com isso e **só passava por sorte de timing** (o `fill()` não dispara o handler da máscara, então o 3º check pegava o valor cru). Corrigido em `executor.js`: a comparação ignora caracteres de máscara/placeholder (`( ) - . _ / espaço`), o que distingue **reformatação legítima** de **truncamento**. 
+
+**A corrida do ZK também EMBARALHA, não só trunca.** Prova capturada no preview: o DDD `62` virou `(26)` — dígitos invertidos. A verificação pegou e reescreveu. Num telefone, um erro desses passaria despercebido para sempre.
+
+**CEP genérico: ideia testada e descartada (com prova).** Proposta do usuário: usar sempre `75000000` "para não gerar erro". `scratch/diag_cep_generico.js` (read-only) comparou os dois: **`75000000` não preenche NADA** (nem cidade, nem bairro, nem logradouro); `75040050` preenche tudo. O CEP não é campo burocrático — é a chave que carrega o endereço inteiro para a RA. Genérico não evitaria erro: deixaria a RA sem localização (ou barrada na validação seguinte). Uma RA é ordem de serviço; endereço errado = equipe no lugar errado e vazamento real sem atendimento. **Mantido** o comportamento atual (extrai o CEP do endereço; falha pedindo quando não acha). Pendência: se houver cenário real de endereço sem CEP conhecido, preencher logradouro/bairro manualmente sem depender do auto-fill.
+
+**Gate restante da FASE 4:** submissão real — próxima validação a descobrir (se houver).
+
+### FASE 4 — endereço sem CEP: fluxo reverso investigado (Claude + Marcos Jr, 2026-07-16)
+
+Marcos Jr apontou o fluxo real da tela: **não preencher o CEP — preencher cidade/bairro/logradouro e o CEP vem sozinho.** Confirmado por prova (`scratch/diag_cep_automatico.js`, read-only):
+```
+Cidade = 2        -> CEP ""          / ANAPOLIS
+Bairro = 2        -> CEP ""          / BAIRRO MARACANA
+Logradouro = 1588 -> CEP "75040050"  / RUA DONA ADA CENTINI   <- veio sozinho
+```
+
+**Estrutura descoberta** (`diag_endereco_reverso.js`): os três campos são pares **código + descrição**. O código é intbox/textbox pequeno (Cidade maxlen 3, Bairro 4, Logradouro 5); a descrição é `z-bandbox` com popup de busca ("Informe o conteúdo para pesquisa e tecle (Enter)", colunas Código/Nome). Cidade e Bairro têm a descrição **readonly** (só via popup); Logradouro é editável.
+
+**Resolução por nome (`diag_endereco_por_nome.js`): parcial.**
+- Cidade: OK — `ANAPOLIS` → 12 candidatos, casamento exato pega `2 = ANAPOLIS`.
+- Bairro: OK com nome completo — `BAIRRO MARACANA` → `2 = BAIRRO MARACANA`.
+- **Logradouro: FALHA — 0 resultados** para `RUA DONA ADA CENTINI`, `DONA ADA CENTINI`, `DONA ADA` e `CENTINI`, mesmo com cidade e bairro corretos e com a rua comprovadamente existindo (código 1588, entregue pelo auto-fill do CEP). **Sem explicação — pendência aberta.**
+
+**HAZARD registrado — ambiguidade nome→código.** "MARACANA" casa com **8 bairros distintos** em Anápolis (`PARQUE MARACANA`, `BAIRRO MARACANA`, `BAIRRO MARACANAZINHO`, `RESIDENCIAL MARACANA`, `SETOR MARACANA`, `JARDIM MARACANA`, `CONJUNTO MARACANA`, `MARACANA`). Na 1ª rodada o casamento exato por "MARACANA" selecionou o bairro **4**, sendo o correto o **2** — endereço errado numa ordem de serviço, silenciosamente. O CEP não tem essa ambiguidade (1 CEP → 1 combinação). **Decisão: se o fluxo por nome for implementado, o bot deve LISTAR os candidatos e PERGUNTAR quando houver mais de um — nunca escolher sozinho.** Mesmo princípio da confirmação humana da escrita.
+
+**Por que não HTTP (pergunta do usuário, respondida — ver atualização na seção seguinte):** decisão de arquitetura do `PLAN.md` (princípio 1), vinda do `ANATOMIA_ZKAU.md`/`6060-check`/`PORTAL_LEGADO` — estado ZK é server-side, amarrado ao `dtid` e a UUIDs por componente que mudam a cada sessão/render. Contra-argumento reconhecido: os bugs de hoje (truncamento, `62`→`(26)`) são consequência da UI viva e não existiriam via HTTP. Mas o auto-fill do CEP e os bandboxes são **cadeias** de roundtrips com contexto server-side — replicar via HTTP é reimplementar o motor cliente do ZK, trocando um bug detectável (a verificação do `executor.js` pega e corrige) por falha silenciosa em produção. **Mantida a UI viva.**
+
+### MUDANÇA DE METODOLOGIA — prova de conceito da API cliente do ZK (Claude + Marcos Jr, 2026-07-16)
+
+Marcos Jr levantou que a metodologia atual (simular digitação humana) será MUITO trabalhosa
+para escalar às demais aplicações e propôs migrar para `/zkau` via HTTP. Análise do revisor:
+os bugs de **transporte/timing** (truncamento, `62`→`(26)`, polling) de fato vêm da digitação
+simulada; mas os de **semântica de tela** (qual campo é qual, validações reveladas uma a uma,
+ambiguidade dos bandboxes) existem em qualquer transporte. HTTP puro exigiria reimplementar o
+motor cliente do ZK (dtid/uuid/sid/parsing AU) — descartado, mantendo a decisão do PLAN.md.
+
+**Meio-termo adotado: navegador vivo + API CLIENTE do ZK (`zk.Widget`/`zAu`) via
+`frame.evaluate`, em vez de simular teclas.** Prova de conceito executada na rede real
+(read-only, ECO701):
+
+- `scratch/diag_zk_capture_eventos.js` — instrumentou `zAu.send` e capturou o fluxo real:
+  o autofill do CEP é disparado pela tríade `onChange` (Intbox, valor coagido a número) →
+  `onBlur` (Intbox) → `onOK` na `zul.wnd.Window` ancestral com `reference` = uuid do campo.
+  O Enter é evento da JANELA, não do campo. Método de captura é reutilizável para qualquer widget.
+- `scratch/diag_zk_widget_api.js` — sequência completa do pré-submit só com a API cliente
+  (ZK 9.6.3): clique no Incluir via `fire("onClick")`, CEP + tríade → **autofill em 523ms**,
+  NOME de 29 chars setado em **1ms e íntegro por 5s de amostragem** (o cenário que truncava),
+  serviço/número/observação OK. `Veredito: NOME integro: SIM`, nada submetido.
+
+**Consequência:** elimina a classe inteira de bugs de corrida de digitação, mantendo sessão,
+portal, localização por rótulo, verificação pós-set, trava de escrita e preview humano.
+Plano detalhado em `docs/PLANO_ZK_CLIENT_API.md` (fases A–D, riscos, critérios de aceite:
+5 rodadas consecutivas sem truncamento). Execução será delegada ao Codex via
+`PROMPT_CODEX_ZK_API.md`; revisão independente pelo Claude antes de commit.
+
+**Regra de ouro registrada:** nunca inventar payload de evento ZK — capturar a interação
+real com a instrumentação e replicar o fluxo provado (pendente para a combo readonly da
+Forma de Atendimento, FASE B do plano).
+
+### REVISÃO 9 — entrega do Codex (driver ZK client API) + correções do revisor (Claude, 2026-07-16)
+
+**Entrega do Codex** (`RELATORIO_ZK_API.md`): FASES A–C do `docs/PLANO_ZK_CLIENT_API.md`.
+Revisão estática: fiel à especificação, escopo respeitado (`src/index.js` intocado — o diff
+ali é o trabalho anterior não commitado do contato), captura real da combo executada
+(`onOpen → onChange → onSelect`, em `scratch/diag_zk_capture_combo.js`), `node --check`
+verde (reproduzido pelo revisor), diag de regressão verde.
+
+**Bug encontrado pelo E2E do revisor (5 rodadas de pré-submit): combo falhava 5/5.**
+`selecionarComboZk` disparava `onOpen` apenas PARA O SERVIDOR — mas quem renderiza os
+`.z-comboitem` no DOM é a abertura CLIENTE do popup (na captura do Codex os itens existiam
+porque o popup fora aberto por clique real do Playwright). O diag de regressão não exercita
+a combo, por isso passou verde na entrega. Mesma lição do hotfix do `aguardarInputPorRotulo`:
+**cada caminho novo precisa da própria prova E2E.**
+
+**Correções do revisor em `src/executor.js` (`selecionarComboZk`):**
+1. `wgt.open({sendOnOpen: true})` (abertura cliente oficial do widget) em vez de só
+   `fire("onOpen")` — renderiza os itens e envia o onOpen;
+2. `wgt.setValue(texto)` antes dos eventos — no clique real é o CLIENTE que escreve o
+   texto no input; o servidor não ecoa o valor (o campo ficava vazio);
+3. `wgt.close()` após a seleção.
+
+**Prova E2E (rede Saneago, read-only): 8 rodadas consecutivas de pré-submit verdes** —
+nome do cliente 29/29 chars íntegro em todas (o truncamento da digitação simulada NUNCA
+apareceu), Forma de Atendimento "3 - INTERNO" selecionada e verificada, serviço 2002 com
+descrição, autofill do CEP, contato SANEAGO/(62)99999999, `validacaoPreSubmit: []`.
+Critério de aceite da FASE C (5 rodadas) SUPERADO.
+
+**Nota de padrão:** o valor da combo no DOM usa espaços não separáveis
+(`3 - INTERNO`) — herdados do rótulo do comboitem, idêntico ao clique real.
+Comparações com o valor de combos devem normalizar `\s` (como o `eco701.js` já faz);
+nunca comparar byte a byte.
+
+**Gate restante da FASE 4:** submissão real com `--confirmar` + `SANEAGO_ALLOW_WRITE=1`,
+supervisionada por Marcos Jr — agora sobre o driver ZK. Commit pendente de autorização.

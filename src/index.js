@@ -181,9 +181,23 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             type: "string",
             description: "Forma de atendimento selecionada (ex: '3 - INTERNO', '1 - TELEFONE')",
             default: "3 - INTERNO"
+          },
+          nomeCliente: {
+            type: "string",
+            description: "Nome do cliente/interessado que solicitou o atendimento. Obrigatorio pelo portal. Peca ao usuario; nunca invente.",
+          },
+          nomeContato: {
+            type: "string",
+            description: "Nome de quem a equipe deve contatar no local. PERGUNTE ao usuario se ha contato real; so omita (padrao 'SANEAGO') quando nao houver.",
+            default: "SANEAGO"
+          },
+          telefoneContato: {
+            type: "string",
+            description: "Telefone do contato com DDD (ex: '62988887777'). PERGUNTE ao usuario; so omita (padrao institucional) quando nao houver contato real.",
+            default: "6299999999"
           }
         },
-        required: ["endereco", "servico", "confirmar"],
+        required: ["endereco", "servico", "confirmar", "nomeCliente"],
       },
     });
   }
@@ -306,9 +320,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_abrir_ra": {
         if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
         
-        const { endereco, servico, confirmar, formaAtendimento } = request.params.arguments;
+        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato } = request.params.arguments;
         try {
-          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento);
+          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato);
           return {
             content: [
               {

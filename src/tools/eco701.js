@@ -1,9 +1,35 @@
 const { abrirApp } = require("../portal");
-const { preencherCampo } = require("../executor");
+const {
+  preencherCampo,
+  setarCampoZk,
+  confirmarCampoZk,
+  clicarZk,
+  selecionarComboZk,
+} = require("../executor");
 const { inspecionarTela, aguardarInputPorRotulo } = require("../inspector");
 const { logAudit } = require("../audit");
 
-async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INTERNO") {
+// Contato padrão para RA interna: quem "solicitou" é a própria Saneago, então
+// o contato honesto é a empresa. O bot deve PERGUNTAR se há contato real do
+// cliente; estes valores só entram quando não há.
+const CONTATO_PADRAO_NOME = "SANEAGO";
+const CONTATO_PADRAO_TELEFONE = "6299999999";
+
+async function abrirRA(
+  endereco,
+  servico,
+  confirmar,
+  formaAtendimento = "3 - INTERNO",
+  nomeCliente,
+  nomeContato = CONTATO_PADRAO_NOME,
+  telefoneContato = CONTATO_PADRAO_TELEFONE
+) {
+  // O portal recusa a RA sem o nome do cliente/interessado ("É necessário
+  // informar o(a) nome do cliente/interessado") — falha antes de abrir sessão.
+  if (!nomeCliente || !nomeCliente.trim()) {
+    throw new Error("É necessário informar o nome do cliente/interessado (quem solicitou o atendimento).");
+  }
+
   // Valida o endereço ANTES de abrir o portal (falha rápida, sem gastar sessão)
   const cepMatch = endereco.match(/\d{5}-?\d{3}/);
   if (!cepMatch) {
@@ -35,18 +61,25 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
 
   try {
     // 1. Clicar no botão Incluir
-    const btnIncluirId = await frame.evaluate(() => {
-      const btn = Array.from(document.querySelectorAll('button.z-button'))
-        .find(b => b.innerText.trim().toUpperCase() === 'INCLUIR');
-      return btn ? btn.id : null;
-    });
+    // O frame aparece antes do ZK terminar de renderizar a tela — uma busca
+    // única falha de forma intermitente. Polling até o botão existir.
+    let btnIncluirId = null;
+    for (let i = 0; i < 20; i++) {
+      btnIncluirId = await frame.evaluate(() => {
+        const btn = Array.from(document.querySelectorAll('button.z-button'))
+          .find(b => b.innerText.trim().toUpperCase() === 'INCLUIR');
+        return btn ? btn.id : null;
+      });
+      if (btnIncluirId) break;
+      await frame.page().waitForTimeout(500);
+    }
 
     if (!btnIncluirId) {
-      throw new Error("Botão 'Incluir' não encontrado na tela inicial do ECO701");
+      throw new Error("Botão 'Incluir' não encontrado na tela inicial do ECO701 (após 10s de espera)");
     }
 
     console.error(`[AbrirRA] Clicando no botão Incluir (${btnIncluirId})...`);
-    await frame.locator(`#${btnIncluirId}`).click();
+    await clicarZk(frame, btnIncluirId);
     await frame.page().waitForTimeout(4000);
 
     // 2. Localizar os campos do formulário
@@ -59,8 +92,8 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
     }
 
     console.error(`[AbrirRA] Preenchendo CEP (${cepInput.id}) com ${cep}...`);
-    await preencherCampo(frame, cepInput.id, cep);
-    await frame.locator(`#${cepInput.id}`).press("Enter");
+    await setarCampoZk(frame, cepInput.id, cep);
+    await confirmarCampoZk(frame, cepInput.id);
     await frame.page().waitForTimeout(5000); // Aguarda auto-fill
 
     // Re-inspeciona após auto-fill do endereço
@@ -75,10 +108,46 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
       let servicoInputId = null;
       let numeroInputId = null;
       let obsInputId = null;
+      let nomeClienteInputId = null;
+      let nomeContatoInputId = null;
+      let nomeContatoMax = null;
+      let telContatoDddId = null;
+      let telContatoNumId = null;
       let btnGerarId = null;
 
       for (const lb of labels) {
         const txt = norm(lb.textContent).replace(':', '').trim();
+        if (txt === 'NOME') {
+          // Duas linhas têm rótulo "Nome": a do cliente/interessado (que traz
+          // também CPF/CNPJ e os radios F/J de tipo de pessoa) e a do contato
+          // (que traz "Hora Contato"). Ambos são obrigatórios no portal.
+          const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
+          const escopoTxt = norm(scope.textContent);
+          const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
+          const editavel = inputs.find(i =>
+            !i.disabled && !i.readOnly && i.type !== 'radio' && i.className.includes('z-textbox')
+          );
+          if (!editavel) continue;
+          if (escopoTxt.includes('CPF') && !nomeClienteInputId) {
+            nomeClienteInputId = editavel.id;
+          } else if (escopoTxt.includes('HORA CONTATO') && !nomeContatoInputId) {
+            nomeContatoInputId = editavel.id;
+            nomeContatoMax = editavel.maxLength > 0 ? editavel.maxLength : null;
+            // Telefone do contato: DDD (maxlength 4) + número (maxlength 9),
+            // na linha "Telefone:" logo abaixo da do nome do contato.
+            const linhaTel = scope.parentElement
+              ? Array.from(scope.parentElement.querySelectorAll('tr'))
+                  .find(tr => norm(tr.textContent).startsWith('TELEFONE'))
+              : null;
+            if (linhaTel) {
+              const tels = Array.from(linhaTel.querySelectorAll('input'))
+                .filter(visible)
+                .filter(i => !i.disabled && !i.readOnly);
+              if (tels[0]) telContatoDddId = tels[0].id;
+              if (tels[1]) telContatoNumId = tels[1].id;
+            }
+          }
+        }
         if (txt === 'CODIGO SERVICO') {
           const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
           const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
@@ -102,26 +171,56 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
       const btnGerar = buttons.find(b => norm(b.textContent).includes('GERAR RA'));
       if (btnGerar) btnGerarId = btnGerar.id;
 
-      return { servicoInputId, numeroInputId, obsInputId, btnGerarId };
+      return {
+        servicoInputId, numeroInputId, obsInputId, nomeClienteInputId,
+        nomeContatoInputId, nomeContatoMax, telContatoDddId, telContatoNumId,
+        btnGerarId
+      };
     });
 
     if (!ids.servicoInputId) throw new Error("Campo 'Código Serviço' não encontrado");
     if (!ids.numeroInputId) throw new Error("Campo 'Número' não encontrado");
     if (!ids.obsInputId) throw new Error("Campo 'Observação' não encontrado");
+    if (!ids.nomeClienteInputId) throw new Error("Campo 'Nome' do cliente/interessado não encontrado");
+
+    console.error(`[AbrirRA] Preenchendo Nome do cliente (${ids.nomeClienteInputId}) com "${nomeCliente}"...`);
+    await setarCampoZk(frame, ids.nomeClienteInputId, nomeCliente.trim());
+    await frame.page().waitForTimeout(1000);
+
+    // Nome do contato — o portal também exige ("É necessário informar o(a) nome
+    // do contato"). O campo aceita menos caracteres que o do cliente; cortar
+    // aqui, senão o preencherCampo aborta por divergência.
+    if (!ids.nomeContatoInputId) throw new Error("Campo 'Nome' do contato não encontrado");
+    const contatoLimite = ids.nomeContatoMax || 30;
+    const contatoFinal = nomeContato.trim().slice(0, contatoLimite);
+    console.error(`[AbrirRA] Preenchendo Nome do contato (${ids.nomeContatoInputId}) com "${contatoFinal}"...`);
+    await setarCampoZk(frame, ids.nomeContatoInputId, contatoFinal);
+    await frame.page().waitForTimeout(1000);
+
+    // Telefone do contato (DDD + número, campos separados)
+    const digitos = (telefoneContato || "").replace(/\D/g, '');
+    if (digitos && ids.telContatoDddId && ids.telContatoNumId) {
+      const ddd = digitos.slice(0, 2);
+      const numeroTel = digitos.slice(2);
+      console.error(`[AbrirRA] Preenchendo Telefone do contato (${ddd}) ${numeroTel}...`);
+      await setarCampoZk(frame, ids.telContatoDddId, ddd);
+      await setarCampoZk(frame, ids.telContatoNumId, numeroTel);
+      await frame.page().waitForTimeout(1000);
+    } else {
+      console.error(`[AbrirRA] Telefone do contato não preenchido (ids: ddd=${ids.telContatoDddId}, num=${ids.telContatoNumId}).`);
+    }
 
     console.error(`[AbrirRA] Preenchendo Código Serviço (${ids.servicoInputId}) com ${servico}...`);
-    await preencherCampo(frame, ids.servicoInputId, servico);
-    await frame.locator(`#${ids.servicoInputId}`).press("Tab");
+    await setarCampoZk(frame, ids.servicoInputId, servico);
     await frame.page().waitForTimeout(2000);
 
     console.error(`[AbrirRA] Preenchendo Número (${ids.numeroInputId}) com ${numero}...`);
-    await preencherCampo(frame, ids.numeroInputId, numero);
-    await frame.locator(`#${ids.numeroInputId}`).press("Tab");
+    await setarCampoZk(frame, ids.numeroInputId, numero);
     await frame.page().waitForTimeout(1000);
 
     console.error(`[AbrirRA] Preenchendo Observação (${ids.obsInputId})...`);
     const obsText = `Abertura autônoma via MCP-Saneago. Endereço: ${endereco}. Serviço solicitado: ${servico}.`;
-    await preencherCampo(frame, ids.obsInputId, obsText);
+    await setarCampoZk(frame, ids.obsInputId, obsText);
     await frame.page().waitForTimeout(1000);
 
     // Selecionar Forma de Atendimento
@@ -160,24 +259,9 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
         await preencherCampo(frame, comboId, formaAtendimento);
         await frame.locator(`[id="${comboId}"]`).press("Tab");
       } else {
-        // Combo select-only (input readonly): abre o popup e clica no item
-        // com evento real do Playwright (dispara o onSelect do ZK)
-        if (!comboInfo.btnId || !comboInfo.popupId) {
-          throw new Error("Combobox 'Forma de Atendimento' é readonly e não expôs botão/popup para seleção.");
-        }
-        await frame.locator(`[id="${comboInfo.btnId}"]`).click();
-        const popup = frame.locator(`[id="${comboInfo.popupId}"]`);
-        await popup.waitFor({ state: "visible", timeout: 10000 });
-        const alvo = new RegExp(
-          formaAtendimento.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*'),
-          'i'
-        );
-        const item = popup.locator('.z-comboitem', { hasText: alvo }).first();
-        if (!(await item.isVisible().catch(() => false))) {
-          const opcoes = await popup.locator('.z-comboitem').allInnerTexts().catch(() => []);
-          throw new Error(`Opção "${formaAtendimento}" não encontrada na Forma de Atendimento. Opções visíveis: ${JSON.stringify(opcoes)}`);
-        }
-        await item.click();
+        // Combo select-only (input readonly): fluxo capturado em rede real:
+        // onOpen -> onChange -> onSelect, com UUID do item resolvido no popup.
+        await selecionarComboZk(frame, comboId, formaAtendimento);
       }
 
       // Aguarda o roundtrip do ZK refletir o valor no input (polling)
@@ -196,34 +280,33 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
 
     // Coleta o resumo dos campos preenchidos
     const resumo = await frame.evaluate(() => {
-      const inputs = Array.from(document.querySelectorAll('input, textarea'));
       const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-      
-      const getLabelOfInput = (el) => {
-        let prev = el.previousElementSibling;
-        while (prev) {
-          if (prev.classList && prev.classList.contains('z-label')) return prev.innerText.trim();
-          prev = prev.previousElementSibling;
+
+      // Rotulo = .z-label visivel mais proximo ANTES do input em ordem de
+      // documento. Andar por previousElementSibling/parentElement pulava para
+      // celulas erradas da tabela ZK e rotulava "F"/"J" (tipo de pessoa) como
+      // "Nome"/"CPF". O ":" vem como .z-label separado — ignorar so-pontuacao.
+      const todos = Array.from(document.querySelectorAll('*'));
+      const ordem = new Map(todos.map((el, i) => [el, i]));
+      const util = (t) => t.replace(/[\s:*]/g, '').length > 0;
+      const labels = todos
+        .filter(el => el.classList && el.classList.contains('z-label') && visible(el))
+        .filter(el => util((el.innerText || "").trim()));
+
+      const getLabelOfInput = (input) => {
+        const pos = ordem.get(input);
+        let melhor = null;
+        for (const l of labels) {
+          const lp = ordem.get(l);
+          if (lp < pos && (!melhor || lp > ordem.get(melhor))) melhor = l;
         }
-        let parent = el.parentElement;
-        for (let i = 0; i < 3 && parent; i++) {
-          let parentPrev = parent.previousElementSibling;
-          while (parentPrev) {
-            const labelEl = parentPrev.querySelector('.z-label') || parentPrev;
-            if (labelEl && labelEl.innerText) return labelEl.innerText.trim();
-            parentPrev = parentPrev.previousElementSibling;
-          }
-          parent = parent.parentElement;
-        }
-        return "Sem Rotulo";
+        return melhor ? (melhor.innerText || "").trim().replace(/:$/, '') : "Sem Rotulo";
       };
 
-      return inputs.filter(visible).map(i => {
-        return {
-          label: getLabelOfInput(i),
-          valor: i.value
-        };
-      }).filter(item => item.valor && item.valor.trim() !== "");
+      return Array.from(document.querySelectorAll('input, textarea'))
+        .filter(visible)
+        .map(i => ({ label: getLabelOfInput(i), valor: i.value }))
+        .filter(item => item.valor && item.valor.trim() !== "");
     });
 
     if (!comboId) {
@@ -232,12 +315,23 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
 
     const isWriteAllowed = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
 
+    // Linhas de validacao ja presentes ANTES do submit. A tela pode exibir
+    // "É necessário informar ..." por conta do preenchimento parcial; sem essa
+    // linha de base, o polling pos-submit as leria como erro do submit.
+    const validacaoPreSubmit = await frame.evaluate(() => {
+      return document.body.innerText
+        .split('\n')
+        .map(l => l.trim())
+        .filter(l => l.includes("É necessário informar"));
+    });
+
     if (!confirmar) {
       logAudit("saneago_abrir_ra", appUrl, `Endereco: ${endereco}, Servico: ${servico} (PRE-SUBMIT)`, "PREVIEW");
       return {
         success: false,
-        message: `[PREVIEW] Solicitação de abertura de RA no ECO701 preparada para submissão.\nResumo do preenchimento:\n${JSON.stringify(resumo, null, 2)}\n\nPara efetivar a abertura real, chame com confirmar: true.`,
-        resumo
+        message: `[PREVIEW] Solicitação de abertura de RA no ECO701 preparada para submissão.\nResumo do preenchimento:\n${JSON.stringify(resumo, null, 2)}\n\nValidacoes ja presentes na tela (pre-submit): ${validacaoPreSubmit.length ? JSON.stringify(validacaoPreSubmit, null, 2) : "nenhuma"}\n\nPara efetivar a abertura real, chame com confirmar: true.`,
+        resumo,
+        validacaoPreSubmit
       };
     }
 
@@ -254,7 +348,7 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
     }
 
     console.error(`[AbrirRA] Clicando no botão 'Gerar RA' (${ids.btnGerarId})...`);
-    await frame.locator(`#${ids.btnGerarId}`).click();
+    await clicarZk(frame, ids.btnGerarId);
     
     // Polling do resultado
     let numeroRA = null;
@@ -271,19 +365,22 @@ async function abrirRA(endereco, servico, confirmar, formaAtendimento = "3 - INT
         }
       }
 
-      errorMsg = await frame.evaluate(() => {
+      errorMsg = await frame.evaluate((jaPresentes) => {
         const msgBoxes = Array.from(document.querySelectorAll('.z-errbox, .z-messagebox-error, .z-notification-error'));
         const visibleMsgBoxes = msgBoxes.filter(el => el.getBoundingClientRect().width > 0);
         if (visibleMsgBoxes.length > 0) {
           return visibleMsgBoxes.map(el => el.innerText.trim()).join(" | ");
         }
-        
-        const text = document.body.innerText;
-        if (text.includes("É necessário informar")) {
-          return "Detectada mensagem de erro ou validação no texto da página.";
-        }
-        return null;
-      });
+
+        // Só linhas que NAO existiam antes do submit contam como erro do submit,
+        // e devolvemos o texto real (qual campo o portal reclama).
+        const novas = document.body.innerText
+          .split('\n')
+          .map(l => l.trim())
+          .filter(l => l.includes("É necessário informar"))
+          .filter(l => !jaPresentes.includes(l));
+        return novas.length ? novas.join(" | ") : null;
+      }, validacaoPreSubmit);
 
       if (errorMsg) break;
     }
