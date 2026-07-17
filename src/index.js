@@ -9,7 +9,7 @@ const {
 
 const catalogo = require("../config/catalogo_aplicacoes.json");
 const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
+const { inspecionarTela, aguardarInputPorRotulo } = require("./inspector");
 const { preencherCampo, clicarBotao } = require("./executor");
 const { closeSession } = require("./session");
 const { logAudit } = require("./audit");
@@ -103,6 +103,24 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           }
         }
       }
+    },
+    {
+      name: "saneago_asfalto_da_ra",
+      description: "Consulta o asfalto lancado de um RA especifico buscando a cidade e data de corte no ECO701 e paginando no LRS041.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA a ser consultado",
+          },
+          data: {
+            type: "string",
+            description: "Data para busca, se ja conhecida (opcional, será inferida se nao passada)",
+          }
+        },
+        required: ["ra"],
+      }
     }
   ];
 
@@ -158,9 +176,28 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           confirmar: {
             type: "boolean",
             description: "Deve ser true para submeter. Se false, apenas descreve o que sera feito.",
+          },
+          formaAtendimento: {
+            type: "string",
+            description: "Forma de atendimento selecionada (ex: '3 - INTERNO', '1 - TELEFONE')",
+            default: "3 - INTERNO"
+          },
+          nomeCliente: {
+            type: "string",
+            description: "Nome do cliente/interessado que solicitou o atendimento. Obrigatorio pelo portal. Peca ao usuario; nunca invente.",
+          },
+          nomeContato: {
+            type: "string",
+            description: "Nome de quem a equipe deve contatar no local. PERGUNTE ao usuario se ha contato real; so omita (padrao 'SANEAGO') quando nao houver.",
+            default: "SANEAGO"
+          },
+          telefoneContato: {
+            type: "string",
+            description: "Telefone do contato com DDD (ex: '62988887777'). PERGUNTE ao usuario; so omita (padrao institucional) quando nao houver contato real.",
+            default: "6299999999"
           }
         },
-        required: ["endereco", "servico", "confirmar"],
+        required: ["endereco", "servico", "confirmar", "nomeCliente"],
       },
     });
   }
@@ -283,9 +320,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_abrir_ra": {
         if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
         
-        const { endereco, servico, confirmar } = request.params.arguments;
+        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato } = request.params.arguments;
         try {
-          const resultado = await abrirRA(endereco, servico, confirmar);
+          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato);
           return {
             content: [
               {
@@ -305,29 +342,17 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const appUrl = activeFrame.url();
         
         try {
-          // localiza o campo "Numero do RA" usando a heuristica padrao
-          const ids = await activeFrame.locator('body').evaluate(() => {
-            const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
-            const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-            const labels = Array.from(document.querySelectorAll('label, span, div, td'));
-            for (const lb of labels) {
-              if (!norm(lb.textContent).includes('NUMERO DO RA')) continue;
-              const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
-              const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
-              if (inputs.length) return { raInputId: inputs[0].id };
-            }
-            return { raInputId: null };
-          });
+          const raInputId = await aguardarInputPorRotulo(activeFrame, 'NUMERO DO RA');
           
-          if (!ids.raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial');
+          if (!raInputId) throw new Error('Campo Numero do RA nao encontrado na tela inicial do ECO701 apos aguardar carregamento');
           
-          await preencherCampo(activeFrame, ids.raInputId, ra);
+          await preencherCampo(activeFrame, raInputId, ra);
           
           const btn = activeFrame.getByRole('button', { name: /consultar/i }).first();
           if (await btn.isVisible().catch(() => false)) {
             await btn.click();
           } else {
-            await activeFrame.locator(`#${ids.raInputId}`).press('Enter');
+            await activeFrame.locator(`#${raInputId}`).press('Enter');
           }
           
           await activeFrame.page().waitForTimeout(3000); // Aguarda consulta carregar

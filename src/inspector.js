@@ -88,4 +88,36 @@ async function inspecionarTela(frame) {
   return elementos;
 }
 
-module.exports = { inspecionarTela };
+/**
+ * Aguarda e localiza um input visível pelo rótulo usando polling.
+ * 
+ * @param {import('playwright').Frame} frame O frame da aplicação
+ * @param {string} rotulo O texto do rótulo a ser buscado
+ * @param {Object} options Opções de polling (tentativas e intervalo)
+ * @returns {Promise<string|null>} O ID do input encontrado ou null
+ */
+async function aguardarInputPorRotulo(frame, rotulo, { tentativas = 20, intervalo = 500 } = {}) {
+  const rotuloBusca = rotulo.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
+  for (let i = 0; i < tentativas; i++) {
+    // frame.evaluate (não locator.evaluate): no locator, o 1º parâmetro é o
+    // elemento e o argumento chega no 2º — textoBusca receberia o <body>.
+    const inputId = await frame.evaluate((textoBusca) => {
+      const norm = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ').trim().toUpperCase();
+      const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+      const labels = Array.from(document.querySelectorAll('label, span, div, td'));
+      for (const lb of labels) {
+        if (!norm(lb.textContent).includes(textoBusca)) continue;
+        const scope = lb.closest('tr, .z-row, .z-hbox, .z-vbox, div') || document.body;
+        const inputs = Array.from(scope.querySelectorAll('input')).filter(visible);
+        if (inputs.length) return inputs[0].id;
+      }
+      return null;
+    }, rotuloBusca);
+    
+    if (inputId) return inputId;
+    await frame.page().waitForTimeout(intervalo);
+  }
+  return null;
+}
+
+module.exports = { inspecionarTela, aguardarInputPorRotulo };

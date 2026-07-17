@@ -152,21 +152,102 @@ Saída: array `[{codigo, nome, url_zul, origem}]`, deduplicado e ordenado. Rodar
 
 # REVISÃO 4 — 2026-07-15 (Claude)
 
-Commits `3e5bdc8`..`72bf528`. **Progresso forte e E2E genuíno, mas 2 gaps substanciais bloqueiam o "TODAS as apps".**
+Revisado a execução autônoma pós "Correção de Rumo" (commits `6dea3f6`..`859a8e9`, FASES 1→4 do `EXECUCAO_GEMINI.md`). **A descoberta e o roteiro (entrega central) estão bons e provados. Mas 2 das 3 verticais novas têm defeitos que bloqueiam uso: uma tool está invisível ao LLM e outra pode abrir RA em endereço errado. Aprovado parcialmente; 3 correções obrigatórias.**
 
-## ✅ Bom e verificado
-- **E2E real:** consumo (conta 1813366 → Consumo Medido 27 m³, hidrômetro real); asfalto (RA 27273762025 → registro de recomposição com dimensões/local, achado paginando LRS041); abrir_ra parado no **pré-submit**. Dados reais, não mock.
-- **Mapeamento revalidado:** ECO303 confirmada para consumo; HVW009 (prestação de contas viagem) e JAJ036 (cobrança judicial) corretamente descartadas — o Gemini fez a revalidação pedida.
-- `saneago_consultar_roteiro` read-only (fora do write gate); `abrir_ra` atrás do gate; `abrir_e_inspecionar` aceita intenção. Sem replay `/zkau`. Sem segredo/PII commitado (`audit.log`, credentials, storage-state não rastreados).
+## ✅ Passou
+1. **FASE 1/1.5 — descoberta real e completa.** `src/discover.js` (menu `montarMenu.zul` + busca refinada) gerou catálogo com **337 apps** (verifiquei o JSON: 337 entradas, ECO701 incluída). Sem replay `/zkau` — as ocorrências de `zkau` no código são só `waitForResponse` (espera de AJAX, legítimo).
+2. **Roteiro estruturado + roteamento por intenção.** `config/roteiro.json` com 54 apps (51 `auto`, 3 `enriquecido`), 54 markdowns em `docs/apps/`, tool `saneago_consultar_roteiro` read-only sempre disponível, e `saneago_abrir_e_inspecionar` aceitando intenção. É a arquitetura pedida.
+3. **Reprocessamento:** 9/10 apps falhas corrigidas via ajuste de detecção de iframe no `portal.js`; `LIG002` documentada como exceção plausível (mapa GIS externo).
+4. **Higiene de protocolo MCP:** zero `console.log` nos módulos carregados pelo servidor (`index/portal/session/inspector/executor/audit/tools`); os `console.log` restantes estão só em scripts CLI standalone (`discover.js`, `generate_roteiro.js` etc.), que não rodam sob stdio MCP. OK.
+5. **Gate de escrita preservado:** `preencher_campo`/`clicar_botao`/`abrir_ra` só sob `SANEAGO_ALLOW_WRITE`; `abrir_ra` exige `confirmar: true` + auditoria; e o Gemini **parou corretamente antes de submeter RA real** (PEDIDO_AJUDA.md), como mandava a FASE 4.
+6. `scratch/` no `.gitignore`; nenhum segredo novo commitado.
 
-## ❌ Gaps que bloqueiam o objetivo
-1. **Descoberta INCOMPLETA — o núcleo do objetivo.** `ECO701` (o app-âncora, usado no próprio abrir_ra) **não está no catálogo de 54 nem no roteiro**. Causa: `discover.js` iterou prefixos de **código** (ECO, SAN...), mas a busca "Buscar..." filtra por **nome de exibição** — logo "Registro de Atendimento" nunca surgiu. "54 apps" ≠ todas. **Correção:** refazer FASE 1 usando a fonte de **menu** (`montarMenu.zul`) — que lista o que o perfil acessa — em vez de (ou além de) varrer a busca. Critério: ECO701 tem que aparecer, e o total deve subir.
-2. **Roteiro RASO.** `o_que_faz`/`operacoes` são template genérico ("Permite visualizar e gerenciar informações relacionadas a X"; "Preencher campos na tela inicial"), mesmo para ECO303/LRS041 que o Gemini **operou de verdade**. O fluxo real aprendido no E2E não foi realimentado. `status_doc:auto` é honesto, mas não entrega o "como fazer cada coisa" que o usuário quer. **Correção:** enriquecer pelo menos as apps com fluxo conhecido (ECO303, LRS041, ECO701) com operações reais e passos; marcar `status_doc:enriquecido`.
+## ❌ Correções obrigatórias (bloqueiam uso)
+1. **`saneago_asfalto_da_ra` está INVISÍVEL ao LLM.** O `case` existe no CallTool (`src/index.js:371`), mas a tool **não foi adicionada ao array do ListTools** (nem no bloco read-only nem no de escrita). Resultado: o cliente MCP nunca lista a tool e a intenção "asfalto lançado" não funciona. Adicionar a definição dela ao bloco de tools sempre disponíveis (é read-only).
+2. **A vertical LRS041 não implementa o fluxo que foi provado.** A prova E2E do PROGRESSO usou `scratch/find_ra_in_lrs041_pages.js`: consultou o RA no ECO701 para obter **cidade + data**, preencheu LRS041 por cidade/período e **paginou 21 páginas** da tabela de lotes. Já a tool `consultarAsfalto` (`src/tools/lrs041.js:21-24`) apenas preenche **"o primeiro input de texto editável"** com o RA e clica Consultar — heurística **posicional** (viola o princípio nº 5 de âncora por rótulo) e **sem paginação**. Ou seja: a prova não prova a tool; a tool como está provavelmente não devolve o asfalto de uma RA. Portar para a tool o fluxo real do scratch (ECO701 → cidade/data → LRS041 → paginação até achar a RA).
+3. **`abrirRA` tem endereço hardcoded como default — risco de RA em endereço ERRADO.** `src/tools/eco701.js:30-31`: `cep = "75040050"` e `numero = "550"` ("default para Ada Centine"). Se o usuário passar um endereço **sem CEP** (caso normal: "abre uma RA na rua tal"), a tool preenche silenciosamente o CEP da Rua Ada Centini e prepara/submete a RA **no lugar errado**. Para uma tool de ESCRITA isso é inaceitável. Corrigir: sem CEP extraível → **falhar pedindo o CEP** (ou resolver rua→CEP explicitamente); nunca assumir default. Idem `numero`.
 
-## ⚠️ Menor / pendências
-3. **Endereço do abrir_ra diverge.** Gemini inferiu CEP `75040050`, que resolve para bairro **"ANDRACEL CENTER"**, não **"Maracanã"** que o usuário informou. Confirmar endereço/CEP correto com o usuário ANTES de qualquer submit real.
-4. **Cobertura:** 10 apps não abriram (ECO808, JAJ028, JAJ033, LIG002, LRS013, LRS021, LRS314, LRS702, LRS734, MTG006) + ECO701 ausente. Documentar/reprocessar.
-5. `scratch/` não está no `.gitignore` (atualmente vazio/untracked; incluir por segurança).
+## ⚠️ Menor / dívida (não bloqueiam)
+4. **Roteiro cobre 54 de 337 apps.** O brief pedia ~54 (foi escrito quando o catálogo tinha 54), então não é descumprimento — mas o `PROGRESSO.md` deve declarar explicitamente que **283 apps do catálogo estão sem roteiro** (pendência futura), senão a frase "roteiro de todas as apps" engana.
+5. **Provas E2E vivem em `scratch/` gitignorado** — os scripts de prova não estão versionados; a evidência não é reproduzível a partir do repo. Considerar mover os testes E2E "oficiais" para `tests/e2e/` versionado (sem PII).
+6. **PII leve no `PROGRESSO.md`:** conta real `1813366` + nº de hidrômetro + endereços residenciais com quadra/lote. Menos sensível que nome/telefone, mas seguir mascarando (ex.: `18133**`).
+7. **Caminho pós-submit do `abrirRA` nunca foi executado** (clique em "Gerar RA" + captura do popup) — código não provado. Esperado nesta fase; validar na submissão supervisionada.
+8. **`servico` sem validação** no `abrirRA`: espera código numérico (ex.: `2002`) num `z-intbox`, mas aceita texto livre sem checar.
+
+## Pendência que é DO USUÁRIO (PEDIDO_AJUDA.md)
+- Fornecer conta/RA/data reais para E2E adicionais e decidir quando fazer a **submissão supervisionada** da primeira RA real (FASE 4). Recomendo só depois das correções 1–3.
 
 ## Veredito
-As verticais funcionam e estão provadas. O que falta para o objetivo do usuário ("falar com TODAS sem nomear"): (1) descoberta completa via menu, (2) roteiro rico nos apps-chave. Pré-submit do abrir_ra ok, mas endereço a confirmar.
+Descoberta + roteiro + roteamento: **aprovados**. Verticais: `consultar_consumo` ok; `asfalto_da_ra` e `abrir_ra` **reprovadas até corrigir os itens 1–3** (itens 1 e 3 são rápidos; o 2 exige portar o fluxo do scratch para a tool). Os itens 1–3 viram o próximo prompt do Gemini.
+
+---
+
+# REVISÃO 5 — 2026-07-15 (Claude)
+
+Revisado o pacote de correções da Rev 4 (commits `75148be`..`cea4542`, executado pelo AGY2 em sessão sandbox sem rede). **APROVADO após correções substanciais do revisor** — o AGY entregou a estrutura certa dos 3 itens, mas sem E2E (sandbox sem credenciais), e o E2E real revelou 4 defeitos que corrigi e provei.
+
+## ✅ Do AGY (passou)
+- Item 1: `saneago_asfalto_da_ra` no ListTools read-only — correto.
+- Item 3: validação obrigatória de CEP/número no `abrirRA` — direção certa (com 1 bug, abaixo).
+- Item 2: estrutura do fluxo ECO701→LRS041 portada — mas não funcionava de ponta a ponta.
+- PROGRESSO.md com a nota das 283 apps sem roteiro; disciplina de 1 commit por item.
+
+## 🔧 Correções do revisor (detalhes no PROGRESSO.md, seção "REVISÃO 5")
+1. `portal.js`: regressão do frame-finder (aceitava o `index.html` da home; quebrava qualquer app ZK, inclusive a `eco701_consultar_ra` aprovada na Rev 3). Duas fases: `.zul` primeiro.
+2. `eco701.js`: regex de número podia capturar pedaço do CEP; validação movida para antes de abrir o portal.
+3. `lrs041.js`: lia campo inexistente (`valor` vs `valor_atual`) e rótulo sem normalizar acento; faltava clicar no lote para abrir o detalhe; o detalhe não pagina — rola (render on demand); seletor `button.z-paging-next` nunca casava.
+4. Polling em vez de esperas fixas nos 3 pontos de carregamento assíncrono.
+
+## Prova de fogo (rodada pelo revisor, rede Saneago)
+`consultarAsfalto("27273762025")` → cidade 2 e data 29/09/2025 inferidas do ECO701; RA encontrada no detalhe do LRS041 (corte 29/09/2025, `2125 - VAZAMENTO REDE DE AGUA RECUPERADO`, 1.50×7.00, 10,5 m², Residencial Florença). `abrirRA` sem CEP/número falha pedindo o dado (validado em 4 formatos).
+
+## Estado
+As 3 verticais de leitura funcionam provadas E2E. Pendências (não bloqueiam): varrer múltiplos lotes no LRS041 (hoje abre só o primeiro); submissão supervisionada da primeira RA real (FASE 4, decisão do usuário).
+
+---
+
+# REVISÃO 6 — 2026-07-16 (Claude)
+
+Pacote: fallback de navegação via menu (AGY2, commit `f1c80e4`) + geração do roteiro completo (executada pelo revisor). **APROVADO.**
+
+## Fluxo desta rodada
+1. AGY2 (interativo, sem sandbox) implementou o fallback e o `menu_nav.json` (223 apps) com provas ao vivo, mas travou aguardando aprovação de comando na janela (~1h parado). Lição: sem sandbox, o modo interativo depende do usuário presente.
+2. Sessão relançada COM sandbox só para revisar/commitar a Entrega 1 — funcionou bem (commit + PROGRESSO; push feito pelo revisor).
+3. Revisor executou o `generate_roteiro.js`: **54 → 327 de 337 apps** (~2h45). O fallback de menu foi validado em escala (a maioria das 273 novas só abre por menu). Retry das 10 restantes: válvula disparou — são exceções reais, documentadas no PROGRESSO (LIG002/LIGV002 GIS, painéis ECO954/962, ECO815, BPAV004-6, FGIV005, MGOV050).
+
+## Verificações do revisor
+- `menu_nav.json`: 223/227 apps de menu; 4 ausências por colisão de nome (dívida: rechavear por código).
+- Amostragem do roteiro: entradas coerentes (campos/botões/tipo inferido); telas de relatório podem vir com 0 campos (limitação do `auto` documentada).
+- Nenhum segredo/PII nos arquivos novos; `docs/apps/` e `config/*.json` versionáveis.
+
+## Estado do projeto após Rev 6
+- Catálogo: 337 apps. Roteiro: **327 documentadas** (97%). Verticais E2E: consultar_ra, consultar_consumo, asfalto_da_ra; abrir_ra até pré-submit.
+- Próximos passos sugeridos: rechavear menu_nav por código; enriquecer roteiros das apps mais usadas; submissão supervisionada da RA (FASE 4); transporte HTTP para usar o MCP de fora do Mac.
+
+---
+
+# REVISÃO 8 — 2026-07-16 (Claude)
+
+Pacote revisado: commits `b0e195f` (AGY2 — Forma de Atendimento + validação estrita no ECO701) e `6e2c071` (Marcos Jr — polling do campo "Número do RA" no `index.js` e `lrs041.js`), feitos após a Rev 7. `node --check` verde nos 3 arquivos. **Nenhum dos dois foi provado E2E** (o AGY rodou em sandbox sem rede; o polling foi escrito direto). **Veredito: APROVADO COM RESSALVAS — itens 1 e 2 são bloqueantes para a submissão real da FASE 4.**
+
+## 🔴 Bloqueante (corrigir ANTES da submissão supervisionada)
+
+1. **Detecção de erro pós-submit dá falso positivo — risco de RA duplicada.** `src/tools/eco701.js:238`: `text.includes("Erro")` varre o `innerText` do body inteiro; qualquer ocorrência da substring "Erro" em menu, rodapé ou label faz a tool retornar `success:false` **depois que o RA já pode ter sido criado**. O chamador (LLM) vai reagir tentando de novo → RA duplicada no portal. Pior: `.z-notification` (linha 230) é a classe que o ZK também usa para mensagens de **sucesso** — um "RA gerado com sucesso!" em notification viraria `success:false`. Corrigir: (a) restringir a busca a classes de erro (`.z-errbox`, `.z-messagebox-error`, `.z-notification-error`) e à frase específica de validação; (b) se a incerteza persistir, verificar se o "Número do RA" foi preenchido — RA numerado = sucesso, independentemente de texto solto na página.
+
+2. **Clique no comboitem provavelmente não commita o valor no ZK.** `eco701.js:154-162` usa `.click()` DOM puro no `.z-comboitem`; comboboxes ZK normalmente exigem a sequência `mousedown`/`mouseup` (ou o próprio widget via `zk.Widget.$()`) para enviar o evento `onSelect` ao servidor — o clique sintético tende a fechar o popup sem setar o valor. Além disso o seletor `.z-comboitem` **não é escopado ao popup deste combobox** (ZK renderiza popups soltos no body): se outra combo tiver item de texto igual, clica no item errado. E a comparação `=== formaStr.toUpperCase()` é exata — se o portal exibir "3-INTERNO" (sem espaços) ou com sufixo, nunca casa. Alternativa mais robusta e já usada no projeto: `preencherCampo` no input da combo (digitar "3 - INTERNO") + `Enter`/`Tab`, que dispara o `onChange` do ZK, com verificação posterior do `input.value`.
+
+## 🟡 Ressalvas (não bloqueiam, mas anotar)
+
+3. **Combobox não encontrado → prossegue em silêncio.** `eco701.js:168-170`: se o rótulo "Forma de Atendimento" não for achado, só loga e segue para o submit. Para uma escrita que se anuncia "estrita", o pré-submit (`confirmar:false`) deveria reportar no `resumo` que a forma NÃO foi selecionada, e o submit real deveria falhar explicitamente se o campo for obrigatório.
+
+4. **Regressão de padrão: esperas fixas.** A Rev 5 substituiu `waitForTimeout` por polling nos pontos assíncronos; o código novo da combo volta a usar 1500/1000/8000 ms fixos (`eco701.js:151,167,225`). Os 8s pós-"Gerar RA" são o pior caso: se o portal demorar 9s, a leitura de erro/número roda sobre a tela ainda antiga. Trocar por polling do resultado (aparição do nº do RA ou de caixa de erro).
+
+5. **Duplicação: a heurística "achar input pelo rótulo NUMERO DO RA" agora existe em 3 lugares** (`index.js` case eco701, `lrs041.js`, e variante em `eco701.js:254`), duas delas com o mesmo loop de polling copiado e colado (commit `6e2c071`). Extrair helper único (ex.: `aguardarInputPorRotulo(frame, rotulo, {tentativas, intervalo})` no `inspector.js`) antes que a quarta cópia apareça.
+
+## 📋 Processo
+
+6. **Commit `6e2c071` fora do protocolo:** sem corpo ("o que fez / como testou / pendências"), sem coautoria, **sem push** (branch local `ahead 1` do origin) e sem registro no PROGRESSO.md. A mensagem diz `fix(eco701)` mas os arquivos tocados são `index.js` e `lrs041.js`.
+7. A pendência declarada no `b0e195f` continua de pé: **prova E2E supervisionada** (pré-submit com a combo + submissão real) é o gate da FASE 4. Recomendo rodar o pré-submit (`node scratch/test_eco701_supervisionado.js` sem `--confirmar`) para provar os itens 1–3 da combo **antes** de qualquer `--confirmar`.
+
+## Estado
+Leitura: inalterada (3 verticais provadas). Escrita (`abrir_ra`): avançou de forma correta em intenção (forma de atendimento, detecção de validação, extração do nº do RA), mas os mecanismos novos não foram provados e os itens 1–2 podem causar **falso erro/RA duplicada** ou **forma não selecionada de fato**. Correções 1–4 são pequenas e podem ir num único pacote para o AGY, com prova E2E de pré-submit pelo revisor em seguida.

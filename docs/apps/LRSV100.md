@@ -1,0 +1,30 @@
+# LRSV100 - Manter estoque de Material por viatura
+
+## Categoria
+Logística, Redes e Serviços de Campo
+
+## Tipo
+Leitura (Livre)
+
+## O que faz
+Permite visualizar e gerenciar informações relacionadas a manter estoque de material por viatura.
+
+## Campos da Tela Inicial
+- **Sem Rotulo** (text): Editável
+- **Veículo** (text): Editável
+
+## Botões Disponíveis
+- **Listar Todas** (ID ZK: `vQoC41`)
+- **Consultar** (ID ZK: `vQoC43`)
+- **Cancelar** (ID ZK: `vQoCb3`)
+
+## Exemplos de Intenção (Linguagem Natural)
+- "Abrir a tela LRSV100 (Manter estoque de Material por viatura)"
+- "Acessar o aplicativo de manter estoque de material por viatura"
+
+## Roteiro de Operação
+1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV100`.
+2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+
+---
+*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*

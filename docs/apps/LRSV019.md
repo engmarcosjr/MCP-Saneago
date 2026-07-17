@@ -1,0 +1,28 @@
+# LRSV019 - Índices do SIPSAP
+
+## Categoria
+Logística, Redes e Serviços de Campo
+
+## Tipo
+Escrita (Gated/Confirmar)
+
+## O que faz
+Permite visualizar e gerenciar informações relacionadas a índices do sipsap.
+
+## Campos da Tela Inicial
+- **Mês/Ano referência:** (date): Editável
+- **Tipo de Relatório:** (combobox): Somente Leitura
+
+## Botões Disponíveis
+- **Gerar Relatório** (ID ZK: `zQpOs`)
+
+## Exemplos de Intenção (Linguagem Natural)
+- "Abrir a tela LRSV019 (Índices do SIPSAP)"
+- "Acessar o aplicativo de índices do sipsap"
+
+## Roteiro de Operação
+1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV019`.
+2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+
+---
+*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*

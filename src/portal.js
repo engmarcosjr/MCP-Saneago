@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const { getOrCreateSession } = require("./session");
 
 const PRINCIPAL_URL = "https://www.saneago.com.br/prt/mpt/principal.zul";
@@ -35,7 +37,6 @@ async function abrirApp(nomeExibicao) {
 
   // Tira um screenshot do estado atual para debug se a variavel de ambiente permitir
   if (process.env.DEBUG === '1') {
-    const fs = require('fs');
     if (!fs.existsSync('data')) fs.mkdirSync('data');
     await page.screenshot({ path: 'data/debug_search.png', fullPage: true }).catch(() => {});
     const html = await page.content().catch(() => '');
@@ -70,25 +71,84 @@ async function abrirApp(nomeExibicao) {
         console.error(`[Portal] Opcao encontrada pos-enter, clicando no botao...`);
         await opcaoPosEnter.locator('button').first().click();
       } else {
-        throw new Error(`Aplicacao ${codigoApp} nao encontrada na busca.`);
+        console.error(`[Portal] Aplicacao ${codigoApp} nao encontrada na busca principal. Tentando fallback via menu...`);
+        const catPath = path.join(__dirname, '../config/catalogo_aplicacoes.json');
+        const catalogo = JSON.parse(fs.readFileSync(catPath, 'utf8'));
+        const appInfo = catalogo.find(a => a.codigo === codigoApp);
+        
+        if (!appInfo) {
+            throw new Error(`Aplicacao ${codigoApp} nao encontrada na busca e nem no catalogo.`);
+        }
+        
+        const menuNavPath = path.join(__dirname, '../config/menu_nav.json');
+        if (!fs.existsSync(menuNavPath)) {
+            throw new Error(`Aplicacao ${codigoApp} nao encontrada na busca. Fallback indisponivel (menu_nav.json ausente).`);
+        }
+        const menuNav = JSON.parse(fs.readFileSync(menuNavPath, 'utf8'));
+        
+        const nav = menuNav[codigoApp];
+        if (!nav) {
+            throw new Error(`Aplicacao ${codigoApp} nao encontrada no menu_nav.json. Execute o discovery.`);
+        }
+        
+        console.error(`[Portal] Navegando via menu: ${nav.modulo} -> ${nav.menu} -> ${nav.nome}`);
+        
+        await page.goto("https://www.saneago.com.br/prt/mpt/montarMenu.zul", { waitUntil: "networkidle", timeout: 60000 });
+        await page.waitForTimeout(2000);
+        
+        const sistemasLocator = page.locator('a.z-menu-content', { hasText: 'Sistemas' }).first();
+        await sistemasLocator.evaluate(n=>n.click());
+        await page.waitForTimeout(1500);
+        
+        const modItem = page.locator('.z-menupopup-open .z-menuitem-text', { hasText: nav.modulo }).first();
+        await modItem.evaluate(node => {
+            const anchor = node.closest('a');
+            if (anchor) anchor.click();
+            else node.click();
+        });
+        await page.waitForResponse(response => response.url().includes('/zkau') && response.status() === 200, { timeout: 10000 }).catch(() => {});
+        await page.waitForTimeout(2000);
+        
+        const topMenu = page.locator('a.z-menu-content', { hasText: nav.menu }).first();
+        await topMenu.evaluate(n=>n.click());
+        await page.waitForTimeout(1500);
+        
+        const appItem = page.locator('.z-menupopup-open .z-menuitem-text', { hasText: nav.nome }).first();
+        await appItem.evaluate(node => {
+            const anchor = node.closest('a');
+            if (anchor) anchor.click();
+            else node.click();
+        });
+        console.error(`[Portal] Clique no menu realizado com sucesso! Aguardando iframe...`);
       }
     }
   }
 
   console.error(`[Portal] Aguardando carregamento do iframe da aplicacao...`);
   
-  // Procura o objeto Frame correspondente no Playwright (incluindo frames aninhados)
+  // Procura o objeto Frame correspondente no Playwright (incluindo frames aninhados).
+  // Duas fases: prioriza frames .zul (apps ZK); só aceita outros tipos (.jsp/.php/.html)
+  // como fallback tardio, porque a home do portal mantém um frame index.html sempre
+  // presente que, aceito de imediato, é retornado no lugar do .zul ainda carregando.
+  const naoEhFrameDeApp = (url) =>
+    url.includes("principal.zul") ||
+    url.includes("montarMenu.zul") ||
+    url.includes("bemVindo.zul") ||
+    url.includes("index_OLD.php") ||
+    url.includes("/intranet/index.html");
+
   for (let i = 0; i < 60; i++) {
     const frames = page.frames();
-    const appFrame = frames.find((f) => {
-      const url = f.url();
-      return (url.includes(".zul") || url.includes(".jsp") || url.includes(".php") || url.includes(".html") || url.includes(".htm")) && 
-             !url.includes("principal.zul") && 
-             !url.includes("montarMenu.zul") && 
-             !url.includes("bemVindo.zul") &&
-             !url.includes("index_OLD.php");
-    });
-    
+    let appFrame = frames.find((f) => f.url().includes(".zul") && !naoEhFrameDeApp(f.url()));
+
+    if (!appFrame && i >= 20) {
+      appFrame = frames.find((f) => {
+        const url = f.url();
+        return (url.includes(".jsp") || url.includes(".php") || url.includes(".html") || url.includes(".htm")) &&
+               !naoEhFrameDeApp(url);
+      });
+    }
+
     if (appFrame) {
       console.error(`[Portal] Frame encontrado! URL: ${appFrame.url()}`);
       

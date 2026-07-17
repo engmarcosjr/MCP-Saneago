@@ -1,0 +1,31 @@
+# LRSV017 - Cadastrar situação do distrito SIPSAP
+
+## Categoria
+Logística, Redes e Serviços de Campo
+
+## Tipo
+Leitura (Livre)
+
+## O que faz
+Permite visualizar e gerenciar informações relacionadas a cadastrar situação do distrito sipsap.
+
+## Campos da Tela Inicial
+- **Sem Rotulo** (text): Editável
+- **Data de Implantação** (date): Editável
+- **Funcionário Responsárvel** (text): Somente Leitura
+- **Data do cadastro** (date): Somente Leitura
+
+## Botões Disponíveis
+- **Consultar** (ID ZK: `hGyNd1`)
+- **Cancelar** (ID ZK: `hGyNh1`)
+
+## Exemplos de Intenção (Linguagem Natural)
+- "Abrir a tela LRSV017 (Cadastrar situação do distrito SIPSAP)"
+- "Acessar o aplicativo de cadastrar situação do distrito sipsap"
+
+## Roteiro de Operação
+1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV017`.
+2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+
+---
+*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
