@@ -147,3 +147,26 @@ Criar `src/discover.js` que enumera TODAS as aplicações visíveis ao perfil e 
 Saída: array `[{codigo, nome, url_zul, origem}]`, deduplicado e ordenado. Rodar de verdade, colar no PROGRESSO.md a **contagem** de apps e uma amostra. **Depois** disso, priorizar verticais pela lista real.
 
 **Ao revisar (Revisão 4):** confirmar que `discover.js` rodou contra o portal, que o catálogo tem N>>3 apps reais, e que a fonte usada não foi replay manual de `/zkau`.
+
+---
+
+# REVISÃO 4 — 2026-07-15 (Claude)
+
+Commits `3e5bdc8`..`72bf528`. **Progresso forte e E2E genuíno, mas 2 gaps substanciais bloqueiam o "TODAS as apps".**
+
+## ✅ Bom e verificado
+- **E2E real:** consumo (conta 1813366 → Consumo Medido 27 m³, hidrômetro real); asfalto (RA 27273762025 → registro de recomposição com dimensões/local, achado paginando LRS041); abrir_ra parado no **pré-submit**. Dados reais, não mock.
+- **Mapeamento revalidado:** ECO303 confirmada para consumo; HVW009 (prestação de contas viagem) e JAJ036 (cobrança judicial) corretamente descartadas — o Gemini fez a revalidação pedida.
+- `saneago_consultar_roteiro` read-only (fora do write gate); `abrir_ra` atrás do gate; `abrir_e_inspecionar` aceita intenção. Sem replay `/zkau`. Sem segredo/PII commitado (`audit.log`, credentials, storage-state não rastreados).
+
+## ❌ Gaps que bloqueiam o objetivo
+1. **Descoberta INCOMPLETA — o núcleo do objetivo.** `ECO701` (o app-âncora, usado no próprio abrir_ra) **não está no catálogo de 54 nem no roteiro**. Causa: `discover.js` iterou prefixos de **código** (ECO, SAN...), mas a busca "Buscar..." filtra por **nome de exibição** — logo "Registro de Atendimento" nunca surgiu. "54 apps" ≠ todas. **Correção:** refazer FASE 1 usando a fonte de **menu** (`montarMenu.zul`) — que lista o que o perfil acessa — em vez de (ou além de) varrer a busca. Critério: ECO701 tem que aparecer, e o total deve subir.
+2. **Roteiro RASO.** `o_que_faz`/`operacoes` são template genérico ("Permite visualizar e gerenciar informações relacionadas a X"; "Preencher campos na tela inicial"), mesmo para ECO303/LRS041 que o Gemini **operou de verdade**. O fluxo real aprendido no E2E não foi realimentado. `status_doc:auto` é honesto, mas não entrega o "como fazer cada coisa" que o usuário quer. **Correção:** enriquecer pelo menos as apps com fluxo conhecido (ECO303, LRS041, ECO701) com operações reais e passos; marcar `status_doc:enriquecido`.
+
+## ⚠️ Menor / pendências
+3. **Endereço do abrir_ra diverge.** Gemini inferiu CEP `75040050`, que resolve para bairro **"ANDRACEL CENTER"**, não **"Maracanã"** que o usuário informou. Confirmar endereço/CEP correto com o usuário ANTES de qualquer submit real.
+4. **Cobertura:** 10 apps não abriram (ECO808, JAJ028, JAJ033, LIG002, LRS013, LRS021, LRS314, LRS702, LRS734, MTG006) + ECO701 ausente. Documentar/reprocessar.
+5. `scratch/` não está no `.gitignore` (atualmente vazio/untracked; incluir por segurança).
+
+## Veredito
+As verticais funcionam e estão provadas. O que falta para o objetivo do usuário ("falar com TODAS sem nomear"): (1) descoberta completa via menu, (2) roteiro rico nos apps-chave. Pré-submit do abrir_ra ok, mas endereço a confirmar.
