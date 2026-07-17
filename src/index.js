@@ -16,6 +16,7 @@ const { logAudit } = require("./audit");
 const { consultarConsumo } = require("./tools/eco303");
 const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
+const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
 
@@ -31,7 +32,15 @@ const server = new Server(
   }
 );
 
-const ALLOW_WRITE = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
+const LEGACY_ALLOW_WRITE = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
+const ALLOW_GENERIC_WRITE =
+  LEGACY_ALLOW_WRITE ||
+  process.env.SANEAGO_ALLOW_GENERIC_WRITE === '1' ||
+  process.env.SANEAGO_ALLOW_GENERIC_WRITE === 'true';
+const ALLOW_RA_WRITE =
+  LEGACY_ALLOW_WRITE ||
+  process.env.SANEAGO_ALLOW_RA_WRITE === '1' ||
+  process.env.SANEAGO_ALLOW_RA_WRITE === 'true';
 
 // Definicao das Ferramentas
 server.setRequestHandler(ListToolsRequestSchema, async () => {
@@ -124,7 +133,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     }
   ];
 
-  if (ALLOW_WRITE) {
+  if (ALLOW_GENERIC_WRITE) {
     tools.push({
       name: "saneago_preencher_campo",
       description: "Preenche um campo de texto ou data em uma aplicacao ja aberta. A aplicacao deve ter sido aberta com saneago_abrir_e_inspecionar antes.",
@@ -159,9 +168,12 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
     });
 
+  }
+
+  if (ALLOW_RA_WRITE) {
     tools.push({
       name: "saneago_abrir_ra",
-      description: "Cria e abre uma RA no ECO701 para o servico e endereco indicados. Requer o parametro confirmar: true para efetivar.",
+      description: "Prepara ou efetiva uma RA no ECO701. Primeiro use confirmar:false. Somente apos o usuario confirmar em uma nova mensagem, repita exatamente os dados com confirmar:true e o confirmationToken recebido no preview.",
       inputSchema: {
         type: "object",
         properties: {
@@ -176,6 +188,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           confirmar: {
             type: "boolean",
             description: "Deve ser true para submeter. Se false, apenas descreve o que sera feito.",
+          },
+          confirmationToken: {
+            type: "string",
+            description: "Token retornado pelo preview. Obrigatorio e de uso unico quando confirmar for true.",
           },
           formaAtendimento: {
             type: "string",
@@ -261,7 +277,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "saneago_preencher_campo": {
-        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        if (!ALLOW_GENERIC_WRITE) throw new Error("Acoes genericas de escrita estao desabilitadas.");
         
         const { elementId, valor } = request.params.arguments;
         
@@ -288,7 +304,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "saneago_clicar_botao": {
-        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        if (!ALLOW_GENERIC_WRITE) throw new Error("Acoes genericas de escrita estao desabilitadas.");
         
         const { elementId } = request.params.arguments;
         
@@ -318,11 +334,18 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }
 
       case "saneago_abrir_ra": {
-        if (!ALLOW_WRITE) throw new Error("Acoes de escrita estao desabilitadas (SANEAGO_ALLOW_WRITE).");
+        if (!ALLOW_RA_WRITE) throw new Error("Abertura de RA esta desabilitada.");
         
-        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato } = request.params.arguments;
+        const args = request.params.arguments || {};
+        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato } = args;
         try {
+          if (confirmar) consumeConfirmed(args);
           const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato);
+          if (!confirmar) {
+            const confirmationToken = createPending(args);
+            resultado.confirmationToken = confirmationToken;
+            resultado.message += `\n\nToken de confirmacao: ${confirmationToken}`;
+          }
           return {
             content: [
               {

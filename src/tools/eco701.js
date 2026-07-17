@@ -313,7 +313,11 @@ async function abrirRA(
       resumo.push({ label: "Forma de Atendimento", valor: "NÃO ENCONTRADA NA TELA" });
     }
 
-    const isWriteAllowed = process.env.SANEAGO_ALLOW_WRITE === '1' || process.env.SANEAGO_ALLOW_WRITE === 'true';
+    const isWriteAllowed =
+      process.env.SANEAGO_ALLOW_WRITE === '1' ||
+      process.env.SANEAGO_ALLOW_WRITE === 'true' ||
+      process.env.SANEAGO_ALLOW_RA_WRITE === '1' ||
+      process.env.SANEAGO_ALLOW_RA_WRITE === 'true';
 
     // Linhas de validacao ja presentes ANTES do submit. A tela pode exibir
     // "É necessário informar ..." por conta do preenchimento parcial; sem essa
