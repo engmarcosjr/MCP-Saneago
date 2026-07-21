@@ -32,6 +32,7 @@ function canonicalArgs(args = {}) {
     nomeCliente: String(args.nomeCliente || "").trim().replace(/\s+/g, " "),
     nomeContato: String(args.nomeContato || "SANEAGO").trim().replace(/\s+/g, " "),
     telefoneContato: String(args.telefoneContato || "6299999999").replace(/\D/g, ""),
+    numeroConta: String(args.numeroConta || "").replace(/\D/g, ""),
   };
   return JSON.stringify(normalized);
 }

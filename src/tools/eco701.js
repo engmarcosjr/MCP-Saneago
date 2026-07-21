@@ -15,6 +15,24 @@ const { logAudit } = require("../audit");
 const CONTATO_PADRAO_NOME = "SANEAGO";
 const CONTATO_PADRAO_TELEFONE = "6299999999";
 
+function parseNumeroConta(valor) {
+  if (valor === null || valor === undefined) {
+    return { conta: "", dv: "" };
+  }
+  const str = String(valor).trim();
+  if (!str) {
+    return { conta: "", dv: "" };
+  }
+  const sepMatch = str.match(/^(.+?)[-/](.+)$/);
+  if (sepMatch) {
+    const conta = sepMatch[1].replace(/\D/g, "");
+    const dv = sepMatch[2].replace(/\D/g, "");
+    return { conta, dv };
+  }
+  const conta = str.replace(/\D/g, "");
+  return { conta, dv: "" };
+}
+
 async function abrirRA(
   endereco,
   servico,
@@ -22,7 +40,8 @@ async function abrirRA(
   formaAtendimento = "3 - INTERNO",
   nomeCliente,
   nomeContato = CONTATO_PADRAO_NOME,
-  telefoneContato = CONTATO_PADRAO_TELEFONE
+  telefoneContato = CONTATO_PADRAO_TELEFONE,
+  numeroConta
 ) {
   // O portal recusa a RA sem o nome do cliente/interessado ("É necessário
   // informar o(a) nome do cliente/interessado") — falha antes de abrir sessão.
@@ -81,6 +100,47 @@ async function abrirRA(
     console.error(`[AbrirRA] Clicando no botão Incluir (${btnIncluirId})...`);
     await clicarZk(frame, btnIncluirId);
     await frame.page().waitForTimeout(4000);
+
+    // Preenchimento opcional do Número da Conta/DV (no topo da tela, antes do CEP
+    // e demais campos, para evitar a classe de corrida de auto-fill do ZK).
+    if (numeroConta && String(numeroConta).trim()) {
+      const { conta, dv } = parseNumeroConta(numeroConta);
+      if (!conta) {
+        throw new Error("Parâmetro 'numeroConta' informado, mas não contém dígitos válidos.");
+      }
+
+      console.error(`[AbrirRA] Localizando campo 'Número da Conta'...`);
+      let contaInputId = await aguardarInputPorRotulo(frame, "NUMERO DA CONTA", { tentativas: 10, intervalo: 500 });
+      if (!contaInputId) {
+        contaInputId = await aguardarInputPorRotulo(frame, "CONTA", { tentativas: 5, intervalo: 500 });
+      }
+      if (!contaInputId) {
+        throw new Error("Campo 'Número da Conta' não encontrado no formulário do ECO701");
+      }
+
+      console.error(`[AbrirRA] Preenchendo Número da Conta (${contaInputId}) com "${conta}"...`);
+      await preencherCampo(frame, contaInputId, conta);
+
+      if (dv) {
+        const dvInputId = await frame.evaluate((cId) => {
+          const cEl = document.getElementById(cId);
+          if (!cEl) return null;
+          const scope = cEl.closest('tr, .z-row, .z-hbox, .z-vbox, div') || cEl.parentElement;
+          const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+          const inputs = Array.from(scope.querySelectorAll('input')).filter(visible).filter(i => !i.disabled && !i.readOnly);
+          const idx = inputs.indexOf(cEl);
+          if (idx >= 0 && idx + 1 < inputs.length) {
+            return inputs[idx + 1].id;
+          }
+          return null;
+        }, contaInputId);
+
+        if (dvInputId) {
+          console.error(`[AbrirRA] Preenchendo DV da Conta (${dvInputId}) com "${dv}"...`);
+          await preencherCampo(frame, dvInputId, dv);
+        }
+      }
+    }
 
     // 2. Localizar os campos do formulário
     let relatorio = await inspecionarTela(frame);
@@ -464,4 +524,4 @@ async function abrirRA(
   }
 }
 
-module.exports = { abrirRA };
+module.exports = { abrirRA, parseNumeroConta };

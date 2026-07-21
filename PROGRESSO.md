@@ -407,3 +407,35 @@ uma vez, capturar o fluxo de eventos e replicar. Nunca inventar payload de event
 - Provas read-only: `scratch/diag_zk_widget_api.js`, `diag_zk_capture_eventos.js`,
   `diag_zk_capture_combo.js`
 - Evidência da REGRA 7: `scratch/indeterminado_2026-07-17T01-55-15-723Z.png`
+
+### FASE 5 — `numeroConta` / REGRA 7 (AGY, revisado por Claude, 2026-07-21)
+
+Retomada do projeto após parada em 17/07. Escolhido o **caminho A** da REGRA 7 (adicionar
+`numeroConta`) em vez do B (procurar serviço que não exija conta): A resolve a classe
+inteira de serviços ligados a imóvel, B só contorna o caso de teste.
+
+- `abrirRA` ganha `numeroConta` como **8º parâmetro posicional, opcional** (assinatura dos
+  7 anteriores intacta). Aceita `conta-dv`, `conta/dv` ou só dígitos (`parseNumeroConta`).
+  Preenchido **antes** dos demais campos (o topo da tela dispara auto-fill do ZK), por
+  `aguardarInputPorRotulo` + `preencherCampo`; falha explícita se o campo não existir.
+- `saneago_abrir_ra` expõe `numeroConta` no `inputSchema` (opcional; descrição instrui a
+  **pedir ao usuário, nunca inventar**).
+- **Furo do gate fechado:** `canonicalArgs` não cobria `numeroConta` — a conta podia mudar
+  entre preview e confirmação sem invalidar o token (humano aprova uma conta, outra é
+  gravada). Agora entra normalizada só com dígitos.
+- `scratch/test_eco701_supervisionado.js` ganha `--conta`.
+- Testes offline: `test/eco701.test.js` (parsing) + 3 casos no gate. `npm test` 6/6.
+- Revisão independente (subagente, provas reproduzidas): **APROVADO**, sem violações.
+  Detalhes em `RELATORIO_FASE5.md`.
+
+**Gate da FASE 5 (ABERTO):** E2E supervisionado na rede Saneago com **conta/DV de teste
+válida** — preview primeiro (`--conta <CONTA-DV>`, sem `--confirmar`), submissão real
+depois, com Marcos Jr presente. Sem a conta de teste a fase não fecha.
+
+### Decisão de processo — delegação ao AGY com rede (Marcos Jr, 2026-07-21)
+A skill `delegar-agy` passa a ter dois modos: **A (sandbox)** para código puro e **B
+(read-only com rede)**, sem `--sandbox` mas com `SANEAGO_ALLOW_WRITE=0`,
+`SANEAGO_ALLOW_RA_WRITE=0` e `SANEAGO_ALLOW_GENERIC_WRITE=0` no comando — o AGY passa a
+rodar os `scratch/diag_*.js` contra o portal, e a escrita continua bloqueada por design
+(as flags são opt-in estrito no código). **Escrita real nunca é delegada:** segue como
+gate humano supervisionado.

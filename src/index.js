@@ -211,6 +211,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             type: "string",
             description: "Telefone do contato com DDD (ex: '62988887777'). PERGUNTE ao usuario; so omita (padrao institucional) quando nao houver contato real.",
             default: "6299999999"
+          },
+          numeroConta: {
+            type: "string",
+            description: "Numero da Conta/DV do imovel, exigido por alguns servicos (ex: 2002). Peca ao usuario; nunca invente. Aceita o formato 'conta-dv' ou apenas a conta.",
           }
         },
         required: ["endereco", "servico", "confirmar", "nomeCliente"],
@@ -338,10 +342,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         if (!ALLOW_RA_WRITE) throw new Error("Abertura de RA esta desabilitada.");
         
         const args = request.params.arguments || {};
-        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato } = args;
+        const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato, numeroConta } = args;
         try {
           if (confirmar) consumeConfirmed(args);
-          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato);
+          const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato, numeroConta);
           if (!confirmar) {
             const confirmationToken = createPending(args);
             resultado.confirmationToken = confirmationToken;

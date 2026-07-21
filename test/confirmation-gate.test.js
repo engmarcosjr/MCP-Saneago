@@ -77,3 +77,56 @@ test("confirmation rejects changed arguments and expired previews", () => {
     /expirou/
   );
 });
+
+test("confirmation gate handles numeroConta binding and format normalization", () => {
+  const { args, env } = fixture();
+  const previewArgs = { ...args, numeroConta: "123456-7" };
+  const token = createPending(previewArgs, env, 1000);
+
+  // Rejection when numeroConta is different
+  assert.throws(
+    () => consumeConfirmed(
+      { ...previewArgs, numeroConta: "999999-9", confirmar: true, confirmationToken: token },
+      env,
+      2000
+    ),
+    /nao corresponde/
+  );
+
+  // Acceptance when numeroConta is identical
+  const { args: args2, env: env2 } = fixture();
+  const previewArgs2 = { ...args2, numeroConta: "123456-7" };
+  const token2 = createPending(previewArgs2, env2, 1000);
+  assert.doesNotThrow(() =>
+    consumeConfirmed(
+      { ...previewArgs2, numeroConta: "123456-7", confirmar: true, confirmationToken: token2 },
+      env2,
+      2000
+    )
+  );
+
+  // Acceptance when numeroConta has different formatting normalizing to same digits ("1234567" vs "123456-7")
+  const { args: args3, env: env3 } = fixture();
+  const previewArgs3 = { ...args3, numeroConta: "123456-7" };
+  const token3 = createPending(previewArgs3, env3, 1000);
+  assert.doesNotThrow(() =>
+    consumeConfirmed(
+      { ...previewArgs3, numeroConta: "1234567", confirmar: true, confirmationToken: token3 },
+      env3,
+      2000
+    )
+  );
+});
+
+test("absence of numeroConta in preview and confirmation continues to work (regression)", () => {
+  const { args, env } = fixture();
+
+  // Explicitly ensure numeroConta is undefined / omitted
+  assert.strictEqual(args.numeroConta, undefined);
+
+  const token = createPending(args, env, 1000);
+  const confirmed = { ...args, confirmar: true, confirmationToken: token };
+
+  assert.doesNotThrow(() => consumeConfirmed(confirmed, env, 2000));
+});
+
