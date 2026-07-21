@@ -338,36 +338,11 @@ async function abrirRA(
       console.error(`[AbrirRA] Combobox 'Forma de Atendimento' não encontrado.`);
     }
 
-    // Coleta o resumo dos campos preenchidos
-    const resumo = await frame.evaluate(() => {
-      const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
-
-      // Rotulo = .z-label visivel mais proximo ANTES do input em ordem de
-      // documento. Andar por previousElementSibling/parentElement pulava para
-      // celulas erradas da tabela ZK e rotulava "F"/"J" (tipo de pessoa) como
-      // "Nome"/"CPF". O ":" vem como .z-label separado — ignorar so-pontuacao.
-      const todos = Array.from(document.querySelectorAll('*'));
-      const ordem = new Map(todos.map((el, i) => [el, i]));
-      const util = (t) => t.replace(/[\s:*]/g, '').length > 0;
-      const labels = todos
-        .filter(el => el.classList && el.classList.contains('z-label') && visible(el))
-        .filter(el => util((el.innerText || "").trim()));
-
-      const getLabelOfInput = (input) => {
-        const pos = ordem.get(input);
-        let melhor = null;
-        for (const l of labels) {
-          const lp = ordem.get(l);
-          if (lp < pos && (!melhor || lp > ordem.get(melhor))) melhor = l;
-        }
-        return melhor ? (melhor.innerText || "").trim().replace(/:$/, '') : "Sem Rotulo";
-      };
-
-      return Array.from(document.querySelectorAll('input, textarea'))
-        .filter(visible)
-        .map(i => ({ label: getLabelOfInput(i), valor: i.value }))
-        .filter(item => item.valor && item.valor.trim() !== "");
-    });
+    // Coleta o resumo dos campos preenchidos reutilizando o inspector
+    const relatorioResumo = await inspecionarTela(frame);
+    const resumo = relatorioResumo.inputs
+      .filter(i => i.valor_atual && String(i.valor_atual).trim() !== "")
+      .map(i => ({ label: i.rotulo || i.label, valor: i.valor_atual }));
 
     if (!comboId) {
       resumo.push({ label: "Forma de Atendimento", valor: "NÃO ENCONTRADA NA TELA" });

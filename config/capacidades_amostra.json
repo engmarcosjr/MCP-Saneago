@@ -1,0 +1,1300 @@
+[
+  {
+    "codigo": "BAP002",
+    "nome": "Contracheque",
+    "url_real": "https://www.saneago.com.br/prt/bap/BAP002ContraCheque.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "",
+    "inputs": [
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "maxlength": 6,
+        "readonly": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Tipo de cálculo",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Referência",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:04:03.386Z",
+    "erro": null
+  },
+  {
+    "codigo": "ECO303",
+    "nome": "Acerta Leitura/Consumo",
+    "url_real": "https://www.saneago.com.br/prt/eco/ECO303AcertaLeituraConsumo.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "ECO303 - Acerto Consumo/Leitura",
+    "inputs": [
+      {
+        "rotulo": "Conta",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": false
+      },
+      {
+        "rotulo": "Conta",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "6 meses",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "3 anos",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Todos",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Ft.",
+      "Mês/Ano",
+      "Data Leitura",
+      "Motivo Crítica",
+      "MCF",
+      "MRL",
+      "Dados de leitura",
+      "Erro",
+      "TCF",
+      "CCF",
+      "Consumo",
+      "Dados de Revisão",
+      "ECM",
+      "RET",
+      "Rep",
+      "Mat",
+      "Calc",
+      "Leitura",
+      "OCO",
+      "Data",
+      "Rev"
+    ],
+    "capturado_em": "2026-07-21T19:04:08.759Z",
+    "erro": null
+  },
+  {
+    "codigo": "ECO701",
+    "nome": "Registro de Atendimento",
+    "url_real": "https://www.saneago.com.br/prt/eco/ECO701RegistroAtendimento.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "ECO701 - Registro de Atendimento",
+    "inputs": [
+      {
+        "rotulo": "Número do RA",
+        "tipo": "text",
+        "maxlength": 11,
+        "readonly": false
+      },
+      {
+        "rotulo": "Número da Conta/DV",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": true
+      },
+      {
+        "rotulo": "Número da Conta/DV",
+        "tipo": "text",
+        "maxlength": 1,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Incluir",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:04:14.179Z",
+    "erro": null
+  },
+  {
+    "codigo": "EGWV001",
+    "nome": "Contrato Comercial",
+    "url_real": "https://www.saneago.com.br/prt/egw/EGW001CadastroContratoComercial.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "EGW001 - Cadastro de Contrato Comercial",
+    "inputs": [
+      {
+        "rotulo": "Contrato",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Contrato",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Aditivo",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Tipo de aditivo",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Tipo",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "CPF/CNPJ",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "CPF/CNPJ",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Tipo de Contrato",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Modelo Contrato",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Processo",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Processo",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Gestor",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Gestor",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Data de Assinatura",
+        "tipo": "date",
+        "maxlength": 10,
+        "readonly": false
+      },
+      {
+        "rotulo": "Vigência (meses)",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Data de Término",
+        "tipo": "date",
+        "maxlength": 10,
+        "readonly": true
+      },
+      {
+        "rotulo": "Unidade Organizacional",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Unidade Organizacional",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Objeto",
+        "tipo": "textarea",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Matrícula",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Matrícula",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Data de Inclusão",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Responsável",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "CPF",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "CPF",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Anexar Arquivo",
+        "tipo": "file",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Tipo de Conta",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Conta",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": false
+      },
+      {
+        "rotulo": "Conta",
+        "tipo": "text",
+        "maxlength": 1,
+        "readonly": false
+      },
+      {
+        "rotulo": "Nome",
+        "tipo": "text",
+        "maxlength": 35,
+        "readonly": true
+      },
+      {
+        "rotulo": "Consumo Estimado (m³)",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "(%) Fatur. Esgoto",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bloco/Torre",
+        "tipo": "text",
+        "maxlength": 10,
+        "readonly": false
+      },
+      {
+        "rotulo": "Unidades Atendidas",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Ligações",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Imprimir",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      },
+      {
+        "label": "Anexar PDF",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      }
+    ],
+    "colunas": [
+      "CPF",
+      "Nome Pessoa",
+      "Nº Aditivo",
+      "Nome Anexo",
+      "Abrir Anexo",
+      "Excluir Anexo",
+      "Conta"
+    ],
+    "capturado_em": "2026-07-21T19:04:44.725Z",
+    "erro": null
+  },
+  {
+    "codigo": "EGWV003",
+    "nome": "Consumo Master por Cidade",
+    "url_real": "https://www.saneago.com.br/prt/egw/EGW003RelConsMast.jsp",
+    "tecnologia": "html",
+    "titulo_tela": "Consumo das Contas Masters",
+    "inputs": [
+      {
+        "rotulo": "Cidade",
+        "tipo": "select",
+        "maxlength": null,
+        "readonly": false,
+        "opcoes": [
+          {
+            "valor": "0",
+            "texto": "Selecione"
+          },
+          {
+            "valor": "409",
+            "texto": "ABADIA DE GOIAS"
+          },
+          {
+            "valor": "233",
+            "texto": "ACREUNA"
+          },
+          {
+            "valor": "354",
+            "texto": "ADELANDIA"
+          },
+          {
+            "valor": "344",
+            "texto": "AGUA FRIA DE GOIAS"
+          },
+          {
+            "valor": "131",
+            "texto": "AGUA LIMPA"
+          },
+          {
+            "valor": "516",
+            "texto": "AGUAS LINDAS DE GOIAS"
+          },
+          {
+            "valor": "132",
+            "texto": "ALEXANIA"
+          },
+          {
+            "valor": "134",
+            "texto": "ALOANDIA"
+          },
+          {
+            "valor": "359",
+            "texto": "ALTO HORIZONTE"
+          },
+          {
+            "valor": "86",
+            "texto": "ALTO PARAISO DE GOIAS"
+          },
+          {
+            "valor": "94",
+            "texto": "ALVORADA DO NORTE"
+          },
+          {
+            "valor": "340",
+            "texto": "AMARALINA"
+          },
+          {
+            "valor": "238",
+            "texto": "AMERICANO DO BRASIL"
+          },
+          {
+            "valor": "136",
+            "texto": "AMORINOPOLIS"
+          },
+          {
+            "valor": "2",
+            "texto": "ANAPOLIS"
+          },
+          {
+            "valor": "138",
+            "texto": "ANHANGUERA"
+          },
+          {
+            "valor": "30",
+            "texto": "ANICUNS"
+          },
+          {
+            "valor": "139",
+            "texto": "APARECIDA DE GOIANIA"
+          },
+          {
+            "valor": "236",
+            "texto": "APARECIDA DO RIO DOCE"
+          },
+          {
+            "valor": "140",
+            "texto": "APORE"
+          },
+          {
+            "valor": "87",
+            "texto": "ARACU"
+          },
+          {
+            "valor": "55",
+            "texto": "ARAGARCAS"
+          },
+          {
+            "valor": "141",
+            "texto": "ARAGOIANIA"
+          },
+          {
+            "valor": "295",
+            "texto": "ARAGUAPAZ"
+          },
+          {
+            "valor": "253",
+            "texto": "ARENOPOLIS"
+          },
+          {
+            "valor": "145",
+            "texto": "ARUANA"
+          },
+          {
+            "valor": "114",
+            "texto": "AURILANDIA"
+          },
+          {
+            "valor": "147",
+            "texto": "AVELINOPOLIS"
+          },
+          {
+            "valor": "150",
+            "texto": "BALIZA"
+          },
+          {
+            "valor": "110",
+            "texto": "BARRO ALTO"
+          },
+          {
+            "valor": "97",
+            "texto": "BELA VISTA DE GOIAS"
+          },
+          {
+            "valor": "151",
+            "texto": "BOM JARDIM DE GOIAS"
+          },
+          {
+            "valor": "85",
+            "texto": "BOM JESUS DE GOIAS"
+          },
+          {
+            "valor": "269",
+            "texto": "BONFINOPOLIS"
+          },
+          {
+            "valor": "414",
+            "texto": "BONOPOLIS"
+          },
+          {
+            "valor": "152",
+            "texto": "BRAZABRANTES"
+          },
+          {
+            "valor": "154",
+            "texto": "BRITANIA"
+          },
+          {
+            "valor": "401",
+            "texto": "BURITI DE GOIAS"
+          },
+          {
+            "valor": "331",
+            "texto": "BURITINOPOLIS"
+          },
+          {
+            "valor": "66",
+            "texto": "CABECEIRAS"
+          },
+          {
+            "valor": "155",
+            "texto": "CACHOEIRA ALTA"
+          },
+          {
+            "valor": "125",
+            "texto": "CACHOEIRA DOURADA"
+          },
+          {
+            "valor": "59",
+            "texto": "CACU"
+          },
+          {
+            "valor": "8",
+            "texto": "CAIAPONIA"
+          },
+          {
+            "valor": "343",
+            "texto": "CALDAZINHA"
+          },
+          {
+            "valor": "157",
+            "texto": "CAMPESTRE DE GOIAS"
+          },
+          {
+            "valor": "314",
+            "texto": "CAMPINACU"
+          },
+          {
+            "valor": "100",
+            "texto": "CAMPINORTE"
+          },
+          {
+            "valor": "115",
+            "texto": "CAMPO ALEGRE DE GOIAS"
+          }
+        ],
+        "total_opcoes": 318,
+        "opcoes_truncadas": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "select",
+        "maxlength": null,
+        "readonly": false,
+        "opcoes": [
+          {
+            "valor": "0",
+            "texto": "Selecione (opcional)"
+          }
+        ],
+        "total_opcoes": 1
+      },
+      {
+        "rotulo": "Mês/Ano de Referência",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": false
+      }
+    ],
+    "botoes": [],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:05:28.069Z",
+    "erro": null
+  },
+  {
+    "codigo": "FGC068",
+    "nome": "Consulta Contrato Saneago x SAP",
+    "url_real": "https://www.saneago.com.br/prt/fgc/FGC068ConsultarContratoSaneagoSAP.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "",
+    "inputs": [
+      {
+        "rotulo": "Contrato",
+        "tipo": "text",
+        "maxlength": 9,
+        "readonly": false
+      },
+      {
+        "rotulo": "/",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:05:37.022Z",
+    "erro": null
+  },
+  {
+    "codigo": "JAJ028",
+    "nome": "Consulta Judicial",
+    "url_real": "https://www.saneago.com.br/prt/jaj/JAJ028ConJudicial.jsp",
+    "tecnologia": "html",
+    "titulo_tela": "JAJ - Apoio Jurídico",
+    "inputs": [
+      {
+        "rotulo": "Código do Escritório",
+        "tipo": "select",
+        "maxlength": null,
+        "readonly": false,
+        "opcoes": [
+          {
+            "valor": "",
+            "texto": "Selecione a opção"
+          },
+          {
+            "valor": "4176260",
+            "texto": "4176260 - ACCESS COBRANCA E CONTACT CENT"
+          },
+          {
+            "valor": "3230554",
+            "texto": "3230554 - AFONSO BORGES E BUONADUCE"
+          },
+          {
+            "valor": "3085830",
+            "texto": "3085830 - AMERICO ADVOGADOS E ASSOCIADOS"
+          },
+          {
+            "valor": "3230686",
+            "texto": "3230686 - ARAUJO ORNELAS E ADVOGADOS"
+          },
+          {
+            "valor": "3085821",
+            "texto": "3085821 - BALDUINO & RESENDE ADVOGADOS"
+          },
+          {
+            "valor": "3230465",
+            "texto": "3230465 - BORGES E VIEIRA"
+          },
+          {
+            "valor": "3249433",
+            "texto": "3249433 - BRK AMBIENTAL GOIAS SA"
+          },
+          {
+            "valor": "3191540",
+            "texto": "3191540 - BRZEZINSKI E GOIANINO ADVOGADO"
+          },
+          {
+            "valor": "3039978",
+            "texto": "3039978 - CAMPOS E VALTUILLE ADVOGADOS"
+          },
+          {
+            "valor": "3230678",
+            "texto": "3230678 - CARLOS CAMAROTA ADVOGADOS"
+          },
+          {
+            "valor": "3085848",
+            "texto": "3085848 - CAVALCANTE E LUSTOSA ADVOGADOS"
+          },
+          {
+            "valor": "3228088",
+            "texto": "3228088 - CUNHA SOCIEDADE DE ADVOGADOS"
+          },
+          {
+            "valor": "3230538",
+            "texto": "3230538 - DOURADO ADVOGADOS"
+          },
+          {
+            "valor": "3230694",
+            "texto": "3230694 - ESTEFANIA COLMANETTI"
+          },
+          {
+            "valor": "3230783",
+            "texto": "3230783 - GUALBERTO E BASTOS ADVOGADOS"
+          },
+          {
+            "valor": "3283496",
+            "texto": "3283496 - HOFFMANN ADVOGADOS ASSOCIADOS"
+          },
+          {
+            "valor": "3085856",
+            "texto": "3085856 - IUNES ADVOGADOS ASSOCIADOS"
+          },
+          {
+            "valor": "3231933",
+            "texto": "3231933 - J. BUENO E MANDALITI"
+          },
+          {
+            "valor": "3230708",
+            "texto": "3230708 - JUBÉ ADVOGADOS S/S"
+          },
+          {
+            "valor": "3082385",
+            "texto": "3082385 - KEILA EUSTÁQUIO E ADVOGADOS"
+          },
+          {
+            "valor": "3283500",
+            "texto": "3283500 - LEONIDAS TEIXEIRA ADVOGADOS AS"
+          },
+          {
+            "valor": "3085813",
+            "texto": "3085813 - LOURENCO ADVOCACIA S/C"
+          },
+          {
+            "valor": "3085805",
+            "texto": "3085805 - MANDALITI"
+          },
+          {
+            "valor": "3230988",
+            "texto": "3230988 - MARTINEZ & MARTINEZ ADVOGADOS"
+          },
+          {
+            "valor": "3085864",
+            "texto": "3085864 - MIKAEL BORGES E ADVOGADOS"
+          },
+          {
+            "valor": "3085791",
+            "texto": "3085791 - PINHEIRO E POTIGUAR ADVOGADOS"
+          },
+          {
+            "valor": "3230376",
+            "texto": "3230376 - RODNEI LASMAR E ADVOGADOS"
+          },
+          {
+            "valor": "3057291",
+            "texto": "3057291 - SANEAGO"
+          },
+          {
+            "valor": "3083080",
+            "texto": "3083080 - TIBURCIO PENA E ASSOCIADOS S/S"
+          }
+        ],
+        "total_opcoes": 30
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": false
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 2,
+        "readonly": false
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 1,
+        "readonly": true
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 2,
+        "readonly": true
+      },
+      {
+        "rotulo": "Nº Processo (novo)",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "ou",
+        "tipo": "text",
+        "maxlength": 12,
+        "readonly": false
+      },
+      {
+        "rotulo": "Número Conta",
+        "tipo": "text",
+        "maxlength": 8,
+        "readonly": false
+      },
+      {
+        "rotulo": "Número Conta",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Situação",
+        "tipo": "select",
+        "maxlength": null,
+        "readonly": false,
+        "opcoes": [
+          {
+            "valor": "0",
+            "texto": "Selecione"
+          },
+          {
+            "valor": "7",
+            "texto": "ARQUIVADO"
+          },
+          {
+            "valor": "10",
+            "texto": "EM GRAU DE RECURSO"
+          },
+          {
+            "valor": "1",
+            "texto": "EM ANDAMENTO"
+          },
+          {
+            "valor": "6",
+            "texto": "EM EXECUÇÃO"
+          },
+          {
+            "valor": "5",
+            "texto": "EM NEGOCIAÇÃO"
+          },
+          {
+            "valor": "14",
+            "texto": "EMBARGO JUDICIAL"
+          },
+          {
+            "valor": "3",
+            "texto": "FINDO COM ÊXITO"
+          },
+          {
+            "valor": "4",
+            "texto": "FINDO SEM ÊXITO"
+          },
+          {
+            "valor": "9",
+            "texto": "FINDO-RECADASTRADO"
+          },
+          {
+            "valor": "12",
+            "texto": "JULGADO"
+          },
+          {
+            "valor": "11",
+            "texto": "NEGOCIAÇÃO JUDICIAL / PROCESSO EXTINTO"
+          },
+          {
+            "valor": "15",
+            "texto": "PRE-PROCESSUAL"
+          },
+          {
+            "valor": "13",
+            "texto": "PROCESSO EXTINTO"
+          },
+          {
+            "valor": "8",
+            "texto": "RESTAURADO"
+          },
+          {
+            "valor": "2",
+            "texto": "SUSPENSO"
+          }
+        ],
+        "total_opcoes": 16
+      }
+    ],
+    "botoes": [],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:05:51.491Z",
+    "erro": null
+  },
+  {
+    "codigo": "LRS041",
+    "nome": "Relatório de recomposição asfáltica",
+    "url_real": "https://www.saneago.com.br/prt/lrs/LRS041RelatorioRecomposicaoAsfaltica.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "Modelo",
+    "inputs": [
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "UO",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "UO",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Período de Corte",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "a",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Situação",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Listagem dos Lotes",
+      "Situação",
+      "Unidade Organizacional",
+      "E-mail do Destinatário"
+    ],
+    "capturado_em": "2026-07-21T19:05:57.162Z",
+    "erro": null
+  },
+  {
+    "codigo": "LRS272",
+    "nome": "Acompanhar Atendimento",
+    "url_real": "https://www.saneago.com.br/prt/lrs/LRS272MonitorarAtendimento.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "Monitorar Atendimento",
+    "inputs": [
+      {
+        "rotulo": "Un.Organizacional",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Un.Organizacional",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Data",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Data",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Filtros",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:06:02.580Z",
+    "erro": null
+  },
+  {
+    "codigo": "LRS732",
+    "nome": "Atendimento Por Período",
+    "url_real": "https://www.saneago.com.br/prt/lrs/LRS732relAtendPer.jsp",
+    "tecnologia": "html",
+    "titulo_tela": ".:Relatorio de Serviços Atendidos Por Período:.",
+    "inputs": [
+      {
+        "rotulo": "Periodo",
+        "tipo": "text",
+        "maxlength": 10,
+        "readonly": false
+      },
+      {
+        "rotulo": "Periodo",
+        "tipo": "text",
+        "maxlength": 10,
+        "readonly": false
+      }
+    ],
+    "botoes": [],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:06:17.087Z",
+    "erro": null
+  },
+  {
+    "codigo": "LRS733",
+    "nome": "Atendimento Por Cidade",
+    "url_real": "https://www.saneago.com.br/prt/lrs/LRS733relAtendCid.jsp",
+    "tecnologia": "html",
+    "titulo_tela": ".:Relatorio de Serviços Atendidos Por Cidade em um Período:.",
+    "inputs": [
+      {
+        "rotulo": "Periodo",
+        "tipo": "text",
+        "maxlength": 10,
+        "readonly": false
+      },
+      {
+        "rotulo": "Periodo",
+        "tipo": "text",
+        "maxlength": 10,
+        "readonly": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": 7,
+        "readonly": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": 40,
+        "readonly": true
+      }
+    ],
+    "botoes": [],
+    "colunas": [],
+    "capturado_em": "2026-07-21T19:06:31.783Z",
+    "erro": null
+  },
+  {
+    "codigo": "MTG001",
+    "nome": "Capturar Remessa",
+    "url_real": "https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "Capturar Remessa",
+    "inputs": [
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Data/Hora",
+      "Tamanho",
+      "Tipo",
+      "Nome",
+      "Ação"
+    ],
+    "capturado_em": "2026-07-21T19:06:36.970Z",
+    "erro": null
+  }
+]
