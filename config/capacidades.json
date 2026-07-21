@@ -1062,8 +1062,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:29:45.867Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T22:57:19.218Z",
+    "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Gestão de Empregados no Teletrabalho' }).first()\u001b[22m\n"
   },
   {
     "codigo": "BPAV005",
@@ -1074,8 +1074,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:30:30.863Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T22:58:21.812Z",
+    "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Reporte de Atividades de Teletrabalho' }).first()\u001b[22m\n"
   },
   {
     "codigo": "BPAV006",
@@ -1086,8 +1086,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:31:15.868Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T22:59:24.476Z",
+    "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Painel de Empregados em Teletrabalho' }).first()\u001b[22m\n"
   },
   {
     "codigo": "BPAV354",
@@ -5359,7 +5359,7 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:31:53.567Z",
+    "capturado_em": "2026-07-21T23:00:01.814Z",
     "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"ECO815\"."
   },
   {
@@ -5395,7 +5395,7 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:32:28.184Z",
+    "capturado_em": "2026-07-21T23:00:36.391Z",
     "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"ECO954\"."
   },
   {
@@ -5407,7 +5407,7 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:33:02.883Z",
+    "capturado_em": "2026-07-21T23:01:11.008Z",
     "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"ECO962\"."
   },
   {
@@ -7256,8 +7256,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:33:47.889Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T23:02:11.147Z",
+    "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"FGIV005\"."
   },
   {
     "codigo": "FGOV002",
@@ -10800,7 +10800,7 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:34:25.570Z",
+    "capturado_em": "2026-07-21T23:02:48.343Z",
     "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"LIG002\"."
   },
   {
@@ -10812,8 +10812,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:35:10.576Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T23:03:48.455Z",
+    "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"LIGV002\"."
   },
   {
     "codigo": "LQAV028",
@@ -14485,8 +14485,8 @@
     "inputs": [],
     "botoes": [],
     "colunas": [],
-    "capturado_em": "2026-07-21T21:45:03.509Z",
-    "erro": "Timeout de captura (45s)"
+    "capturado_em": "2026-07-21T23:04:51.238Z",
+    "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"MGOV050\"."
   },
   {
     "codigo": "MGOV059",
@@ -17099,14 +17099,64 @@
   {
     "codigo": "PGTV511",
     "nome": "Empregados Ordem de Tráfego",
-    "url_real": "",
-    "tecnologia": "desconhecida",
+    "url_real": "https://www.saneago.com.br/prt/pgt/PGT511EmpregadoOrdemTrafego.zul",
+    "tecnologia": "zk",
     "titulo_tela": "",
-    "inputs": [],
-    "botoes": [],
-    "colunas": [],
-    "capturado_em": "2026-07-21T22:09:33.790Z",
-    "erro": "page.waitForTimeout: Target page, context or browser has been closed"
+    "inputs": [
+      {
+        "rotulo": "Ordem de Tráfego",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Ordem de Tráfego",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "maxlength": 9,
+        "readonly": false
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Close",
+        "tipo": "submit"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      },
+      {
+        "label": "Incluir",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Empregados Envolvidos",
+      "Matrícula",
+      "Nome"
+    ],
+    "capturado_em": "2026-07-21T23:05:24.596Z",
+    "erro": null
   },
   {
     "codigo": "PGTV909",
@@ -17417,37 +17467,111 @@
   {
     "codigo": "PGTV918",
     "nome": "Ordem de tráfego por motorista",
-    "url_real": "",
-    "tecnologia": "desconhecida",
-    "titulo_tela": "",
-    "inputs": [],
-    "botoes": [],
+    "url_real": "https://www.saneago.com.br/prt/pgt/PGT918OrdemTrafegoMotorista.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "Modelo",
+    "inputs": [
+      {
+        "rotulo": "Matricula",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Matricula",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Período",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "a",
+        "tipo": "date",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Filtro Situação",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Emitir",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
     "colunas": [],
-    "capturado_em": "2026-07-21T22:13:15.095Z",
-    "erro": "page.waitForTimeout: Target page, context or browser has been closed"
+    "capturado_em": "2026-07-21T23:05:58.273Z",
+    "erro": null
   },
   {
     "codigo": "S0072",
     "nome": "SUPER. DE RECURSOS HUMANOS",
-    "url_real": "",
-    "tecnologia": "desconhecida",
-    "titulo_tela": "",
+    "url_real": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "new page title",
     "inputs": [],
-    "botoes": [],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      },
+      {
+        "label": "Ver localização no Mapa",
+        "tipo": "button"
+      }
+    ],
     "colunas": [],
-    "capturado_em": "2026-07-21T22:13:15.167Z",
-    "erro": "browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/macbookmj/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hn/5xf8zjdd12b9wxzwhgd5vw7r0000gn/T/playwright_chromiumdev_profile-CmnDpP --remote-debugging-pipe --no-startup-window\n<launched> pid=19765\n[pid=19765][err] [0721/191315.152988:ERROR:base/power_monitor/thermal_state_observer_mac.mm:140] ThermalStateObserverMac unable to register to power notifications. Result: 9\n[pid=19765][err] [0721/191315.161562:ERROR:net/dns/dns_config_service_posix.cc:138] DNS config watch failed to start.\n[pid=19765][err] [0721/191315.162808:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.\n[pid=19765][err] [0721/191315.162387:FATAL:base/apple/mach_port_rendezvous_mac.cc:159] Check failed: kr == KERN_SUCCESS. bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.19765: unknown error code (124)\nCall log:\n\u001b[2m  - <launching> /Users/macbookmj/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hn/5xf8zjdd12b9wxzwhgd5vw7r0000gn/T/playwright_chromiumdev_profile-CmnDpP --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=19765\u001b[22m\n\u001b[2m  - [pid=19765][err] [0721/191315.152988:ERROR:base/power_monitor/thermal_state_observer_mac.mm:140] ThermalStateObserverMac unable to register to power notifications. Result: 9\u001b[22m\n\u001b[2m  - [pid=19765][err] [0721/191315.161562:ERROR:net/dns/dns_config_service_posix.cc:138] DNS config watch failed to start.\u001b[22m\n\u001b[2m  - [pid=19765][err] [0721/191315.162808:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.\u001b[22m\n\u001b[2m  - [pid=19765][err] [0721/191315.162387:FATAL:base/apple/mach_port_rendezvous_mac.cc:159] Check failed: kr == KERN_SUCCESS. bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.19765: unknown error code (124)\u001b[22m\n\u001b[2m  - [pid=19765] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=19765] <kill>\u001b[22m\n\u001b[2m  - [pid=19765] <will force kill>\u001b[22m\n\u001b[2m  - [pid=19765] exception while trying to kill process: Error: kill EPERM\u001b[22m\n\u001b[2m  - [pid=19765] <process did exit: exitCode=null, signal=SIGTRAP>\u001b[22m\n\u001b[2m  - [pid=19765] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=19765] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=19765] <gracefully close end>\u001b[22m\n"
+    "capturado_em": "2026-07-21T23:06:06.168Z",
+    "erro": null
   },
   {
     "codigo": "S0087",
     "nome": "CHEFIA DE GABINETE",
-    "url_real": "",
-    "tecnologia": "desconhecida",
-    "titulo_tela": "",
+    "url_real": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "new page title",
     "inputs": [],
-    "botoes": [],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "submit"
+      },
+      {
+        "label": "Ver localização no Mapa",
+        "tipo": "button"
+      }
+    ],
     "colunas": [],
-    "capturado_em": "2026-07-21T22:13:15.193Z",
-    "erro": "browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/macbookmj/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hn/5xf8zjdd12b9wxzwhgd5vw7r0000gn/T/playwright_chromiumdev_profile-QvZSzu --remote-debugging-pipe --no-startup-window\n<launched> pid=19769\n[pid=19769][err] [0721/191315.190708:ERROR:base/power_monitor/thermal_state_observer_mac.mm:140] ThermalStateObserverMac unable to register to power notifications. Result: 9\n[pid=19769][err] [0721/191315.191753:ERROR:net/dns/dns_config_service_posix.cc:138] DNS config watch failed to start.\n[pid=19769][err] [0721/191315.192004:FATAL:base/apple/mach_port_rendezvous_mac.cc:159] Check failed: kr == KERN_SUCCESS. bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.19769: unknown error code (124)\nCall log:\n\u001b[2m  - <launching> /Users/macbookmj/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/hn/5xf8zjdd12b9wxzwhgd5vw7r0000gn/T/playwright_chromiumdev_profile-QvZSzu --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=19769\u001b[22m\n\u001b[2m  - [pid=19769][err] [0721/191315.190708:ERROR:base/power_monitor/thermal_state_observer_mac.mm:140] ThermalStateObserverMac unable to register to power notifications. Result: 9\u001b[22m\n\u001b[2m  - [pid=19769][err] [0721/191315.191753:ERROR:net/dns/dns_config_service_posix.cc:138] DNS config watch failed to start.\u001b[22m\n\u001b[2m  - [pid=19769][err] [0721/191315.192004:FATAL:base/apple/mach_port_rendezvous_mac.cc:159] Check failed: kr == KERN_SUCCESS. bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.19769: unknown error code (124)\u001b[22m\n\u001b[2m  - [pid=19769] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=19769] <kill>\u001b[22m\n\u001b[2m  - [pid=19769] <will force kill>\u001b[22m\n\u001b[2m  - [pid=19769] exception while trying to kill process: Error: kill EPERM\u001b[22m\n\u001b[2m  - [pid=19769] <process did exit: exitCode=null, signal=SIGTRAP>\u001b[22m\n\u001b[2m  - [pid=19769] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=19769] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=19769] <gracefully close end>\u001b[22m\n"
+    "capturado_em": "2026-07-21T23:06:10.684Z",
+    "erro": null
   }
 ]

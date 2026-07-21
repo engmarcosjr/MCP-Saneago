@@ -16,6 +16,7 @@ const { logAudit } = require("./audit");
 const { consultarConsumo } = require("./tools/eco303");
 const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
+const { descobrirAplicacao } = require("./tools/descobrir");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -130,6 +131,32 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         },
         required: ["ra"],
       }
+    },
+    {
+      name: "saneago_descobrir_aplicacao",
+      description: "Busca e rankeia aplicacoes no indice de capacidades por pergunta em linguagem natural, filtros ou vertical (busca local instantanea, sem Playwright).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          pergunta: {
+            type: "string",
+            description: "Pergunta ou termo de pesquisa em linguagem natural (ex: 'todas as RAs da Rua Ada Centine no Maracana' ou 'conta no nome Marcos')",
+          },
+          filtros: {
+            type: "array",
+            items: { type: "string" },
+            description: "Filtros desejados (ex: ['logradouro', 'bairro', 'periodo'])",
+          },
+          vertical: {
+            type: "string",
+            description: "Vertical desejada (ex: 'comercial', 'operacional', 'juridico', 'rh_pessoal')",
+          },
+          limite: {
+            type: "number",
+            description: "Quantidade maxima de aplicacoes candidatas a retornar (padrao 10)",
+          },
+        },
+      },
     }
   ];
 
@@ -467,6 +494,19 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           resultado = Object.values(roteiro);
         }
         
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_descobrir_aplicacao": {
+        const args = request.params.arguments || {};
+        const resultado = descobrirAplicacao(args);
         return {
           content: [
             {

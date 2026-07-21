@@ -12,9 +12,11 @@ function parseArgs() {
   const args = process.argv.slice(2);
   const options = {
     resume: false,
+    somenteErros: false,
     apenas: null,
     limite: null,
     desde: null,
+    timeout: 45000,
     saida: DEFAULT_SAIDA_PATH,
   };
 
@@ -22,12 +24,16 @@ function parseArgs() {
     const arg = args[i];
     if (arg === '--resume') {
       options.resume = true;
+    } else if (arg === '--somente-erros') {
+      options.somenteErros = true;
     } else if (arg === '--apenas' && i + 1 < args.length) {
       options.apenas = args[++i].split(',').map(s => s.trim().toUpperCase()).filter(Boolean);
     } else if (arg === '--limite' && i + 1 < args.length) {
       options.limite = parseInt(args[++i], 10);
     } else if (arg === '--desde' && i + 1 < args.length) {
       options.desde = args[++i].trim().toUpperCase();
+    } else if (arg === '--timeout' && i + 1 < args.length) {
+      options.timeout = parseInt(args[++i], 10);
     } else if (arg === '--saida' && i + 1 < args.length) {
       options.saida = path.resolve(process.cwd(), args[++i]);
     }
@@ -89,7 +95,7 @@ function timeoutPromise(ms, promise) {
 async function main() {
   const options = parseArgs();
   console.error(`[Harvest] Iniciando varredura de capacidades de aplicações...`);
-  console.error(`[Harvest] Opções: resume=${options.resume}, apenas=${options.apenas ? options.apenas.join(',') : 'todos'}, limite=${options.limite || 'sem limite'}, desde=${options.desde || 'início'}, saída=${options.saida}`);
+  console.error(`[Harvest] Opções: resume=${options.resume}, somenteErros=${options.somenteErros}, apenas=${options.apenas ? options.apenas.join(',') : 'todos'}, limite=${options.limite || 'sem limite'}, desde=${options.desde || 'início'}, timeout=${options.timeout}ms, saída=${options.saida}`);
 
   if (!fs.existsSync(CATALOGO_PATH)) {
     throw new Error(`Catálogo não encontrado em: ${CATALOGO_PATH}`);
@@ -113,7 +119,12 @@ async function main() {
     apps = apps.filter(a => options.apenas.includes(a.codigo));
   }
 
-  if (options.resume) {
+  if (options.somenteErros) {
+    apps = apps.filter(a => {
+      const existing = resultMap.get(a.codigo);
+      return existing && existing.erro != null;
+    });
+  } else if (options.resume) {
     apps = apps.filter(a => {
       const existing = resultMap.get(a.codigo);
       return !existing || !!existing.erro;
@@ -149,39 +160,62 @@ async function main() {
       erro: null
     };
 
-    try {
-      await timeoutPromise(45000, (async () => {
-        const frame = await abrirApp(app.codigo);
-        const inspect = await inspecionarTela(frame);
+    const maxTentativas = 3;
+    let tentativa = 0;
+    let deucerto = false;
 
-        registro.url_real = frame.url();
-        registro.tecnologia = inspect.tecnologia || "zk";
-        registro.titulo_tela = inspect.titulo_tela || "";
-        registro.inputs = (inspect.inputs || []).map(i => ({
-          rotulo: i.rotulo || i.label || "Sem Rotulo",
-          tipo: i.tipo || "text",
-          maxlength: i.maxlength || null,
-          readonly: i.readonly || false,
-          opcoes: i.opcoes || undefined,
-          total_opcoes: i.total_opcoes || undefined,
-          opcoes_truncadas: i.opcoes_truncadas || undefined
-        }));
-        registro.botoes = (inspect.botoes || inspect.buttons || []).map(b => ({
-          label: b.label || "Sem Rotulo",
-          tipo: b.tipo || "button"
-        }));
-        registro.colunas = inspect.colunas || [];
+    while (tentativa < maxTentativas && !deucerto) {
+      tentativa++;
+      const sufixoTentativa = tentativa > 1 ? ` (tentativa ${tentativa}/${maxTentativas})` : '';
+      try {
+        await timeoutPromise(options.timeout, (async () => {
+          const frame = await abrirApp(app.codigo);
+          const inspect = await inspecionarTela(frame);
+
+          registro.url_real = frame.url();
+          registro.tecnologia = inspect.tecnologia || "zk";
+          registro.titulo_tela = inspect.titulo_tela || "";
+          registro.inputs = (inspect.inputs || []).map(i => ({
+            rotulo: i.rotulo || i.label || "Sem Rotulo",
+            tipo: i.tipo || "text",
+            maxlength: i.maxlength || null,
+            readonly: i.readonly || false,
+            opcoes: i.opcoes || undefined,
+            total_opcoes: i.total_opcoes || undefined,
+            opcoes_truncadas: i.opcoes_truncadas || undefined
+          }));
+          registro.botoes = (inspect.botoes || inspect.buttons || []).map(b => ({
+            label: b.label || "Sem Rotulo",
+            tipo: b.tipo || "button"
+          }));
+          registro.colunas = inspect.colunas || [];
+          registro.capturado_em = new Date().toISOString();
+          registro.erro = null;
+        })());
+
+        console.error(`${prefixoLog} ok${sufixoTentativa} — ${registro.inputs.length} inputs, ${registro.botoes.length} botoes`);
+        deucerto = true;
+
+      } catch (err) {
+        const msg = err.message || String(err);
+        registro.erro = msg;
         registro.capturado_em = new Date().toISOString();
-        registro.erro = null;
-      })());
 
-      console.error(`${prefixoLog} ok — ${registro.inputs.length} inputs, ${registro.botoes.length} botoes`);
+        const isBrowserSessionError = /browser has been closed|target page|context or browser|browserType\.launch|context closed|browser.*disconnected|connection closed/i.test(msg);
+        const isFrameError = /frame/i.test(msg);
 
-    } catch (err) {
-      const msg = err.message || String(err);
-      registro.erro = msg;
-      registro.capturado_em = new Date().toISOString();
-      console.error(`${prefixoLog} FALHA: ${msg}`);
+        if (isBrowserSessionError && !isFrameError && tentativa < maxTentativas) {
+          console.error(`${prefixoLog} FALHA SESSÃO BROWSER: ${msg}. Reiniciando sessão Playwright e tentando novamente (${tentativa}/${maxTentativas})...`);
+          await closeSession().catch(() => {});
+        } else {
+          if (isFrameError) {
+            console.error(`${prefixoLog} FALHA FRAME: ${msg} (sem retry cego para erro de frame)`);
+          } else {
+            console.error(`${prefixoLog} FALHA: ${msg}`);
+          }
+          break;
+        }
+      }
     }
 
     resultMap.set(app.codigo, registro);
