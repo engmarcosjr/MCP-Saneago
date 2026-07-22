@@ -52,54 +52,111 @@ function expandirTokensDomain(tokens) {
       expanded.add('debito');
       expanded.add('extrato');
     }
+    if (t === 'asfalto' || t === 'asfaltica' || t === 'corte') {
+      expanded.add('asfalto');
+      expanded.add('asfaltica');
+      expanded.add('recomposicao');
+    }
+    if (t === 'recomposto' || t === 'recomposicao' || t === 'recomposica') {
+      expanded.add('recomposicao');
+      expanded.add('asfaltica');
+      expanded.add('recomposto');
+    }
+    if (t === 'recadastramento' || t === 'recadastro') {
+      expanded.add('recadastramento');
+      expanded.add('recadastro');
+    }
+    if (t === 'paralisacao' || t === 'paralizacao' || t === 'paralisa') {
+      expanded.add('paralisacao');
+      expanded.add('paralizacao');
+      expanded.add('paralisa');
+    }
+    if (t === 'telefone' || t === 'celular') {
+      expanded.add('telefone');
+      expanded.add('contato');
+    }
+    if (t === 'consumo' || t === 'medido' || t === 'leitura') {
+      expanded.add('consumo');
+      expanded.add('medido');
+      expanded.add('leitura');
+    }
   }
   return Array.from(expanded);
 }
 
 /**
- * Mapeia termos comuns da pergunta para nomes de filtros reconhecidos.
+ * Mapeia termos comuns da pergunta para nomes de filtros reconhecidos,
+ * distinguindo parâmetros de entrada de colunas de saída com base em preposições.
  */
 function inferirFiltrosDaPergunta(perguntaNorm) {
-  const filtros = new Set();
+  const filtrosEntrada = new Set();
+  const colunasSaida = new Set();
 
-  if (/per[ií]odo|data.*ini|data.*fim|dt.*ini|dt.*fim|de:.*at[eé]|intervalo|ultimos.*meses|meses|dias/i.test(perguntaNorm)) {
-    filtros.add('periodo');
-  }
-  if (/cidade|munic[ií]pio|goi[aâ]nia|an[aá]polis|aparecida/i.test(perguntaNorm)) {
-    filtros.add('cidade');
-  }
-  if (/bairro|setor|maracan[aã]/i.test(perguntaNorm)) {
-    filtros.add('bairro');
-  }
-  if (/logradouro|rua|endere[çc]o|avenida|ada centine/i.test(perguntaNorm)) {
-    filtros.add('logradouro');
-  }
-  if (/\bcontas?\b|n[uú]m.*conta|nr.*conta|fatura/i.test(perguntaNorm)) {
-    filtros.add('conta');
-  }
-  if (/\bras?\b|registro.*atendimento|n[uú]m.*ra|nr.*ra/i.test(perguntaNorm)) {
-    filtros.add('ra');
-  }
-  if (/\bcpf\b|\bcnpj\b|documento/i.test(perguntaNorm)) {
-    filtros.add('cpf_cnpj');
-  }
-  if (/\bnome\b|titular|cliente|interessado|solicitante|marcos|antonio|propriet[aá]rio/i.test(perguntaNorm)) {
-    filtros.add('nome');
-  }
-  if (/matr[ií]cula/i.test(perguntaNorm)) {
-    filtros.add('matricula');
-  }
-  if (/hidr[oô]metro|medidor/i.test(perguntaNorm)) {
-    filtros.add('hidrometro');
-  }
-  if (/servi[çc]o|c[oó]d.*serv/i.test(perguntaNorm)) {
-    filtros.add('codigo_servico');
-  }
-  if (/\buo\b|unidade.*organiz/i.test(perguntaNorm)) {
-    filtros.add('uo');
+  const matchPrep = perguntaNorm.match(/^(.*?)\s+\b(por|pelo|pela|de|da|do|num|numa)\b\s+(.*)$/i);
+  let parteFiltro = perguntaNorm;
+  let parteResultado = '';
+
+  if (matchPrep) {
+    parteResultado = matchPrep[1].trim();
+    parteFiltro = matchPrep[3].trim();
   }
 
-  return Array.from(filtros);
+  function extrairFiltrosDeTexto(texto, destinoSet) {
+    if (!texto) return;
+    if (/per[ií]odo|data.*ini|data.*fim|dt.*ini|dt.*fim|de:.*at[eé]|intervalo|ultimos.*meses|meses|dias/i.test(texto)) {
+      destinoSet.add('periodo');
+    }
+    if (/\bdata\b|\bdt\b/i.test(texto)) {
+      destinoSet.add('data');
+    }
+    if (/cidade|munic[ií]pio|goi[aâ]nia|an[aá]polis|aparecida/i.test(texto)) {
+      destinoSet.add('cidade');
+    }
+    if (/bairro|setor|maracan[aã]/i.test(texto)) {
+      destinoSet.add('bairro');
+    }
+    if (/logradouro|rua|endere[çc]o|avenida|ada centine/i.test(texto)) {
+      destinoSet.add('logradouro');
+    }
+    if (/\bcontas?\b|n[uú]m.*conta|nr.*conta|fatura/i.test(texto)) {
+      destinoSet.add('conta');
+    }
+    if (/\bras?\b|registro.*atendimento|n[uú]m(ero)?.*ra|nr.*ra/i.test(texto)) {
+      destinoSet.add('ra');
+    }
+    if (/\bcpf\b|\bcnpj\b|documento/i.test(texto)) {
+      destinoSet.add('cpf_cnpj');
+    }
+    if (/\bnome\b|titular|cliente|interessado|solicitante|marcos|antonio|propriet[aá]rio/i.test(texto)) {
+      destinoSet.add('nome');
+    }
+    if (/matr[ií]cula/i.test(texto)) {
+      destinoSet.add('matricula');
+    }
+    if (/hidr[oô]metro|medidor/i.test(texto)) {
+      destinoSet.add('hidrometro');
+    }
+    if (/servi[çc]o|c[oó]d.*serv/i.test(texto)) {
+      destinoSet.add('codigo_servico');
+    }
+    if (/\buo\b|unidade.*organiz/i.test(texto)) {
+      destinoSet.add('uo');
+    }
+  }
+
+  extrairFiltrosDeTexto(parteFiltro, filtrosEntrada);
+  if (parteResultado) {
+    extrairFiltrosDeTexto(parteResultado, colunasSaida);
+  }
+
+  if (filtrosEntrada.size === 0) {
+    extrairFiltrosDeTexto(perguntaNorm, filtrosEntrada);
+  }
+
+  return {
+    filtrosEntrada: Array.from(filtrosEntrada),
+    colunasSaida: Array.from(colunasSaida)
+  };
 }
 
 function descobrirAplicacao(params = {}) {
@@ -114,15 +171,18 @@ function descobrirAplicacao(params = {}) {
 
   const perguntaNorm = removerAcentos(pergunta || '');
   const verticalNorm = removerAcentos(vertical || '');
-  const filtrosDesejados = (filtrosFiltro || []).map(f => removerAcentos(f));
+  
+  const filtrosEntradaDesejados = (filtrosFiltro || []).map(f => removerAcentos(f));
+  let colunasSaidaDesejadas = [];
 
   if (perguntaNorm) {
-    const filtrosInferidos = inferirFiltrosDaPergunta(perguntaNorm);
-    for (const f of filtrosInferidos) {
-      if (!filtrosDesejados.includes(f)) {
-        filtrosDesejados.push(f);
+    const { filtrosEntrada: feInf, colunasSaida: csInf } = inferirFiltrosDaPergunta(perguntaNorm);
+    for (const f of feInf) {
+      if (!filtrosEntradaDesejados.includes(f)) {
+        filtrosEntradaDesejados.push(f);
       }
     }
+    colunasSaidaDesejadas = csInf;
   }
 
   const baseTokens = perguntaNorm
@@ -166,47 +226,48 @@ function descobrirAplicacao(params = {}) {
     } else if (tokenPergunta.length > 0) {
       const matchedTokens = tokenPergunta.filter(t => matchWordBoundary(nomeNorm, t));
       if (matchedTokens.length > 0) {
-        const rawTokensScore = matchedTokens.length * 10;
+        const rawTokensScore = matchedTokens.length * 15;
         const cappedTokensScore = Math.min(30, rawTokensScore); // Teto: 30
         nameScore += cappedTokensScore;
         porQueCasou.push(`Termos do nome casados (${matchedTokens.join(', ')}): +${cappedTokensScore}`);
       }
     }
 
-    // 3. Match de filtros aceitos (SINAL DOMINANTE) & cobertura de saída em colunas
+    // 3. Match de filtros de entrada (SINAL DOMINANTE - Tier 1) vs Colunas de saída (SINAL FRACO - Tier 3)
     let filterScore = 0;
     const appFiltros = (app.filtros || []).map(f => removerAcentos(f));
     const appColunasNorm = (app.colunas_retornadas || []).map(c => removerAcentos(c));
 
     const filtrosEntradaCasados = [];
     const filtrosSaidaCasados = [];
-    const coveredFilters = new Set();
 
-    for (const fd of filtrosDesejados) {
-      if (appFiltros.includes(fd)) {
-        filtrosEntradaCasados.push(fd);
-        coveredFilters.add(fd);
-      } else if (appColunasNorm.some(col => matchWordBoundary(col, fd))) {
-        filtrosSaidaCasados.push(fd);
-        coveredFilters.add(fd);
+    for (const fe of filtrosEntradaDesejados) {
+      if (appFiltros.includes(fe)) {
+        filtrosEntradaCasados.push(fe);
+      } else if (appColunasNorm.some(col => matchWordBoundary(col, fe))) {
+        filtrosSaidaCasados.push(fe);
       }
     }
 
-    if (coveredFilters.size > 0) {
-      // 40 pts por filtro de entrada, 35 pts por coluna de saída que atende ao filtro pedido
-      const ptsEntrada = filtrosEntradaCasados.length * 40;
-      const ptsSaida = filtrosSaidaCasados.length * 35;
-      const coberturaRatio = filtrosDesejados.length > 0 ? (coveredFilters.size / filtrosDesejados.length) : 1;
-      const ptsCobertura = Math.round(coberturaRatio * 30);
-
-      filterScore += (ptsEntrada + ptsSaida + ptsCobertura);
-      porQueCasou.push(`Filtros atendidos (entrada: [${filtrosEntradaCasados.join(', ')}], saída: [${filtrosSaidaCasados.join(', ')}]): +${ptsEntrada + ptsSaida} (cobertura ${Math.round(coberturaRatio * 100)}%: +${ptsCobertura})`);
+    for (const cs of colunasSaidaDesejadas) {
+      if (appColunasNorm.some(col => matchWordBoundary(col, cs)) && !filtrosSaidaCasados.includes(cs)) {
+        filtrosSaidaCasados.push(cs);
+      }
     }
 
-    // 4. Match em colunas retornadas (Sinal fraco com fronteira de palavras e Teto: 25)
+    // A. Filtros de entrada (Dominantes: 50 pts cada + cobertura)
+    if (filtrosEntradaCasados.length > 0) {
+      const ptsEntrada = filtrosEntradaCasados.length * 50;
+      const coberturaRatio = filtrosEntradaDesejados.length > 0 ? (filtrosEntradaCasados.length / filtrosEntradaDesejados.length) : 1;
+      const ptsCobertura = Math.round(coberturaRatio * 30);
+      filterScore += (ptsEntrada + ptsCobertura);
+      porQueCasou.push(`Filtros de entrada atendidos ([${filtrosEntradaCasados.join(', ')}]): +${ptsEntrada} (cobertura ${Math.round(coberturaRatio * 100)}%: +${ptsCobertura})`);
+    }
+
+    // B. Colunas de retorno (Teto estrito de 15 pts para apps SEM filtro de entrada, ou 25 pts COM filtro de entrada)
     let colunasScore = 0;
+    const colunasCasadas = [];
     if (tokenPergunta.length > 0 && Array.isArray(app.colunas_retornadas)) {
-      const colunasCasadas = [];
       for (const col of appColunasNorm) {
         for (const token of tokenPergunta) {
           if (matchWordBoundary(col, token) && !colunasCasadas.includes(col)) {
@@ -214,14 +275,16 @@ function descobrirAplicacao(params = {}) {
           }
         }
       }
-      if (colunasCasadas.length > 0) {
-        const rawColunasScore = colunasCasadas.length * 5;
-        colunasScore = Math.min(25, rawColunasScore); // Teto: 25
-        porQueCasou.push(`Colunas de retorno correspondentes (${colunasCasadas.length} colunas): +${colunasScore}`);
-      }
     }
 
-    // 5. Match em perguntas que responde (Sinal fraco com Teto: 20)
+    const rawSaidaPts = (filtrosSaidaCasados.length * 10) + (colunasCasadas.length * 2);
+    if (rawSaidaPts > 0) {
+      const tetoSaida = filtrosEntradaCasados.length === 0 ? 15 : 25;
+      colunasScore = Math.min(tetoSaida, rawSaidaPts);
+      porQueCasou.push(`Colunas de saída casadas (filtros: [${filtrosSaidaCasados.join(', ')}], colunas: ${colunasCasadas.length}): +${colunasScore}`);
+    }
+
+    // 4. Match em perguntas que responde (Sinal fraco com Teto: 15)
     let perguntasScore = 0;
     if (tokenPergunta.length > 0 && Array.isArray(app.perguntas_que_responde)) {
       let perguntasCasadasCount = 0;
@@ -234,7 +297,7 @@ function descobrirAplicacao(params = {}) {
       }
       if (perguntasCasadasCount > 0) {
         const rawPergScore = perguntasCasadasCount * 5;
-        perguntasScore = Math.min(20, rawPergScore); // Teto: 20
+        perguntasScore = Math.min(15, rawPergScore); // Teto: 15
         porQueCasou.push(`Responde a ${perguntasCasadasCount} intenções relacionadas: +${perguntasScore}`);
       }
     }
@@ -242,10 +305,35 @@ function descobrirAplicacao(params = {}) {
     // Soma parcial
     let totalAppScore = score + codeScore + nameScore + filterScore + colunasScore + perguntasScore;
 
-    // Penalidade explícita se a pergunta exigiu/inferiu filtros mas a app NÃO atendeu a NENHUM filtro de entrada nem coluna de saída
-    if (filtrosDesejados.length > 0 && coveredFilters.size === 0) {
-      totalAppScore = Math.floor(totalAppScore * 0.1); // Redução drástica
-      porQueCasou.push(`Penalidade por não atender a nenhum filtro/coluna solicitado (${filtrosDesejados.join(', ')})`);
+    // Identifica tokens de tópico (excluindo nomes de filtros genéricos)
+    const filterTokenNames = new Set(['ra', 'ras', 'registro', 'atendimento', 'numero', 'num', 'nr', 'conta', 'contas', 'periodo', 'cidade', 'bairro', 'logradouro', 'uo', 'cpf', 'cnpj', 'matricula', 'hidrometro', 'data', 'consultar', 'consulta']);
+    const topicTokens = tokenPergunta.filter(t => !filterTokenNames.has(t));
+
+    let matchesTopic = true;
+    if (topicTokens.length > 0) {
+      const nameMatched = topicTokens.some(t => matchWordBoundary(nomeNorm, t));
+      const colMatched = appColunasNorm.some(col => topicTokens.some(t => matchWordBoundary(col, t)));
+      const pergMatched = (app.perguntas_que_responde || []).some(p => topicTokens.some(t => matchWordBoundary(removerAcentos(p), t)));
+      matchesTopic = nameMatched || colMatched || pergMatched;
+    }
+
+    if (topicTokens.length > 0 && !matchesTopic) {
+      totalAppScore = Math.floor(totalAppScore * 0.2);
+      porQueCasou.push(`Penalidade por não corresponder ao tópico específico da busca (${topicTokens.join(', ')})`);
+    }
+
+    // Penalidade se a pergunta exigiu/inferiu filtros de entrada mas a app NÃO atendeu a NENHUM filtro de entrada
+    if (filtrosEntradaDesejados.length > 0 && filtrosEntradaCasados.length === 0) {
+      if (matchesTopic && topicTokens.length > 0) {
+        totalAppScore = Math.floor(totalAppScore * 0.8);
+        porQueCasou.push(`Suavizada penalidade de filtro por casar com o tópico da busca ([${topicTokens.join(', ')}])`);
+      } else if (nameScore < 20) {
+        totalAppScore = Math.floor(totalAppScore * 0.1);
+        porQueCasou.push(`Penalidade por não atender a nenhum filtro de entrada solicitado ([${filtrosEntradaDesejados.join(', ')}])`);
+      } else {
+        totalAppScore = Math.floor(totalAppScore * 0.5);
+        porQueCasou.push(`Penalidade por não ter filtro de entrada solicitado ([${filtrosEntradaDesejados.join(', ')}])`);
+      }
     }
 
     // Ajustes por confiabilidade e erro
@@ -259,10 +347,12 @@ function descobrirAplicacao(params = {}) {
 
     // Limiar de relevância mínimo (Corte de Cauda)
     const MIN_SCORE = 25;
+    const coveredFiltersCount = filtrosEntradaCasados.length + filtrosSaidaCasados.length;
     if (totalAppScore >= MIN_SCORE && porQueCasou.length > 0) {
       resultados.push({
         score: totalAppScore,
-        coveredFiltersCount: coveredFilters.size,
+        coveredFiltersCount,
+        coveredEntradaCount: filtrosEntradaCasados.length,
         app: {
           codigo: app.codigo,
           nome: app.nome,
@@ -281,7 +371,7 @@ function descobrirAplicacao(params = {}) {
     return {
       ok: true,
       mensagem: "Nenhuma aplicação encontrada com os critérios fornecidos.",
-      filtros_pesquisados: filtrosDesejados,
+      filtros_pesquisados: filtrosEntradaDesejados,
       candidatas: [],
       confianca: "baixa"
     };
@@ -291,11 +381,15 @@ function descobrirAplicacao(params = {}) {
   const topoResult = resultados[0];
 
   // Cálculo da confiança da resposta
+  const totalDesejadosSet = new Set([...filtrosEntradaDesejados, ...colunasSaidaDesejadas]);
+  const totalDesejadosCount = totalDesejadosSet.size;
   let confianca = "baixa";
-  if (filtrosDesejados.length > 0) {
-    if (topoResult.coveredFiltersCount >= filtrosDesejados.length && topoResult.score >= 50) {
+  if (totalDesejadosCount > 0) {
+    const topoEntradaCount = topoResult.coveredEntradaCount || 0;
+    const topoTotalCovered = topoResult.coveredFiltersCount || 0;
+    if (topoEntradaCount >= filtrosEntradaDesejados.length && topoTotalCovered >= totalDesejadosCount && topoResult.score >= 50) {
       confianca = "alta";
-    } else if (topoResult.coveredFiltersCount > 0 && topoResult.score >= 35) {
+    } else if (topoTotalCovered > 0 && topoResult.score >= 35) {
       confianca = "media";
     } else {
       confianca = "baixa";
@@ -313,7 +407,7 @@ function descobrirAplicacao(params = {}) {
   return {
     ok: true,
     total_encontrado: resultados.length,
-    filtros_pesquisados: filtrosDesejados,
+    filtros_pesquisados: filtrosEntradaDesejados,
     candidatas: top,
     confianca
   };

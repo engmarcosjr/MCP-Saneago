@@ -468,3 +468,18 @@ Reescrita completa do algoritmo de pontuação da ferramenta `saneago_descobrir_
 - **T5 — Diagnóstico das 11 Aplicações com Erro (`docs/LACUNAS_E_ADAPTADORES.md`):**
   - Registrada a decisão arquitetural: 3 por permissão/teletrabalho (BPAV004-006), 5 popups BI/GIS externos (ECO954, ECO962, LIG002, LIGV002, MGOV050), 2 GED/PDF (ECO815, FGIV005) e 1 contingência (EAC799). Todas devidamente classificadas no índice com penalidade `erro: true`.
 
+### FASE 9b — Correção Estrutural do Ranking da Descoberta (2026-07-22)
+
+Correção conceitual da hierarquia de scoring para eliminar a dominância espúria de colunas de saída sobre filtros de entrada:
+
+- **Correção da Causa Raiz:** O teto combinado de colunas de saída foi limitado estritamente a **15 pontos** para aplicações sem o filtro de entrada correspondente. Como `15 < 50` (1 filtro de entrada = 50 pts), colunas de saída NUNCA podem alcançar ou superar um filtro de entrada casado.
+- **Reordenamento Comprovado:**
+  - `"consultar RA por numero"` → **`ECO701` em 1º lugar** (107 pts). `EAC005` eliminada do top-3 (obteve 3 pts por ter RA apenas como coluna de saída).
+  - `"asfalto recomposto por RA"` e `"recomposição asfáltica por cidade"` → **`LRS041` no top-3**.
+  - Mantidos verdes: `"conta pelo nome do proprietario"` → **`ECO154`**, `"RAs por logradouro e bairro num periodo"` → **`ECO709`**, `"debitos/faturas de uma conta"` → **`ECO506`**.
+- **Análise Gramatical & Tópico de Negócio:**
+  - `inferirFiltrosDaPergunta()` agora separa gramaticalmente objeto de saída de parâmetros de entrada (após preposições `por`, `pelo`, `de`, `num`).
+  - Penalidade de tópico (0.2x) para aplicações genéricas sem casamento com o tópico específico da busca (`topicTokens`).
+- **Suíte de Testes 100% Verde:** `npm test` passa **21/21 testes**.
+- **Documentação:** `RELATORIO_FASE9.md` atualizado com a nova seção **"Correção 9b"** contendo a tabela Antes/Depois, resultados fora-da-suíte e a saída real e completa de `npm test`.
+

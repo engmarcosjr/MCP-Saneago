@@ -43,6 +43,32 @@ test('ranking - consultar RA por numero -> ECO701 em 1º no índice completo', (
   assert(res.candidatas.length > 0);
   assert.strictEqual(res.candidatas[0].codigo, 'ECO701', `Esperado ECO701 em 1º, obteve ${res.candidatas[0].codigo}`);
   assert.strictEqual(res.confianca, 'alta');
+
+  // Trava a regressão da coluna-de-saída-dominante: EAC005 NÃO pode aparecer no top-3
+  const top3 = res.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(!top3.includes('EAC005'), `EAC005 não deve aparecer no top-3 por ter RA apenas como coluna de saída (top-3 obtido: ${top3.join(', ')})`);
+});
+
+test('ranking - asfalto recomposto por RA / recomposição asfáltica por cidade -> LRS041 no top-3', () => {
+  const resAsfalto = descobrirAplicacao({
+    pergunta: 'asfalto recomposto por RA',
+    indicePath: INDICE_PATH
+  });
+
+  assert.strictEqual(resAsfalto.ok, true);
+  assert(resAsfalto.candidatas.length > 0, 'Devia retornar candidatas para asfalto recomposto por RA');
+  const top3Asfalto = resAsfalto.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3Asfalto.includes('LRS041'), `LRS041 deve estar no top-3 para asfalto recomposto por RA, obtido top-3: ${top3Asfalto.join(', ')}`);
+
+  const resRecomp = descobrirAplicacao({
+    pergunta: 'recomposição asfáltica por cidade',
+    indicePath: INDICE_PATH
+  });
+
+  assert.strictEqual(resRecomp.ok, true);
+  assert(resRecomp.candidatas.length > 0, 'Devia retornar candidatas para recomposição asfáltica por cidade');
+  const top3Recomp = resRecomp.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3Recomp.includes('LRS041'), `LRS041 deve estar no top-3 para recomposição asfáltica por cidade, obtido top-3: ${top3Recomp.join(', ')}`);
 });
 
 test('ranking - debitos/faturas de uma conta -> ECO506 (ou ECO563/ECO548) em 1º lugar', () => {
