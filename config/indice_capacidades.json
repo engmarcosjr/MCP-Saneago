@@ -1,10 +1,10 @@
 {
-  "total_aplicacoes": 340,
+  "total_aplicacoes": 596,
   "resumo": {
-    "confiabilidade_alta": 64,
-    "confiabilidade_media": 102,
-    "confiabilidade_baixa": 174,
-    "com_erro": 10
+    "confiabilidade_alta": 164,
+    "confiabilidade_media": 214,
+    "confiabilidade_baixa": 218,
+    "com_erro": 11
   },
   "aplicacoes": [
     {
@@ -41,6 +41,30 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "AGD001",
+      "nome": "Consulta de RDs",
+      "url_real": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [
+        "cpf_cnpj",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Número",
+        "Interessado",
+        "Assunto",
+        "Assunto Complementar",
+        "Conclusão",
+        "Download"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -320,6 +344,199 @@
       "erro": null
     },
     {
+      "codigo": "BPA001",
+      "nome": "Plano de Lotação",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA001ConfirmaPlanoLotacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA004",
+      "nome": "Gestão de Empregados no Teletrabalho",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA004GestaoEmpregadosTeletrabalho.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Matrícula",
+        "Nome do Empregado",
+        "Telefone",
+        "Modalidade",
+        "Tipo de revezamento",
+        "Dias de revezamento"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "BPA005",
+      "nome": "Reporte de Atividades de Teletrabalho",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA005ReporteAtividadesTeletrabalho.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Nome",
+        "Período",
+        "Atividades",
+        "Situação"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "BPA354",
+      "nome": "Avaliação do Empregado",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA354AvaliacaoDesempenho.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA356",
+      "nome": "Resultado Avaliação de Desempenho",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA356ResultadoAvaliacaoDesempenho.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA358",
+      "nome": "Relatório Avaliação de Desempenho",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA358RelatorioAvaliacaoDesempenho.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BPA359",
+      "nome": "Autoavaliação de Desempenho",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA359Autoavaliacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA360",
+      "nome": "Avaliação de Desempenho dos Gestores",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA360AvaliacaoGestores.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA361",
+      "nome": "Gerenciamento e Devolutiva - Avaliaçoes",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA361AcompanhamentoAvaliacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BPA372",
+      "nome": "Inscrição PDV",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA372InscricaoPDV.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA373",
+      "nome": "Ranking PDV",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA373RankingPDV.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BPA433",
+      "nome": "Histórico Funcional",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA433HistoricoFuncional.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "data",
+        "cpf_cnpj",
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BPA604",
+      "nome": "Painel da Trilha",
+      "url_real": "https://www.saneago.com.br/prt/bpa/BPA604PainelDaTrilha.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
       "codigo": "BPAV001",
       "nome": "Plano de Lotação",
       "url_real": "https://www.saneago.com.br/prt/bpa/BPA001ConfirmaPlanoLotacao.zul",
@@ -347,7 +564,7 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Gestão de Empregados no Teletrabalho' }).first()\u001b[22m\n"
+      "erro": "Timeout de captura (45s)"
     },
     {
       "codigo": "BPAV005",
@@ -359,7 +576,7 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Reporte de Atividades de Teletrabalho' }).first()\u001b[22m\n"
+      "erro": "Timeout de captura (45s)"
     },
     {
       "codigo": "BPAV006",
@@ -371,7 +588,7 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Painel de Empregados em Teletrabalho' }).first()\u001b[22m\n"
+      "erro": "Timeout de captura (45s)"
     },
     {
       "codigo": "BPAV354",
@@ -502,6 +719,258 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BSW003",
+      "nome": "Total de EPI por UO",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW003EstatisticaEPI.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW004",
+      "nome": "Entrega de EPI/EPC",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW004EntregaEPI.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Codigo",
+        "Equipamento",
+        "Quantidade",
+        "Numeração",
+        "Número CA"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "BSW006",
+      "nome": "Histórico de Entrega",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW006HistoricoEntregaEPI.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW020",
+      "nome": "Numeração de Epi por Empregado",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW020EpiEmpregado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Codigo",
+        "Equipamento",
+        "Tamanho EPI",
+        "Qtde Anual"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW040",
+      "nome": "Relatório de Agentes Risco por Empregado",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW040RelAgenteRiscoEmpregado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "nome",
+        "matricula"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as informações da matrícula <matricula>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW043",
+      "nome": "Consultar Não Conformidade",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW043ConsultaNaoConformidade.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "N. NC",
+        "DESCRIÇÃO NC",
+        "GESTOR DA U.O.",
+        "DATA DA INSPEÇÃO",
+        "STATUS",
+        "AÇÃO"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "BSW150",
+      "nome": "Cadastro de EPI",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW150EquipamentoSeguranca.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código do risco",
+        "Nome do risco",
+        "Código",
+        "Descricao",
+        "Tipo",
+        "Medido por",
+        "Tamanhos Disponíveis",
+        "Status"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW310",
+      "nome": "Atestado Médico",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW310AtestadoMedico.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BSW504",
+      "nome": "Atividades por Empregado",
+      "url_real": "https://www.saneago.com.br/prt/bsw/BSW504AtividadesPorEmpregado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BTW001",
+      "nome": "Pedido",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BTW002",
+      "nome": "Pedidos Por Período",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BTW021",
+      "nome": "Avaliação do Treinamento",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "BTW022",
+      "nome": "Pedidos Por Empregado",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BTW024",
+      "nome": "Pedidos desta Unidade e UOs Inferiores",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "BTW025",
+      "nome": "Pedidos desta Unidade Organizacional",
+      "url_real": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -685,6 +1154,54 @@
       "erro": null
     },
     {
+      "codigo": "EAC005",
+      "nome": "Protocolo de Atendimento",
+      "url_real": "https://www.saneago.com.br/prt/eac/EAC005ProtocoloDeAtendimento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Protocolo",
+        "Conta",
+        "Cidade",
+        "Unidade de Atendimento",
+        "Telefone",
+        "Data/hora do atendimento",
+        "Canal de atendimento",
+        "Motivo do contato",
+        "Selec.",
+        "Número RA",
+        "Ação",
+        "Data de início",
+        "Data de execução",
+        "Serviço",
+        "Situação RA",
+        "Descrição",
+        "Cliente",
+        "Detalhes"
+      ],
+      "perguntas_que_responde": [
+        "qual o histórico de consumo nos últimos meses da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "EAC799",
+      "nome": "Atendimento",
+      "url_real": "",
+      "vertical": "indefinida",
+      "tecnologia": "desconhecida",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": "Aplicacao EAC799 nao encontrada no menu_nav.json. Execute o discovery."
+    },
+    {
       "codigo": "EACV005",
       "nome": "Protocolo de Atendimento",
       "url_real": "https://www.saneago.com.br/prt/eac/EAC005ProtocoloDeAtendimento.zul",
@@ -706,6 +1223,117 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECA001",
+      "nome": "Distribuição de Rotas",
+      "url_real": "https://www.saneago.com.br/prt/eca/ECA001DistribuicaoRotas.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "periodo",
+        "bairro",
+        "logradouro"
+      ],
+      "colunas_retornadas": [
+        "Rota",
+        "Sequência",
+        "Conta",
+        "Logradouro",
+        "Número",
+        "Quadra",
+        "Lote",
+        "Bairro",
+        "Cidade",
+        "Motivo da Reprovação"
+      ],
+      "perguntas_que_responde": [
+        "quais RAs foram registradas na rua <logradouro> em <cidade> no período de <data> a <data>",
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECA002",
+      "nome": "Rel. de Produtividade do Recadastramento",
+      "url_real": "https://www.saneago.com.br/prt/eca/ECA002RelatorioProdutividade.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Contas em Execução",
+        "Contas em Análise",
+        "Responsável",
+        "Total Contas",
+        "Distribuído",
+        "Não Iniciado",
+        "Em Execução",
+        "Pendente",
+        "Concluído",
+        "Contas Analisadas pelo Terceiro",
+        "Contas Analisadas pela Saneago",
+        "Total Concluído",
+        "Total Aprovado",
+        "Total Reprovado",
+        "Aprovado pelo Terceiro",
+        "Reprovado pelo Terceiro",
+        "Aprovado pelo Distrito",
+        "Reprovado pelo Distrito",
+        "Aprovado pela Superintendência",
+        "Reprovado pela Superintendência",
+        "Aprovado pelo Comercial",
+        "Reprovado pelo Comercial"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECA003",
+      "nome": "Planejamento de Recadastramento",
+      "url_real": "https://www.saneago.com.br/prt/eca/ECA003PlanejamentoRecadastramento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Cidade",
+        "Empresa Responsável",
+        "Mês/Ano Referência",
+        "Ativo"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECA004",
+      "nome": "Autorizar Rotas para Distribuição",
+      "url_real": "https://www.saneago.com.br/prt/eca/ECA004AutorizaDistribuicao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Rota",
+        "Total de Contas"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -780,6 +1408,115 @@
       ],
       "perguntas_que_responde": [
         "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECN003",
+      "nome": "Enviar Fatura por Conta",
+      "url_real": "https://www.saneago.com.br/prt/ecn/ECN003EnvioFaturaProtesto.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Referência",
+        "Fatura",
+        "Vencimento",
+        "Valor (R$)",
+        "Titularidade"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECN004",
+      "nome": "Enviar Fatura em Massa",
+      "url_real": "https://www.saneago.com.br/prt/ecn/ECN004EnvioFaturaProtestoEmMassa.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "bairro"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Referência Selecionada",
+        "Fatura",
+        "CPF/CNPJ",
+        "Nome do Titular",
+        "Endereço",
+        "CEP",
+        "Celular",
+        "Valor",
+        "Valor Total"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECN005",
+      "nome": "Gerenciar Protesto",
+      "url_real": "https://www.saneago.com.br/prt/ecn/ECN005GerenciarProtestoCartorario.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Referência",
+        "Fatura",
+        "Vencimento",
+        "Titularidade",
+        "Valor",
+        "Débito",
+        "Situação Protesto"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECN006",
+      "nome": "Relatório",
+      "url_real": "https://www.saneago.com.br/prt/ecn/ECN006RelatoriosProtesto.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECN007",
+      "nome": "Consultar Protesto",
+      "url_real": "https://www.saneago.com.br/prt/ecn/ECN007ConsultarProtesto.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Referência",
+        "Documento",
+        "Valor",
+        "Data de Envio",
+        "Situação Atual",
+        "Consultar Documento",
+        "Tratativa"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
       ],
       "confiabilidade": "alta",
       "erro": null
@@ -946,6 +1683,149 @@
       "erro": null
     },
     {
+      "codigo": "ECO103",
+      "nome": "Qtde de Contas com Prazo em Vigor",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO103QuantidadeContasPrazoVigor.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO104",
+      "nome": "Contas com Prazo por Período",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO104ContaPrazoPeriodo.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO106",
+      "nome": "Quantidade de Contas em Débito Automátic",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO106DebitoAutomatico.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Banco",
+        "Quantidade de Contas",
+        "Código",
+        "Nome",
+        "Total",
+        "Saneago",
+        "Subdelegada"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO108",
+      "nome": "Relação de contas potencial faturamento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO108ListarContasPotenFaturamento.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "logradouro"
+      ],
+      "colunas_retornadas": [
+        "Lista de Subcategorias"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO112",
+      "nome": "Relaciona Contas Condomínio",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO112RelacionaContasCondominio.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Contas Individuais Relacionadas a Conta do Condomínio",
+        "Pesquisar Conta(s):",
+        "Conta",
+        "Nome",
+        "Codificação",
+        "Complemento",
+        "Hidrômetro",
+        "Tipo da Ligação"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO113",
+      "nome": "Histórico de Conta Individual",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO113HistoricoContaIndividual.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Histórico",
+        "Conta Macro",
+        "Data/Hora Inclusão",
+        "Matrícula Inclusão",
+        "Data/Hora Exclusão",
+        "Matrícula Exclusão"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO118",
+      "nome": "Bairros",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO118ConsultaBairro.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Nome",
+        "Distrito",
+        "ECO120"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO120",
       "nome": "Logradouros por Nome/Bairro",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
@@ -974,6 +1854,72 @@
         "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
       ],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO121",
+      "nome": "Reordenação Codificação de Massa",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO121ReordenarRota.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO122",
+      "nome": "Manutenção de Bairros",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO122ManutencaoBairro.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "nome"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO124",
+      "nome": "Atualiza Data Vencimento/Cliente",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO124VencimentoCliente.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO130",
+      "nome": "Relação de Clientes p/ Categoria",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO130RelacaoClienteCategoria.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -1008,6 +1954,27 @@
       "erro": null
     },
     {
+      "codigo": "ECO133",
+      "nome": "Cronograma de Atividades",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO133CronogramaAtividade.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Atividade",
+        "Previsão",
+        "Geração/Execução",
+        "Matricula Ult. Alt.",
+        "Data Ult. Alt."
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO135",
       "nome": "Atualiza CEP de Usuários",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO135AtualizarCepUsuarios.zul",
@@ -1021,6 +1988,81 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [
         "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO139",
+      "nome": "Entrega de Contas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO139EntregaContas.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "ENTREGA DA FATURA OU DO COMUNICADO DE SUA NÃO EMISSÃO NO ATO DA LEITURA",
+        "ENTREGA DA FATURA NÃO EMITIDA NO ATO DA LEITURA",
+        "Referência",
+        "Data/Hora",
+        "Tipo Entrega",
+        "Liberação ou Retenção",
+        "Leitura",
+        "Ocorrência",
+        "Lançar erros"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO144",
+      "nome": "Endereço Alternativo",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO144CadastroEnderecoAlternativo.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO145",
+      "nome": "Órgãos Públicos Cadastrados",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO145OrgaoPublico.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "nome"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO146",
+      "nome": "Controle de Fatura Digital",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO146ControleFaturaEmail.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
       ],
       "confiabilidade": "media",
       "erro": null
@@ -1065,6 +2107,78 @@
       "erro": null
     },
     {
+      "codigo": "ECO150",
+      "nome": "Boletim de Recadastramento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO150BoletimRecadastramento.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO151",
+      "nome": "Cadastro de Usuarios",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO151CadastroUsuario.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta",
+        "ra",
+        "cpf_cnpj",
+        "data",
+        "cidade",
+        "bairro",
+        "logradouro",
+        "matricula"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as informações e histórico da conta <conta>",
+        "quais os detalhes e situação do registro de atendimento <ra>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO152",
+      "nome": "Autorização p/ Débito Automático",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO152AutorizacaoDebitoAutomatico.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Histórico de Débito Automático",
+        "Dados Bancários",
+        "Data",
+        "Tipo Operação",
+        "Operador",
+        "Banco",
+        "Agência",
+        "Conta Corrente",
+        "Autorização Cliente",
+        "Autorização Banco",
+        "Notificação Banco",
+        "Dt. Oper."
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO154",
       "nome": "Usuários por Nome",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO154ConsultaUsuario.zul",
@@ -1101,6 +2215,33 @@
       "erro": null
     },
     {
+      "codigo": "ECO157",
+      "nome": "Codificações Existentes",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO157CodificacaoExistente.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Seq.",
+        "Id. Conta",
+        "N° Conta",
+        "Usuário",
+        "S.A.",
+        "S.E.",
+        "ECO.",
+        "Endereço",
+        "Nº.",
+        "Qd.",
+        "Lt.",
+        "Hidrômetro"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO160",
       "nome": "Alterar em Massa Grupo e Rota",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO160AlteracaoMassaGrupoRotas.zul",
@@ -1115,6 +2256,88 @@
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO162",
+      "nome": "Usuário Eventual",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO162CadastramentoDeUsuariosEventuais.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO163",
+      "nome": "Subcategorias",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO163Subcategorias.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECO170",
+      "nome": "Codificação/Número de Conta",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO170CodificacaoConta.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO171",
+      "nome": "Contas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO171RelatorioContas.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO172",
+      "nome": "Usuários Reais de Água",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO172UsuariosReaisDeAgua.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "logradouro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -1142,6 +2365,61 @@
       "erro": null
     },
     {
+      "codigo": "ECO187",
+      "nome": "Histórico de Usuários",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO187HistoricoCadastroUsuario.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta",
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "Data",
+        "Campo (Cod - Desc)",
+        "Situação Anterior do Campo",
+        "Matrícula",
+        "Motivo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO189",
+      "nome": "Relatório de Medição de Serviços",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO189RelatorioMedicaoServicos.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO193",
+      "nome": "Relatório Analítico do Faturamento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO193RelAnaliticoFat.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO201",
       "nome": "Cadastramento de Hidrômetros",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO201CadastroHidrometro.zul",
@@ -1155,6 +2433,112 @@
         "qual o histórico de leituras do hidrômetro <hidrometro>"
       ],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO202",
+      "nome": "Movimentação de Hidrômetro",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO202MovimentacaoHidrometro.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta",
+        "hidrometro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "qual o histórico de leituras do hidrômetro <hidrometro>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO203",
+      "nome": "Lacração do Hidrômetro ao Padrão",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO203LacracaoHidrometro.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Ligação",
+        "Tipo",
+        "Hidrômetro",
+        "Data Lacração",
+        "Tipo de Lacre",
+        "Número Lacre",
+        "Forma de Entrega",
+        "Histórico"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO204",
+      "nome": "Ocorrências de Leitura/Corte/Relig",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO204ControleOcorrencia.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "Necessidade",
+        "Permissão",
+        "Foto",
+        "Contabilização",
+        "Situação",
+        "Retenção",
+        "Ações"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO205",
+      "nome": "Hidrômetros",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO205ConsultaHidrometro.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "hidrometro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "qual o histórico de leituras do hidrômetro <hidrometro>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO212",
+      "nome": "Consumo Hidrômetro Instal/Trocado",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO212HidrometrosInstaladosTrocados.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [
+        "Referência",
+        "Consumo",
+        "Valor",
+        "Contas Faturadas"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -1192,6 +2576,89 @@
       ],
       "perguntas_que_responde": [
         "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO219",
+      "nome": "Controle de Contas Suprimidas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO219ControleLigacoesSuprimidas.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "bairro",
+        "logradouro",
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Fonte",
+        "Supressão",
+        "Data Última Vistoria",
+        "Data Final",
+        "RA Solicitadas",
+        "Vistorias Executadas",
+        "Data",
+        "RA",
+        "Superintendência",
+        "Qtde Ativas",
+        "Qtde Suprimidas",
+        "Qtde Suprimidas Com Controle",
+        "Qtde Suprimidas Fora do Controle"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO265",
+      "nome": "Ligações sem Hidrômetro",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO265LigacoesSemHidrometros.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "logradouro"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "Quantidade",
+        "Sequencial",
+        "Conta",
+        "Nome",
+        "Endereço",
+        "Consumo Estimado m³/mês"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO273",
+      "nome": "Hidrômetros com Volume Acumulado/Tempo",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO273HidrometroVencido.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [
+        "Capacidade",
+        "Volume Acumulado",
+        "Tempo de Instalação",
+        "Individualizadas",
+        "Total"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
       ],
       "confiabilidade": "alta",
       "erro": null
@@ -1319,6 +2786,22 @@
       "erro": null
     },
     {
+      "codigo": "ECO344",
+      "nome": "Diferença de Consumo",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO344RelDifConsumo.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO348",
       "nome": "Cadastramento Grande Gerador",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO348CadastroGrandeGeradorOleo.zul",
@@ -1332,6 +2815,174 @@
       "perguntas_que_responde": [
         "quais as informações e histórico da conta <conta>",
         "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO349",
+      "nome": "Concessão de Crédito",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO349ConcessaoCreditoOleoFornecido.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "RA",
+        "Data",
+        "Litros",
+        "Valor",
+        "Conta Beneficiada",
+        "Matrícula"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO351",
+      "nome": "Listagem Coleta Óleo",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO351ListagemColetaOleo.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "RA",
+        "Data Crédito",
+        "Conta",
+        "Volume Crédito",
+        "Valor Crédito",
+        "Volume Coletado",
+        "Complemento"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO357",
+      "nome": "Consulta Estoque",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO357estoque.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO359",
+      "nome": "Primeira Crítica de Consumo/Leitura",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO359PrimeiraCriticaConsumo.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Pesquisar Conta(s):",
+        "Rota",
+        "Sequencial",
+        "Conta",
+        "Crítica",
+        "ECO303",
+        "Analisado",
+        "Finalizado",
+        "Responsável Análise"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO360",
+      "nome": "Contas com Ocorrência",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO360ContaComOcorrencia.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO363",
+      "nome": "Revisão de Leitura",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO363RevisaoLeitura.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Pesquisar:",
+        "Rota",
+        "Sequencial",
+        "Conta",
+        "Hidrômetro",
+        "Número da Revisão",
+        "Motivo",
+        "Validado",
+        "Data da Revisão",
+        "Responsável",
+        "Tipo",
+        "Ações",
+        "Solicitado",
+        "Não Validado",
+        "Não Executadas"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO367",
+      "nome": "Clientes c/ Média de Consumo X",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO367MediaConsumo.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO376",
+      "nome": "Clientes c/ Consumo Faturado",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO376RelacaoClientesConsumoFaturadoEstimado.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
       ],
       "confiabilidade": "media",
       "erro": null
@@ -1360,11 +3011,58 @@
       "erro": null
     },
     {
+      "codigo": "ECO395",
+      "nome": "Clientes com Irregularidades",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO395ClientesComIrregularidade.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO402",
+      "nome": "Emissão de Fatura em Braille",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO402CadBraille.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO404",
       "nome": "Cadastramento de Tarifas",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO404CadastroDeTarifas.zul",
       "vertical": "comercial",
       "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECO407",
+      "nome": "Códigos de Lançamentos",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO407CadastrarLancamentos.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
       "filtros": [],
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
@@ -1414,6 +3112,302 @@
       "erro": null
     },
     {
+      "codigo": "ECO413",
+      "nome": "Controle de NFAg",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO413ConsultarNotaFiscalRejeitada.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cpf_cnpj",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Número/Séria NFAg",
+        "Número da Fatura",
+        "CPF/CNPJ",
+        "Situação da NF",
+        "NFAg",
+        "ECO148",
+        "ECO151",
+        "ECO415"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO415",
+      "nome": "Débito Analítico",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO415ConsultaDebito.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO416",
+      "nome": "Simulação",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO416SimulacaoConta.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta",
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "Categoria",
+        "Subcategoria",
+        "Economia",
+        "Unidade",
+        "Consumo Estimado m³/mês",
+        "Peso (%)",
+        "Código",
+        "Descrição do Lançamento",
+        "Valor do Lançamento"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO422",
+      "nome": "Contas Pagas com Atraso",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO422ContaPagaAtraso.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Início Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo",
+        "Referência(s)",
+        "Data Vencimento",
+        "Data Pagamento",
+        "Valor Fatura (R$)",
+        "Dias Atraso",
+        "Valor Lançamento (R$)",
+        "Cod. Lançamento"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO427",
+      "nome": "Termo de Ocorrencia de Irregularidade",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO427conIrreg.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "ra",
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais os detalhes e situação do registro de atendimento <ra>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO460",
+      "nome": "Emite Faturamento Avulso",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO460FaturamentoAvulso.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO461",
+      "nome": "Crítica de Valor Faturado",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO461CriticaValorFaturado.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [
+        "Contas Criticadas",
+        "Pesquisar Conta(s):",
+        "Todos",
+        "Conta",
+        "Cliente",
+        "Valor Faturado",
+        "Detalhar",
+        "Analisado",
+        "Responsável Análise",
+        "Diferença"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO470",
+      "nome": "Fatura Digital",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO470FaturaEmail.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO472",
+      "nome": "Quantidade Lig. Bairros/Distritos",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO472QuantitativoLigacoes.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECO477",
+      "nome": "Tabela de Preços Água/Esgoto",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO477TabelaPrecosAguaEsgoto.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Consumo (m³)",
+        "RESIDENCIAL",
+        "COMERCIAL",
+        "INDUSTRIAL",
+        "PÚBLICA",
+        "SOCIAL",
+        "COMERCIAL II",
+        "ÁGUA",
+        "COLETA",
+        "TRATAMENTO",
+        "TOTAL"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO482",
+      "nome": "Inclusão de Débito/Crédito",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO482InclusaoConsultaDebitoCredito.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO484",
+      "nome": "Estatística Faturamento/Bairro",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO484EstatisticaDeFaturamento.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO488",
+      "nome": "Refaturamento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO488RefaturamentoDebito.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Categorias\\Economias\\Peso",
+        "Categoria",
+        "Descrição",
+        "Economia",
+        "Peso",
+        "Consumo das Ligações",
+        "Ligação",
+        "Tipo",
+        "Medido",
+        "Médio",
+        "Estimado",
+        "Informado",
+        "Limite Superior",
+        "TCF",
+        "Volume Água",
+        "Volume Esgoto",
+        "Leitura Anterior",
+        "Leitura Atual"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO489",
       "nome": "Comunicado de Esgoto Sanitário",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO489ComunicadoEsgoto.zul",
@@ -1432,6 +3426,27 @@
         "quais as informações e histórico da conta <conta>",
         "quais as RAs referentes ao código de serviço <codigo_servico>"
       ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO492",
+      "nome": "Códigos de Lançamento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO492CodigoLancamento.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "REF",
+        "LAN",
+        "AVU",
+        "CON",
+        "Sintético",
+        "Valor"
+      ],
+      "perguntas_que_responde": [],
       "confiabilidade": "media",
       "erro": null
     },
@@ -1474,6 +3489,141 @@
       "erro": null
     },
     {
+      "codigo": "ECO501",
+      "nome": "Controle de Corte/Revisão/Religação",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO501CorteRevisaoReligacao.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Nº do Corte",
+        "Data Emissão",
+        "Motivo",
+        "Data Solicitação Revisão",
+        "Data Solicitação Religação",
+        "Status do Corte"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO502",
+      "nome": "Controle de Revisão de Corte",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO502ControleRevisaoCorte.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO504",
+      "nome": "Revisões Violadas de Contas Cortadas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO504RevisaoNaoDigitadasOuVioladas.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECO505",
+      "nome": "Financiamento/Parcelamento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO505ConsultaParcelamento.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Início Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo",
+        "Detalhar",
+        "Origem",
+        "Situação",
+        "Número",
+        "Data Negociação",
+        "Valor (R$)",
+        "Parcela(s)",
+        "Negociado",
+        "Entrada",
+        "Valor",
+        "Quantidade",
+        "Emitida(s)",
+        "Aberta(s)",
+        "Baixada(s)",
+        "Cancelada(s)",
+        "Mat. Responsável",
+        "Ref. Contábil",
+        "N° Fat. Avulso",
+        "Taxa Juro (%)",
+        "Histórico",
+        "Multa",
+        "At. Monetária",
+        "Juros",
+        "Lanç. Futuro",
+        "Desconto",
+        "Correção",
+        "N° Conta",
+        "N° Documento Fiscal",
+        "Mês/Ano",
+        "N° Parcela",
+        "Cód. Lançamento",
+        "Mês Ano",
+        "Descrição",
+        "Cancelado",
+        "Mat. Cancelamento"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO506",
+      "nome": "Débitos em Aberto/Usuário",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO506ConsultaDebitoAberto.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Total Débito Histórico (R$)",
+        "Selecione",
+        "Número Conta",
+        "Situação Água",
+        "Situação Esgoto",
+        "Total Débito"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO510",
       "nome": "Comunicado de Débito",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
@@ -1499,6 +3649,119 @@
       "erro": null
     },
     {
+      "codigo": "ECO512",
+      "nome": "Ordem De Serviço De Religação",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO512SolicitacaoReligacao.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO515",
+      "nome": "Relatório de Contas Cortadas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO515RelatorioContasCortadas.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO516",
+      "nome": "Nr. Doc Faturamento Avulso",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO516ConsultaFaturaConta.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo",
+        "N° Documento",
+        "Data Emissão",
+        "Data Pagamento",
+        "Situação",
+        "Valor (R$)"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO520",
+      "nome": "Usuário com corte suspenso",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO520UsuarioComCorteSuspenso.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "ra",
+        "cpf_cnpj",
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais os detalhes e situação do registro de atendimento <ra>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO530",
+      "nome": "Relação Deb. Abertos por Órgão Pagador",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO530DebitosPorOrgaoPagador.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO536",
+      "nome": "Revisão de Corte",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO536RelacaoParaRevisaoDeCorte.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "bairro",
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO538",
       "nome": "Anormalidades no Corte/Ocorrência",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO538anormalCort.jsp",
@@ -1517,6 +3780,56 @@
       "erro": null
     },
     {
+      "codigo": "ECO548",
+      "nome": "Emissão de 2ª Via de Fatura(s)",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO548SegundaVia.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO550",
+      "nome": "Histórico de Débito Automático",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO550HistoricoDebitoAutomatico.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Referência",
+        "Data de Vencimento",
+        "Valor R$",
+        "Banco / Agência / Conta",
+        "Situação",
+        "Data da Remessa",
+        "Movimentação",
+        "Sequencial",
+        "Data de Retorno",
+        "Arquivo",
+        "Data de Pagamento"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO553",
       "nome": "Acompanhamento de OSR e Religação",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO553EstatisticaOrdemServico.zul",
@@ -1531,6 +3844,71 @@
         "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
       ],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO556",
+      "nome": "Faturamento Avulso em Aberto",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO556FaturamentoAvulso.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Cidade",
+        "Documento",
+        "Conta",
+        "CNPJ/CPF",
+        "Nome",
+        "Refêrencia",
+        "Data de Emissão",
+        "Vencimento",
+        "Lançamentos"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO562",
+      "nome": "Reaviso de Débitos",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO562ReavisoDebito.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO563",
+      "nome": "Extrato de Débito",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO563ExtratoDebito.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -1555,6 +3933,79 @@
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO584",
+      "nome": "Contas Retornadas/Não Ret. Corte",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO584ContasRetornadas.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO585",
+      "nome": "Débitos Pendentes",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO585DebitosPendentes.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO592",
+      "nome": "Negociação de Débitos Particulares",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO592NegociaDebitoParticular.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "CPF/CNPJ",
+        "Data Início Vínculo",
+        "Vínculo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO596",
+      "nome": "Resumo Cortes, Revisões e Religações",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO596ResumoCortesEmitidosRealizados.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "qual o histórico de consumo nos últimos meses da conta <conta>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -1615,6 +4066,101 @@
       "erro": null
     },
     {
+      "codigo": "ECO616",
+      "nome": "Motivo de Baixa de Arrecadação",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO616MotivoBaixa.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "Documento Baixa",
+        "Documento Fiscal",
+        "Referência",
+        "Data Pgto",
+        "Valor Arrecadado",
+        "Cliente",
+        "Alterado"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO623",
+      "nome": "Demonstrativo Arrecadação Diária",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO623ArrecadacaoDiaria.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo",
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO625",
+      "nome": "Declaração de quitação anual de débitos",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO625DeclaracaoQuitacao.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Inicio Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo",
+        "Declaração",
+        "Ano",
+        "Data Geração",
+        "Situação",
+        "Data/Hora Emissão",
+        "Operador",
+        "Situação Emissão",
+        "Cobrança 2ª Via"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO635",
+      "nome": "Emitir Certidão Negativa",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO635EmitirCertidaoNegativa.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [
+        "CPF/CNPJ",
+        "Cliente",
+        "Data Início Vínculo",
+        "Data Fim Vínculo",
+        "Vínculo"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO644",
       "nome": "Arrecadação Contábil/Cidade",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO644arrecContab.jsp",
@@ -1656,6 +4202,32 @@
       ],
       "perguntas_que_responde": [
         "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO697",
+      "nome": "Valores por Número de Documento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO697ConsultaDadosDocumento.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Doc. Fiscal\n\t\nConta\n\t\nReferência\n\t\nSituação\n\t\nData Venc.\n\t\nBanco\n\t\nData Pgto\n\t\nValor",
+        "Doc. Fiscal",
+        "Conta",
+        "Referência",
+        "Situação",
+        "Data Venc.",
+        "Banco",
+        "Data Pgto",
+        "Valor"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
       ],
       "confiabilidade": "alta",
       "erro": null
@@ -1725,6 +4297,39 @@
       "erro": null
     },
     {
+      "codigo": "ECO708",
+      "nome": "RAs por Solicitante",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO708ConsultaRASolicitante.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "nome",
+        "cidade",
+        "bairro",
+        "codigo_servico",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Número RA",
+        "Datas",
+        "Situação RA",
+        "Conta",
+        "Nome",
+        "Código Serviço",
+        "Ir p/ RA",
+        "Início",
+        "Execução"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO709",
       "nome": "RAs por Logradouro",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO709ConsultaRALogradouro.zul",
@@ -1756,6 +4361,41 @@
         "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
         "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
         "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO711",
+      "nome": "RA em Execução/Executado",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO711ConsultaRaExecucao.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "cidade",
+        "uo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "Número RA",
+        "Situação",
+        "Data Execução",
+        "Telefone",
+        "Endereço",
+        "Número Imóvel",
+        "Quadra",
+        "Lote",
+        "Data Solicitação",
+        "Nome",
+        "Conta",
+        "Id. Lig.",
+        "Serviço"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>",
+        "quais atendimentos foram atribuídos à UO <uo>"
       ],
       "confiabilidade": "alta",
       "erro": null
@@ -1798,6 +4438,27 @@
       "erro": null
     },
     {
+      "codigo": "ECO728",
+      "nome": "Impressão de RA",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO728ImpressaoRA.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo",
+        "data",
+        "codigo_servico",
+        "ra"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais os detalhes e situação do registro de atendimento <ra>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO731",
       "nome": "Alteração e Impressão de RA",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO731AlteracaoImpressaoRA.zul",
@@ -1814,6 +4475,37 @@
         "quais atendimentos foram atribuídos à UO <uo>"
       ],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO795",
+      "nome": "Retorno de Registro de Atendimento",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO795RetornoRegistroAtendimento.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO804",
+      "nome": "Legislação",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO804Legislacoes.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Nome",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -1853,6 +4545,21 @@
       "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"ECO815\"."
     },
     {
+      "codigo": "ECO823",
+      "nome": "Política de Titularidade",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO823PoliticaTitularidade.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Nome",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "ECO825",
       "nome": "Coletânea Regulação dos Serviços",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO825ColetaneaRegulacaoServicos.zul",
@@ -1865,6 +4572,18 @@
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO830",
+      "nome": "WEBCOM - Vídeo Aulas",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO830VideoAulas.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
       "erro": null
     },
     {
@@ -1988,6 +4707,102 @@
       "erro": null
     },
     {
+      "codigo": "ECS006",
+      "nome": "Erros do Distrito por Período",
+      "url_real": "https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "ECS007",
+      "nome": "Gerar Planilha",
+      "url_real": "https://www.saneago.com.br/prt/ecs/ECS007GerarPlanilha.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECS008",
+      "nome": "Apontamento de Erros",
+      "url_real": "https://www.saneago.com.br/prt/ecs/ECS008RelatorioApontamentoErros.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECS009",
+      "nome": "Gerenciar Planilha de Controle",
+      "url_real": "https://www.saneago.com.br/prt/ecs/ECS009GerenciarPlanilhaControle.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Contrato",
+        "Distrito",
+        "Geração",
+        "Aprovação",
+        "N° Lote",
+        "N° Fornecedor",
+        "Código",
+        "Nome",
+        "Período de Medição",
+        "Data e Hora",
+        "Matrícula",
+        "Situação"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECS010",
+      "nome": "Gerar Resumo do Faturamento",
+      "url_real": "https://www.saneago.com.br/prt/ecs/ECS010GerarResumoFaturamento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Resumo Faturamento",
+        "Planilha SAP",
+        "Listagem",
+        "Código",
+        "Nome"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECSV006",
       "nome": "Erros do Distrito por Período",
       "url_real": "https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul",
@@ -2087,6 +4902,148 @@
         "quais registros foram efetuados no período de <data> a <data>"
       ],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "EGW001",
+      "nome": "Contrato Comercial",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW001CadastroContratoComercial.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cpf_cnpj",
+        "data",
+        "uo",
+        "matricula",
+        "conta",
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "CPF",
+        "Nome Pessoa",
+        "Nº Aditivo",
+        "Nome Anexo",
+        "Abrir Anexo",
+        "Excluir Anexo",
+        "Conta"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as informações da matrícula <matricula>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "EGW005",
+      "nome": "Resumo de Faturamento",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW005EnvioResumoFaturamento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "EGW006",
+      "nome": "Controle do Envio do Resumo",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW006ConsultaEnvioIndividualizado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "EGW305",
+      "nome": "Contratos a Vencer",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW305ContratosVencer.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Contrato",
+        "Aditivo",
+        "Cliente",
+        "Demanda Água",
+        "Demanda Esgoto"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "EGW313",
+      "nome": "Consumo e Faturamento Individualizados",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW313ConsumoFaturadoIndividualizado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "conta",
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Número da Conta",
+        "Nome",
+        "CONTA",
+        "CLIENTE",
+        "Nº",
+        "LOTE",
+        "QUADRA",
+        "COMPLEMENTO",
+        "TIPO LIGAÇÃO",
+        "HIDRÔMETRO",
+        "CONSUMO MEDIDO NA LIGAÇÃO",
+        "CONSUMO FATURADO NA LIGAÇÃO",
+        "TOTAL MEDIDO NA CONTA",
+        "TOTAL FATURADO NA CONTA"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "EGW401",
+      "nome": "Cliente por Faixa de Consumo",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW401ClienteFaixaConsumo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "EGW402",
+      "nome": "Faturamento",
+      "url_real": "https://www.saneago.com.br/prt/egw/EGW402GraficoFaturamento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "conta"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações e histórico da conta <conta>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -2211,6 +5168,113 @@
       "erro": null
     },
     {
+      "codigo": "FCA002",
+      "nome": "Andamento das Notificações Órgão Público",
+      "url_real": "https://www.saneago.com.br/prt/fca/FCA002AndamentoDeterminacaoAGR.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FCA003",
+      "nome": "Consulta de Notificação",
+      "url_real": "https://www.saneago.com.br/prt/fca/FCA003ConsultaTermoNotificacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "uo",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Detalhes",
+        "Notificação",
+        "Orgão Regulador",
+        "Relatório Fiscalização",
+        "Processo Saneago",
+        "Processo SEI",
+        "Cidade",
+        "GRS",
+        "Recebimento",
+        "Prazo Inicial",
+        "Prazo Estendido",
+        "Vencimento",
+        "Situação",
+        "TN",
+        "RF"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FCA005",
+      "nome": "Consulta de Infração",
+      "url_real": "https://www.saneago.com.br/prt/fca/FCA005ConsultaAutoInfracao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "cidade",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Detalhes",
+        "Auto de Infração",
+        "Processo Saneago",
+        "Processo SEI",
+        "Valor",
+        "Cidade",
+        "Recebimento",
+        "Vencimento Inicial",
+        "Venc. da Defesa",
+        "Penalidade",
+        "Situação",
+        "AI",
+        "RF-AI"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGC001",
+      "nome": "Requisição Obras/Serviços",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC001RequisicaoObraServico.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGC018",
+      "nome": "Processo",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC018ConsultaProcesso.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Origem",
+        "Destino",
+        "Dia do Recebimento",
+        "Hora do Recebimento"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "FGC025",
       "nome": "Consulta Processo Licitatório",
       "url_real": "https://www.saneago.com.br/prt/fgc/FGC025ConsultaProcessoLicitatorio.zul",
@@ -2220,6 +5284,29 @@
       "colunas_retornadas": [
         "Código",
         "Nome"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "FGC026",
+      "nome": "Requisição Obras/Serviços",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC026ConsultaRequisicao.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Referência",
+        "Conta",
+        "Análise",
+        "Recurso",
+        "Comprometido",
+        "Faturado",
+        "Executado",
+        "Dívida",
+        "Estornado",
+        "Comprometido - Estornado"
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
@@ -2237,6 +5324,59 @@
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "FGC032",
+      "nome": "Requisições por UO",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC032RelacaoRequisicoes.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo",
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Consulta",
+        "Requisição",
+        "Processo",
+        "UO Req.",
+        "UO Exec.",
+        "Cidade",
+        "Descrição",
+        "Data",
+        "Valor",
+        "Contrato",
+        "Gestor"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGC033",
+      "nome": "Requisições por Gestor",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC033RequisicoesPorGestor.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "zk",
+      "filtros": [
+        "matricula",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Requisição",
+        "Descrição Objeto",
+        "Data",
+        "Consulta"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -2274,6 +5414,32 @@
         "quais atendimentos foram atribuídos à UO <uo>"
       ],
       "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGC052",
+      "nome": "Orçamento de Programas",
+      "url_real": "https://www.saneago.com.br/prt/fgc/FGC052OrcamentoPrograma.zul",
+      "vertical": "financeiro_licitacoes",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Relatório Orçamentário por Categoria",
+        "Código",
+        "Orçamento",
+        "Comprometido Atual",
+        "Saldo",
+        "Contratado",
+        "Reservado",
+        "Faturado",
+        "Acréscimo",
+        "Executado",
+        "Divida",
+        "Relatório de Acompanhamento Orçamentário",
+        "Unidade"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -2458,7 +5624,23 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"FGIV005\"."
+      "erro": "Timeout de captura (45s)"
+    },
+    {
+      "codigo": "FGO002",
+      "nome": "Fale com Compliance",
+      "url_real": "https://www.saneago.com.br/prt/fgo/FGO002FaleComCompliance.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "matricula"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
     },
     {
       "codigo": "FGOV002",
@@ -2477,6 +5659,252 @@
       "erro": null
     },
     {
+      "codigo": "FGQ004",
+      "nome": "Documentos Normativos",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ004ConsultaDocNormativo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Documento",
+        "Versão",
+        "Título",
+        "Informações",
+        "U.O.",
+        "Data de Criação",
+        "Status",
+        "Ações"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ006",
+      "nome": "Tratar NC",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ010",
+      "nome": "Auditor",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ011",
+      "nome": "Auditoria",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ011Auditoria.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ012",
+      "nome": "Equipes",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ012CadastrarEquipeAuditoria.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Data",
+        "Tipo",
+        "Membro",
+        "Visualização do Guia Cadastrado"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ014",
+      "nome": "Curso",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ014CadastrarCursoAuditoria.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Data Cadatro",
+        "Curso",
+        "Data Início",
+        "Data Fim",
+        "Descrição do Curso",
+        "Resp. Cadastro"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ017",
+      "nome": "UO Responsável pelo RNC",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ017ConsultaUOResp.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "UO Responsável",
+        "Número do RNC",
+        "Data de Encerramento",
+        "Descrição NC",
+        "Status"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ018",
+      "nome": "Relatório Geral",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ018RelatorioGeralRNC.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ019",
+      "nome": "RNC onde ocorreu NC",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ019ConsultaRNCOndeOcorreuNC.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "UO Onde Ocorreu a NC",
+        "Número do RNC",
+        "Data Encerramento",
+        "UO Responsável",
+        "Status"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ020",
+      "nome": "RNC por Período",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ020ConsultaRACPPeriodo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Numero/Ano RACP",
+        "Dt. Est. Encerramento",
+        "Status",
+        "Ações"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ022",
+      "nome": "Histórico Auditor",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ022HistoricoAuditor.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ024",
+      "nome": "Documentos por UO",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ024docUO.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ026",
+      "nome": "Registrar RNC",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ026RegistrarRNC.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Data",
+        "Nome do Arquivo",
+        "Documento Normativo",
+        "Versão",
+        "Item Norma"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "FGQ037",
+      "nome": "Relatório Doc. Normativo por UO Resp.",
+      "url_real": "https://www.saneago.com.br/prt/fgq/FGQ037RelatorioDocNorUOResp.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "G0064",
       "nome": "GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
       "url_real": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
@@ -2486,6 +5914,33 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "GCA003",
+      "nome": "Melhorias Previstas",
+      "url_real": "https://www.saneago.com.br/prt/gca/GCA003SolicitacaoMelhoria.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Num. Solicit.",
+        "Cód. Distrito",
+        "Distrito",
+        "Valor",
+        "Status",
+        "Dt Cadastro",
+        "Usu. Cadastro",
+        "Dt Aprovação",
+        "Usu. Aprovação",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -2533,6 +5988,22 @@
       "erro": null
     },
     {
+      "codigo": "GMQ001",
+      "nome": "Notificação",
+      "url_real": "https://www.saneago.com.br/prt/gmq/GMQ001Notificacao.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "GMQV001",
       "nome": "Notificação",
       "url_real": "https://www.saneago.com.br/prt/gmq/GMQ001Notificacao.zul",
@@ -2546,6 +6017,66 @@
         "quais atendimentos foram atribuídos à UO <uo>"
       ],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "GPM001",
+      "nome": "Manobra de Registros",
+      "url_real": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "misto",
+      "filtros": [
+        "codigo_servico",
+        "cidade",
+        "bairro"
+      ],
+      "colunas_retornadas": [
+        "Manobra",
+        "Serviço",
+        "Un. Responsável",
+        "Cidade",
+        "Reservatório",
+        "Bairro",
+        "Logradouro",
+        "Data Início",
+        "Data Término",
+        "Data Normalização",
+        "Código",
+        "Descrição",
+        "Complemento(Quadras)",
+        "Equipe",
+        "Nome Responsável",
+        "Tipo Equipe",
+        "Categoria"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "GPM016",
+      "nome": "Paralisação/Intermitência",
+      "url_real": "https://www.saneago.com.br/prt/gpm/GPM016ParalizacaoIntermitencia.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Tipo",
+        "Distrito",
+        "Total de Horas",
+        "Qtd. Paralizações",
+        "Economias Afetadas",
+        "Manobras"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -2701,6 +6232,73 @@
       "erro": null
     },
     {
+      "codigo": "GSI005",
+      "nome": "Solicitações",
+      "url_real": "https://www.saneago.com.br/prt/gsi/GSI005SolicitacoesUsuario.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Unidade Organizacional"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "GSI006",
+      "nome": "Escolha de Serviço",
+      "url_real": "https://www.saneago.com.br/prt/gsi/GSI006EscolhaServicoSolicitacao.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "GSI007",
+      "nome": "Abertura de Solicitação",
+      "url_real": "https://www.saneago.com.br/prt/gsi/GSI007AberturaSolicitacaoUsuario.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "GSI013",
+      "nome": "Pesquisa Geral",
+      "url_real": "https://www.saneago.com.br/prt/gsi/GSI013PesquisaGeral.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Campo Complementar",
+        "Valor",
+        "Solicitação",
+        "Abertura",
+        "Execução",
+        "Conclusão",
+        "U.O. Solicitante",
+        "Solicitante",
+        "Responsável",
+        "Serviço",
+        "Situação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "GSIV005",
       "nome": "Solicitações",
       "url_real": "https://www.saneago.com.br/prt/gsi/GSI005SolicitacoesUsuario.zul",
@@ -2749,6 +6347,18 @@
       "erro": null
     },
     {
+      "codigo": "GSP102",
+      "nome": "Trâmite",
+      "url_real": "https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul",
+      "vertical": "rh_pessoal",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
       "codigo": "GSPV102",
       "nome": "Trâmite",
       "url_real": "https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul",
@@ -2776,6 +6386,22 @@
         "U.O",
         "Lista de bens não localizados",
         "Remover"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "HFI031",
+      "nome": "Solicitar Transferência Bem Patrimonial",
+      "url_real": "https://www.saneago.com.br/prt/hfi/HFI031SolicitarTransfBemPatrimonial.zul",
+      "vertical": "patrimonio",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Nº Inventário",
+        "Nº Patrimônio",
+        "Descrição"
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
@@ -2933,6 +6559,37 @@
       "erro": null
     },
     {
+      "codigo": "HVW006",
+      "nome": "Solicitação Viagem",
+      "url_real": "https://www.saneago.com.br/prt/hvw/HVW006SolicitarViagem.zul",
+      "vertical": "viagens_servico",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "nome",
+        "matricula"
+      ],
+      "colunas_retornadas": [
+        "Nº",
+        "Data Saída",
+        "Data Chegada",
+        "Tipo Pagamento",
+        "Motivo",
+        "Situação",
+        "U.O. Lotação",
+        "U.O. Interessada",
+        "Tipo",
+        "Cartão",
+        "Limite do Cartão"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "HVW009",
       "nome": "Conta",
       "url_real": "https://www.saneago.com.br/prt/hvw/HVW009PrestarContas.zul",
@@ -2945,6 +6602,74 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [
         "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "HVW018",
+      "nome": "Manter Empregados com Cartão Viagem",
+      "url_real": "https://www.saneago.com.br/prt/hvw/HVW018CartaoViagemEmpregado.zul",
+      "vertical": "viagens_servico",
+      "tecnologia": "misto",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Via",
+        "Cartão",
+        "Justificativa do Cancelamento",
+        "Limite do Cartão",
+        "Data Validade",
+        "Banco",
+        "Bloqueado",
+        "Data Cancelamento",
+        "Responsável"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "HVW019",
+      "nome": "Manutenção",
+      "url_real": "https://www.saneago.com.br/prt/hvw/HVW019ManutencaoCartaoViagem.zul",
+      "vertical": "viagens_servico",
+      "tecnologia": "misto",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Via",
+        "Data Solicitação",
+        "Cartão",
+        "Data Emissão",
+        "Data Validade",
+        "Data Entrega",
+        "Data Cancelamento",
+        "Responsável"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "HVW025",
+      "nome": "Solicitação",
+      "url_real": "https://www.saneago.com.br/prt/hvw/HVW025RelatorioSolicitacaoViagem.zul",
+      "vertical": "viagens_servico",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
       ],
       "confiabilidade": "media",
       "erro": null
@@ -2973,6 +6698,31 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "HVW050",
+      "nome": "Prestar Contas Cartão Corporativo",
+      "url_real": "https://www.saneago.com.br/prt/hvw/HVW050PrestarContasCartao.zul",
+      "vertical": "viagens_servico",
+      "tecnologia": "zk",
+      "filtros": [
+        "data",
+        "matricula"
+      ],
+      "colunas_retornadas": [
+        "Calculado",
+        "Realizado Cartão",
+        "Realizado Dinheiro",
+        "Limite Ultrapassado",
+        "Cartão",
+        "Dinheiro",
+        "Total / Análise"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -3131,6 +6881,27 @@
       "erro": null
     },
     {
+      "codigo": "JAJ044",
+      "nome": "Relatório de Contas Com o Escritório",
+      "url_real": "https://www.saneago.com.br/prt/jaj/JAJ044relacaoContasComEscritorio.zul",
+      "vertical": "juridico",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "ExtraJudicial",
+        "Judicial",
+        "Total",
+        "Código",
+        "Cidade",
+        "Qtde Contas",
+        "Valor débito no envio (R$)",
+        "Qtde contas"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "JAJ060",
       "nome": "Rodízio de Processos",
       "url_real": "https://www.saneago.com.br/prt/jaj/JAJ060RodizioProcesso.zul",
@@ -3243,6 +7014,62 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "KOC004",
+      "nome": "Previsto X Executado",
+      "url_real": "https://www.saneago.com.br/prt/koc/KOC004ConsultaPrevistoExecutado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "ra"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "Previsto",
+        "Executado"
+      ],
+      "perguntas_que_responde": [
+        "quais os detalhes e situação do registro de atendimento <ra>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "KOC005",
+      "nome": "Consulta Empreendimento",
+      "url_real": "https://www.saneago.com.br/prt/koc/KOC005ConsultaEmpreendimento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Resumo",
+        "Descrição",
+        "Ano",
+        "Empreendimento",
+        "Tipo",
+        "Situação",
+        "Nº",
+        "Objetivo",
+        "Assinatura",
+        "Valor",
+        "Prazo",
+        "Observação",
+        "Dt. Inicio",
+        "Dt. Fim"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -3427,6 +7254,58 @@
       "erro": null
     },
     {
+      "codigo": "LEN110",
+      "nome": "Unidades Consumidoras de Energia",
+      "url_real": "https://www.saneago.com.br/prt/len/LEN110CadastroUnidadeConsumidora.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "LEN145",
+      "nome": "Interrupção de Energia",
+      "url_real": "https://www.saneago.com.br/prt/len/LEN145CadastroInterrupcaoEnergia.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "conta",
+        "periodo",
+        "uo",
+        "matricula"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "qual o histórico de consumo nos últimos meses da conta <conta>",
+        "quais as informações da matrícula <matricula>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "LEN146",
+      "nome": "Interrupção de Energia",
+      "url_real": "https://www.saneago.com.br/prt/len/LEN146ControleInterrupcaoEnergia.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "cidade"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "LENV110",
       "nome": "Unidades Consumidoras de Energia",
       "url_real": "https://www.saneago.com.br/prt/len/LEN110CadastroUnidadeConsumidora.zul",
@@ -3484,7 +7363,75 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"LIGV002\"."
+      "erro": "Timeout de captura (45s)"
+    },
+    {
+      "codigo": "LQA036",
+      "nome": "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA",
+      "url_real": "https://www.saneago.com.br/prt/lqa/LQA036RelatorioSISAGUA.zul",
+      "vertical": "qualidade_laboratorio",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Cidade",
+        "Sistema de Tratamento",
+        "Área de Influência",
+        "Bairro",
+        "Ponto",
+        "Localização",
+        "Data da Análise",
+        "Temp.",
+        "Cloro",
+        "Flúor",
+        "Turb.",
+        "Cor",
+        "Ph",
+        "Colif. Totais",
+        "E. Coli",
+        "Bac. Heter"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQA081",
+      "nome": "Gráfico do IQA Médio por Cidade",
+      "url_real": "https://www.saneago.com.br/prt/lqa/LQA081GraficoIQAMedio.zul",
+      "vertical": "qualidade_laboratorio",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Fase"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQA083",
+      "nome": "Resumo das Irregularidades",
+      "url_real": "https://www.saneago.com.br/prt/lqa/LQA083ResumoIrregularidades.zul",
+      "vertical": "qualidade_laboratorio",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
     },
     {
       "codigo": "LQAV028",
@@ -3578,6 +7525,146 @@
       "erro": null
     },
     {
+      "codigo": "LQE018",
+      "nome": "Cadastro de Ocorrêcias nas Amostras",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE018cadOcoAmtr.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "data"
+      ],
+      "colunas_retornadas": [
+        "descricao",
+        "conteúdo",
+        "Descrição",
+        "Fase",
+        "Qtde. Frascos",
+        "Data",
+        "Encaminhamento"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados na data <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQE025",
+      "nome": "Consultar Amostras",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE025ConsultaAmostra.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Data",
+        "Número/Ano",
+        "ETE",
+        "Ponto de Coleta",
+        "N° Ocorrências",
+        "Ir para Agendamento",
+        "Ir para Recebimento"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQE027",
+      "nome": "Laudos Laboratoriais",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE027GeraLaudos.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "LQE028",
+      "nome": "Ocorrências nas Análises",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE028cadastroOcorrenciaAnalise.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "ra",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "descricao",
+        "conteúdo",
+        "Parâmetro",
+        "Ocorrência",
+        "Ponto de Coleta",
+        "Número/Ano Amostra"
+      ],
+      "perguntas_que_responde": [
+        "quais os detalhes e situação do registro de atendimento <ra>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQE029",
+      "nome": "Amostras Liberadas por Período",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE029ConAmostras.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Protocolo",
+        "Sistema",
+        "Ponto de Coleta",
+        "Produto",
+        "Data Agendamento"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQE030",
+      "nome": "Resultados das Análises - Planilha",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE030ResultadoAnalisePlanilha.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Data",
+        "Número/Ano",
+        "ETE",
+        "Ponto de Coleta",
+        "Tipo de Produto"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LQE039",
+      "nome": "Relatório do IQEt por data",
+      "url_real": "https://www.saneago.com.br/prt/lqe/LQE039RelatorioIQEt.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
       "codigo": "LQEV018",
       "nome": "Cadastro de Ocorrêcias nas Amostras",
       "url_real": "https://www.saneago.com.br/prt/lqe/LQE018cadOcoAmtr.zul",
@@ -3662,6 +7749,64 @@
       "erro": null
     },
     {
+      "codigo": "LRS002",
+      "nome": "RA Pendente",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS002ConsultaRaPendente.zul",
+      "vertical": "operacional",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "N° RA",
+        "Conta",
+        "Serviço",
+        "Data Solicit.",
+        "Data Ult. Rep.",
+        "Regis. Atend.",
+        "Cad. Usu."
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LRS009",
+      "nome": "Monitoramento de Atendimento",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS009RelMonitoramentoAtendimento.zul",
+      "vertical": "operacional",
+      "tecnologia": "zk",
+      "filtros": [
+        "codigo_servico",
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Serviço",
+        "Descrição",
+        "Número do RA",
+        "U.O",
+        "Código da Equipe",
+        "Situação Atendimento",
+        "Data e Hora de Comunicação",
+        "Serviço Prestado",
+        "Latitude",
+        "Longitude",
+        "Altitude",
+        "Ínicio",
+        "Fim",
+        "Placa do Veículo"
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "LRS010",
       "nome": "Distribuição de Serviço",
       "url_real": "https://www.saneago.com.br/prt/lrs/LRS010DistribuicaoServico.zul",
@@ -3740,6 +7885,111 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "LRS024",
+      "nome": "Indicadores do SIPSAP por Período",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS024IndiceSIPSAPPeriodo.zul",
+      "vertical": "operacional",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "LRS030",
+      "nome": "Serviço resposta por serviço solicitação",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS030ServicoRespostaSolicitacao.zul",
+      "vertical": "operacional",
+      "tecnologia": "zk",
+      "filtros": [
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "Data Vínculo",
+        "Remover",
+        "Serviço Solicitação",
+        "Serviço Resposta",
+        "Matrícula Vínculo",
+        "Data Cancelamento",
+        "Matrícula Cancelamento"
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "LRS034",
+      "nome": "Validar Corte de Asfalto",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS034ValidaRaCorteAsfalto.zul",
+      "vertical": "operacional",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Distrito",
+        "Dt. Exec",
+        "RA Corte Asf.",
+        "RA Orig.",
+        "Larg.",
+        "Compr.",
+        "Area",
+        "Bairro",
+        "Logr.",
+        "Qd.",
+        "Lote",
+        "Numero",
+        "E-mail"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "LRS036",
+      "nome": "Resumo de Vazamentos",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS036ResumoVazamentos.zul",
+      "vertical": "operacional",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "LRS037",
+      "nome": "Serviço executado por conta",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS037ServicoExecutadoConta.zul",
+      "vertical": "operacional",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "Serviço",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -3925,6 +8175,23 @@
       "erro": null
     },
     {
+      "codigo": "LRS330",
+      "nome": "Resumo dos Serviços",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS330ResumoServico.zul",
+      "vertical": "operacional",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "LRS360",
       "nome": "Materiais Utilizados do SIPSAP",
       "url_real": "https://www.saneago.com.br/prt/lrs/LRS360ResumoMaterial.zul",
@@ -3954,6 +8221,45 @@
         "quais registros foram efetuados no período de <data> a <data>"
       ],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "LRS701",
+      "nome": "Relação de Serviços Executados",
+      "url_real": "https://www.saneago.com.br/prt/lrs/LRS701RelServicosExec.zul",
+      "vertical": "operacional",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "periodo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "N° RA",
+        "N° Seq",
+        "Conta",
+        "Cod. Seviço",
+        "Serviço",
+        "Cidade",
+        "Bairro",
+        "Data Solicit.",
+        "Data Distri.",
+        "Data Emis.",
+        "Hora Emis.",
+        "Data Exec.",
+        "Hora Exec.",
+        "Qt. Hr. Prev.",
+        "Tempo Pdr.",
+        "Peso Serv.",
+        "Diferença",
+        "Regis. Atend.",
+        "Cad. Usu."
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -4670,6 +8976,120 @@
       "erro": null
     },
     {
+      "codigo": "MGO012",
+      "nome": "Providência - UO Responsável",
+      "url_real": "https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MGO021",
+      "nome": "Registro de Ocorrência por Vencimento",
+      "url_real": "https://www.saneago.com.br/prt/mgo/MGO021ConsultaOcorrenciaVencimento.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo",
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MGO029",
+      "nome": "Encaminhamento de RO",
+      "url_real": "https://www.saneago.com.br/prt/mgo/MGO029ConsultaEncaminhamentoRo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo",
+        "uo",
+        "cidade"
+      ],
+      "colunas_retornadas": [
+        "Data",
+        "Reg./Ano",
+        "N.º Encam.",
+        "Data Encam.",
+        "Cidade",
+        "Sigla UO",
+        "Origem",
+        "N.º AGR/PROCON/AMAE/ARM",
+        "Motivo",
+        "Desdobramento",
+        "Status"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados em <cidade> entre <data> e <data>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MGO033",
+      "nome": "Registro de Ocorrência Pendente",
+      "url_real": "https://www.saneago.com.br/prt/mgo/MGO033RegistroOcorrenciaPendente.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Data",
+        "Reg./Ano",
+        "N.º Encam.",
+        "Data Encam.",
+        "Origem",
+        "Forma de Contato",
+        "Sigla UO",
+        "Nº AGR/PROCON/AMAE/ARM",
+        "Nº OGE",
+        "Processo",
+        "Motivo",
+        "Número/Ano",
+        "Tipo",
+        "Cidade",
+        "Nº Encam.",
+        "Vencimento",
+        "Prorrogação",
+        "Dias de Vida",
+        "Forma Envio",
+        "Aprovação",
+        "Matrícula"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MGO059",
+      "nome": "Áreas Setoriais OGE",
+      "url_real": "https://www.saneago.com.br/prt/mgo/MGO059AreaSetorial.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Descrição",
+        "Código Área Atuação OGE"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "MGOV012",
       "nome": "Providência - UO Responsável",
       "url_real": "https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul",
@@ -4746,7 +9166,7 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
-      "erro": "Nao foi possivel encontrar o frame da aplicacao apos buscar por \"MGOV050\"."
+      "erro": "Timeout de captura (45s)"
     },
     {
       "codigo": "MGOV059",
@@ -4765,6 +9185,122 @@
       "perguntas_que_responde": [
         "quais atendimentos foram atribuídos à UO <uo>"
       ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MIG018",
+      "nome": "Cadastro de Atividade de Agrupamento",
+      "url_real": "https://www.saneago.com.br/prt/mig/MIG018CadAtividade.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MIG602",
+      "nome": "Plano de Ação",
+      "url_real": "https://www.saneago.com.br/prt/mig/MIG602PlanoAcaoRegular.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "data",
+        "uo",
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "Data Base:",
+        "Atividades",
+        "Qtde.",
+        "Qtde. Serviço",
+        "Medida",
+        "Prioridade",
+        "Observações",
+        "Usuário",
+        "Data",
+        "Anexo",
+        "Análise crítica",
+        "PLANO DE AÇÃO",
+        "U.O.",
+        "META",
+        "REALIZADO",
+        "SITUAÇÃO",
+        "AÇÕES"
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>",
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MIG605",
+      "nome": "Análise Critica",
+      "url_real": "https://www.saneago.com.br/prt/mig/MIG605AnaliseCriticaPES.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "uo",
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Data Base:",
+        "Quant. Serv.",
+        "Realizado",
+        "Total",
+        "Observações",
+        "Mudanças",
+        "Oportunidades",
+        "Necessidades",
+        "Riscos",
+        "Anexo",
+        "Matrícula",
+        "Nome Empregado",
+        "Data/Hora Cadastro"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MPS005",
+      "nome": "Cadastro de Cidade",
+      "url_real": "https://www.saneago.com.br/prt/mps/MPS005CadastroCidade.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "nome"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MPS540",
+      "nome": "Logradouro",
+      "url_real": "https://www.saneago.com.br/prt/mps/MPS540CadastroLogradouro.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "logradouro"
+      ],
+      "colunas_retornadas": [
+        "Código",
+        "Tipo",
+        "Logradouro"
+      ],
+      "perguntas_que_responde": [],
       "confiabilidade": "alta",
       "erro": null
     },
@@ -4843,6 +9379,30 @@
       "erro": null
     },
     {
+      "codigo": "MSI001",
+      "nome": "Exportar Contatos",
+      "url_real": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSI070",
+      "nome": "Registrar Voto",
+      "url_real": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
       "codigo": "MSIV001",
       "nome": "Exportar Contatos",
       "url_real": "https://www.saneago.com.br/prt/msi/MSI001ExportarContatos.zul",
@@ -4866,6 +9426,345 @@
       "nome": "Registrar Voto",
       "url_real": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
       "vertical": "ti_sistemas",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSS005",
+      "nome": "Cadastro Para Recuperar Senha",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS005RecuperarSenha.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSS008",
+      "nome": "Cadastro de Telefone por Matrícula",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS008MantemTelefoneEmpregado.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSS009",
+      "nome": "Cadastro de Telefone por UO",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS009CadastroTelefoneUO.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "uo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais atendimentos foram atribuídos à UO <uo>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS126",
+      "nome": "Consulta Acessos Legado por Usuário",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS126AplicacoesAcesso.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Mat. Recebedor",
+        "Nome Recebedor",
+        "Função",
+        "Nome Função",
+        "Nível de Acesso",
+        "Mat. Autorizador",
+        "Nome Autorizador"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS165",
+      "nome": "Autorização Acesso por Usuário Virtual",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS165UsuarioVirtual.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "matricula"
+      ],
+      "colunas_retornadas": [
+        "Excluir",
+        "Código",
+        "Descrição Impressora",
+        "Solicitação",
+        "Data Acesso",
+        "Matrícula",
+        "Nome",
+        "UO lotação",
+        "UO Atuação"
+      ],
+      "perguntas_que_responde": [
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MSS401",
+      "nome": "Consulta A. Complementar por Sistema",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS401ConsultaSistemaComplementar.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código",
+        "Sigla",
+        "Descrição",
+        "Resumo",
+        "Tipo de Acesso",
+        "Sigla da Aplicação",
+        "Nome da Aplicação",
+        "Nome do Acesso",
+        "Descrição do Acesso",
+        "Ativo"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS402",
+      "nome": "Consulta Usuários por A. Complementar",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS402UsuarioAcessoComplementar.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Tipo de Acesso",
+        "Sigla da Aplicação",
+        "Nome da Aplicação",
+        "Nome do Acesso",
+        "Descrição do Acesso",
+        "Usuário",
+        "UO",
+        "Data de Início",
+        "Date de Término",
+        "Chamado/Solicitação",
+        "Responsável"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS420",
+      "nome": "Consulta Acessos por Usuário",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS420ConsultaPerfilUsuario.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Matriz",
+        "Descrição",
+        "Data de Início",
+        "Data de Término",
+        "GSI",
+        "Matrícula Autorizadora",
+        "Composição",
+        "Sistema",
+        "Perfil",
+        "Código da Aplicação",
+        "Tp. Acesso",
+        "Nome do Acesso",
+        "Chamado",
+        "Mt. Recebedor",
+        "Nome Recebedor",
+        "Função",
+        "Nome Função",
+        "Nível de Acesso",
+        "Mt. Autorizador",
+        "Nome Autorizador",
+        "Solicitação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS430",
+      "nome": "Consulta Usuários por Perfil",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS430ConsultaPerfilSistema.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSS450",
+      "nome": "Consulta Aplicações por Perfil",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS450ConsultaAplicacaoPerfil.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MSS460",
+      "nome": "Consulta Usuários por Sistema",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS460ConsultaUsuarioAplicacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Acesso Complementar?",
+        "Acesso",
+        "Código",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS470",
+      "nome": "Consulta Perfis por Sistema",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS470ConsultaPerfilSistema.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código Perfil",
+        "Descrição"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS480",
+      "nome": "Consulta Usuários por Aplicação",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS480ConsultaAcessoUsuarioAplicacao.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Unidade Organizacional",
+        "Matrícula",
+        "Usuário",
+        "Perfil",
+        "Matrizes",
+        "C",
+        "A",
+        "I",
+        "E",
+        "Matriz",
+        "Autorizador",
+        "Validade Consulta",
+        "Validade Alteração",
+        "Validade Inclusão",
+        "Validade Exclusão"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS490",
+      "nome": "Consulta Aplicações por Sistema",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS490ConsultaAplicacaoSistema.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Código da Aplicação",
+        "Nome da Aplicação",
+        "Situação da Aplicação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS500",
+      "nome": "Usuário com Acesso Especial - BZ103",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS500ConsultaAcessoEspecial.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Tipo",
+        "Matrícula",
+        "Nome Usuário",
+        "Autorizador",
+        "Nome Autorizador"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS502",
+      "nome": "Sistemas e Aplicações Cobol - Legado",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS502ConsultaFuncaoCobol.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "Sigla",
+        "Nome",
+        "Código",
+        "Acesso"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MSS503",
+      "nome": "Usuário por Aplicação - Legado BZ127",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS503ConsultaAcessoCobol.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Matrícula",
+        "Nome Usuário",
+        "Autorizador",
+        "Nome Autorizador",
+        "C",
+        "A",
+        "I",
+        "E"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MSS550",
+      "nome": "Consulta A. Complementar por Aplicação",
+      "url_real": "https://www.saneago.com.br/prt/mss/MSS550ConsultaAcessoComplementar.zul",
+      "vertical": "indefinida",
       "tecnologia": "zk",
       "filtros": [],
       "colunas_retornadas": [],
@@ -5205,6 +10104,45 @@
       "erro": null
     },
     {
+      "codigo": "MTG002",
+      "nome": "Enviar Retorno",
+      "url_real": "https://www.saneago.com.br/prt/mtg/MTG002EnviarRetorno.zul",
+      "vertical": "suprimentos_logistica",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Sequenciais Esperados",
+        "Distrito",
+        "Leitura/Reaviso",
+        "Retidas",
+        "Entrega Alternativas",
+        "Nome do Arquivo",
+        "Status / Erro",
+        "Ação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MTG005",
+      "nome": "Remessas Capturadas",
+      "url_real": "https://www.saneago.com.br/prt/mtg/MTG005RemessasCapturadas.zul",
+      "vertical": "suprimentos_logistica",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Data/Hora",
+        "Tamanho",
+        "Tipo",
+        "Nome",
+        "Ação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "MTG006",
       "nome": "Andamento Geral",
       "url_real": "https://www.saneago.com.br/prt/mtg/MTG006andGeral.jsp",
@@ -5247,6 +10185,23 @@
       "erro": null
     },
     {
+      "codigo": "MTG010",
+      "nome": "Sequencial Esperado",
+      "url_real": "https://www.saneago.com.br/prt/mtg/MTG010SequencialEsperado.zul",
+      "vertical": "suprimentos_logistica",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Próximos Sequenciais Esperados - Arquivos de Retorno",
+        "Leitura",
+        "Retidas",
+        "Entrega Alternativas"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
       "codigo": "MTG011",
       "nome": "Arquivos Retorno com Erros",
       "url_real": "https://www.saneago.com.br/prt/mtg/MTG011ArquivosRetornoComErro.zul",
@@ -5262,6 +10217,59 @@
       ],
       "perguntas_que_responde": [],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MTG012",
+      "nome": "Logs de Erros Arq Retorno",
+      "url_real": "https://www.saneago.com.br/prt/mtg/MTG012LogsErroProcRetorno.zul",
+      "vertical": "suprimentos_logistica",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Data/Hora",
+        "Tamanho",
+        "Tipo",
+        "Nome",
+        "Ação"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "MTG016",
+      "nome": "Controle de Religações",
+      "url_real": "https://www.saneago.com.br/prt/mtg/MTG016ControleReligacoes.zul",
+      "vertical": "suprimentos_logistica",
+      "tecnologia": "zk",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Conta",
+        "Dt. Hr. Solic.",
+        "Tp. Solici.",
+        "Dt. Hr. Lim.",
+        "Ligação",
+        "Data Hora Execução",
+        "Tipo Execução",
+        "Diverg. Corte",
+        "Ocorrencia",
+        "Tipo Entrega",
+        "Tempo Atendimento",
+        "Atrasada?",
+        "Tipo Religação",
+        "Religação Normal",
+        "Religação de Urgência",
+        "Total",
+        "No prazo",
+        "Fora do prazo"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -5456,6 +10464,211 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "PGT301",
+      "nome": "Cadastro de Veículo",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT301Veiculo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "data",
+        "cidade",
+        "codigo_servico",
+        "nome"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "PGT401",
+      "nome": "Cadastro de Motorista",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT401CadastroMotorista.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "nome",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "Veiculo",
+        "Motorista",
+        "CPF",
+        "CNH",
+        "Anexo"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "PGT500",
+      "nome": "Nova Ordem de Tráfego",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT500CadastroOrdemTrafego.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "nome",
+        "codigo_servico",
+        "periodo",
+        "matricula"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as informações da matrícula <matricula>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "PGT504",
+      "nome": "Registro Offline",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT504OrdemTrafegoOff.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "codigo_servico",
+        "nome"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>",
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "PGT505",
+      "nome": "Resumo",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "PGT510",
+      "nome": "Atendimento",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "codigo_servico"
+      ],
+      "colunas_retornadas": [
+        "Número",
+        "Início Deslocamento",
+        "Término Deslocamento",
+        "Uo Solicitante",
+        "Data Solictação",
+        "Itinerário",
+        "À Disp.",
+        "Viagem",
+        "Status"
+      ],
+      "perguntas_que_responde": [
+        "quais as RAs referentes ao código de serviço <codigo_servico>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "PGT511",
+      "nome": "Empregados Ordem de Tráfego",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT511EmpregadoOrdemTrafego.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [],
+      "colunas_retornadas": [
+        "Empregados Envolvidos",
+        "Matrícula",
+        "Nome"
+      ],
+      "perguntas_que_responde": [],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "PGT912",
+      "nome": "Ordens de Tráfego p/ Período e Situação",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT912RelatorioOrdemTrafego.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [
+        "Nº OT",
+        "Início Deslocamento",
+        "Term. Deslocamento",
+        "Pst. Serviço",
+        "Local Embarque",
+        "Itinerário",
+        "Situação"
+      ],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "PGT913",
+      "nome": "Relatório de Movimentação de Veículos",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT913RelatorioMovimentacaoVeiculo.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais registros foram efetuados no período de <data> a <data>"
+      ],
+      "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "PGT916",
+      "nome": "Motoristas",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT916RelatorioMotorista.zul",
+      "vertical": "indefinida",
+      "tecnologia": "misto",
+      "filtros": [],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [],
+      "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "PGT918",
+      "nome": "Ordem de tráfego por motorista",
+      "url_real": "https://www.saneago.com.br/prt/pgt/PGT918OrdemTrafegoMotorista.zul",
+      "vertical": "indefinida",
+      "tecnologia": "zk",
+      "filtros": [
+        "matricula",
+        "periodo"
+      ],
+      "colunas_retornadas": [],
+      "perguntas_que_responde": [
+        "quais as informações da matrícula <matricula>"
+      ],
+      "confiabilidade": "media",
       "erro": null
     },
     {
@@ -5693,60 +10906,151 @@
     }
   ],
   "por_filtro": {
-    "data": [
-      "BAP004",
-      "BAP028",
-      "BPAV433",
-      "ECO131",
-      "HVW009",
-      "LRS010",
-      "LRS017",
-      "LRS272",
-      "LRSV017"
-    ],
     "cpf_cnpj": [
+      "AGD001",
       "BAP012",
       "BAP028",
       "BAPV012",
+      "BPA433",
       "BPAV433",
+      "ECN007",
       "ECNV007",
       "ECO148",
+      "ECO151",
       "ECO154",
+      "ECO162",
       "ECO348",
+      "ECO349",
       "ECO410",
+      "ECO413",
+      "ECO460",
+      "ECO470",
+      "ECO488",
+      "ECO506",
+      "ECO520",
+      "ECO592",
+      "ECO697",
+      "EGW001",
+      "FGQ004",
       "KRTV003"
+    ],
+    "data": [
+      "AGD001",
+      "BAP004",
+      "BAP028",
+      "BPA004",
+      "BPA433",
+      "BPAV433",
+      "BSW004",
+      "BSW006",
+      "BSW043",
+      "ECO131",
+      "ECO151",
+      "ECO728",
+      "EGW001",
+      "FCA003",
+      "FCA005",
+      "FGQ012",
+      "FGQ014",
+      "HVW009",
+      "HVW018",
+      "HVW019",
+      "HVW050",
+      "LQE018",
+      "LRS010",
+      "LRS017",
+      "LRS272",
+      "LRSV017",
+      "MIG602",
+      "PGT301",
+      "PGT401"
     ],
     "periodo": [
       "BAP025",
+      "BPA005",
+      "BSW310",
+      "BTW002",
+      "BTW022",
+      "BTW024",
+      "BTW025",
       "BTWV024",
       "BTWV062",
+      "EAC005",
+      "ECA001",
+      "ECA002",
+      "ECA004",
       "ECAV001",
       "ECAV004",
+      "ECN005",
       "ECNV005",
+      "ECO104",
       "ECO186",
+      "ECO189",
+      "ECO344",
+      "ECO351",
+      "ECO395",
+      "ECO413",
       "ECO495",
+      "ECO502",
       "ECO510",
+      "ECO530",
       "ECO553",
+      "ECO556",
+      "ECO584",
+      "ECO596",
       "ECO607",
+      "ECO623",
       "ECO674",
+      "ECO708",
       "ECO709",
+      "ECO711",
       "ECO725",
+      "ECS007",
+      "ECS008",
+      "ECS009",
+      "ECS010",
       "ECSV006",
       "ECSV008",
       "ECSV009",
       "ECSV010",
+      "FGC032",
+      "FGC033",
       "FGC037",
+      "FGQ017",
+      "FGQ019",
+      "FGQ020",
+      "GCA003",
       "GCAV001",
       "GCAV002",
+      "GPM016",
+      "GSI005",
       "HFI032",
       "HFI033",
+      "HVW006",
+      "HVW025",
       "JAJ033",
       "JAJV033",
+      "KOC005",
       "KRTV003",
+      "LEN145",
+      "LEN146",
+      "LQA081",
+      "LQA083",
       "LQAV082",
+      "LQE025",
+      "LQE028",
+      "LQE029",
+      "LQE030",
+      "LRS002",
+      "LRS009",
+      "LRS024",
+      "LRS036",
+      "LRS037",
       "LRS041",
       "LRS314",
+      "LRS330",
       "LRS363",
+      "LRS701",
       "LRS731",
       "LRS732",
       "LRS733",
@@ -5762,8 +11066,16 @@
       "LRSV733",
       "LRSV734",
       "LRSV735",
+      "MGO021",
+      "MGO029",
       "MGOV029",
+      "MIG605",
+      "MTG016",
       "MTG020",
+      "PGT500",
+      "PGT912",
+      "PGT913",
+      "PGT918",
       "PGTV910",
       "PGTV918"
     ],
@@ -5771,12 +11083,23 @@
       "BAP028",
       "ECO489",
       "ECO706",
+      "ECO708",
       "ECO709",
+      "ECO711",
+      "ECO728",
+      "ECS008",
       "ECSV008",
+      "GPM001",
       "GPMV001",
+      "LRS009",
+      "LRS030",
+      "LRS036",
+      "LRS037",
       "LRS105",
       "LRS301",
+      "LRS330",
       "LRS360",
+      "LRS701",
       "LRS702",
       "LRS734",
       "LRSV009",
@@ -5785,154 +11108,358 @@
       "LRSV702",
       "LRSV734",
       "LRSV735",
+      "MIG602",
+      "PGT301",
+      "PGT500",
+      "PGT504",
+      "PGT510",
       "PGTV507",
       "PGTV510"
     ],
     "uo": [
+      "BPA004",
+      "BPA005",
+      "BPA358",
+      "BPA361",
+      "BPA433",
       "BPAV358",
       "BPAV433",
+      "BSW003",
+      "BSW040",
+      "BSW310",
       "ECO343",
+      "ECO357",
+      "ECO711",
       "ECO725",
+      "ECO728",
       "ECO731",
+      "EGW001",
+      "FCA003",
+      "FCA005",
+      "FGC032",
       "FGC037",
+      "FGQ017",
+      "FGQ019",
+      "FGQ024",
+      "FGQ037",
+      "GMQ001",
       "GMQV001",
+      "HVW025",
+      "KOC005",
+      "LEN145",
+      "LRS009",
       "LRS041",
+      "LRS701",
       "LRSV009",
       "LRSV701",
+      "MGO021",
+      "MGO029",
+      "MGO059",
       "MGOV029",
       "MGOV059",
+      "MIG602",
+      "MIG605",
+      "MSS009",
       "MSSV009"
     ],
-    "matricula": [
-      "BTWV055",
+    "nome": [
+      "BSW040",
+      "ECO118",
+      "ECO120",
+      "ECO122",
+      "ECO145",
+      "ECO154",
+      "ECO187",
+      "ECO416",
       "ECO495",
+      "ECO553",
+      "ECO708",
+      "EGW001",
+      "HVW006",
+      "MPS005",
+      "MPSV005",
+      "MSIV001",
+      "MSS502",
+      "MSSV502",
+      "MTG020",
+      "PGT301",
+      "PGT401",
+      "PGT500",
+      "PGT504"
+    ],
+    "matricula": [
+      "BSW040",
+      "BTWV055",
+      "ECO151",
+      "ECO495",
+      "EGW001",
+      "FGC033",
+      "FGO002",
       "FGOV002",
+      "HVW006",
       "HVW009",
+      "HVW050",
+      "LEN145",
       "LRS731",
       "LRSV731",
       "MSIV001",
+      "MSS165",
+      "PGT500",
+      "PGT918",
       "PGTV918"
     ],
+    "conta": [
+      "EAC005",
+      "ECN003",
+      "ECO010",
+      "ECO021",
+      "ECO112",
+      "ECO113",
+      "ECO124",
+      "ECO139",
+      "ECO144",
+      "ECO146",
+      "ECO150",
+      "ECO151",
+      "ECO152",
+      "ECO162",
+      "ECO187",
+      "ECO202",
+      "ECO203",
+      "ECO205",
+      "ECO213",
+      "ECO219",
+      "ECO285",
+      "ECO286",
+      "ECO303",
+      "ECO348",
+      "ECO349",
+      "ECO402",
+      "ECO410",
+      "ECO411",
+      "ECO415",
+      "ECO416",
+      "ECO422",
+      "ECO427",
+      "ECO460",
+      "ECO470",
+      "ECO482",
+      "ECO488",
+      "ECO489",
+      "ECO495",
+      "ECO501",
+      "ECO505",
+      "ECO506",
+      "ECO510",
+      "ECO512",
+      "ECO516",
+      "ECO520",
+      "ECO536",
+      "ECO548",
+      "ECO550",
+      "ECO562",
+      "ECO563",
+      "ECO592",
+      "ECO596",
+      "ECO609",
+      "ECO616",
+      "ECO625",
+      "ECO635",
+      "ECO701",
+      "ECO707",
+      "ECO712",
+      "ECO795",
+      "ECOV010",
+      "ECOV411",
+      "EGW001",
+      "EGW005",
+      "EGW006",
+      "EGW313",
+      "EGW402",
+      "JAJ028",
+      "JAJ036",
+      "JAJV028",
+      "JAJV036",
+      "LEN145"
+    ],
     "cidade": [
+      "ECA001",
+      "ECA002",
+      "ECA003",
+      "ECA004",
       "ECAV001",
       "ECAV004",
+      "ECO103",
+      "ECO104",
+      "ECO108",
+      "ECO118",
       "ECO120",
+      "ECO121",
+      "ECO122",
+      "ECO130",
       "ECO131",
+      "ECO133",
       "ECO135",
+      "ECO145",
+      "ECO151",
       "ECO154",
+      "ECO157",
       "ECO160",
+      "ECO170",
+      "ECO171",
+      "ECO172",
       "ECO186",
+      "ECO189",
+      "ECO193",
+      "ECO212",
+      "ECO265",
+      "ECO273",
       "ECO285",
       "ECO286",
       "ECO309",
       "ECO343",
+      "ECO359",
+      "ECO360",
+      "ECO367",
+      "ECO376",
       "ECO385",
+      "ECO395",
+      "ECO461",
+      "ECO477",
+      "ECO484",
       "ECO489",
       "ECO495",
+      "ECO515",
       "ECO538",
+      "ECO556",
       "ECO568",
+      "ECO585",
+      "ECO623",
       "ECO644",
+      "ECO708",
       "ECO709",
+      "ECO711",
       "ECO725",
+      "EGW313",
       "EGWV003",
       "EGWV004",
+      "FCA003",
+      "FCA005",
+      "FGC032",
       "FGC037",
+      "GPM001",
       "GPMV001",
       "GPMV007",
       "HVW001",
       "HVW034",
       "HVWV001",
       "JAJ060",
+      "KOC005",
       "KRTV003",
+      "LEN145",
+      "LEN146",
+      "LQA036",
+      "LQA081",
+      "LQA083",
       "LQAV071",
       "LQAV082",
       "LRS041",
       "LRS733",
       "LRSV733",
       "LRSV735",
+      "MGO029",
       "MGOV029",
+      "MPS005",
+      "MPS540",
       "MPSV005",
       "MPSV540",
       "MPSV541",
-      "MPSV543"
+      "MPSV543",
+      "PGT301"
     ],
     "bairro": [
+      "ECA001",
       "ECAV001",
+      "ECN004",
+      "ECO108",
+      "ECO118",
       "ECO120",
+      "ECO122",
+      "ECO130",
       "ECO135",
+      "ECO151",
       "ECO154",
+      "ECO170",
+      "ECO171",
+      "ECO172",
+      "ECO212",
+      "ECO219",
+      "ECO265",
+      "ECO273",
       "ECO285",
+      "ECO360",
+      "ECO367",
+      "ECO376",
+      "ECO395",
+      "ECO461",
+      "ECO484",
       "ECO489",
       "ECO510",
+      "ECO515",
+      "ECO536",
       "ECO538",
+      "ECO623",
+      "ECO708",
       "ECO709",
       "EGWV003",
+      "GPM001",
       "GPMV001",
       "GPMV007",
       "KRTV003",
       "LRS041"
     ],
     "logradouro": [
+      "ECA001",
       "ECAV001",
+      "ECO108",
       "ECO120",
       "ECO135",
+      "ECO151",
       "ECO154",
+      "ECO172",
+      "ECO219",
+      "ECO265",
       "ECO285",
       "ECO489",
       "ECO538",
       "ECO709",
       "KRTV003",
+      "MPS540",
       "MPSV540",
       "MPSV541",
       "MPSV543",
       "MSIV001"
     ],
-    "conta": [
-      "ECO010",
-      "ECO021",
-      "ECO213",
-      "ECO285",
-      "ECO286",
-      "ECO303",
-      "ECO348",
-      "ECO410",
-      "ECO411",
-      "ECO489",
-      "ECO495",
-      "ECO510",
-      "ECO609",
-      "ECO701",
-      "ECO707",
-      "ECO712",
-      "ECOV010",
-      "ECOV411",
-      "JAJ028",
-      "JAJ036",
-      "JAJV028",
-      "JAJV036"
-    ],
     "ra": [
       "ECO010",
+      "ECO151",
       "ECO286",
+      "ECO427",
+      "ECO520",
       "ECO701",
+      "ECO728",
       "ECOV010",
       "GPMV007",
+      "KOC004",
       "KOCV004",
+      "LQE028",
       "LRS208",
       "LRSV208"
     ],
-    "nome": [
-      "ECO120",
-      "ECO154",
-      "ECO495",
-      "ECO553",
-      "MPSV005",
-      "MSIV001",
-      "MSSV502",
-      "MTG020"
-    ],
     "hidrometro": [
       "ECO201",
+      "ECO202",
+      "ECO205",
       "ECO286"
     ]
   },
@@ -5941,6 +11468,7 @@
       "A0009",
       "A0074",
       "A3000",
+      "AGD001",
       "BAP002",
       "BAP004",
       "BAP005",
@@ -5973,6 +11501,15 @@
       "BPAV433",
       "BPAV604",
       "G0064",
+      "GCA003",
+      "GMQ001",
+      "GPM001",
+      "GPM016",
+      "GSI005",
+      "GSI006",
+      "GSI007",
+      "GSI013",
+      "GSP102",
       "S0072",
       "S0087"
     ],
@@ -6016,12 +11553,134 @@
       "MSSV550"
     ],
     "indefinida": [
+      "BPA001",
+      "BPA004",
+      "BPA005",
+      "BPA354",
+      "BPA356",
+      "BPA358",
+      "BPA359",
+      "BPA360",
+      "BPA361",
+      "BPA372",
+      "BPA373",
+      "BPA433",
+      "BPA604",
+      "BSW003",
+      "BSW004",
+      "BSW006",
+      "BSW020",
+      "BSW040",
+      "BSW043",
+      "BSW150",
+      "BSW310",
+      "BSW504",
+      "BTW001",
+      "BTW002",
+      "BTW021",
+      "BTW022",
+      "BTW024",
+      "BTW025",
       "D2000",
       "D4008",
       "D4014",
       "D4015",
       "D4030",
-      "D4065"
+      "D4065",
+      "EAC005",
+      "EAC799",
+      "ECA001",
+      "ECA002",
+      "ECA003",
+      "ECA004",
+      "ECN003",
+      "ECN004",
+      "ECN005",
+      "ECN006",
+      "ECN007",
+      "ECS006",
+      "ECS007",
+      "ECS008",
+      "ECS009",
+      "ECS010",
+      "EGW001",
+      "EGW005",
+      "EGW006",
+      "EGW305",
+      "EGW313",
+      "EGW401",
+      "EGW402",
+      "FCA002",
+      "FCA003",
+      "FCA005",
+      "FGO002",
+      "FGQ004",
+      "FGQ006",
+      "FGQ010",
+      "FGQ011",
+      "FGQ012",
+      "FGQ014",
+      "FGQ017",
+      "FGQ018",
+      "FGQ019",
+      "FGQ020",
+      "FGQ022",
+      "FGQ024",
+      "FGQ026",
+      "FGQ037",
+      "KOC004",
+      "KOC005",
+      "LEN110",
+      "LEN145",
+      "LEN146",
+      "LQE018",
+      "LQE025",
+      "LQE027",
+      "LQE028",
+      "LQE029",
+      "LQE030",
+      "LQE039",
+      "MGO012",
+      "MGO021",
+      "MGO029",
+      "MGO033",
+      "MGO059",
+      "MIG018",
+      "MIG602",
+      "MIG605",
+      "MPS005",
+      "MPS540",
+      "MSI001",
+      "MSI070",
+      "MSS005",
+      "MSS008",
+      "MSS009",
+      "MSS126",
+      "MSS165",
+      "MSS401",
+      "MSS402",
+      "MSS420",
+      "MSS430",
+      "MSS450",
+      "MSS460",
+      "MSS470",
+      "MSS480",
+      "MSS490",
+      "MSS500",
+      "MSS502",
+      "MSS503",
+      "MSS550",
+      "PGT301",
+      "PGT401",
+      "PGT500",
+      "PGT504",
+      "PGT505",
+      "PGT510",
+      "PGT511",
+      "PGT912",
+      "PGT913",
+      "PGT916",
+      "PGT918"
     ],
     "comercial": [
       "EACV005",
@@ -6037,46 +11696,140 @@
       "ECNV007",
       "ECO010",
       "ECO021",
+      "ECO103",
+      "ECO104",
+      "ECO106",
+      "ECO108",
+      "ECO112",
+      "ECO113",
+      "ECO118",
       "ECO120",
+      "ECO121",
+      "ECO122",
+      "ECO124",
+      "ECO130",
       "ECO131",
+      "ECO133",
       "ECO135",
+      "ECO139",
+      "ECO144",
+      "ECO145",
+      "ECO146",
       "ECO148",
+      "ECO150",
+      "ECO151",
+      "ECO152",
       "ECO154",
+      "ECO157",
       "ECO160",
+      "ECO162",
+      "ECO163",
+      "ECO170",
+      "ECO171",
+      "ECO172",
       "ECO186",
+      "ECO187",
+      "ECO189",
+      "ECO193",
       "ECO201",
+      "ECO202",
+      "ECO203",
+      "ECO204",
+      "ECO205",
+      "ECO212",
       "ECO213",
+      "ECO219",
+      "ECO265",
+      "ECO273",
       "ECO285",
       "ECO286",
       "ECO303",
       "ECO309",
       "ECO343",
+      "ECO344",
       "ECO348",
+      "ECO349",
+      "ECO351",
+      "ECO357",
+      "ECO359",
+      "ECO360",
+      "ECO363",
+      "ECO367",
+      "ECO376",
       "ECO385",
+      "ECO395",
+      "ECO402",
       "ECO404",
+      "ECO407",
       "ECO410",
       "ECO411",
+      "ECO413",
+      "ECO415",
+      "ECO416",
+      "ECO422",
+      "ECO427",
+      "ECO460",
+      "ECO461",
+      "ECO470",
+      "ECO472",
+      "ECO477",
+      "ECO482",
+      "ECO484",
+      "ECO488",
       "ECO489",
+      "ECO492",
       "ECO495",
+      "ECO501",
+      "ECO502",
+      "ECO504",
+      "ECO505",
+      "ECO506",
       "ECO510",
+      "ECO512",
+      "ECO515",
+      "ECO516",
+      "ECO520",
+      "ECO530",
+      "ECO536",
       "ECO538",
+      "ECO548",
+      "ECO550",
       "ECO553",
+      "ECO556",
+      "ECO562",
+      "ECO563",
       "ECO568",
+      "ECO584",
+      "ECO585",
+      "ECO592",
+      "ECO596",
       "ECO607",
       "ECO609",
+      "ECO616",
+      "ECO623",
+      "ECO625",
+      "ECO635",
       "ECO644",
       "ECO674",
+      "ECO697",
       "ECO701",
       "ECO706",
       "ECO707",
+      "ECO708",
       "ECO709",
+      "ECO711",
       "ECO712",
       "ECO725",
+      "ECO728",
       "ECO731",
+      "ECO795",
+      "ECO804",
       "ECO808",
       "ECO811",
       "ECO815",
+      "ECO823",
       "ECO825",
+      "ECO830",
       "ECO954",
       "ECO962",
       "ECOV010",
@@ -6100,9 +11853,15 @@
       "EGWV402"
     ],
     "financeiro_licitacoes": [
+      "FGC001",
+      "FGC018",
       "FGC025",
+      "FGC026",
       "FGC028",
+      "FGC032",
+      "FGC033",
       "FGC037",
+      "FGC052",
       "FGC068",
       "FGC303",
       "FGCV001",
@@ -6135,11 +11894,18 @@
       "LENV146",
       "LIG002",
       "LIGV002",
+      "LRS002",
+      "LRS009",
       "LRS010",
       "LRS013",
       "LRS017",
       "LRS019",
       "LRS021",
+      "LRS024",
+      "LRS030",
+      "LRS034",
+      "LRS036",
+      "LRS037",
       "LRS041",
       "LRS100",
       "LRS105",
@@ -6148,8 +11914,10 @@
       "LRS272",
       "LRS301",
       "LRS314",
+      "LRS330",
       "LRS360",
       "LRS363",
+      "LRS701",
       "LRS702",
       "LRS731",
       "LRS732",
@@ -6200,6 +11968,7 @@
     ],
     "patrimonio": [
       "HFI001",
+      "HFI031",
       "HFI032",
       "HFI033",
       "HFI034",
@@ -6211,9 +11980,14 @@
     ],
     "viagens_servico": [
       "HVW001",
+      "HVW006",
       "HVW009",
+      "HVW018",
+      "HVW019",
+      "HVW025",
       "HVW031",
       "HVW034",
+      "HVW050",
       "HVWV001",
       "HVWV006",
       "HVWV009",
@@ -6227,6 +12001,7 @@
       "JAJ033",
       "JAJ036",
       "JAJ042",
+      "JAJ044",
       "JAJ060",
       "JAJV028",
       "JAJV033",
@@ -6245,6 +12020,9 @@
       "KRTV003",
       "KRTV028",
       "KRTV037",
+      "LQA036",
+      "LQA081",
+      "LQA083",
       "LQAV028",
       "LQAV036",
       "LQAV071",
@@ -6270,10 +12048,15 @@
     ],
     "suprimentos_logistica": [
       "MTG001",
+      "MTG002",
+      "MTG005",
       "MTG006",
       "MTG008",
       "MTG009",
+      "MTG010",
       "MTG011",
+      "MTG012",
+      "MTG016",
       "MTG020",
       "MTGV001",
       "MTGV002",

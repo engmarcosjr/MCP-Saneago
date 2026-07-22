@@ -279,3 +279,25 @@ era a descoberta parar antes do último nível do menu, somada ao fato de o rót
 ("Usuários por Nome") não conter o código da aplicação. Toda resposta do tipo "o sistema
 não permite consultar X" emitida antes desta fase precisa ser considerada **não
 confiável** e reavaliada contra o catálogo novo.
+
+## Varredura completa concluída (2026-07-22) — e uma regressão descoberta
+
+`config/capacidades.json` agora cobre **596/596 aplicações**, com apenas **11 erros**
+(BPAV004-006, EAC799, ECO815, ECO954, ECO962, FGIV005, LIG002, LIGV002, MGOV050 — telas
+que não vivem no iframe ZK: BI externo, GIS em popup, GED, download de PDF, menu sem
+permissão). Índice regenerado: **164 alta / 214 média / 218 baixa confiabilidade**.
+
+**Regressão no ranking da tool `saneago_descobrir_aplicacao`.** A validação da FASE 8b
+foi feita com o índice PARCIAL (340 apps) e mostrou `ECO154` em 1º lugar. Com o índice
+COMPLETO (596 apps) a mesma pergunta devolve:
+
+- "conta pelo nome do proprietario" → 215 candidatas; top-5 = ECA002, EGW001, EGW313,
+  ECO112, **ECO154 em 5º**. O 1º colocado (ECA002, "Rel. de Produtividade do
+  Recadastramento") **não tem sequer o filtro `nome`** — casou por ruído em colunas.
+- "RAs por logradouro e bairro num periodo" → ECO709 caiu para **3º**.
+
+Ou seja: o scoring não pesa corretamente o casamento **exato de filtro**, e diluiu com o
+catálogo maior. A aprovação da FASE 8b continua válida para o que ela mediu, mas a
+conclusão "ECO154 em 1º" **não se sustenta no catálogo completo** — fica registrada aqui
+a correção. Isto é o alvo da FASE 9, não uma pendência menor: uma tool de descoberta que
+ranqueia mal é pior que inútil para uma LLM consumidora, porque ela vai confiar no topo.
