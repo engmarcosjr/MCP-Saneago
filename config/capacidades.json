@@ -2564,6 +2564,77 @@
     "erro": null
   },
   {
+    "codigo": "ECO120",
+    "nome": "Logradouros por Nome/Bairro",
+    "url_real": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
+    "tecnologia": "zk",
+    "titulo_tela": "Consulta de Logradouros",
+    "inputs": [
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Nome do Logradouro",
+        "tipo": "text",
+        "maxlength": 35,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Cód. Bairro",
+      "Bairro",
+      "Cód. Logradouro",
+      "Tipo",
+      "Logradouro",
+      "CEP",
+      "Superintendência",
+      "Regional",
+      "Distrito",
+      "ECO154"
+    ],
+    "capturado_em": "2026-07-22T03:16:39.521Z",
+    "erro": null
+  },
+  {
     "codigo": "ECO131",
     "nome": "Atividades",
     "url_real": "https://www.saneago.com.br/prt/eco/ECO131Atividades.zul",
@@ -2737,6 +2808,248 @@
     ],
     "colunas": [],
     "capturado_em": "2026-07-21T19:59:57.833Z",
+    "erro": null
+  },
+  {
+    "codigo": "ECO148",
+    "nome": "Cadastro de Clientes",
+    "url_real": "https://www.saneago.com.br/prt/eco/ECO148CadastroCpfCnpj.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "Saneago - ECO148",
+    "inputs": [
+      {
+        "rotulo": "Pessoa Física",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Pessoa Jurídica",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "CPF",
+        "tipo": "text",
+        "maxlength": 14,
+        "readonly": false
+      },
+      {
+        "rotulo": "CNPJ",
+        "tipo": "text",
+        "maxlength": 18,
+        "readonly": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "Tipo de Telefone",
+      "Número",
+      "Ramal",
+      "Excluir?",
+      "Data",
+      "Data Desligamento",
+      "CPF",
+      "Nome",
+      "Participação",
+      "CNPJ",
+      "Nome Fantasia",
+      "Razão Social",
+      "Conta",
+      "Endereço",
+      "Proprietário",
+      "Titular",
+      "Cotitular",
+      "ECO151",
+      "ECO506",
+      "ECO707",
+      "ECO712",
+      "ECO010"
+    ],
+    "capturado_em": "2026-07-22T03:16:45.255Z",
+    "erro": null
+  },
+  {
+    "codigo": "ECO154",
+    "nome": "Usuários por Nome",
+    "url_real": "https://www.saneago.com.br/prt/eco/ECO154ConsultaUsuario.zul",
+    "tecnologia": "misto",
+    "titulo_tela": "ECO154 - Consulta Usuários",
+    "inputs": [
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "maxlength": 15,
+        "readonly": false
+      },
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": 4,
+        "readonly": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": 3,
+        "readonly": false
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Logradouro",
+        "tipo": "text",
+        "maxlength": 5,
+        "readonly": false
+      },
+      {
+        "rotulo": "Logradouro",
+        "tipo": "text",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Quadra",
+        "tipo": "text",
+        "maxlength": 8,
+        "readonly": false
+      },
+      {
+        "rotulo": "Lote",
+        "tipo": "text",
+        "maxlength": 9,
+        "readonly": false
+      },
+      {
+        "rotulo": "Número",
+        "tipo": "text",
+        "maxlength": 5,
+        "readonly": false
+      },
+      {
+        "rotulo": "Nome",
+        "tipo": "text",
+        "maxlength": 70,
+        "readonly": false
+      },
+      {
+        "rotulo": "Tipo de Busca",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Escopo de busca",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "Ordem de busca",
+        "tipo": "combobox",
+        "maxlength": null,
+        "readonly": true
+      },
+      {
+        "rotulo": "CPF/CNPJ",
+        "tipo": "text",
+        "maxlength": 14,
+        "readonly": false
+      },
+      {
+        "rotulo": "PDF",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      },
+      {
+        "rotulo": "Planilha",
+        "tipo": "radio",
+        "maxlength": null,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Sem Rotulo",
+        "tipo": "a"
+      },
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "colunas": [
+      "ECO151",
+      "Nº Conta",
+      "Nome Proprietário",
+      "Logradouro",
+      "S.A.",
+      "S.E.",
+      "Quadra",
+      "Lote",
+      "Nº",
+      "Codificação.",
+      "Id. Conta.",
+      "Hidrômetro",
+      "ECO157",
+      "ECO707"
+    ],
+    "capturado_em": "2026-07-22T03:16:50.000Z",
     "erro": null
   },
   {

@@ -4,13 +4,13 @@ Este documento apresenta o mapa completo de capacidades consultáveis do portal 
 
 ## Resumo Geral de Capacidades
 
-- **Total de Aplicações Mapeadas:** 337
-- **Confiabilidade Alta (Filtros + Retornos):** 61
+- **Total de Aplicações Mapeadas:** 340
+- **Confiabilidade Alta (Filtros + Retornos):** 64
 - **Confiabilidade Média (Filtros ou Retornos):** 102
 - **Confiabilidade Baixa (Sem filtros/retornos identificados):** 174
 - **Aplicações com Erro de Captura:** 10
 
-## Comercial & Atendimento ao Cliente (71 apps)
+## Comercial & Atendimento ao Cliente (74 apps)
 
 | Código | Nome da Aplicação | Filtros Aceitos | O que Retorna |
 |---|---|---|---|
@@ -27,8 +27,11 @@ Este documento apresenta o mapa completo de capacidades consultáveis do portal 
 | **ECNV007** | Consultar Protesto | cpf_cnpj | Conta, Referência, Documento, Valor, Data de Envio (+3) |
 | **ECO010** | Solicitar Titularidade | conta, ra | Data/Hora de Solicitação, Nome Titular, Tipo Pessoa, CPF/CNPJ Titular, Início Contrato (+20) |
 | **ECO021** | Alterar CPF/CNPJ Débito | conta | Sequencial, Motivo, Solicitante, Situação, Data/Hora Solicitação (+9) |
+| **ECO120** | Logradouros por Nome/Bairro | cidade, bairro, logradouro, nome | Cód. Bairro, Bairro, Cód. Logradouro, Tipo, Logradouro (+5) |
 | **ECO131** | Atividades | data, cidade | Cidade, Job, Grupo, Referência, Qtd.Reg (+8) |
 | **ECO135** | Atualiza CEP de Usuários | cidade, bairro, logradouro | - |
+| **ECO148** | Cadastro de Clientes | cpf_cnpj | Tipo de Telefone, Número, Ramal, Excluir?, Data (+17) |
+| **ECO154** | Usuários por Nome | cidade, bairro, logradouro, nome, cpf_cnpj | ECO151, Nº Conta, Nome Proprietário, Logradouro, S.A. (+9) |
 | **ECO160** | Alterar em Massa Grupo e Rota | cidade | Sequência......Conta, Grupo Faturamento ..... Rota |
 | **ECO186** | Análise de Recadastramento | cidade, periodo | Grupo Faturamento, Rota, Sequência, Conta, Visualizar Cadastro (+1) |
 | **ECO201** | Cadastramento de Hidrômetros | hidrometro | - |

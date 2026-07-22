@@ -138,7 +138,7 @@ function descobrirAplicacao(params = {}) {
         }
       }
       if (colunasCasadas.length > 0) {
-        score += colunasCasadas.length * 3;
+        score += colunasCasadas.length * 6;
         porQueCasou.push(`Colunas de retorno correspondentes: ${colunasCasadas.join(', ')}`);
       }
     }

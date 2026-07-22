@@ -1,0 +1,5479 @@
+[
+  {
+    "rotulo": "Rodízio de Processos",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Cobrança",
+      "Rodízio de Processos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ060RodizioProcesso.zul",
+    "codigo": "JAJ060"
+  },
+  {
+    "rotulo": "Consulta Cobrança",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Consulta",
+      "Consulta Cobrança"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ042conCobranca.zul",
+    "codigo": "JAJ042"
+  },
+  {
+    "rotulo": "Consulta Processo Conta",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Consulta",
+      "Consulta Processo Conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ036ConsultaProcessoConta.zul",
+    "codigo": "JAJ036"
+  },
+  {
+    "rotulo": "Relatório de Contas Com o Escritório",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Relatório",
+      "Relatório de Contas Com o Escritório"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ044relacaoContasComEscritorio.zul",
+    "codigo": "JAJ044"
+  },
+  {
+    "rotulo": "Agenda Audiência",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Judicial",
+      "Agenda Audiência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Judicial",
+    "caminho_menu": [
+      "Apoio Jurídico",
+      "Judicial",
+      "Consulta Judicial"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relação Mensal Duração Serviço Encerrado",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Relação Mensal Duração Serviço Encerrado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS301RelServico.zul",
+    "codigo": "LRS301"
+  },
+  {
+    "rotulo": "Relação Mensal de Serviços Atendidos",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Relação Mensal de Serviços Atendidos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Análise tempo padrão/execução/perfomance",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Análise tempo padrão/execução/perfomance"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Serviços Executados no Interior",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Serviços Executados no Interior"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Emite Serviços Executados em Atraso",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Emite Serviços Executados em Atraso"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Índices do SIPSAP",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Índices do SIPSAP"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS019IndiceSIPSAP.zul",
+    "codigo": "LRS019"
+  },
+  {
+    "rotulo": "Atendimento Serv. p/ UO e Período",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Atendimento Serv. p/ UO e Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atendimento P/ Atendente e Período",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Atendimento P/ Atendente e Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Paralisações no Abastecimento de Água",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Paralisações no Abastecimento de Água"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Extravasamento de Esgoto",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Extravasamento de Esgoto"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Serviços Comerciais Executados",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Serviços Comerciais Executados"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atendimento Por Período",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Atendimento Por Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atendimento Por Cidade",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Atendimento Por Cidade"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atendimento Por Código de Serviço",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Atendimento Por Código de Serviço"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "RA-RI por Cidade e Bairro",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "RA-RI por Cidade e Bairro"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Indicadores do SIPSAP por Período",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Indicadores do SIPSAP por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS024IndiceSIPSAPPeriodo.zul",
+    "codigo": "LRS024"
+  },
+  {
+    "rotulo": "Relação de Serviços Executados",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Relação de Serviços Executados"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS701RelServicosExec.zul",
+    "codigo": "LRS701"
+  },
+  {
+    "rotulo": "Materiais Utilizados do SIPSAP",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Materiais Utilizados do SIPSAP"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS360ResumoMaterial.zul",
+    "codigo": "LRS360"
+  },
+  {
+    "rotulo": "Resumo de Vazamentos",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Resumo de Vazamentos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS036ResumoVazamentos.zul",
+    "codigo": "LRS036"
+  },
+  {
+    "rotulo": "Serviço executado por conta",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Serviço executado por conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS037ServicoExecutadoConta.zul",
+    "codigo": "LRS037"
+  },
+  {
+    "rotulo": "Relatório de recomposição asfáltica",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Relatório de recomposição asfáltica"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS041RelatorioRecomposicaoAsfaltica.zul",
+    "codigo": "LRS041"
+  },
+  {
+    "rotulo": "Resumo dos Serviços",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Resumo dos Serviços"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS330ResumoServico.zul",
+    "codigo": "LRS330"
+  },
+  {
+    "rotulo": "Monitoramento de Atendimento",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Relatório",
+      "Monitoramento de Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS009RelMonitoramentoAtendimento.zul",
+    "codigo": "LRS009"
+  },
+  {
+    "rotulo": "Distribuição de Serviço",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Distribuição de Serviço"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS010DistribuicaoServico.zul",
+    "codigo": "LRS010"
+  },
+  {
+    "rotulo": "Serviço Executado no Interior",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Serviço Executado no Interior"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Extravazamento de Esgoto Sanitario",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Extravazamento de Esgoto Sanitario"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Paralisações no Abastecimento de Água",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Paralisações no Abastecimento de Água"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Cadastrar situação do distrito SIPSAP",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Cadastrar situação do distrito SIPSAP"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS017CadSituacaoDistritoSIPSAP.zul",
+    "codigo": "LRS017"
+  },
+  {
+    "rotulo": "Serviço resposta por serviço solicitação",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Serviço resposta por serviço solicitação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS030ServicoRespostaSolicitacao.zul",
+    "codigo": "LRS030"
+  },
+  {
+    "rotulo": "Lançamento de serviços executados",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Lançamento de serviços executados"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS105CadastraRetornoRA.zul",
+    "codigo": "LRS105"
+  },
+  {
+    "rotulo": "Manter estoque de Material por viatura",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Manter estoque de Material por viatura"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS100ManterEstoqueMaterialPorViatura.zul",
+    "codigo": "LRS100"
+  },
+  {
+    "rotulo": "Equipes",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Cadastro",
+      "Equipes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS130ManterEquipe.zul",
+    "codigo": "LRS130"
+  },
+  {
+    "rotulo": "Ocorrências de Esgoto por RA",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Consulta",
+      "Ocorrências de Esgoto por RA"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Ocorrências de Esgoto por Endereço",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Consulta",
+      "Ocorrências de Esgoto por Endereço"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta RA's com D.S.",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Consulta",
+      "Consulta RA's com D.S."
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS208ConsultaRADS.zul",
+    "codigo": "LRS208"
+  },
+  {
+    "rotulo": "RA Pendente",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Consulta",
+      "RA Pendente"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS002ConsultaRaPendente.zul",
+    "codigo": "LRS002"
+  },
+  {
+    "rotulo": "Acompanhar Atendimento",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Consulta",
+      "Acompanhar Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS272MonitorarAtendimento.zul",
+    "codigo": "LRS272"
+  },
+  {
+    "rotulo": "Validar Corte de Asfalto",
+    "caminho_menu": [
+      "Atendimento ao Publico",
+      "Corte de Asfalto",
+      "Validar Corte de Asfalto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lrs/LRS034ValidaRaCorteAsfalto.zul",
+    "codigo": "LRS034"
+  },
+  {
+    "rotulo": "Atendimento",
+    "caminho_menu": [
+      "ATENDIMENTO AO CLIENTE",
+      "Portal de Atendimento",
+      "Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eac/EAC799AbrirAtendimento.zul",
+    "codigo": "EAC799"
+  },
+  {
+    "rotulo": "Protocolo de Atendimento",
+    "caminho_menu": [
+      "ATENDIMENTO AO CLIENTE",
+      "Consulta",
+      "Protocolo de Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eac/EAC005ProtocoloDeAtendimento.zul",
+    "codigo": "EAC005"
+  },
+  {
+    "rotulo": "Planejamento de Recadastramento",
+    "caminho_menu": [
+      "Cadastro Comercial",
+      "Rotas",
+      "Planejamento de Recadastramento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eca/ECA003PlanejamentoRecadastramento.zul",
+    "codigo": "ECA003"
+  },
+  {
+    "rotulo": "Autorizar Rotas para Distribuição",
+    "caminho_menu": [
+      "Cadastro Comercial",
+      "Rotas",
+      "Autorizar Rotas para Distribuição"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eca/ECA004AutorizaDistribuicao.zul",
+    "codigo": "ECA004"
+  },
+  {
+    "rotulo": "Distribuição de Rotas",
+    "caminho_menu": [
+      "Cadastro Comercial",
+      "Rotas",
+      "Distribuição de Rotas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eca/ECA001DistribuicaoRotas.zul",
+    "codigo": "ECA001"
+  },
+  {
+    "rotulo": "Rel. de Produtividade do Recadastramento",
+    "caminho_menu": [
+      "Cadastro Comercial",
+      "Rotas",
+      "Rel. de Produtividade do Recadastramento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eca/ECA002RelatorioProdutividade.zul",
+    "codigo": "ECA002"
+  },
+  {
+    "rotulo": "Registrar Inventário de Bens",
+    "caminho_menu": [
+      "Contabilidade Patrimonial",
+      "Cadastro",
+      "Registrar Inventário de Bens"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI001RegistrarInventarioBens.zul",
+    "codigo": "HFI001"
+  },
+  {
+    "rotulo": "Solicitar Transferência Bem Patrimonial",
+    "caminho_menu": [
+      "Contabilidade Patrimonial",
+      "Transferência de Bens",
+      "Solicitar Transferência Bem Patrimonial"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI031SolicitarTransfBemPatrimonial.zul",
+    "codigo": "HFI031"
+  },
+  {
+    "rotulo": "Acompanhar Transf. de Bens Patrimoniais",
+    "caminho_menu": [
+      "Contabilidade Patrimonial",
+      "Transferência de Bens",
+      "Acompanhar Transf. de Bens Patrimoniais"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI032AcompanharTransfBemPatr.zul",
+    "codigo": "HFI032"
+  },
+  {
+    "rotulo": "Consulta de Bens Patrimoniais",
+    "caminho_menu": [
+      "Contabilidade Patrimonial",
+      "Transferência de Bens",
+      "Consulta de Bens Patrimoniais"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI034ConsultaBensPatrimoniais.zul",
+    "codigo": "HFI034"
+  },
+  {
+    "rotulo": "Registrar Parecer Transferências de Bens",
+    "caminho_menu": [
+      "Contabilidade Patrimonial",
+      "Transferência de Bens",
+      "Registrar Parecer Transferências de Bens"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
+    "codigo": "HFI033"
+  },
+  {
+    "rotulo": "Lista para Análise",
+    "caminho_menu": [
+      "Controle de AVTOs",
+      "AVTO",
+      "Lista para Análise"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul",
+    "codigo": "KRT028"
+  },
+  {
+    "rotulo": "Consulta AVTO",
+    "caminho_menu": [
+      "Controle de AVTOs",
+      "AVTO",
+      "Consulta AVTO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT003ConsultarAvto.zul",
+    "codigo": "KRT003"
+  },
+  {
+    "rotulo": "Relatórios Gerenciais",
+    "caminho_menu": [
+      "Controle de AVTOs",
+      "Relatórios",
+      "Relatórios Gerenciais"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT037RelatoriosGerenciais.zul",
+    "codigo": "KRT037"
+  },
+  {
+    "rotulo": "Manutenção",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Cartão",
+      "Manutenção"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW019ManutencaoCartaoViagem.zul",
+    "codigo": "HVW019"
+  },
+  {
+    "rotulo": "Impressão Termo",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Cartão",
+      "Impressão Termo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW031ReimpressaoTermo.zul",
+    "codigo": "HVW031"
+  },
+  {
+    "rotulo": "Manter Empregados com Cartão Viagem",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Cartão",
+      "Manter Empregados com Cartão Viagem"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW018CartaoViagemEmpregado.zul",
+    "codigo": "HVW018"
+  },
+  {
+    "rotulo": "Solicitação Viagem",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Solicitação",
+      "Solicitação Viagem"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW006SolicitarViagem.zul",
+    "codigo": "HVW006"
+  },
+  {
+    "rotulo": "Solicitação",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Solicitação",
+      "Relatório",
+      "Solicitação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW025RelatorioSolicitacaoViagem.zul",
+    "codigo": "HVW025"
+  },
+  {
+    "rotulo": "Conta",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Prestação",
+      "Conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW009PrestarContas.zul",
+    "codigo": "HVW009"
+  },
+  {
+    "rotulo": "Prestar Contas Cartão Corporativo",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Prestação",
+      "Prestar Contas Cartão Corporativo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW050PrestarContasCartao.zul",
+    "codigo": "HVW050"
+  },
+  {
+    "rotulo": "Fornecedor por Despesa",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Prestação",
+      "Relatório",
+      "Fornecedor por Despesa"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW034RelatorioFornecedorDespesa.zul",
+    "codigo": "HVW034"
+  },
+  {
+    "rotulo": "Distância entre cidade",
+    "caminho_menu": [
+      "Controle de Viagens",
+      "Manutenção",
+      "Distância entre cidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW019ManutencaoCartaoViagem.zul",
+    "codigo": "HVW019"
+  },
+  {
+    "rotulo": "Atividades",
+    "caminho_menu": [
+      "Controle Atividades",
+      "Cadastro",
+      "Atividades"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Melhorias Previstas",
+    "caminho_menu": [
+      "Controle Atividades",
+      "Cadastro",
+      "Melhorias Previstas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gca/GCA003SolicitacaoMelhoria.zul",
+    "codigo": "GCA003"
+  },
+  {
+    "rotulo": "Atividades Diárias",
+    "caminho_menu": [
+      "Controle Atividades",
+      "Relatório",
+      "Atividades Diárias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relaciona Contas Condomínio",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relaciona Contas Condomínio"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO112RelacionaContasCondominio.zul",
+    "codigo": "ECO112"
+  },
+  {
+    "rotulo": "Bairros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Bairros",
+      "Bairros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO118ConsultaBairro.zul",
+    "codigo": "ECO118"
+  },
+  {
+    "rotulo": "Logradouros por Nome/Bairro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Bairros",
+      "Logradouros por Nome/Bairro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
+    "codigo": "ECO120"
+  },
+  {
+    "rotulo": "Reordenação Codificação de Massa",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Bairros",
+      "Reordenação Codificação de Massa"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO121ReordenarRota.zul",
+    "codigo": "ECO121"
+  },
+  {
+    "rotulo": "Manutenção de Bairros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Bairros",
+      "Manutenção de Bairros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO122ManutencaoBairro.zul",
+    "codigo": "ECO122"
+  },
+  {
+    "rotulo": "Atualiza Data Vencimento/Cliente",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Atualiza Data Vencimento/Cliente"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO124VencimentoCliente.zul",
+    "codigo": "ECO124"
+  },
+  {
+    "rotulo": "Cadastro de Clientes",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Cadastro de Clientes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO148CadastroCpfCnpj.zul",
+    "codigo": "ECO148"
+  },
+  {
+    "rotulo": "Cadastro de Usuarios",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Cadastro de Usuarios"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO151CadastroUsuario.zul",
+    "codigo": "ECO151"
+  },
+  {
+    "rotulo": "Usuários por Nome",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Usuários por Nome"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO154ConsultaUsuario.zul",
+    "codigo": "ECO154"
+  },
+  {
+    "rotulo": "Alterar em Massa Grupo e Rota",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Alterar em Massa Grupo e Rota"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO160AlteracaoMassaGrupoRotas.zul",
+    "codigo": "ECO160"
+  },
+  {
+    "rotulo": "Histórico de Usuários",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Histórico de Usuários"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO187HistoricoCadastroUsuario.zul",
+    "codigo": "ECO187"
+  },
+  {
+    "rotulo": "Usuário Eventual",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Usuário Eventual"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO162CadastramentoDeUsuariosEventuais.zul",
+    "codigo": "ECO162"
+  },
+  {
+    "rotulo": "Atualiza CEP de Usuários",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Usuários",
+      "Atualiza CEP de Usuários"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO135AtualizarCepUsuarios.zul",
+    "codigo": "ECO135"
+  },
+  {
+    "rotulo": "Atividades",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Cronograma",
+      "Atividades"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO131Atividades.zul",
+    "codigo": "ECO131"
+  },
+  {
+    "rotulo": "Cronograma de Atividades",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Cronograma",
+      "Cronograma de Atividades"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO133CronogramaAtividade.zul",
+    "codigo": "ECO133"
+  },
+  {
+    "rotulo": "Entrega de Contas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Entrega de Contas",
+      "Entrega de Contas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO139EntregaContas.zul",
+    "codigo": "ECO139"
+  },
+  {
+    "rotulo": "Endereço Alternativo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Entrega de Contas",
+      "Endereço Alternativo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO144CadastroEnderecoAlternativo.zul",
+    "codigo": "ECO144"
+  },
+  {
+    "rotulo": "Autorização p/ Débito Automático",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Entrega de Contas",
+      "Autorização p/ Débito Automático"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO152AutorizacaoDebitoAutomatico.zul",
+    "codigo": "ECO152"
+  },
+  {
+    "rotulo": "Qtde de Contas com Prazo em Vigor",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Consulta",
+      "Qtde de Contas com Prazo em Vigor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO103QuantidadeContasPrazoVigor.zul",
+    "codigo": "ECO103"
+  },
+  {
+    "rotulo": "Codificações Existentes",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Consulta",
+      "Codificações Existentes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO157CodificacaoExistente.zul",
+    "codigo": "ECO157"
+  },
+  {
+    "rotulo": "Subcategorias",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Tabelas Cadastro",
+      "Subcategorias"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO163Subcategorias.zul",
+    "codigo": "ECO163"
+  },
+  {
+    "rotulo": "Contas com Prazo por Período",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Contas com Prazo por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO104ContaPrazoPeriodo.zul",
+    "codigo": "ECO104"
+  },
+  {
+    "rotulo": "Relação de Clientes p/ Categoria",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Relação de Clientes p/ Categoria"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO130RelacaoClienteCategoria.zul",
+    "codigo": "ECO130"
+  },
+  {
+    "rotulo": "Órgãos Públicos Cadastrados",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Órgãos Públicos Cadastrados"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO145OrgaoPublico.zul",
+    "codigo": "ECO145"
+  },
+  {
+    "rotulo": "Boletim de Recadastramento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Boletim de Recadastramento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO150BoletimRecadastramento.zul",
+    "codigo": "ECO150"
+  },
+  {
+    "rotulo": "Codificação/Número de Conta",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Codificação/Número de Conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO170CodificacaoConta.zul",
+    "codigo": "ECO170"
+  },
+  {
+    "rotulo": "Contas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Contas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO171RelatorioContas.zul",
+    "codigo": "ECO171"
+  },
+  {
+    "rotulo": "Usuários Reais de Água",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Usuários Reais de Água"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO172UsuariosReaisDeAgua.zul",
+    "codigo": "ECO172"
+  },
+  {
+    "rotulo": "Usuários Reais de Esgoto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Usuários Reais de Esgoto"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Usuários Potenciais de Água",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Usuários Potenciais de Água"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Logradouros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Logradouros"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Usuários Reais Inativos de Água",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Usuários Reais Inativos de Água"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Clientes com Fonte Alt. Desativada",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Clientes com Fonte Alt. Desativada"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contas com % Esgoto Diferenciado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Contas com % Esgoto Diferenciado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relação de contas potencial faturamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Relação de contas potencial faturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO108ListarContasPotenFaturamento.zul",
+    "codigo": "ECO108"
+  },
+  {
+    "rotulo": "Histórico de Conta Individual",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cadastro",
+      "Relatórios",
+      "Histórico de Conta Individual"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO113HistoricoContaIndividual.zul",
+    "codigo": "ECO113"
+  },
+  {
+    "rotulo": "Cadastramento de Hidrômetros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Hidrômetro",
+      "Cadastramento de Hidrômetros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO201CadastroHidrometro.zul",
+    "codigo": "ECO201"
+  },
+  {
+    "rotulo": "Aferição de Hidrômetro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Hidrômetro",
+      "Aferição de Hidrômetro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO213AfericaoHidrometro.zul",
+    "codigo": "ECO213"
+  },
+  {
+    "rotulo": "Movimentação de Hidrômetro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Hidrômetro",
+      "Movimentação de Hidrômetro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO202MovimentacaoHidrometro.zul",
+    "codigo": "ECO202"
+  },
+  {
+    "rotulo": "Lacração do Hidrômetro ao Padrão",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Hidrômetro",
+      "Lacração do Hidrômetro ao Padrão"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO203LacracaoHidrometro.zul",
+    "codigo": "ECO203"
+  },
+  {
+    "rotulo": "Comunicado de Inst./Subst./Ret.",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Hidrômetro",
+      "Comunicado de Inst./Subst./Ret."
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO286ComunicadoMovimentacaoHidro.zul",
+    "codigo": "ECO286"
+  },
+  {
+    "rotulo": "Hidrômetros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Consulta",
+      "Hidrômetros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO205ConsultaHidrometro.zul",
+    "codigo": "ECO205"
+  },
+  {
+    "rotulo": "Consumo Hidrômetro Instal/Trocado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Relatório",
+      "Consumo Hidrômetro Instal/Trocado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO212HidrometrosInstaladosTrocados.zul",
+    "codigo": "ECO212"
+  },
+  {
+    "rotulo": "Ligações sem Hidrômetro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Relatório",
+      "Ligações sem Hidrômetro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO265LigacoesSemHidrometros.zul",
+    "codigo": "ECO265"
+  },
+  {
+    "rotulo": "Hidrômetros com Volume Acumulado/Tempo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Relatório",
+      "Hidrômetros com Volume Acumulado/Tempo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO273HidrometroVencido.zul",
+    "codigo": "ECO273"
+  },
+  {
+    "rotulo": "Comunicação Aos Clientes Para Lacração",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Relatório",
+      "Comunicação Aos Clientes Para Lacração"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO285ComunicadoLacracao.zul",
+    "codigo": "ECO285"
+  },
+  {
+    "rotulo": "Ocorrências de Leitura/Corte/Relig",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Código",
+      "Ocorrências de Leitura/Corte/Relig"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO204ControleOcorrencia.zul",
+    "codigo": "ECO204"
+  },
+  {
+    "rotulo": "Controle de Contas Suprimidas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Micromedição",
+      "Suprimidas",
+      "Controle de Contas Suprimidas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO219ControleLigacoesSuprimidas.zul",
+    "codigo": "ECO219"
+  },
+  {
+    "rotulo": "Acerta Leitura/Consumo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Crítica-Consumo",
+      "Acerta Leitura/Consumo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO303AcertaLeituraConsumo.zul",
+    "codigo": "ECO303"
+  },
+  {
+    "rotulo": "Segunda Crítica de Consumo/Leitura",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Segunda Crítica de Consumo/Leitura"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO309AnormalidadeConsumo.zul",
+    "codigo": "ECO309"
+  },
+  {
+    "rotulo": "Controle de Ligação e Movim. Hidrômeto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Controle de Ligação e Movim. Hidrômeto"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Primeira Crítica de Consumo/Leitura",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Primeira Crítica de Consumo/Leitura"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO359PrimeiraCriticaConsumo.zul",
+    "codigo": "ECO359"
+  },
+  {
+    "rotulo": "Contas com Ocorrência",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Contas com Ocorrência"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO360ContaComOcorrencia.zul",
+    "codigo": "ECO360"
+  },
+  {
+    "rotulo": "Revisão de Leitura",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Revisão de Leitura"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO363RevisaoLeitura.zul",
+    "codigo": "ECO363"
+  },
+  {
+    "rotulo": "Clientes c/ Média de Consumo X",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Clientes c/ Média de Consumo X"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO367MediaConsumo.zul",
+    "codigo": "ECO367"
+  },
+  {
+    "rotulo": "Usuários Extrapolaram Parâmetros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Usuários Extrapolaram Parâmetros"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Resumo do Volume Faturado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Resumo do Volume Faturado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Clientes c/ Consumo Faturado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Clientes c/ Consumo Faturado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO376RelacaoClientesConsumoFaturadoEstimado.zul",
+    "codigo": "ECO376"
+  },
+  {
+    "rotulo": "Anormalidades não Criticadas na CO359",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Anormalidades não Criticadas na CO359"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO385SegundaCriticaConsumo.zul",
+    "codigo": "ECO385"
+  },
+  {
+    "rotulo": "Contas não Retornadas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Contas não Retornadas"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Clientes com Irregularidades",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Clientes com Irregularidades"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO395ClientesComIrregularidade.zul",
+    "codigo": "ECO395"
+  },
+  {
+    "rotulo": "Diferença de Consumo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Leitura",
+      "Relatório",
+      "Diferença de Consumo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO344RelDifConsumo.zul",
+    "codigo": "ECO344"
+  },
+  {
+    "rotulo": "Abertura de Financiamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Abertura de Financiamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO411AberturaFinanciamento.zul",
+    "codigo": "ECO411"
+  },
+  {
+    "rotulo": "Controle de NFAg",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Controle de NFAg"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO413ConsultarNotaFiscalRejeitada.zul",
+    "codigo": "ECO413"
+  },
+  {
+    "rotulo": "Cancelamento de Débito/Crédito",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Débitos",
+      "Cancelamento de Débito/Crédito"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO410CancelaDebitoCredito.zul",
+    "codigo": "ECO410"
+  },
+  {
+    "rotulo": "Débito Analítico",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Débitos",
+      "Débito Analítico"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO415ConsultaDebito.zul",
+    "codigo": "ECO415"
+  },
+  {
+    "rotulo": "Simulação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Débitos",
+      "Simulação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO416SimulacaoConta.zul",
+    "codigo": "ECO416"
+  },
+  {
+    "rotulo": "Inclusão de Débito/Crédito",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Débitos",
+      "Inclusão de Débito/Crédito"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO482InclusaoConsultaDebitoCredito.zul",
+    "codigo": "ECO482"
+  },
+  {
+    "rotulo": "Refaturamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Débitos",
+      "Refaturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO488RefaturamentoDebito.zul",
+    "codigo": "ECO488"
+  },
+  {
+    "rotulo": "Contas Pagas com Atraso",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Vencimento",
+      "Contas Pagas com Atraso"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO422ContaPagaAtraso.zul",
+    "codigo": "ECO422"
+  },
+  {
+    "rotulo": "Cadastramento de Tarifas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Cadastramento",
+      "Cadastramento de Tarifas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO404CadastroDeTarifas.zul",
+    "codigo": "ECO404"
+  },
+  {
+    "rotulo": "Códigos de Lançamentos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Cadastramento",
+      "Códigos de Lançamentos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO407CadastrarLancamentos.zul",
+    "codigo": "ECO407"
+  },
+  {
+    "rotulo": "Emissão de Fatura em Braille",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Cadastramento",
+      "Emissão de Fatura em Braille"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO402CadBraille.zul",
+    "codigo": "ECO402"
+  },
+  {
+    "rotulo": "Fatura Digital",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Cadastramento",
+      "Fatura Digital"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO470FaturaEmail.zul",
+    "codigo": "ECO470"
+  },
+  {
+    "rotulo": "Emite Faturamento Avulso",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Faturamento Avulso",
+      "Emite Faturamento Avulso"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO460FaturamentoAvulso.zul",
+    "codigo": "ECO460"
+  },
+  {
+    "rotulo": "Extrato de Lançamentos Futuros",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Extrato de Lançamentos Futuros"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Sintético Provisório Faturamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Sintético Provisório Faturamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Programa Tarifa Social",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Programa Tarifa Social"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Débitos Cancelados/Refaturados",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Débitos Cancelados/Refaturados"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Crítica de Valor Faturado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Crítica de Valor Faturado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO461CriticaValorFaturado.zul",
+    "codigo": "ECO461"
+  },
+  {
+    "rotulo": "Quantidade Lig. Bairros/Distritos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Quantidade Lig. Bairros/Distritos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO472QuantitativoLigacoes.zul",
+    "codigo": "ECO472"
+  },
+  {
+    "rotulo": "Contas por Cidade/Grupo e Rota",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Contas por Cidade/Grupo e Rota"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Tabela de Preços Água/Esgoto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Tabela de Preços Água/Esgoto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO477TabelaPrecosAguaEsgoto.zul",
+    "codigo": "ECO477"
+  },
+  {
+    "rotulo": "Estatística Faturamento/Bairro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Estatística Faturamento/Bairro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO484EstatisticaDeFaturamento.zul",
+    "codigo": "ECO484"
+  },
+  {
+    "rotulo": "Comunicado de Esgoto Sanitário",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Comunicado de Esgoto Sanitário"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO489ComunicadoEsgoto.zul",
+    "codigo": "ECO489"
+  },
+  {
+    "rotulo": "Códigos de Lançamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Códigos de Lançamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO492CodigoLancamento.zul",
+    "codigo": "ECO492"
+  },
+  {
+    "rotulo": "Extrato de lancamentos de creditos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Extrato de lancamentos de creditos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Termo de Ocorrencia de Irregularidade",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Termo de Ocorrencia de Irregularidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO427conIrreg.zul",
+    "codigo": "ECO427"
+  },
+  {
+    "rotulo": "Relatório Analítico do Faturamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Relatório Analítico do Faturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO193RelAnaliticoFat.zul",
+    "codigo": "ECO193"
+  },
+  {
+    "rotulo": "Controle de Fatura Digital",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Controle de Fatura Digital"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO146ControleFaturaEmail.zul",
+    "codigo": "ECO146"
+  },
+  {
+    "rotulo": "Relação Deb. Abertos por Órgão Pagador",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Faturamento",
+      "Relátorio",
+      "Relação Deb. Abertos por Órgão Pagador"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO530DebitosPorOrgaoPagador.zul",
+    "codigo": "ECO530"
+  },
+  {
+    "rotulo": "Usuário com corte suspenso",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Usuário com corte suspenso"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO520UsuarioComCorteSuspenso.zul",
+    "codigo": "ECO520"
+  },
+  {
+    "rotulo": "Débitos em Aberto/Usuário",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Débitos",
+      "Débitos em Aberto/Usuário"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO506ConsultaDebitoAberto.zul",
+    "codigo": "ECO506"
+  },
+  {
+    "rotulo": "Emissão de 2ª Via de Fatura(s)",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Débitos",
+      "Emissão de 2ª Via de Fatura(s)"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO548SegundaVia.zul",
+    "codigo": "ECO548"
+  },
+  {
+    "rotulo": "Controle de Corte/Revisão/Religação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Controle de Corte/Revisão/Religação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO501CorteRevisaoReligacao.zul",
+    "codigo": "ECO501"
+  },
+  {
+    "rotulo": "Controle de Revisão de Corte",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Controle de Revisão de Corte"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO502ControleRevisaoCorte.zul",
+    "codigo": "ECO502"
+  },
+  {
+    "rotulo": "Revisões Violadas de Contas Cortadas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Revisões Violadas de Contas Cortadas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO504RevisaoNaoDigitadasOuVioladas.zul",
+    "codigo": "ECO504"
+  },
+  {
+    "rotulo": "Relatório de Contas Cortadas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Relatório de Contas Cortadas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO515RelatorioContasCortadas.zul",
+    "codigo": "ECO515"
+  },
+  {
+    "rotulo": "Reaviso de Débitos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Reaviso de Débitos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO562ReavisoDebito.zul",
+    "codigo": "ECO562"
+  },
+  {
+    "rotulo": "Ordem De Serviço De Religação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Ordem De Serviço De Religação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO512SolicitacaoReligacao.zul",
+    "codigo": "ECO512"
+  },
+  {
+    "rotulo": "Comunicado de Débito",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Comunicado de Débito"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
+    "codigo": "ECO510"
+  },
+  {
+    "rotulo": "Painel de Cortes",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Painel de Cortes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
+    "codigo": "ECO510"
+  },
+  {
+    "rotulo": "Painel de Religação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Painel de Religação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
+    "codigo": "ECO510"
+  },
+  {
+    "rotulo": "Painel de Revisão de Cortes",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Mecanismos Cobrança",
+      "Painel de Revisão de Cortes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
+    "codigo": "ECO510"
+  },
+  {
+    "rotulo": "Financiamento/Parcelamento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Negociação",
+      "Financiamento/Parcelamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO505ConsultaParcelamento.zul",
+    "codigo": "ECO505"
+  },
+  {
+    "rotulo": "Usuários com Prazos Cadastrados",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Negociação",
+      "Usuários com Prazos Cadastrados"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Nr. Doc Faturamento Avulso",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Negociação",
+      "Nr. Doc Faturamento Avulso"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO516ConsultaFaturaConta.zul",
+    "codigo": "ECO516"
+  },
+  {
+    "rotulo": "Negociação de Débitos Particulares",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Negociação",
+      "Negociação de Débitos Particulares"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO592NegociaDebitoParticular.zul",
+    "codigo": "ECO592"
+  },
+  {
+    "rotulo": "Histórico de Débito Automático",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Débito Automático",
+      "Histórico de Débito Automático"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO550HistoricoDebitoAutomatico.zul",
+    "codigo": "ECO550"
+  },
+  {
+    "rotulo": "Revisão de Corte",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Revisão de Corte"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO536RelacaoParaRevisaoDeCorte.zul",
+    "codigo": "ECO536"
+  },
+  {
+    "rotulo": "Anormalidades no Corte/Ocorrência",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Anormalidades no Corte/Ocorrência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Estatística de Dados de Cobrança",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Estatística de Dados de Cobrança"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "OSR Emitidas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "OSR Emitidas"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Faturamento Avulso em Aberto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Faturamento Avulso em Aberto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO556FaturamentoAvulso.zul",
+    "codigo": "ECO556"
+  },
+  {
+    "rotulo": "Extrato de Débito",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Extrato de Débito"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO563ExtratoDebito.zul",
+    "codigo": "ECO563"
+  },
+  {
+    "rotulo": "Contas para Corte/Supressão",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Contas para Corte/Supressão"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Religação por Motivo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Religação por Motivo"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Controle de Corte/Revisão/Religação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Controle de Corte/Revisão/Religação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO501CorteRevisaoReligacao.zul",
+    "codigo": "ECO501"
+  },
+  {
+    "rotulo": "Contas Retornadas/Não Ret. Corte",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Contas Retornadas/Não Ret. Corte"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO584ContasRetornadas.zul",
+    "codigo": "ECO584"
+  },
+  {
+    "rotulo": "Resumo Cortes, Revisões e Religações",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Resumo Cortes, Revisões e Religações"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO596ResumoCortesEmitidosRealizados.zul",
+    "codigo": "ECO596"
+  },
+  {
+    "rotulo": "Débitos Pendentes",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Cobrança",
+      "Relatório",
+      "Débitos Pendentes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO585DebitosPendentes.zul",
+    "codigo": "ECO585"
+  },
+  {
+    "rotulo": "Motivo de Baixa de Arrecadação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Baixa",
+      "Motivo de Baixa de Arrecadação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO616MotivoBaixa.zul",
+    "codigo": "ECO616"
+  },
+  {
+    "rotulo": "Arrecadação Diária por Banco",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Baixa",
+      "Arrecadação Diária por Banco"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO607ArrecadacaoDiaria.zul",
+    "codigo": "ECO607"
+  },
+  {
+    "rotulo": "Débitos Baixados de Usuários",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Baixa",
+      "Débitos Baixados de Usuários"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO609ConsultaDebitosBaixadosCliente.zul",
+    "codigo": "ECO609"
+  },
+  {
+    "rotulo": "Faturamento por Órgão Pagador",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Consulta",
+      "Faturamento por Órgão Pagador"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Declaração de quitação anual de débitos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Consulta",
+      "Declaração de quitação anual de débitos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO625DeclaracaoQuitacao.zul",
+    "codigo": "ECO625"
+  },
+  {
+    "rotulo": "Valores por Número de Documento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Consulta",
+      "Valores por Número de Documento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO697ConsultaDadosDocumento.zul",
+    "codigo": "ECO697"
+  },
+  {
+    "rotulo": "Quantidade de Contas em Débito Automátic",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Consulta",
+      "Quantidade de Contas em Débito Automátic"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO106DebitoAutomatico.zul",
+    "codigo": "ECO106"
+  },
+  {
+    "rotulo": "Emitir Certidão Negativa",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Consulta",
+      "Emitir Certidão Negativa"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO635EmitirCertidaoNegativa.zul",
+    "codigo": "ECO635"
+  },
+  {
+    "rotulo": "Demonstrativo Arrecadação Diária",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Relatório",
+      "Demonstrativo Arrecadação Diária"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO623ArrecadacaoDiaria.zul",
+    "codigo": "ECO623"
+  },
+  {
+    "rotulo": "Arrecadação Contábil/Cidade",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Arrecadação",
+      "Relatório",
+      "Arrecadação Contábil/Cidade"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "História do Usuário",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Histórico",
+      "História do Usuário"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO712HistoricoUsuario.zul",
+    "codigo": "ECO712"
+  },
+  {
+    "rotulo": "Códigos de Serviço",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Código Serviço",
+      "Códigos de Serviço"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO706ConsultaServico.zul",
+    "codigo": "ECO706"
+  },
+  {
+    "rotulo": "RAs por Número de Conta",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Consulta RA",
+      "RAs por Número de Conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO707ConsultaRAConta.zul",
+    "codigo": "ECO707"
+  },
+  {
+    "rotulo": "RAs por Solicitante",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Consulta RA",
+      "RAs por Solicitante"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO708ConsultaRASolicitante.zul",
+    "codigo": "ECO708"
+  },
+  {
+    "rotulo": "RAs por Logradouro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Consulta RA",
+      "RAs por Logradouro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO709ConsultaRALogradouro.zul",
+    "codigo": "ECO709"
+  },
+  {
+    "rotulo": "RA em Execução/Executado",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Consulta RA",
+      "RA em Execução/Executado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO711ConsultaRaExecucao.zul",
+    "codigo": "ECO711"
+  },
+  {
+    "rotulo": "Retorno de Registro de Atendimento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Consulta RA",
+      "Retorno de Registro de Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO795RetornoRegistroAtendimento.zul",
+    "codigo": "ECO795"
+  },
+  {
+    "rotulo": "Alteração e Impressão de RA",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Impressão RA",
+      "Alteração e Impressão de RA"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO731AlteracaoImpressaoRA.zul",
+    "codigo": "ECO731"
+  },
+  {
+    "rotulo": "Registro de Atendimento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Cadastro",
+      "Registro de Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO701RegistroAtendimento.zul",
+    "codigo": "ECO701"
+  },
+  {
+    "rotulo": "Análise de Recadastramento",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Cadastro",
+      "Análise de Recadastramento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO186AnaliseRecadastramento.zul",
+    "codigo": "ECO186"
+  },
+  {
+    "rotulo": "RAs Emitidos no Mês",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Relatório",
+      "RAs Emitidos no Mês"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "RAs Pendentes por Código Serviço",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Relatório",
+      "RAs Pendentes por Código Serviço"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Estatística Serviços Exec./Cidade",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Relatório",
+      "Estatística Serviços Exec./Cidade"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Impressão de RA",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Relatório",
+      "Impressão de RA"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO728ImpressaoRA.zul",
+    "codigo": "ECO728"
+  },
+  {
+    "rotulo": "Relatório de Medição de Serviços",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Execução/Serviços",
+      "Relatório",
+      "Relatório de Medição de Serviços"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO189RelatorioMedicaoServicos.zul",
+    "codigo": "ECO189"
+  },
+  {
+    "rotulo": "WEBCOM - Vídeo Aulas",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "WEBCOM - Vídeo Aulas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO830VideoAulas.zul",
+    "codigo": "ECO830"
+  },
+  {
+    "rotulo": "Áreas de Inf. dos Reservatórios",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Atendimento Cliente",
+      "Áreas de Inf. dos Reservatórios"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Preços e Serviços",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Tabelas de Preços e Serviço",
+      "Preços e Serviços"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Legislação",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Legislação",
+      "Legislação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO804Legislacoes.zul",
+    "codigo": "ECO804"
+  },
+  {
+    "rotulo": "Coletânea Regulação dos Serviços",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Legislação",
+      "Coletânea Regulação dos Serviços"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO825ColetaneaRegulacaoServicos.zul",
+    "codigo": "ECO825"
+  },
+  {
+    "rotulo": "Escritórios de Cobrança",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Cobranca Extra-Judic/Judicial",
+      "Escritórios de Cobrança"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Doc. do Macroprocesso de Comercialização",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Doc. do Macroprocesso de Comercialização"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Política de Ligação de Água",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Política de Ligação de Água"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Requisitos do Cliente",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Requisitos do Cliente"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Coletânea de Diretrizes Comerciais",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Coletânea de Diretrizes Comerciais"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Política de Ligação de Esgoto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Política de Ligação de Esgoto"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Política de Titularidade",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Documentos Normativos",
+      "Política de Titularidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO823PoliticaTitularidade.zul",
+    "codigo": "ECO823"
+  },
+  {
+    "rotulo": "Ligado no Esgoto",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Projetos da Comercialização",
+      "Ligado no Esgoto"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Goiás afora Receita adentro",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Projetos da Comercialização",
+      "Goiás afora Receita adentro"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Cadastramento Grande Gerador",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Cadastramento Grande Gerador"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO348CadastroGrandeGeradorOleo.zul",
+    "codigo": "ECO348"
+  },
+  {
+    "rotulo": "Concessão de Crédito",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Concessão de Crédito"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO349ConcessaoCreditoOleoFornecido.zul",
+    "codigo": "ECO349"
+  },
+  {
+    "rotulo": "Cadastro de Bombona",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Cadastro de Bombona"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Listagem Coleta Óleo",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Listagem Coleta Óleo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO351ListagemColetaOleo.zul",
+    "codigo": "ECO351"
+  },
+  {
+    "rotulo": "Consulta Estoque",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Consulta Estoque"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO357estoque.zul",
+    "codigo": "ECO357"
+  },
+  {
+    "rotulo": "Procedimentos",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Procedimentos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Grande Gerador",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Relatório",
+      "Grande Gerador"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Estatístico Comercialização",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Diversos",
+      "Programa Olho no Óleo",
+      "Relatório",
+      "Estatístico Comercialização"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Solicitar Titularidade",
+    "caminho_menu": [
+      "COMERCIAL - WEBCOM",
+      "Titularidade",
+      "Solicitar Titularidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO010Titularidade.zul",
+    "codigo": "ECO010"
+  },
+  {
+    "rotulo": "Consulta de documentos digitalizados",
+    "caminho_menu": [
+      "CONTROLE DE DOCUMENTOS",
+      "Documentos",
+      "Consulta de documentos digitalizados"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "IQA Anual",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Relatório",
+      "IQA Anual"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Demonstrativo Qtdes de Contas por Bairro",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Relatório",
+      "Demonstrativo Qtdes de Contas por Bairro"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Gráfico do IQA Médio por Cidade",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Relatório",
+      "Gráfico do IQA Médio por Cidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqa/LQA081GraficoIQAMedio.zul",
+    "codigo": "LQA081"
+  },
+  {
+    "rotulo": "Irregularidades",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Relatório",
+      "Irregularidades"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Resumo das Irregularidades",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Relatório",
+      "Resumo das Irregularidades"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqa/LQA083ResumoIrregularidades.zul",
+    "codigo": "LQA083"
+  },
+  {
+    "rotulo": "Cadastro de Mananciais/Bacias",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Cadastro",
+      "Cadastro de Mananciais/Bacias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA",
+    "caminho_menu": [
+      "CONTROLE DE QUALIDADE DA ÁGUA",
+      "Consulta",
+      "DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqa/LQA036RelatorioSISAGUA.zul",
+    "codigo": "LQA036"
+  },
+  {
+    "rotulo": "Cadastro de Cidade",
+    "caminho_menu": [
+      "Dados Corporativos",
+      "Cadastro",
+      "Cadastro de Cidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mps/MPS005CadastroCidade.zul",
+    "codigo": "MPS005"
+  },
+  {
+    "rotulo": "Logradouro",
+    "caminho_menu": [
+      "Dados Corporativos",
+      "Cadastro",
+      "Logradouro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mps/MPS540CadastroLogradouro.zul",
+    "codigo": "MPS540"
+  },
+  {
+    "rotulo": "Relaciona Logradouro - Bairro",
+    "caminho_menu": [
+      "Dados Corporativos",
+      "Cadastro",
+      "Relaciona Logradouro - Bairro"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mps/MPS540CadastroLogradouro.zul",
+    "codigo": "MPS540"
+  },
+  {
+    "rotulo": "Cep Correios",
+    "caminho_menu": [
+      "Dados Corporativos",
+      "Consulta",
+      "Cep Correios"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mps/MPS540CadastroLogradouro.zul",
+    "codigo": "MPS540"
+  },
+  {
+    "rotulo": "Andamento das Notificações Órgão Público",
+    "caminho_menu": [
+      "Gestão da Regulação",
+      "Notificação Órgãos Reguladores",
+      "Cadastro",
+      "Andamento das Notificações Órgão Público"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fca/FCA002AndamentoDeterminacaoAGR.zul",
+    "codigo": "FCA002"
+  },
+  {
+    "rotulo": "Consulta de Infração",
+    "caminho_menu": [
+      "Gestão da Regulação",
+      "Notificação Órgãos Reguladores",
+      "Consulta",
+      "Consulta de Infração"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fca/FCA005ConsultaAutoInfracao.zul",
+    "codigo": "FCA005"
+  },
+  {
+    "rotulo": "Consulta de Notificação",
+    "caminho_menu": [
+      "Gestão da Regulação",
+      "Notificação Órgãos Reguladores",
+      "Consulta",
+      "Consulta de Notificação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fca/FCA003ConsultaTermoNotificacao.zul",
+    "codigo": "FCA003"
+  },
+  {
+    "rotulo": "Consulta de RDs",
+    "caminho_menu": [
+      "Gestão de Documentos",
+      "Consulta",
+      "Consulta de RDs"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
+    "codigo": "AGD001"
+  },
+  {
+    "rotulo": "Requisição Obras/Serviços",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Requisição",
+      "Requisição Obras/Serviços"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC001RequisicaoObraServico.zul",
+    "codigo": "FGC001"
+  },
+  {
+    "rotulo": "Consulta Processo Licitatório",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Contratação",
+      "Consulta Processo Licitatório"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC025ConsultaProcessoLicitatorio.zul",
+    "codigo": "FGC025"
+  },
+  {
+    "rotulo": "Contratos por UO, Cidade, Forn. e Gestor",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Contratos por UO, Cidade, Forn. e Gestor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC037RelacaoContratos.zul",
+    "codigo": "FGC037"
+  },
+  {
+    "rotulo": "Fornecedor",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Fornecedor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC028ConsultaFornecedor.zul",
+    "codigo": "FGC028"
+  },
+  {
+    "rotulo": "Processo",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Processo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC018ConsultaProcesso.zul",
+    "codigo": "FGC018"
+  },
+  {
+    "rotulo": "Orçamento de Programas",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Orçamento de Programas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC052OrcamentoPrograma.zul",
+    "codigo": "FGC052"
+  },
+  {
+    "rotulo": "Requisição Obras/Serviços",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Requisição Obras/Serviços"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC026ConsultaRequisicao.zul",
+    "codigo": "FGC026"
+  },
+  {
+    "rotulo": "Requisições por Gestor",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Requisições por Gestor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC033RequisicoesPorGestor.zul",
+    "codigo": "FGC033"
+  },
+  {
+    "rotulo": "Requisições por UO",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Requisições por UO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC032RelacaoRequisicoes.zul",
+    "codigo": "FGC032"
+  },
+  {
+    "rotulo": "Contratos por Gestor",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Contratos por Gestor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC303ConContratosPorGestor.zul",
+    "codigo": "FGC303"
+  },
+  {
+    "rotulo": "Consulta Contrato Saneago x SAP",
+    "caminho_menu": [
+      "Gestão Contratos",
+      "Consulta",
+      "Consulta Contrato Saneago x SAP"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC068ConsultarContratoSaneagoSAP.zul",
+    "codigo": "FGC068"
+  },
+  {
+    "rotulo": "Unidades Consumidoras de Energia",
+    "caminho_menu": [
+      "Gestão Energética",
+      "Cadastro",
+      "Unidades Consumidoras de Energia"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/len/LEN110CadastroUnidadeConsumidora.zul",
+    "codigo": "LEN110"
+  },
+  {
+    "rotulo": "Interrupção de Energia",
+    "caminho_menu": [
+      "Gestão Energética",
+      "Cadastro",
+      "Interrupção de Energia"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/len/LEN145CadastroInterrupcaoEnergia.zul",
+    "codigo": "LEN145"
+  },
+  {
+    "rotulo": "Interrupção de Energia",
+    "caminho_menu": [
+      "Gestão Energética",
+      "Relatório",
+      "Interrupção de Energia"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/len/LEN146ControleInterrupcaoEnergia.zul",
+    "codigo": "LEN146"
+  },
+  {
+    "rotulo": "Cadastro de Veículo",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Veículos",
+      "Cadastro de Veículo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT301Veiculo.zul",
+    "codigo": "PGT301"
+  },
+  {
+    "rotulo": "Cadastro de Motorista",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Motoristas",
+      "Cadastro de Motorista"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT401CadastroMotorista.zul",
+    "codigo": "PGT401"
+  },
+  {
+    "rotulo": "Nova Ordem de Tráfego",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Nova Ordem de Tráfego"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT500CadastroOrdemTrafego.zul",
+    "codigo": "PGT500"
+  },
+  {
+    "rotulo": "Atendimento",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Atendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul",
+    "codigo": "PGT510"
+  },
+  {
+    "rotulo": "Registro Offline",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Registro Offline"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT504OrdemTrafegoOff.zul",
+    "codigo": "PGT504"
+  },
+  {
+    "rotulo": "Resumo",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Resumo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
+    "codigo": "PGT505"
+  },
+  {
+    "rotulo": "Ordem de Tráfego em Reserva",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Ordem de Tráfego em Reserva"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul?in=1",
+    "codigo": "PGT510"
+  },
+  {
+    "rotulo": "Empregados Ordem de Tráfego",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Ordem Tráfego",
+      "Empregados Ordem de Tráfego"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT511EmpregadoOrdemTrafego.zul",
+    "codigo": "PGT511"
+  },
+  {
+    "rotulo": "Veículos Próprios",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Veículos Próprios"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Gastos por Periodo",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Gastos por Periodo"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Ordens de Tráfego p/ Período e Situação",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Ordens de Tráfego p/ Período e Situação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT912RelatorioOrdemTrafego.zul",
+    "codigo": "PGT912"
+  },
+  {
+    "rotulo": "Motoristas",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Motoristas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT916RelatorioMotorista.zul",
+    "codigo": "PGT916"
+  },
+  {
+    "rotulo": "Veiculos Alugados",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Veiculos Alugados"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Ordem de tráfego por motorista",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Relatórios",
+      "Ordem de tráfego por motorista"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT918OrdemTrafegoMotorista.zul",
+    "codigo": "PGT918"
+  },
+  {
+    "rotulo": "Custo do Km Rodado",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Custo do Km Rodado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Disc. Gasto com Abast./Troca",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Disc. Gasto com Abast./Troca"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Disc. Gasto com Manutenção",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Disc. Gasto com Manutenção"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Gasto com Abastecimento",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Gasto com Abastecimento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Gasto com Manutenção",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Gasto com Manutenção"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relatório de Movimentação de Veículos",
+    "caminho_menu": [
+      "Gestão Transporte",
+      "Frota Própria",
+      "Relatórios",
+      "Relatório de Movimentação de Veículos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/pgt/PGT913RelatorioMovimentacaoVeiculo.zul",
+    "codigo": "PGT913"
+  },
+  {
+    "rotulo": "Consumo Master por Cidade",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Consumo Master por Cidade"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Compara Consumos Medidos",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Compara Consumos Medidos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contratos a Vencer",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Contratos a Vencer"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW305ContratosVencer.zul",
+    "codigo": "EGW305"
+  },
+  {
+    "rotulo": "Consumo e Faturamento Individualizados",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Consumo e Faturamento Individualizados"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW313ConsumoFaturadoIndividualizado.zul",
+    "codigo": "EGW313"
+  },
+  {
+    "rotulo": "Cliente por Faixa de Consumo",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Cliente por Faixa de Consumo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW401ClienteFaixaConsumo.zul",
+    "codigo": "EGW401"
+  },
+  {
+    "rotulo": "Controle do Envio do Resumo",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Consulta",
+      "Controle do Envio do Resumo"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW006ConsultaEnvioIndividualizado.zul",
+    "codigo": "EGW006"
+  },
+  {
+    "rotulo": "Faturamento",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Gráfico",
+      "Faturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW402GraficoFaturamento.zul",
+    "codigo": "EGW402"
+  },
+  {
+    "rotulo": "Contrato Comercial",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Cadastro",
+      "Contrato Comercial"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW001CadastroContratoComercial.zul",
+    "codigo": "EGW001"
+  },
+  {
+    "rotulo": "Resumo de Faturamento",
+    "caminho_menu": [
+      "Grandes Clientes Web",
+      "Cadastro",
+      "Resumo de Faturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW005EnvioResumoFaturamento.zul",
+    "codigo": "EGW005"
+  },
+  {
+    "rotulo": "Fale com Compliance",
+    "caminho_menu": [
+      "GESTÃO DE GOVERNANÇA",
+      "Compliance",
+      "Fale com Compliance"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgo/FGO002FaleComCompliance.zul",
+    "codigo": "FGO002"
+  },
+  {
+    "rotulo": "Previsto X Executado",
+    "caminho_menu": [
+      "GESTÃO DE OBRAS",
+      "Consulta",
+      "Previsto X Executado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/koc/KOC004ConsultaPrevistoExecutado.zul",
+    "codigo": "KOC004"
+  },
+  {
+    "rotulo": "Consulta Empreendimento",
+    "caminho_menu": [
+      "GESTÃO DE OBRAS",
+      "Consulta",
+      "Consulta Empreendimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/koc/KOC005ConsultaEmpreendimento.zul",
+    "codigo": "KOC005"
+  },
+  {
+    "rotulo": "Registrar RNC",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Controle",
+      "Registrar RNC"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ026RegistrarRNC.zul",
+    "codigo": "FGQ026"
+  },
+  {
+    "rotulo": "Tratar NC",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Tratamento NC",
+      "Tratar NC"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
+    "codigo": "FGQ006"
+  },
+  {
+    "rotulo": "Relatório Geral",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Consulta",
+      "Relatório Geral"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ018RelatorioGeralRNC.zul",
+    "codigo": "FGQ018"
+  },
+  {
+    "rotulo": "UO Responsável pelo RNC",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Consulta",
+      "UO Responsável pelo RNC"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ017ConsultaUOResp.zul",
+    "codigo": "FGQ017"
+  },
+  {
+    "rotulo": "RNC onde ocorreu NC",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Consulta",
+      "RNC onde ocorreu NC"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ019ConsultaRNCOndeOcorreuNC.zul",
+    "codigo": "FGQ019"
+  },
+  {
+    "rotulo": "RNC por Período",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Não Conformidade",
+      "Consulta",
+      "RNC por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ020ConsultaRACPPeriodo.zul",
+    "codigo": "FGQ020"
+  },
+  {
+    "rotulo": "Documentos Normativos",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Documentos",
+      "Consulta",
+      "Documentos Normativos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ004ConsultaDocNormativo.zul",
+    "codigo": "FGQ004"
+  },
+  {
+    "rotulo": "Documentos por UO",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Documentos",
+      "Consulta",
+      "Documentos por UO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ024docUO.zul",
+    "codigo": "FGQ024"
+  },
+  {
+    "rotulo": "Relatório Doc. Normativo por UO Resp.",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Documentos",
+      "Consulta",
+      "Relatório Doc. Normativo por UO Resp."
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ037RelatorioDocNorUOResp.zul",
+    "codigo": "FGQ037"
+  },
+  {
+    "rotulo": "Histórico Auditor",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Auditoria",
+      "Consulta",
+      "Histórico Auditor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ022HistoricoAuditor.zul",
+    "codigo": "FGQ022"
+  },
+  {
+    "rotulo": "Auditoria",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Auditoria",
+      "Controle",
+      "Auditoria"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ011Auditoria.zul",
+    "codigo": "FGQ011"
+  },
+  {
+    "rotulo": "Auditor",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Auditoria",
+      "Cadastro",
+      "Auditor"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
+    "codigo": "FGQ010"
+  },
+  {
+    "rotulo": "Curso",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Auditoria",
+      "Cadastro",
+      "Curso"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ014CadastrarCursoAuditoria.zul",
+    "codigo": "FGQ014"
+  },
+  {
+    "rotulo": "Equipes",
+    "caminho_menu": [
+      "GESTÃO INTEGRADA",
+      "Auditoria",
+      "Cadastro",
+      "Equipes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ012CadastrarEquipeAuditoria.zul",
+    "codigo": "FGQ012"
+  },
+  {
+    "rotulo": "Cadastro de Ocorrêcias nas Amostras",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Operação",
+      "Cadastro de Ocorrêcias nas Amostras"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE018cadOcoAmtr.zul",
+    "codigo": "LQE018"
+  },
+  {
+    "rotulo": "Ocorrências nas Análises",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Operação",
+      "Ocorrências nas Análises"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE028cadastroOcorrenciaAnalise.zul",
+    "codigo": "LQE028"
+  },
+  {
+    "rotulo": "Consultar Amostras",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Consulta",
+      "Consultar Amostras"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE025ConsultaAmostra.zul",
+    "codigo": "LQE025"
+  },
+  {
+    "rotulo": "Amostras Liberadas por Período",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Consulta",
+      "Amostras Liberadas por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE029ConAmostras.zul",
+    "codigo": "LQE029"
+  },
+  {
+    "rotulo": "Laudos Laboratoriais",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Relatório",
+      "Laudos Laboratoriais"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE027GeraLaudos.zul",
+    "codigo": "LQE027"
+  },
+  {
+    "rotulo": "Relatório do IQEt por data",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Relatório",
+      "Relatório do IQEt por data"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE039RelatorioIQEt.zul",
+    "codigo": "LQE039"
+  },
+  {
+    "rotulo": "Resultados das Análises - Planilha",
+    "caminho_menu": [
+      "Indice Qualidade Esgoto",
+      "Relatório",
+      "Resultados das Análises - Planilha"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/lqe/LQE030ResultadoAnalisePlanilha.zul",
+    "codigo": "LQE030"
+  },
+  {
+    "rotulo": "Mapa Web SanSIG",
+    "caminho_menu": [
+      "Informações Geográficas",
+      "SanSIG",
+      "Mapa Web SanSIG"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Boletim Informativo",
+    "caminho_menu": [
+      "Informacoes Gerenciais",
+      "Relatório",
+      "Boletim Informativo",
+      "Boletim Informativo"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Cadastro de Atividade de Agrupamento",
+    "caminho_menu": [
+      "Informacoes Gerenciais",
+      "PIS",
+      "Cadastro",
+      "Cadastro de Atividade de Agrupamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mig/MIG018CadAtividade.zul",
+    "codigo": "MIG018"
+  },
+  {
+    "rotulo": "Plano de Ação",
+    "caminho_menu": [
+      "Informacoes Gerenciais",
+      "PIS",
+      "Planejamento",
+      "Plano de Ação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mig/MIG602PlanoAcaoRegular.zul",
+    "codigo": "MIG602"
+  },
+  {
+    "rotulo": "Análise Critica",
+    "caminho_menu": [
+      "Informacoes Gerenciais",
+      "PIS",
+      "Planejamento",
+      "Análise Critica"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mig/MIG605AnaliseCriticaPES.zul",
+    "codigo": "MIG605"
+  },
+  {
+    "rotulo": "Notificação",
+    "caminho_menu": [
+      "Manutenção Equipamentos",
+      "Ordem de Serviço",
+      "Notificação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gmq/GMQ001Notificacao.zul",
+    "codigo": "GMQ001"
+  },
+  {
+    "rotulo": "Providência - UO Responsável",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Cadastro",
+      "Providência - UO Responsável"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul",
+    "codigo": "MGO012"
+  },
+  {
+    "rotulo": "Registro de Ocorrência por Vencimento",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Consulta",
+      "Registro de Ocorrência por Vencimento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO021ConsultaOcorrenciaVencimento.zul",
+    "codigo": "MGO021"
+  },
+  {
+    "rotulo": "Encaminhamento de RO",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Consulta",
+      "Encaminhamento de RO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO029ConsultaEncaminhamentoRo.zul",
+    "codigo": "MGO029"
+  },
+  {
+    "rotulo": "Registro de Ocorrência Pendente",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Consulta",
+      "Registro de Ocorrência Pendente"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO033RegistroOcorrenciaPendente.zul",
+    "codigo": "MGO033"
+  },
+  {
+    "rotulo": "Áreas Setoriais OGE",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Consulta",
+      "Áreas Setoriais OGE"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO059AreaSetorial.zul",
+    "codigo": "MGO059"
+  },
+  {
+    "rotulo": "Painel Estatístico Ouvidoria",
+    "caminho_menu": [
+      "Ouvidoria",
+      "Paineis",
+      "Painel Estatístico Ouvidoria"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO059AreaSetorial.zul",
+    "codigo": "MGO059"
+  },
+  {
+    "rotulo": "Manobra de Registros",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Cadastro",
+      "Manobra de Registros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+    "codigo": "GPM001"
+  },
+  {
+    "rotulo": "Manobra",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Cadastro",
+      "Manobra"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Área Afetada",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Cadastro",
+      "Área Afetada"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Inclui Área Afetada não Prevista",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Cadastro",
+      "Inclui Área Afetada não Prevista"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Área Influência",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Cadastro",
+      "Consulta Área Influência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Registro Fechado",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Consulta",
+      "Registro Fechado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Registro Fechado por Período",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Consulta",
+      "Registro Fechado por Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Registro a Ser Fechado",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Consulta",
+      "Consulta Registro a Ser Fechado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Paralisação/Intermitência",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Consulta",
+      "Paralisação/Intermitência"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM016ParalizacaoIntermitencia.zul",
+    "codigo": "GPM016"
+  },
+  {
+    "rotulo": "Seleciona Valvula",
+    "caminho_menu": [
+      "Painel Manobras",
+      "Consulta",
+      "Seleciona Valvula"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Plano de Lotação",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Cadastro",
+      "Plano de Lotação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA001ConfirmaPlanoLotacao.zul",
+    "codigo": "BPA001"
+  },
+  {
+    "rotulo": "Histórico Funcional",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Consultas",
+      "Histórico Funcional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA433HistoricoFuncional.zul",
+    "codigo": "BPA433"
+  },
+  {
+    "rotulo": "Autoavaliação de Desempenho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Autoavaliação de Desempenho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA359Autoavaliacao.zul",
+    "codigo": "BPA359"
+  },
+  {
+    "rotulo": "Avaliação de Desempenho dos Gestores",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Avaliação de Desempenho dos Gestores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA360AvaliacaoGestores.zul",
+    "codigo": "BPA360"
+  },
+  {
+    "rotulo": "Avaliação do Empregado",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Avaliação do Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA354AvaliacaoDesempenho.zul",
+    "codigo": "BPA354"
+  },
+  {
+    "rotulo": "Gerenciamento e Devolutiva - Avaliaçoes",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Gerenciamento e Devolutiva - Avaliaçoes"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA361AcompanhamentoAvaliacao.zul",
+    "codigo": "BPA361"
+  },
+  {
+    "rotulo": "Resultado Avaliação de Desempenho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Resultado Avaliação de Desempenho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA356ResultadoAvaliacaoDesempenho.zul",
+    "codigo": "BPA356"
+  },
+  {
+    "rotulo": "Relatório Avaliação de Desempenho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Gestão de Desempenho",
+      "Relatório Avaliação de Desempenho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA358RelatorioAvaliacaoDesempenho.zul",
+    "codigo": "BPA358"
+  },
+  {
+    "rotulo": "Inscrição PDV",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "PDV",
+      "Inscrição PDV"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA372InscricaoPDV.zul",
+    "codigo": "BPA372"
+  },
+  {
+    "rotulo": "Ranking PDV",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "PDV",
+      "Ranking PDV"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA373RankingPDV.zul",
+    "codigo": "BPA373"
+  },
+  {
+    "rotulo": "Painel da Trilha",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Trilha do Conhecimento",
+      "Painel da Trilha"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA604PainelDaTrilha.zul",
+    "codigo": "BPA604"
+  },
+  {
+    "rotulo": "Gestão de Empregados no Teletrabalho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Isolamento Social",
+      "Gestão de Empregados no Teletrabalho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA004GestaoEmpregadosTeletrabalho.zul",
+    "codigo": "BPA004"
+  },
+  {
+    "rotulo": "Reporte de Atividades de Teletrabalho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Isolamento Social",
+      "Reporte de Atividades de Teletrabalho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA005ReporteAtividadesTeletrabalho.zul",
+    "codigo": "BPA005"
+  },
+  {
+    "rotulo": "Painel de Empregados em Teletrabalho",
+    "caminho_menu": [
+      "Planejamento Rec Humanos",
+      "Isolamento Social",
+      "Painel de Empregados em Teletrabalho"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bpa/BPA005ReporteAtividadesTeletrabalho.zul",
+    "codigo": "BPA005"
+  },
+  {
+    "rotulo": "Erros do Distrito por Período",
+    "caminho_menu": [
+      "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+      "Controle",
+      "Erros do Distrito por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul",
+    "codigo": "ECS006"
+  },
+  {
+    "rotulo": "Gerar Planilha",
+    "caminho_menu": [
+      "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+      "Controle",
+      "Gerar Planilha"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecs/ECS007GerarPlanilha.zul",
+    "codigo": "ECS007"
+  },
+  {
+    "rotulo": "Gerenciar Planilha de Controle",
+    "caminho_menu": [
+      "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+      "Controle",
+      "Gerenciar Planilha de Controle"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecs/ECS009GerenciarPlanilhaControle.zul",
+    "codigo": "ECS009"
+  },
+  {
+    "rotulo": "Gerar Resumo do Faturamento",
+    "caminho_menu": [
+      "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+      "Controle",
+      "Gerar Resumo do Faturamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecs/ECS010GerarResumoFaturamento.zul",
+    "codigo": "ECS010"
+  },
+  {
+    "rotulo": "Apontamento de Erros",
+    "caminho_menu": [
+      "QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS",
+      "Relatório",
+      "Apontamento de Erros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecs/ECS008RelatorioApontamentoErros.zul",
+    "codigo": "ECS008"
+  },
+  {
+    "rotulo": "Consulta Acessos por Usuário",
+    "caminho_menu": [
+      "Segurança",
+      "Usuário",
+      "Consulta Acessos por Usuário"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS420ConsultaPerfilUsuario.zul",
+    "codigo": "MSS420"
+  },
+  {
+    "rotulo": "Cadastro Para Recuperar Senha",
+    "caminho_menu": [
+      "Segurança",
+      "Usuário",
+      "Cadastro Para Recuperar Senha"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS005RecuperarSenha.zul",
+    "codigo": "MSS005"
+  },
+  {
+    "rotulo": "Autorização Acesso por Usuário Virtual",
+    "caminho_menu": [
+      "Segurança",
+      "Usuário",
+      "Autorização",
+      "Autorização Acesso por Usuário Virtual"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS165UsuarioVirtual.zul",
+    "codigo": "MSS165"
+  },
+  {
+    "rotulo": "Consulta Usuários por Perfil",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Usuários por Perfil"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS430ConsultaPerfilSistema.zul",
+    "codigo": "MSS430"
+  },
+  {
+    "rotulo": "Consulta Aplicações por Perfil",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Aplicações por Perfil"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS450ConsultaAplicacaoPerfil.zul",
+    "codigo": "MSS450"
+  },
+  {
+    "rotulo": "Consulta Perfis por Sistema",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Perfis por Sistema"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS470ConsultaPerfilSistema.zul",
+    "codigo": "MSS470"
+  },
+  {
+    "rotulo": "Consulta Usuários por Sistema",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Usuários por Sistema"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS460ConsultaUsuarioAplicacao.zul",
+    "codigo": "MSS460"
+  },
+  {
+    "rotulo": "Consulta Usuários por Aplicação",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Usuários por Aplicação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS480ConsultaAcessoUsuarioAplicacao.zul",
+    "codigo": "MSS480"
+  },
+  {
+    "rotulo": "Consulta Aplicações por Sistema",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Aplicações por Sistema"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS490ConsultaAplicacaoSistema.zul",
+    "codigo": "MSS490"
+  },
+  {
+    "rotulo": "Consulta Usuários por A. Complementar",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta Usuários por A. Complementar"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS402UsuarioAcessoComplementar.zul",
+    "codigo": "MSS402"
+  },
+  {
+    "rotulo": "Consulta A. Complementar por Aplicação",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta A. Complementar por Aplicação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS550ConsultaAcessoComplementar.zul",
+    "codigo": "MSS550"
+  },
+  {
+    "rotulo": "Consulta A. Complementar por Sistema",
+    "caminho_menu": [
+      "Segurança",
+      "Consulta",
+      "Consulta A. Complementar por Sistema"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS401ConsultaSistemaComplementar.zul",
+    "codigo": "MSS401"
+  },
+  {
+    "rotulo": "Usuário por Aplicação - Legado BZ127",
+    "caminho_menu": [
+      "Segurança",
+      "Portal Legado",
+      "Usuário por Aplicação - Legado BZ127"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS503ConsultaAcessoCobol.zul",
+    "codigo": "MSS503"
+  },
+  {
+    "rotulo": "Sistemas e Aplicações Cobol - Legado",
+    "caminho_menu": [
+      "Segurança",
+      "Portal Legado",
+      "Sistemas e Aplicações Cobol - Legado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS502ConsultaFuncaoCobol.zul",
+    "codigo": "MSS502"
+  },
+  {
+    "rotulo": "Usuário com Acesso Especial - BZ103",
+    "caminho_menu": [
+      "Segurança",
+      "Portal Legado",
+      "Usuário com Acesso Especial - BZ103"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS500ConsultaAcessoEspecial.zul",
+    "codigo": "MSS500"
+  },
+  {
+    "rotulo": "Consulta Acessos Legado por Usuário",
+    "caminho_menu": [
+      "Segurança",
+      "Portal Legado",
+      "Consulta Acessos Legado por Usuário"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS126AplicacoesAcesso.zul",
+    "codigo": "MSS126"
+  },
+  {
+    "rotulo": "Cadastro de Telefone por Matrícula",
+    "caminho_menu": [
+      "Segurança",
+      "Telefone",
+      "Cadastro de Telefone por Matrícula"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS008MantemTelefoneEmpregado.zul",
+    "codigo": "MSS008"
+  },
+  {
+    "rotulo": "Cadastro de Telefone por UO",
+    "caminho_menu": [
+      "Segurança",
+      "Telefone",
+      "Cadastro de Telefone por UO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mss/MSS009CadastroTelefoneUO.zul",
+    "codigo": "MSS009"
+  },
+  {
+    "rotulo": "Avaliação Insalubridade",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Consulta",
+      "Avaliação Insalubridade"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Numeração de Epi por Empregado",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Consulta",
+      "Numeração de Epi por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW020EpiEmpregado.zul",
+    "codigo": "BSW020"
+  },
+  {
+    "rotulo": "Relatório de Agentes Risco por Empregado",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Consulta",
+      "Relatório de Agentes Risco por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW040RelAgenteRiscoEmpregado.zul",
+    "codigo": "BSW040"
+  },
+  {
+    "rotulo": "Total de EPI por UO",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Relatórios",
+      "Total de EPI por UO"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW003EstatisticaEPI.zul",
+    "codigo": "BSW003"
+  },
+  {
+    "rotulo": "Histórico de Entrega",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Relatórios",
+      "Histórico de Entrega"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW006HistoricoEntregaEPI.zul",
+    "codigo": "BSW006"
+  },
+  {
+    "rotulo": "Consultar Não Conformidade",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Inspeção",
+      "Consultar Não Conformidade"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW043ConsultaNaoConformidade.zul",
+    "codigo": "BSW043"
+  },
+  {
+    "rotulo": "Entrega de EPI/EPC",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Cadastros",
+      "Entrega de EPI/EPC"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW004EntregaEPI.zul",
+    "codigo": "BSW004"
+  },
+  {
+    "rotulo": "Atividades por Empregado",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Cadastros",
+      "Atividades por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW504AtividadesPorEmpregado.zul",
+    "codigo": "BSW504"
+  },
+  {
+    "rotulo": "Cadastro de EPI",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Segurança",
+      "Cadastros",
+      "Cadastro de EPI"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW150EquipamentoSeguranca.zul",
+    "codigo": "BSW150"
+  },
+  {
+    "rotulo": "Atestado Médico",
+    "caminho_menu": [
+      "Segurança e Medicina Web",
+      "Medicina",
+      "Atestados Médicos",
+      "Atestado Médico"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/bsw/BSW310AtestadoMedico.zul",
+    "codigo": "BSW310"
+  },
+  {
+    "rotulo": "Exportar Contatos",
+    "caminho_menu": [
+      "Serviços Intranet",
+      "Contatos",
+      "Exportar Contatos"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI001ExportarContatos.zul",
+    "codigo": "MSI001"
+  },
+  {
+    "rotulo": "Registrar Voto",
+    "caminho_menu": [
+      "Serviços Intranet",
+      "Voto",
+      "Registrar Voto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
+    "codigo": "MSI070"
+  },
+  {
+    "rotulo": "Escolha de Serviço",
+    "caminho_menu": [
+      "Solicitações de Serviço",
+      "Solicitações",
+      "Escolha de Serviço"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI006EscolhaServicoSolicitacao.zul",
+    "codigo": "GSI006"
+  },
+  {
+    "rotulo": "Solicitações",
+    "caminho_menu": [
+      "Solicitações de Serviço",
+      "Solicitações",
+      "Solicitações"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI005SolicitacoesUsuario.zul",
+    "codigo": "GSI005"
+  },
+  {
+    "rotulo": "Abertura de Solicitação",
+    "caminho_menu": [
+      "Solicitações de Serviço",
+      "Solicitações",
+      "Abertura de Solicitação"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI007AberturaSolicitacaoUsuario.zul",
+    "codigo": "GSI007"
+  },
+  {
+    "rotulo": "Pesquisa Geral",
+    "caminho_menu": [
+      "Solicitações de Serviço",
+      "Solicitações",
+      "Pesquisa Geral"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI013PesquisaGeral.zul",
+    "codigo": "GSI013"
+  },
+  {
+    "rotulo": "Enviar Fatura por Conta",
+    "caminho_menu": [
+      "SISTEMA DE PROTESTO CARTORÁRIO",
+      "Protesto Cartorário",
+      "Enviar Fatura por Conta"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecn/ECN003EnvioFaturaProtesto.zul",
+    "codigo": "ECN003"
+  },
+  {
+    "rotulo": "Enviar Fatura em Massa",
+    "caminho_menu": [
+      "SISTEMA DE PROTESTO CARTORÁRIO",
+      "Protesto Cartorário",
+      "Enviar Fatura em Massa"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecn/ECN004EnvioFaturaProtestoEmMassa.zul",
+    "codigo": "ECN004"
+  },
+  {
+    "rotulo": "Gerenciar Protesto",
+    "caminho_menu": [
+      "SISTEMA DE PROTESTO CARTORÁRIO",
+      "Protesto Cartorário",
+      "Gerenciar Protesto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecn/ECN005GerenciarProtestoCartorario.zul",
+    "codigo": "ECN005"
+  },
+  {
+    "rotulo": "Relatório",
+    "caminho_menu": [
+      "SISTEMA DE PROTESTO CARTORÁRIO",
+      "Protesto Cartorário",
+      "Relatório"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecn/ECN006RelatoriosProtesto.zul",
+    "codigo": "ECN006"
+  },
+  {
+    "rotulo": "Consultar Protesto",
+    "caminho_menu": [
+      "SISTEMA DE PROTESTO CARTORÁRIO",
+      "Protesto Cartorário",
+      "Consultar Protesto"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/ecn/ECN007ConsultarProtesto.zul",
+    "codigo": "ECN007"
+  },
+  {
+    "rotulo": "Trâmite",
+    "caminho_menu": [
+      "Tramite Processos",
+      "Trâmite",
+      "Trâmite"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul",
+    "codigo": "GSP102"
+  },
+  {
+    "rotulo": "Capturar Remessa",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Remessas",
+      "Capturar Remessa"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul",
+    "codigo": "MTG001"
+  },
+  {
+    "rotulo": "Remessas Capturadas",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Remessas",
+      "Remessas Capturadas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG005RemessasCapturadas.zul",
+    "codigo": "MTG005"
+  },
+  {
+    "rotulo": "Consultar Remessas Capturadas",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Remessas",
+      "Consultar Remessas Capturadas"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG008ConsultarRemessasCapturadas.zul",
+    "codigo": "MTG008"
+  },
+  {
+    "rotulo": "Enviar Retorno",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Retornos",
+      "Enviar Retorno"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG002EnviarRetorno.zul",
+    "codigo": "MTG002"
+  },
+  {
+    "rotulo": "Consultar Retornos Enviados",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Retornos",
+      "Consultar Retornos Enviados"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG009ConsultarRetornosEnviados.zul",
+    "codigo": "MTG009"
+  },
+  {
+    "rotulo": "Sequencial Esperado",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Retornos",
+      "Sequencial Esperado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG010SequencialEsperado.zul",
+    "codigo": "MTG010"
+  },
+  {
+    "rotulo": "Arquivos Retorno com Erros",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Retornos",
+      "Arquivos Retorno com Erros"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG011ArquivosRetornoComErro.zul",
+    "codigo": "MTG011"
+  },
+  {
+    "rotulo": "Logs de Erros Arq Retorno",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Retornos",
+      "Logs de Erros Arq Retorno"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG012LogsErroProcRetorno.zul",
+    "codigo": "MTG012"
+  },
+  {
+    "rotulo": "Andamento Geral",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Relatório",
+      "Andamento Geral"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Controle de Religações",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Relatório",
+      "Controle de Religações"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG016ControleReligacoes.zul",
+    "codigo": "MTG016"
+  },
+  {
+    "rotulo": "Consulta Fila de Relatórios PDF",
+    "caminho_menu": [
+      "Transmissao Rec.Arquivos",
+      "Relatório",
+      "Consulta Fila de Relatórios PDF"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG020RelatorioUsuarioVirtual.zul",
+    "codigo": "MTG020"
+  },
+  {
+    "rotulo": "Pedido",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Treinamento",
+      "Pedido"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul",
+    "codigo": "BTW001"
+  },
+  {
+    "rotulo": "Avaliação de Eficácia do Treinamento",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Treinamento",
+      "Avaliação de Eficácia do Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Treinamento",
+      "Avaliação",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+    "codigo": "BTW021"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Treinamento Web",
+      "Consulta",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedido",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento",
+      "Pedido"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul",
+    "codigo": "BTW001"
+  },
+  {
+    "rotulo": "Avaliação de Eficácia do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento",
+      "Avaliação de Eficácia do Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento",
+      "Avaliação",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+    "codigo": "BTW021"
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+    "codigo": "BTW021"
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedido",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul",
+    "codigo": "BTW001"
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Avaliação de Eficácia do Treinamento",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Avaliação",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+    "codigo": "BTW021"
+  },
+  {
+    "rotulo": "Avaliação do Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Avaliação do Treinamento",
+      "Avaliação do Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW021AvaliacaoTreinamento.zul",
+    "codigo": "BTW021"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Período",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW002PedidoPeriodo.zul",
+    "codigo": "BTW002"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos Por Empregado",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul",
+    "codigo": "BTW022"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade e UOs Inferiores",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW024PedidoUOInferior.zul",
+    "codigo": "BTW024"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Pedidos desta Unidade Organizacional",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW025PedidoEmpregadoUO.zul",
+    "codigo": "BTW025"
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Consulta Cronograma de Treinamento",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos Por Período",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Pedidos Por Período"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos Por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Pedidos Por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos desta Unidade e UOs Inferiores",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Pedidos desta Unidade e UOs Inferiores"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Pedidos desta Unidade Organizacional",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Pedidos desta Unidade Organizacional"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Cronograma de Treinamento",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Consulta Cronograma de Treinamento"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Treinamento por Empregado",
+    "caminho_menu": [
+      "Gestão Eletrônica de Documentos",
+      "Treinamento por Empregado",
+      "Treinamento por Empregado"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contracheque",
+    "caminho_menu": [
+      "Portal Legado",
+      "Consulta",
+      "Contracheque"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Comprovante de Rendimentos",
+    "caminho_menu": [
+      "Portal Legado",
+      "Consulta",
+      "Comprovante de Rendimentos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Escala de Férias",
+    "caminho_menu": [
+      "Portal Legado",
+      "Consulta",
+      "Escala de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Definir Adiantamento de 13° Salário",
+    "caminho_menu": [
+      "Portal Legado",
+      "Consulta",
+      "Definir Adiantamento de 13° Salário"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atualização CTPS",
+    "caminho_menu": [
+      "Portal Legado",
+      "Relatório",
+      "Atualização CTPS"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Emissão de Frequência",
+    "caminho_menu": [
+      "Portal Legado",
+      "Relatório",
+      "Emissão de Frequência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Declaração IRPF",
+    "caminho_menu": [
+      "Portal Legado",
+      "Relatório",
+      "Enviar Declaração IRPF"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Nota Fiscal",
+    "caminho_menu": [
+      "Portal Legado",
+      "Cadastro",
+      "Enviar Nota Fiscal"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agendamento/Alteração de Férias",
+    "caminho_menu": [
+      "Portal Legado",
+      "Cadastro",
+      "Agendamento/Alteração de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Rodízio de Processos",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Cobrança",
+      "Rodízio de Processos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Cobrança",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Consulta",
+      "Consulta Cobrança"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Processo Conta",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Consulta",
+      "Consulta Processo Conta"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relatório de Contas Com o Escritório",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Relatório",
+      "Relatório de Contas Com o Escritório"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agenda Audiência",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Judicial",
+      "Agenda Audiência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Judicial",
+    "caminho_menu": [
+      "SAP - Fiori",
+      "Judicial",
+      "Consulta Judicial"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contracheque",
+    "caminho_menu": [
+      "ERP SAP",
+      "Consulta",
+      "Contracheque"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Comprovante de Rendimentos",
+    "caminho_menu": [
+      "ERP SAP",
+      "Consulta",
+      "Comprovante de Rendimentos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Escala de Férias",
+    "caminho_menu": [
+      "ERP SAP",
+      "Consulta",
+      "Escala de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Definir Adiantamento de 13° Salário",
+    "caminho_menu": [
+      "ERP SAP",
+      "Consulta",
+      "Definir Adiantamento de 13° Salário"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atualização CTPS",
+    "caminho_menu": [
+      "ERP SAP",
+      "Relatório",
+      "Atualização CTPS"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Emissão de Frequência",
+    "caminho_menu": [
+      "ERP SAP",
+      "Relatório",
+      "Emissão de Frequência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Declaração IRPF",
+    "caminho_menu": [
+      "ERP SAP",
+      "Relatório",
+      "Enviar Declaração IRPF"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Nota Fiscal",
+    "caminho_menu": [
+      "ERP SAP",
+      "Cadastro",
+      "Enviar Nota Fiscal"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agendamento/Alteração de Férias",
+    "caminho_menu": [
+      "ERP SAP",
+      "Cadastro",
+      "Agendamento/Alteração de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Rodízio de Processos",
+    "caminho_menu": [
+      "SRM SAP",
+      "Cobrança",
+      "Rodízio de Processos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Cobrança",
+    "caminho_menu": [
+      "SRM SAP",
+      "Consulta",
+      "Consulta Cobrança"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Processo Conta",
+    "caminho_menu": [
+      "SRM SAP",
+      "Consulta",
+      "Consulta Processo Conta"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relatório de Contas Com o Escritório",
+    "caminho_menu": [
+      "SRM SAP",
+      "Relatório",
+      "Relatório de Contas Com o Escritório"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agenda Audiência",
+    "caminho_menu": [
+      "SRM SAP",
+      "Judicial",
+      "Agenda Audiência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Judicial",
+    "caminho_menu": [
+      "SRM SAP",
+      "Judicial",
+      "Consulta Judicial"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contracheque",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Consulta",
+      "Contracheque"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Comprovante de Rendimentos",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Consulta",
+      "Comprovante de Rendimentos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Escala de Férias",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Consulta",
+      "Escala de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Definir Adiantamento de 13° Salário",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Consulta",
+      "Definir Adiantamento de 13° Salário"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atualização CTPS",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Relatório",
+      "Atualização CTPS"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Emissão de Frequência",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Relatório",
+      "Emissão de Frequência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Declaração IRPF",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Relatório",
+      "Enviar Declaração IRPF"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Nota Fiscal",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Cadastro",
+      "Enviar Nota Fiscal"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agendamento/Alteração de Férias",
+    "caminho_menu": [
+      "GRC - NF-e Fiscal",
+      "Cadastro",
+      "Agendamento/Alteração de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Rodízio de Processos",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Cobrança",
+      "Rodízio de Processos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Cobrança",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Consulta",
+      "Consulta Cobrança"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Processo Conta",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Consulta",
+      "Consulta Processo Conta"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Relatório de Contas Com o Escritório",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Relatório",
+      "Relatório de Contas Com o Escritório"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agenda Audiência",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Judicial",
+      "Agenda Audiência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Consulta Judicial",
+    "caminho_menu": [
+      "GRC - NF-e Logístico",
+      "Judicial",
+      "Consulta Judicial"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Contracheque",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Consulta",
+      "Contracheque"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Comprovante de Rendimentos",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Consulta",
+      "Comprovante de Rendimentos"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Escala de Férias",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Consulta",
+      "Escala de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Definir Adiantamento de 13° Salário",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Consulta",
+      "Definir Adiantamento de 13° Salário"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Atualização CTPS",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Relatório",
+      "Atualização CTPS"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Emissão de Frequência",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Relatório",
+      "Emissão de Frequência"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Declaração IRPF",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Relatório",
+      "Enviar Declaração IRPF"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Enviar Nota Fiscal",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Cadastro",
+      "Enviar Nota Fiscal"
+    ],
+    "url_zul": "",
+    "codigo": null
+  },
+  {
+    "rotulo": "Agendamento/Alteração de Férias",
+    "caminho_menu": [
+      "Supervisório Web",
+      "Cadastro",
+      "Agendamento/Alteração de Férias"
+    ],
+    "url_zul": "",
+    "codigo": null
+  }
+]

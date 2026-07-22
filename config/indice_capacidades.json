@@ -1,7 +1,7 @@
 {
-  "total_aplicacoes": 337,
+  "total_aplicacoes": 340,
   "resumo": {
-    "confiabilidade_alta": 61,
+    "confiabilidade_alta": 64,
     "confiabilidade_media": 102,
     "confiabilidade_baixa": 174,
     "com_erro": 10
@@ -946,6 +946,37 @@
       "erro": null
     },
     {
+      "codigo": "ECO120",
+      "nome": "Logradouros por Nome/Bairro",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
+      "vertical": "comercial",
+      "tecnologia": "zk",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "logradouro",
+        "nome"
+      ],
+      "colunas_retornadas": [
+        "Cód. Bairro",
+        "Bairro",
+        "Cód. Logradouro",
+        "Tipo",
+        "Logradouro",
+        "CEP",
+        "Superintendência",
+        "Regional",
+        "Distrito",
+        "ECO154"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
       "codigo": "ECO131",
       "nome": "Atividades",
       "url_real": "https://www.saneago.com.br/prt/eco/ECO131Atividades.zul",
@@ -992,6 +1023,81 @@
         "quais atendimentos foram registrados no bairro <bairro> em <cidade>"
       ],
       "confiabilidade": "media",
+      "erro": null
+    },
+    {
+      "codigo": "ECO148",
+      "nome": "Cadastro de Clientes",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO148CadastroCpfCnpj.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "Tipo de Telefone",
+        "Número",
+        "Ramal",
+        "Excluir?",
+        "Data",
+        "Data Desligamento",
+        "CPF",
+        "Nome",
+        "Participação",
+        "CNPJ",
+        "Nome Fantasia",
+        "Razão Social",
+        "Conta",
+        "Endereço",
+        "Proprietário",
+        "Titular",
+        "Cotitular",
+        "ECO151",
+        "ECO506",
+        "ECO707",
+        "ECO712",
+        "ECO010"
+      ],
+      "perguntas_que_responde": [
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "ECO154",
+      "nome": "Usuários por Nome",
+      "url_real": "https://www.saneago.com.br/prt/eco/ECO154ConsultaUsuario.zul",
+      "vertical": "comercial",
+      "tecnologia": "misto",
+      "filtros": [
+        "cidade",
+        "bairro",
+        "logradouro",
+        "nome",
+        "cpf_cnpj"
+      ],
+      "colunas_retornadas": [
+        "ECO151",
+        "Nº Conta",
+        "Nome Proprietário",
+        "Logradouro",
+        "S.A.",
+        "S.E.",
+        "Quadra",
+        "Lote",
+        "Nº",
+        "Codificação.",
+        "Id. Conta.",
+        "Hidrômetro",
+        "ECO157",
+        "ECO707"
+      ],
+      "perguntas_que_responde": [
+        "quais atendimentos foram registrados no bairro <bairro> em <cidade>",
+        "quais as contas ou atendimentos vinculados a <nome/cpf_cnpj>"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     },
     {
@@ -5604,6 +5710,8 @@
       "BAPV012",
       "BPAV433",
       "ECNV007",
+      "ECO148",
+      "ECO154",
       "ECO348",
       "ECO410",
       "KRTV003"
@@ -5708,8 +5816,10 @@
     "cidade": [
       "ECAV001",
       "ECAV004",
+      "ECO120",
       "ECO131",
       "ECO135",
+      "ECO154",
       "ECO160",
       "ECO186",
       "ECO285",
@@ -5748,7 +5858,9 @@
     ],
     "bairro": [
       "ECAV001",
+      "ECO120",
       "ECO135",
+      "ECO154",
       "ECO285",
       "ECO489",
       "ECO510",
@@ -5762,7 +5874,9 @@
     ],
     "logradouro": [
       "ECAV001",
+      "ECO120",
       "ECO135",
+      "ECO154",
       "ECO285",
       "ECO489",
       "ECO538",
@@ -5807,17 +5921,19 @@
       "LRS208",
       "LRSV208"
     ],
-    "hidrometro": [
-      "ECO201",
-      "ECO286"
-    ],
     "nome": [
+      "ECO120",
+      "ECO154",
       "ECO495",
       "ECO553",
       "MPSV005",
       "MSIV001",
       "MSSV502",
       "MTG020"
+    ],
+    "hidrometro": [
+      "ECO201",
+      "ECO286"
     ]
   },
   "por_vertical": {
@@ -5921,8 +6037,11 @@
       "ECNV007",
       "ECO010",
       "ECO021",
+      "ECO120",
       "ECO131",
       "ECO135",
+      "ECO148",
+      "ECO154",
       "ECO160",
       "ECO186",
       "ECO201",

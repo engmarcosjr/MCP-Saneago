@@ -240,8 +240,16 @@ Com base exclusivamente no índice estruturado em `config/indice_capacidades.jso
 ---
 
 ### 2. "Pesquisar a conta no nome de Marcos Antônio" — dá? qual tela? o que retorna?
-**NÃO É POSSÍVEL BUSCAR CONTA DIRETAMENTE APENAS PELO NOME PRÓPRIO.**
-- **Explicação:** Não existe no portal uma tela de consulta geral de contas por nome de pessoa física isolado.
+**NÃO É POSSÍVEL BUSCAR CONTA DIRETAMENTE APENAS PELO NOME PRÓPRIO.** *(Nota: Veja retificação da FASE 8 abaixo)*
+
+> [!NOTE]
+> **CORREÇÃO DA FASE 8:** A conclusão acima de que "não é possível buscar conta diretamente apenas pelo nome" estava **INCORRETA** e decorreu de uma **lacuna de descoberta** (o menu flutuante ZK da Fase 7 não havia sido percorrido recursivamente até o último nível). Não se trata de falha no classificador semântico.
+> 
+> Na **FASE 8**, a expansão recursiva do menu (T1) e a busca por prefixos refinada (T2) descobriram a aplicação **`ECO154` (Usuários por Nome)** no caminho `COMERCIAL - WEBCOM › Cadastro › Usuários › Usuários por Nome` (`https://www.saneago.com.br/prt/eco/ECO154ConsultaUsuario.zul`).
+> 
+> A aplicação **`ECO154`** permite pesquisar contas de água/esgoto diretamente pelo campo **`Nome`** (bem como por `CPF/CNPJ`, `Cidade`, `Bairro`, `Logradouro`) e retorna no grid os campos: **`Nº Conta`**, **`Nome Proprietário`**, **`Logradouro`**, **`Quadra`**, **`Lote`**, **`Nº`**, **`Hidrômetro`** e **`Id. Conta.`**.
+
+- **Explicação original da Fase 7:** Não existe no portal uma tela de consulta geral de contas por nome de pessoa física isolado.
 - **Alternativas Existentes no Índice:**
   - Se possuir o **CPF/CNPJ**, pode usar a app `EGWV001` (Contrato Comercial), `ECO410` (Cancelamento de Débito) ou `ECO010` (Solicitar Titularidade) que aceitam `cpf_cnpj` e retornam o número da `Conta` e o `Nome Titular`.
   - Se souber o **Endereço/Logradouro**, pode usar a app `ECO709` (RAs por Logradouro) que aceita `logradouro` + `bairro` + `cidade` e lista a `Conta` e o `Nome` dos moradores/solicitantes com RA registrada.
