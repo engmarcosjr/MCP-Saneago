@@ -439,3 +439,32 @@ A skill `delegar-agy` passa a ter dois modos: **A (sandbox)** para código puro 
 rodar os `scratch/diag_*.js` contra o portal, e a escrita continua bloqueada por design
 (as flags são opt-in estrito no código). **Escrita real nunca é delegada:** segue como
 gate humano supervisionado.
+
+### FASE 9 — Qualidade do Ranking da Descoberta (2026-07-22)
+
+Reescrita completa do algoritmo de pontuação da ferramenta `saneago_descobrir_aplicacao` (`src/tools/descobrir.js`) para eliminar o ruído de cauda e garantir um ranking defensável sobre o índice completo de **596 aplicações**:
+
+- **T1 — Reescrita do Scoring:**
+  - Sinal dominante: casamento de **filtros de entrada e colunas de saída correspondentes**, proporcional à taxa de cobertura.
+  - Tetos rigorosos (caps) por categoria de sinal fraco: colunas de retorno (max 25 pts), perguntas que responde (max 20 pts), termos do título (max 30 pts).
+  - Casamento com **fronteira de palavra (`\b...\b`)** prevenindo contaminação por substrings (ex: `conta` não casa `contabil`).
+  - Penalidade explícita (redução a 10% do score) quando a aplicação não atende a nenhum filtro ou coluna da busca solicitada.
+  - Expansão de sinônimos do domínio Saneago (`RA` ↔ `registro atendimento`, `proprietario` ↔ `nome usuario`, `fatura` ↔ `debito extrato`).
+- **T2 — Corte de Cauda e Honestidade:**
+  - Limiar mínimo de relevância (`MIN_SCORE = 25`).
+  - Campo `confianca` (`alta`, `media`, `baixa`) incluído na resposta.
+  - Retorno honesto com lista vazia `candidatas: []` e mensagem explícita quando nada atinge a relevância necessária.
+- **T3 — Suíte de Regressão de Ranking (`test/ranking.test.js`):**
+  - Casos-verdade conhecidos rodando sobre o catálogo completo (596 apps):
+    - `"conta pelo nome do proprietario"` → **ECO154 em 1º** (#1, confianca alta, ECA002 eliminado do top-3).
+    - `"RAs por logradouro e bairro num periodo"` → **ECO709 em 1º** (#1, confianca alta).
+    - `"consultar RA por numero"` → **ECO701 em 1º** (#1, confianca alta).
+    - `"debitos/faturas de uma conta"` → **ECO506/ECO563 em 1º** (#1, confianca alta).
+    - Perguntas irrelevantes → `candidatas: []`, `confianca: "baixa"`.
+  - Suíte inteira (`npm test`) passando **20/20 testes**.
+- **T4 — Reavaliação das Pergunas da Fase 7 (`docs/PERGUNTAS_RESPONDIDAS.md`):**
+  - Revalidadas todas as 12 perguntas de negócio contra os 596 apps.
+  - Marcada a alteração de veredito da pergunta 2 (pesquisa por nome → `ECO154`).
+- **T5 — Diagnóstico das 11 Aplicações com Erro (`docs/LACUNAS_E_ADAPTADORES.md`):**
+  - Registrada a decisão arquitetural: 3 por permissão/teletrabalho (BPAV004-006), 5 popups BI/GIS externos (ECO954, ECO962, LIG002, LIGV002, MGOV050), 2 GED/PDF (ECO815, FGIV005) e 1 contingência (EAC799). Todas devidamente classificadas no índice com penalidade `erro: true`.
+
