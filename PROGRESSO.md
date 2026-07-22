@@ -483,3 +483,24 @@ Correção conceitual da hierarquia de scoring para eliminar a dominância espú
 - **Suíte de Testes 100% Verde:** `npm test` passa **21/21 testes**.
 - **Documentação:** `RELATORIO_FASE9.md` atualizado com a nova seção **"Correção 9b"** contendo a tabela Antes/Depois, resultados fora-da-suíte e a saída real e completa de `npm test`.
 
+### FASE 10 — MCP-Saneago: Tela de Escrita LRS105 no Driver ZK (2026-07-22)
+
+Construção da vertical de escrita `LRS105 - Lançamento de serviços executados` nascendo nativamente no driver ZK (`src/executor.js`), validada até o ponto de pré-submit com a submissão real pendente de gate humano supervisionado:
+
+- **Etapa 1 — Diagnóstico Read-Only (`scratch/diag_lrs105.js`, `scratch/diag_lrs105_detalhe.js`, `scratch/diag_lrs105_grid.js`):**
+  - Mapeada a tela de busca inicial (`R.A.`, `Programação`, `Serviço Resposta`) e o formulário pós-consulta (com os botões de ação `Incluir`, `Alterar`, `Excluir`, `Cancelar` e grids `Possíveis Códigos de Resposta` e `Serviços de Resposta já cadastrado para o RA`).
+  - Âncoras por rótulo mantidas (Princípio 4); sem hardcode de UUIDs dinâmicos.
+- **Etapa 2 — Captura de Eventos ZK (`scratch/diag_zk_capture_lrs105.js`):**
+  - Instrumentado `zAu.send` para capturar os eventos AU nativos do ZK 9.6.3: tríade `onChange` + `onBlur` + `Window.onOK` para campos de texto/número e `onClick` para o botão `Consultar`.
+- **Etapa 3 — Tool MCP `saneago_lrs105_lancar_servico` (`src/tools/lrs105.js`):**
+  - Construída utilizando exclusivamente as funções da API cliente ZK (`setarCampoZk`, `confirmarCampoZk`, `clicarZk`).
+  - Verificação pós-set obrigatória mantida para prevenir truncamento silencioso de inputs.
+  - Gate próprio por flag de ambiente `SANEAGO_ALLOW_LRS105_WRITE` (além de `SANEAGO_ALLOW_WRITE`).
+  - Suporte ao parâmetro `confirmar` (default `false`): gera `PREVIEW` estruturado com auditoria em `audit.log` e para antes da gravação real.
+  - Registrada no servidor MCP em `src/index.js` sob a guarda do gate de escrita `ALLOW_LRS105_WRITE`.
+- **Etapa 4 — Testes Offline e Validação Pré-Submit:**
+  - `test/lrs105.test.js`: 5 novos testes offline de validação e resumo de parâmetros. `npm test` verde com 26/26 testes passando.
+  - `scratch/test_lrs105_presubmit.js`: validado fluxo real E2E com RA `27273762025` e serviço `2002` até o pré-submit (preview retornado, audit `PREVIEW` gerado, sem submissão).
+- **Entregável:** `RELATORIO_FASE10.md` criado na raiz do repositório.
+
+

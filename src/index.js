@@ -16,6 +16,7 @@ const { logAudit } = require("./audit");
 const { consultarConsumo } = require("./tools/eco303");
 const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
+const { lancarServicoExecutado } = require("./tools/lrs105");
 const { descobrirAplicacao } = require("./tools/descobrir");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
@@ -42,6 +43,10 @@ const ALLOW_RA_WRITE =
   LEGACY_ALLOW_WRITE ||
   process.env.SANEAGO_ALLOW_RA_WRITE === '1' ||
   process.env.SANEAGO_ALLOW_RA_WRITE === 'true';
+const ALLOW_LRS105_WRITE =
+  LEGACY_ALLOW_WRITE ||
+  process.env.SANEAGO_ALLOW_LRS105_WRITE === '1' ||
+  process.env.SANEAGO_ALLOW_LRS105_WRITE === 'true';
 
 // Definicao das Ferramentas
 server.setRequestHandler(ListToolsRequestSchema, async () => {
@@ -249,6 +254,39 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     });
   }
 
+  if (ALLOW_LRS105_WRITE) {
+    tools.push({
+      name: "saneago_lrs105_lancar_servico",
+      description: "Prepara ou efetiva o lançamento de serviço executado no LRS105. Primeiro use confirmar:false. Somente após o usuário confirmar em uma nova mensagem, repita com confirmar:true e o confirmationToken recebido no preview.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O número do RA para o lançamento (ex: 27273762025)",
+          },
+          codigoServicoResposta: {
+            type: "string",
+            description: "O código do serviço executado/resposta a ser lançado (ex: 2002)",
+          },
+          confirmar: {
+            type: "boolean",
+            description: "Deve ser true para submeter. Se false, apenas descreve o que será feito no pré-submit.",
+          },
+          confirmationToken: {
+            type: "string",
+            description: "Token retornado pelo preview. Obrigatório e de uso único quando confirmar for true.",
+          },
+          observacao: {
+            type: "string",
+            description: "Observação opcional sobre o serviço executado",
+          }
+        },
+        required: ["ra", "codigoServicoResposta", "confirmar"],
+      },
+    });
+  }
+
   return { tools };
 });
 
@@ -383,6 +421,32 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               {
                 type: "text",
                 text: resultado.message + (resultado.relatorio ? `\n\nRelatorio do frame inicial: ${JSON.stringify(resultado.relatorio)}` : ""),
+              },
+            ],
+          };
+        } catch (error) {
+          throw error;
+        }
+      }
+
+      case "saneago_lrs105_lancar_servico": {
+        if (!ALLOW_LRS105_WRITE) throw new Error("Lançamento de serviços no LRS105 está desabilitado.");
+
+        const args = request.params.arguments || {};
+        const { ra, codigoServicoResposta, confirmar, observacao } = args;
+        try {
+          if (confirmar) consumeConfirmed(args);
+          const resultado = await lancarServicoExecutado(ra, codigoServicoResposta, confirmar, observacao);
+          if (!confirmar) {
+            const confirmationToken = createPending(args);
+            resultado.confirmationToken = confirmationToken;
+            resultado.message += `\n\nToken de confirmação: ${confirmationToken}`;
+          }
+          return {
+            content: [
+              {
+                type: "text",
+                text: resultado.message,
               },
             ],
           };
