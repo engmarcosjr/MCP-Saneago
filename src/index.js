@@ -16,7 +16,7 @@ const { logAudit } = require("./audit");
 const { consultarConsumo } = require("./tools/eco303");
 const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
-const { lancarServicoExecutado } = require("./tools/lrs105");
+const { lancarServicoExecutado, verificarEstatisticaLRS105 } = require("./tools/lrs105");
 const { descobrirAplicacao } = require("./tools/descobrir");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
@@ -100,6 +100,20 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
         },
         required: ["conta"],
+      },
+    },
+    {
+      name: "saneago_lrs105_verificar_estatistica",
+      description: "Consulta um RA no LRS105 (read-only) e verifica se a estatistica (Servico de Resposta) ja foi lancada. Retorna estatistica_lancada (true/false) e os servicos_resposta ja cadastrados. Nao grava nada.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          ra: {
+            type: "string",
+            description: "O numero do RA a ser verificado (ex: 24045392026)",
+          },
+        },
+        required: ["ra"],
       },
     },
     {
@@ -504,6 +518,26 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               {
                 type: "text",
                 text: `Conta ${conta} consultada.\nTexto visivel na tela:\n${resultado.text}\n\nCampos da tela:\n${JSON.stringify(resultado.relatorio, null, 2)}`,
+              },
+            ],
+          };
+        } catch (error) {
+          throw error;
+        }
+      }
+
+      case "saneago_lrs105_verificar_estatistica": {
+        const { ra } = request.params.arguments;
+        try {
+          const resultado = await verificarEstatisticaLRS105(ra);
+          const status = resultado.estatistica_lancada
+            ? "LANCADA"
+            : "NAO LANCADA (estatistica pendente)";
+          return {
+            content: [
+              {
+                type: "text",
+                text: `RA ${ra} verificado no LRS105.\nEstatistica: ${status}\nServico solicitado: ${resultado.servicoSolicitado}\nSituacao: ${resultado.situacao}\nServicos de resposta ja cadastrados:\n${JSON.stringify(resultado.servicos_resposta, null, 2)}`,
               },
             ],
           };
