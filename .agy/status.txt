@@ -1,0 +1,1 @@
+BLOCO 1 — Concluido (roteiro.json com 596 apps, 19 docs em docs/apps sem UUIDs)
