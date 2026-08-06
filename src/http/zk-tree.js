@@ -17,27 +17,33 @@ function uuidByComponentId(text, id) {
 function resolverFilho(text, idMacro, idFilho) {
   const str = String(text || "");
   const escapedMacro = String(idMacro).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const escapedFilho = String(idFilho).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
   const macroRegex = new RegExp("id:'" + escapedMacro + "'|id:\"" + escapedMacro + "\"");
   const matchMacro = macroRegex.exec(str);
   if (!matchMacro) return "";
 
-  // Procura o idFilho a partir da posicao da macro
-  const sliceFromMacro = str.slice(matchMacro.index);
-  
-  // Procura a definicao do idFilho na subarvore da macro (ex. os primeiros 4000 caracteres ou ate o proximo id:)
-  const filhoRegex = new RegExp("\\['zul\\.[^']+',\\s*'([^']+)'[^\\n]*id:'" + escapedFilho + "'");
-  const matchFilho = filhoRegex.exec(sliceFromMacro);
-  if (matchFilho) {
-    return matchFilho[1];
+  // Limita a subárvore da macro aos próximos 2000 caracteres
+  const sliceFromMacro = str.slice(matchMacro.index, matchMacro.index + 2000);
+
+  if (idFilho) {
+    const escapedFilho = String(idFilho).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const filhoRegex = new RegExp("\\['zul\\.[^']+',\\s*'([^']+)'[^\\n]*id:'" + escapedFilho + "'");
+    const matchFilho = filhoRegex.exec(sliceFromMacro);
+    if (matchFilho) {
+      return matchFilho[1];
+    }
+
+    const filhoRegexAlt = new RegExp("\\{\\$u:'([^']+)'[^}]*id:'" + escapedFilho + "'");
+    const matchFilhoAlt = filhoRegexAlt.exec(sliceFromMacro);
+    if (matchFilhoAlt) {
+      return matchFilhoAlt[1];
+    }
   }
 
-  // Fallback: se o formato ZK usar {$u:'UUID',...,id:'txtCodigo'}
-  const filhoRegexAlt = new RegExp("\\{\\$u:'([^']+)'[^}]*id:'" + escapedFilho + "'");
-  const matchFilhoAlt = filhoRegexAlt.exec(sliceFromMacro);
-  if (matchFilhoAlt) {
-    return matchFilhoAlt[1];
+  // Fallback: busca o UUID do primeiro Intbox ou Textbox na subárvore da macro
+  const firstInputRegex = /\['zul\.inp\.(?:Intbox|Textbox)',\s*'([^']+)'/;
+  const matchInput = firstInputRegex.exec(sliceFromMacro);
+  if (matchInput) {
+    return matchInput[1];
   }
 
   return "";
