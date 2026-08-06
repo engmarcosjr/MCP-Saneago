@@ -45,7 +45,7 @@ function desescapar(s) {
 
 class Eco709 {
   constructor(options = {}) {
-    this.portal = new PortalHttp(options);
+    this.portal = options.portal || new PortalHttp(options);
   }
 
   login() {
@@ -53,7 +53,16 @@ class Eco709 {
   }
 
   async abrir() {
-    this.tela = await this.portal.abrir(CAMINHO);
+    try {
+      this.tela = await this.portal.abrir(CAMINHO);
+    } catch (err) {
+      if (err.message && err.message.includes("Componentes de login ZK não localizados")) {
+        this.portal.isLoggedIn = true;
+        this.tela = await this.portal.abrir(CAMINHO);
+      } else {
+        throw err;
+      }
+    }
     this.uuidCidade = resolverFilho(this.tela.texto, "pesquisaCidade", "txtCodigo");
     this.uuidBairro = resolverFilho(this.tela.texto, "pesquisaBairro", "txtCodigo");
     this.uuidLogradouro = resolverFilho(this.tela.texto, "pesquisaLogradouro", "txtCodigo");
