@@ -1,1 +1,1 @@
-BLOCO 1 — Concluido (roteiro.json com 596 apps, 19 docs em docs/apps sem UUIDs)
+BLOCO 2 — Concluído. Cliente HTTP portado para src/http e ECO707 testado com conta 2238097 (<1s). Prova em docs/http/_PROVA_PORTE.md.
