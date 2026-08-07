@@ -1,0 +1,10 @@
+=== PROVA DE REPLAY HTTP (ECO711) ===
+Data: 2026-08-07T13:33:12.875Z
+Filtros: Cidade=2, Período=01/07/2026 a 07/08/2026
+Total RAs extraídas: 0
+Primeiras 5 RAs:
+[]
+
+=== RESPOSTA ZK BRUTA (PRIMEIROS 2000 CHARS) ===
+{"rs":[["setAttrs",[{$u:'m3uF83'},["_lastoffset",0,"resetDataLoader",true,"model",true]]],["setAttr",[{$u:'m3uF23'},"visible",true]],["setAttr",[{$u:'m3uF02'},"disabled",false]],["clearBusy",null]],"rid":5}
+{"rs":[],"rid":6}

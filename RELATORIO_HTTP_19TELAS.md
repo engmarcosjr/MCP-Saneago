@@ -1,51 +1,69 @@
-# Relatório de Auditoria e Status HTTP (19 Telas Prioritárias)
+# Mapeamento das 18 telas prioritarias — UI e HTTP
 
-Data de Atualização: 2026-08-06  
-Repositório: `C:\repos\MCP-Saneago`
+**Data:** 06/08/2026 · **Escopo:** as 18 telas mais usadas do portal ZK, mapeadas nas duas
+camadas pedidas: **UI viva (Playwright)** e **HTTP direto**.
 
----
+## Resultado por tela
 
-## 1. Resumo da Auditoria e Correções Aplicadas
+| Tela | Nome | Doc UI (`docs/apps/`) | Contrato HTTP (`docs/http/`) |
+|---|---|---|---|
+| LRS208 | Consulta RA's com D.S. | ok | **REPLICADO** (207 ms) |
+| ECO205 | Hidrometros | ok | **REPLICADO** (158 ms) |
+| ECO707 | RAs por Numero de Conta | ok | **REPLICADO** (~130 ms) |
+| ECO709 | RAs por Logradouro | ok | **REPLICADO** (434 ms, 14 linhas) |
+| ECO712 | Historia do Usuario | ok | **REPLICADO** |
+| LRS010 | Distribuicao de Servico | ok | arvore capturada (escrita) |
+| LRS041 | Relatorio de recomposicao asfaltica | ok | arvore capturada |
+| LRS100 | Manter estoque de Material por viatura | ok | arvore capturada |
+| LRS105 | Lancamento de servicos executados | ok | arvore capturada (escrita) |
+| LRS272 | Acompanhar Atendimento | ok | arvore capturada |
+| ECO151 | Cadastro de Usuarios | ok | arvore capturada (escrita) |
+| ECO154 | Usuarios por Nome | ok | arvore capturada |
+| ECO202 | Movimentacao de Hidrometro | ok | arvore capturada (escrita) |
+| ECO701 | Registro de Atendimento | ok (curado, fluxo E2E) | arvore capturada (escrita) |
+| ECO708 | RAs por Solicitante | ok | **REPLICADO** |
+| ECO711 | RA em Execucao/Executado | ok | **REPLICADO** |
+| ECO731 | Alteracao e Impressao de RA | ok | arvore capturada |
+| MTG020 | Consulta Fila de Relatorios PDF | ok | arvore capturada |
 
-Após auditoria interna nos BLOCOS 3 e 4, a documentação manual em `docs/http/` foi descontinuada e substituída por uma abordagem **mecanicamente determinística** (`src/gerar_doc_http.js`).
+**7 de 18 replicadas por HTTP** com prova reproduzivel. As outras 11 tem ids, tipos ZK e
+colunas de grade **reais**, mas a sequencia de POSTs ainda nao foi observada.
 
-### Principais correções:
-1. **Zero IDs inventados**: 100% dos IDs documentados em `docs/http/` foram extraídos diretamente da árvore ZK capturada em `scratch/zkau_<APP>.txt` e validados pelo script `scripts/validar_docs_http.js`.
-2. **Status Auditado**: O status `CONFIRMADO` foi removido de todas as telas que não possuíam prova de replay por HTTP. O status é calculado automaticamente pelo script em:
-   - **`REPLICADO`**: Somente quando existe arquivo de evidência de replay técnico em `docs/http/_replay_<APP>.txt`.
-   - **`ARVORE CAPTURADA (sem POST)`**: Para telas cuja árvore de widgets foi capturada com fidelidade, mas cuja sequência de POSTs de operação ainda não foi observada.
-3. **Resolução de sessão do ECO709**: O cliente `src/http/eco709.js` foi corrigido para tratar sessões já autenticadas, permitindo a execução sequencial sem falha de login e devolvendo 14 registros reais.
+## O que foi entregue
 
----
+**Camada UI.** `config/roteiro.json` regenerado com as **596 apps** (estava em 337 — as 259
+descobertas na varredura de julho nunca tinham entregado, entao ECO151, ECO154, ECO202,
+ECO205, ECO708 e ECO711 eram invisiveis para a tool `saneago_consultar_roteiro`). Os 18
+`docs/apps/*.md` foram regerados a partir do `capacidades.json`, agora **sem UUID ZK** — o
+uuid muda a cada abertura de tela, e documenta-lo induzia a LLM a usar um identificador que
+nunca ia bater.
 
-## 2. Tabela Geral das 19 Telas e Status Atual
+**Camada HTTP.** O cliente HTTP saiu de `Revisão-Contas-Esgoto` e virou modulo de primeira
+classe aqui: `src/http/{portal-http,zk-tree,eco707,eco709,saneago-http}.js`. Consulta sem
+navegador em ~0,2 s contra varios segundos pela UI.
 
-| Código | Nome da Aplicação | Natureza | Status HTTP (Calculado) | Prova de Replay | Observações |
-|---|---|---|---|---|---|
-| **LRS010** | Distribuição de Serviços | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **LRS034** | Validação RA Corte Asfalto | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **LRS041** | Relatório Recomposição Asfáltica | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **LRS100** | Manter Estoque Material por Viatura | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **LRS105** | Cadastra Retorno RA | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **LRS208** | Consulta RA / DS | CONSULTA | `REPLICADO` | `_replay_LRS208.txt` | Replicado via HTTP com retorno de grade. |
-| **LRS272** | Monitorar Atendimento | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **ECO151** | Cadastro de Usuário | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **ECO154** | Consulta Usuário | CONSULTA | `REPLICADO` | `_replay_ECO154.txt` | Replicado via HTTP com retorno de grade. |
-| **ECO202** | Movimentação de Hidrômetro | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **ECO205** | Consulta Hidrômetro | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **ECO701** | Registro de Atendimento | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **ECO707** | Consulta RA por Número de Conta | CONSULTA | `REPLICADO` | `_replay_ECO707.txt` | Replicado via HTTP (0,13s / consulta). |
-| **ECO708** | Consulta RA por Solicitante | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **ECO709** | Consulta RA por Logradouro | CONSULTA | `REPLICADO` | `_replay_ECO709.txt` | Replicado via HTTP (14 RAs reais retornadas). |
-| **ECO711** | RA em Execução / Executado | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **ECO712** | História do Usuário | CONSULTA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
-| **ECO731** | Alteração e Impressão de RA | ESCRITA | `ARVORE CAPTURADA (sem POST)` | Sem replay | Tela de escrita (preservada por regra). |
-| **MTG020** | Relatório Usuários Virtuais | RELATORIO | `ARVORE CAPTURADA (sem POST)` | Sem replay | Árvore e IDs auditados. |
+**Ferramentas de reproducao** (todas idempotentes):
+- `scripts/recapturar_arvore.js` — 18 GETs read-only, grava a arvore completa;
+- `src/gerar_doc_http.js` — gera os docs parseando a arvore; status calculado, nunca digitado;
+- `scripts/replay_http.js` — replay de consulta; trata zero linhas como falha;
+- `scripts/validar_docs_http.js` — reprova doc que cite id inexistente. **515 ids conferidos, zero divergencias.**
 
----
+## O que ainda falta
 
-## 3. O Que Ainda Falta
+1. **13 telas sem contrato de POST observado.** Tem ids e tipos reais, mas o payload concreto
+   e hipotese. Proximas mais faceis: ECO708 e ECO711 (mesmo padrao de macro `caixaPesquisa`
+   ja resolvido no ECO709, via `resolverFilho`).
+2. **As 6 telas de escrita** (LRS010, LRS105, ECO151, ECO202, ECO701, ECO731) foram apenas
+   abertas e lidas. Nenhuma gravacao foi feita em producao, e o contrato de escrita por HTTP
+   segue nao mapeado — de proposito.
 
-1. **Sequência de POSTs de 15 telas**: Embora os IDs estáveis, classes ZK (`zul.inp.Textbox`, `zul.db.Datebox`, etc.) e colunas de grade das 15 telas em `ARVORE CAPTURADA (sem POST)` estejam 100% corretos e auditados, a sequência exata de eventos POST HTTP (ex: `onChange` + `onBlur` + `onClick`) ainda não foi gravada/observada em tráfego real nessas 15 telas.
-2. **Replay HTTP Adicional**: Das 19 telas, 4 estão atestadas e comprovadas por replay HTTP (`ECO707`, `ECO709`, `LRS208`, `ECO154`). Caso seja necessário automatizar via HTTP puro alguma das 15 telas restantes no futuro, deve-se realizar a captura do tráfego POST (`scripts/capturar_zkau.js`), gerar o arquivo `_replay_<APP>.txt` e re-rodar `node src/gerar_doc_http.js`.
-3. **Restrição de Escrita em Produção**: As 6 telas de escrita (`LRS010`, `LRS105`, `ECO151`, `ECO202`, `ECO701`, `ECO731`) permanecem mantidas estritamente em modo leitura/árvore capturada, por política de segurança contra alterações acidentais em produção.
+## Nota de processo
+
+A primeira versao destes docs foi **reprovada na auditoria e descartada**: tinha sido escrita
+por cima das capturas em vez de extraida delas, e continha 42 ids inexistentes (`intbxNumeroRa`,
+`btnLimpar`, `dtbxDataInicial`...) alem de 13 telas marcadas como confirmadas sem nenhum POST
+capturado. O risco nao e teorico: id errado nao gera erro no ZK — a tela devolve grade vazia
+em silencio, que e o pior modo de falha possivel.
+
+A correcao nao foi reescrever os textos, e sim **tirar a escrita da mao**: hoje o doc e uma
+funcao da captura, o status e derivado de arquivo em disco, e o validador reprova divergencia.

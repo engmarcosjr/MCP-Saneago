@@ -1,0 +1,16 @@
+REPLAY HTTP — ECO712
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js ECO712 intbxConta 2238097
+Tempo: 430 ms | linhas: 26
+
+GET /prt/eco/ECO712HistoricoUsuario.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<intbxConta> data_0={"value":2238097,"start":7}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+POST /prt/zkau  cmd_0=echo opt_0=i data_0={"":["onConsultar"]}
+
+LINHAS LIDAS (primeiras 5):
+  CASAS E APARTAMENTOS RESIDENCIAIS - COM ATE 100 M2                | 1 | 2 | 9 | 100,00
+  1 | ÁGUA FRIA | A17G702790 | 03/03/2017 | 0 | 3,0 M³/H
+  07/2026 | 601 | 6 | 6 | 6 | Medido | Não | Não | Não | Medido
+  06/2026 | 595 | 5 | 6 | 5 | Medido | Não | Não | Não | Medido
+  05/2026 | 590 | 4 | 7 | 4 | Medido | Não | Não | Não | Medido

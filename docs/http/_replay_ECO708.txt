@@ -1,0 +1,563 @@
+{"rs":[["addChd",["uZODq1",[
+['zul.sel.Listitem','uZODa2',{_loaded:true,_index:0},{},[
+['zul.sel.Listcell','uZOD97',{style:'text-align: left;',label:'23112002026'},{},[]],
+['zul.sel.Listcell','uZODa7',{style:'text-align: center;',label:'13/07/2026'},{},[]],
+['zul.sel.Listcell','uZODb7',{style:'text-align: center;',label:'13/07/2026'},{},[]],
+['zul.sel.Listcell','uZODc7',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODd7',{style:'text-align: center;',label:'1504381-9'},{},[]],
+['zul.sel.Listcell','uZODe7',{style:'text-align: left;',label:'MARIA SILVANIA                                                        '},{},[]],
+['zul.sel.Listcell','uZODf7',{style:'text-align: left;',label:'2004 - REPARO NO CAVALETE'},{},[]],
+['zul.sel.Listcell','uZODg7',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODh7',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODc2',{_loaded:true,_index:1},{},[
+['zul.sel.Listcell','uZODi7',{style:'text-align: left;',label:'22259382026'},{},[]],
+['zul.sel.Listcell','uZODj7',{style:'text-align: center;',label:'06/07/2026'},{},[]],
+['zul.sel.Listcell','uZODk7',{style:'text-align: center;',label:'06/07/2026'},{},[]],
+['zul.sel.Listcell','uZODl7',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODm7',{style:'text-align: center;',label:'2859364-2'},{},[]],
+['zul.sel.Listcell','uZODn7',{style:'text-align: left;',label:'MARIA SILVA                                                           '},{},[]],
+['zul.sel.Listcell','uZODo7',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODp7',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODq7',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODe2',{_loaded:true,_index:2},{},[
+['zul.sel.Listcell','uZODr7',{style:'text-align: left;',label:'14497442026'},{},[]],
+['zul.sel.Listcell','uZODs7',{style:'text-align: center;',label:'06/05/2026'},{},[]],
+['zul.sel.Listcell','uZODt7',{style:'text-align: center;',label:'06/05/2026'},{},[]],
+['zul.sel.Listcell','uZODu7',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODv7',{style:'text-align: center;',label:'1876105-4'},{},[]],
+['zul.sel.Listcell','uZODw7',{style:'text-align: left;',label:'MARIA SILVA AZEVEDO NORA                                              '},{},[]],
+['zul.sel.Listcell','uZODx7',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODy7',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODz7',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODg2',{_loaded:true,_index:3},{},[
+['zul.sel.Listcell','uZOD_8',{style:'text-align: left;',label:'12186712026'},{},[]],
+['zul.sel.Listcell','uZOD08',{style:'text-align: center;',label:'15/04/2026'},{},[]],
+['zul.sel.Listcell','uZOD18',{style:'text-align: center;',label:'15/04/2026'},{},[]],
+['zul.sel.Listcell','uZOD28',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD38',{style:'text-align: center;',label:'1958141-6'},{},[]],
+['zul.sel.Listcell','uZOD48',{style:'text-align: left;',label:'MARIA SILVA AZEVEDO NORA                                              '},{},[]],
+['zul.sel.Listcell','uZOD58',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZOD68',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD78',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODi2',{_loaded:true,_index:4},{},[
+['zul.sel.Listcell','uZOD88',{style:'text-align: left;',label:'34039322005'},{},[]],
+['zul.sel.Listcell','uZOD98',{style:'text-align: center;',label:'10/03/2026'},{},[]],
+['zul.sel.Listcell','uZODa8',{style:'text-align: center;',label:'12/03/2026'},{},[]],
+['zul.sel.Listcell','uZODb8',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODc8',{style:'text-align: center;',label:'0827203-4'},{},[]],
+['zul.sel.Listcell','uZODd8',{style:'text-align: left;',label:'MARIA SILVA COELHO                                                    '},{},[]],
+['zul.sel.Listcell','uZODe8',{style:'text-align: left;',label:'1069 - TROCA / RETIRADA HIDROMETRO'},{},[]],
+['zul.sel.Listcell','uZODf8',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODg8',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD53',{_loaded:true,_index:5},{},[
+['zul.sel.Listcell','uZODh8',{style:'text-align: left;',label:'05901292026'},{},[]],
+['zul.sel.Listcell','uZODi8',{style:'text-align: center;',label:'24/02/2026'},{},[]],
+['zul.sel.Listcell','uZODj8',{style:'text-align: center;',label:'24/02/2026'},{},[]],
+['zul.sel.Listcell','uZODk8',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODl8',{style:'text-align: center;',label:'0113779-4'},{},[]],
+['zul.sel.Listcell','uZODm8',{style:'text-align: left;',label:'MARIA SILVA DA ROCHA                                                  '},{},[]],
+['zul.sel.Listcell','uZODn8',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODo8',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODp8',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD73',{_loaded:true,_index:6},{},[
+['zul.sel.Listcell','uZODq8',{style:'text-align: left;',label:'05449342026'},{},[]],
+['zul.sel.Listcell','uZODr8',{style:'text-align: center;',label:'19/02/2026'},{},[]],
+['zul.sel.Listcell','uZODs8',{style:'text-align: center;',label:'19/02/2026'},{},[]],
+['zul.sel.Listcell','uZODt8',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODu8',{style:'text-align: center;',label:'2717444-1'},{},[]],
+['zul.sel.Listcell','uZODv8',{style:'text-align: left;',label:'MARIA SILVA DA SILVA                                                  '},{},[]],
+['zul.sel.Listcell','uZODw8',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODx8',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODy8',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD93',{_loaded:true,_index:7},{},[
+['zul.sel.Listcell','uZODz8',{style:'text-align: left;',label:'00421182026'},{},[]],
+['zul.sel.Listcell','uZOD_9',{style:'text-align: center;',label:'07/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD09',{style:'text-align: center;',label:'07/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD19',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD29',{style:'text-align: center;',label:'2717444-1'},{},[]],
+['zul.sel.Listcell','uZOD39',{style:'text-align: left;',label:'MARIA SILVA DA SILVA                                                  '},{},[]],
+['zul.sel.Listcell','uZOD49',{style:'text-align: left;',label:'1356 - INCLUSAO FATURA DIGITAL'},{},[]],
+['zul.sel.Listcell','uZOD59',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD69',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODb3',{_loaded:true,_index:8},{},[
+['zul.sel.Listcell','uZOD79',{style:'text-align: left;',label:'23918942026'},{},[]],
+['zul.sel.Listcell','uZOD89',{style:'text-align: center;',label:'20/07/2026'},{},[]],
+['zul.sel.Listcell','uZOD99',{style:'text-align: center;',label:'20/07/2026'},{},[]],
+['zul.sel.Listcell','uZODa9',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODb9',{style:'text-align: center;',label:'1040189-0'},{},[]],
+['zul.sel.Listcell','uZODc9',{style:'text-align: left;',label:'MARIA SILVA DE ALMEIDA                                                '},{},[]],
+['zul.sel.Listcell','uZODd9',{style:'text-align: left;',label:'1004 - SEGUNDA VIA DE CONTA'},{},[]],
+['zul.sel.Listcell','uZODe9',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODf9',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODd3',{_loaded:true,_index:9},{},[
+['zul.sel.Listcell','uZODg9',{style:'text-align: left;',label:'06601752018'},{},[]],
+['zul.sel.Listcell','uZODh9',{style:'text-align: center;',label:'08/06/2026'},{},[]],
+['zul.sel.Listcell','uZODi9',{style:'text-align: center;',label:'08/06/2026'},{},[]],
+['zul.sel.Listcell','uZODj9',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODk9',{style:'text-align: center;',label:'1416188-5'},{},[]],
+['zul.sel.Listcell','uZODl9',{style:'text-align: left;',label:'MARIA SILVA DE JESUS OLIVEIRA                                         '},{},[]],
+['zul.sel.Listcell','uZODm9',{style:'text-align: left;',label:'1008 - VISTORIA-VERIFICAR ANORMALIDADE CONSUMO'},{},[]],
+['zul.sel.Listcell','uZODn9',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODo9',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODf3',{_loaded:true,_index:10},{},[
+['zul.sel.Listcell','uZODp9',{style:'text-align: left;',label:'13568272020'},{},[]],
+['zul.sel.Listcell','uZODq9',{style:'text-align: center;',label:'13/07/2026'},{},[]],
+['zul.sel.Listcell','uZODr9',{style:'text-align: center;',label:'15/07/2026'},{},[]],
+['zul.sel.Listcell','uZODs9',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODt9',{style:'text-align: center;',label:'2441346-1'},{},[]],
+['zul.sel.Listcell','uZODu9',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZODv9',{style:'text-align: left;',label:'1069 - TROCA / RETIRADA HIDROMETRO'},{},[]],
+['zul.sel.Listcell','uZODw9',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODx9',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODh3',{_loaded:true,_index:11},{},[
+['zul.sel.Listcell','uZODy9',{style:'text-align: left;',label:'22866812026'},{},[]],
+['zul.sel.Listcell','uZODz9',{style:'text-align: center;',label:'09/07/2026'},{},[]],
+['zul.sel.Listcell','uZOD_a',{style:'text-align: center;',label:'09/07/2026'},{},[]],
+['zul.sel.Listcell','uZOD0a',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD1a',{style:'text-align: center;',label:'2441342-9'},{},[]],
+['zul.sel.Listcell','uZOD2a',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZOD3a',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZOD4a',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD5a',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODj3',{_loaded:true,_index:12},{},[
+['zul.sel.Listcell','uZOD6a',{style:'text-align: left;',label:'10785712026'},{},[]],
+['zul.sel.Listcell','uZOD7a',{style:'text-align: center;',label:'05/04/2026'},{},[]],
+['zul.sel.Listcell','uZOD8a',{style:'text-align: center;',label:'05/04/2026'},{},[]],
+['zul.sel.Listcell','uZOD9a',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODaa',{style:'text-align: center;',label:'1332322-9'},{},[]],
+['zul.sel.Listcell','uZODba',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZODca',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODda',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODea',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODl3',{_loaded:true,_index:13},{},[
+['zul.sel.Listcell','uZODfa',{style:'text-align: left;',label:'29414212024'},{},[]],
+['zul.sel.Listcell','uZODga',{style:'text-align: center;',label:'02/02/2026'},{},[]],
+['zul.sel.Listcell','uZODha',{style:'text-align: center;',label:'02/02/2026'},{},[]],
+['zul.sel.Listcell','uZODia',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODja',{style:'text-align: center;',label:'1332322-9'},{},[]],
+['zul.sel.Listcell','uZODka',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZODla',{style:'text-align: left;',label:'1008 - VISTORIA-VERIFICAR ANORMALIDADE CONSUMO'},{},[]],
+['zul.sel.Listcell','uZODma',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODna',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODn3',{_loaded:true,_index:14},{},[
+['zul.sel.Listcell','uZODoa',{style:'text-align: left;',label:'09312822020'},{},[]],
+['zul.sel.Listcell','uZODpa',{style:'text-align: center;',label:'21/01/2026'},{},[]],
+['zul.sel.Listcell','uZODqa',{style:'text-align: center;',label:'21/01/2026'},{},[]],
+['zul.sel.Listcell','uZODra',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODsa',{style:'text-align: center;',label:'0902075-6'},{},[]],
+['zul.sel.Listcell','uZODta',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZODua',{style:'text-align: left;',label:'1058 - CADASTRAR SUPRESSAO - LIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODva',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODwa',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODp3',{_loaded:true,_index:15},{},[
+['zul.sel.Listcell','uZODxa',{style:'text-align: left;',label:'01584672026'},{},[]],
+['zul.sel.Listcell','uZODya',{style:'text-align: center;',label:'17/01/2026'},{},[]],
+['zul.sel.Listcell','uZODza',{style:'text-align: center;',label:'17/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD_b',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD0b',{style:'text-align: center;',label:'1100804-0'},{},[]],
+['zul.sel.Listcell','uZOD1b',{style:'text-align: left;',label:'MARIA SILVA DE SOUZA                                                  '},{},[]],
+['zul.sel.Listcell','uZOD2b',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZOD3b',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD4b',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODr3',{_loaded:true,_index:16},{},[
+['zul.sel.Listcell','uZOD5b',{style:'text-align: left;',label:'06279182026'},{},[]],
+['zul.sel.Listcell','uZOD6b',{style:'text-align: center;',label:'26/02/2026'},{},[]],
+['zul.sel.Listcell','uZOD7b',{style:'text-align: center;',label:'26/02/2026'},{},[]],
+['zul.sel.Listcell','uZOD8b',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD9b',{style:'text-align: center;',label:'0076267-9'},{},[]],
+['zul.sel.Listcell','uZODab',{style:'text-align: left;',label:'MARIA SILVA DOS REIS                                                  '},{},[]],
+['zul.sel.Listcell','uZODbb',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODcb',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODdb',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODt3',{_loaded:true,_index:17},{},[
+['zul.sel.Listcell','uZODeb',{style:'text-align: left;',label:'09558062026'},{},[]],
+['zul.sel.Listcell','uZODfb',{style:'text-align: center;',label:'25/03/2026'},{},[]],
+['zul.sel.Listcell','uZODgb',{style:'text-align: center;',label:'25/03/2026'},{},[]],
+['zul.sel.Listcell','uZODhb',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODib',{style:'text-align: center;',label:'0007149-8'},{},[]],
+['zul.sel.Listcell','uZODjb',{style:'text-align: left;',label:'MARIA SILVA E OUTRA                                                   '},{},[]],
+['zul.sel.Listcell','uZODkb',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODlb',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODmb',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODv3',{_loaded:true,_index:18},{},[
+['zul.sel.Listcell','uZODnb',{style:'text-align: left;',label:'00615702026'},{},[]],
+['zul.sel.Listcell','uZODob',{style:'text-align: center;',label:'08/01/2026'},{},[]],
+['zul.sel.Listcell','uZODpb',{style:'text-align: center;',label:'08/01/2026'},{},[]],
+['zul.sel.Listcell','uZODqb',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODrb',{style:'text-align: center;',label:'1186979-8'},{},[]],
+['zul.sel.Listcell','uZODsb',{style:'text-align: left;',label:'MARIA SILVA E OUTRA                                                   '},{},[]],
+['zul.sel.Listcell','uZODtb',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODub',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODvb',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODx3',{_loaded:true,_index:19},{},[
+['zul.sel.Listcell','uZODwb',{style:'text-align: left;',label:'20369882026'},{},[]],
+['zul.sel.Listcell','uZODxb',{style:'text-align: center;',label:'19/06/2026'},{},[]],
+['zul.sel.Listcell','uZODyb',{style:'text-align: center;',label:'19/06/2026'},{},[]],
+['zul.sel.Listcell','uZODzb',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD_c',{style:'text-align: center;',label:'2024062-7'},{},[]],
+['zul.sel.Listcell','uZOD0c',{style:'text-align: left;',label:'MARIA SILVA E SOUZA                                                   '},{},[]],
+['zul.sel.Listcell','uZOD1c',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZOD2c',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD3c',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODz3',{_loaded:true,_index:20},{},[
+['zul.sel.Listcell','uZOD4c',{style:'text-align: left;',label:'20179242026'},{},[]],
+['zul.sel.Listcell','uZOD5c',{style:'text-align: center;',label:'18/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD6c',{style:'text-align: center;',label:'18/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD7c',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD8c',{style:'text-align: center;',label:'0136475-8'},{},[]],
+['zul.sel.Listcell','uZOD9c',{style:'text-align: left;',label:'MARIA SILVA E SOUZA                                                   '},{},[]],
+['zul.sel.Listcell','uZODac',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODbc',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODcc',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD04',{_loaded:true,_index:21},{},[
+['zul.sel.Listcell','uZODdc',{style:'text-align: left;',label:'16634712025'},{},[]],
+['zul.sel.Listcell','uZODec',{style:'text-align: center;',label:'25/05/2026'},{},[]],
+['zul.sel.Listcell','uZODfc',{style:'text-align: center;',label:'26/05/2026'},{},[]],
+['zul.sel.Listcell','uZODgc',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODhc',{style:'text-align: center;',label:'0136475-8'},{},[]],
+['zul.sel.Listcell','uZODic',{style:'text-align: left;',label:'MARIA SILVA E SOUZA                                                   '},{},[]],
+['zul.sel.Listcell','uZODjc',{style:'text-align: left;',label:'1008 - VISTORIA-VERIFICAR ANORMALIDADE CONSUMO'},{},[]],
+['zul.sel.Listcell','uZODkc',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODlc',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD24',{_loaded:true,_index:22},{},[
+['zul.sel.Listcell','uZODmc',{style:'text-align: left;',label:'07894812026'},{},[]],
+['zul.sel.Listcell','uZODnc',{style:'text-align: center;',label:'11/03/2026'},{},[]],
+['zul.sel.Listcell','uZODoc',{style:'text-align: center;',label:'12/03/2026'},{},[]],
+['zul.sel.Listcell','uZODpc',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODqc',{style:'text-align: center;',label:'2453840-0'},{},[]],
+['zul.sel.Listcell','uZODrc',{style:'text-align: left;',label:'MARIA SILVA E SOUZA                                                   '},{},[]],
+['zul.sel.Listcell','uZODsc',{style:'text-align: left;',label:'2004 - REPARO NO CAVALETE'},{},[]],
+['zul.sel.Listcell','uZODtc',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODuc',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD44',{_loaded:true,_index:23},{},[
+['zul.sel.Listcell','uZODvc',{style:'text-align: left;',label:'25277572026'},{},[]],
+['zul.sel.Listcell','uZODwc',{style:'text-align: center;',label:'30/07/2026'},{},[]],
+['zul.sel.Listcell','uZODxc',{style:'text-align: center;',label:'31/07/2026'},{},[]],
+['zul.sel.Listcell','uZODyc',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODzc',{style:'text-align: center;',label:'0129928-0'},{},[]],
+['zul.sel.Listcell','uZOD_d',{style:'text-align: left;',label:'MARIA SILVA GONCALVES                                                 '},{},[]],
+['zul.sel.Listcell','uZOD0d',{style:'text-align: left;',label:'1004 - SEGUNDA VIA DE CONTA'},{},[]],
+['zul.sel.Listcell','uZOD1d',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD2d',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD64',{_loaded:true,_index:24},{},[
+['zul.sel.Listcell','uZOD3d',{style:'text-align: left;',label:'29716642025'},{},[]],
+['zul.sel.Listcell','uZOD4d',{style:'text-align: center;',label:'31/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD5d',{style:'text-align: center;',label:'31/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD6d',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD7d',{style:'text-align: center;',label:'0129928-0'},{},[]],
+['zul.sel.Listcell','uZOD8d',{style:'text-align: left;',label:'MARIA SILVA GONCALVES                                                 '},{},[]],
+['zul.sel.Listcell','uZOD9d',{style:'text-align: left;',label:'6002 - RECUPERACAO DE PASSEIO / MURETA'},{},[]],
+['zul.sel.Listcell','uZODad',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODbd',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD84',{_loaded:true,_index:25},{},[
+['zul.sel.Listcell','uZODcd',{style:'text-align: left;',label:'22768302026'},{},[]],
+['zul.sel.Listcell','uZODdd',{style:'text-align: center;',label:'09/07/2026'},{},[]],
+['zul.sel.Listcell','uZODed',{style:'text-align: center;',label:'09/07/2026'},{},[]],
+['zul.sel.Listcell','uZODfd',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODgd',{style:'text-align: center;',label:'1017198-3'},{},[]],
+['zul.sel.Listcell','uZODhd',{style:'text-align: left;',label:'MARIA SILVA LIMA                                                      '},{},[]],
+['zul.sel.Listcell','uZODid',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODjd',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODkd',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODa4',{_loaded:true,_index:26},{},[
+['zul.sel.Listcell','uZODld',{style:'text-align: left;',label:'21663612026'},{},[]],
+['zul.sel.Listcell','uZODmd',{style:'text-align: center;',label:'30/06/2026'},{},[]],
+['zul.sel.Listcell','uZODnd',{style:'text-align: center;',label:'30/06/2026'},{},[]],
+['zul.sel.Listcell','uZODod',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODpd',{style:'text-align: center;',label:'0125321-2'},{},[]],
+['zul.sel.Listcell','uZODqd',{style:'text-align: left;',label:'MARIA SILVA MACÊDO                                                    '},{},[]],
+['zul.sel.Listcell','uZODrd',{style:'text-align: left;',label:'1259 - CREDITO/DEVOLUCAO VALOR PAGTO. DUPLICIDADE'},{},[]],
+['zul.sel.Listcell','uZODsd',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODtd',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODc4',{_loaded:true,_index:27},{},[
+['zul.sel.Listcell','uZODud',{style:'text-align: left;',label:'16204822026'},{},[]],
+['zul.sel.Listcell','uZODvd',{style:'text-align: center;',label:'19/05/2026'},{},[]],
+['zul.sel.Listcell','uZODwd',{style:'text-align: center;',label:'19/05/2026'},{},[]],
+['zul.sel.Listcell','uZODxd',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODyd',{style:'text-align: center;',label:'0125321-2'},{},[]],
+['zul.sel.Listcell','uZODzd',{style:'text-align: left;',label:'MARIA SILVA MACÊDO                                                    '},{},[]],
+['zul.sel.Listcell','uZOD_e',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZOD0e',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD1e',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODe4',{_loaded:true,_index:28},{},[
+['zul.sel.Listcell','uZOD2e',{style:'text-align: left;',label:'12553602026'},{},[]],
+['zul.sel.Listcell','uZOD3e',{style:'text-align: center;',label:'24/07/2026'},{},[]],
+['zul.sel.Listcell','uZOD4e',{style:'text-align: center;',label:'27/07/2026'},{},[]],
+['zul.sel.Listcell','uZOD5e',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD6e',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZOD7e',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZOD8e',{style:'text-align: left;',label:'1001 - CADASTRO - REVISAO GERAL'},{},[]],
+['zul.sel.Listcell','uZOD9e',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODae',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODg4',{_loaded:true,_index:29},{},[
+['zul.sel.Listcell','uZODbe',{style:'text-align: left;',label:'23532762026'},{},[]],
+['zul.sel.Listcell','uZODce',{style:'text-align: center;',label:'15/07/2026'},{},[]],
+['zul.sel.Listcell','uZODde',{style:'text-align: center;',label:'15/07/2026'},{},[]],
+['zul.sel.Listcell','uZODee',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODfe',{style:'text-align: center;',label:'1200691-2'},{},[]],
+['zul.sel.Listcell','uZODge',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODhe',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODie',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODje',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODi4',{_loaded:true,_index:30},{},[
+['zul.sel.Listcell','uZODke',{style:'text-align: left;',label:'22146422026'},{},[]],
+['zul.sel.Listcell','uZODle',{style:'text-align: center;',label:'03/07/2026'},{},[]],
+['zul.sel.Listcell','uZODme',{style:'text-align: center;',label:'03/07/2026'},{},[]],
+['zul.sel.Listcell','uZODne',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODoe',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZODpe',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODqe',{style:'text-align: left;',label:'1217 - REFATURAMENTO DE CONTA'},{},[]],
+['zul.sel.Listcell','uZODre',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODse',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODk4',{_loaded:true,_index:31},{},[
+['zul.sel.Listcell','uZODte',{style:'text-align: left;',label:'22146542026'},{},[]],
+['zul.sel.Listcell','uZODue',{style:'text-align: center;',label:'03/07/2026'},{},[]],
+['zul.sel.Listcell','uZODve',{style:'text-align: center;',label:'03/07/2026'},{},[]],
+['zul.sel.Listcell','uZODwe',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODxe',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZODye',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODze',{style:'text-align: left;',label:'1217 - REFATURAMENTO DE CONTA'},{},[]],
+['zul.sel.Listcell','uZOD_f',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD0f',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODm4',{_loaded:true,_index:32},{},[
+['zul.sel.Listcell','uZOD1f',{style:'text-align: left;',label:'20648722026'},{},[]],
+['zul.sel.Listcell','uZOD2f',{style:'text-align: center;',label:'23/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD3f',{style:'text-align: center;',label:'26/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD4f',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD5f',{style:'text-align: center;',label:'0095815-8'},{},[]],
+['zul.sel.Listcell','uZOD6f',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZOD7f',{style:'text-align: left;',label:'1007 - VISTORIA-VERIFICAR IRREGULARIDADE ESGOTO'},{},[]],
+['zul.sel.Listcell','uZOD8f',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD9f',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODo4',{_loaded:true,_index:33},{},[
+['zul.sel.Listcell','uZODaf',{style:'text-align: left;',label:'20648762026'},{},[]],
+['zul.sel.Listcell','uZODbf',{style:'text-align: center;',label:'23/06/2026'},{},[]],
+['zul.sel.Listcell','uZODcf',{style:'text-align: center;',label:'26/06/2026'},{},[]],
+['zul.sel.Listcell','uZODdf',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODef',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZODff',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODgf',{style:'text-align: left;',label:'1007 - VISTORIA-VERIFICAR IRREGULARIDADE ESGOTO'},{},[]],
+['zul.sel.Listcell','uZODhf',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODif',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODq4',{_loaded:true,_index:34},{},[
+['zul.sel.Listcell','uZODjf',{style:'text-align: left;',label:'20648772026'},{},[]],
+['zul.sel.Listcell','uZODkf',{style:'text-align: center;',label:'23/06/2026'},{},[]],
+['zul.sel.Listcell','uZODlf',{style:'text-align: center;',label:'26/06/2026'},{},[]],
+['zul.sel.Listcell','uZODmf',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODnf',{style:'text-align: center;',label:'1200691-2'},{},[]],
+['zul.sel.Listcell','uZODof',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODpf',{style:'text-align: left;',label:'1007 - VISTORIA-VERIFICAR IRREGULARIDADE ESGOTO'},{},[]],
+['zul.sel.Listcell','uZODqf',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODrf',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODs4',{_loaded:true,_index:35},{},[
+['zul.sel.Listcell','uZODsf',{style:'text-align: left;',label:'20648782026'},{},[]],
+['zul.sel.Listcell','uZODtf',{style:'text-align: center;',label:'23/06/2026'},{},[]],
+['zul.sel.Listcell','uZODuf',{style:'text-align: center;',label:'26/06/2026'},{},[]],
+['zul.sel.Listcell','uZODvf',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODwf',{style:'text-align: center;',label:'1200695-5'},{},[]],
+['zul.sel.Listcell','uZODxf',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODyf',{style:'text-align: left;',label:'1007 - VISTORIA-VERIFICAR IRREGULARIDADE ESGOTO'},{},[]],
+['zul.sel.Listcell','uZODzf',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD_g',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODu4',{_loaded:true,_index:36},{},[
+['zul.sel.Listcell','uZOD0g',{style:'text-align: left;',label:'19949162026'},{},[]],
+['zul.sel.Listcell','uZOD1g',{style:'text-align: center;',label:'17/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD2g',{style:'text-align: center;',label:'18/06/2026'},{},[]],
+['zul.sel.Listcell','uZOD3g',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD4g',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZOD5g',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZOD6g',{style:'text-align: left;',label:'1003 - REVISAO DE LEITURA'},{},[]],
+['zul.sel.Listcell','uZOD7g',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD8g',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODw4',{_loaded:true,_index:37},{},[
+['zul.sel.Listcell','uZOD9g',{style:'text-align: left;',label:'12246542026'},{},[]],
+['zul.sel.Listcell','uZODag',{style:'text-align: center;',label:'16/04/2026'},{},[]],
+['zul.sel.Listcell','uZODbg',{style:'text-align: center;',label:'16/04/2026'},{},[]],
+['zul.sel.Listcell','uZODcg',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODdg',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZODeg',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODfg',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODgg',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODhg',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODy4',{_loaded:true,_index:38},{},[
+['zul.sel.Listcell','uZODig',{style:'text-align: left;',label:'31830872025'},{},[]],
+['zul.sel.Listcell','uZODjg',{style:'text-align: center;',label:'14/04/2026'},{},[]],
+['zul.sel.Listcell','uZODkg',{style:'text-align: center;',label:'15/04/2026'},{},[]],
+['zul.sel.Listcell','uZODlg',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODmg',{style:'text-align: center;',label:'1200685-8'},{},[]],
+['zul.sel.Listcell','uZODng',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODog',{style:'text-align: left;',label:'1105 - CORTE AGUA C/OBTURADOR/TUB.CEGO-PADRAO/RAMAL'},{},[]],
+['zul.sel.Listcell','uZODpg',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODqg',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD_5',{_loaded:true,_index:39},{},[
+['zul.sel.Listcell','uZODrg',{style:'text-align: left;',label:'04140142026'},{},[]],
+['zul.sel.Listcell','uZODsg',{style:'text-align: center;',label:'06/02/2026'},{},[]],
+['zul.sel.Listcell','uZODtg',{style:'text-align: center;',label:'06/02/2026'},{},[]],
+['zul.sel.Listcell','uZODug',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODvg',{style:'text-align: center;',label:'0095815-8'},{},[]],
+['zul.sel.Listcell','uZODwg',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZODxg',{style:'text-align: left;',label:'1090 - ALTERACAO SITUACAO LIGACAO DE AGUA'},{},[]],
+['zul.sel.Listcell','uZODyg',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODzg',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD15',{_loaded:true,_index:40},{},[
+['zul.sel.Listcell','uZOD_h',{style:'text-align: left;',label:'06533082021'},{},[]],
+['zul.sel.Listcell','uZOD0h',{style:'text-align: center;',label:'04/02/2026'},{},[]],
+['zul.sel.Listcell','uZOD1h',{style:'text-align: center;',label:'05/02/2026'},{},[]],
+['zul.sel.Listcell','uZOD2h',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD3h',{style:'text-align: center;',label:'0095815-8'},{},[]],
+['zul.sel.Listcell','uZOD4h',{style:'text-align: left;',label:'MARIA SILVA MELO                                                      '},{},[]],
+['zul.sel.Listcell','uZOD5h',{style:'text-align: left;',label:'1105 - CORTE AGUA C/OBTURADOR/TUB.CEGO-PADRAO/RAMAL'},{},[]],
+['zul.sel.Listcell','uZOD6h',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD7h',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD35',{_loaded:true,_index:41},{},[
+['zul.sel.Listcell','uZOD8h',{style:'text-align: left;',label:'04531912026'},{},[]],
+['zul.sel.Listcell','uZOD9h',{style:'text-align: center;',label:'09/02/2026'},{},[]],
+['zul.sel.Listcell','uZODah',{style:'text-align: center;',label:'09/02/2026'},{},[]],
+['zul.sel.Listcell','uZODbh',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODch',{style:'text-align: center;',label:'0167138-3'},{},[]],
+['zul.sel.Listcell','uZODdh',{style:'text-align: left;',label:'MARIA SILVA MOTA                                                      '},{},[]],
+['zul.sel.Listcell','uZODeh',{style:'text-align: left;',label:'1259 - CREDITO/DEVOLUCAO VALOR PAGTO. DUPLICIDADE'},{},[]],
+['zul.sel.Listcell','uZODfh',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODgh',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD55',{_loaded:true,_index:42},{},[
+['zul.sel.Listcell','uZODhh',{style:'text-align: left;',label:'24860732026'},{},[]],
+['zul.sel.Listcell','uZODih',{style:'text-align: center;',label:'27/07/2026'},{},[]],
+['zul.sel.Listcell','uZODjh',{style:'text-align: center;',label:'27/07/2026'},{},[]],
+['zul.sel.Listcell','uZODkh',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODlh',{style:'text-align: center;',label:'0150066-0'},{},[]],
+['zul.sel.Listcell','uZODmh',{style:'text-align: left;',label:'MARIA SILVA RAMOS                                                     '},{},[]],
+['zul.sel.Listcell','uZODnh',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODoh',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODph',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD75',{_loaded:true,_index:43},{},[
+['zul.sel.Listcell','uZODqh',{style:'text-align: left;',label:'23105892026'},{},[]],
+['zul.sel.Listcell','uZODrh',{style:'text-align: center;',label:'13/07/2026'},{},[]],
+['zul.sel.Listcell','uZODsh',{style:'text-align: center;',label:'13/07/2026'},{},[]],
+['zul.sel.Listcell','uZODth',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODuh',{style:'text-align: center;',label:'0150066-0'},{},[]],
+['zul.sel.Listcell','uZODvh',{style:'text-align: left;',label:'MARIA SILVA RAMOS                                                     '},{},[]],
+['zul.sel.Listcell','uZODwh',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZODxh',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODyh',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZOD95',{_loaded:true,_index:44},{},[
+['zul.sel.Listcell','uZODzh',{style:'text-align: left;',label:'02718772026'},{},[]],
+['zul.sel.Listcell','uZOD_i',{style:'text-align: center;',label:'28/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD0i',{style:'text-align: center;',label:'29/01/2026'},{},[]],
+['zul.sel.Listcell','uZOD1i',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD2i',{style:'text-align: center;',label:'0071428-3'},{},[]],
+['zul.sel.Listcell','uZOD3i',{style:'text-align: left;',label:'MARIA SILVA RIBEIRO                                                   '},{},[]],
+['zul.sel.Listcell','uZOD4i',{style:'text-align: left;',label:'2004 - REPARO NO CAVALETE'},{},[]],
+['zul.sel.Listcell','uZOD5i',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD6i',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODb5',{_loaded:true,_index:45},{},[
+['zul.sel.Listcell','uZOD7i',{style:'text-align: left;',label:'08853092026'},{},[]],
+['zul.sel.Listcell','uZOD8i',{style:'text-align: center;',label:'18/03/2026'},{},[]],
+['zul.sel.Listcell','uZOD9i',{style:'text-align: center;',label:'18/03/2026'},{},[]],
+['zul.sel.Listcell','uZODai',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODbi',{style:'text-align: center;',label:'2244522-6'},{},[]],
+['zul.sel.Listcell','uZODci',{style:'text-align: left;',label:'MARIA SILVA RIBEIRO DE MORAES                                         '},{},[]],
+['zul.sel.Listcell','uZODdi',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODei',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODfi',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODd5',{_loaded:true,_index:46},{},[
+['zul.sel.Listcell','uZODgi',{style:'text-align: left;',label:'22725282026'},{},[]],
+['zul.sel.Listcell','uZODhi',{style:'text-align: center;',label:'08/07/2026'},{},[]],
+['zul.sel.Listcell','uZODii',{style:'text-align: center;',label:'08/07/2026'},{},[]],
+['zul.sel.Listcell','uZODji',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODki',{style:'text-align: center;',label:'0110153-6'},{},[]],
+['zul.sel.Listcell','uZODli',{style:'text-align: left;',label:'MARIA SILVA SANTOS                                                    '},{},[]],
+['zul.sel.Listcell','uZODmi',{style:'text-align: left;',label:'1259 - CREDITO/DEVOLUCAO VALOR PAGTO. DUPLICIDADE'},{},[]],
+['zul.sel.Listcell','uZODni',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODoi',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODf5',{_loaded:true,_index:47},{},[
+['zul.sel.Listcell','uZODpi',{style:'text-align: left;',label:'19189522026'},{},[]],
+['zul.sel.Listcell','uZODqi',{style:'text-align: center;',label:'11/06/2026'},{},[]],
+['zul.sel.Listcell','uZODri',{style:'text-align: center;',label:'11/06/2026'},{},[]],
+['zul.sel.Listcell','uZODsi',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODti',{style:'text-align: center;',label:'0110153-6'},{},[]],
+['zul.sel.Listcell','uZODui',{style:'text-align: left;',label:'MARIA SILVA SANTOS                                                    '},{},[]],
+['zul.sel.Listcell','uZODvi',{style:'text-align: left;',label:'1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE'},{},[]],
+['zul.sel.Listcell','uZODwi',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODxi',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODh5',{_loaded:true,_index:48},{},[
+['zul.sel.Listcell','uZODyi',{style:'text-align: left;',label:'15436812026'},{},[]],
+['zul.sel.Listcell','uZODzi',{style:'text-align: center;',label:'13/05/2026'},{},[]],
+['zul.sel.Listcell','uZOD_j',{style:'text-align: center;',label:'13/05/2026'},{},[]],
+['zul.sel.Listcell','uZOD0j',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZOD1j',{style:'text-align: center;',label:'0110153-6'},{},[]],
+['zul.sel.Listcell','uZOD2j',{style:'text-align: left;',label:'MARIA SILVA SANTOS                                                    '},{},[]],
+['zul.sel.Listcell','uZOD3j',{style:'text-align: left;',label:'1271 - ORDEM DE SERVICO PARA RELIGACAO AGUA'},{},[]],
+['zul.sel.Listcell','uZOD4j',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZOD5j',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODj5',{_loaded:true,_index:49},{},[
+['zul.sel.Listcell','uZOD6j',{style:'text-align: left;',label:'07426672026'},{},[]],
+['zul.sel.Listcell','uZOD7j',{style:'text-align: center;',label:'09/03/2026'},{},[]],
+['zul.sel.Listcell','uZOD8j',{style:'text-align: center;',label:'09/03/2026'},{},[]],
+['zul.sel.Listcell','uZOD9j',{style:'text-align: left;',label:'EXECUTADO'},{},[]],
+['zul.sel.Listcell','uZODaj',{style:'text-align: center;',label:'1067281-8'},{},[]],
+['zul.sel.Listcell','uZODbj',{style:'text-align: left;',label:'MARIA SILVA SANTOS                                                    '},{},[]],
+['zul.sel.Listcell','uZODcj',{style:'text-align: left;',label:'1004 - SEGUNDA VIA DE CONTA'},{},[]],
+['zul.sel.Listcell','uZODdj',{style:'text-align:center'},{},[
+['zul.wgt.Button','uZODej',{$onClick:true,prolog:' ',label:'RA',image:'/prt/imagens/pesquisar16.png'},{},[],'trendy']]]]]],[
+['zul.sel.Listitem','uZODl5',{_index:50},{},[
+['zul.sel.Listcell','uZODm5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODn5',{_index:51},{},[
+['zul.sel.Listcell','uZODo5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODp5',{_index:52},{},[
+['zul.sel.Listcell','uZODq5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODr5',{_index:53},{},[
+['zul.sel.Listcell','uZODs5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODt5',{_index:54},{},[
+['zul.sel.Listcell','uZODu5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODv5',{_index:55},{},[
+['zul.sel.Listcell','uZODw5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODx5',{_index:56},{},[
+['zul.sel.Listcell','uZODy5',{},{},[]]]]],[
+['zul.sel.Listitem','uZODz5',{_index:57},{},[
+['zul.sel.Listcell','uZOD_6',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD06',{_index:58},{},[
+['zul.sel.Listcell','uZOD16',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD26',{_index:59},{},[
+['zul.sel.Listcell','uZOD36',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD46',{_index:60},{},[
+['zul.sel.Listcell','uZOD56',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD66',{_index:61},{},[
+['zul.sel.Listcell','uZOD76',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD86',{_index:62},{},[
+['zul.sel.Listcell','uZOD96',{},{},[]]]]],[
+['zul.sel.Listitem','uZODa6',{_index:63},{},[
+['zul.sel.Listcell','uZODb6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODc6',{_index:64},{},[
+['zul.sel.Listcell','uZODd6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODe6',{_index:65},{},[
+['zul.sel.Listcell','uZODf6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODg6',{_index:66},{},[
+['zul.sel.Listcell','uZODh6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODi6',{_index:67},{},[
+['zul.sel.Listcell','uZODj6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODk6',{_index:68},{},[
+['zul.sel.Listcell','uZODl6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODm6',{_index:69},{},[
+['zul.sel.Listcell','uZODn6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODo6',{_index:70},{},[
+['zul.sel.Listcell','uZODp6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODq6',{_index:71},{},[
+['zul.sel.Listcell','uZODr6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODs6',{_index:72},{},[
+['zul.sel.Listcell','uZODt6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODu6',{_index:73},{},[
+['zul.sel.Listcell','uZODv6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODw6',{_index:74},{},[
+['zul.sel.Listcell','uZODx6',{},{},[]]]]],[
+['zul.sel.Listitem','uZODy6',{_index:75},{},[
+['zul.sel.Listcell','uZODz6',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD_7',{_index:76},{},[
+['zul.sel.Listcell','uZOD07',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD17',{_index:77},{},[
+['zul.sel.Listcell','uZOD27',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD37',{_index:78},{},[
+['zul.sel.Listcell','uZOD47',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD57',{_index:79},{},[
+['zul.sel.Listcell','uZOD67',{},{},[]]]]],[
+['zul.sel.Listitem','uZOD77',{_index:80},{},[
+['zul.sel.Listcell','uZOD87',{},{},[]]]]]]],["clearWrongValue",[{$u:'uZODi1'}]],["clearWrongValue",[{$u:'uZODj1'}]],["setAttrs",[{$u:'uZODq1'},["visible",true,"_lastoffset",0,"resetDataLoader",true,"model",true,"visibleItemCount",81]]],["clearBusy",null]],"rid":5}

@@ -1,19 +1,10 @@
-REPLAY EVIDENCIA — ECO709 (Consulta RA por Logradouro)
-Data Replay: 2026-08-06
-Resultado: SUCESSO (14 RAs reais retornadas via HTTP em Node.js)
+REPLAY HTTP — ECO709 (RAs por Logradouro)
+Data: 2026-08-06
+Reproduzir: node -e "require(./src/http/eco709)" — ver src/http/eco709.js consultar({cidade:2,bairro:81,logradouro:1945,dataInicial:01/01/2024,dataFinal:31/12/2024})
+Tempo: 434 ms | linhas: 14
 
-URL: https://prod.saneago.com.br/prt/eco/ECO709ConsultaRALogradouro.zul
-Campos: pesquisaCidade = 2, pesquisaBairro = 81, pesquisaLogradouro = 1945, dtbxInicial = 01/01/2024, dtbxFinal = 31/12/2024
-Botao: btnConsultar
+Filtros macro caixaPesquisa resolvidos por resolverFilho(idMacro, txtCodigo) em src/http/zk-tree.js
 
-SEQUENCIA DE POSTS ENVIADA (/prt/zkau):
-POST 1: cmd_0=onChange&uuid_0=<cidade>&data_0={"value":2,"start":1}&cmd_1=onBlur&uuid_1=<cidade>
-POST 2: cmd_0=onChange&uuid_0=<bairro>&data_0={"value":81,"start":2}&cmd_1=onBlur&uuid_1=<bairro>
-POST 3: cmd_0=onChange&uuid_0=<logradouro>&data_0={"value":"1945","start":4}&cmd_1=onBlur&uuid_1=<logradouro>
-POST 4: cmd_0=onChange&uuid_0=<dtIni>&data_0={"value":"2024.1.1.12.0.0.0","start":10,"z$dateKeys":["value"]}&cmd_1=onChange&uuid_1=<dtFin>&data_1={"value":"2024.12.31.12.0.0.0","start":10,"z$dateKeys":["value"]}&cmd_2=onClick&uuid_2=<btnConsultar>&data_2={"pageX":0,"pageY":0,"which":1,"x":0,"y":0}
-POST 5 (echo): cmd_0=echo&opt_0=i&uuid_0=<echo>&data_0={"":["onConsultar"]}
-
-RESPOSTA RECEBIDA (trecho sanitizado):
-RA: 31856102023 | Início: 15/04/2024 | Execução: 15/04/2024 | Situação: EXECUTADO | Conta: 2655625-1 | Nome: [TITULAR] | Serviço: 1207 - PARCELAMENTO / FINANCIAMENTO
-RA: 10311912024 | Início: 02/05/2024 | Execução: 02/05/2024 | Situação: EXECUTADO | Conta: 2268197-3 | Nome: [TITULAR] | Serviço: 3001 - DESOBSTRUCAO DE ESGOTO
-RA: 33019802024 | Início: 19/12/2024 | Execução: 19/12/2024 | Situação: EXECUTADO | Conta: 0000000-0 | Nome: [TITULAR] | Serviço: 3001 - DESOBSTRUCAO DE ESGOTO
+LINHAS LIDAS (2 primeiras, nome mascarado):
+  31856102023 | 15/04/2024 | 15/04/2024 | EXECUTADO | 2655625-1 | BRUNO ******* ******* | 1207 - PARCELAMENTO / FINANCIAMENTO
+  12463622023 | 01/02/2024 | 01/02/2024 | EXECUTADO | 2655625-1 | BRUNO ******* ******* | 1312 - INFORMACOES TITULARIDADE

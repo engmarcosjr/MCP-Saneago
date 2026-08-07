@@ -1,20 +1,14 @@
-REPLAY EVIDENCIA — ECO707 (Consulta RA por Número de Conta)
-Data Replay: 2026-08-06
-Resultado: SUCESSO (devoldido via POST HTTP em Node.js em < 0.2s)
+REPLAY HTTP — ECO707
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js ECO707 intbxConta 2238097
+Tempo: 103 ms | linhas: 3
 
-URL: https://prod.saneago.com.br/prt/eco/ECO707ConsultaRAConta.zul
-Campos: intbxConta = 2238097
-Botao: btnConsultar
+GET /prt/eco/ECO707ConsultaRAConta.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<intbxConta> data_0={"value":2238097,"start":7}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+POST /prt/zkau  cmd_0=echo opt_0=i data_0={"":["onConsultar"]}
 
-PAYLOAD ENVIADO (POST /prt/zkau):
-dtid=<dtid>&cmd_0=onChange&uuid_0=<uuid_intbxConta>&data_0={"value":2238097,"start":7}&cmd_1=onClick&uuid_1=<uuid_btnConsultar>&data_1={"pageX":0,"pageY":0,"which":1,"x":0,"y":0}
-
-ECHO RESPONDIDO (POST /prt/zkau):
-dtid=<dtid>&cmd_0=echo&opt_0=i&uuid_0=<uuid_echo>&data_0={"":["onConsultar"]}
-
-RESPOSTA RECEBIDA (trecho sanitizado):
-['zul.sel.Listcell','g8rJi',{label:'15383462024'},{},[]],
-['zul.sel.Listcell','g8rJj',{label:'01/01/2024'},{},[]],
-['zul.sel.Listcell','g8rJk',{label:'05/01/2024'},{},[]],
-['zul.sel.Listcell','g8rJl',{label:'EXECUTADO'},{},[]],
-['zul.sel.Listcell','g8rJm',{label:'3001 - DESOBSTRUCAO DE ESGOTO'},{},[]]
+LINHAS LIDAS (primeiras 5):
+  15383462024 | 25/06/2024 | 25/06/2024 | EXECUTADO | 1259 - CREDITO/DEVOLUCAO VALOR PAGTO. DUPLICIDADE
+  04053112020 | 06/04/2020 | 06/04/2020 | EXECUTADO | 1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE
+  01879002017 | 26/04/2017 | 26/04/2017 | EXECUTADO | 1214 - INFORMACOES DE VALORES DA CONTA

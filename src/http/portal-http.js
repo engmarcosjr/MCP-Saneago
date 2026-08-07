@@ -1,8 +1,10 @@
 "use strict";
 
+const fs = require("fs");
+const path = require("path");
 const { SaneagoHttpClient } = require("./saneago-http");
 const { extractDtid, uuidByComponentId, initialEchoes } = require("./zk-tree");
-const { readCredentials } = require("../session");
+const { readCredentials, getOrCreateSession, storageStatePath } = require("../session");
 
 class PortalHttp {
   constructor(options = {}) {
@@ -17,30 +19,38 @@ class PortalHttp {
   }
 
   async login() {
-    const creds = readCredentials();
-    const u = creds.usuario;
-    const p = creds.senha;
-
-    const page = await this.http.request(this.portalPath);
-    const dtid = extractDtid(page.text);
-    const user = uuidByComponentId(page.text, "numeroMatricula");
-    const pass = uuidByComponentId(page.text, "codigoSenha");
-    const botao = uuidByComponentId(page.text, "btnEntrar");
-    if (!dtid || !user || !pass || !botao) {
-      throw new Error("Componentes de login ZK não localizados na página principal");
+    // 1. Tentar carregar cookies do storage-state.json do Playwright
+    if (fs.existsSync(storageStatePath)) {
+      try {
+        const state = JSON.parse(fs.readFileSync(storageStatePath, "utf8"));
+        for (const cookie of state.cookies) {
+          this.http.jar.cookies.set(cookie.name, cookie.value);
+        }
+        this.isLoggedIn = true;
+        console.error("[PortalHttp] Cookies de sessão carregados com sucesso do Playwright.");
+        return true;
+      } catch (e) {
+        console.error("[PortalHttp] Falha ao carregar cookies do storage-state.json:", e.message);
+      }
     }
 
-    const r = await this.http.zkau(dtid, [
-      { cmd: "onChange", uuid: user, data: { value: u, start: u.length } },
-      { cmd: "onChange", uuid: pass, data: { value: p, start: p.length } },
-      { cmd: "onClick", uuid: botao, data: { pageX: 0, pageY: 0, which: 1, x: 0, y: 0 } },
-    ], this.portalUrl);
+    // 2. Se não houver cookies válidos, rodar o login via Playwright em headless para gerá-los
+    console.error("[PortalHttp] Iniciando login automático via Playwright...");
+    const { closeSession } = require("../session");
+    await getOrCreateSession();
+    await closeSession();
 
-    if (!/redirect/.test(r.text)) {
-      throw new Error("Login HTTP não retornou redirect (verifique credenciais)");
+    if (fs.existsSync(storageStatePath)) {
+      const state = JSON.parse(fs.readFileSync(storageStatePath, "utf8"));
+      for (const cookie of state.cookies) {
+        this.http.jar.cookies.set(cookie.name, cookie.value);
+      }
+      this.isLoggedIn = true;
+      console.error("[PortalHttp] Cookies de sessão renovados via Playwright.");
+      return true;
     }
-    this.isLoggedIn = true;
-    return true;
+
+    throw new Error("Não foi possível autenticar o cliente HTTP usando Playwright");
   }
 
   /** Garantir login ativo antes de chamadas */
@@ -57,7 +67,12 @@ class PortalHttp {
     
     // Se a sessao tiver sido derrubada no GET
     if (/redirect.*principal\.zul/.test(page.text) || !extractDtid(page.text)) {
+      console.error("[PortalHttp] Sessão expirou no GET. Forçando renovação de cookies...");
       this.isLoggedIn = false;
+      this.http.jar.cookies.clear();
+      if (fs.existsSync(storageStatePath)) {
+        try { fs.unlinkSync(storageStatePath); } catch (e) {}
+      }
       await this.login();
       const pageRetry = await this.http.request(caminho, { headers: { referer: this.portalUrl } });
       const dtid = extractDtid(pageRetry.text);
@@ -125,6 +140,10 @@ class PortalHttp {
     if (/redirect",\["principal\.zul"/.test(r.text)) {
       // Sessao expirada: refazer login e reabrir a tela
       this.isLoggedIn = false;
+      this.http.jar.cookies.clear();
+      if (fs.existsSync(storageStatePath)) {
+        try { fs.unlinkSync(storageStatePath); } catch (e) {}
+      }
       await this.login();
       const novatela = await this.abrir(tela.caminho);
       // Atualiza dtid e url na referencia da tela chamadora

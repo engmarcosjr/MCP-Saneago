@@ -1,101 +1,70 @@
 "use strict";
-
+/**
+ * Reprova qualquer doc de contrato HTTP que cite coisa que nao existe na captura.
+ *
+ * Existe porque a primeira versao destes docs foi escrita "por cima" das capturas
+ * e inventou 42 ids (intbxNumeroRa, btnLimpar, dtbxDataInicial...) que nao existem
+ * em tela nenhuma. Um id inventado nao da erro: o ZK responde a grade vazia em
+ * silencio. Este script e a rede que pega isso antes do commit.
+ *
+ *   node scripts/validar_docs_http.js
+ */
 const fs = require("fs");
 const path = require("path");
 
-const rootDir = path.join(__dirname, "..");
-const docsHttpDir = path.join(rootDir, "docs", "http");
-const scratchDir = path.join(rootDir, "scratch");
+const docsDir = path.join(__dirname, "..", "docs", "http");
+const arvores = path.join(__dirname, "..", "scratch", "arvores");
 
-const APPS = [
-  "LRS010", "LRS034", "LRS041", "LRS100", "LRS105", "LRS208", "LRS272",
-  "ECO151", "ECO154", "ECO202", "ECO205", "ECO701", "ECO707", "ECO708",
-  "ECO709", "ECO711", "ECO712", "ECO731", "MTG020"
-];
+function idsCitados(md) {
+  // Ids aparecem em crase, nas colunas "id estavel" das tabelas.
+  return [...new Set([...md.matchAll(/^\|\s*`([A-Za-z][A-Za-z0-9_]*)`/gm)].map((m) => m[1]))];
+}
 
-function validar() {
-  console.log("Iniciando validação estrita dos documentos HTTP vs Capturas em scratch/...\n");
-  let totalErros = 0;
-  const divergencias = [];
+function main() {
+  const docs = fs.readdirSync(docsDir).filter((f) => /^[A-Z]{3}\d{3}\.md$/.test(f));
+  let falhas = 0;
+  let totalIds = 0;
 
-  for (const appCode of APPS) {
-    const docPath = path.join(docsHttpDir, `${appCode}.md`);
-    const zkauPath = path.join(scratchDir, `zkau_${appCode}.txt`);
+  for (const arquivo of docs) {
+    const codigo = arquivo.replace(".md", "");
+    const md = fs.readFileSync(path.join(docsDir, arquivo), "utf8");
+    const arvore = path.join(arvores, `${codigo}.html`);
 
-    if (!fs.existsSync(docPath)) {
-      divergencias.push(`[${appCode}] Documento não existe: docs/http/${appCode}.md`);
-      totalErros++;
+    if (!fs.existsSync(arvore)) {
+      console.error(`FALHA ${codigo}: doc existe mas nao ha arvore capturada`);
+      falhas++;
       continue;
     }
-    if (!fs.existsSync(zkauPath)) {
-      divergencias.push(`[${appCode}] Captura não existe: scratch/zkau_${appCode}.txt`);
-      totalErros++;
-      continue;
+    const html = fs.readFileSync(arvore, "utf8");
+    const ids = idsCitados(md);
+    totalIds += ids.length;
+    const inexistentes = ids.filter((id) => !html.includes(`id:'${id}'`));
+
+    // Status REPLICADO exige prova de replay em disco.
+    const declaraReplicado = /\*\*Status:\*\* REPLICADO|Status:\*\* REPLICADO|Status: REPLICADO/.test(md);
+    const temProva = fs.existsSync(path.join(docsDir, `_replay_${codigo}.txt`));
+
+    if (inexistentes.length) {
+      console.error(`FALHA ${codigo}: ${inexistentes.length} id(s) citados que nao existem na arvore -> ${inexistentes.join(", ")}`);
+      falhas++;
     }
-
-    const docContent = fs.readFileSync(docPath, "utf8");
-    const zkauData = JSON.parse(fs.readFileSync(zkauPath, "utf8"));
-    const rawContent = JSON.stringify(zkauData);
-
-    const idsEstaveisCaptura = new Set(zkauData.idsEstaveis || []);
-    for (const b of zkauData.botoes || []) {
-      if (b.id) idsEstaveisCaptura.add(b.id);
+    if (declaraReplicado && !temProva) {
+      console.error(`FALHA ${codigo}: declara REPLICADO sem docs/http/_replay_${codigo}.txt`);
+      falhas++;
     }
-
-    // Extrair IDs citados nas tabelas de IDs e Botoes do documento Markdown
-    // padrao: | `idName` | ...
-    const tableIdMatches = [...docContent.matchAll(/\|\s*`([a-zA-Z0-9_]+)`\s*\|/g)];
-    const idsDoc = new Set();
-
-    for (const match of tableIdMatches) {
-      const val = match[1];
-      // Ignorar cabecalhos ou palavras reservadas de tabela
-      if (val === "ID Estáve" || val === "Tipo ZK" || val === "Rótulo" || val === "UUID Na Captura") continue;
-      // Ignorar classes ZK (ex: zul.inp.Textbox)
-      if (val.startsWith("zul.")) continue;
-      idsDoc.add(val);
-    }
-
-    // Checar cada ID citado no doc contra a captura
-    for (const idDoc of idsDoc) {
-      if (!idsEstaveisCaptura.has(idDoc) && !rawContent.includes(`"${idDoc}"`)) {
-        divergencias.push(`[${appCode}] ID inventado/ausente na captura: '${idDoc}' citado em docs/http/${appCode}.md`);
-        totalErros++;
-      }
-    }
-
-    // Checar se Status CONFIRMADO existe sem prova de replay
-    if (docContent.includes("Status: **CONFIRMADO**") || docContent.includes("Status: CONFIRMADO")) {
-      const replayPath = path.join(docsHttpDir, `_replay_${appCode}.txt`);
-      if (!fs.existsSync(replayPath)) {
-        divergencias.push(`[${appCode}] Documento declara CONFIRMADO mas não possui _replay_${appCode}.txt`);
-        totalErros++;
-      }
-    }
-
-    // Checar colunas da grade
-    const colunasDocMatches = [...docContent.matchAll(/-\s*`([^`]+)`/g)];
-    const colunasDoc = colunasDocMatches.map(m => m[1]);
-    const colunasGradeCaptura = zkauData.colunasGrade || [];
-
-    for (const colCaptura of colunasGradeCaptura) {
-      if (!docContent.includes(`\`${colCaptura}\``)) {
-        divergencias.push(`[${appCode}] Coluna da captura '${colCaptura}' ausente no documento`);
-        totalErros++;
-      }
+    if (/CONFIRMADO/.test(md)) {
+      console.error(`FALHA ${codigo}: usa o rotulo CONFIRMADO (status valido: REPLICADO / POSTS CAPTURADOS / ARVORE CAPTURADA)`);
+      falhas++;
     }
   }
 
-  if (totalErros > 0) {
-    console.error("❌ FALHA NA VALIDAÇÃO! Divergências encontradas:\n");
-    divergencias.forEach(d => console.error("  - " + d));
-    process.exit(1);
+  console.error(`\n${docs.length} docs, ${totalIds} ids verificados contra a arvore real.`);
+  if (falhas) {
+    console.error(`${falhas} FALHA(S) — nao commitar.`);
+    process.exitCode = 1;
   } else {
-    console.log("✅ VALIDAÇÃO CONCLUÍDA COM SUCESSO!");
-    console.log("  - 0 IDs inventados");
-    console.log("  - 0 declarações 'CONFIRMADO' sem prova de replay");
-    console.log("  - Colunas da grade 100% fiéis às capturas");
+    console.error("OK: todo id citado existe na captura e todo REPLICADO tem prova.");
   }
 }
 
-validar();
+main();

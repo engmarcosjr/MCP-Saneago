@@ -1,22 +1,12 @@
-REPLAY EVIDENCIA — LRS208 (Consulta RA / DS)
-Data Replay: 2026-08-06
-Resultado: SUCESSO (devoldido via POST HTTP em Node.js)
+REPLAY HTTP — LRS208
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js LRS208 numeroRA 31041602025
+Tempo: 207 ms | linhas: 1
 
-URL: https://prod.saneago.com.br/prt/lrs/LRS208ConsultaRADS.zul
-Campos: numeroRA = 31041602025
-Botao: btnConsultar
+GET /prt/lrs/LRS208ConsultaRADS.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<numeroRA> data_0={"value":"31041602025","start":11}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+(sem echo)
 
-PAYLOAD ENVIADO (POST /prt/zkau):
-dtid=<dtid>&cmd_0=onChange&uuid_0=<uuid_numeroRA>&data_0={"value":"31041602025","start":11}&cmd_1=onClick&uuid_1=<uuid_btnConsultar>&data_1={"pageX":0,"pageY":0,"which":1,"x":0,"y":0}
-
-RESPOSTA RECEBIDA (trecho sanitizado):
-{"rs":[["addChd",["n2zZ6",[
-['zul.sel.Listitem','n2zZg',{_loaded:true,_index:0},{},[
-['zul.sel.Listcell','n2zZi',{},{},[['zul.wgt.A','n2zZj',{$onClick:true,tooltiptext:'Clique aqui para ser redirecionado para LRS010.',prolog:' ',label:'1938617',autodisable:'self'},{},[]]]],
-['zul.sel.Listcell','n2zZk',{label:'2'},{},[]],
-['zul.sel.Listcell','n2zZl',{label:'5057'},{},[]],
-['zul.sel.Listcell','n2zZm',{label:'5105'},{},[]],
-['zul.sel.Listcell','n2zZn',{label:'31/10/2025'},{},[]],
-['zul.sel.Listcell','n2zZo',{label:'03/11/2025'},{},[]],
-['zul.sel.Listcell','n2zZp',{label:'03/11/2025'},{},[]],
-['zul.sel.Listcell','n2zZ_0',{label:'1303'},{},[]]]]]]],["setAttrs",[{$u:'n2zZ6'},["_lastoffset",0,"resetDataLoader",true,"model",true,"visibleItemCount",1]]]],"rid":1}
+LINHAS LIDAS (primeiras 5):
+  1938617 | 2 | 5057 | 5105 | 31/10/2025 | 03/11/2025 | 03/11/2025 | 1303
