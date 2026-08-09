@@ -119,8 +119,3 @@ main().catch(err => {
   console.error("Erro ao processar DocFlow:", err);
   process.exit(1);
 });
-
-main().catch(err => {
-  console.error("Erro ao processar DocFlow:", err);
-  process.exit(1);
-});
