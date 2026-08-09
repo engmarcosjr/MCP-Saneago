@@ -1,3 +1,5 @@
+"use strict";
+
 const { chromium } = require("playwright");
 const https = require("https");
 const path = require("path");
@@ -15,10 +17,11 @@ function makeHttpRequest(urlStr, cookieHeader) {
   return new Promise((resolve, reject) => {
     const parsedUrl = new URL(urlStr, BASE_URL);
     const headers = {
+      "Host": parsedUrl.hostname,
       "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "Cookie": cookieHeader,
-      "Referer": `${BASE_URL}/docflow/xhtml/docflow/geral/login.jsf`
+      "Referer": `${BASE_URL}/prt/mpt/principal.zul`
     };
 
     const reqOptions = {
@@ -51,7 +54,7 @@ function makeHttpRequest(urlStr, cookieHeader) {
 
 async function main() {
   console.log("==================================================================");
-  console.log("ETAPA 1: Login Headless via Playwright");
+  console.log("ETAPA 1: Login no Portal Saneago (/prt/) via Playwright");
   console.log("==================================================================");
   
   const browser = await chromium.launch({ headless: true });
@@ -62,27 +65,37 @@ async function main() {
   });
   const page = await context.newPage();
 
-  const loginUrl = `${BASE_URL}/docflow/xhtml/docflow/geral/login.jsf`;
-  console.log(`Navegando para o login: ${loginUrl}`);
+  const portalUrl = `${BASE_URL}/prt/`;
+  console.log(`Acessando Portal Saneago: ${portalUrl}`);
   
   try {
-    await page.goto(loginUrl, { waitUntil: "networkidle", timeout: 60000 });
+    await page.goto(portalUrl, { waitUntil: "networkidle", timeout: 60000 });
   } catch (e) {
-    console.warn(`Aviso no carregamento: ${e.message}`);
+    console.warn(`Aviso no carregamento do Portal: ${e.message}`);
   }
 
-  console.log(`Preenchendo credenciais (${credentials.usuario})...`);
-  await page.fill("#userName", credentials.usuario);
-  await page.fill("#password", credentials.senha);
+  console.log(`Preenchendo usuário '${credentials.usuario}' e senha no Portal ZK...`);
+  const userInput = page.locator("input[type='text']").first();
+  const passInput = page.locator("input[type='password']").first();
 
-  console.log("Submetendo formulário...");
+  await userInput.fill(credentials.usuario);
+  await userInput.dispatchEvent("change");
+  await userInput.dispatchEvent("blur");
+
+  await passInput.fill(credentials.senha);
+  await passInput.dispatchEvent("change");
+  await passInput.dispatchEvent("blur");
+
+  console.log("Submetendo login (Pressionando Enter)...");
   await Promise.all([
     page.waitForNavigation({ waitUntil: "networkidle", timeout: 60000 }).catch(() => {}),
-    page.click("input[type='submit'][value='Entrar']")
+    passInput.press("Enter")
   ]);
 
+  console.log(`Página pós-login Portal: ${page.url()}`);
+
   const cookies = await context.cookies();
-  console.log(`✅ ${cookies.length} cookie(s) de sessão obtidos via Playwright.`);
+  console.log(`✅ ${cookies.length} cookie(s) de sessão obtidos via Playwright no Portal.`);
   
   await browser.close();
 
