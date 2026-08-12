@@ -202,13 +202,17 @@ async function autenticarSessao(http, anoTarget = ANO_TARGET) {
   return { viewStateConsulta };
 }
 
-async function consultarProcessoIndividual(http, processoNum, viewStateConsulta) {
+async function consultarProcessoIndividual(http, processoNum) {
+  // Obter ViewState novo para evitar colisões no estado da árvore JSF em chamadas simultâneas
+  const pageGet = await http.request("/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf");
+  const viewState = extractRegex(pageGet.text(), /name="javax\.faces\.ViewState"\s+value="([^"]+)"/);
+
   const postSearchData = new URLSearchParams();
   postSearchData.append("j_idt58", "j_idt58");
   postSearchData.append("tipoConsulta", "PROCESSO");
   postSearchData.append("numeroProtocolo", processoNum);
   postSearchData.append("btnPesquisar", "Pesquisar");
-  postSearchData.append("javax.faces.ViewState", viewStateConsulta || "");
+  postSearchData.append("javax.faces.ViewState", viewState || "");
 
   const res = await http.request("/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf", {
     method: "POST",
@@ -224,7 +228,7 @@ async function consultarProcessoIndividual(http, processoNum, viewStateConsulta)
   return parsed;
 }
 
-async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID, concurrency = CONCURRENCY, autoStopLimit = 50) {
+async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID, concurrency = CONCURRENCY, autoStopLimit = 100) {
   console.log("==================================================================");
   console.log(`EXTRAÇÃO EM MASSA - ANO ${ano}`);
   console.log(`Faixa Inicial: ${startId}/${ano} até ${endId}/${ano}`);
@@ -232,7 +236,7 @@ async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID,
   console.log("==================================================================\n");
 
   const http = new SaneagoDirectHttpClient();
-  const { viewStateConsulta } = await autenticarSessao(http, ano);
+  await autenticarSessao(http, ano);
 
   const outDir = path.join(__dirname, `data_processos_${ano}`);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
@@ -241,8 +245,8 @@ async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID,
   let comErro = 0;
   let restritosCount = 0;
   let publicosCount = 0;
+  let primeiroEncontrado = false;
 
-  // Mapa para rastrear resultados ordenados por ID
   const resultadosMap = new Map();
   let maxIdVerificado = startId - 1;
   let nulosConsecutivos = 0;
@@ -257,26 +261,29 @@ async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID,
       const processoNum = `${id}/${ano}`;
 
       try {
-        const dados = await consultarProcessoIndividual(http, processoNum, viewStateConsulta);
+        const dados = await consultarProcessoIndividual(http, processoNum);
         if (parouPorLimite) break;
 
         const existe = !!(dados.numero || (dados.dadosConteudo && Object.keys(dados.dadosConteudo).length > 0));
         resultadosMap.set(id, { existe, dados, processoNum });
 
-        // Processar resultados sequencialmente para contagem de nulos consecutivos sem race conditions
         while (resultadosMap.has(maxIdVerificado + 1)) {
           maxIdVerificado++;
           const resItem = resultadosMap.get(maxIdVerificado);
           resultadosMap.delete(maxIdVerificado);
 
           if (!resItem.existe) {
-            nulosConsecutivos++;
-            if (nulosConsecutivos >= autoStopLimit) {
-              console.log(`\n🛑 [Ano ${ano}] Detectados ${autoStopLimit} processos nulos/inexistentes consecutivos. Fim do ano ${ano} atingido no ID ${maxIdVerificado - autoStopLimit}!`);
-              parouPorLimite = true;
-              break;
+            // Só conta para parada automática após ter encontrado ao menos 1 processo válido ou se passou do ID 200
+            if (primeiroEncontrado || maxIdVerificado > 200) {
+              nulosConsecutivos++;
+              if (nulosConsecutivos >= autoStopLimit) {
+                console.log(`\n🛑 [Ano ${ano}] Detectados ${autoStopLimit} processos nulos consecutivos. Fim do ano ${ano} atingido no ID ${maxIdVerificado - autoStopLimit}!`);
+                parouPorLimite = true;
+                break;
+              }
             }
           } else {
+            primeiroEncontrado = true;
             nulosConsecutivos = 0;
             concluidos++;
 
@@ -292,7 +299,7 @@ async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID,
             const elapsedSec = ((Date.now() - startTime) / 1000).toFixed(1);
             const reqPerSec = (concluidos / Math.max(0.1, elapsedSec)).toFixed(1);
 
-            if (concluidos % 50 === 0) {
+            if (concluidos % 50 === 0 || concluidos === 1) {
               console.log(`[Ano ${ano}] [Worker ${workerId}] [${concluidos} extraídos] ${resItem.processoNum} -> ${resItem.dados.restrito ? "🔒 Restrito" : "🔓 Público"} (${reqPerSec} req/s)`);
             }
           }
