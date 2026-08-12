@@ -22,9 +22,17 @@ const { URLSearchParams } = require("url");
 const BASE_URL = "https://www.saneago.com.br";
 const PROCESSO_TARGET = process.argv[2] || "14652/2026";
 
+let credsFromFile = {};
+try {
+  const credPath = path.join(__dirname, "config", "credentials.json");
+  if (fs.existsSync(credPath)) {
+    credsFromFile = JSON.parse(fs.readFileSync(credPath, "utf-8"));
+  }
+} catch (e) {}
+
 const CREDENTIALS = {
-  user: process.env.SANEAGO_USER || "",
-  pass: process.env.SANEAGO_PASS || ""
+  user: process.env.SANEAGO_USER || credsFromFile.usuario || "",
+  pass: process.env.SANEAGO_PASS || credsFromFile.senha || ""
 };
 
 const resolvedIps = new Map();
