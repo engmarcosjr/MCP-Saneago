@@ -214,24 +214,62 @@ function cleanText(str) {
 function parseProcessoData(html) {
   const data = {
     numero: null,
+    protocolo: null,
+    naturezaConteudo: null,
     interessado: null,
-    assunto: null,
     localizacaoAtual: null,
+    detentor: null,
+    autor: null,
+    dataCriacao: null,
+    dataProcesso: null,
+    tipo: null,
+    assunto: null,
     observacoes: null,
-    tramites: []
+    restrito: false,
+    dadosConteudo: {},
+    tramites: [],
+    documentos: []
   };
 
   if (!html) return data;
 
-  // Tentar extrair campos principais via regex / padrao JSF
-  data.numero = cleanText(extractRegex(html, /(?:Número|Processo|Protocolo)[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i) ||
-                          extractRegex(html, /14652\/2026/));
-  data.interessado = cleanText(extractRegex(html, /Interessado[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
-  data.assunto = cleanText(extractRegex(html, /Assunto[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
-  data.localizacaoAtual = cleanText(extractRegex(html, /(?:Localização|Unidade Atual|Setor)[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
-  data.observacoes = cleanText(extractRegex(html, /Observaç[õo]es?[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  // 1. Extração dinâmica de todos os pares de "Rótulo: Valor" no painel Dados do Conteúdo
+  const kvMatches = [
+    ...html.matchAll(/([A-ZÁÉÍÓÚÂÊÔÃÕÇa-záéíóúâêôãõç\s\(\)]+):[\s]*<\/td>\s*<td[^>]*>([\s\S]*?)<\/td>/gi),
+    ...html.matchAll(/([A-ZÁÉÍÓÚÂÊÔÃÕÇa-záéíóúâêôãõç\s\(\)]+):[\s]*<\/th>\s*<td[^>]*>([\s\S]*?)<\/td>/gi),
+    ...html.matchAll(/<label[^>]*>([\s\S]*?):?<\/label>\s*<span[^>]*>([\s\S]*?)<\/span>/gi)
+  ];
 
-  // Tentar extrair linhas da tabela de tramites
+  for (const match of kvMatches) {
+    const key = cleanText(match[1]).replace(/:$/, "").trim();
+    const val = cleanText(match[2]).trim();
+    if (key && val && key.length < 50 && !data.dadosConteudo[key]) {
+      data.dadosConteudo[key] = val;
+    }
+  }
+
+  // Auxiliar para pegar campo nos dadosConteudo ou via Regex no HTML
+  const getField = (pattern) => {
+    for (const [k, v] of Object.entries(data.dadosConteudo)) {
+      if (pattern.test(k)) return v;
+    }
+    return null;
+  };
+
+  data.numero = getField(/^Número/i) || cleanText(extractRegex(html, /Número[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.protocolo = getField(/^Protocolo/i) || cleanText(extractRegex(html, /Protocolo[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.naturezaConteudo = getField(/^Natureza/i) || cleanText(extractRegex(html, /Natureza do Conteúdo[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.interessado = getField(/^Interessado/i) || cleanText(extractRegex(html, /Interessado\(s\)[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.localizacaoAtual = getField(/^Localização/i) || cleanText(extractRegex(html, /Localização Atual[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.detentor = getField(/^Detentor/i) || cleanText(extractRegex(html, /Detentor[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.autor = getField(/^Autor/i) || cleanText(extractRegex(html, /Autor[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.dataCriacao = getField(/^Data de Criação/i) || cleanText(extractRegex(html, /Data de Criação[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.dataProcesso = getField(/^Data do Processo/i) || cleanText(extractRegex(html, /Data do Processo[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.tipo = getField(/^Tipo$/i) || cleanText(extractRegex(html, /Tipo[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.assunto = getField(/^Assunto/i) || cleanText(extractRegex(html, /Assunto[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+  data.observacoes = getField(/^Observaç/i) || cleanText(extractRegex(html, /Observaç[õo]es?[\s:]*<\/td>\s*<td[^>]*>([^<]+)/i));
+
+  // 2. Extração de Trâmites
   const trMatches = [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)];
   for (const trMatch of trMatches) {
     const rowHtml = trMatch[1];
@@ -246,6 +284,9 @@ function parseProcessoData(html) {
       });
     }
   }
+
+  // Flag de processo restrito
+  data.restrito = data.tramites.length === 0 || /restrito/i.test(html);
 
   return data;
 }
@@ -385,4 +426,4 @@ if (require.main === module) {
   consultarProcesso(PROCESSO_TARGET).catch(console.error);
 }
 
-module.exports = { consultarProcesso };
+module.exports = { consultarProcesso, parseProcessoData };
