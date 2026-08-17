@@ -20,6 +20,7 @@ const { lancarServicoExecutado, verificarEstatisticaLRS105 } = require("./tools/
 const { descobrirAplicacao } = require("./tools/descobrir");
 const { consultarLogradouro } = require("./tools/eco709");
 const { pesquisarAsfaltoLocal } = require("./tools/asfalto_local");
+const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("./tools/docflow");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -230,6 +231,53 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           ra: {
             type: "string",
             description: "Número do RA",
+          },
+        },
+      },
+    },
+    {
+      name: "saneago_docflow_consultar_processo",
+      description: "Consulta dados detalhados de um processo no DocFlow Saneago pelo número (ex: '14652/2026'). Busca no cache local e realiza consulta online se necessário.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          processo: {
+            type: "string",
+            description: "Número do processo no formato 'ID/ANO' (ex: '14652/2026' ou '14652')",
+          },
+          ano: {
+            type: "string",
+            description: "Ano do processo se não especificado na string (ex: '2026')",
+          },
+        },
+        required: ["processo"],
+      },
+    },
+    {
+      name: "saneago_docflow_pesquisar_local",
+      description: "Pesquisa processos extraídos do DocFlow salvos no banco local por termo de busca, interessado, assunto ou ano.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          termo: {
+            type: "string",
+            description: "Termo de busca geral contido em interessado, assunto, observações ou número",
+          },
+          interessado: {
+            type: "string",
+            description: "Nome do interessado / solicitante do processo",
+          },
+          assunto: {
+            type: "string",
+            description: "Assunto do processo",
+          },
+          ano: {
+            type: "string",
+            description: "Filtrar por ano específico (ex: '2026')",
+          },
+          limite: {
+            type: "number",
+            description: "Quantidade máxima de registros a retornar (padrão 15)",
           },
         },
       },
@@ -682,6 +730,32 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const args = request.params.arguments || {};
         const resultado = await pesquisarAsfaltoLocal(args);
         return resultado;
+      }
+
+      case "saneago_docflow_consultar_processo": {
+        const args = request.params.arguments || {};
+        const resultado = await consultarProcessoDocflow(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_docflow_pesquisar_local": {
+        const args = request.params.arguments || {};
+        const resultado = await pesquisarProcessosDocflowLocal(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
       }
 
       default:

@@ -6,3 +6,4 @@ config/credentials.json
 *.log
 data/
 scratch/
+downloads_anexos/

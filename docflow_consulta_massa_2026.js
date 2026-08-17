@@ -18,11 +18,27 @@ const { URLSearchParams } = require("url");
 const { parseProcessoData } = require("./docflow_consultar_processo");
 
 const BASE_URL = "https://www.saneago.com.br";
-const ANO_TARGET = "2026";
 
-const START_ID = parseInt(process.argv[2] || "1", 10);
-const END_ID = parseInt(process.argv[3] || "50", 10); // Padrão testar 50 primeiro ou até 14667
-const CONCURRENCY = parseInt(process.argv[4] || "20", 10);
+let ANO_TARGET = "2026";
+let START_ID = 1;
+let END_ID = 50;
+let CONCURRENCY = 20;
+
+const arg1 = process.argv[2];
+const arg2 = process.argv[3];
+const arg3 = process.argv[4];
+const arg4 = process.argv[5];
+
+if (arg1 && /^\d{4}$/.test(arg1)) {
+  ANO_TARGET = arg1;
+  START_ID = parseInt(arg2 || "1", 10);
+  END_ID = parseInt(arg3 || "50", 10);
+  CONCURRENCY = parseInt(arg4 || "20", 10);
+} else {
+  START_ID = parseInt(arg1 || "1", 10);
+  END_ID = parseInt(arg2 || "50", 10);
+  CONCURRENCY = parseInt(arg3 || "20", 10);
+}
 
 let credsFromFile = {};
 try {
@@ -202,77 +218,153 @@ async function autenticarSessao(http) {
   return { viewStateConsulta };
 }
 
-async function consultarProcessoIndividual(http, processoNum, viewStateConsulta) {
-  const postSearchData = new URLSearchParams();
-  postSearchData.append("j_idt58", "j_idt58");
-  postSearchData.append("tipoConsulta", "PROCESSO");
-  postSearchData.append("numeroProtocolo", processoNum);
-  postSearchData.append("btnPesquisar", "Pesquisar");
-  postSearchData.append("javax.faces.ViewState", viewStateConsulta || "");
+async function consultarProcessoIndividual(http, processoNum) {
+  // 1. Tentar consulta direta GET via URL
+  let res = await http.request(`/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf?numeroProtocolo=${encodeURIComponent(processoNum)}`);
+  let parsed = parseProcessoData(res.text());
 
-  const res = await http.request("/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-      "Referer": `${BASE_URL}/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf`
-    },
-    body: postSearchData.toString()
-  });
+  // 2. Se GET não preencher os dados, submeter formulário JSF POST
+  if (!parsed.numero && !parsed.interessado) {
+    const pageGet = await http.request("/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf");
+    const viewState = extractRegex(pageGet.text(), /name="javax\.faces\.ViewState"\s+value="([^"]+)"/);
 
-  const parsed = parseProcessoData(res.text());
+    if (viewState) {
+      const postSearchData = new URLSearchParams();
+      postSearchData.append("formBody", "formBody");
+      postSearchData.append("tipoPesquisa", "NUMERO_PROCESSO");
+      postSearchData.append("numeroProcesso", processoNum);
+      postSearchData.append("tipoConsulta", "PROCESSO");
+      postSearchData.append("numeroProtocolo", processoNum);
+      postSearchData.append("panelFiltronumeroProcFiltro", processoNum);
+      postSearchData.append("btnPesquisar", "Pesquisar");
+      postSearchData.append("javax.faces.ViewState", viewState);
+
+      res = await http.request("/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          "Referer": `${BASE_URL}/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf`
+        },
+        body: postSearchData.toString()
+      });
+
+      parsed = parseProcessoData(res.text());
+    }
+  }
+
   parsed.processoConsultado = processoNum;
+
+  const existe = !!(parsed.numero || parsed.interessado || parsed.assunto || (parsed.dadosConteudo && Object.keys(parsed.dadosConteudo).length > 0));
+  if (!existe) {
+    parsed.restrito = false;
+  }
+
   return parsed;
 }
 
-async function runParallelBatch() {
+async function runParallelBatch(anoTarget = ANO_TARGET, startId = START_ID, endId = END_ID, concurrency = CONCURRENCY, autoStopLimit = 50) {
+  const targetYear = String(anoTarget);
+  const targetStart = parseInt(startId, 10);
+  const targetEnd = parseInt(endId, 10);
+  const targetConcurrency = parseInt(concurrency, 10);
+
   console.log("==================================================================");
-  console.log(`CONSULTA EM MASSA DE PROCESSOS ${ANO_TARGET} (MODO PARALELO)`);
-  console.log(`Faixa de Processos: ${START_ID}/${ANO_TARGET} até ${END_ID}/${ANO_TARGET}`);
-  console.log(`Concorrência Máxima: ${CONCURRENCY} requisições simultâneas`);
+  console.log(`CONSULTA EM MASSA DE PROCESSOS ${targetYear} (SESSÕES ISOLADAS POR WORKER)`);
+  console.log(`Faixa de Processos: ${targetStart}/${targetYear} até ${targetEnd}/${targetYear}`);
+  console.log(`Concorrência Máxima: ${targetConcurrency} workers simultâneos`);
   console.log("==================================================================\n");
 
-  const http = new SaneagoDirectHttpClient();
-  const { viewStateConsulta } = await autenticarSessao(http);
-
-  const outDir = path.join(__dirname, "data_processos_2026");
+  const outDir = path.join(__dirname, `data_processos_${targetYear}`);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-  const total = END_ID - START_ID + 1;
+  const total = targetEnd - targetStart + 1;
   let concluidos = 0;
   let comErro = 0;
   let restritosCount = 0;
   let publicosCount = 0;
+  let primeiroEncontrado = false;
+  let parouPorLimite = false;
+
+  const resultadosMap = new Map();
+  let maxIdVerificado = targetStart - 1;
+  let nulosConsecutivos = 0;
 
   const queue = [];
-  for (let id = START_ID; id <= END_ID; id++) {
-    queue.push(`${id}/${ANO_TARGET}`);
+  for (let id = targetStart; id <= targetEnd; id++) {
+    queue.push(id);
   }
 
   const startTime = Date.now();
 
   async function worker(workerId) {
-    while (queue.length > 0) {
-      const processoNum = queue.shift();
-      if (!processoNum) break;
+    const httpWorker = new SaneagoDirectHttpClient();
+    let authOK = false;
+
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        await autenticarSessao(httpWorker);
+        authOK = true;
+        break;
+      } catch (err) {
+        console.error(`[Worker ${workerId}] Falha na autenticação (tentativa ${attempt}):`, err.message);
+        await new Promise(r => setTimeout(r, 1000));
+      }
+    }
+
+    if (!authOK) {
+      console.error(`[Worker ${workerId}] Não foi possível autenticar a sessão do worker.`);
+      return;
+    }
+
+    while (queue.length > 0 && !parouPorLimite) {
+      const id = queue.shift();
+      if (!id) break;
+      const processoNum = `${id}/${targetYear}`;
 
       try {
-        const dados = await consultarProcessoIndividual(http, processoNum, viewStateConsulta);
-        concluidos++;
+        const dados = await consultarProcessoIndividual(httpWorker, processoNum);
+        if (parouPorLimite) break;
 
-        if (dados.restrito) {
-          restritosCount++;
-        } else {
-          publicosCount++;
+        const existe = !!(dados.numero || dados.interessado || dados.assunto || (dados.dadosConteudo && Object.keys(dados.dadosConteudo).length > 0));
+        resultadosMap.set(id, { existe, dados, processoNum });
+
+        while (resultadosMap.has(maxIdVerificado + 1)) {
+          maxIdVerificado++;
+          const resItem = resultadosMap.get(maxIdVerificado);
+          resultadosMap.delete(maxIdVerificado);
+
+          if (!resItem.existe) {
+            if (primeiroEncontrado || maxIdVerificado > 200) {
+              nulosConsecutivos++;
+              if (nulosConsecutivos >= autoStopLimit) {
+                console.log(`\n🛑 [Ano ${targetYear}] Detectados ${autoStopLimit} processos nulos consecutivos. Fim do ano ${targetYear} atingido no ID ${maxIdVerificado - autoStopLimit}!`);
+                parouPorLimite = true;
+                break;
+              }
+            }
+          } else {
+            primeiroEncontrado = true;
+            nulosConsecutivos = 0;
+            concluidos++;
+
+            if (resItem.dados.restrito) {
+              restritosCount++;
+            } else {
+              publicosCount++;
+            }
+
+            const fileName = `processo_${resItem.processoNum.replace("/", "_")}.json`;
+            fs.writeFileSync(path.join(outDir, fileName), JSON.stringify(resItem.dados, null, 2));
+
+            const pct = ((concluidos / total) * 100).toFixed(1);
+            const elapsedSec = ((Date.now() - startTime) / 1000).toFixed(1);
+            const reqPerSec = (concluidos / Math.max(0.1, elapsedSec)).toFixed(1);
+
+            if (concluidos % 50 === 0 || concluidos === 1) {
+              console.log(`[Ano ${targetYear}] [Worker ${workerId}] [${concluidos} extraídos] ${resItem.processoNum} -> ${resItem.dados.restrito ? "🔒 Restrito" : "🔓 Público"} (${reqPerSec} req/s)`);
+            }
+          }
         }
-
-        const fileName = `processo_${processoNum.replace("/", "_")}.json`;
-        fs.writeFileSync(path.join(outDir, fileName), JSON.stringify(dados, null, 2));
-
-        const pct = ((concluidos / total) * 100).toFixed(1);
-        const elapsedSec = ((Date.now() - startTime) / 1000).toFixed(1);
-        const reqPerSec = (concluidos / elapsedSec).toFixed(1);
-
-        console.log(`[Worker ${workerId}] [${concluidos}/${total} - ${pct}%] ${processoNum} -> ${dados.restrito ? "🔒 Restrito" : "🔓 Público"} (${reqPerSec} req/s)`);
       } catch (err) {
         comErro++;
         console.error(`[Worker ${workerId}] ❌ Erro ao consultar ${processoNum}:`, err.message);
@@ -281,26 +373,27 @@ async function runParallelBatch() {
   }
 
   const workers = [];
-  for (let i = 1; i <= Math.min(CONCURRENCY, total); i++) {
+  const activeWorkers = Math.min(targetConcurrency, total);
+  for (let i = 1; i <= activeWorkers; i++) {
     workers.push(worker(i));
   }
 
   await Promise.all(workers);
 
   const totalTimeSec = ((Date.now() - startTime) / 1000).toFixed(2);
-  const avgTimePerProcess = (totalTimeSec / total).toFixed(3);
+  const avgTimePerProcess = (totalTimeSec / Math.max(1, concluidos)).toFixed(3);
 
   console.log("\n==================================================================");
-  console.log("RESUMO DO PROCESSAMENTO EM PARALELO:");
+  console.log(`RESUMO DO PROCESSAMENTO DO ANO ${targetYear}:`);
   console.log("==================================================================");
-  console.log(`Total de Processos Processados:     ${total}`);
-  console.log(`Processos Restritos:                 ${restritosCount}`);
-  console.log(`Processos Públicos (com Trâmites):   ${publicosCount}`);
-  console.log(`Erros de Requisição:                ${comErro}`);
-  console.log(`Tempo Total decorrido:              ${totalTimeSec} segundos (${(totalTimeSec / 60).toFixed(2)} minutos)`);
-  console.log(`Média por Processo:                 ${avgTimePerProcess} segundos`);
-  console.log(`Vazão Média:                        ${(total / totalTimeSec).toFixed(2)} processos/segundo`);
-  console.log(`💾 Resultados salvos no diretório:  ${outDir}`);
+  console.log(`Total de Processos Válidos Extraídos: ${concluidos}`);
+  console.log(`Processos Restritos:                   ${restritosCount}`);
+  console.log(`Processos Públicos (com Trâmites):     ${publicosCount}`);
+  console.log(`Erros de Requisição:                  ${comErro}`);
+  console.log(`Tempo Total decorrido:                ${totalTimeSec} segundos (${(totalTimeSec / 60).toFixed(2)} minutos)`);
+  console.log(`Média por Processo Válido:            ${avgTimePerProcess} segundos`);
+  console.log(`Vazão Média:                          ${(concluidos / Math.max(0.1, totalTimeSec)).toFixed(2)} processos/segundo`);
+  console.log(`💾 Resultados salvos no diretório:    ${outDir}`);
   console.log("==================================================================");
 }
 

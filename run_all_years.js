@@ -12,7 +12,7 @@
  *   node run_all_years.js 2025 2020 15000 20
  */
 
-const { runAnoBatch } = require("./docflow_consulta_massa_anos");
+const { runParallelBatch } = require("./docflow_consulta_massa_2026");
 
 const START_YEAR = parseInt(process.argv[2] || "2025", 10);
 const END_YEAR = parseInt(process.argv[3] || "2020", 10);
@@ -24,7 +24,6 @@ async function main() {
   console.log("ORQUESTRADOR DE EXTRAÇÃO EM MASSA MULTIANO");
   console.log(`Anos a extrair: de ${START_YEAR} até ${END_YEAR}`);
   console.log(`Concorrência: ${CONCURRENCY} workers em paralelo por ano`);
-  console.log("Comportamento: Parada automática após 50 IDs nulos consecutivos");
   console.log("==================================================================\n");
 
   const step = START_YEAR >= END_YEAR ? -1 : 1;
@@ -33,7 +32,7 @@ async function main() {
     const anoStr = String(ano);
     console.log(`\n🚀 INICIANDO PROCESSAMENTO DO ANO ${anoStr}...`);
     try {
-      await runAnoBatch(anoStr, 1, MAX_ID, CONCURRENCY, 50);
+      await runParallelBatch(anoStr, 1, MAX_ID, CONCURRENCY);
     } catch (err) {
       console.error(`❌ Erro durante processamento do ano ${anoStr}:`, err.message);
     }
