@@ -8,6 +8,8 @@ Servidor MCP e suíte de automação de alto desempenho para integração com os
 
 - **`saneago_docflow_consultar_processo`**: Consulta detalhes de um processo no DocFlow por número/ano (ex: `14652/2026`), combinando cache local (`data_processos_YYYY/`) com consulta HTTP direta em tempo real.
 - **`saneago_docflow_pesquisar_local`**: Pesquisa textual rápida em milhares de processos salvos no repositório local por termo, interessado, assunto ou ano.
+- **`saneago_docflow_listar_anexos`**: Lista a árvore de pastas e metadados dos anexos GED de um processo.
+- **`saneago_docflow_indexar_projetos`**: Pesquisa no acervo de milhares de projetos GED já baixados localmente (por empreendimento, AVTO, ART, etc).
 - **`saneago_pesquisar_asfalto_local`**: Realiza buscas por Rua, Bairro, Quadra ou número de RA na base local de recomposição asfáltica (`Asfalto-Pendentes` / `MEMÓRIA_BM`).
 - **`saneago_eco709_consultar_logradouro`**: Consulta RAs por Logradouro / Rua, Bairro e Período via HTTP/Playwright no portal Saneago (ECO709).
 - **`saneago_eco701_consultar_ra`**: Detalha informações completas de uma RA específica no ECO701.

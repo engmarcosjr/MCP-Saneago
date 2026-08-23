@@ -259,6 +259,28 @@ async function runAnoBatch(ano = ANO_TARGET, startId = START_ID, endId = END_ID,
     while (!parouPorLimite && currentId <= endId) {
       const id = currentId++;
       const processoNum = `${id}/${ano}`;
+      const fileName = `processo_${processoNum.replace("/", "_")}.json`;
+      const filePath = path.join(outDir, fileName);
+
+      if (fs.existsSync(filePath)) {
+        concluidos++;
+        primeiroEncontrado = true;
+        nulosConsecutivos = 0;
+        
+        try {
+          const dados = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+          if (dados.restrito) restritosCount++;
+          else publicosCount++;
+        } catch (e) {}
+
+        if (concluidos % 50 === 0 || concluidos === 1) {
+          const elapsedSec = ((Date.now() - startTime) / 1000).toFixed(1);
+          const reqPerSec = (concluidos / Math.max(0.1, elapsedSec)).toFixed(1);
+          console.log(`[Ano ${ano}] [Worker ${workerId}] [${concluidos} já no disco] ${processoNum} -> ⏭️ Pulando (cache local)`);
+        }
+        maxIdVerificado = Math.max(maxIdVerificado, id);
+        continue;
+      }
 
       try {
         const dados = await consultarProcessoIndividual(http, processoNum);

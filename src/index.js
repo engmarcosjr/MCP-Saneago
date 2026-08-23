@@ -20,7 +20,8 @@ const { lancarServicoExecutado, verificarEstatisticaLRS105 } = require("./tools/
 const { descobrirAplicacao } = require("./tools/descobrir");
 const { consultarLogradouro } = require("./tools/eco709");
 const { pesquisarAsfaltoLocal } = require("./tools/asfalto_local");
-const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("./tools/docflow");
+const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal, listarAnexosDocflow } = require("./tools/docflow");
+const { pesquisarProjetosLocais } = require("./tools/docflow_projetos");
 const {
   saneago_supervisorio_telemetria,
   saneago_supervisorio_historico,
@@ -259,6 +260,41 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
         },
         required: ["processo"],
+      },
+    },
+    {
+      name: "saneago_docflow_listar_anexos",
+      description: "Lista a árvore de pastas e os metadados dos anexos (GED) de um processo do DocFlow pelo número (ex: '14652/2026'). Não faz o download do conteúdo (arquivos de dezenas de MB), apenas retorna o que existe lá (nome, data, tamanho, descrição).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          processo: {
+            type: "string",
+            description: "Número do processo. Ex: '14652/2026'",
+          },
+          ano: {
+            type: "string",
+            description: "Ano do processo, caso o número não inclua.",
+          },
+        },
+        required: ["processo"],
+      },
+    },
+    {
+      name: "saneago_docflow_indexar_projetos",
+      description: "Busca na base de projetos locais (já baixados e organizados) por empreendimento, AVTO, sistema (SAA/SES), número do processo, ano, município e ART/RRT.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          empreendimento: { type: "string" },
+          avto: { type: "string" },
+          sistema: { type: "string" },
+          processo: { type: "string" },
+          ano: { type: "string" },
+          municipio: { type: "string" },
+          art: { type: "string" },
+          limite: { type: "number", description: "Limite de resultados (default 15)" },
+        },
       },
     },
     {
@@ -855,6 +891,32 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_docflow_consultar_processo": {
         const args = request.params.arguments || {};
         const resultado = await consultarProcessoDocflow(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_docflow_listar_anexos": {
+        const args = request.params.arguments || {};
+        const resultado = await listarAnexosDocflow(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_docflow_indexar_projetos": {
+        const args = request.params.arguments || {};
+        const resultado = await pesquisarProjetosLocais(args);
         return {
           content: [
             {
