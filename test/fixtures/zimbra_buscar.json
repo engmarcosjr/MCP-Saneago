@@ -1,0 +1,14 @@
+{
+  "m": [
+    {
+      "id": "12345",
+      "su": "Assunto Teste",
+      "fr": "Trecho da mensagem teste...",
+      "d": 1787063324000,
+      "e": [
+        { "a": "remetente@ficticio.com", "d": "Remetente", "t": "f" },
+        { "a": "destinatario@ficticio.com", "d": "Destinatario", "t": "t" }
+      ]
+    }
+  ]
+}

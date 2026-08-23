@@ -1,0 +1,12 @@
+{
+  "folder": [
+    {
+      "id": "1",
+      "name": "USER_ROOT",
+      "folder": [
+        { "id": "2", "name": "Inbox", "n": 5 },
+        { "id": "3", "name": "Trash", "n": 0 }
+      ]
+    }
+  ]
+}

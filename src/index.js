@@ -30,6 +30,11 @@ const {
   saneago_supervisorio_listar_dmcs,
   saneago_supervisorio_horimetro
 } = require("./tools/supervisorio");
+const {
+  saneago_webmail_buscar,
+  saneago_webmail_ler_thread,
+  saneago_webmail_listar_pastas
+} = require("./tools/zimbra");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -436,6 +441,37 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           detalhado: { type: "boolean", description: "Se true, traz eventos cronológicos precisos (hh:mm:ss); false traz totalização", default: false }
         },
         required: ["unidade", "componente", "dtIni", "dtFim"]
+      }
+    },
+    {
+      name: "saneago_webmail_buscar",
+      description: "Busca e-mails no webmail Zimbra por remetente, assunto, etc. Retorna metadados e trechos (limite máximo de 200).",
+      inputSchema: {
+        type: "object",
+        properties: {
+          query: { type: "string", description: "Termo de busca (ex: assunto, email)" },
+          limite: { type: "number", description: "Quantidade máxima de e-mails a retornar (default 50)", default: 50 },
+          offset: { type: "number", description: "Paginação (default 0)", default: 0 }
+        }
+      }
+    },
+    {
+      name: "saneago_webmail_ler_thread",
+      description: "Lê o conteúdo completo de uma conversa/mensagem específica por ID no Zimbra.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          id: { type: "string", description: "O ID da mensagem/conversa (cid)" }
+        },
+        required: ["id"]
+      }
+    },
+    {
+      name: "saneago_webmail_listar_pastas",
+      description: "Retorna a árvore de pastas do webmail com a contagem de mensagens.",
+      inputSchema: {
+        type: "object",
+        properties: {}
       }
     }
   ];
@@ -983,6 +1019,29 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_supervisorio_horimetro": {
         const args = request.params.arguments || {};
         const resultado = await saneago_supervisorio_horimetro(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      case "saneago_webmail_buscar": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_webmail_buscar(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+
+      case "saneago_webmail_ler_thread": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_webmail_ler_thread(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+
+      case "saneago_webmail_listar_pastas": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_webmail_listar_pastas(args);
         return {
           content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
         };

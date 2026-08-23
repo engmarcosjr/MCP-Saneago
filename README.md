@@ -23,6 +23,9 @@ Servidor MCP e suíte de automação de alto desempenho para integração com os
 - **`saneago_supervisorio_listar_componentes`**: Lista o catálogo de sensores disponíveis para telemetria em uma unidade.
 - **`saneago_supervisorio_listar_dmcs`**: Lista os DMCs cadastrados em uma unidade operacional.
 - **`saneago_supervisorio_horimetro`**: Consulta a totalização de horas ou detalhamento de acionamentos de bomba no período.
+- **`saneago_webmail_buscar`**: Busca e-mails no webmail Zimbra por remetente, assunto, etc. Retorna metadados e trechos.
+- **`saneago_webmail_ler_thread`**: Lê o conteúdo completo de uma conversa/mensagem específica por ID no webmail.
+- **`saneago_webmail_listar_pastas`**: Retorna a árvore de pastas do webmail com a contagem de mensagens.
 - **`saneago_descobrir_aplicacao`**: Busca rápida de aplicações e capacidades no catálogo local.
 
 ---
