@@ -80,6 +80,53 @@ function expandirTokensDomain(tokens) {
       expanded.add('medido');
       expanded.add('leitura');
     }
+    // Supervisório Web
+    if (t === 'rap' || t === 'reservatorio' || t === 'nivel' || t === 'reservatorios') {
+      expanded.add('nivel');
+      expanded.add('nivel_percent');
+      expanded.add('reservatorio');
+      expanded.add('telemetria');
+      expanded.add('supervisorio');
+    }
+    if (t === 'bomba' || t === 'bombeamento' || t === 'pressao' || t === 'vazao') {
+      expanded.add('bomba');
+      expanded.add('status_bomba');
+      expanded.add('telemetria');
+      expanded.add('supervisorio');
+    }
+    if (t === 'horimetro' || t === 'horimetros') {
+      expanded.add('horimetro');
+      expanded.add('horas_trabalhadas');
+      expanded.add('acionamentos');
+      expanded.add('bomba');
+    }
+    if (t === 'noturna' || t === 'noturno' || t === 'dmc') {
+      expanded.add('minima_noturna');
+      expanded.add('dmc');
+      expanded.add('vazao_minima');
+      expanded.add('supervisorio');
+    }
+    // Webmail / Zimbra
+    if (t === 'email' || t === 'e-mail' || t === 'emails' || t === 'mensagem' || t === 'mensagens' || t === 'webmail' || t === 'zimbra') {
+      expanded.add('email');
+      expanded.add('assunto');
+      expanded.add('remetente');
+      expanded.add('webmail');
+      expanded.add('mensagem');
+    }
+    // DocFlow / GED
+    if (t === 'processo' || t === 'processos' || t === 'ged' || t === 'docflow') {
+      expanded.add('processo');
+      expanded.add('numero_processo');
+      expanded.add('docflow');
+      expanded.add('interessado');
+    }
+    if (t === 'projeto' || t === 'projetos' || t === 'empreendimento' || t === 'avto') {
+      expanded.add('projeto');
+      expanded.add('empreendimento');
+      expanded.add('avto');
+      expanded.add('docflow_ged');
+    }
   }
   return Array.from(expanded);
 }

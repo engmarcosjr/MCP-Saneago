@@ -1,0 +1,201 @@
+TAP version 13
+# Subtest: confirmation is bound to the exact preview and consumed once
+ok 1 - confirmation is bound to the exact preview and consumed once
+  ---
+  duration_ms: 14.440084
+  type: 'test'
+  ...
+# Subtest: confirmation requires a server-side grant
+ok 2 - confirmation requires a server-side grant
+  ---
+  duration_ms: 3.860708
+  type: 'test'
+  ...
+# Subtest: confirmation rejects changed arguments and expired previews
+ok 3 - confirmation rejects changed arguments and expired previews
+  ---
+  duration_ms: 4.272875
+  type: 'test'
+  ...
+# Subtest: confirmation gate handles numeroConta binding and format normalization
+ok 4 - confirmation gate handles numeroConta binding and format normalization
+  ---
+  duration_ms: 7.310416
+  type: 'test'
+  ...
+# Subtest: absence of numeroConta in preview and confirmation continues to work (regression)
+ok 5 - absence of numeroConta in preview and confirmation continues to work (regression)
+  ---
+  duration_ms: 3.624333
+  type: 'test'
+  ...
+# ==================================================================
+# CONSULTA DE PROCESSO DOCFLOW: 99999/2099 (HTTP DIRETO)
+# ==================================================================
+# 1. GET /prt/mpt/principal.zul...
+# Subtest: docflow tool - consultarProcessoDocflow via cache_local
+ok 6 - docflow tool - consultarProcessoDocflow via cache_local
+  ---
+  duration_ms: 2.494042
+  type: 'test'
+  ...
+# [DNS] lookup falhou (ENOTFOUND). Tentando DoH...
+# Subtest: docflow tool - consultarProcessoDocflow quando nao existe (falha online)
+ok 7 - docflow tool - consultarProcessoDocflow quando nao existe (falha online)
+  ---
+  duration_ms: 121.333833
+  type: 'test'
+  ...
+# Subtest: docflow tool - pesquisarProcessosDocflowLocal
+ok 8 - docflow tool - pesquisarProcessosDocflowLocal
+  ---
+  duration_ms: 0.569
+  type: 'test'
+  ...
+# Subtest: docflow parser - parseProcessoData
+ok 9 - docflow parser - parseProcessoData
+  ---
+  duration_ms: 170.470875
+  type: 'test'
+  ...
+# Subtest: parseNumeroConta handles formatted, unformatted, empty, and invalid inputs
+ok 10 - parseNumeroConta handles formatted, unformatted, empty, and invalid inputs
+  ---
+  duration_ms: 2.6375
+  type: 'test'
+  ...
+# Subtest: classificarCapacidade - extrai filtros de ECO303 (Conta/Hidrometro)
+ok 11 - classificarCapacidade - extrai filtros de ECO303 (Conta/Hidrometro)
+  ---
+  duration_ms: 5.6885
+  type: 'test'
+  ...
+# Subtest: classificarCapacidade - extrai filtros de LRS041 (Cidade/Data/Logradouro)
+ok 12 - classificarCapacidade - extrai filtros de LRS041 (Cidade/Data/Logradouro)
+  ---
+  duration_ms: 0.32325
+  type: 'test'
+  ...
+# Subtest: classificarCapacidade - tela sem filtros conhecidos devolve listas vazias (sem inventar boilerplate)
+ok 13 - classificarCapacidade - tela sem filtros conhecidos devolve listas vazias (sem inventar boilerplate)
+  ---
+  duration_ms: 0.118667
+  type: 'test'
+  ...
+# Subtest: extrairFiltros - reconhece os 13 tipos de filtros exigidos
+ok 14 - extrairFiltros - reconhece os 13 tipos de filtros exigidos
+  ---
+  duration_ms: 0.878416
+  type: 'test'
+  ...
+# [Índice] Gerado com sucesso em: /Volumes/Mac_Dados/Repos/MCP-Saneago/test/tmp_indice_test.json
+# [Índice] Total: 3 apps (Alta: 1, Média: 1, Baixa: 1, Erros: 1)
+# [Índice] Gerado com sucesso em: /Volumes/Mac_Dados/Repos/MCP-Saneago/test/tmp_indice_test.json
+# [Índice] Total: 1 apps (Alta: 1, Média: 0, Baixa: 0, Erros: 0)
+# [Índice] Gerado com sucesso em: /Volumes/Mac_Dados/Repos/MCP-Saneago/test/tmp_indice_test.json
+# [Índice] Total: 1 apps (Alta: 1, Média: 0, Baixa: 0, Erros: 0)
+# Subtest: derivarVertical - mapeia prefixos conhecidos corretamente
+ok 15 - derivarVertical - mapeia prefixos conhecidos corretamente
+  ---
+  duration_ms: 2.273541
+  type: 'test'
+  ...
+# Subtest: gerarIndiceCapacidades - calcula confiabilidade alta, media e baixa
+ok 16 - gerarIndiceCapacidades - calcula confiabilidade alta, media e baixa
+  ---
+  duration_ms: 15.903875
+  type: 'test'
+  ...
+# Subtest: descobrirAplicacao - busca local sobre o indice
+ok 17 - descobrirAplicacao - busca local sobre o indice
+  ---
+  duration_ms: 6.519375
+  type: 'test'
+  ...
+# Subtest: descobrirAplicacao - devolve mensagem honesta quando nada casa
+ok 18 - descobrirAplicacao - devolve mensagem honesta quando nada casa
+  ---
+  duration_ms: 7.423417
+  type: 'test'
+  ...
+# Subtest: validarParametrosLRS105 aceita RA e código de serviço válidos
+ok 19 - validarParametrosLRS105 aceita RA e código de serviço válidos
+  ---
+  duration_ms: 1.419125
+  type: 'test'
+  ...
+# Subtest: validarParametrosLRS105 limpa caracteres não numéricos
+ok 20 - validarParametrosLRS105 limpa caracteres não numéricos
+  ---
+  duration_ms: 0.07475
+  type: 'test'
+  ...
+# Subtest: validarParametrosLRS105 rejeita RA ausente ou inválido
+ok 21 - validarParametrosLRS105 rejeita RA ausente ou inválido
+  ---
+  duration_ms: 0.227959
+  type: 'test'
+  ...
+# Subtest: validarParametrosLRS105 rejeita código de serviço ausente
+ok 22 - validarParametrosLRS105 rejeita código de serviço ausente
+  ---
+  duration_ms: 0.090041
+  type: 'test'
+  ...
+# Subtest: montarResumoLRS105 constrói array de resumo estruturado
+ok 23 - montarResumoLRS105 constrói array de resumo estruturado
+  ---
+  duration_ms: 0.078208
+  type: 'test'
+  ...
+# Subtest: ranking - conta pelo nome do proprietário -> ECO154 em 1º no índice completo
+ok 24 - ranking - conta pelo nome do proprietário -> ECO154 em 1º no índice completo
+  ---
+  duration_ms: 54.046916
+  type: 'test'
+  ...
+# Subtest: ranking - RAs por logradouro e bairro num periodo -> ECO709 em 1º no índice completo
+ok 25 - ranking - RAs por logradouro e bairro num periodo -> ECO709 em 1º no índice completo
+  ---
+  duration_ms: 30.160416
+  type: 'test'
+  ...
+# Subtest: ranking - consultar RA por numero -> ECO701 em 1º no índice completo
+ok 26 - ranking - consultar RA por numero -> ECO701 em 1º no índice completo
+  ---
+  duration_ms: 18.30825
+  type: 'test'
+  ...
+# Subtest: ranking - asfalto recomposto por RA / recomposição asfáltica por cidade -> LRS041 no top-3
+ok 27 - ranking - asfalto recomposto por RA / recomposição asfáltica por cidade -> LRS041 no top-3
+  ---
+  duration_ms: 85.668708
+  type: 'test'
+  ...
+# Subtest: ranking - debitos/faturas de uma conta -> ECO506 (ou ECO563/ECO548) em 1º lugar
+ok 28 - ranking - debitos/faturas de uma conta -> ECO506 (ou ECO563/ECO548) em 1º lugar
+  ---
+  duration_ms: 39.43375
+  type: 'test'
+  ...
+# Subtest: ranking - pergunta sem resposta real -> lista vazia + mensagem honesta + confianca baixa
+ok 29 - ranking - pergunta sem resposta real -> lista vazia + mensagem honesta + confianca baixa
+  ---
+  duration_ms: 12.867959
+  type: 'test'
+  ...
+# Subtest: ranking - pergunta com filtros reconhecidos mas sem app correspondente -> descarte e honestidade
+ok 30 - ranking - pergunta com filtros reconhecidos mas sem app correspondente -> descarte e honestidade
+  ---
+  duration_ms: 13.884125
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 590.923583

@@ -1,5 +1,5 @@
 {
-  "total_aplicacoes": 596,
+  "total_aplicacoes": 609,
   "resumo": {
     "confiabilidade_alta": 164,
     "confiabilidade_media": 214,
@@ -10902,6 +10902,371 @@
       "colunas_retornadas": [],
       "perguntas_que_responde": [],
       "confiabilidade": "baixa",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_TELEMETRIA",
+      "nome": "Supervisório: Telemetria em tempo real",
+      "url_real": "mcp://saneago_supervisorio_telemetria",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "unidade",
+        "tipo_componente"
+      ],
+      "colunas_retornadas": [
+        "nivel_percent",
+        "status_bomba",
+        "vazao_media",
+        "pressao",
+        "componente",
+        "unidade"
+      ],
+      "perguntas_que_responde": [
+        "qual o nivel do RAP agora",
+        "status da bomba em tempo real",
+        "nivel do reservatorio",
+        "vazao atual da unidade",
+        "pressao atual do sistema",
+        "leitura atual dos sensores",
+        "monitorar unidade em tempo real",
+        "nivel do RAP Goialandia",
+        "status da bomba do RAP"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_HISTORICO",
+      "nome": "Supervisório: Histórico e série temporal",
+      "url_real": "mcp://saneago_supervisorio_historico",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "componentes",
+        "periodo",
+        "unidade",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "historico",
+        "minimo",
+        "maximo",
+        "media",
+        "count",
+        "serie_temporal",
+        "componente"
+      ],
+      "perguntas_que_responde": [
+        "historico de nivel do reservatorio",
+        "serie temporal da bomba",
+        "variacao do nivel nos ultimos dias",
+        "historico de vazao num periodo",
+        "grafico historico do supervisorio"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_MINIMA_NOTURNA",
+      "nome": "Supervisório: Mínima noturna por DMC",
+      "url_real": "mcp://saneago_supervisorio_minima_noturna",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "unidade",
+        "dmcId",
+        "periodo",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "minima_noturna",
+        "dmc",
+        "vazao_minima",
+        "horario_minimo"
+      ],
+      "perguntas_que_responde": [
+        "minima noturna do DMC",
+        "vazao minima noturna",
+        "minima noturna do setor",
+        "menor vazao durante a madrugada",
+        "perda noturna do DMC",
+        "minima noturna Goialandia",
+        "minima noturna do RAP"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_HORIMETRO",
+      "nome": "Supervisório: Horímetro de bomba",
+      "url_real": "mcp://saneago_supervisorio_horimetro",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "unidade",
+        "componente",
+        "periodo",
+        "data"
+      ],
+      "colunas_retornadas": [
+        "horas_trabalhadas",
+        "acionamentos",
+        "bomba",
+        "horimetro",
+        "eventos"
+      ],
+      "perguntas_que_responde": [
+        "horas trabalhadas da bomba",
+        "quantas horas a bomba funcionou",
+        "horimetro da bomba",
+        "acionamentos da bomba no periodo",
+        "tempo de funcionamento da bomba",
+        "horas da bomba 2 do RAP",
+        "horimetro do equipamento"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_LISTAR_COMPONENTES",
+      "nome": "Supervisório: Catálogo de componentes",
+      "url_real": "mcp://saneago_supervisorio_listar_componentes",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "unidade"
+      ],
+      "colunas_retornadas": [
+        "id_componente",
+        "nome_componente",
+        "grupo",
+        "tipo"
+      ],
+      "perguntas_que_responde": [
+        "quais os sensores da unidade",
+        "listar componentes do supervisorio",
+        "catalogo de equipamentos monitorados",
+        "quais as bombas da estacao"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_SUPERVISORIO_LISTAR_DMCS",
+      "nome": "Supervisório: DMCs da unidade",
+      "url_real": "mcp://saneago_supervisorio_listar_dmcs",
+      "vertical": "supervisorio",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "unidade"
+      ],
+      "colunas_retornadas": [
+        "dmc",
+        "nome_dmc",
+        "id_dmc"
+      ],
+      "perguntas_que_responde": [
+        "quais os DMCs da unidade",
+        "listar setores de medicao",
+        "distritos de medicao da unidade"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_DOCFLOW_CONSULTAR",
+      "nome": "DocFlow: Consultar processo por número",
+      "url_real": "mcp://saneago_docflow_consultar_processo",
+      "vertical": "docflow_ged",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "processo",
+        "ano"
+      ],
+      "colunas_retornadas": [
+        "numero_processo",
+        "interessado",
+        "assunto",
+        "situacao",
+        "data_abertura",
+        "responsavel"
+      ],
+      "perguntas_que_responde": [
+        "processo por numero",
+        "dados do processo no docflow",
+        "consultar processo 14652/2026",
+        "informacoes do processo GED",
+        "situacao do processo docflow",
+        "processo pelo numero no GED"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_DOCFLOW_LISTAR_ANEXOS",
+      "nome": "DocFlow: Listar anexos e GED do processo",
+      "url_real": "mcp://saneago_docflow_listar_anexos",
+      "vertical": "docflow_ged",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "processo",
+        "ano"
+      ],
+      "colunas_retornadas": [
+        "pastas",
+        "arquivos",
+        "nome_arquivo",
+        "tamanho",
+        "data",
+        "descricao"
+      ],
+      "perguntas_que_responde": [
+        "quais os anexos do processo",
+        "documentos do GED do processo",
+        "arquivos anexados ao processo",
+        "arvore de documentos do processo",
+        "listar arquivos do processo no GED"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_DOCFLOW_INDEXAR_PROJETOS",
+      "nome": "DocFlow: Buscar projetos de empreendimentos",
+      "url_real": "mcp://saneago_docflow_indexar_projetos",
+      "vertical": "docflow_ged",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "empreendimento",
+        "municipio",
+        "ano",
+        "processo",
+        "avto",
+        "sistema",
+        "art"
+      ],
+      "colunas_retornadas": [
+        "empreendimento",
+        "avto",
+        "municipio",
+        "sistema",
+        "processo",
+        "art",
+        "arquivos"
+      ],
+      "perguntas_que_responde": [
+        "projeto do empreendimento",
+        "projetos de Anapolis",
+        "projeto por AVTO",
+        "projeto SAA SES do municipio",
+        "ART do projeto de empreendimento",
+        "projetos organizados por municipio",
+        "projeto de ampliacao de abastecimento"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_DOCFLOW_PESQUISAR",
+      "nome": "DocFlow: Pesquisar processos no banco local",
+      "url_real": "mcp://saneago_docflow_pesquisar_local",
+      "vertical": "docflow_ged",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "termo",
+        "interessado",
+        "assunto",
+        "ano"
+      ],
+      "colunas_retornadas": [
+        "numero_processo",
+        "interessado",
+        "assunto",
+        "ano",
+        "situacao"
+      ],
+      "perguntas_que_responde": [
+        "processos do interessado",
+        "processos sobre determinado assunto",
+        "buscar processos docflow",
+        "processos de um ano especifico"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_WEBMAIL_BUSCAR",
+      "nome": "Webmail: Buscar e-mails",
+      "url_real": "mcp://saneago_webmail_buscar",
+      "vertical": "webmail",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "query"
+      ],
+      "colunas_retornadas": [
+        "remetente",
+        "assunto",
+        "data",
+        "trecho",
+        "id_mensagem"
+      ],
+      "perguntas_que_responde": [
+        "email sobre determinado assunto",
+        "email do remetente X",
+        "buscar email no webmail",
+        "mensagens sobre o tema Y",
+        "emails recebidos sobre obra",
+        "procurar email sobre contrato",
+        "email sobre licitacao",
+        "mensagem de determinado remetente"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_WEBMAIL_LER_THREAD",
+      "nome": "Webmail: Ler conversa/thread por ID",
+      "url_real": "mcp://saneago_webmail_ler_thread",
+      "vertical": "webmail",
+      "tecnologia": "mcp_tool",
+      "filtros": [
+        "id"
+      ],
+      "colunas_retornadas": [
+        "conteudo",
+        "remetente",
+        "destinatarios",
+        "assunto",
+        "data",
+        "anexos"
+      ],
+      "perguntas_que_responde": [
+        "ler email pelo ID",
+        "conteudo completo da mensagem",
+        "ver conversa de email"
+      ],
+      "confiabilidade": "alta",
+      "erro": null
+    },
+    {
+      "codigo": "MCP_WEBMAIL_PASTAS",
+      "nome": "Webmail: Listar pastas do webmail",
+      "url_real": "mcp://saneago_webmail_listar_pastas",
+      "vertical": "webmail",
+      "tecnologia": "mcp_tool",
+      "filtros": [],
+      "colunas_retornadas": [
+        "pasta",
+        "quantidade_mensagens",
+        "nao_lidas"
+      ],
+      "perguntas_que_responde": [
+        "listar pastas do email",
+        "arvore de pastas do webmail",
+        "quantos emails em cada pasta"
+      ],
+      "confiabilidade": "alta",
       "erro": null
     }
   ],

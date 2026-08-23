@@ -111,3 +111,89 @@ test('ranking - pergunta com filtros reconhecidos mas sem app correspondente -> 
     assert.strictEqual(res.confianca, 'baixa');
   }
 });
+
+// ── Fase 15: casos-verdade das novas verticais ──────────────────────────────
+
+test('ranking - "nível do RAP" / "status da bomba" → saneago_supervisorio_telemetria no top-3', () => {
+  // Caso 1: nível do RAP
+  const resNivel = descobrirAplicacao({
+    pergunta: 'nivel do RAP',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(resNivel.ok, true);
+  assert(resNivel.candidatas.length > 0, 'Devia retornar candidatas para "nivel do RAP"');
+  const top3Nivel = resNivel.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3Nivel.includes('MCP_SUPERVISORIO_TELEMETRIA'),
+    `MCP_SUPERVISORIO_TELEMETRIA deve estar no top-3 para "nivel do RAP", obtido: [${top3Nivel.join(', ')}]`);
+
+  // Caso 2: status da bomba
+  const resBomba = descobrirAplicacao({
+    pergunta: 'status da bomba',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(resBomba.ok, true);
+  assert(resBomba.candidatas.length > 0, 'Devia retornar candidatas para "status da bomba"');
+  const top3Bomba = resBomba.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3Bomba.includes('MCP_SUPERVISORIO_TELEMETRIA'),
+    `MCP_SUPERVISORIO_TELEMETRIA deve estar no top-3 para "status da bomba", obtido: [${top3Bomba.join(', ')}]`);
+});
+
+test('ranking - "horas trabalhadas da bomba" → saneago_supervisorio_horimetro no top-3', () => {
+  const res = descobrirAplicacao({
+    pergunta: 'horas trabalhadas da bomba',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(res.ok, true);
+  assert(res.candidatas.length > 0, 'Devia retornar candidatas para horímetro');
+  const top3 = res.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3.includes('MCP_SUPERVISORIO_HORIMETRO'),
+    `MCP_SUPERVISORIO_HORIMETRO deve estar no top-3, obtido: [${top3.join(', ')}]`);
+});
+
+test('ranking - "mínima noturna do DMC" → saneago_supervisorio_minima_noturna no top-3', () => {
+  const res = descobrirAplicacao({
+    pergunta: 'minima noturna do DMC',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(res.ok, true);
+  assert(res.candidatas.length > 0, 'Devia retornar candidatas para mínima noturna');
+  const top3 = res.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3.includes('MCP_SUPERVISORIO_MINIMA_NOTURNA'),
+    `MCP_SUPERVISORIO_MINIMA_NOTURNA deve estar no top-3, obtido: [${top3.join(', ')}]`);
+});
+
+test('ranking - "processo por número" → saneago_docflow_consultar_processo em 1º', () => {
+  const res = descobrirAplicacao({
+    pergunta: 'processo por numero',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(res.ok, true);
+  assert(res.candidatas.length > 0, 'Devia retornar candidatas para consulta de processo');
+  assert.strictEqual(res.candidatas[0].codigo, 'MCP_DOCFLOW_CONSULTAR',
+    `Esperado MCP_DOCFLOW_CONSULTAR em 1º, obteve ${res.candidatas[0].codigo}`);
+  assert.strictEqual(res.confianca, 'alta');
+});
+
+test('ranking - "projeto do empreendimento X" → saneago_docflow_indexar_projetos no top-3', () => {
+  const res = descobrirAplicacao({
+    pergunta: 'projeto do empreendimento X',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(res.ok, true);
+  assert(res.candidatas.length > 0, 'Devia retornar candidatas para projetos');
+  const top3 = res.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3.includes('MCP_DOCFLOW_INDEXAR_PROJETOS'),
+    `MCP_DOCFLOW_INDEXAR_PROJETOS deve estar no top-3, obtido: [${top3.join(', ')}]`);
+});
+
+test('ranking - "e-mail sobre assunto Y" → saneago_webmail_buscar no top-3', () => {
+  const res = descobrirAplicacao({
+    pergunta: 'email sobre assunto Y',
+    indicePath: INDICE_PATH
+  });
+  assert.strictEqual(res.ok, true);
+  assert(res.candidatas.length > 0, 'Devia retornar candidatas para busca de e-mail');
+  const top3 = res.candidatas.slice(0, 3).map(c => c.codigo);
+  assert(top3.includes('MCP_WEBMAIL_BUSCAR'),
+    `MCP_WEBMAIL_BUSCAR deve estar no top-3, obtido: [${top3.join(', ')}]`);
+});

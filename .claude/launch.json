@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dashboard-projetos",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3333"],
+      "port": 3333,
+      "url": "http://localhost:3333"
+    },
+    {
+      "name": "saneago-portal",
+      "url": "https://www.saneago.com.br/prt/",
+      "port": 443
+    },
+    {
+      "name": "docflow-consulta",
+      "url": "https://www.saneago.com.br/docflow/xhtml/docflow/protocolo/consultarProtocolo.jsf",
+      "port": 443
+    }
+  ]
+}
