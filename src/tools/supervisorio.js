@@ -162,8 +162,9 @@ async function saneago_supervisorio_listar_componentes({ unidade = 6, buscaTexto
     const res = await client.listarComponentes(unidade);
     if (res && res.data) {
        data = res.data;
-       // Gerar cache em background ou sincrono (mas como SANEAGO é read-only the prompt asks to create the cache gen function)
-       fs.writeFileSync(cachePath, JSON.stringify(data, null, 2));
+       // T6: o cache em disco NÃO é atualizado aqui para manter o contrato de leitura puro.
+       // Para popular/renovar o cache, execute o script administrativo offline:
+       //   node scripts/atualizar_cache_supervisorio.js <unidade>
     }
   }
 

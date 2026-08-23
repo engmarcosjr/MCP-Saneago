@@ -70,10 +70,19 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
   const tools = [
     {
       name: "saneago_listar_aplicacoes",
-      description: "Lista as aplicacoes da Saneago disponiveis no catalogo para interacao automatizada.",
+      description: "Lista as aplicacoes da Saneago disponiveis no catalogo para interacao automatizada. Suporta filtro por texto (busca) e limite de resultados (default 50). Para busca semantica avancada, prefira saneago_descobrir_aplicacao.",
       inputSchema: {
         type: "object",
-        properties: {},
+        properties: {
+          busca: {
+            type: "string",
+            description: "Filtro de texto opcional — aplica busca por código ou nome da aplicação (ex: 'ECO', 'consumo')",
+          },
+          limite: {
+            type: "number",
+            description: "Quantidade máxima de aplicações a retornar (padrão 50, máximo 600)",
+          },
+        },
         required: [],
       },
     },
@@ -280,6 +289,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           ano: {
             type: "string",
             description: "Ano do processo, caso o número não inclua.",
+          },
+          limiteArquivos: {
+            type: "number",
+            description: "Maximo de arquivos retornados no total (default 200). Truncamento e sinalizado com truncado:true e o total real."
           },
         },
         required: ["processo"],
@@ -606,15 +619,41 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   console.error(`[MCP-Saneago] tool=${request.params.name} started`);
   try {
     switch (request.params.name) {
-      case "saneago_listar_aplicacoes":
+      case "saneago_listar_aplicacoes": {
+        const { busca = "", limite = 50 } = request.params.arguments || {};
+        const limiteEfetivo = Math.min(Math.max(1, Math.floor(limite)), 600);
+        const buscaNorm = (busca || "").toLowerCase().trim();
+
+        let resultado = catalogo;
+        if (buscaNorm) {
+          resultado = catalogo.filter(app =>
+            (app.codigo && app.codigo.toLowerCase().includes(buscaNorm)) ||
+            (app.nome && app.nome.toLowerCase().includes(buscaNorm))
+          );
+        }
+
+        const total = resultado.length;
+        const truncado = total > limiteEfetivo;
+        const exibidos = resultado.slice(0, limiteEfetivo);
+
         return {
           content: [
             {
               type: "text",
-              text: JSON.stringify(catalogo, null, 2),
+              text: JSON.stringify({
+                total_disponivel: total,
+                limite_aplicado: limiteEfetivo,
+                truncado,
+                filtro_busca: buscaNorm || null,
+                nota: truncado
+                  ? `Mostrando ${limiteEfetivo} de ${total} aplicações. Use 'busca' para filtrar ou aumente 'limite'.`
+                  : undefined,
+                aplicacoes: exibidos,
+              }, null, 2),
             },
           ],
         };
+      }
 
       case "saneago_abrir_e_inspecionar": {
         const { nomeAplicacao } = request.params.arguments;

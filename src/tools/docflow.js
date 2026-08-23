@@ -159,7 +159,9 @@ function str(v) {
  * ATENÇÃO: Acessa a rede para consultar o portal DocFlow Saneago.
  * É uma operação "read-only", não salva arquivos em disco durante a operação normal.
  */
-async function listarAnexosDocflow({ processo, ano, htmlMock = null }) {
+const LIMITE_ARQUIVOS_ANEXOS_DEFAULT = 200;
+
+async function listarAnexosDocflow({ processo, ano, htmlMock = null, limiteArquivos = LIMITE_ARQUIVOS_ANEXOS_DEFAULT }) {
   let processoNum = String(processo || "").trim();
   let anoTarget = ano ? String(ano).trim() : "";
   if (processoNum.includes("/")) {
@@ -321,11 +323,38 @@ async function listarAnexosDocflow({ processo, ano, htmlMock = null }) {
     }
 
     await browser.close();
+
+    // P2: volume controlado — um processo pode ter centenas de anexos.
+    // Truncamento e SEMPRE sinalizado; corte silencioso e proibido.
+    const limite = Number.isFinite(limiteArquivos) && limiteArquivos > 0
+      ? Math.floor(limiteArquivos)
+      : LIMITE_ARQUIVOS_ANEXOS_DEFAULT;
+    const totalArquivosGeral = pastas.reduce((acc, p) => acc + (p.arquivos ? p.arquivos.length : 0), 0);
+
+    let restante = limite;
+    const pastasLimitadas = pastas.map((p) => {
+      const arquivos = p.arquivos || [];
+      if (restante <= 0) return { ...p, arquivos: [], arquivosOmitidos: arquivos.length };
+      if (arquivos.length <= restante) {
+        restante -= arquivos.length;
+        return p;
+      }
+      const corte = arquivos.slice(0, restante);
+      const omitidos = arquivos.length - restante;
+      restante = 0;
+      return { ...p, arquivos: corte, arquivosOmitidos: omitidos };
+    });
+
+    const truncado = totalArquivosGeral > limite;
     return {
       sucesso: true,
       processo: numFormatado,
       totalPastas: pastas.length,
-      pastas
+      totalArquivos: totalArquivosGeral,
+      limiteAplicado: limite,
+      truncado,
+      ...(truncado ? { mensagemTruncamento: `Retornados ${limite} de ${totalArquivosGeral} arquivos. Use limiteArquivos para ampliar.` } : {}),
+      pastas: pastasLimitadas
     };
 
   } catch (err) {

@@ -3,12 +3,19 @@
 const fs = require("fs");
 const path = require("path");
 
-const BASE_ASFALTO = "/Users/macbookmj/repos/Asfalto-Pendentes/output";
+// T5: caminho configurável via variável de ambiente; fallback preserva comportamento atual.
+// Configure ASFALTO_LOCAL_DIR=/caminho/para/Asfalto-Pendentes/output para outras máquinas.
+const BASE_ASFALTO_DEFAULT = "/Users/macbookmj/repos/Asfalto-Pendentes/output";
+const BASE_ASFALTO = process.env.ASFALTO_LOCAL_DIR || BASE_ASFALTO_DEFAULT;
 
 /**
  * Busca por logradouro, rua, bairro e/ou quadra nas planilhas e caches locais de asfalto.
  */
 async function pesquisarAsfaltoLocal({ rua, bairro, quadra, ra }) {
+  if (!fs.existsSync(BASE_ASFALTO)) {
+    throw new Error(`Diretório BASE_ASFALTO não encontrado: ${BASE_ASFALTO}. Verifique a variável de ambiente ASFALTO_LOCAL_DIR.`);
+  }
+
   const ruaNorm = (rua || "").toLowerCase().trim();
   const bairroNorm = (bairro || "").toLowerCase().trim();
   const quadraNorm = (quadra || "").toLowerCase().trim();

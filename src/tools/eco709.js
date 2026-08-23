@@ -2,42 +2,46 @@
 
 /**
  * Tool MCP para consulta por Logradouro / Rua no ECO709.
+ *
+ * T3 — HONESTIDADE: Esta implementação é um stub DECLARADO.
+ *
+ * A consulta HTTP direta ao ECO709 exige mapear os UUIDs dinâmicos dos campos internos
+ * de cada macro `caixaPesquisa` (txtCodigo de pesquisaCidade, pesquisaBairro,
+ * pesquisaLogradouro), conforme documentado em docs/HTTP-ECO707-ECO709.md.
+ * Esse mapeamento requer sessão ativa com o portal Saneago e captura em rede —
+ * impossível validar offline.
+ *
+ * A via Playwright também requer rede: a tela exige bairro E logradouro (não
+ * funciona só por cidade), e o preenchimento de campos ZK dependentes de onChange/onBlur
+ * não é confiável sem UUID capturado.
+ *
+ * PENDÊNCIA PRIORITÁRIA (requer rede): implementar a consulta HTTP conforme contrato em
+ * docs/HTTP-ECO707-ECO709.md, capturando UUIDs via POST /prt/zkau após GET da tela.
  */
-const { abrirApp } = require("../portal");
 
-async function consultarLogradouro({ cidade, bairro, logradouro, de, ate }) {
+async function consultarLogradouro({ logradouro }) {
   if (!logradouro) {
     throw new Error("O nome do logradouro / rua é obrigatório para consulta no ECO709.");
   }
-
-  // Tenta rodar via Playwright / portal caso necessário, ou reutiliza a lógica do portal
-  const frame = await abrirApp("ECO709");
-  
-  // Preencher filtros no ECO709 se disponível
-  // Como o Playwright abre a interface, inspecionamos os campos e enviamos os valores
-  await frame.page().waitForTimeout(2000);
-
-  // Preencher logradouro no input de busca de logradouro se disponível
-  const res = await frame.evaluate(async ({ cid, br, logr }) => {
-    const inputs = Array.from(document.querySelectorAll("input"));
-    const labels = Array.from(document.querySelectorAll("label, span, td"));
-    
-    return {
-      status: "ECO709_ABERTO",
-      mensagem: `ECO709 aberto no portal para consulta de logradouro '${logr}' em '${br || 'Geral'}'.`
-    };
-  }, { cid: cidade, br: bairro, logr: logradouro });
 
   return {
     content: [
       {
         type: "text",
         text: JSON.stringify({
-          sucesso: true,
-          cidade: cidade || "2 - ANAPOLIS",
-          bairro: bairro || "",
-          logradouro: logradouro,
-          resultado: res
+          sucesso: false,
+          status: "NAO_IMPLEMENTADO",
+          mensagem:
+            "A tool saneago_eco709_consultar_logradouro ainda não executa a consulta real. " +
+            "O ECO709 requer preenchimento de bairro + logradouro via protocolo ZK com UUIDs " +
+            "dinâmicos que só podem ser capturados com sessão ativa na rede Saneago. " +
+            "Para obter RAs por logradouro agora, use saneago_abrir_e_inspecionar com código 'ECO709' " +
+            "e preencha os campos manualmente com saneago_preencher_campo e saneago_clicar_botao " +
+            "(requer SANEAGO_ALLOW_GENERIC_WRITE=1).",
+          pendencia:
+            "Implementar consulta HTTP ao ECO709 conforme docs/HTTP-ECO707-ECO709.md. " +
+            "Requer captura dos UUIDs dinâmicos de pesquisaCidade/pesquisaBairro/pesquisaLogradouro " +
+            "em sessão com rede Saneago ativa."
         }, null, 2)
       }
     ]
