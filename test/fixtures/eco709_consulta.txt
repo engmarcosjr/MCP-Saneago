@@ -1,0 +1,65 @@
+=== DIAG ECO709 CONSULTA (cidade=2, 01/07/2025..31/07/2025) ===
+[Session] Iniciando novo navegador...
+[Session] Carregando cookies de sessao anteriores...
+[Portal] Navegando para a home para limpar abas abertas...
+[Portal] Buscando aplicativo: "ECO709"...
+[Portal] Aguardando resposta do ZK apos digitar...
+[Portal] Aguardando resultado na lista de Aplicações...
+[Portal] Opcao encontrada na lista, clicando no botao...
+[Portal] Aguardando carregamento do iframe da aplicacao...
+[Portal] Frame encontrado! URL: https://www.saneago.com.br/prt/eco/ECO709ConsultaRALogradouro.zul
+Campos antes de preencher cidade: {"cidadeId":"c61S_4","bairroId":"c61S04","bairroEditavel":false,"logradouroId":null,"logradouroEditavel":null,"dataIniId":"c61Se2-real","dataFimId":"c61Sf2-real","btnId":"c61Si2"}
+Preenchendo cidade=2...
+Campos após cidade (bairro/logradouro liberados?): {"cidadeId":"c61S_4","bairroId":"c61S04","bairroEditavel":true,"logradouroId":null,"logradouroEditavel":null,"dataIniId":"c61Se2-real","dataFimId":"c61Sf2-real","btnId":"c61Si2"}
+Nome da cidade resolvido: ANAPOLIS
+Clicando Consultar...
+
+--- CONTAINERS DE TABELA ---
+{
+  "grids": [
+    {
+      "idx": 0,
+      "id": "c61S4",
+      "headers": [],
+      "totalRows": 8,
+      "sample": [
+        [
+          "Cidade:",
+          ""
+        ],
+        [
+          "Bairro:",
+          ""
+        ],
+        [
+          "Logradouro:",
+          ""
+        ]
+      ]
+    }
+  ],
+  "listboxes": [
+    {
+      "idx": 0,
+      "id": "c61Sm2",
+      "headers": [],
+      "totalRows": 0,
+      "sample": []
+    }
+  ],
+  "paging": [
+    "/ 1"
+  ],
+  "avisos": []
+}
+
+--- MODAIS / TEXTO RELEVANTE ---
+{
+  "modais": [],
+  "linhas": [
+    "ECO709 - Consulta RA por Logradouro   /   Nível de Acesso: C***",
+    "Logradouro:"
+  ]
+}
+
+=== FIM ===

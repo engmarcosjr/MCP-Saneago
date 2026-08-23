@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require("assert");
-const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("../src/tools/docflow");
+const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("../../src/tools/docflow");
 
 async function testDocflowTools() {
   console.log("=== Testando ferramentas do DocFlow ===");

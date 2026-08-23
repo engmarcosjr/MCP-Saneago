@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "smoke": "node scripts/smoke-mcp.js",
-    "test": "node --test",
+    "test": "node --test test/*.test.js",
+    "test:integration": "node test/integration/docflow_mcp_tools.integration.js",
     "test:stage1": "node src/test_stage1.js",
     "test:stage2": "node src/test_stage2.js",
     "test:stage3": "node src/test_stage3.js",

@@ -2,9 +2,9 @@
 
 const fs = require("fs");
 const path = require("path");
-const { parseProcessoData, consultarProcesso } = require("../../docflow_consultar_processo");
+const { parseProcessoData, consultarProcesso } = require("../../scratch/exploracao/docflow/docflow_consultar_processo");
 
-const ROOT_DIR = path.join(__dirname, "..", "..");
+const ROOT_DIR = process.env.DOCFLOW_DATA_DIR || path.join(__dirname, "..", "..");
 
 /**
  * Consulta um processo individual no DocFlow por número (ex: "14652/2026" ou id: 14652, ano: 2026).
@@ -42,6 +42,15 @@ async function consultarProcessoDocflow({ processo, ano }) {
     } catch (e) {
       // Falha ao ler cache, tenta via rede
     }
+  }
+
+  if (process.env.DOCFLOW_OFFLINE === "1") {
+    return {
+      sucesso: false,
+      origem: "falha_online",
+      mensagem: `Processo ${numFormatado} não encontrado no cache local e a consulta online foi bloqueada por DOCFLOW_OFFLINE=1.`,
+      cacheLocalVerificado: localFile
+    };
   }
 
   try {
