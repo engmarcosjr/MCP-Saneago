@@ -254,6 +254,35 @@ class SupervisorioHttpClient {
     );
     return res.json;
   }
+
+  /**
+   * Consulta o horímetro de uma bomba/componente.
+   */
+  async consultarHorimetro(unidade, componente, dtIni, dtFim, detalhado = false) {
+    const payload = new URLSearchParams({
+      unidade: String(unidade),
+      componente: String(componente),
+      dataInicial: dtIni,
+      dataFinal: dtFim
+    }).toString();
+
+    const path = detalhado 
+      ? "/automacao/horimetroevento/buscarevento" 
+      : "/automacao/horimetro/buscarhistorico";
+
+    const res = await this.request(
+      {
+        method: "POST",
+        path: path,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+          "X-Requested-With": "XMLHttpRequest"
+        }
+      },
+      payload
+    );
+    return res.json;
+  }
 }
 
 module.exports = { SupervisorioHttpClient };

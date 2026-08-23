@@ -15,6 +15,12 @@ Servidor MCP e suíte de automação de alto desempenho para integração com os
 - **`saneago_lrs105_verificar_estatistica`**: Verifica lançamento de laudos e materiais no LRS105 sem gravação (read-only).
 - **`saneago_abrir_ra`**: Abertura de RAs no ECO701 com confirmação em duas etapas (preview + confirmação por token).
 - **`saneago_consultar_consumo`**: Consulta de consumo por conta no ECO303.
+- **`saneago_supervisorio_telemetria`**: Leitura em tempo real por unidade/grupo do Supervisório Web.
+- **`saneago_supervisorio_historico`**: Consulta a série temporal de medições de sensores num período, com agregações (min/max/média).
+- **`saneago_supervisorio_minima_noturna`**: Consulta os dados de mínima noturna (perdas/vazamentos) por DMC.
+- **`saneago_supervisorio_listar_componentes`**: Lista o catálogo de sensores disponíveis para telemetria em uma unidade.
+- **`saneago_supervisorio_listar_dmcs`**: Lista os DMCs cadastrados em uma unidade operacional.
+- **`saneago_supervisorio_horimetro`**: Consulta a totalização de horas ou detalhamento de acionamentos de bomba no período.
 - **`saneago_descobrir_aplicacao`**: Busca rápida de aplicações e capacidades no catálogo local.
 
 ---

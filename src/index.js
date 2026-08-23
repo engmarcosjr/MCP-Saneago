@@ -21,6 +21,14 @@ const { descobrirAplicacao } = require("./tools/descobrir");
 const { consultarLogradouro } = require("./tools/eco709");
 const { pesquisarAsfaltoLocal } = require("./tools/asfalto_local");
 const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("./tools/docflow");
+const {
+  saneago_supervisorio_telemetria,
+  saneago_supervisorio_historico,
+  saneago_supervisorio_minima_noturna,
+  saneago_supervisorio_listar_componentes,
+  saneago_supervisorio_listar_dmcs,
+  saneago_supervisorio_horimetro
+} = require("./tools/supervisorio");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -281,6 +289,118 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
         },
       },
+    },
+    {
+      name: "saneago_supervisorio_telemetria",
+      description: "Leitura em tempo real por unidade e, opcionalmente, por grupo/tipo de componente no Supervisório Web.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          unidade: {
+            type: "number",
+            description: "ID da unidade (ex: 6 para Anápolis)",
+            default: 6
+          },
+          tipoComponente: {
+            type: "number",
+            description: "1=Nível, 2=Volume m3, 3=Status Bomba ON/OFF, 4=Vazão Média",
+            default: 1
+          }
+        },
+        required: ["unidade"]
+      }
+    },
+    {
+      name: "saneago_supervisorio_historico",
+      description: "Série temporal de múltiplos componentes num período no Supervisório Web, incluindo agregações.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          componentes: {
+            type: "array",
+            items: { type: "number" },
+            description: "Array com IDs dos componentes"
+          },
+          dInicial: {
+            type: "string",
+            description: "Data inicial (YYYY-MM-DD)"
+          },
+          dFinal: {
+            type: "string",
+            description: "Data final (YYYY-MM-DD)"
+          },
+          hInicial: {
+            type: "string",
+            description: "Hora inicial (HH:MM:SS)",
+            default: "00:00:00"
+          },
+          hFinal: {
+            type: "string",
+            description: "Hora final (HH:MM:SS)",
+            default: "23:59:59"
+          },
+          unidade: {
+            type: "number",
+            description: "ID da unidade (ex: 6)",
+            default: 6
+          }
+        },
+        required: ["componentes", "dInicial", "dFinal", "unidade"]
+      }
+    },
+    {
+      name: "saneago_supervisorio_minima_noturna",
+      description: "Consulta mínima noturna por DMC.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          unidade: { type: "number", description: "ID da unidade", default: 6 },
+          dmcId: { type: "number", description: "ID do DMC" },
+          dtIni: { type: "string", description: "Data inicial (YYYY-MM-DD)" },
+          dtFim: { type: "string", description: "Data final (YYYY-MM-DD)" }
+        },
+        required: ["unidade", "dmcId", "dtIni", "dtFim"]
+      }
+    },
+    {
+      name: "saneago_supervisorio_listar_componentes",
+      description: "Catálogo de componentes/sensores da unidade.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          unidade: { type: "number", description: "ID da unidade", default: 6 },
+          buscaTexto: { type: "string", description: "Filtro de busca por nome de componente" },
+          grupo: { type: "string", description: "Filtro por grupo de componente" },
+          limite: { type: "number", description: "Limite de resultados", default: 100 }
+        },
+        required: ["unidade"]
+      }
+    },
+    {
+      name: "saneago_supervisorio_listar_dmcs",
+      description: "Lista DMCs da unidade no Supervisório Web.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          unidade: { type: "number", description: "ID da unidade", default: 6 }
+        },
+        required: ["unidade"]
+      }
+    },
+    {
+      name: "saneago_supervisorio_horimetro",
+      description: "Consulta totalização de horas ou detalhamento de acionamentos de bomba no período.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          unidade: { type: "number", description: "ID da unidade", default: 6 },
+          componente: { type: "number", description: "ID do componente (bomba)" },
+          dtIni: { type: "string", description: "Data inicial (YYYY-MM-DD)" },
+          dtFim: { type: "string", description: "Data final (YYYY-MM-DD)" },
+          detalhado: { type: "boolean", description: "Se true, traz eventos cronológicos precisos (hh:mm:ss); false traz totalização", default: false }
+        },
+        required: ["unidade", "componente", "dtIni", "dtFim"]
+      }
     }
   ];
 
@@ -755,6 +875,54 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
               text: JSON.stringify(resultado, null, 2),
             },
           ],
+        };
+      }
+
+      case "saneago_supervisorio_telemetria": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_telemetria(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      
+      case "saneago_supervisorio_historico": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_historico(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      
+      case "saneago_supervisorio_minima_noturna": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_minima_noturna(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      
+      case "saneago_supervisorio_listar_componentes": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_listar_componentes(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      
+      case "saneago_supervisorio_listar_dmcs": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_listar_dmcs(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
+        };
+      }
+      
+      case "saneago_supervisorio_horimetro": {
+        const args = request.params.arguments || {};
+        const resultado = await saneago_supervisorio_horimetro(args);
+        return {
+          content: [{ type: "text", text: JSON.stringify(resultado, null, 2) }],
         };
       }
 
