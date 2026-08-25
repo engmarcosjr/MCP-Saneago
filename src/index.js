@@ -18,6 +18,9 @@ const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
 const { lancarServicoExecutado, verificarEstatisticaLRS105 } = require("./tools/lrs105");
 const { descobrirAplicacao } = require("./tools/descobrir");
+const { consultarLogradouro } = require("./tools/eco709");
+const { pesquisarAsfaltoLocal } = require("./tools/asfalto_local");
+const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal } = require("./tools/docflow");
 const { consumeConfirmed, createPending } = require("./confirmation-gate");
 // Armazena o frame ativo (app atualmente aberta) para uso subsequente
 let activeFrame = null;
@@ -173,6 +176,108 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           limite: {
             type: "number",
             description: "Quantidade maxima de aplicacoes candidatas a retornar (padrao 10)",
+          },
+        },
+      },
+    },
+    {
+      name: "saneago_eco709_consultar_logradouro",
+      description: "Consulta RAs por Logradouro / Rua, Bairro e Cidade no aplicativo ECO709 da Saneago.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          cidade: {
+            type: "string",
+            description: "Nome ou código da cidade (ex: '2 - ANAPOLIS')",
+          },
+          bairro: {
+            type: "string",
+            description: "Nome do bairro (ex: 'VILA JAYARA')",
+          },
+          logradouro: {
+            type: "string",
+            description: "Nome da rua / logradouro (ex: 'RUA URUANA')",
+          },
+          de: {
+            type: "string",
+            description: "Data inicial no formato dd/mm/aaaa",
+          },
+          ate: {
+            type: "string",
+            description: "Data final no formato dd/mm/aaaa",
+          },
+        },
+        required: ["logradouro"],
+      },
+    },
+    {
+      name: "saneago_pesquisar_asfalto_local",
+      description: "Pesquisa registros históricos e laudos de recomposição asfáltica no banco/planilhas do distrito por Rua, Bairro, Quadra ou número de RA.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          rua: {
+            type: "string",
+            description: "Nome da rua / logradouro (ex: 'Rua Uruana')",
+          },
+          bairro: {
+            type: "string",
+            description: "Nome do bairro (ex: 'Vila Jayara')",
+          },
+          quadra: {
+            type: "string",
+            description: "Número da quadra (ex: '86' ou '91')",
+          },
+          ra: {
+            type: "string",
+            description: "Número do RA",
+          },
+        },
+      },
+    },
+    {
+      name: "saneago_docflow_consultar_processo",
+      description: "Consulta dados detalhados de um processo no DocFlow Saneago pelo número (ex: '14652/2026'). Busca no cache local e realiza consulta online se necessário.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          processo: {
+            type: "string",
+            description: "Número do processo no formato 'ID/ANO' (ex: '14652/2026' ou '14652')",
+          },
+          ano: {
+            type: "string",
+            description: "Ano do processo se não especificado na string (ex: '2026')",
+          },
+        },
+        required: ["processo"],
+      },
+    },
+    {
+      name: "saneago_docflow_pesquisar_local",
+      description: "Pesquisa processos extraídos do DocFlow salvos no banco local por termo de busca, interessado, assunto ou ano.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          termo: {
+            type: "string",
+            description: "Termo de busca geral contido em interessado, assunto, observações ou número",
+          },
+          interessado: {
+            type: "string",
+            description: "Nome do interessado / solicitante do processo",
+          },
+          assunto: {
+            type: "string",
+            description: "Assunto do processo",
+          },
+          ano: {
+            type: "string",
+            description: "Filtrar por ano específico (ex: '2026')",
+          },
+          limite: {
+            type: "number",
+            description: "Quantidade máxima de registros a retornar (padrão 15)",
           },
         },
       },
@@ -605,6 +710,44 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "saneago_descobrir_aplicacao": {
         const args = request.params.arguments || {};
         const resultado = descobrirAplicacao(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_eco709_consultar_logradouro": {
+        const args = request.params.arguments || {};
+        const resultado = await consultarLogradouro(args);
+        return resultado;
+      }
+
+      case "saneago_pesquisar_asfalto_local": {
+        const args = request.params.arguments || {};
+        const resultado = await pesquisarAsfaltoLocal(args);
+        return resultado;
+      }
+
+      case "saneago_docflow_consultar_processo": {
+        const args = request.params.arguments || {};
+        const resultado = await consultarProcessoDocflow(args);
+        return {
+          content: [
+            {
+              type: "text",
+              text: JSON.stringify(resultado, null, 2),
+            },
+          ],
+        };
+      }
+
+      case "saneago_docflow_pesquisar_local": {
+        const args = request.params.arguments || {};
+        const resultado = await pesquisarProcessosDocflowLocal(args);
         return {
           content: [
             {
