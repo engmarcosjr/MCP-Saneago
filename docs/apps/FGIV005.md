@@ -1,0 +1,16 @@
+# FGIV005 - Consulta de documentos digitalizados
+
+## Categoria
+Sistemas Corporativos / Saneago
+
+## Tipo
+Sem Acesso / Restrita ao Perfil Atual
+
+## O que faz
+Aplicação listada no catálogo corporativo, porém **não disponível** para o perfil de acesso atual no portal ZK (não exibida nos resultados de busca ou restrita a perfis específicos).
+
+## URL Real / Atalho Direto
+- `N/A` (Inacessível via menu do perfil atual)
+
+## Status de Acesso
+- **Acesso Confirmado**: Não (perfil sem permissão de acesso ou aplicação legada/desativada).
