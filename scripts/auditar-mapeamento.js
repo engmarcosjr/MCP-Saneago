@@ -5,6 +5,8 @@
  *   node scripts/auditar-mapeamento.js               # audita o estado atual de todas as apps
  *   node scripts/auditar-mapeamento.js ECO010        # audita so os codigos informados
  *   node scripts/auditar-mapeamento.js --lote lote-02 # audita so as apps tocadas nesse lote
+ *   node scripts/auditar-mapeamento.js --json        # divergencias em JSON (consumido
+ *                                                     pelo backlog para reenfileirar)
 
  * O JSONL e append-only: uma app reinspecionada ganha uma linha NOVA, e a auditoria
  * considera a ULTIMA linha de cada codigo como o estado corrente. As anteriores ficam
@@ -228,6 +230,11 @@ function main() {
 
   // ---- Checagem 8 (global): nenhuma app processada fora do JSONL.
   const noRoteiro = [...vistos.keys()].filter((c) => roteiro[c]).length;
+  if (args.includes('--json')) {
+    console.log(JSON.stringify({ auditados, divergencias }, null, 2));
+    process.exit(divergencias.length ? 1 : 0);
+  }
+
   const escopo = loteAlvo ? ` (lote ${loteAlvo})` : '';
   console.log(`Auditadas ${auditados} apps${escopo} · ${noRoteiro} com entrada em roteiro.json`);
 

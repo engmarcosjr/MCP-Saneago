@@ -32,8 +32,14 @@ exercitar é a Fase 2, e só depois da aprovação dele.
 
 ## A fila
 
-`node scripts/backlog-mapeamento.js --proximo 3` devolve o próximo lote, já ordenado por
-vertical de valor (ECO → LRS → PGT → resto). **Não escolha as apps você mesmo.**
+`node scripts/backlog-mapeamento.js --proximo 3` devolve o próximo lote, já ordenado:
+primeiro as apps com divergência aberta na auditoria (artefato quebrado já no repositório),
+depois por vertical de valor (ECO → LRS → PGT → resto). **Não escolha as apps você mesmo.**
+
+Se este comando foi invocado com argumentos (`$ARGUMENTS`), eles são os códigos do lote —
+use-os no lugar da fila, mantendo todo o resto do protocolo. Reinspeção de uma app já
+mapeada acrescenta uma linha **nova** no `AUDITORIA.jsonl` (o log é append-only, nunca
+edite as anteriores); se a classe mudar, declare o campo `corrige`.
 
 ## A rodada
 

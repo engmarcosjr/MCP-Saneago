@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-08T04:29:20.694Z",
+    "gerado_em": "2026-09-08T05:16:05.663Z",
     "total": 596,
-    "completos": 6,
-    "pendentes": 590,
+    "completos": 3,
+    "pendentes": 593,
     "por_classe_seguranca": {
       "indeterminado": 327,
       "candidata_leitura": 116,
@@ -15,7 +15,8 @@
       "sem_campos_detectados": 160,
       "ficha_nao_validada": 322,
       "sem_url": 11,
-      "sem_roteiro": 268
+      "sem_roteiro": 268,
+      "auditoria_pendente": 3
     }
   },
   "apps": [
@@ -2009,9 +2010,11 @@
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Misto (Consulta e Solicitação de Titularidade)",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "auditoria_pendente"
+      ],
+      "completo": false,
+      "prioridade": -1000010
     },
     {
       "codigo": "ECO021",
@@ -2561,9 +2564,11 @@
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto / com campos de inclusão/alteração/exclusão)",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "auditoria_pendente"
+      ],
+      "completo": false,
+      "prioridade": -1000010
     },
     {
       "codigo": "ECO163",
@@ -4807,9 +4812,11 @@
       ],
       "classe_seguranca": "candidata_leitura",
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "auditoria_pendente"
+      ],
+      "completo": false,
+      "prioridade": -1000010
     },
     {
       "codigo": "ECOV830",

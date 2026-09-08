@@ -14,6 +14,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const RAIZ = path.join(__dirname, '..');
 const DIR_FICHAS = path.join(RAIZ, 'docs', 'apps');
@@ -80,6 +81,30 @@ function classificarSeguranca(ficha) {
   return { classe: 'indeterminado', motivo: 'nenhum botão reconhecido' };
 }
 
+/**
+ * Codigos com divergencia aberta na auditoria.
+ *
+ * Sem isto a fila e a auditoria discordam: uma app com ficha e roteiro conta como
+ * "completa" no backlog e nunca mais volta, mesmo com a auditoria reprovando a
+ * evidencia dela. Reenfileirar e o que fecha o ciclo.
+ */
+function codigosComDivergencia() {
+  try {
+    execFileSync(process.execPath, [path.join(__dirname, 'auditar-mapeamento.js'), '--json'], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    });
+    return new Set();
+  } catch (e) {
+    try {
+      const saida = JSON.parse(String(e.stdout || '{}'));
+      return new Set((saida.divergencias || []).map((d) => d.codigo));
+    } catch (_) {
+      return new Set(); // sem auditoria ainda: nao inventa lacuna
+    }
+  }
+}
+
 function lacunas(app, ficha, temRoteiro) {
   const out = [];
   if (!ficha) out.push('sem_ficha');
@@ -96,6 +121,7 @@ function lacunas(app, ficha, temRoteiro) {
 function main() {
   const catalogo = require(path.join(RAIZ, 'config', 'catalogo_aplicacoes.json'));
   const roteiro = require(path.join(RAIZ, 'config', 'roteiro.json'));
+  const comDivergencia = codigosComDivergencia();
 
   const apps = catalogo.map((app) => {
     const ficha = lerFicha(app.codigo);
@@ -103,6 +129,7 @@ function main() {
     const vertical = (app.codigo.match(/^[A-Z]+?(?=V?\d)/) || app.codigo.match(/^[A-Z]+/) || ['?'])[0];
     const seg = classificarSeguranca(ficha);
     const gaps = lacunas(app, ficha, temRoteiro);
+    if (comDivergencia.has(app.codigo)) gaps.push('auditoria_pendente');
 
     const idxVertical = ORDEM_VERTICAIS.indexOf(vertical);
     return {
@@ -118,7 +145,12 @@ function main() {
       motivo_classe: seg.motivo,
       lacunas: gaps,
       completo: gaps.length === 0,
-      prioridade: (idxVertical === -1 ? ORDEM_VERTICAIS.length : idxVertical) * 1000 + gaps.length * -10,
+      // Divergencia de auditoria vem antes de tudo: e artefato quebrado ja no
+      // repositorio, nao lacuna de trabalho ainda nao feito.
+      prioridade:
+        (gaps.includes('auditoria_pendente') ? -1e6 : 0) +
+        (idxVertical === -1 ? ORDEM_VERTICAIS.length : idxVertical) * 1000 +
+        gaps.length * -10,
     };
   });
 
