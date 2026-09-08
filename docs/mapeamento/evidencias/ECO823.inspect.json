@@ -1,0 +1,41 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO823 - Política de Titularidade",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "eQES50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eQESc-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eQES50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eQESc-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Nome",
+    "Descrição"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO823PoliticaTitularidade.zul",
+  "codigo": "ECO823"
+}

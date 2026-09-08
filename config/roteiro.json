@@ -2334,27 +2334,25 @@
   "ECO808": {
     "codigo": "ECO808",
     "nome": "Áreas de Inf. dos Reservatórios",
-    "url_zul": "https://prod.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a áreas de inf. dos reservatórios.",
+    "o_que_faz": "Aplicação informativa legada relacionada a escritórios e áreas de influência de reservatórios, aberta sem campos interativos de formulário.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Áreas de Inf. dos Reservatórios",
+        "intencao": "Acessar Áreas de Influência dos Reservatórios",
         "passos": [
-          "Abrir a aplicação ECO808",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação ECO808"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de áreas de inf. dos reservatórios",
-      "acessar a app ECO808",
-      "consultar áreas de inf. dos reservatórios"
+      "abrir ECO808",
+      "consultar áreas de influência dos reservatórios"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJ028": {
     "codigo": "JAJ028",
@@ -5618,27 +5616,92 @@
   "ECO725": {
     "codigo": "ECO725",
     "nome": "Estatística Serviços Exec./Cidade",
-    "url_zul": "/prt/eco/ECO725estServExec.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO725estServExec.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a estatística serviços exec./cidade.",
+    "o_que_faz": "Permite consultar estatísticas de serviços executados por cidade, distrito, unidade executora e período de datas.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "codigoCidade",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 3
+      },
+      {
+        "rotulo": "nomeCidade",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "codigoDistrito",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 4
+      },
+      {
+        "rotulo": "nomeDistrito",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "siglaDistrito",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "codigoUnidadeExecutora",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 5
+      },
+      {
+        "rotulo": "nomeUnidadeExecutora",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "siglaUnidadeExecutora",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "dataInicial",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 10
+      },
+      {
+        "rotulo": "dataFinal",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 10
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Estatística Serviços Exec./Cidade",
+        "intencao": "Consultar Estatística de Serviços Executados por Cidade",
         "passos": [
           "Abrir a aplicação ECO725",
-          "Preencher campos na tela inicial"
+          "Informar os filtros de cidade, distrito, unidade executora ou período"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de estatística serviços exec./cidade",
-      "acessar a app ECO725",
-      "consultar estatística serviços exec./cidade"
+      "consultar estatística de serviços executados no ECO725",
+      "estatística de serviços por cidade"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO731": {
     "codigo": "ECO731",
@@ -5683,9 +5746,9 @@
   "ECO811": {
     "codigo": "ECO811",
     "nome": "Doc. do Macroprocesso de Comercialização",
-    "url_zul": "/prt/eco/ECO811IT.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO811IT.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a doc. do macroprocesso de comercialização.",
+    "o_que_faz": "Permite consultar instruções de trabalho e documentações técnicas do macroprocesso de comercialização da Saneago.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [],
@@ -5693,17 +5756,15 @@
       {
         "intencao": "Acessar Doc. do Macroprocesso de Comercialização",
         "passos": [
-          "Abrir a aplicação ECO811",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação ECO811"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de doc. do macroprocesso de comercialização",
-      "acessar a app ECO811",
-      "consultar doc. do macroprocesso de comercialização"
+      "consultar documentos do macroprocesso de comercialização no ECO811",
+      "abrir instruções de trabalho de comercialização"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO825": {
     "codigo": "ECO825",
@@ -13310,6 +13371,54 @@
     "exemplos_intencao": [
       "consultar usuario eventual no ECO162",
       "pesquisar cadastro de usuario eventual"
+    ],
+    "status_doc": "inventariado"
+  },
+  "ECO804": {
+    "codigo": "ECO804",
+    "nome": "Legislação",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO804Legislacoes.zul",
+    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "o_que_faz": "Permite consultar informações e normas da Legislação vigentes na Saneago.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Consultar Legislação",
+        "passos": [
+          "Abrir a aplicação ECO804",
+          "Visualizar normas, leis e resoluções na listagem"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar legislações no ECO804",
+      "pesquisar leis e resoluções Saneago"
+    ],
+    "status_doc": "inventariado"
+  },
+  "ECO823": {
+    "codigo": "ECO823",
+    "nome": "Política de Titularidade",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO823PoliticaTitularidade.zul",
+    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "o_que_faz": "Permite consultar informações, normas e diretrizes referentes à Política de Titularidade no portal corporativo.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Consultar Política de Titularidade",
+        "passos": [
+          "Abrir a aplicação ECO823",
+          "Visualizar diretrizes e normas de titularidade"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar política de titularidade no ECO823",
+      "pesquisar diretrizes de titularidade da Saneago"
     ],
     "status_doc": "inventariado"
   }

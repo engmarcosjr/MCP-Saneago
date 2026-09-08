@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-08T13:06:31.337Z",
+    "gerado_em": "2026-09-08T13:47:36.667Z",
     "total": 596,
-    "completos": 9,
-    "pendentes": 587,
+    "completos": 12,
+    "pendentes": 584,
     "por_classe_seguranca": {
-      "indeterminado": 327,
+      "indeterminado": 328,
       "candidata_leitura": 116,
       "possui_escrita": 142,
-      "sem_acesso": 11
+      "sem_acesso": 10
     },
     "por_lacuna": {
-      "ficha_stub": 93,
+      "ficha_stub": 91,
       "sem_campos_detectados": 157,
-      "ficha_nao_validada": 319,
+      "ficha_nao_validada": 316,
       "sem_url": 11,
-      "sem_roteiro": 268
+      "sem_roteiro": 266
     }
   },
   "apps": [
@@ -4489,18 +4489,15 @@
       "nome": "Estatística Serviços Exec./Cidade",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO725estServExec.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 862,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1536,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO728",
@@ -4568,71 +4565,67 @@
       "vertical": "ECO",
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO804Legislacoes.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 711,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 959,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO808",
       "nome": "Áreas de Inf. dos Reservatórios",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO808AreaInfRes.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 854,
+      "tipo_declarado": "Informativo / Sem campos de entrada (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 866,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "prioridade": -20
+      "prioridade": -10
     },
     {
       "codigo": "ECO811",
       "nome": "Doc. do Macroprocesso de Comercialização",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO811IT.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 890,
+      "tipo_declarado": "Informativo / Sem campos de entrada (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 927,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "prioridade": -20
+      "prioridade": -10
     },
     {
       "codigo": "ECO815",
       "nome": "Coletânea de Diretrizes Comerciais",
       "vertical": "ECO",
       "url_zul": "/prt/eco/relatorios/coletanea_diretrizes.pdf",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 541,
+      "tipo_declarado": "Bloqueada / Indisponível no Perfil Atual",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 771,
       "botoes": [],
-      "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "classe_seguranca": "indeterminado",
+      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
         "ficha_stub",
+        "sem_campos_detectados",
         "sem_roteiro"
       ],
       "completo": false,
-      "prioridade": -20
+      "prioridade": -30
     },
     {
       "codigo": "ECO823",
@@ -4640,17 +4633,14 @@
       "vertical": "ECO",
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO823PoliticaTitularidade.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 759,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 931,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO825",

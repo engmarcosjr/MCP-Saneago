@@ -1,0 +1,129 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Estatística de serviços executados por cidade:.",
+  "inputs": [
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "codigoCidade",
+      "label": "codigoCidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "nomeCidade",
+      "label": "nomeCidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoDistrito",
+      "name": "codigoDistrito",
+      "tipo": "text",
+      "rotulo": "codigoDistrito",
+      "label": "codigoDistrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeDistrito",
+      "name": "nomeDistrito",
+      "tipo": "text",
+      "rotulo": "nomeDistrito",
+      "label": "nomeDistrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "siglaDistrito",
+      "name": "siglaDistrito",
+      "tipo": "text",
+      "rotulo": "siglaDistrito",
+      "label": "siglaDistrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoUnidadeExecutora",
+      "name": "codigoUnidadeExecutora",
+      "tipo": "text",
+      "rotulo": "codigoUnidadeExecutora",
+      "label": "codigoUnidadeExecutora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeUnidadeExecutora",
+      "name": "nomeUnidadeExecutora",
+      "tipo": "text",
+      "rotulo": "nomeUnidadeExecutora",
+      "label": "nomeUnidadeExecutora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "siglaUnidadeExecutora",
+      "name": "siglaUnidadeExecutora",
+      "tipo": "text",
+      "rotulo": "siglaUnidadeExecutora",
+      "label": "siglaUnidadeExecutora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "dataInicial",
+      "label": "dataInicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "dataFinal",
+      "label": "dataFinal",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmECO725",
+      "name": "frmECO725",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO725estServExec.jsp"
+}

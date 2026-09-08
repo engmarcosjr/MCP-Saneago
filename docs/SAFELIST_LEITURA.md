@@ -14,6 +14,12 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - **ECO343** - Beneficiário Prêmio/Irregularidade | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Tela de consulta de beneficiários de prêmio por informação de irregularidade sem botões de escrita.
 - **ECO538** - Anormalidades no Corte/Ocorrência | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Consulta e relatório de anormalidades no corte e ocorrências por localização sem botões de escrita.
 - **ECO644** - Arrecadação Contábil/Cidade | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Consulta de arrecadação contábil por cidade e mês/ano de referência sem botões de escrita.
+- **ECO725** - Estatística Serviços Exec./Cidade | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Tela de consulta de estatística de serviços executados sem botões de escrita.
+- **ECO804** - Legislação | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Consulta e visualização de legislações normativas sem botões de escrita.
+- **ECO808** - Áreas de Inf. dos Reservatórios | Botões: nenhum | Classe proposta: `sem_campos_confirmado` | Motivo: Tela informativa confirmada sem campos interativos e sem botões de ação.
+- **ECO811** - Doc. do Macroprocesso de Comercialização | Botões: nenhum | Classe proposta: `sem_campos_confirmado` | Motivo: Tela informativa confirmada sem campos interativos e sem botões de ação.
+- **ECO815** - Coletânea de Diretrizes Comerciais | Botões: nenhum | Classe proposta: `bloqueada` | Motivo: Aplicação não localizada na busca de tela ou inacessível no portal para o perfil atual.
+- **ECO823** - Política de Titularidade | Botões: nenhum | Classe proposta: `somente_leitura` | Motivo: Consulta e visualização de normas e política de titularidade sem botões de escrita.
 
 ## Recusadas
 
