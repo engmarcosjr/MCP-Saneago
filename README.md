@@ -90,6 +90,51 @@ Cada relatório em Markdown consolida:
 
 ## 💻 Execução do Servidor MCP
 
+### Configuração de Credenciais
+
+As credenciais corporativas podem ser fornecidas via variáveis de ambiente ou arquivo local:
+
+1. **Variáveis de Ambiente**:
+   ```bash
+   export SANEAGO_USER="MATRICULA"
+   export SANEAGO_PASS="SUA_SENHA"
+   ```
+2. **Arquivo `config/credentials.json`** (ignorado pelo git):
+   ```json
+   {
+     "usuario": "MATRICULA",
+     "senha": "SUA_SENHA"
+   }
+   ```
+*Nota: a chave de usuário é `"usuario"` e a chave de senha é `"senha"`.*
+
+### Gates de Escrita e Segurança em Duas Etapas
+
+Toda ação de gravação (ex: abertura de RA no ECO701 ou lançamento no LRS105) é estritamente bloqueada por padrão.
+
+#### 1. Flags de Habilitação das Ferramentas
+Para que as ferramentas de escrita sejam expostas no MCP (`tools/list`):
+
+| Flag de ambiente | O que libera |
+|---|---|
+| `SANEAGO_ALLOW_WRITE=1` | Libera todas as escritas (modo legado) |
+| `SANEAGO_ALLOW_RA_WRITE=1` | Apenas `saneago_abrir_ra` (ECO701) |
+| `SANEAGO_ALLOW_GENERIC_WRITE=1` | `saneago_preencher_campo` e `saneago_clicar_botao` |
+| `SANEAGO_ALLOW_LRS105_WRITE=1` | Apenas `saneago_lrs105_lancar_servico` |
+
+#### 2. Protocolo de Confirmação (Two-Phase Write)
+Mesmo com a flag habilitada, as operações exigem o fluxo de duas etapas:
+1. **Pré-visualização (`confirmar: false`)**: valida os parâmetros e emite um `confirmationToken` de uso único com TTL de 15 minutos (configurável via `SANEAGO_CONFIRMATION_TTL_MS`).
+2. **Confirmação (`confirmar: true` + `confirmationToken: "<token>"`)**: consome o token e executa a operação real no sistema. Qualquer alteração nos argumentos invalida a confirmação.
+
+#### Variáveis de Controle do Gate:
+- `DAN01_SESSION_ID`: Identificador único da sessão do usuário (obrigatório para geração e consumo de tokens).
+- `SANEAGO_CONFIRMATION_GRANTED=1`: Flag server-side que autoriza o consumo real da confirmação (segurança contra submissão acidental).
+- `SANEAGO_CONFIRMATION_TTL_MS`: Tempo limite de validade do preview em milissegundos (padrão: 900.000 ms / 15 min).
+- `SANEAGO_CONFIRMATION_DIR`: Diretório para persistência segura dos arquivos de estado segregados por ferramenta (`<session>.<tool>.json`).
+
+### Executando
+
 ```bash
 # Instalação das dependências
 npm install

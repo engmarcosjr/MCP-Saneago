@@ -26,7 +26,6 @@ function readCredentials() {
 
   const candidates = [
     credentialsPath,
-    "C:\\repos\\PORTAL_LEGADO\\config\\credentials.json",
   ];
 
   const found = candidates.find((c) => fs.existsSync(c));

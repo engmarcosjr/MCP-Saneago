@@ -20,43 +20,98 @@ function stateDir(env = process.env) {
     : path.join(__dirname, "..", ".auth", "confirmations");
 }
 
-function statePath(env = process.env) {
-  return path.join(stateDir(env), `${sessionId(env)}.json`);
+function sanitizeTool(tool) {
+  const t = String(tool || "").trim();
+  if (!t) {
+    throw new Error("Nome da ferramenta (tool) ausente para o gate de confirmacao.");
+  }
+  return t.replace(/[^a-zA-Z0-9._-]/g, "_");
 }
 
-function canonicalArgs(args = {}) {
+function statePath(tool, env = process.env) {
+  const safeTool = sanitizeTool(tool);
+  return path.join(stateDir(env), `${sessionId(env)}.${safeTool}.json`);
+}
+
+function canonicalArgs(toolOrArgs, maybeArgs) {
+  let tool;
+  let args;
+  if (typeof toolOrArgs === "string") {
+    tool = toolOrArgs;
+    args = maybeArgs || {};
+  } else {
+    tool = "saneago_abrir_ra";
+    args = toolOrArgs || {};
+  }
+
   const normalized = {
-    endereco: String(args.endereco || "").trim().replace(/\s+/g, " "),
-    servico: String(args.servico || "").trim().replace(/\s+/g, " "),
-    formaAtendimento: String(args.formaAtendimento || "3 - INTERNO").trim().replace(/\s+/g, " "),
-    nomeCliente: String(args.nomeCliente || "").trim().replace(/\s+/g, " "),
-    nomeContato: String(args.nomeContato || "SANEAGO").trim().replace(/\s+/g, " "),
-    telefoneContato: String(args.telefoneContato || "6299999999").replace(/\D/g, ""),
-    numeroConta: String(args.numeroConta || "").replace(/\D/g, ""),
+    tool: String(tool || "").trim(),
   };
-  return JSON.stringify(normalized);
+
+  if (tool === "saneago_abrir_ra") {
+    normalized.endereco = String(args.endereco || "").trim().replace(/\s+/g, " ");
+    normalized.servico = String(args.servico || "").trim().replace(/\s+/g, " ");
+    normalized.formaAtendimento = String(args.formaAtendimento || "3 - INTERNO").trim().replace(/\s+/g, " ");
+    normalized.nomeCliente = String(args.nomeCliente || "").trim().replace(/\s+/g, " ");
+    normalized.nomeContato = String(args.nomeContato || "SANEAGO").trim().replace(/\s+/g, " ");
+    normalized.telefoneContato = String(args.telefoneContato || "6299999999").replace(/\D/g, ""),
+    normalized.numeroConta = String(args.numeroConta || "").replace(/\D/g, "");
+  }
+
+  for (const key of Object.keys(args)) {
+    if (key === "confirmar" || key === "confirmationToken") continue;
+    if (key in normalized) continue;
+    normalized[key] = String(args[key] ?? "").trim().replace(/\s+/g, " ");
+  }
+
+  const sortedKeys = Object.keys(normalized).sort();
+  const sortedObj = {};
+  for (const k of sortedKeys) {
+    sortedObj[k] = normalized[k];
+  }
+  return JSON.stringify(sortedObj);
 }
 
-function createPending(args, env = process.env, now = Date.now()) {
+function parseParams(toolOrArgs, maybeArgs, maybeEnv, maybeNow) {
+  if (typeof toolOrArgs === "string") {
+    return {
+      tool: toolOrArgs,
+      args: maybeArgs || {},
+      env: maybeEnv || process.env,
+      now: maybeNow !== undefined ? maybeNow : Date.now(),
+    };
+  }
+  return {
+    tool: "saneago_abrir_ra",
+    args: toolOrArgs || {},
+    env: maybeArgs || process.env,
+    now: maybeEnv !== undefined ? maybeEnv : Date.now(),
+  };
+}
+
+function createPending(toolOrArgs, maybeArgs, maybeEnv, maybeNow) {
+  const { tool, args, env, now } = parseParams(toolOrArgs, maybeArgs, maybeEnv, maybeNow);
   const dir = stateDir(env);
   fs.mkdirSync(dir, { recursive: true, mode: 0o700 });
 
   const pending = {
+    tool: String(tool).trim(),
     token: crypto.randomBytes(24).toString("base64url"),
-    args: canonicalArgs(args),
+    args: canonicalArgs(tool, args),
     createdAt: now,
     expiresAt: now + Number(env.SANEAGO_CONFIRMATION_TTL_MS || DEFAULT_TTL_MS),
   };
-  fs.writeFileSync(statePath(env), JSON.stringify(pending), { mode: 0o600 });
+  fs.writeFileSync(statePath(tool, env), JSON.stringify(pending), { mode: 0o600 });
   return pending.token;
 }
 
-function consumeConfirmed(args, env = process.env, now = Date.now()) {
+function consumeConfirmed(toolOrArgs, maybeArgs, maybeEnv, maybeNow) {
+  const { tool, args, env, now } = parseParams(toolOrArgs, maybeArgs, maybeEnv, maybeNow);
   if (String(env.SANEAGO_CONFIRMATION_GRANTED || "") !== "1") {
     throw new Error("A abertura real exige confirmacao explicita do usuario em uma nova mensagem.");
   }
 
-  const file = statePath(env);
+  const file = statePath(tool, env);
   let pending;
   try {
     pending = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -76,7 +131,7 @@ function consumeConfirmed(args, env = process.env, now = Date.now()) {
     supplied.length > 0 &&
     crypto.timingSafeEqual(Buffer.from(supplied), Buffer.from(expected));
 
-  if (!tokenMatches || canonicalArgs(args) !== pending.args) {
+  if (!tokenMatches || canonicalArgs(tool, args) !== pending.args) {
     throw new Error("A confirmacao nao corresponde exatamente a pre-visualizacao pendente.");
   }
 

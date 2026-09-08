@@ -14,6 +14,15 @@ Nenhuma tool de escrita executa sem que:
 | `SANEAGO_ALLOW_GENERIC_WRITE=1` | `saneago_preencher_campo` e `saneago_clicar_botao` |
 | `SANEAGO_ALLOW_LRS105_WRITE=1` | Apenas `saneago_lrs105_lancar_servico` |
 
+### Variáveis do Gate de Confirmação em Duas Etapas
+
+| Variável | Descrição | Padrão |
+|---|---|---|
+| `DAN01_SESSION_ID` | Identificador único da sessão (1 a 128 chars alfanuméricos, `.`, `_`, `-`) | Obrigatório para escrita |
+| `SANEAGO_CONFIRMATION_GRANTED=1` | Flag server-side que autoriza o consumo de tokens na confirmação | `0` (bloqueado) |
+| `SANEAGO_CONFIRMATION_TTL_MS` | Tempo de expiração do preview pendente em milissegundos | `900000` (15 min) |
+| `SANEAGO_CONFIRMATION_DIR` | Diretório de armazenamento dos tokens (`<session>.<tool>.json`) | `.auth/confirmations/` |
+
 Sem a flag, a tool **nem aparece** no `tools/list` retornado ao cliente MCP.
 
 O padrão preview/confirmar (`confirmation-gate`) usa `confirmationToken` de uso único —
@@ -69,6 +78,10 @@ docs/                  — contratos HTTP, fichas de aplicação, decisões arqu
   apps/                — markdown por app (ECO701.md, SUPERVISORIO.md, ZIMBRA.md…)
   historico/           — histórico cronológico arquivado (PROGRESSO.md)
 
+scripts/               — scripts e utilitários de suporte fora de produção
+  catalogo/            — geração de catálogo, roteiro, índice e classificação de capacidades
+  legacy/              — testes de fumaça e exploração legados (test_stage1..4, test_e2e)
+
 scratch/exploracao/    — scripts de rascunho por vertical (docflow/, zimbra/, supervisorio/, eco/)
   INVENTARIO.md        — mapa completo do que foi movido para cá
 ```
@@ -93,7 +106,7 @@ node src/index.js
 
 **Pré-requisito:** credenciais em `config/credentials.json` (gitignored):
 ```json
-{ "username": "MATRICULA", "password": "SENHA" }
+{ "usuario": "MATRICULA", "senha": "SENHA" }
 ```
 Alternativa: variáveis `SANEAGO_USER` / `SANEAGO_PASS`.
 
@@ -165,7 +178,7 @@ Alternativa: variáveis `SANEAGO_USER` / `SANEAGO_PASS`.
 Ordem de resolução (idêntica em todos os módulos):
 
 1. Variáveis de ambiente: `SANEAGO_USER` / `SANEAGO_PASS`
-2. Arquivo `config/credentials.json` (gitignored): `{ "username": "...", "password": "..." }`
+2. Arquivo `config/credentials.json` (gitignored): `{ "usuario": "...", "senha": "..." }`
 3. Erro claro sem stack trace — nunca credencial hardcoded como fallback
 
 **NUNCA** escreva credenciais reais neste ou em qualquer outro arquivo.

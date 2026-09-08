@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert');
-const { classificarCapacidade, extrairFiltros, gerarPerguntasQueResponde } = require('../src/classificar_capacidades');
-const { parseArgs } = require('../src/harvest_capacidades');
+const { classificarCapacidade, extrairFiltros, gerarPerguntasQueResponde } = require('../scripts/catalogo/classificar_capacidades');
+const { parseArgs } = require('../scripts/catalogo/harvest_capacidades');
 
 test('classificarCapacidade - extrai filtros de ECO303 (Conta/Hidrometro)', () => {
   const registroECO303 = {

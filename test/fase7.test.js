@@ -3,7 +3,7 @@ const assert = require('node:assert');
 const path = require('path');
 const fs = require('fs');
 
-const { derivarVertical, gerarIndiceCapacidades, MAPA_PREFIXOS } = require('../src/gerar_indice_capacidades');
+const { derivarVertical, gerarIndiceCapacidades, MAPA_PREFIXOS } = require('../scripts/catalogo/gerar_indice_capacidades');
 const { descobrirAplicacao } = require('../src/tools/descobrir');
 
 test('derivarVertical - mapeia prefixos conhecidos corretamente', () => {

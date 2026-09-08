@@ -758,14 +758,14 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
       case "saneago_abrir_ra": {
         if (!ALLOW_RA_WRITE) throw new Error("Abertura de RA esta desabilitada.");
-        
+
         const args = request.params.arguments || {};
         const { endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato, numeroConta } = args;
         try {
-          if (confirmar) consumeConfirmed(args);
+          if (confirmar) consumeConfirmed("saneago_abrir_ra", args);
           const resultado = await abrirRA(endereco, servico, confirmar, formaAtendimento, nomeCliente, nomeContato, telefoneContato, numeroConta);
           if (!confirmar) {
-            const confirmationToken = createPending(args);
+            const confirmationToken = createPending("saneago_abrir_ra", args);
             resultado.confirmationToken = confirmationToken;
             resultado.message += `\n\nToken de confirmacao: ${confirmationToken}`;
           }
@@ -788,10 +788,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const args = request.params.arguments || {};
         const { ra, codigoServicoResposta, confirmar, observacao } = args;
         try {
-          if (confirmar) consumeConfirmed(args);
+          if (confirmar) consumeConfirmed("saneago_lrs105_lancar_servico", args);
           const resultado = await lancarServicoExecutado(ra, codigoServicoResposta, confirmar, observacao);
           if (!confirmar) {
-            const confirmationToken = createPending(args);
+            const confirmationToken = createPending("saneago_lrs105_lancar_servico", args);
             resultado.confirmationToken = confirmationToken;
             resultado.message += `\n\nToken de confirmação: ${confirmationToken}`;
           }
@@ -827,7 +827,16 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             await activeFrame.locator(`#${raInputId}`).press('Enter');
           }
           
-          await activeFrame.page().waitForTimeout(3000); // Aguarda consulta carregar
+          // Aguarda o ZK processar e atualizar a tela (polling com timeout max 10s)
+          const inicioConsulta = Date.now();
+          const textoInicial = await activeFrame.locator('body').innerText().catch(() => "");
+          while (Date.now() - inicioConsulta < 10000) {
+            await activeFrame.page().waitForTimeout(300);
+            const textoAtual = await activeFrame.locator('body').innerText().catch(() => "");
+            if (textoAtual !== textoInicial && textoAtual.length > 0) {
+              break;
+            }
+          }
           logAudit("saneago_eco701_consultar_ra", appUrl, `RA ${ra}`, "SUCESSO");
           
           // Retorna os dados da tela
@@ -1106,11 +1115,23 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-// Tratamento para encerrar sessao ao fechar
-process.on("SIGINT", async () => {
-  await closeSession();
+// Tratamento gracioso e idempotente para encerrar sessao ao fechar
+let encerramentoEmProgresso = false;
+async function encerrar(motivo) {
+  if (encerramentoEmProgresso) return;
+  encerramentoEmProgresso = true;
+  console.error(`[MCP-Saneago] Encerrando servidor (${motivo})...`);
+  try {
+    await closeSession();
+  } catch (err) {
+    console.error(`[MCP-Saneago] Erro ao fechar sessao Playwright: ${err.message}`);
+  }
   process.exit(0);
-});
+}
+
+process.on("SIGINT", () => encerrar("SIGINT"));
+process.on("SIGTERM", () => encerrar("SIGTERM"));
+process.stdin.on("end", () => encerrar("stdin end"));
 
 async function run() {
   const transport = new StdioServerTransport();
