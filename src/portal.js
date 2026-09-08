@@ -151,15 +151,40 @@ async function abrirApp(nomeExibicao) {
 
     if (appFrame) {
       console.error(`[Portal] Frame encontrado! URL: ${appFrame.url()}`);
-      
-      // Aguarda a pagina do frame terminar de carregar
+
+      // Aguarda a pagina do frame terminar de carregar e o ZK renderizar os componentes
       await appFrame.waitForLoadState("domcontentloaded").catch(() => {});
+      await appFrame.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
+      await esperarZkRenderizar(appFrame, page);
       return appFrame;
     }
     await page.waitForTimeout(500);
   }
 
   throw new Error(`Nao foi possivel encontrar o frame da aplicacao apos buscar por "${nomeExibicao}".`);
+}
+
+/**
+ * Espera o ZK montar os componentes do frame.
+ *
+ * O `domcontentloaded` do frame nao significa tela pronta: o ZK monta os widgets
+ * depois, por AJAX. Inspecionar antes disso devolve DOM vazio — e evidencia vazia e
+ * pior que evidencia ausente, porque passa por tela sem campos.
+ *
+ * Convencao 6 do CLAUDE.md: polling com timeout, nunca espera fixa.
+ */
+async function esperarZkRenderizar(frame, page, tentativas = 20, intervalo = 500) {
+  const SELETOR =
+    ".z-textbox, .z-button, .z-combobox, .z-datebox, .z-listbox, .z-grid, .z-window, input, button";
+  for (let i = 0; i < tentativas; i++) {
+    const pronto = await frame
+      .evaluate((sel) => document.querySelectorAll(sel).length > 0, SELETOR)
+      .catch(() => false);
+    if (pronto) return true;
+    await page.waitForTimeout(intervalo);
+  }
+  console.error("[Portal] Aviso: nenhum componente ZK renderizou no tempo limite.");
+  return false;
 }
 
 module.exports = { abrirApp };

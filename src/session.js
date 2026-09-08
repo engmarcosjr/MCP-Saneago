@@ -76,17 +76,15 @@ async function doLoginIfNeeded(page, credentials) {
   // Espera ate sair da tela de login
   await page.waitForLoadState("networkidle", { timeout: 45000 }).catch(() => {});
   
-  // Aguarda ate o campo de login desaparecer, indicando login realizado
-  console.error("[Session] Aguardando a tela de login sumir...");
-  await passInput.waitFor({ state: "hidden", timeout: 30000 }).catch((e) => {
-    console.error("[Session] Aviso: campo de senha nao sumiu no tempo limite.", e.message);
-  });
-  
   // Tratamento para aviso de senha expirando/expirada
   try {
     const pageText = await page.evaluate(() => document.body?.innerText || "");
     if (/expira/i.test(pageText) && /senha/i.test(pageText)) {
-      const btnNao = page.getByRole("button", { name: /Não|Ignorar|Lembrar|Continuar/i }).first();
+      // ZK nem sempre expoe role=button; casa pelo texto, mantendo as variantes do modal.
+      const btnNao = page
+        .locator("button, .z-button, .z-toolbarbutton")
+        .filter({ hasText: /^\s*(Não|Nao|Ignorar|Lembrar|Continuar)\s*$/i })
+        .first();
       if (await btnNao.count()) {
         await btnNao.click();
         await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
@@ -95,6 +93,12 @@ async function doLoginIfNeeded(page, credentials) {
   } catch (e) {
     console.error("[Session] Erro ao tratar expiracao de senha (ignorado):", e.message);
   }
+
+  // Aguarda ate o campo de login desaparecer, indicando login realizado
+  console.error("[Session] Aguardando a tela de login sumir...");
+  await passInput.waitFor({ state: "hidden", timeout: 30000 }).catch((e) => {
+    console.error("[Session] Aviso: campo de senha nao sumiu no tempo limite.", e.message);
+  });
 
   console.error("[Session] Login concluido com sucesso.");
   return true;
