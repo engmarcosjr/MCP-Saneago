@@ -3,7 +3,7 @@
   "titulo_tela": "Nota Fiscal Rejeitada",
   "inputs": [
     {
-      "id": "yQOCj",
+      "id": "j14Qj",
       "name": null,
       "tipo": "text",
       "rotulo": "Número da Nota Fiscal",
@@ -14,7 +14,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOCq",
+      "id": "j14Qq",
       "name": null,
       "tipo": "text",
       "rotulo": "Número do Documento",
@@ -25,7 +25,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOCy-real",
+      "id": "j14Qy-real",
       "name": null,
       "tipo": "combobox",
       "rotulo": "Empresa",
@@ -36,7 +36,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOC40-real",
+      "id": "j14Q40-real",
       "name": null,
       "tipo": "combobox",
       "rotulo": "Situação da NF",
@@ -47,7 +47,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOCb0",
+      "id": "j14Qb0",
       "name": null,
       "tipo": "text",
       "rotulo": "Motivo da Rejeição",
@@ -58,7 +58,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOCj0-real",
+      "id": "j14Qj0-real",
       "name": null,
       "tipo": "date",
       "rotulo": "Período",
@@ -69,7 +69,7 @@
       "maxlength": null
     },
     {
-      "id": "yQOCl0-real",
+      "id": "j14Ql0-real",
       "name": null,
       "tipo": "date",
       "rotulo": "a",
@@ -82,43 +82,43 @@
   ],
   "botoes": [
     {
-      "id": "yQOCy-btn",
+      "id": "j14Qy-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOC40-btn",
+      "id": "j14Q40-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCj0-btn",
+      "id": "j14Qj0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCl0-btn",
+      "id": "j14Ql0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCp0",
+      "id": "j14Qp0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "yQOCq0",
+      "id": "j14Qq0",
       "name": null,
       "label": "Imprimir",
       "tipo": "button"
     },
     {
-      "id": "yQOCr0",
+      "id": "j14Qr0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -126,43 +126,43 @@
   ],
   "buttons": [
     {
-      "id": "yQOCy-btn",
+      "id": "j14Qy-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOC40-btn",
+      "id": "j14Q40-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCj0-btn",
+      "id": "j14Qj0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCl0-btn",
+      "id": "j14Ql0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "yQOCp0",
+      "id": "j14Qp0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "yQOCq0",
+      "id": "j14Qq0",
       "name": null,
       "label": "Imprimir",
       "tipo": "button"
     },
     {
-      "id": "yQOCr0",
+      "id": "j14Qr0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -180,5 +180,6 @@
     "ECO415"
   ],
   "forms": [],
-  "lists": []
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO413ConsultarNotaFiscalRejeitada.zul"
 }

@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-08T05:16:05.663Z",
+    "gerado_em": "2026-09-08T05:24:08.384Z",
     "total": 596,
-    "completos": 3,
-    "pendentes": 593,
+    "completos": 6,
+    "pendentes": 590,
     "por_classe_seguranca": {
       "indeterminado": 327,
       "candidata_leitura": 116,
@@ -15,8 +15,7 @@
       "sem_campos_detectados": 160,
       "ficha_nao_validada": 322,
       "sem_url": 11,
-      "sem_roteiro": 268,
-      "auditoria_pendente": 3
+      "sem_roteiro": 268
     }
   },
   "apps": [
@@ -2010,11 +2009,9 @@
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Misto (Consulta e Solicitação de Titularidade)",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "prioridade": -1000010
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO021",
@@ -2557,18 +2554,16 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO162CadastramentoDeUsuariosEventuais.zul",
       "tipo_declarado": "Leitura e Consulta (misto / com campos de inclusão/alteração/exclusão)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1270,
+      "bytes_ficha": 1121,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto / com campos de inclusão/alteração/exclusão)",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "prioridade": -1000010
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO163",
@@ -4812,11 +4807,9 @@
       ],
       "classe_seguranca": "candidata_leitura",
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "prioridade": -1000010
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECOV830",

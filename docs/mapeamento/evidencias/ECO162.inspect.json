@@ -3,8 +3,8 @@
   "titulo_tela": "new page title",
   "inputs": [
     {
-      "id": "yDZVg-real",
-      "name": "_pg0qr7lp",
+      "id": "eWfGg-real",
+      "name": "_pgig44i61",
       "tipo": "radio",
       "rotulo": "Conta",
       "label": "Conta",
@@ -14,8 +14,8 @@
       "maxlength": null
     },
     {
-      "id": "yDZVh-real",
-      "name": "_pg0qr7lp",
+      "id": "eWfGh-real",
+      "name": "_pgig44i61",
       "tipo": "radio",
       "rotulo": "CPF/CNPJ",
       "label": "CPF/CNPJ",
@@ -27,13 +27,13 @@
   ],
   "botoes": [
     {
-      "id": "yDZVd0",
+      "id": "eWfGd0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "yDZVh0",
+      "id": "eWfGh0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -41,13 +41,13 @@
   ],
   "buttons": [
     {
-      "id": "yDZVd0",
+      "id": "eWfGd0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "yDZVh0",
+      "id": "eWfGh0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -55,5 +55,6 @@
   ],
   "colunas": [],
   "forms": [],
-  "lists": []
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO162CadastramentoDeUsuariosEventuais.zul"
 }

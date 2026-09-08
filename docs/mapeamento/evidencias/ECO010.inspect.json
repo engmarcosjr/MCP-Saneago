@@ -3,7 +3,7 @@
   "titulo_tela": "Solicitar Titularidade",
   "inputs": [
     {
-      "id": "pXTLj",
+      "id": "vI6Pj",
       "name": null,
       "tipo": "text",
       "rotulo": "Número de Conta/DV",
@@ -14,7 +14,7 @@
       "maxlength": 7
     },
     {
-      "id": "pXTLk",
+      "id": "vI6Pk",
       "name": null,
       "tipo": "text",
       "rotulo": "Número de Conta/DV",
@@ -25,7 +25,7 @@
       "maxlength": 1
     },
     {
-      "id": "pXTLq",
+      "id": "vI6Pq",
       "name": null,
       "tipo": "text",
       "rotulo": "Número do RA",
@@ -38,19 +38,19 @@
   ],
   "botoes": [
     {
-      "id": "pXTLu",
+      "id": "vI6Pu",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "pXTLv",
+      "id": "vI6Pv",
       "name": null,
       "label": "Solicitar",
       "tipo": "button"
     },
     {
-      "id": "pXTLy",
+      "id": "vI6Py",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -58,19 +58,19 @@
   ],
   "buttons": [
     {
-      "id": "pXTLu",
+      "id": "vI6Pu",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "pXTLv",
+      "id": "vI6Pv",
       "name": null,
       "label": "Solicitar",
       "tipo": "button"
     },
     {
-      "id": "pXTLy",
+      "id": "vI6Py",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -104,5 +104,6 @@
     "Detalhamento"
   ],
   "forms": [],
-  "lists": []
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO010Titularidade.zul"
 }
