@@ -3889,27 +3889,62 @@
   "ECO010": {
     "codigo": "ECO010",
     "nome": "Solicitar Titularidade",
-    "url_zul": "/prt/eco/ECO010Titularidade.zul",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO010Titularidade.zul",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a solicitar titularidade.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "o_que_faz": "Permite consultar e solicitar titularidade de contas de água e esgoto vinculadas a um Registro de Atendimento (RA).",
+    "tipo": "misto",
+    "campos": [
+      {
+        "rotulo": "Número de Conta/DV",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 7
+      },
+      {
+        "rotulo": "Número de Conta/DV",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 1
+      },
+      {
+        "rotulo": "Número do RA",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 11
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Solicitar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Solicitar Titularidade",
+        "intencao": "Consultar Solicitação de Titularidade",
         "passos": [
           "Abrir a aplicação ECO010",
-          "Preencher campos na tela inicial"
+          "Informar a conta com DV ou o número do RA",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de solicitar titularidade",
-      "acessar a app ECO010",
-      "consultar solicitar titularidade"
+      "consultar titularidade da conta",
+      "verificar solicitacao de titularidade no ECO010"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO021": {
     "codigo": "ECO021",
@@ -5672,27 +5707,84 @@
   "ECOV413": {
     "codigo": "ECOV413",
     "nome": "Controle de NFAg",
-    "url_zul": "https://prod.saneago.com.br/prt/eco/ECOV413.zul",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO413ConsultarNotaFiscalRejeitada.zul",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a controle de nfag.",
+    "o_que_faz": "Permite consultar notas fiscais de água (NFAg) rejeitadas no faturamento por número de nota, documento, empresa, situação, motivo de rejeição e período.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Número da Nota Fiscal",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false
+      },
+      {
+        "rotulo": "Número do Documento",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false
+      },
+      {
+        "rotulo": "Empresa",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "Situação da NF",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "Motivo da Rejeição",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false
+      },
+      {
+        "rotulo": "Período",
+        "tipo": "date",
+        "editavel": true,
+        "readonly": false
+      },
+      {
+        "rotulo": "a",
+        "tipo": "date",
+        "editavel": true,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Imprimir",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Controle de NFAg",
+        "intencao": "Consultar Notas Fiscais Rejeitadas",
         "passos": [
           "Abrir a aplicação ECOV413",
-          "Preencher campos na tela inicial"
+          "Preencher os filtros de pesquisa desejados (ex: período ou número da nota)",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de controle de nfag",
-      "acessar a app ECOV413",
-      "consultar controle de nfag"
+      "consultar notas fiscais rejeitadas no ECOV413",
+      "pesquisar NFAg por período",
+      "controle de nfag rejeitada"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECOV830": {
     "codigo": "ECOV830",
@@ -13043,5 +13135,52 @@
       "consultar ordem de tráfego por motorista"
     ],
     "status_doc": "auto"
+  },
+  "ECO162": {
+    "codigo": "ECO162",
+    "nome": "Usuário Eventual",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO162CadastramentoDeUsuariosEventuais.zul",
+    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "o_que_faz": "Permite consultar, cadastrar, alterar e excluir usuários eventuais pesquisando por Conta ou CPF/CNPJ.",
+    "tipo": "misto",
+    "campos": [
+      {
+        "rotulo": "Conta",
+        "tipo": "radio",
+        "editavel": true,
+        "readonly": false
+      },
+      {
+        "rotulo": "CPF/CNPJ",
+        "tipo": "radio",
+        "editavel": true,
+        "readonly": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "tipo": "button"
+      },
+      {
+        "label": "Cancelar",
+        "tipo": "button"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar Usuário Eventual",
+        "passos": [
+          "Abrir a aplicação ECO162",
+          "Selecionar filtro por Conta ou CPF/CNPJ",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar usuario eventual no ECO162",
+      "pesquisar cadastro de usuario eventual"
+    ],
+    "status_doc": "inventariado"
   }
 }
