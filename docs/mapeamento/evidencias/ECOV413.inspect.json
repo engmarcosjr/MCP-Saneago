@@ -1,0 +1,184 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Nota Fiscal Rejeitada",
+  "inputs": [
+    {
+      "id": "yQOCj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Nota Fiscal",
+      "label": "Número da Nota Fiscal",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "yQOCq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento",
+      "label": "Número do Documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "yQOCy-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Empresa",
+      "label": "Empresa",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "yQOC40-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação da NF",
+      "label": "Situação da NF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "yQOCb0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motivo da Rejeição",
+      "label": "Motivo da Rejeição",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "yQOCj0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "yQOCl0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "yQOCy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOC40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCj0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCp0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yQOCq0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "yQOCr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "yQOCy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOC40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCj0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "yQOCp0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yQOCq0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "yQOCr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Conta",
+    "Número/Séria NFAg",
+    "Número da Fatura",
+    "CPF/CNPJ",
+    "Situação da NF",
+    "NFAg",
+    "ECO148",
+    "ECO151",
+    "ECO415"
+  ],
+  "forms": [],
+  "lists": []
+}

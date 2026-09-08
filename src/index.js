@@ -685,6 +685,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         
         activeFrame = await abrirApp(query);
         const relatorio = await inspecionarTela(activeFrame);
+        // Procedencia: a URL real do frame e o unico dado da inspecao que amarra
+        // o relatorio a uma tela concreta. Sem ela a evidencia e inauditavel.
+        relatorio.url_real = activeFrame.url();
         
         return {
           content: [

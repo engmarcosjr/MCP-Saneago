@@ -1,0 +1,59 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "new page title",
+  "inputs": [
+    {
+      "id": "yDZVg-real",
+      "name": "_pg0qr7lp",
+      "tipo": "radio",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "conta",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "yDZVh-real",
+      "name": "_pg0qr7lp",
+      "tipo": "radio",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "cpfCnpj",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "yDZVd0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yDZVh0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "yDZVd0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yDZVh0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": []
+}
