@@ -4512,27 +4512,61 @@
   "ECO343": {
     "codigo": "ECO343",
     "nome": "Beneficiário Prêmio/Irregularidade",
-    "url_zul": "/prt/eco/ECO343benPremioIr.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO343benPremioIr.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a beneficiário prêmio/irregularidade.",
+    "o_que_faz": "Permite consultar informações sobre beneficiários de prêmio por informação de irregularidade por mês/ano de referência, cidade e unidade executora.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Referência: Mês/ano",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 7
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 4
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "Unidade executora",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 5
+      },
+      {
+        "rotulo": "Unidade executora",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": 30
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Beneficiário Prêmio/Irregularidade",
+        "intencao": "Consultar Beneficiário Prêmio por Irregularidade",
         "passos": [
           "Abrir a aplicação ECO343",
-          "Preencher campos na tela inicial"
+          "Informar o mês/ano de referência (MM/AAAA) e filtros de cidade ou unidade executora"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de beneficiário prêmio/irregularidade",
-      "acessar a app ECO343",
-      "consultar beneficiário prêmio/irregularidade"
+      "consultar beneficiários de prêmio por irregularidade",
+      "pesquisar prêmio por irregularidade no ECO343"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO348": {
     "codigo": "ECO348",
@@ -4935,27 +4969,102 @@
   "ECO538": {
     "codigo": "ECO538",
     "nome": "Anormalidades no Corte/Ocorrência",
-    "url_zul": "/prt/eco/ECO538anormalCort.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO538anormalCort.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a anormalidades no corte/ocorrência.",
+    "o_que_faz": "Permite consultar informações e relatórios sobre anormalidades no corte e ocorrências comerciais por cidade, distrito, bairro, logradouro, grupo de faturamento e rota.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 3
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 4
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": 30
+      },
+      {
+        "rotulo": "Sigla",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 3
+      },
+      {
+        "rotulo": "Bairro",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": 30
+      },
+      {
+        "rotulo": "Logradouro",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 4
+      },
+      {
+        "rotulo": "Logradouro",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": 30
+      },
+      {
+        "rotulo": "Grupo de Faturamento",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 2
+      },
+      {
+        "rotulo": "Rota",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 2
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Anormalidades no Corte/Ocorrência",
+        "intencao": "Consultar Anormalidades no Corte",
         "passos": [
           "Abrir a aplicação ECO538",
-          "Preencher campos na tela inicial"
+          "Informar os filtros de cidade, bairro, logradouro ou rota"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de anormalidades no corte/ocorrência",
-      "acessar a app ECO538",
-      "consultar anormalidades no corte/ocorrência"
+      "consultar anormalidades no corte no ECO538",
+      "pesquisar ocorrências de corte por cidade e bairro"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO553": {
     "codigo": "ECO553",
@@ -5174,27 +5283,48 @@
   "ECO644": {
     "codigo": "ECO644",
     "nome": "Arrecadação Contábil/Cidade",
-    "url_zul": "/prt/eco/ECO644arrecContab.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO644arrecContab.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a arrecadação contábil/cidade.",
+    "o_que_faz": "Permite consultar informações e relatórios contábeis de arrecadação por cidade e mês/ano de referência.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Mês/Ano",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 7
+      },
+      {
+        "rotulo": "Cidade do Faturamento",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 3
+      },
+      {
+        "rotulo": "Cidade do Faturamento",
+        "tipo": "text",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": 30
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Arrecadação Contábil/Cidade",
+        "intencao": "Consultar Arrecadação Contábil por Cidade",
         "passos": [
           "Abrir a aplicação ECO644",
-          "Preencher campos na tela inicial"
+          "Informar o mês/ano de referência e o código da cidade de faturamento"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de arrecadação contábil/cidade",
-      "acessar a app ECO644",
-      "consultar arrecadação contábil/cidade"
+      "consultar arrecadação contábil por cidade no ECO644",
+      "pesquisar arrecadação contábil por mês e ano"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "ECO674": {
     "codigo": "ECO674",

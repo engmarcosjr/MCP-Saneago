@@ -1,0 +1,52 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Arrecadação contábil por cidade:.",
+  "inputs": [
+    {
+      "id": "mesAnoReferencia",
+      "name": "mesAnoReferencia",
+      "tipo": "text",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "Cidade do Faturamento",
+      "label": "Cidade do Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "Cidade do Faturamento",
+      "label": "Cidade do Faturamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmECO644",
+      "name": "frmECO644",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO644arrecContab.jsp"
+}

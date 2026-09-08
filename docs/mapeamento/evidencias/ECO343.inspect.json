@@ -1,0 +1,74 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Beneficiário prêmio por informação de irregularidade:.",
+  "inputs": [
+    {
+      "id": "mesAnoReferencia",
+      "name": "mesAnoReferencia",
+      "tipo": "text",
+      "rotulo": "Referência: Mês/ano",
+      "label": "Referência: Mês/ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoUnidadeExecutora",
+      "name": "codigoUnidadeExecutora",
+      "tipo": "text",
+      "rotulo": "Unidade executora",
+      "label": "Unidade executora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeUnidadeExecutora",
+      "name": "nomeUnidadeExecutora",
+      "tipo": "text",
+      "rotulo": "Unidade executora",
+      "label": "Unidade executora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "formECO343",
+      "name": "formECO343",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO343benPremioIr.jsp"
+}

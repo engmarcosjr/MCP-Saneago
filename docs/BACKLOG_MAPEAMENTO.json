@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-08T05:24:08.384Z",
+    "gerado_em": "2026-09-08T13:06:31.337Z",
     "total": 596,
-    "completos": 6,
-    "pendentes": 590,
+    "completos": 9,
+    "pendentes": 587,
     "por_classe_seguranca": {
       "indeterminado": 327,
       "candidata_leitura": 116,
@@ -12,8 +12,8 @@
     },
     "por_lacuna": {
       "ficha_stub": 93,
-      "sem_campos_detectados": 160,
-      "ficha_nao_validada": 322,
+      "sem_campos_detectados": 157,
+      "ficha_nao_validada": 319,
       "sem_url": 11,
       "sem_roteiro": 268
     }
@@ -3011,18 +3011,15 @@
       "nome": "Beneficiário Prêmio/Irregularidade",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO343benPremioIr.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 866,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1165,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO344",
@@ -3941,18 +3938,15 @@
       "nome": "Anormalidades no Corte/Ocorrência",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO538anormalCort.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 858,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1286,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO548",
@@ -4300,18 +4294,15 @@
       "nome": "Arrecadação Contábil/Cidade",
       "vertical": "ECO",
       "url_zul": "/prt/eco/ECO644arrecContab.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 842,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1013,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": -20
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO674",
