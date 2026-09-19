@@ -256,131 +256,148 @@
   "BAP005": {
     "codigo": "BAP005",
     "nome": "Emissão de Frequência",
-    "url_zul": "/bap/BAP005EmitirFrequencia.zul",
-    "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a emissão de frequência.",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP005EmitirFrequencia.zul",
+    "categoria": "Recursos Humanos e Pessoal / Frequência",
+    "o_que_faz": "Permite consultar e emitir a folha de frequência ou o relatório de acompanhamento de frequência por unidade organizacional e referência.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Referência:",
+        "label": "Referência",
         "tipo": "date",
         "editavel": false
       },
       {
-        "label": "Sem Rotulo",
+        "label": "Impressora",
         "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Folha de Frequência",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Relatório de acompanhamento",
+        "tipo": "radio",
         "editavel": true
       }
     ],
     "botoes": [
       {
         "label": "Imprimir",
-        "id": "h8bW10"
+        "id": "eXXW10"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Emissão de Frequência",
+        "intencao": "Emitir folha de frequência no BAP005",
         "passos": [
           "Abrir a aplicação BAP005",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de relatório (folha ou acompanhamento)",
+          "Clicar em Imprimir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de emissão de frequência",
-      "acessar a app BAP005",
-      "consultar emissão de frequência"
+      "consultar e emitir folha de frequência no BAP005",
+      "imprimir relatório de acompanhamento de frequência no BAP005",
+      "emitir frequência por unidade organizacional"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP008": {
     "codigo": "BAP008",
     "nome": "Comprovante de Rendimentos",
-    "url_zul": "/prt/bap/BAP008ComprovanteRendimentos.zul",
-    "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comprovante de rendimentos.",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP008ComprovanteRendimentos.zul",
+    "categoria": "Recursos Humanos e Pessoal / Rendimentos",
+    "o_que_faz": "Permite consultar e emitir o comprovante de rendimentos pagos e retenção de imposto de renda por empregado e ano-calendário.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Empregado",
         "tipo": "text",
         "editavel": false
       },
       {
-        "label": "Ano Calendário:",
-        "tipo": "combobox"
+        "label": "Ano Calendário",
+        "tipo": "combobox",
+        "editavel": true
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "wYnN60"
+        "id": "hLwV60"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Comprovante de Rendimentos",
+        "intencao": "Consultar comprovante de rendimentos no BAP008",
         "passos": [
           "Abrir a aplicação BAP008",
-          "Preencher campos na tela inicial"
+          "Selecionar o ano-calendário desejado",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de comprovante de rendimentos",
-      "acessar a app BAP008",
-      "consultar comprovante de rendimentos"
+      "consultar comprovante de rendimentos no BAP008",
+      "emitir informe de rendimentos para imposto de renda no BAP008",
+      "consultar rendimentos por ano calendário"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP012": {
     "codigo": "BAP012",
     "nome": "Enviar Declaração IRPF",
-    "url_zul": "/prt/bap/BAP012EnviaDeclaracao.zul",
-    "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a enviar declaração irpf.",
-    "tipo": "leitura",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP012EnviaDeclaracao.zul",
+    "categoria": "Recursos Humanos e Pessoal / IRPF",
+    "o_que_faz": "Permite consultar o histórico de envios e realizar o upload/envio da declaração anual de ajuste do IRPF e recibo de entrega por empregado e competência.",
+    "tipo": "escrita",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Empregado",
         "tipo": "text",
         "editavel": false
       },
       {
-        "label": "Tipo de Documento:",
-        "tipo": "combobox"
+        "label": "Tipo de Documento",
+        "tipo": "combobox",
+        "editavel": true
       },
       {
-        "label": "Competência:",
-        "tipo": "combobox"
+        "label": "Competência",
+        "tipo": "combobox",
+        "editavel": true
       }
     ],
     "botoes": [
       {
         "label": "Enviar",
-        "id": "kUEX80"
+        "id": "qBLK80"
       },
       {
         "label": "Cancelar",
-        "id": "kUEXa0"
+        "id": "qBLKa0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Enviar Declaração IRPF",
+        "intencao": "Enviar declaração de IRPF no BAP012",
         "passos": [
           "Abrir a aplicação BAP012",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de documento e a competência",
+          "Selecionar o arquivo da declaração",
+          "Clicar em Enviar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de enviar declaração irpf",
-      "acessar a app BAP012",
-      "consultar enviar declaração irpf"
+      "enviar declaração de imposto de renda no BAP012",
+      "consultar histórico de envio de IRPF no BAP012",
+      "verificar status de recebimento da declaração IRPF"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP025": {
     "codigo": "BAP025",

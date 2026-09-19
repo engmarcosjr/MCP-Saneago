@@ -1,18 +1,18 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:47:24.145Z",
+    "gerado_em": "2026-09-19T09:56:09.222Z",
     "total": 596,
-    "completos": 440,
-    "pendentes": 156,
+    "completos": 443,
+    "pendentes": 153,
     "por_classe_seguranca": {
-      "indeterminado": 223,
-      "candidata_leitura": 200,
+      "indeterminado": 221,
+      "candidata_leitura": 202,
       "possui_escrita": 165,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "ficha_nao_validada": 63,
+      "ficha_nao_validada": 60,
       "sem_roteiro": 78,
       "sem_campos_detectados": 4
     }
@@ -166,64 +166,58 @@
       "nome": "Emissão de Frequência",
       "vertical": "BAP",
       "url_zul": "/bap/BAP005EmitirFrequencia.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 825,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1435,
       "botoes": [
         "Imprimir"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "BAP008",
       "nome": "Comprovante de Rendimentos",
       "vertical": "BAP",
       "url_zul": "/prt/bap/BAP008ComprovanteRendimentos.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 852,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1233,
       "botoes": [
         "Consultar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "BAP012",
       "nome": "Enviar Declaração IRPF",
       "vertical": "BAP",
       "url_zul": "/prt/bap/BAP012EnviaDeclaracao.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 924,
+      "tipo_declarado": "Transacional e Misto (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1522,
       "botoes": [
         "Enviar",
         "Cancelar"
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "botões de escrita: Enviar",
-      "lacunas": [
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "BAP025",

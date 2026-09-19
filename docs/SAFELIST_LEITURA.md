@@ -485,6 +485,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `AGD001` | Consulta de RDs | Botões: `Consultar`, `Limpar` | `somente_leitura` | Consulta e visualização de Resoluções de Diretoria por tipo de documento, número, assunto e período sem botões de escrita.
 - `AGDV001` | Consulta de RDs | Botões: `Consultar`, `Limpar` | `somente_leitura` | Consulta e visualização de Resoluções de Diretoria por tipo de documento, número, assunto e período sem botões de escrita.
 - `BAP004` | Atualização CTPS | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta de informações e histórico de atualização de CTPS por empregado e data de corte sem botões de escrita.
+- `BAP005` | Emissão de Frequência | Botões: `Imprimir` | `somente_leitura` | Emissão e impressão de folha de frequência e relatório de acompanhamento por unidade organizacional e referência sem botões de escrita.
+- `BAP008` | Comprovante de Rendimentos | Botões: `Consultar` | `somente_leitura` | Consulta e emissão de comprovante de rendimentos por empregado e ano-calendário sem botões de escrita.
+- `BAP012` | Enviar Declaração IRPF | Botões: `Enviar`, `Cancelar` | `possui_escrita` | Consulta de histórico de envios e upload de arquivo de declaração anual IRPF com botão Enviar.
 
 
 

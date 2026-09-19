@@ -1,0 +1,110 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "eXXW4-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "setembro/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eXXWc0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eXXWa-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eXXWt-real",
+      "name": "_pgibtoi5",
+      "tipo": "radio",
+      "rotulo": "Folha de Frequência",
+      "label": "Folha de Frequência",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eXXWu-real",
+      "name": "_pgibtoi5",
+      "tipo": "radio",
+      "rotulo": "Relatório de acompanhamento",
+      "label": "Relatório de acompanhamento",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eXXWa-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eXXWw-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "eXXW10",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eXXWa-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eXXWw-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "eXXW10",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Unidade Organizacional",
+    "Sigla"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bap/BAP005EmitirFrequencia.zul",
+  "codigo": "BAP005"
+}
