@@ -11296,27 +11296,58 @@
   "EGWV313": {
     "codigo": "EGWV313",
     "nome": "Consumo e Faturamento Individualizados",
-    "url_zul": "https://prod.saneago.com.br/prt/egw/EGWV313.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consumo e faturamento individualizados.",
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW313ConsumoFaturadoIndividualizado.zul",
+    "categoria": "Comercial e Grandes Clientes",
+    "o_que_faz": "Permite consultar informações detalhadas de consumo e faturamento individualizados por mês/ano de faturamento, conta e cidade no sistema de Grandes Clientes Web.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Mês/Ano de Faturamento",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Cidade",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Cidade",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "e0pP80"
+      },
+      {
+        "label": "Cancelar",
+        "id": "e0pPb0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Consumo e Faturamento Individualizados",
+        "intencao": "Consultar consumo e faturamento individualizados no EGWV313",
         "passos": [
-          "Abrir a aplicação EGWV313",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação EGWV313 via menu Grandes Clientes Web -> Consulta -> Consumo e Faturamento Individualizados",
+          "Informar Mês/Ano de Faturamento, Conta ou Cidade",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consumo e faturamento individualizados",
-      "acessar a app EGWV313",
-      "consultar consumo e faturamento individualizados"
+      "consultar consumo e faturamento individualizados no EGWV313",
+      "pesquisar consumo faturado individualizado por conta e mês de faturamento",
+      "verificar detalhes de faturamento individual de grandes clientes no EGWV313"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "EGWV401": {
     "codigo": "EGWV401",
@@ -11507,46 +11538,52 @@
   "FGC028": {
     "codigo": "FGC028",
     "nome": "Fornecedor",
-    "url_zul": "/prt/fgc/FGC028ConsultaFornecedor.zul",
-    "categoria": "Contratos e Integração SAP",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a fornecedor.",
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC028ConsultaFornecedor.zul",
+    "categoria": "Gestão de Contratos e Suprimentos",
+    "o_que_faz": "Permite consultar e visualizar informações cadastrais de fornecedores e seus representantes legais no sistema de Gestão de Contratos.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Código",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "label": "Código",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "dNHGy"
+        "id": "z9AEy"
       },
       {
         "label": "Imprimir",
-        "id": "dNHGz"
+        "id": "z9AEz"
       },
       {
         "label": "Cancelar",
-        "id": "dNHG_0"
+        "id": "z9AE_0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Fornecedor",
+        "intencao": "Consultar fornecedor no FGC028",
         "passos": [
           "Abrir a aplicação FGC028",
-          "Preencher campos na tela inicial"
+          "Informar o Código do Fornecedor",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de fornecedor",
-      "acessar a app FGC028",
-      "consultar fornecedor"
+      "consultar fornecedor no FGC028",
+      "pesquisar fornecedor por código no sistema de contratos",
+      "imprimir ficha de fornecedor e representante legal no FGC028"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "FGC037": {
     "codigo": "FGC037",
@@ -11764,27 +11801,52 @@
   "FGCV025": {
     "codigo": "FGCV025",
     "nome": "Consulta Processo Licitatório",
-    "url_zul": "https://prod.saneago.com.br/prt/fgc/FGCV025.zul",
-    "categoria": "Contratos e Integração SAP",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta processo licitatório.",
+    "url_zul": "https://www.saneago.com.br/prt/fgc/FGC025ConsultaProcessoLicitatorio.zul",
+    "categoria": "Gestão de Contratos e Suprimentos",
+    "o_que_faz": "Permite consultar e visualizar os processos licitatórios e suas etapas de contratação no sistema de Gestão de Contratos.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Processo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Processo",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "vJ3Gi"
+      },
+      {
+        "label": "Imprimir",
+        "id": "vJ3Gj"
+      },
+      {
+        "label": "Cancelar",
+        "id": "vJ3Gk"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Processo Licitatório",
+        "intencao": "Consultar processo licitatório no FGCV025",
         "passos": [
-          "Abrir a aplicação FGCV025",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação FGCV025 via menu Gestão Contratos -> Contratação -> Consulta Processo Licitatório",
+          "Informar o número do Processo",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta processo licitatório",
-      "acessar a app FGCV025",
-      "consultar consulta processo licitatório"
+      "consultar processo licitatório no FGCV025",
+      "pesquisar processo de licitação no sistema de contratos",
+      "imprimir dados de processo licitatório no FGCV025"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "FGCV026": {
     "codigo": "FGCV026",

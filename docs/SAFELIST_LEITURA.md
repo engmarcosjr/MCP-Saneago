@@ -437,4 +437,8 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `EGWV003` | Consumo Master por Cidade | nenhum | `somente_leitura` | Consulta de relatório de consumo das contas masters por cidade e referência sem botões de escrita.
 - `EGWV004` | Compara Consumos Medidos | nenhum | `somente_leitura` | Consulta e comparação de consumo das contas masters por cidade e referência sem botões de escrita.
 - `EGWV006` | Controle do Envio do Resumo | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de controle de envio individualizado do resumo de faturamento por conta macro ou condomínio sem botões de escrita.
+- `EGWV313` | Consumo e Faturamento Individualizados | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de consumo e faturamento individualizados por mês de faturamento, conta e cidade sem botões de escrita.
+- `FGC028` | Fornecedor | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de ficha de fornecedor e representante legal por código sem botões de escrita.
+- `FGCV025` | Consulta Processo Licitatório | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de processos licitatórios sem botões de escrita.
+
 

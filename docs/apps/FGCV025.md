@@ -1,27 +1,37 @@
 # FGCV025 - Consulta Processo Licitatório
 
 ## Categoria
-Contratos e Integração SAP
+Gestão de Contratos e Suprimentos
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta processo licitatório.
+Permite consultar e visualizar os processos licitatórios e suas etapas de contratação no sistema de Gestão de Contratos.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/fgc/FGC025ConsultaProcessoLicitatorio.zul`
+
+## Campos e Filtros da Tela
+- **Processo** (`text` / editável): Número ou código do processo licitatório.
+- **Processo** (`text` / editável): Ano ou descrição complementar do processo licitatório.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta do processo licitatório com os filtros informados.
+- **Imprimir**: Emite relatório impresso das informações do processo licitatório.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela FGCV025 (Consulta Processo Licitatório)"
-- "Acessar o aplicativo de consulta processo licitatório"
+## Colunas do Resultado
+- Código
+- Nome
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `FGCV025`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar processo licitatório no FGCV025"
+- "pesquisar processo de licitação no sistema de contratos"
+- "imprimir dados de processo licitatório no FGCV025"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Gestão Contratos -> Contratação -> Consulta Processo Licitatório).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

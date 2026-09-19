@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:32:49.746Z",
+    "gerado_em": "2026-09-19T07:39:12.695Z",
     "total": 596,
-    "completos": 394,
-    "pendentes": 202,
+    "completos": 397,
+    "pendentes": 199,
     "por_classe_seguranca": {
-      "indeterminado": 257,
-      "candidata_leitura": 170,
+      "indeterminado": 254,
+      "candidata_leitura": 173,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 89,
-      "ficha_nao_validada": 99,
-      "sem_campos_detectados": 31,
-      "ficha_stub": 17
+      "ficha_nao_validada": 96,
+      "sem_campos_detectados": 29,
+      "ficha_stub": 16
     }
   },
   "apps": [
@@ -5340,20 +5340,20 @@
       "nome": "Consumo e Faturamento Individualizados",
       "vertical": "EGW",
       "url_zul": "https://www.saneago.com.br/prt/egw/EGWV313.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 866,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1784,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "EGWV401",
@@ -5562,24 +5562,21 @@
       "nome": "Fornecedor",
       "vertical": "FGC",
       "url_zul": "/prt/fgc/FGC028ConsultaFornecedor.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 797,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1299,
       "botoes": [
         "Consultar",
         "Imprimir",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGC032",
@@ -5761,20 +5758,21 @@
       "nome": "Consulta Processo Licitatório",
       "vertical": "FGC",
       "url_zul": "https://www.saneago.com.br/prt/fgc/FGCV025.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 839,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1327,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGCV026",

@@ -1,27 +1,53 @@
 # EGWV313 - Consumo e Faturamento Individualizados
 
 ## Categoria
-Outros / Administrativo
+Comercial e Grandes Clientes
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consumo e faturamento individualizados.
+Permite consultar informações detalhadas de consumo e faturamento individualizados por mês/ano de faturamento, conta e cidade no sistema de Grandes Clientes Web.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW313ConsumoFaturadoIndividualizado.zul`
+
+## Campos e Filtros da Tela
+- **Mês/Ano de Faturamento** (`date` / editável): Mês e ano de faturamento da conta.
+- **Conta** (`text` / editável): Número da conta individualizada ou macro.
+- **Cidade** (`text` / editável): Código numérico da cidade.
+- **Cidade** (`text` / readonly): Nome da cidade.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de consumo e faturamento com os filtros informados.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV313 (Consumo e Faturamento Individualizados)"
-- "Acessar o aplicativo de consumo e faturamento individualizados"
+### Botões Ignorados
+- **Sem Rotulo**: Botão de abertura de calendário e seletor auxiliar (não acionável diretamente).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV313`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Número da Conta
+- Nome
+- CONTA
+- CLIENTE
+- Nº
+- LOTE
+- QUADRA
+- COMPLEMENTO
+- TIPO LIGAÇÃO
+- HIDRÔMETRO
+- CONSUMO MEDIDO NA LIGAÇÃO
+- CONSUMO FATURADO NA LIGAÇÃO
+- TOTAL MEDIDO NA CONTA
+- TOTAL FATURADO NA CONTA
+
+## Perguntas que Responde
+- "consultar consumo e faturamento individualizados no EGWV313"
+- "pesquisar consumo faturado individualizado por conta e mês de faturamento"
+- "verificar detalhes de faturamento individual de grandes clientes no EGWV313"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Consulta -> Consumo e Faturamento Individualizados).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
