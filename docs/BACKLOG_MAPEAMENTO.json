@@ -1,6 +1,6 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T03:07:57.902Z",
+    "gerado_em": "2026-09-19T03:34:30.642Z",
     "total": 596,
     "completos": 343,
     "pendentes": 253,
@@ -15,7 +15,8 @@
       "sem_roteiro": 97,
       "ficha_nao_validada": 136,
       "ficha_stub": 52,
-      "sem_campos_detectados": 65
+      "sem_campos_detectados": 65,
+      "auditoria_pendente": 3
     }
   },
   "apps": [
@@ -4205,10 +4206,11 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_campos_detectados"
+        "sem_campos_detectados",
+        "auditoria_pendente"
       ],
       "completo": false,
-      "prioridade": -10
+      "prioridade": -1000020
     },
     {
       "codigo": "ECO811",
@@ -4222,10 +4224,11 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_campos_detectados"
+        "sem_campos_detectados",
+        "auditoria_pendente"
       ],
       "completo": false,
-      "prioridade": -10
+      "prioridade": -1000020
     },
     {
       "codigo": "ECO815",
@@ -4239,10 +4242,11 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_roteiro"
+        "sem_roteiro",
+        "auditoria_pendente"
       ],
       "completo": false,
-      "prioridade": -10
+      "prioridade": -1000020
     },
     {
       "codigo": "ECO823",

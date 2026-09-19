@@ -245,6 +245,29 @@ function main() {
       }
     }
 
+    // ---- Checagem 10: a entrada nao pode ser mais nova que a inspecao que a sustenta.
+    //
+    // Um lote pode "processar" uma app sem abrir a tela: reescrever a ficha com o mesmo
+    // conteudo e acrescentar uma linha nova no log, apoiada na evidencia de semanas atras.
+    // Todas as outras checagens passam -- os hashes batem, a ficha confere com a
+    // evidencia, o roteiro existe -- porque nenhuma delas olha QUANDO a tela foi aberta.
+    // Foi exatamente o que o lote-123 fez com ECO808, ECO811 e ECO815.
+    {
+      // Vale tambem para `bloqueada`: reafirmar que uma app nao abre, sem tentar
+      // abrir de novo, e o mesmo falso progresso.
+      const tsEntrada = Date.parse(e.ts);
+      const mtimeEvid = fs.statSync(pEvid).mtimeMs;
+      const TOLERANCIA_MS = 6 * 60 * 60 * 1000; // um lote longo cabe aqui
+      if (Number.isFinite(tsEntrada) && tsEntrada - mtimeEvid > TOLERANCIA_MS && !e.reusa_evidencia) {
+        const dias = ((tsEntrada - mtimeEvid) / 86400000).toFixed(1);
+        falha(
+          cod,
+          'C10 evidencia-velha',
+          `entrada de ${e.ts.slice(0, 10)} apoiada em evidência ${dias} dias mais antiga — a tela não foi reaberta neste lote (declare "reusa_evidencia": true se o reuso for intencional)`
+        );
+      }
+    }
+
     // ---- Checagem 8: contagens do JSONL reconciliam com a evidencia.
     if (typeof e.n_campos === 'number' && e.n_campos !== rotulosCampos.length) {
       falha(cod, 'C8 contagem', `JSONL diz ${e.n_campos} campos, evidência tem ${rotulosCampos.length}`);

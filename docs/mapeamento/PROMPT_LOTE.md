@@ -31,12 +31,13 @@ Ao terminar as três, **pare**.
 
 ## Regras
 
-- **NÃO commitar, NÃO fazer push.** O revisor commita.
+- **NÃO fazer push.** Commitar o próprio lote, sim (ver a seção Tarefa); push nunca.
 - **NÃO tocar em arquivo fora do repositório.**
 - **NÃO modificar `src/`.** A Fase 1 escreve apenas em `docs/`, `config/roteiro.json` e
   `docs/mapeamento/evidencias/`. Se encontrar bug real em `src/`, **documente no diário
-  e não conserte** — o piloto já alterou `src/session.js` e `src/portal.js` fora de escopo,
-  e isso está pendente de revisão separada.
+  e não conserte**: já aconteceu duas vezes de um lote alterar `src/session.js` e
+  `src/portal.js` de passagem, e mudança em módulo compartilhado precisa de revisão
+  própria, não de carona num lote de mapeamento.
 - **NÃO clicar em nenhum botão, NÃO preencher nenhum campo.** Nem "Consultar".
 - **Nenhuma tool de escrita.** As flags `SANEAGO_ALLOW_*_WRITE` estão em `0` por ambiente;
   qualquer tentativa de escrita vai falhar por design. Não tente contornar — registre como
@@ -57,7 +58,7 @@ npm test
 ```
 
 `auditar-mapeamento.js` tem de sair com **0 divergências no seu lote** e `npm test` com
-**0 falhas** (linha de base: 80/80). Se não conseguir zerar, **não maquie**: registre a
+**0 falhas** (linha de base: 89/89). Se não conseguir zerar, **não maquie**: registre a
 divergência literal como pendência no diário e pare.
 
 ## Saída

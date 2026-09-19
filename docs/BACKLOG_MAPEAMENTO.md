@@ -2,7 +2,7 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-19T03:07:57.902Z
+- Gerado em: 2026-09-19T03:34:30.642Z
 - Aplicações: **596** — completas: **343** — pendentes: **253**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
@@ -23,14 +23,15 @@
 | sem_campos_detectados | 65 |
 | ficha_stub | 52 |
 | sem_url | 11 |
+| auditoria_pendente | 3 |
 
 ## Próximos 30 da fila
 
 | # | Código | Nome | Vertical | Classe | Lacunas |
 |---|---|---|---|---|---|
-| 1 | ECO808 | Áreas de Inf. dos Reservatórios | ECO | indeterminado | sem_campos_detectados |
-| 2 | ECO811 | Doc. do Macroprocesso de Comercialização | ECO | indeterminado | sem_campos_detectados |
-| 3 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | sem_roteiro |
+| 1 | ECO808 | Áreas de Inf. dos Reservatórios | ECO | indeterminado | sem_campos_detectados, auditoria_pendente |
+| 2 | ECO811 | Doc. do Macroprocesso de Comercialização | ECO | indeterminado | sem_campos_detectados, auditoria_pendente |
+| 3 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | sem_roteiro, auditoria_pendente |
 | 4 | ECO830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
 | 5 | ECO954 | Painel de Religação | ECO | indeterminado | sem_roteiro |
 | 6 | ECO962 | Painel de Cortes | ECO | indeterminado | sem_roteiro |

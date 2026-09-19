@@ -9796,6 +9796,30 @@
       }
     ]
   },
+  "ECO808": {
+    "codigo": "ECO808",
+    "nome": "Áreas de Inf. dos Reservatórios",
+    "url_zul": "https://www.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
+    "categoria": "Comercial e Atendimento ao Cliente",
+    "o_que_faz": "Exibe informações estáticas e áreas de influência dos reservatórios do sistema de abastecimento de água.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Consultar áreas de influência dos reservatórios no ECO808",
+        "passos": [
+          "Abrir a aplicação ECO808",
+          "Visualizar as informações na página"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar áreas de influência dos reservatórios no ECO808",
+      "ver informações de reservatórios no ECO808"
+    ],
+    "status_doc": "inventariado"
+  },
   "ECO811": {
     "codigo": "ECO811",
     "nome": "Doc. do Macroprocesso de Comercialização",
