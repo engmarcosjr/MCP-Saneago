@@ -1,27 +1,45 @@
 # GSPV102 - Trâmite
 
 ## Categoria
-Outros / Administrativo
+Tramite Processos / Saneago
 
 ## Tipo
-Leitura (Livre)
+Cadastro e Trâmite (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a trâmite.
+Permite consultar, preencher e efetivar o trâmite e encaminhamento de processos administrativos para unidades de destino, com registro de transporte, volumes e observações gerais.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul`
+
+## Campos e Filtros da Tela
+- **Processo** (`text` / editável): Número do processo administrativo.
+- **/** (`combobox` / editável): Ano do processo administrativo.
+- **Requerente** (`text` / readonly): Nome do requerente do processo.
+- **Origem** (`text` / readonly): Unidade organizacional de origem do processo.
+- **Origem** (`text` / readonly): Descrição complementar da origem.
+- **Destino** (`text` / readonly): Código da unidade de destino do trâmite.
+- **Destino** (`text` / editável): Nome ou sigla da unidade de destino do trâmite.
+- **Destino** (`text` / readonly): Descrição complementar do destino.
+- **Transporte** (`combobox` / editável): Meio ou forma de transporte do processo.
+- **Nº dos Volumes** (`text` / editável): Quantidade/identificação dos volumes físicos do processo.
+- **Obs. Geral** (`textarea` / editável): Observações gerais sobre o trâmite do processo.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **OK**: Efetiva a ação de trâmite do processo para a unidade de destino.
+- **Pesquisar**: Abre modal ou executa busca do processo informado.
+- **Limpar Tela**: Limpa todos os campos do formulário de trâmite.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GSPV102 (Trâmite)"
-- "Acessar o aplicativo de trâmite"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GSPV102`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "tramitar processo administrativo no GSPV102"
+- "consultar dados de processo e origem para trâmite"
+- "encaminhar processo para unidade de destino no GSP"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Tramite Processos -> Trâmite -> Trâmite).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

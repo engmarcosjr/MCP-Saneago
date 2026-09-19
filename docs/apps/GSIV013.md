@@ -1,27 +1,47 @@
 # GSIV013 - Pesquisa Geral
 
 ## Categoria
-Outros / Administrativo
+Solicitações de Serviço / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a pesquisa geral.
+Permite realizar a pesquisa geral de solicitações de serviços internos da Saneago por número de solicitação e outros filtros, com visualização em grade e opções de exportação em PDF e planilha eletrônica.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gsi/GSI013PesquisaGeral.zul`
+
+## Campos e Filtros da Tela
+- **Filtro** (`combobox` / readonly): Seleção do tipo de filtro da consulta.
+- **Filtro** (`text` / editável): Valor do filtro selecionado para pesquisa.
+- **PDF para impressão** (`radio` / editável): Opção de saída em formato PDF para impressão.
+- **Planilha Eletrônica** (`radio` / editável): Opção de saída em formato Planilha Eletrônica (XLSX).
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de solicitações com base no filtro selecionado.
+- **Cancelar**: Cancela a consulta e limpa os campos da tela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GSIV013 (Pesquisa Geral)"
-- "Acessar o aplicativo de pesquisa geral"
+## Colunas do Resultado
+- Campo Complementar
+- Valor
+- Solicitação
+- Abertura
+- Execução
+- Conclusão
+- U.O. Solicitante
+- Solicitante
+- Responsável
+- Serviço
+- Situação
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GSIV013`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar solicitações de serviço no GSIV013"
+- "pesquisar solicitação por número na pesquisa geral"
+- "acompanhar status de solicitações internas no GSI"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Solicitações de Serviço -> Solicitações -> Pesquisa Geral).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

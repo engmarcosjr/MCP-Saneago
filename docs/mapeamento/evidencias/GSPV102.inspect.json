@@ -1,0 +1,208 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "xOtWm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Processo",
+      "label": "Processo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 6
+    },
+    {
+      "id": "xOtWq-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWz",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Requerente",
+      "label": "Requerente",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOtW80",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Origem",
+      "label": "Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWa0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Origem",
+      "label": "Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWj0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Destino",
+      "label": "Destino",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWl0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Destino",
+      "label": "Destino",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWo0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Destino",
+      "label": "Destino",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWh1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Transporte",
+      "label": "Transporte",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xOtWl1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº dos Volumes",
+      "label": "Nº dos Volumes",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 21
+    },
+    {
+      "id": "xOtWu1",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Obs. Geral",
+      "label": "Obs. Geral",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "xOtWq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWs",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    },
+    {
+      "id": "xOtWu",
+      "name": null,
+      "label": "Pesquisar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOtWo0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWb2",
+      "name": null,
+      "label": "Limpar Tela",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "xOtWq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWs",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    },
+    {
+      "id": "xOtWu",
+      "name": null,
+      "label": "Pesquisar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOtWo0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOtWb2",
+      "name": null,
+      "label": "Limpar Tela",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul",
+  "codigo": "GSPV102"
+}

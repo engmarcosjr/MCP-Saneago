@@ -12400,52 +12400,153 @@
   "GSIV013": {
     "codigo": "GSIV013",
     "nome": "Pesquisa Geral",
-    "url_zul": "https://prod.saneago.com.br/prt/gsi/GSIV013.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a pesquisa geral.",
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI013PesquisaGeral.zul",
+    "categoria": "Solicitações de Serviço / Saneago",
+    "o_que_faz": "Permite realizar a pesquisa geral de solicitações de serviços internos da Saneago por número de solicitação e outros filtros, com opções de exportação em PDF e planilha eletrônica.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Filtro",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Filtro",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "PDF para impressão",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Planilha Eletrônica",
+        "tipo": "radio",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "z8cKl0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "z8cKn0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Pesquisa Geral",
+        "intencao": "Pesquisar solicitações gerais no GSIV013",
         "passos": [
           "Abrir a aplicação GSIV013",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de filtro e informar o valor",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de pesquisa geral",
-      "acessar a app GSIV013",
-      "consultar pesquisa geral"
+      "consultar solicitações de serviço no GSIV013",
+      "pesquisar solicitação por número na pesquisa geral",
+      "acompanhar status de solicitações internas no GSI"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GSPV102": {
     "codigo": "GSPV102",
     "nome": "Trâmite",
-    "url_zul": "https://prod.saneago.com.br/prt/gsp/GSPV102.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a trâmite.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/gsp/GSP102TramiteProcesso.zul",
+    "categoria": "Tramite Processos / Saneago",
+    "o_que_faz": "Permite consultar, preencher e efetivar o trâmite e encaminhamento de processos administrativos para unidades de destino, com registro de transporte, volumes e observações gerais.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Processo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "/",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "label": "Requerente",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Destino",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Transporte",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "label": "Nº dos Volumes",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Obs. Geral",
+        "tipo": "textarea",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "OK",
+        "id": "xOtWs"
+      },
+      {
+        "label": "Pesquisar",
+        "id": "xOtWu"
+      },
+      {
+        "label": "Limpar Tela",
+        "id": "xOtWb2"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Trâmite",
+        "intencao": "Tramitar processo administrativo no GSPV102",
         "passos": [
           "Abrir a aplicação GSPV102",
-          "Preencher campos na tela inicial"
+          "Informar o número e ano do processo",
+          "Definir a unidade de destino e clicar em OK"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de trâmite",
-      "acessar a app GSPV102",
-      "consultar trâmite"
+      "tramitar processo administrativo no GSPV102",
+      "consultar dados de processo e origem para trâmite",
+      "encaminhar processo para unidade de destino no GSP"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HFI001": {
     "codigo": "HFI001",
@@ -12862,27 +12963,243 @@
   "HVWV009": {
     "codigo": "HVWV009",
     "nome": "Conta",
-    "url_zul": "https://prod.saneago.com.br/prt/hvw/HVWV009.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW009PrestarContas.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a conta.",
+    "o_que_faz": "Permite consultar e conferir a prestação de contas de viagens a serviço, detalhando informações da solicitação, empregado, despesas calculadas e realizadas com hospedagem, refeição, diárias, adiantamento, cartões e glosas.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Nº Solicitação",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Tipo Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Motivo Viagem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Programação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data prevista de saída",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data prevista de chegada",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Despesas",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Tipo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Outras Despesas",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Desp. Hospedagem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Total Desp. Refeição",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data de saída",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data de chegada",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Valor de diárias calculadas",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de diárias realizadas",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor diárias cartão",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Hospedagem calculado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Hospedagem realizado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Refeição calculado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor de Refeição realizado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas cartão",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Saque",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor diárias reembolso",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas reembolso",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no cartão",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no reembolso",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor outras despesas adiantamento",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor Diarias no Adiantamento",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor glosado no Adiantamento",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor a receber",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Valor a recolher",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Acerto final",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Atividades realizadas",
+        "tipo": "textarea",
+        "editavel": true
+      },
+      {
+        "label": "Status da viagem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data da prestação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Matrícula da prestação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Situação da prestação",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "lFeB9h"
+      },
+      {
+        "label": "Cancelar",
+        "id": "lFeBfh"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Conta",
+        "intencao": "Consultar prestação de contas de viagem no HVWV009",
         "passos": [
           "Abrir a aplicação HVWV009",
-          "Preencher campos na tela inicial"
+          "Informar o número da solicitação de viagem",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de conta",
-      "acessar a app HVWV009",
-      "consultar conta"
+      "consultar prestação de contas de viagem no HVWV009",
+      "verificar valores de diárias, adiantamento e reembolso de viagem",
+      "consultar saldo a receber ou a recolher de viagem a serviço"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HVWV018": {
     "codigo": "HVWV018",

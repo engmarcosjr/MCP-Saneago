@@ -1,0 +1,502 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "lFeBf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Solicitação",
+      "label": "Nº Solicitação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeBj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo Empregado",
+      "label": "Tipo Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB2k",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBr-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB3k",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBc0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBh1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motivo Viagem",
+      "label": "Motivo Viagem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBl1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Programação",
+      "label": "Nº Programação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBp1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data prevista de saída",
+      "label": "Data prevista de saída",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeBu1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data prevista de chegada",
+      "label": "Data prevista de chegada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeBy1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Total Despesas",
+      "label": "Valor Total Despesas",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB12",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB62",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Outras Despesas",
+      "label": "Valor Outras Despesas",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBa2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Total Desp. Hospedagem",
+      "label": "Valor Total Desp. Hospedagem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBe2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Total Desp. Refeição",
+      "label": "Valor Total Desp. Refeição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBu2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de saída",
+      "label": "Data de saída",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeBy2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de chegada",
+      "label": "Data de chegada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeB63",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de diárias calculadas",
+      "label": "Valor de diárias calculadas",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBa3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de diárias realizadas",
+      "label": "Valor de diárias realizadas",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBe3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor diárias cartão",
+      "label": "Valor diárias cartão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBj3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de Hospedagem calculado",
+      "label": "Valor de Hospedagem calculado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBn3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de Hospedagem realizado",
+      "label": "Valor de Hospedagem realizado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBs3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de Refeição calculado",
+      "label": "Valor de Refeição calculado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBw3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor de Refeição realizado",
+      "label": "Valor de Refeição realizado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB04",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor outras despesas cartão",
+      "label": "Valor outras despesas cartão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB44",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Saque",
+      "label": "Valor Saque",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB84",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor diárias reembolso",
+      "label": "Valor diárias reembolso",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBd4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor outras despesas reembolso",
+      "label": "Valor outras despesas reembolso",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBh4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor glosado no cartão",
+      "label": "Valor glosado no cartão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBl4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor glosado no reembolso",
+      "label": "Valor glosado no reembolso",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBq4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor outras despesas adiantamento",
+      "label": "Valor outras despesas adiantamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBu4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Diarias no Adiantamento",
+      "label": "Valor Diarias no Adiantamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBy4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor glosado no Adiantamento",
+      "label": "Valor glosado no Adiantamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB25",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor a receber",
+      "label": "Valor a receber",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB65",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor a recolher",
+      "label": "Valor a recolher",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBa5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Acerto final",
+      "label": "Acerto final",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBo5",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Atividades realizadas",
+      "label": "Atividades realizadas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBs5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Status da viagem",
+      "label": "Status da viagem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeBx5-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da prestação",
+      "label": "Data da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "lFeB06",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula da prestação",
+      "label": "Matrícula da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lFeB46",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Situação da prestação",
+      "label": "Situação da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "lFeBr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lFeB9h",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lFeBfh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lFeBr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lFeB9h",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lFeBfh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hvw/HVW009PrestarContas.zul",
+  "codigo": "HVWV009"
+}
