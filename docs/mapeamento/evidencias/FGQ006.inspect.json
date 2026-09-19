@@ -1,0 +1,61 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Cadastro de RACP - Cadastro dos Tramites das Ações Corretivas e Preventivas - RACP",
+  "inputs": [
+    {
+      "id": "uNgCl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número",
+      "label": "Número",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uNgCn",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    }
+  ],
+  "botoes": [
+    {
+      "id": "uNgCq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNgCr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "uNgCq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNgCr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
+  "codigo": "FGQ006"
+}

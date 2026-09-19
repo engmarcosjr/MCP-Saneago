@@ -31673,5 +31673,97 @@
       "ver localização no mapa da Chefia de Gabinete"
     ],
     "status_doc": "inventariado"
+  },
+  "FGQ006": {
+    "codigo": "FGQ006",
+    "nome": "Tratar NC",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
+    "categoria": "Gestão Integrada / Qualidade",
+    "o_que_faz": "Permite consultar e acompanhar o cadastro e trâmites das Ações Corretivas e Preventivas (RACP) referentes ao tratamento de não conformidades (NC) por número e ano.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Número",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Ano",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "uNgCq0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "uNgCr0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar tratamento de não conformidades (RACP) no FGQ006",
+        "passos": [
+          "Abrir a aplicação FGQ006 via menu Gestão Integrada -> Não Conformidade -> Tratamento NC -> Tratar NC",
+          "Informar o Número e o Ano da RACP",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar tratamento de não conformidades no FGQ006",
+      "pesquisar RACP por número e ano no sistema de gestão integrada",
+      "consultar trâmites de ações corretivas e preventivas no FGQ006"
+    ],
+    "status_doc": "inventariado"
+  },
+  "FGQ010": {
+    "codigo": "FGQ010",
+    "nome": "Auditor",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
+    "categoria": "Gestão Integrada / Auditoria",
+    "o_que_faz": "Permite consultar informações e registros referentes ao cadastro de auditores internos e de sistemas de gestão da qualidade.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "k96M_0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "k96M00"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar auditores cadastrados no FGQ010",
+        "passos": [
+          "Abrir a aplicação FGQ010 via menu Gestão Integrada -> Auditoria -> Cadastro -> Auditor",
+          "Informar ou selecionar o Auditor",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar auditores cadastrados no FGQ010",
+      "pesquisar auditor por código ou matrícula no sistema de gestão integrada",
+      "consultar cadastro de auditores no FGQ010"
+    ],
+    "status_doc": "inventariado"
   }
 }

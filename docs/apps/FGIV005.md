@@ -1,16 +1,31 @@
 # FGIV005 - Consulta de documentos digitalizados
 
 ## Categoria
-Sistemas Corporativos / Saneago
+Controle de Documentos / Gestão Integrada
 
 ## Tipo
-Sem Acesso / Restrita ao Perfil Atual
+Bloqueada / Sem Acesso
 
 ## O que faz
-Aplicação listada no catálogo corporativo, porém **não disponível** para o perfil de acesso atual no portal ZK (não exibida nos resultados de busca ou restrita a perfis específicos).
+Aplicação de consulta de documentos digitalizados. Não localizada na busca rápida nem foi possível carregar o frame da aplicação no portal para o perfil atual.
 
 ## URL Real / Atalho Direto
-- `N/A` (Inacessível via menu do perfil atual)
+- Inacessível (não localizada na busca nem no frame da aplicação)
+
+## Campos e Filtros da Tela
+Nenhum campo acessível.
+
+## Botões Disponíveis
+Nenhum botão acessível.
+
+## Colunas do Resultado
+Nenhuma grade de resultados acessível.
+
+## Perguntas que Responde
+- "consultar documentos digitalizados no FGIV005"
 
 ## Status de Acesso
-- **Acesso Confirmado**: Não (perfil sem permissão de acesso ou aplicação legada/desativada).
+- **Acesso Confirmado**: Não (aplicação inacessível ou sem frame carregado no perfil atual).
+
+---
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

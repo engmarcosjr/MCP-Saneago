@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:44:27.087Z",
+    "gerado_em": "2026-09-19T07:51:35.179Z",
     "total": 596,
-    "completos": 400,
-    "pendentes": 196,
+    "completos": 402,
+    "pendentes": 194,
     "por_classe_seguranca": {
-      "indeterminado": 251,
-      "candidata_leitura": 176,
+      "indeterminado": 249,
+      "candidata_leitura": 178,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 89,
+      "sem_roteiro": 87,
       "ficha_nao_validada": 93,
       "sem_campos_detectados": 26,
-      "ficha_stub": 16
+      "ficha_stub": 13
     }
   },
   "apps": [
@@ -5950,20 +5950,19 @@
       "nome": "Consulta de documentos digitalizados",
       "vertical": "FGI",
       "url_zul": "https://www.saneago.com.br/prt/fgi/FGIV005.zul",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 543,
+      "tipo_declarado": "Bloqueada / Sem Acesso",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 874,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
       "lacunas": [
-        "ficha_stub",
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 9990
     },
     {
       "codigo": "FGO002",
@@ -6039,22 +6038,19 @@
       "vertical": "FGQ",
       "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 741,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1242,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGQ010",
@@ -6062,22 +6058,19 @@
       "vertical": "FGQ",
       "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 751,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1269,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGQ011",

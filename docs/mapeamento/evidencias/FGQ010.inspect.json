@@ -1,0 +1,73 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Cadastro dos Auditores",
+  "inputs": [
+    {
+      "id": "k96Ms8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Auditor",
+      "label": "Auditor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "k96Mh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Auditor",
+      "label": "Auditor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "k96Mh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k96M_0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "k96M00",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "k96Mh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k96M_0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "k96M00",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
+  "codigo": "FGQ010"
+}

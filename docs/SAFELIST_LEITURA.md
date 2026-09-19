@@ -443,5 +443,8 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `FGCV026` | Requisição Obras/Serviços | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de requisições de obras e serviços sem botões de escrita.
 - `FGCV037` | Contratos por UO, Cidade, Forn. e Gestor | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e relação de contratos por UO, cidade, fornecedor, gestor e filtros sem botões de escrita.
 - `FGCV052` | Orçamento de Programas | `Consultar` | `somente_leitura` | Consulta de orçamento de programas e acompanhamento orçamentário por ano e categoria sem botões de escrita.
+- `FGIV005` | Consulta de documentos digitalizados | nenhum | `bloqueada` | Aplicação não localizada na busca rápida nem no frame da aplicação no portal para o perfil atual.
+- `FGQ006` | Tratar NC | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e acompanhamento de cadastro e trâmites de RACP no tratamento de não conformidades por número e ano sem botões de escrita.
+- `FGQ010` | Auditor | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e pesquisa de cadastro de auditores internos e de sistemas de gestão sem botões de escrita.
 
 
