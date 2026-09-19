@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:49:16.285Z",
+    "gerado_em": "2026-09-19T06:55:34.540Z",
     "total": 596,
-    "completos": 380,
-    "pendentes": 216,
+    "completos": 382,
+    "pendentes": 214,
     "por_classe_seguranca": {
-      "indeterminado": 264,
-      "candidata_leitura": 164,
+      "indeterminado": 262,
+      "candidata_leitura": 166,
       "possui_escrita": 160,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 113,
-      "ficha_stub": 22,
-      "sem_campos_detectados": 41
+      "ficha_nao_validada": 110,
+      "sem_campos_detectados": 40,
+      "ficha_stub": 20
     }
   },
   "apps": [
@@ -131,23 +131,20 @@
       "nome": "Contracheque",
       "vertical": "BAP",
       "url_zul": "/prt/bap/BAP002ContraCheque.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 778,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1514,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BAP004",
@@ -305,23 +302,20 @@
       "nome": "Contracheque",
       "vertical": "BAP",
       "url_zul": "https://www.saneago.com.br/prt/bap/BAPV002.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 781,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1551,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BAPV004",
@@ -12000,23 +11994,21 @@
       "nome": "SUPER. DE RECURSOS HUMANOS",
       "vertical": "S",
       "url_zul": null,
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 821,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1153,
       "botoes": [
         "Ver localização no Mapa"
       ],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
+      "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada",
         "sem_url"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 9990
     },
     {
       "codigo": "S0087",

@@ -89,42 +89,58 @@
   "BAP002": {
     "codigo": "BAP002",
     "nome": "Contracheque",
-    "url_zul": "/prt/bap/BAP002ContraCheque.zul",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP002ContraCheque.zul",
     "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a contracheque.",
+    "o_que_faz": "Permite consultar e visualizar o demonstrativo de pagamento e contracheque do empregado por tipo de cálculo e mês/ano de referência.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Empregado",
         "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Tipo de cálculo",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Referência",
+        "tipo": "combobox",
         "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "kU4Uk0"
+        "id": "n9GRk0"
       },
       {
         "label": "Cancelar",
-        "id": "kU4Ul0"
+        "id": "n9GRl0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Contracheque",
+        "intencao": "Consultar contracheque do empregado",
         "passos": [
           "Abrir a aplicação BAP002",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de cálculo e a referência desejada",
+          "Clicar no botão Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de contracheque",
-      "acessar a app BAP002",
-      "consultar contracheque"
+      "consultar contracheque no BAP002",
+      "ver demonstrativo de pagamento por referência",
+      "consultar folha de pagamento do empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP004": {
     "codigo": "BAP004",
@@ -4276,32 +4292,32 @@
   "S0072": {
     "codigo": "S0072",
     "nome": "SUPER. DE RECURSOS HUMANOS",
-    "url_zul": "",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a super. de recursos humanos.",
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "o_que_faz": "Exibe a estrutura do organograma corporativo e a localização no mapa da SUPERINTENDÊNCIA DE RECURSOS HUMANOS.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [
       {
         "label": "Ver localização no Mapa",
-        "id": "kJtCm2"
+        "id": "mYBRm2"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar SUPER. DE RECURSOS HUMANOS",
+        "intencao": "Consultar organograma e localização da Superintendência de Recursos Humanos",
         "passos": [
           "Abrir a aplicação S0072",
-          "Preencher campos na tela inicial"
+          "Visualizar o organograma e clicar em Ver localização no Mapa se necessário"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de super. de recursos humanos",
-      "acessar a app S0072",
-      "consultar super. de recursos humanos"
+      "consultar organograma da Superintendência de Recursos Humanos",
+      "ver localização no mapa da Superintendência de Recursos Humanos",
+      "acessar o S0072"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "S0087": {
     "codigo": "S0087",
@@ -5040,42 +5056,58 @@
   "BAPV002": {
     "codigo": "BAPV002",
     "nome": "Contracheque",
-    "url_zul": "https://prod.saneago.com.br/prt/bap/BAPV002.zul",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP002ContraCheque.zul",
     "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a contracheque.",
+    "o_que_faz": "Permite consultar e visualizar o demonstrativo de pagamento e contracheque do empregado por tipo de cálculo e mês/ano de referência.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Empregado",
         "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Tipo de cálculo",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Referência",
+        "tipo": "combobox",
         "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "uR6Kk0"
+        "id": "s7PJk0"
       },
       {
         "label": "Cancelar",
-        "id": "uR6Kl0"
+        "id": "s7PJl0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Contracheque",
+        "intencao": "Consultar contracheque do empregado",
         "passos": [
-          "Abrir a aplicação BAPV002",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BAPV002 via menu Administração Pessoal",
+          "Selecionar o tipo de cálculo e a referência desejada",
+          "Clicar no botão Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de contracheque",
-      "acessar a app BAPV002",
-      "consultar contracheque"
+      "consultar contracheque no BAPV002",
+      "ver demonstrativo de pagamento por referência",
+      "consultar folha de pagamento do empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAPV004": {
     "codigo": "BAPV004",

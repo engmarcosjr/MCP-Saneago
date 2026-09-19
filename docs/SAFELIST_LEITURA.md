@@ -421,3 +421,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `MTG006` | Andamento Geral | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta de andamento geral de arquivos de leitura, retidas e entrega alternativa por período e distrito sem botões de escrita.
 - `MTGV002` | Enviar Retorno | `Adicionar arquivo(s) de retorno` | `possui_escrita` | Upload e envio de arquivos de retorno de leitura com botão de submissão e input de arquivo.
 - `MTGV006` | Andamento Geral | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta de andamento geral de arquivos de leitura, retidas e entrega alternativa por período e distrito sem botões de escrita.
+- `S0072` | SUPER. DE RECURSOS HUMANOS | `Ver localização no Mapa` | `somente_leitura` | Consulta de organograma e localização no mapa da Superintendência de Recursos Humanos sem botões de escrita.
+- `BAP002` | Contracheque | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de demonstrativo de pagamento e contracheque por tipo de cálculo e referência sem botões de escrita.
+- `BAPV002` | Contracheque | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de demonstrativo de pagamento e contracheque por tipo de cálculo e referência sem botões de escrita.

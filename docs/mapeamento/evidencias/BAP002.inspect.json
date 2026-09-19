@@ -1,0 +1,107 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "n9GRw0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "n9GRg-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n9GR_0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de cálculo",
+      "label": "Tipo de cálculo",
+      "valor_atual": "Pagamento",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n9GR40-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "set/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "n9GR_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n9GR40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n9GRk0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "n9GRl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "n9GR_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n9GR40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n9GRk0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "n9GRl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bap/BAP002ContraCheque.zul",
+  "codigo": "BAP002"
+}

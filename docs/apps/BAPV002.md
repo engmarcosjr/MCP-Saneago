@@ -4,25 +4,37 @@
 Recursos Humanos e Pessoal
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a contracheque.
+Permite consultar e visualizar o demonstrativo de pagamento e contracheque do empregado por tipo de cálculo (Pagamento, Adiantamento, etc.) e mês/ano de referência.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Somente Leitura
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bap/BAP002ContraCheque.zul`
+
+## Campos e Filtros da Tela
+- **Empregado** (`text` / readonly): Matrícula do empregado.
+- **Empregado** (`text` / readonly): Nome completo do empregado.
+- **Tipo de cálculo** (`combobox` / readonly): Tipo de folha/cálculo selecionado (ex: Pagamento).
+- **Referência** (`combobox` / readonly): Mês e ano de referência da folha (ex: set/2026).
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `uR6Kk0`)
-- **Cancelar** (ID ZK: `uR6Kl0`)
+- **Consultar**: Executa a consulta do contracheque para a referência e cálculo selecionados.
+- **Cancelar**: Limpa a consulta ou fecha a janela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BAPV002 (Contracheque)"
-- "Acessar o aplicativo de contracheque"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Abridores de combobox para seleção de tipo de cálculo e referência.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BAPV002`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial antes da consulta.
+
+## Perguntas que Responde
+- "consultar contracheque no BAPV002"
+- "ver demonstrativo de pagamento por referência"
+- "consultar folha de pagamento do empregado"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Administração Pessoal -> Consulta -> Contracheque).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
