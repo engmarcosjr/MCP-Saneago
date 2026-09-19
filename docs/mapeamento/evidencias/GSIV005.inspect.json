@@ -1,0 +1,135 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Solicitações do Usuário",
+  "inputs": [
+    {
+      "id": "fYHRk-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Intervalo",
+      "label": "Intervalo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fYHRm-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "até",
+      "label": "até",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fYHRp-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "fYHRk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRr",
+      "name": null,
+      "label": "Pesquisar",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHRs",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHR70",
+      "name": null,
+      "label": "Nova Solicitação",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHR90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "fYHRk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fYHRr",
+      "name": null,
+      "label": "Pesquisar",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHRs",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHR70",
+      "name": null,
+      "label": "Nova Solicitação",
+      "tipo": "button"
+    },
+    {
+      "id": "fYHR90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Unidade Organizacional"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gsi/GSI005SolicitacoesUsuario.zul",
+  "codigo": "GSIV005"
+}

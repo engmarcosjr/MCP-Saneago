@@ -1,0 +1,222 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "lA7Xl3",
+      "name": null,
+      "label": "SERVIÇOS GERAIS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xn3",
+      "name": null,
+      "label": "GESTÃO INTEGRADA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xo3",
+      "name": null,
+      "label": "SUPERVISÃO DE QUALIDADE / CADASTRO DE MATERIAL",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xp3",
+      "name": null,
+      "label": "GERÊNCIA DE TRANSPORTES",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xq3",
+      "name": null,
+      "label": "GER. DE OFICINA ELETROMECÂNICA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xr3",
+      "name": null,
+      "label": "AUTOMAÇÃO - ENERGIA - PITOMETRIA E MACROMEDIÇÃO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xs3",
+      "name": null,
+      "label": "CONTRATO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xt3",
+      "name": null,
+      "label": "SUPERVISÃO INFORMAÇÕES CONSOLIDADAS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xu3",
+      "name": null,
+      "label": "GESTÃO ELETRÔNICA DE DOCUMENTOS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xv3",
+      "name": null,
+      "label": "GIS - CADASTRO TÉCNICO E INFORMAÇÕES EXPORTADAS DO SISTEMA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xw3",
+      "name": null,
+      "label": "LABORATÓRIOS - PGPQ",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xx3",
+      "name": null,
+      "label": "GERÊNCIA DE TREINAMENTO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xy3",
+      "name": null,
+      "label": "AÇÕES SOCIOAMBIENTAIS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xm3",
+      "name": null,
+      "label": "TECNOLOGIA DA INFORMAÇÃO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xv-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "lA7X40",
+      "name": null,
+      "label": "Nova Solicitacao",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7X50",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lA7Xl3",
+      "name": null,
+      "label": "SERVIÇOS GERAIS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xn3",
+      "name": null,
+      "label": "GESTÃO INTEGRADA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xo3",
+      "name": null,
+      "label": "SUPERVISÃO DE QUALIDADE / CADASTRO DE MATERIAL",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xp3",
+      "name": null,
+      "label": "GERÊNCIA DE TRANSPORTES",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xq3",
+      "name": null,
+      "label": "GER. DE OFICINA ELETROMECÂNICA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xr3",
+      "name": null,
+      "label": "AUTOMAÇÃO - ENERGIA - PITOMETRIA E MACROMEDIÇÃO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xs3",
+      "name": null,
+      "label": "CONTRATO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xt3",
+      "name": null,
+      "label": "SUPERVISÃO INFORMAÇÕES CONSOLIDADAS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xu3",
+      "name": null,
+      "label": "GESTÃO ELETRÔNICA DE DOCUMENTOS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xv3",
+      "name": null,
+      "label": "GIS - CADASTRO TÉCNICO E INFORMAÇÕES EXPORTADAS DO SISTEMA",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xw3",
+      "name": null,
+      "label": "LABORATÓRIOS - PGPQ",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xx3",
+      "name": null,
+      "label": "GERÊNCIA DE TREINAMENTO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xy3",
+      "name": null,
+      "label": "AÇÕES SOCIOAMBIENTAIS",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xm3",
+      "name": null,
+      "label": "TECNOLOGIA DA INFORMAÇÃO",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7Xv-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "lA7X40",
+      "name": null,
+      "label": "Nova Solicitacao",
+      "tipo": "button"
+    },
+    {
+      "id": "lA7X50",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Serviço",
+    "Categoria"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gsi/GSI006EscolhaServicoSolicitacao.zul",
+  "codigo": "GSIV006"
+}

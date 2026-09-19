@@ -1,27 +1,32 @@
 # GPMV010 - Registro Fechado
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a registro fechado.
+Permite consultar informações e manobras de registros fechados por código e nome de cidade no módulo de manobras de registros.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM010conManobra.jsp`
+
+## Campos e Filtros da Tela
+- **GPM 010** (`text` / editável): Código e nome da cidade para filtragem e consulta de manobras de registros fechados.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV010 (Registro Fechado)"
-- "Acessar o aplicativo de registro fechado"
+## Colunas do Resultado
+Nenhuma grade de resultados acessível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV010`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar manobras de registro fechado no GPMV010"
+- "pesquisar registros fechados por cidade no painel de manobras"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Consulta -> Registro Fechado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

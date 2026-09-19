@@ -1,0 +1,42 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Consulta Manobra:.",
+  "inputs": [
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "GPM 010",
+      "label": "GPM 010",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "GPM 010",
+      "label": "GPM 010",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmGPM010",
+      "name": "frmGPM010",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM010conManobra.jsp",
+  "codigo": "GPMV010"
+}

@@ -12108,27 +12108,38 @@
   "GPMV010": {
     "codigo": "GPMV010",
     "nome": "Registro Fechado",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV010.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registro fechado.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM010conManobra.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar informações e manobras de registros fechados por código e nome de cidade no módulo de manobras de registros.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "GPM 010",
+        "id": "codigoCidade",
+        "tipo": "text"
+      },
+      {
+        "label": "GPM 010",
+        "id": "nomeCidade",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Registro Fechado",
+        "intencao": "Consultar registros fechados no GPMV010",
         "passos": [
           "Abrir a aplicação GPMV010",
-          "Preencher campos na tela inicial"
+          "Informar o código da cidade",
+          "Visualizar registros fechados"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registro fechado",
-      "acessar a app GPMV010",
-      "consultar registro fechado"
+      "consultar manobras de registro fechado no GPMV010",
+      "pesquisar registros fechados por cidade no painel de manobras"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV015": {
     "codigo": "GPMV015",
@@ -12208,52 +12219,158 @@
   "GSIV005": {
     "codigo": "GSIV005",
     "nome": "Solicitações",
-    "url_zul": "https://prod.saneago.com.br/prt/gsi/GSIV005.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a solicitações.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI005SolicitacoesUsuario.zul",
+    "categoria": "Solicitações de Serviço / Saneago",
+    "o_que_faz": "Permite consultar solicitações do usuário por intervalo de datas e situação, além de acessar o formulário para abertura de novas solicitações de serviço.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Intervalo",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "até",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Situação",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Pesquisar",
+        "id": "fYHRr"
+      },
+      {
+        "label": "Limpar",
+        "id": "fYHRs"
+      },
+      {
+        "label": "Nova Solicitação",
+        "id": "fYHR70"
+      },
+      {
+        "label": "Cancelar",
+        "id": "fYHR90"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Solicitações",
+        "intencao": "Pesquisar solicitações de serviço no GSIV005",
         "passos": [
           "Abrir a aplicação GSIV005",
-          "Preencher campos na tela inicial"
+          "Definir intervalo de datas e situação",
+          "Clicar em Pesquisar"
+        ]
+      },
+      {
+        "intencao": "Abrir nova solicitação de serviço no GSIV005",
+        "passos": [
+          "Abrir a aplicação GSIV005",
+          "Clicar em Nova Solicitação"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de solicitações",
-      "acessar a app GSIV005",
-      "consultar solicitações"
+      "consultar solicitações do usuário no GSIV005",
+      "pesquisar solicitações de serviço por período ou situação",
+      "abrir nova solicitação de serviço no GSIV005"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GSIV006": {
     "codigo": "GSIV006",
     "nome": "Escolha de Serviço",
-    "url_zul": "https://prod.saneago.com.br/prt/gsi/GSIV006.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a escolha de serviço.",
-    "tipo": "leitura",
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI006EscolhaServicoSolicitacao.zul",
+    "categoria": "Solicitações de Serviço / Saneago",
+    "o_que_faz": "Permite escolher a categoria e o tipo de serviço para abertura de novas solicitações no sistema de solicitações de serviço.",
+    "tipo": "escrita",
     "campos": [],
-    "botoes": [],
+    "botoes": [
+      {
+        "label": "SERVIÇOS GERAIS",
+        "id": "lA7Xl3"
+      },
+      {
+        "label": "GESTÃO INTEGRADA",
+        "id": "lA7Xn3"
+      },
+      {
+        "label": "SUPERVISÃO DE QUALIDADE / CADASTRO DE MATERIAL",
+        "id": "lA7Xo3"
+      },
+      {
+        "label": "GERÊNCIA DE TRANSPORTES",
+        "id": "lA7Xp3"
+      },
+      {
+        "label": "GER. DE OFICINA ELETROMECÂNICA",
+        "id": "lA7Xq3"
+      },
+      {
+        "label": "AUTOMAÇÃO - ENERGIA - PITOMETRIA E MACROMEDIÇÃO",
+        "id": "lA7Xr3"
+      },
+      {
+        "label": "CONTRATO",
+        "id": "lA7Xs3"
+      },
+      {
+        "label": "SUPERVISÃO INFORMAÇÕES CONSOLIDADAS",
+        "id": "lA7Xt3"
+      },
+      {
+        "label": "GESTÃO ELETRÔNICA DE DOCUMENTOS",
+        "id": "lA7Xu3"
+      },
+      {
+        "label": "GIS - CADASTRO TÉCNICO E INFORMAÇÕES EXPORTADAS DO SISTEMA",
+        "id": "lA7Xv3"
+      },
+      {
+        "label": "LABORATÓRIOS - PGPQ",
+        "id": "lA7Xw3"
+      },
+      {
+        "label": "GERÊNCIA DE TREINAMENTO",
+        "id": "lA7Xx3"
+      },
+      {
+        "label": "AÇÕES SOCIOAMBIENTAIS",
+        "id": "lA7Xy3"
+      },
+      {
+        "label": "TECNOLOGIA DA INFORMAÇÃO",
+        "id": "lA7Xm3"
+      },
+      {
+        "label": "Nova Solicitacao",
+        "id": "lA7X40"
+      },
+      {
+        "label": "Cancelar",
+        "id": "lA7X50"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Escolha de Serviço",
+        "intencao": "Escolher categoria e serviço para solicitação no GSIV006",
         "passos": [
           "Abrir a aplicação GSIV006",
-          "Preencher campos na tela inicial"
+          "Clicar na categoria desejada",
+          "Selecionar o serviço e clicar em Nova Solicitacao"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de escolha de serviço",
-      "acessar a app GSIV006",
-      "consultar escolha de serviço"
+      "escolher categoria e serviço no GSIV006",
+      "abrir nova solicitação por categoria de serviço no GSIV006"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GSIV007": {
     "codigo": "GSIV007",
