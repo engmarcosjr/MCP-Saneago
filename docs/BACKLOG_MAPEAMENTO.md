@@ -2,7 +2,7 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-19T04:02:58.538Z
+- Gerado em: 2026-09-19T04:17:42.509Z
 - Aplicações: **596** — completas: **342** — pendentes: **254**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
@@ -23,17 +23,16 @@
 | sem_campos_detectados | 69 |
 | ficha_stub | 55 |
 | sem_url | 11 |
-| auditoria_pendente | 3 |
 
 ## Próximos 30 da fila
 
 | # | Código | Nome | Vertical | Classe | Lacunas |
 |---|---|---|---|---|---|
-| 1 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro, auditoria_pendente |
-| 2 | ECO808 | Áreas de Inf. dos Reservatórios | ECO | indeterminado | sem_campos_detectados, auditoria_pendente |
-| 3 | ECO811 | Doc. do Macroprocesso de Comercialização | ECO | indeterminado | sem_campos_detectados, auditoria_pendente |
-| 4 | ECO954 | Painel de Religação | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
-| 5 | ECO962 | Painel de Cortes | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
+| 1 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
+| 2 | ECO954 | Painel de Religação | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
+| 3 | ECO962 | Painel de Cortes | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
+| 4 | ECO808 | Áreas de Inf. dos Reservatórios | ECO | indeterminado | sem_campos_detectados |
+| 5 | ECO811 | Doc. do Macroprocesso de Comercialização | ECO | indeterminado | sem_campos_detectados |
 | 6 | ECO830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
 | 7 | ECOV830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
 | 8 | LRS732 | Atendimento Por Período | LRS | indeterminado | ficha_stub |
