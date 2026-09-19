@@ -6736,46 +6736,51 @@
   "BTWV001": {
     "codigo": "BTWV001",
     "nome": "Pedido",
-    "url_zul": "https://prod.saneago.com.br/prt/btw/BTWV001.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a pedido.",
-    "tipo": "leitura",
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul",
+    "categoria": "Recursos Humanos e Treinamento",
+    "o_que_faz": "Permite consultar, visualizar e cadastrar novos pedidos de treinamento corporativo para empregados.",
+    "tipo": "escrita",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Número do Pedido",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "label": "Número do Pedido",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "o5cXk0"
+        "id": "iZSFk0"
       },
       {
         "label": "Novo Pedido",
-        "id": "o5cXl0"
+        "id": "iZSFl0"
       },
       {
         "label": "Cancelar",
-        "id": "o5cXr0"
+        "id": "iZSFr0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Pedido",
+        "intencao": "Consultar ou cadastrar pedido de treinamento",
         "passos": [
-          "Abrir a aplicação BTWV001",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BTWV001 via menu Treinamento Web -> Treinamento -> Pedido",
+          "Informar o Número do Pedido e clicar em Consultar, ou clicar em Novo Pedido para cadastrar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de pedido",
-      "acessar a app BTWV001",
-      "consultar pedido"
+      "consultar pedido de treinamento no BTWV001",
+      "cadastrar novo pedido de treinamento corporativo",
+      "verificar pedidos no BTWV001"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BTWV002": {
     "codigo": "BTWV002",
@@ -6974,52 +6979,94 @@
   "BTWV055": {
     "codigo": "BTWV055",
     "nome": "Avaliação de Eficácia do Treinamento",
-    "url_zul": "https://prod.saneago.com.br/prt/btw/BTWV055.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a avaliação de eficácia do treinamento.",
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW055AvalEficac.jsp",
+    "categoria": "Recursos Humanos e Treinamento",
+    "o_que_faz": "Permite consultar e visualizar a avaliação de eficácia de treinamentos realizados por empregados da Saneago.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Matrícula",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Matrícula",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Treinamento",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Treinamento",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Avaliação de Eficácia do Treinamento",
+        "intencao": "Consultar avaliação de eficácia do treinamento",
         "passos": [
-          "Abrir a aplicação BTWV055",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BTWV055 via menu Treinamento Web -> Treinamento -> Avaliação de Eficácia do Treinamento",
+          "Informar a Matrícula do empregado para consultar as avaliações de treinamento"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de avaliação de eficácia do treinamento",
-      "acessar a app BTWV055",
-      "consultar avaliação de eficácia do treinamento"
+      "consultar avaliação de eficácia do treinamento no BTWV055",
+      "verificar eficácia de treinamento por matrícula",
+      "pesquisar avaliações de treinamento de empregados"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BTWV057": {
     "codigo": "BTWV057",
     "nome": "Consulta Cronograma de Treinamento",
-    "url_zul": "https://prod.saneago.com.br/prt/btw/BTWV057.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta cronograma de treinamento.",
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW057ConsCronog.jsp",
+    "categoria": "Recursos Humanos e Treinamento",
+    "o_que_faz": "Permite consultar e visualizar o cronograma de treinamentos previstos e realizados por Unidade Organizacional (U.O) e ano de referência.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "U.O",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "U.O",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Ano",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Ano",
+        "tipo": "checkbox",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Cronograma de Treinamento",
+        "intencao": "Consultar cronograma de treinamento",
         "passos": [
-          "Abrir a aplicação BTWV057",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BTWV057 via menu Treinamento Web -> Consulta -> Consulta Cronograma de Treinamento",
+          "Informar o Ano e marcar se deseja exibir UOs inferiores"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta cronograma de treinamento",
-      "acessar a app BTWV057",
-      "consultar consulta cronograma de treinamento"
+      "consultar cronograma de treinamento no BTWV057",
+      "verificar cronograma de cursos por UO e ano",
+      "pesquisar treinamentos programados na unidade"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BTWV062": {
     "codigo": "BTWV062",

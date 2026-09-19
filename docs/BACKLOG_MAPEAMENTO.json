@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:01:50.503Z",
+    "gerado_em": "2026-09-19T07:10:04.912Z",
     "total": 596,
-    "completos": 385,
-    "pendentes": 211,
+    "completos": 388,
+    "pendentes": 208,
     "por_classe_seguranca": {
-      "indeterminado": 260,
-      "candidata_leitura": 167,
+      "indeterminado": 259,
+      "candidata_leitura": 168,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 107,
-      "ficha_stub": 20,
-      "sem_campos_detectados": 37
+      "ficha_nao_validada": 104,
+      "sem_campos_detectados": 35,
+      "ficha_stub": 19
     }
   },
   "apps": [
@@ -1343,24 +1343,21 @@
       "nome": "Pedido",
       "vertical": "BTW",
       "url_zul": "https://www.saneago.com.br/prt/btw/BTWV001.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 784,
+      "tipo_declarado": "Cadastro e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1306,
       "botoes": [
         "Consultar",
         "Novo Pedido",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BTWV002",
@@ -1454,40 +1451,34 @@
       "nome": "Avaliação de Eficácia do Treinamento",
       "vertical": "BTW",
       "url_zul": "https://www.saneago.com.br/prt/btw/BTWV055.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 870,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1298,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BTWV057",
       "nome": "Consulta Cronograma de Treinamento",
       "vertical": "BTW",
       "url_zul": "https://www.saneago.com.br/prt/btw/BTWV057.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 850,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1289,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BTWV062",

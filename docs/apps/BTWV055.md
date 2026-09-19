@@ -1,27 +1,36 @@
 # BTWV055 - Avaliação de Eficácia do Treinamento
 
 ## Categoria
-Outros / Administrativo
+Recursos Humanos e Treinamento
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a avaliação de eficácia do treinamento.
+Permite consultar e visualizar a avaliação de eficácia de treinamentos realizados por empregados da Saneago.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/btw/BTW055AvalEficac.jsp`
+
+## Campos e Filtros da Tela
+- **Matrícula** (`text` / editável): Matrícula do empregado avaliado.
+- **Matrícula** (`text` / readonly): Nome do empregado correspondente à matrícula.
+- **Treinamento** (`text` / readonly): Código do treinamento avaliado.
+- **Treinamento** (`text` / readonly): Nome do treinamento avaliado.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BTWV055 (Avaliação de Eficácia do Treinamento)"
-- "Acessar o aplicativo de avaliação de eficácia do treinamento"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BTWV055`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar avaliação de eficácia do treinamento no BTWV055"
+- "verificar eficácia de treinamento por matrícula"
+- "pesquisar avaliações de treinamento de empregados"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Treinamento Web -> Treinamento -> Avaliação de Eficácia do Treinamento).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

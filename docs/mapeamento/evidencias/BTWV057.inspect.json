@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".: Cronograma de Treinamento:.",
+  "inputs": [
+    {
+      "id": "codUO",
+      "name": "codUO",
+      "tipo": "text",
+      "rotulo": "U.O",
+      "label": "U.O",
+      "valor_atual": "V0011",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeUO",
+      "name": "nomeUO",
+      "tipo": "text",
+      "rotulo": "U.O",
+      "label": "U.O",
+      "valor_atual": "SUPERV. DIST. SERV. ESTAT. E. M. AP. TEC.-ANÁPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    },
+    {
+      "id": "Ano",
+      "name": "Ano",
+      "tipo": "text",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "checkExbirUOsInferiores",
+      "name": "checkExbirUOsInferiores",
+      "tipo": "checkbox",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmBTW057",
+      "name": "frmBTW057",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/btw/BTW057ConsCronog.jsp",
+  "codigo": "BTWV057"
+}

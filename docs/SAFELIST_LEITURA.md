@@ -427,3 +427,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `BAPV005` | Emissão de Frequência | `Imprimir` | `somente_leitura` | Emissão e impressão de folha de frequência e relatório de acompanhamento por UO e referência sem botões de escrita.
 - `BAPV025` | Agendamento/Alteração de Férias | nenhum | `possui_escrita` | Agendamento e solicitação de alteração de férias de empregado com formulário de fruição e parcelamento.
 - `BAPV032` | Definir Adiantamento de 13° Salário | `Incluir`, `Cancelar` | `possui_escrita` | Cadastro e definição de adiantamento de 13º salário com botão de escrita Incluir.
+- `BTWV001` | Pedido | `Consultar`, `Novo Pedido`, `Cancelar` | `possui_escrita` | Consulta e cadastro de pedidos de treinamento corporativo com botão de ação Novo Pedido.
+- `BTWV055` | Avaliação de Eficácia do Treinamento | nenhum | `somente_leitura` | Consulta de avaliação de eficácia de treinamento por matrícula e curso sem botões de escrita.
+- `BTWV057` | Consulta Cronograma de Treinamento | nenhum | `somente_leitura` | Consulta de cronograma anual de treinamento por unidade organizacional e ano sem botões de escrita.

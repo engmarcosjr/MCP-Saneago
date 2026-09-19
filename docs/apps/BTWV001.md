@@ -1,29 +1,39 @@
 # BTWV001 - Pedido
 
 ## Categoria
-Outros / Administrativo
+Recursos Humanos e Treinamento
 
 ## Tipo
-Leitura (Livre)
+Cadastro e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a pedido.
+Permite consultar, visualizar e cadastrar novos pedidos de treinamento corporativo para empregados.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/btw/BTW001Treinamento.zul`
+
+## Campos e Filtros da Tela
+- **Número do Pedido** (`text` / editável): Número do pedido de treinamento.
+- **Número do Pedido** (`text` / readonly): Identificador do pedido de treinamento.
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `o5cXk0`)
-- **Novo Pedido** (ID ZK: `o5cXl0`)
-- **Cancelar** (ID ZK: `o5cXr0`)
+- **Consultar**: Executa a consulta do pedido informado.
+- **Novo Pedido**: Inicia o cadastro e inclusão de um novo pedido de treinamento.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BTWV001 (Pedido)"
-- "Acessar o aplicativo de pedido"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Botão de busca e seleção ZK pareado ao campo de pedido.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BTWV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
+
+## Perguntas que Responde
+- "consultar pedido de treinamento no BTWV001"
+- "cadastrar novo pedido de treinamento corporativo"
+- "verificar pedidos no BTWV001"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Treinamento Web -> Treinamento -> Pedido).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

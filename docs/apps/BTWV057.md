@@ -1,27 +1,36 @@
 # BTWV057 - Consulta Cronograma de Treinamento
 
 ## Categoria
-Outros / Administrativo
+Recursos Humanos e Treinamento
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta cronograma de treinamento.
+Permite consultar e visualizar o cronograma de treinamentos previstos e realizados por Unidade Organizacional (U.O) e ano de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/btw/BTW057ConsCronog.jsp`
+
+## Campos e Filtros da Tela
+- **U.O** (`text` / readonly): Código da Unidade Organizacional.
+- **U.O** (`text` / readonly): Nome da Unidade Organizacional.
+- **Ano** (`text` / editável): Ano de referência para consulta do cronograma.
+- **Ano** (`checkbox` / editável): Opção para exibir UOs inferiores da unidade selecionada.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BTWV057 (Consulta Cronograma de Treinamento)"
-- "Acessar o aplicativo de consulta cronograma de treinamento"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BTWV057`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar cronograma de treinamento no BTWV057"
+- "verificar cronograma de cursos por UO e ano"
+- "pesquisar treinamentos programados na unidade"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Treinamento Web -> Consulta -> Consulta Cronograma de Treinamento).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

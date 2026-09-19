@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Avaliação de Eficácia:.",
+  "inputs": [
+    {
+      "id": "numeroMatricula",
+      "name": "numeroMatricula",
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "nomeEmpregado",
+      "name": "nomeEmpregado",
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "numeroTreinamento",
+      "name": "numeroTreinamento",
+      "tipo": "text",
+      "rotulo": "Treinamento",
+      "label": "Treinamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "nomeTreinamento",
+      "name": "nomeTreinamento",
+      "tipo": "text",
+      "rotulo": "Treinamento",
+      "label": "Treinamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmBTW055",
+      "name": "frmBTW055",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/btw/BTW055AvalEficac.jsp",
+  "codigo": "BTWV055"
+}
