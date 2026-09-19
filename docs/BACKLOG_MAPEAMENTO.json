@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:42:21.645Z",
+    "gerado_em": "2026-09-19T08:48:06.165Z",
     "total": 596,
-    "completos": 423,
-    "pendentes": 173,
+    "completos": 426,
+    "pendentes": 170,
     "por_classe_seguranca": {
-      "indeterminado": 233,
-      "candidata_leitura": 191,
+      "indeterminado": 232,
+      "candidata_leitura": 192,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 75,
-      "sem_campos_detectados": 11,
+      "ficha_nao_validada": 72,
+      "sem_campos_detectados": 8,
       "ficha_stub": 7
     }
   },
@@ -7883,20 +7883,17 @@
       "nome": "Relatórios Gerenciais",
       "vertical": "KRT",
       "url_zul": "/prt/krt/KRT037RelatoriosGerenciais.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 804,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1161,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "KRTV003",
@@ -7942,20 +7939,17 @@
       "nome": "Relatórios Gerenciais",
       "vertical": "KRT",
       "url_zul": "https://www.saneago.com.br/prt/krt/KRTV037.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 807,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1211,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "LEN110",
@@ -8049,20 +8043,20 @@
       "nome": "Interrupção de Energia",
       "vertical": "LEN",
       "url_zul": "https://www.saneago.com.br/prt/len/LENV145.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 810,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2368,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "LENV146",

@@ -467,6 +467,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `JAJV044` | Relatório de Contas Com o Escritório | Botões: `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de relação de contas de cobrança vinculadas a escritórios jurídicos com botões Consultar, Imprimir e Cancelar.
 - `JAJV060` | Rodízio de Processos | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e acompanhamento de rodízio de processos judiciais e guias iniciais por escritório e cidade com botões Consultar e Cancelar.
 - `KRT029` | Análise e Encaminhamento | Botões: nenhum | `somente_leitura` | Consulta e listagem de processos de AVTO por etapa para análise e encaminhamento sem botões de escrita.
+- `KRT037` | Relatórios Gerenciais | Botões: nenhum | `somente_leitura` | Emissão e consulta de relatórios gerenciais de AVTO por opção de relatório sem botões de escrita.
+- `KRTV037` | Relatórios Gerenciais | Botões: nenhum | `somente_leitura` | Emissão e consulta de relatórios gerenciais de AVTO por opção de relatório sem botões de escrita.
+- `LENV145` | Interrupção de Energia | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta de registros e interrupções de energia elétrica por cidade, conta ou protocolo sem botões de escrita.
 
 
 

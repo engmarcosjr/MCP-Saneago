@@ -1,0 +1,299 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Cadastro de Interrupção de Energia Elétrica",
+  "inputs": [
+    {
+      "id": "cHfDf3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "cHfDh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfD10",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta de Energia",
+      "label": "Conta de Energia",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 13
+    },
+    {
+      "id": "cHfD20-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta de Energia",
+      "label": "Conta de Energia",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDk0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Protocolo CELG/CHESP",
+      "label": "Protocolo CELG/CHESP",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 15
+    },
+    {
+      "id": "cHfDg3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Operacional",
+      "label": "Unidade Operacional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "cHfDt0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Operacional",
+      "label": "Unidade Operacional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDc1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data / Hora Inicial",
+      "label": "Data / Hora Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDh1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data / Hora Final",
+      "label": "Data / Hora Final",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDm1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Impacto",
+      "label": "Tipo de Impacto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDr1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Vazão da UO (l/s)",
+      "label": "Vazão da UO (l/s)",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "cHfDw1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Observação",
+      "label": "Observação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 100
+    },
+    {
+      "id": "cHfDh3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 8
+    },
+    {
+      "id": "cHfD32-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDn2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Data Inclusão",
+      "label": "Data Inclusão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cHfDw2-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Data Inclusão",
+      "label": "Data Inclusão",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "cHfDh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfD20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfD32-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDy2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cHfD13",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "cHfDh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfD20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfD32-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cHfDy2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cHfD13",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/len/LEN145CadastroInterrupcaoEnergia.zul",
+  "codigo": "LENV145"
+}

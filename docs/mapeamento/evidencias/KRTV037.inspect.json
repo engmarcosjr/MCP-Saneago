@@ -1,0 +1,38 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Relatórios Gerenciais",
+  "inputs": [
+    {
+      "id": "hVFGc-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Opção",
+      "label": "Opção",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hVFGc-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hVFGc-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/krt/KRT037RelatoriosGerenciais.zul",
+  "codigo": "KRTV037"
+}

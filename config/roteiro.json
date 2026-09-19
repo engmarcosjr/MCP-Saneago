@@ -20679,27 +20679,33 @@
   "KRT037": {
     "codigo": "KRT037",
     "nome": "Relatórios Gerenciais",
-    "url_zul": "/prt/krt/KRT037RelatoriosGerenciais.zul",
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT037RelatoriosGerenciais.zul",
     "categoria": "Controle de Processos e AVTO",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a relatórios gerenciais.",
+    "o_que_faz": "Permite consultar e emitir relatórios gerenciais de processos de AVTO (Autorização de Viabilidade Técnica e Operacional) por opção selecionada.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Opção",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Relatórios Gerenciais",
+        "intencao": "Consultar relatórios gerenciais de AVTO no KRT037",
         "passos": [
           "Abrir a aplicação KRT037",
-          "Preencher campos na tela inicial"
+          "Selecionar a opção de relatório desejada"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de relatórios gerenciais",
-      "acessar a app KRT037",
-      "consultar relatórios gerenciais"
+      "consultar relatórios gerenciais de AVTO no KRT037",
+      "emitir relatório gerencial de processos de viabilidade técnica",
+      "acessar opções de relatórios gerenciais de AVTO"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "KRTV003": {
     "codigo": "KRTV003",
@@ -20821,27 +20827,33 @@
   "KRTV037": {
     "codigo": "KRTV037",
     "nome": "Relatórios Gerenciais",
-    "url_zul": "https://prod.saneago.com.br/prt/krt/KRTV037.zul",
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT037RelatoriosGerenciais.zul",
     "categoria": "Controle de Processos e AVTO",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a relatórios gerenciais.",
+    "o_que_faz": "Permite consultar e emitir relatórios gerenciais de processos de AVTO (Autorização de Viabilidade Técnica e Operacional) por opção selecionada.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Opção",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Relatórios Gerenciais",
+        "intencao": "Consultar relatórios gerenciais de AVTO no KRTV037",
         "passos": [
           "Abrir a aplicação KRTV037",
-          "Preencher campos na tela inicial"
+          "Selecionar a opção de relatório desejada"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de relatórios gerenciais",
-      "acessar a app KRTV037",
-      "consultar relatórios gerenciais"
+      "consultar relatórios gerenciais de AVTO no KRTV037",
+      "emitir relatório gerencial de processos de viabilidade técnica",
+      "acessar opções de relatórios gerenciais de AVTO"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "LENV110": {
     "codigo": "LENV110",
@@ -20892,27 +20904,93 @@
   "LENV145": {
     "codigo": "LENV145",
     "nome": "Interrupção de Energia",
-    "url_zul": "https://prod.saneago.com.br/prt/len/LENV145.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a interrupção de energia.",
+    "url_zul": "https://www.saneago.com.br/prt/len/LEN145CadastroInterrupcaoEnergia.zul",
+    "categoria": "Gestão Energética / Cadastro",
+    "o_que_faz": "Permite consultar interrupções no fornecimento de energia elétrica e histórico de ocorrências por cidade, conta de energia ou protocolo CELG/CHESP.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Conta de Energia",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Protocolo CELG/CHESP",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Unidade Operacional",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data / Hora Inicial",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data / Hora Final",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Tipo de Impacto",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "rotulo": "Vazão da UO (l/s)",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Observação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Matrícula",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data Inclusão",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "cHfDy2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "cHfD13"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Interrupção de Energia",
+        "intencao": "Consultar interrupções de energia elétrica no LENV145",
         "passos": [
           "Abrir a aplicação LENV145",
-          "Preencher campos na tela inicial"
+          "Preencher Cidade, Conta de Energia ou Protocolo CELG/CHESP",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de interrupção de energia",
-      "acessar a app LENV145",
-      "consultar interrupção de energia"
+      "consultar interrupções de energia elétrica no LENV145",
+      "pesquisar ocorrências de falta de energia por cidade ou conta",
+      "verificar protocolos de atendimento CELG/CHESP e impactos operacionais"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "LENV146": {
     "codigo": "LENV146",

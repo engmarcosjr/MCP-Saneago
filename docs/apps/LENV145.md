@@ -1,27 +1,47 @@
 # LENV145 - Interrupção de Energia
 
 ## Categoria
-Outros / Administrativo
+Gestão Energética / Cadastro
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a interrupção de energia.
+Permite consultar interrupções no fornecimento de energia elétrica e histórico de ocorrências por cidade, conta de energia ou protocolo CELG/CHESP.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/len/LEN145CadastroInterrupcaoEnergia.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (`text` / editável): Código e descrição da cidade.
+- **Conta de Energia** (`text` / editável): Código e descrição da conta de energia elétrica.
+- **Protocolo CELG/CHESP** (`text` / editável): Número de protocolo na concessionária de energia.
+- **Unidade Operacional** (`text` / readonly): Código e nome da unidade operacional (UO).
+- **Data / Hora Inicial** (`date` / editável): Data e hora inicial da ocorrência de interrupção.
+- **Data / Hora Final** (`date` / readonly): Data e hora final da interrupção de energia.
+- **Tipo de Impacto** (`combobox` / readonly): Classificação do impacto da interrupção na operação.
+- **Vazão da UO (l/s)** (`text` / readonly): Vazão operacional da unidade em litros por segundo.
+- **Observação** (`text` / readonly): Observações e detalhes complementares sobre o evento.
+- **Matrícula** (`text` / readonly): Matrícula e nome do responsável pelo registro.
+- **Data Inclusão** (`text` / readonly): Data de inclusão do registro no sistema com opção de filtro.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Realiza a pesquisa das interrupções de energia conforme os filtros informados.
+- **Cancelar**: Limpa os campos da tela e reinicia os filtros de consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LENV145 (Interrupção de Energia)"
-- "Acessar o aplicativo de interrupção de energia"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Acionadores auxiliares de busca/combobox/calendário pareados aos campos de entrada.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LENV145`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+Nenhuma coluna identificada na tela inicial.
+
+## Perguntas que Responde
+- "consultar interrupções de energia elétrica no LENV145"
+- "pesquisar ocorrências de falta de energia por cidade ou conta"
+- "verificar protocolos de atendimento CELG/CHESP e impactos operacionais"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Gestão Energética -> Cadastro -> Interrupção de Energia).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
