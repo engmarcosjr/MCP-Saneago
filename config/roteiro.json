@@ -18472,27 +18472,113 @@
   "HFIV033": {
     "codigo": "HFIV033",
     "nome": "Registrar Parecer Transferências de Bens",
-    "url_zul": "https://prod.saneago.com.br/prt/hfi/HFIV033.zul",
-    "categoria": "Patrimônio e Bens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registrar parecer transferências de bens.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
+    "categoria": "Contabilidade Patrimonial / Patrimônio e Bens",
+    "o_que_faz": "Permite registrar pareceres e efetivar ou tramitar transferências de bens patrimoniais entre unidades organizacionais (origem e destino).",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data da Solicitação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data da Efetivação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Parecer",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "rotulo": "U.O. - Destino",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "rotulo": "Observação",
+        "tipo": "textarea",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Salvar",
+        "id": "y22Fo2"
+      },
+      {
+        "label": "Salvar e Finalizar",
+        "id": "y22Fp2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "y22Fq2"
+      },
+      {
+        "label": "Adicionar",
+        "id": "y22Fn3"
+      },
+      {
+        "label": "Excluir",
+        "id": "y22Fo3"
+      },
+      {
+        "label": "Close",
+        "id": "y22Fn4-close"
+      },
+      {
+        "label": "OK",
+        "id": "y22Ft4"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Registrar Parecer Transferências de Bens",
+        "intencao": "Registrar parecer de transferência de bens no HFIV033",
         "passos": [
           "Abrir a aplicação HFIV033",
-          "Preencher campos na tela inicial"
+          "Selecionar Parecer e U.O. Destino",
+          "Informar Observação",
+          "Clicar em Salvar ou Salvar e Finalizar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registrar parecer transferências de bens",
-      "acessar a app HFIV033",
-      "consultar registrar parecer transferências de bens"
+      "registrar parecer de transferência de bens no HFIV033",
+      "parecer técnico sobre transferência patrimonial"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HFIV034": {
     "codigo": "HFIV034",
@@ -18827,42 +18913,47 @@
   "HVW031": {
     "codigo": "HVW031",
     "nome": "Impressão Termo",
-    "url_zul": "/prt/hvw/HVW031ReimpressaoTermo.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW031ReimpressaoTermo.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a impressão termo.",
+    "o_que_faz": "Permite reimprimir termos de responsabilidade de cartão viagem de empregados da Saneago.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "rotulo": "Empregado",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Relatório",
-        "id": "vMqPz"
+        "id": "eL9Uz"
       },
       {
         "label": "Cancelar",
-        "id": "vMqP_0"
+        "id": "eL9U_0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Impressão Termo",
+        "intencao": "Reimprimir termo de responsabilidade de cartão viagem no HVW031",
         "passos": [
           "Abrir a aplicação HVW031",
-          "Preencher campos na tela inicial"
+          "Informar matrícula do Empregado",
+          "Clicar em Relatório"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de impressão termo",
-      "acessar a app HVW031",
-      "consultar impressão termo"
+      "reimprimir termo de responsabilidade de cartão viagem no HVW031",
+      "imprimir termo de entrega de cartão viagem para empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HVW034": {
     "codigo": "HVW034",
@@ -19327,27 +19418,82 @@
   "HVWV018": {
     "codigo": "HVWV018",
     "nome": "Manter Empregados com Cartão Viagem",
-    "url_zul": "https://prod.saneago.com.br/prt/hvw/HVWV018.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW018CartaoViagemEmpregado.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a manter empregados com cartão viagem.",
+    "o_que_faz": "Permite consultar e manter dados de cartões de viagem de empregados, incluindo limites, bancos, justificativas e cancelamentos.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Banco",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "rotulo": "Nº Cartão",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "limite do cartão",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Justificativa do Cancelamento",
+        "tipo": "textarea",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data de vencimento",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data cancelamento",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data cancelamento",
+        "tipo": "checkbox",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "oW0Ed1"
+      },
+      {
+        "label": "Cancelar",
+        "id": "oW0Eg1"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Manter Empregados com Cartão Viagem",
+        "intencao": "Consultar cartões de viagem do empregado no HVWV018",
         "passos": [
           "Abrir a aplicação HVWV018",
-          "Preencher campos na tela inicial"
+          "Informar matrícula do Empregado",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de manter empregados com cartão viagem",
-      "acessar a app HVWV018",
-      "consultar manter empregados com cartão viagem"
+      "consultar cartões de viagem do empregado no HVWV018",
+      "verificar limites e cancelamento de cartão viagem"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HVWV019": {
     "codigo": "HVWV019",

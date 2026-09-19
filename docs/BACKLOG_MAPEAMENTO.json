@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:19:49.408Z",
+    "gerado_em": "2026-09-19T08:26:19.318Z",
     "total": 596,
-    "completos": 414,
-    "pendentes": 182,
+    "completos": 417,
+    "pendentes": 179,
     "por_classe_seguranca": {
-      "indeterminado": 241,
-      "candidata_leitura": 184,
-      "possui_escrita": 163,
+      "indeterminado": 238,
+      "candidata_leitura": 186,
+      "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 84,
-      "sem_campos_detectados": 17,
-      "ficha_stub": 10
+      "ficha_nao_validada": 81,
+      "sem_campos_detectados": 15,
+      "ficha_stub": 9
     }
   },
   "apps": [
@@ -7110,20 +7110,25 @@
       "nome": "Registrar Parecer Transferências de Bens",
       "vertical": "HFI",
       "url_zul": "https://www.saneago.com.br/prt/hfi/HFIV033.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 873,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Registro e Parecer (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2146,
+      "botoes": [
+        "Salvar",
+        "Salvar e Finalizar",
+        "Cancelar",
+        "Adicionar",
+        "Excluir",
+        "Close",
+        "OK"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "botões de escrita: Salvar, Salvar e Finalizar, Excluir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HFIV034",
@@ -7285,23 +7290,20 @@
       "nome": "Impressão Termo",
       "vertical": "HVW",
       "url_zul": "/prt/hvw/HVW031ReimpressaoTermo.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 793,
+      "tipo_declarado": "Impressão e Relatório (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1133,
       "botoes": [
         "Relatório",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Relatório",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HVW034",
@@ -7417,20 +7419,20 @@
       "nome": "Manter Empregados com Cartão Viagem",
       "vertical": "HVW",
       "url_zul": "https://www.saneago.com.br/prt/hvw/HVWV018.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 866,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Consulta e Gestão (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1838,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HVWV019",

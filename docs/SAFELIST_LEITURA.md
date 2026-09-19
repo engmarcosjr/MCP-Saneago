@@ -458,6 +458,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `HFI033` | Registrar Parecer Transferências de Bens | Botões: `Salvar`, `Salvar e Finalizar`, `Cancelar`, `Adicionar`, `Excluir`, `Close`, `OK` | `possui_escrita` | Registro de parecer de transferência de bens patrimoniais com botões de escrita Salvar, Salvar e Finalizar, Adicionar e Excluir.
 - `HFIV031` | Solicitar Transferência Bem Patrimonial | Botões: `Consultar`, `Novo`, `Cancelar` | `possui_escrita` | Solicitação de transferência de bem patrimonial com botão de ação Novo e consulta por número de transferência.
 - `HFIV032` | Acompanhar Transf. de Bens Patrimoniais | Botões: `Consultar`, `Novo`, `Cancelar` | `possui_escrita` | Acompanhamento e consulta de transferência de bens patrimoniais com botão Novo para criação de solicitação.
+- `HFIV033` | Registrar Parecer Transferências de Bens | Botões: `Salvar`, `Salvar e Finalizar`, `Cancelar`, `Adicionar`, `Excluir`, `Close`, `OK` | `possui_escrita` | Registro de parecer de transferência de bens patrimoniais com botões de escrita Salvar, Salvar e Finalizar, Adicionar e Excluir.
+- `HVW031` | Impressão Termo | Botões: `Relatório`, `Cancelar` | `somente_leitura` | Reimpressão e emissão de termo de compromisso de viagem com botões Relatório e Cancelar.
+- `HVWV018` | Manter Empregados com Cartão Viagem | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e acompanhamento de cartões de viagem de empregados com botões Consultar e Cancelar.
 
 
 

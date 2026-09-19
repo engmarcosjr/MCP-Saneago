@@ -1,0 +1,208 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Cartão de Viagem do Empregado",
+  "inputs": [
+    {
+      "id": "oW0Ek2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "oW0Ei-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oW0E90-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Banco",
+      "label": "Banco",
+      "valor_atual": "BANCO BRADESCO S/A",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oW0Ee0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Cartão",
+      "label": "Nº Cartão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 19
+    },
+    {
+      "id": "oW0Ej0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "limite do cartão",
+      "label": "limite do cartão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 13
+    },
+    {
+      "id": "oW0Eo0",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Justificativa do Cancelamento",
+      "label": "Justificativa do Cancelamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oW0Et0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de vencimento",
+      "label": "Data de vencimento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "oW0Ey0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data cancelamento",
+      "label": "Data cancelamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oW0E11-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Data cancelamento",
+      "label": "Data cancelamento",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oW0Ei-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0E90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Et0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Ey0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Ed1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oW0Eg1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oW0Eo1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oW0Ei-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0E90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Et0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Ey0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oW0Ed1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oW0Eg1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oW0Eo1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Via",
+    "Cartão",
+    "Justificativa do Cancelamento",
+    "Limite do Cartão",
+    "Data Validade",
+    "Banco",
+    "Bloqueado",
+    "Data Cancelamento",
+    "Responsável"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hvw/HVW018CartaoViagemEmpregado.zul",
+  "codigo": "HVWV018"
+}

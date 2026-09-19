@@ -1,0 +1,298 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "y22Fg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fo-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da Solicitação",
+      "label": "Data da Solicitação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fk4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável - Origem",
+      "label": "Responsável - Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fy-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável - Origem",
+      "label": "Responsável - Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fj4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável - Destino",
+      "label": "Responsável - Destino",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fm0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável - Destino",
+      "label": "Responsável - Destino",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fk2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da Efetivação",
+      "label": "Data da Efetivação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fc3-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Parecer",
+      "label": "Parecer",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "y22Fj3-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "U.O. - Destino",
+      "label": "U.O. - Destino",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "y22F84",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Observação",
+      "label": "Observação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "y22Fo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fk2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fo2",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fp2",
+      "name": null,
+      "label": "Salvar e Finalizar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fq2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fc3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fj3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fn3",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fo3",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fr3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Fn4-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Fn4-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Ft4",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "y22Fo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fk2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fo2",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fp2",
+      "name": null,
+      "label": "Salvar e Finalizar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fq2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fc3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fj3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "y22Fn3",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fo3",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "y22Fr3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Fn4-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Fn4-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "y22Ft4",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nº Inventário",
+    "Nº Patrimônio",
+    "Descrição",
+    "UO Destino",
+    "Parecer"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
+  "codigo": "HFIV033"
+}

@@ -4,24 +4,47 @@
 Prestação de Contas e Viagens
 
 ## Tipo
-Leitura (Livre)
+Consulta e Gestão (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a manter empregados com cartão viagem.
+Permite consultar e manter dados de cartões de viagem de empregados, incluindo limites, bancos, justificativas e cancelamentos.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/hvw/HVW018CartaoViagemEmpregado.zul`
+
+## Campos e Filtros da Tela
+- **Empregado** (`text` / editável): Matrícula e nome do empregado.
+- **Banco** (`combobox` / readonly): Instituição bancária do cartão de viagem.
+- **Nº Cartão** (`text` / editável): Número do cartão de viagem do empregado.
+- **limite do cartão** (`text` / editável): Valor do limite de crédito do cartão.
+- **Justificativa do Cancelamento** (`textarea` / editável): Justificativa para cancelamento do cartão.
+- **Data de vencimento** (`date` / editável): Data de vencimento do cartão de viagem.
+- **Data cancelamento** (`date` / editável): Data de cancelamento do cartão de viagem.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de cartões de viagem do empregado pelos filtros informados.
+- **Cancelar**: Cancela a operação e limpa os campos da tela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela HVWV018 (Manter Empregados com Cartão Viagem)"
-- "Acessar o aplicativo de manter empregados com cartão viagem"
+### Botões Ignorados
+- `Sem Rotulo` (a/submit): Componentes técnicos de seleção de datas, combobox e busca de empregados.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `HVWV018`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Via
+- Cartão
+- Justificativa do Cancelamento
+- Limite do Cartão
+- Data Validade
+- Banco
+- Bloqueado
+- Data Cancelamento
+- Responsável
+
+## Perguntas que Responde
+- "consultar cartões de viagem do empregado no HVWV018"
+- "verificar limites e cancelamento de cartão viagem"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu corporativo).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
