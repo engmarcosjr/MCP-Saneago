@@ -401,3 +401,5 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `GCAV003` | Melhorias Previstas | `Consultar`, `Nova Solicitação`, `Limpar` | `possui_escrita` | Tela de cadastro e consulta de solicitações de melhoria com botão Nova Solicitação.
 - `GPMV001` | Manobra de Registros | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e visualização de manobras de registros e abertura de ocorrências sem botões de escrita.
 - `GPMV002` | Manobra | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e visualização de manobras de registros e abertura de ocorrências sem botões de escrita.
+- `GPMV003` | Seleciona Valvula | nenhum | `somente_leitura` | Consulta e seleção de válvulas para manobras sem botões de escrita.
+- `GPMV006` | Área Afetada | nenhum | `somente_leitura` | Consulta de áreas afetadas por manobras de registros sem botões de escrita.

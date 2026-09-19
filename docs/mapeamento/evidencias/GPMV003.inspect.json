@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Selecionar\t Valvulas:.",
+  "inputs": [
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "GPM 003",
+      "label": "GPM 003",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "GPM 003",
+      "label": "GPM 003",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 35
+    },
+    {
+      "id": "codigoBairro",
+      "name": "codigoBairro",
+      "tipo": "text",
+      "rotulo": "GPM 003",
+      "label": "GPM 003",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeBairro",
+      "name": "nomeBairro",
+      "tipo": "text",
+      "rotulo": "GPM 003",
+      "label": "GPM 003",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 35
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmGPM003",
+      "name": "frmGPM003",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM003selManobra.jsp",
+  "codigo": "GPMV003"
+}

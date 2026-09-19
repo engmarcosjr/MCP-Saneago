@@ -13,7 +13,7 @@ Permite consultar o ranking e simular valores referentes ao Plano de Demissão V
 - `https://www.saneago.com.br/prt/bpa/BPA373RankingPDV.zul`
 
 ## Campos e Filtros da Tela
-Nenhum campo interativo detectado na tela inicial.
+Nenhum campo interativo na tela inicial.
 
 ## Botões Disponíveis
 - **Simular valor do PDV**: Executa a simulação de valores do PDV.

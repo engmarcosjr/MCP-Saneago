@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:53:50.354Z",
+    "gerado_em": "2026-09-19T06:03:03.022Z",
     "total": 596,
-    "completos": 361,
-    "pendentes": 235,
+    "completos": 364,
+    "pendentes": 232,
     "por_classe_seguranca": {
       "indeterminado": 273,
       "candidata_leitura": 156,
@@ -13,9 +13,9 @@
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 133,
-      "ficha_stub": 42,
-      "sem_campos_detectados": 60
+      "ficha_nao_validada": 131,
+      "ficha_stub": 40,
+      "sem_campos_detectados": 57
     }
   },
   "apps": [
@@ -962,20 +962,18 @@
       "url_zul": "https://www.saneago.com.br/prt/bpa/BPAV373.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 960,
+      "bytes_ficha": 950,
       "botoes": [
         "Simular valor do PDV",
         "OK"
       ],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados"
-      ],
-      "completo": false,
-      "tentativas": 4,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 5,
       "aposentada": false,
-      "prioridade": 8990
+      "prioridade": 9000
     },
     {
       "codigo": "BPAV433",
@@ -6601,21 +6599,17 @@
       "nome": "Seleciona Valvula",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV003.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 782,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1051,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV005",
@@ -6642,21 +6636,17 @@
       "nome": "Área Afetada",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV006.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 766,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 966,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV007",

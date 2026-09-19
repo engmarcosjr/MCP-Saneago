@@ -6146,11 +6146,11 @@
     "botoes": [
       {
         "label": "Simular valor do PDV",
-        "id": "aGzL30"
+        "id": "kEyB30"
       },
       {
         "label": "OK",
-        "id": "aGzLk0"
+        "id": "kEyBk0"
       }
     ],
     "operacoes": [
@@ -11983,27 +11983,47 @@
   "GPMV003": {
     "codigo": "GPMV003",
     "nome": "Seleciona Valvula",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV003.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a seleciona valvula.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM003selManobra.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar e selecionar válvulas para manobra a partir de parâmetros de cidade e bairro no módulo de manobras de registros.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "GPM 003",
+        "id": "codigoCidade",
+        "tipo": "text"
+      },
+      {
+        "label": "GPM 003",
+        "id": "nomeCidade",
+        "tipo": "text"
+      },
+      {
+        "label": "GPM 003",
+        "id": "codigoBairro",
+        "tipo": "text"
+      },
+      {
+        "label": "GPM 003",
+        "id": "nomeBairro",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Seleciona Valvula",
+        "intencao": "Consultar e selecionar válvulas de manobra no GPMV003",
         "passos": [
           "Abrir a aplicação GPMV003",
-          "Preencher campos na tela inicial"
+          "Preencher código da cidade ou bairro"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de seleciona valvula",
-      "acessar a app GPMV003",
-      "consultar seleciona valvula"
+      "consultar e selecionar válvulas de manobra no GPMV003",
+      "pesquisar válvulas por cidade e bairro no módulo de manobras"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV005": {
     "codigo": "GPMV005",
@@ -12033,27 +12053,32 @@
   "GPMV006": {
     "codigo": "GPMV006",
     "nome": "Área Afetada",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV006.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a área afetada.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM006conAreaAfe.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar informações das áreas afetadas por manobras de registros a partir do código da manobra.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "GPM 006",
+        "id": "codigoMnbr",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Área Afetada",
+        "intencao": "Consultar áreas afetadas pela manobra no GPMV006",
         "passos": [
           "Abrir a aplicação GPMV006",
-          "Preencher campos na tela inicial"
+          "Visualizar áreas afetadas pela manobra"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de área afetada",
-      "acessar a app GPMV006",
-      "consultar área afetada"
+      "consultar áreas afetadas pela manobra no GPMV006",
+      "pesquisar áreas impactadas por manobras de registros"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV007": {
     "codigo": "GPMV007",

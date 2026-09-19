@@ -1,27 +1,32 @@
 # GPMV003 - Seleciona Valvula
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a seleciona valvula.
+Permite consultar e selecionar válvulas para manobra a partir de parâmetros de cidade e bairro no módulo de manobras de registros.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM003selManobra.jsp`
+
+## Campos e Filtros da Tela
+- **GPM 003** (`text` / editável): Código e nome da cidade, código e nome do bairro para filtragem de válvulas de manobra.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV003 (Seleciona Valvula)"
-- "Acessar o aplicativo de seleciona valvula"
+## Colunas do Resultado
+Nenhuma grade de resultados acessível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV003`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar e selecionar válvulas de manobra no GPMV003"
+- "pesquisar válvulas por cidade e bairro no módulo de manobras"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Consulta -> Seleciona Valvula).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
