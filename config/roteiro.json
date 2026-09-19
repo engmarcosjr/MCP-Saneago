@@ -29749,42 +29749,48 @@
   "MTG001": {
     "codigo": "MTG001",
     "nome": "Capturar Remessa",
-    "url_zul": "/prt/mtg/MTG001CapturarRemessa.zul",
-    "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a capturar remessa.",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul",
+    "categoria": "Transmissão e Recepção de Arquivos / Remessas",
+    "o_que_faz": "Permite consultar e capturar arquivos de remessa por distrito no sistema de transmissão e recepção de arquivos.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Distrito",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "tTIOz"
+        "id": "mDVVz"
       },
       {
         "label": "Cancelar",
-        "id": "tTIO_0"
+        "id": "mDVV_0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Capturar Remessa",
+        "intencao": "Consultar arquivos de remessa no MTG001",
         "passos": [
           "Abrir a aplicação MTG001",
-          "Preencher campos na tela inicial"
+          "Informar o Distrito",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de capturar remessa",
-      "acessar a app MTG001",
-      "consultar capturar remessa"
+      "consultar remessas no MTG001",
+      "capturar remessa por distrito no MTG001",
+      "pesquisar arquivos de remessa disponíveis"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MTG006": {
     "codigo": "MTG006",
@@ -30134,42 +30140,48 @@
   "MTGV001": {
     "codigo": "MTGV001",
     "nome": "Capturar Remessa",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTGV001.zul",
-    "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a capturar remessa.",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul",
+    "categoria": "Transmissão e Recepção de Arquivos / Remessas",
+    "o_que_faz": "Permite consultar e capturar arquivos de remessa por distrito no sistema de transmissão e recepção de arquivos.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Distrito",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "kZRWz"
+        "id": "p38Oz"
       },
       {
         "label": "Cancelar",
-        "id": "kZRW_0"
+        "id": "p38O_0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Capturar Remessa",
+        "intencao": "Consultar arquivos de remessa no MTGV001",
         "passos": [
           "Abrir a aplicação MTGV001",
-          "Preencher campos na tela inicial"
+          "Informar o Distrito",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de capturar remessa",
-      "acessar a app MTGV001",
-      "consultar capturar remessa"
+      "consultar remessas no MTGV001",
+      "capturar remessa por distrito no MTGV001",
+      "pesquisar arquivos de remessa disponíveis"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MTGV002": {
     "codigo": "MTGV002",

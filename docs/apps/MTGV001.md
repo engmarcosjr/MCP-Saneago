@@ -1,28 +1,42 @@
 # MTGV001 - Capturar Remessa
 
 ## Categoria
-Financeiro, Tesouraria e Remessas
+Transmissão e Recepção de Arquivos / Remessas
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a capturar remessa.
+Permite consultar e capturar arquivos de remessa por distrito no sistema de transmissão e recepção de arquivos da Saneago.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul`
+
+## Campos e Filtros da Tela
+- **Distrito** (`text` / editável): Código ou identificador do distrito.
+- **Distrito** (`text` / readonly): Descrição e seleção do distrito.
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `kZRWz`)
-- **Cancelar** (ID ZK: `kZRW_0`)
+- **Consultar**: Executa a busca de arquivos de remessa para o distrito informado.
+- **Cancelar**: Limpa os filtros e reinicia a consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MTGV001 (Capturar Remessa)"
-- "Acessar o aplicativo de capturar remessa"
+### Botões Ignorados
+- `Sem Rotulo` (gatilho de dropdown/combobox ZK).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MTGV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Data/Hora
+- Tamanho
+- Tipo
+- Nome
+- Ação
+
+## Perguntas que Responde
+- "consultar remessas no MTGV001"
+- "capturar remessa por distrito no MTGV001"
+- "pesquisar arquivos de remessa disponíveis"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via Transmissao Rec.Arquivos -> Remessas -> Capturar Remessa).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

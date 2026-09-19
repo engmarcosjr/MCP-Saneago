@@ -478,6 +478,8 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `MGOV050` | Painel Estatístico Ouvidoria | Botões: nenhum | `bloqueada` | Aplicação não carregou o frame no portal corporativo para o perfil atual.
 - `MSI001` | Exportar Contatos | Botões: `Ver localização no Mapa` | `somente_leitura` | Visualização de organograma e localização no mapa em Exportar Contatos sem botões de escrita.
 - `MSI070` | Registrar Voto | Botões: nenhum | `sem_campos_confirmado` | Tela de registro de voto corporativo carregou sem campos de entrada ou botões de ação na tela inicial.
+- `MTG001` | Capturar Remessa | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de arquivos de remessa para captura por distrito sem botões de escrita.
+- `MTGV001` | Capturar Remessa | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de arquivos de remessa para captura por distrito sem botões de escrita.
 
 
 

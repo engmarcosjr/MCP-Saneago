@@ -1,0 +1,79 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Capturar Remessa",
+  "inputs": [
+    {
+      "id": "mDVVd",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "mDVVf-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "mDVVf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mDVVz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "mDVV_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "mDVVf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mDVVz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "mDVV_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Data/Hora",
+    "Tamanho",
+    "Tipo",
+    "Nome",
+    "Ação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mtg/MTG001CapturarRemessa.zul",
+  "codigo": "MTG001"
+}

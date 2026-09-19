@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:18:44.470Z",
+    "gerado_em": "2026-09-19T09:27:19.963Z",
     "total": 596,
-    "completos": 432,
-    "pendentes": 164,
+    "completos": 434,
+    "pendentes": 162,
     "por_classe_seguranca": {
-      "indeterminado": 229,
-      "candidata_leitura": 195,
+      "indeterminado": 227,
+      "candidata_leitura": 197,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 80,
-      "ficha_nao_validada": 69,
+      "ficha_nao_validada": 67,
       "sem_campos_detectados": 6,
-      "ficha_stub": 3
+      "ficha_stub": 1
     }
   },
   "apps": [
@@ -9972,7 +9972,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -11010,23 +11010,20 @@
       "nome": "Capturar Remessa",
       "vertical": "MTG",
       "url_zul": "/prt/mtg/MTG001CapturarRemessa.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 794,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1250,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MTG002",
@@ -11253,23 +11250,20 @@
       "nome": "Capturar Remessa",
       "vertical": "MTG",
       "url_zul": "https://www.saneago.com.br/prt/mtg/MTGV001.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 797,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1253,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MTGV002",
