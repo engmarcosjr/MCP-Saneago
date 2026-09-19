@@ -1,0 +1,296 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Manutenção Cartão",
+  "inputs": [
+    {
+      "id": "d8uLp3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "d8uLf-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uLq3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uL10-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uL01",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Remessa",
+      "label": "Nº Remessa",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 8
+    },
+    {
+      "id": "d8uL41",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Cartão",
+      "label": "Nº Cartão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 19
+    },
+    {
+      "id": "d8uL81",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Via",
+      "label": "Via",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uLd1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Emissão",
+      "label": "Data de Emissão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "d8uLh1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data validade",
+      "label": "Data validade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "d8uLl1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data entrega",
+      "label": "Data entrega",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "d8uLq1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Entregue por",
+      "label": "Entregue por",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uLs1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Entregue por",
+      "label": "Entregue por",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uLx1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cancelado por",
+      "label": "Cancelado por",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uLz1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cancelado por",
+      "label": "Cancelado por",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d8uL32-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data cancelamento",
+      "label": "Data cancelamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "d8uLf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uL10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLd1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uL32-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLi2",
+      "name": null,
+      "tipo": "button",
+      "label": "Consultar"
+    },
+    {
+      "id": "d8uLm2",
+      "name": null,
+      "tipo": "button",
+      "label": "Cancelar"
+    },
+    {
+      "id": "d8uLu2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "d8uLf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uL10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLd1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uL32-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d8uLi2",
+      "name": null,
+      "tipo": "button",
+      "label": "Consultar"
+    },
+    {
+      "id": "d8uLm2",
+      "name": null,
+      "tipo": "button",
+      "label": "Cancelar"
+    },
+    {
+      "id": "d8uLu2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Via",
+    "Data Solicitação",
+    "Cartão",
+    "Data Emissão",
+    "Data Validade",
+    "Data Entrega",
+    "Data Cancelamento",
+    "Responsável"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hvw/HVW019ManutencaoCartaoViagem.zul"
+}

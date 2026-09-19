@@ -4425,52 +4425,156 @@
   "JAJ028": {
     "codigo": "JAJ028",
     "nome": "Consulta Judicial",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJ028ConJudicial.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ028ConJudicial.jsp",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta judicial.",
+    "o_que_faz": "Permite consultar processos judiciais da Saneago por código do escritório de advocacia, número de processo novo ou antigo, número da conta do cliente ou situação do processo.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Código do Escritório",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "ou",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Número Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Número Conta",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Situação",
+        "tipo": "select",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Judicial",
+        "intencao": "Consultar processo judicial no JAJ028",
         "passos": [
           "Abrir a aplicação JAJ028",
-          "Preencher campos na tela inicial"
+          "Preencher os filtros de escritório, processo ou conta",
+          "Executar a consulta"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta judicial",
-      "acessar a app JAJ028",
-      "consultar consulta judicial"
+      "consultar processo judicial no JAJ028",
+      "pesquisar processos por escritório ou número da conta",
+      "verificar situação de processos judiciais contenciosos"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJ033": {
     "codigo": "JAJ033",
     "nome": "Agenda Audiência",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a agenda audiência.",
+    "o_que_faz": "Permite consultar e acompanhar a agenda de audiências judiciais por período, escritório de advocacia, comarca, regional e preposto.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Período",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Período",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Código do Escritório",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Preposto",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Preposto",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Agenda Audiência",
+        "intencao": "Consultar agenda de audiências judiciais no JAJ033",
         "passos": [
           "Abrir a aplicação JAJ033",
-          "Preencher campos na tela inicial"
+          "Informar o período e filtros de comarca ou preposto",
+          "Executar a consulta"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de agenda audiência",
-      "acessar a app JAJ033",
-      "consultar agenda audiência"
+      "consultar agenda de audiências judiciais no JAJ033",
+      "pesquisar audiências por período ou comarca",
+      "verificar audiências agendadas por preposto ou escritório"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "LRS013": {
     "codigo": "LRS013",
@@ -13229,27 +13333,113 @@
   "HVWV019": {
     "codigo": "HVWV019",
     "nome": "Manutenção",
-    "url_zul": "https://prod.saneago.com.br/prt/hvw/HVWV019.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW019ManutencaoCartaoViagem.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a manutenção.",
+    "o_que_faz": "Permite consultar e visualizar o histórico de emissão, entrega, cancelamento e manutenção de cartões de viagem corporativos por empregado, unidade de lotação ou número de cartão.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Remessa",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Cartão",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Via",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data de Emissão",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Data validade",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Data entrega",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Entregue por",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Entregue por",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Cancelado por",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Cancelado por",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Data cancelamento",
+        "tipo": "date",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "d8uLi2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "d8uLm2"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Manutenção",
+        "intencao": "Consultar manutenção de cartão de viagem no HVWV019",
         "passos": [
           "Abrir a aplicação HVWV019",
-          "Preencher campos na tela inicial"
+          "Informar matrícula do empregado ou número do cartão",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de manutenção",
-      "acessar a app HVWV019",
-      "consultar manutenção"
+      "consultar manutenção de cartão de viagem no HVWV019",
+      "pesquisar histórico de cartões de viagem por empregado ou número de cartão",
+      "verificar via, validade e situação de entrega ou cancelamento de cartão corporativo"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HVWV031": {
     "codigo": "HVWV031",

@@ -409,3 +409,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `GSIV013` | Pesquisa Geral | `Consultar`, `Cancelar` | `somente_leitura` | Pesquisa geral de solicitações de serviços por filtros e opções de exportação sem botões de escrita.
 - `GSPV102` | Trâmite | `OK`, `Pesquisar`, `Limpar Tela` | `possui_escrita` | Trâmite e movimentação de processos administrativos para unidade de destino com botão OK.
 - `HVWV009` | Conta | `Consultar`, `Cancelar` | `somente_leitura` | Consulta detalhada de prestação de contas de viagens a serviço sem botões de escrita.
+- `HVWV019` | Manutenção | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de histórico e manutenção de cartões corporativos de viagem sem botões de escrita.
+- `JAJ028` | Consulta Judicial | nenhum | `somente_leitura` | Consulta de processos judiciais por escritório, número ou conta sem botões de escrita.
+- `JAJ033` | Agenda Audiência | nenhum | `somente_leitura` | Consulta da agenda de audiências judiciais por período e comarca sem botões de escrita.

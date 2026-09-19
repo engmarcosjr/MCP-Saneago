@@ -1,0 +1,242 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "JAJ - Apoio Jurídico.",
+  "inputs": [
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "19/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "19/10/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoEscritorio",
+      "name": "codigoEscritorio",
+      "tipo": "select",
+      "rotulo": "Código do Escritório",
+      "label": "Código do Escritório",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "",
+          "texto": "Selecione a opção"
+        },
+        {
+          "valor": "4176260",
+          "texto": "4176260 - ACCESS COBRANCA E CONTACT CENT"
+        },
+        {
+          "valor": "3230554",
+          "texto": "3230554 - AFONSO BORGES E BUONADUCE"
+        },
+        {
+          "valor": "3085830",
+          "texto": "3085830 - AMERICO ADVOGADOS E ASSOCIADOS"
+        },
+        {
+          "valor": "3230686",
+          "texto": "3230686 - ARAUJO ORNELAS E ADVOGADOS"
+        },
+        {
+          "valor": "3085821",
+          "texto": "3085821 - BALDUINO & RESENDE ADVOGADOS"
+        },
+        {
+          "valor": "3230465",
+          "texto": "3230465 - BORGES E VIEIRA"
+        },
+        {
+          "valor": "3249433",
+          "texto": "3249433 - BRK AMBIENTAL GOIAS SA"
+        },
+        {
+          "valor": "3191540",
+          "texto": "3191540 - BRZEZINSKI E GOIANINO ADVOGADO"
+        },
+        {
+          "valor": "3039978",
+          "texto": "3039978 - CAMPOS E VALTUILLE ADVOGADOS"
+        },
+        {
+          "valor": "3230678",
+          "texto": "3230678 - CARLOS CAMAROTA ADVOGADOS"
+        },
+        {
+          "valor": "3085848",
+          "texto": "3085848 - CAVALCANTE E LUSTOSA ADVOGADOS"
+        },
+        {
+          "valor": "3228088",
+          "texto": "3228088 - CUNHA SOCIEDADE DE ADVOGADOS"
+        },
+        {
+          "valor": "3230538",
+          "texto": "3230538 - DOURADO ADVOGADOS"
+        },
+        {
+          "valor": "3230694",
+          "texto": "3230694 - ESTEFANIA COLMANETTI"
+        },
+        {
+          "valor": "3230783",
+          "texto": "3230783 - GUALBERTO E BASTOS ADVOGADOS"
+        },
+        {
+          "valor": "3283496",
+          "texto": "3283496 - HOFFMANN ADVOGADOS ASSOCIADOS"
+        },
+        {
+          "valor": "3085856",
+          "texto": "3085856 - IUNES ADVOGADOS ASSOCIADOS"
+        },
+        {
+          "valor": "3231933",
+          "texto": "3231933 - J. BUENO E MANDALITI"
+        },
+        {
+          "valor": "3230708",
+          "texto": "3230708 - JUBÉ ADVOGADOS S/S"
+        },
+        {
+          "valor": "3082385",
+          "texto": "3082385 - KEILA EUSTÁQUIO E ADVOGADOS"
+        },
+        {
+          "valor": "3283500",
+          "texto": "3283500 - LEONIDAS TEIXEIRA ADVOGADOS AS"
+        },
+        {
+          "valor": "3085813",
+          "texto": "3085813 - LOURENCO ADVOCACIA S/C"
+        },
+        {
+          "valor": "3085805",
+          "texto": "3085805 - MANDALITI"
+        },
+        {
+          "valor": "3230988",
+          "texto": "3230988 - MARTINEZ & MARTINEZ ADVOGADOS"
+        },
+        {
+          "valor": "3085864",
+          "texto": "3085864 - MIKAEL BORGES E ADVOGADOS"
+        },
+        {
+          "valor": "3085791",
+          "texto": "3085791 - PINHEIRO E POTIGUAR ADVOGADOS"
+        },
+        {
+          "valor": "3230376",
+          "texto": "3230376 - RODNEI LASMAR E ADVOGADOS"
+        },
+        {
+          "valor": "3057291",
+          "texto": "3057291 - SANEAGO"
+        },
+        {
+          "valor": "3083080",
+          "texto": "3083080 - TIBURCIO PENA E ASSOCIADOS S/S"
+        }
+      ],
+      "total_opcoes": 30,
+      "opcoes_truncadas": false
+    },
+    {
+      "id": "comarca",
+      "name": "comarca",
+      "tipo": "text",
+      "rotulo": "Comarca",
+      "label": "Comarca",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "nomeComarca",
+      "name": "nomeComarca",
+      "tipo": "text",
+      "rotulo": "Comarca",
+      "label": "Comarca",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoRegional",
+      "name": "codigoRegional",
+      "tipo": "text",
+      "rotulo": "Comarca",
+      "label": "Comarca",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeRegional",
+      "name": "nomeRegional",
+      "tipo": "text",
+      "rotulo": "Comarca",
+      "label": "Comarca",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "matriculaPreposto",
+      "name": "matriculaPreposto",
+      "tipo": "text",
+      "rotulo": "Preposto",
+      "label": "Preposto",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "nomePreposto",
+      "name": "nomePreposto",
+      "tipo": "text",
+      "rotulo": "Preposto",
+      "label": "Preposto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": null,
+      "name": "frmJAJ033",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp"
+}
