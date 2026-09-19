@@ -424,3 +424,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `S0072` | SUPER. DE RECURSOS HUMANOS | `Ver localização no Mapa` | `somente_leitura` | Consulta de organograma e localização no mapa da Superintendência de Recursos Humanos sem botões de escrita.
 - `BAP002` | Contracheque | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de demonstrativo de pagamento e contracheque por tipo de cálculo e referência sem botões de escrita.
 - `BAPV002` | Contracheque | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de demonstrativo de pagamento e contracheque por tipo de cálculo e referência sem botões de escrita.
+- `BAPV005` | Emissão de Frequência | `Imprimir` | `somente_leitura` | Emissão e impressão de folha de frequência e relatório de acompanhamento por UO e referência sem botões de escrita.
+- `BAPV025` | Agendamento/Alteração de Férias | nenhum | `possui_escrita` | Agendamento e solicitação de alteração de férias de empregado com formulário de fruição e parcelamento.
+- `BAPV032` | Definir Adiantamento de 13° Salário | `Incluir`, `Cancelar` | `possui_escrita` | Cadastro e definição de adiantamento de 13º salário com botão de escrita Incluir.

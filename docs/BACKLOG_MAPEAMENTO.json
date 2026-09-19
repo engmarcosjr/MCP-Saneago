@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:55:34.540Z",
+    "gerado_em": "2026-09-19T07:01:50.503Z",
     "total": 596,
-    "completos": 382,
-    "pendentes": 214,
+    "completos": 385,
+    "pendentes": 211,
     "por_classe_seguranca": {
-      "indeterminado": 262,
-      "candidata_leitura": 166,
-      "possui_escrita": 160,
+      "indeterminado": 260,
+      "candidata_leitura": 167,
+      "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 110,
-      "sem_campos_detectados": 40,
-      "ficha_stub": 20
+      "ficha_nao_validada": 107,
+      "ficha_stub": 20,
+      "sem_campos_detectados": 37
     }
   },
   "apps": [
@@ -344,20 +344,19 @@
       "nome": "Emissão de Frequência",
       "vertical": "BAP",
       "url_zul": "https://www.saneago.com.br/prt/bap/BAPV005.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 809,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1720,
+      "botoes": [
+        "Imprimir"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BAPV008",
@@ -407,20 +406,17 @@
       "nome": "Agendamento/Alteração de Férias",
       "vertical": "BAP",
       "url_zul": "https://www.saneago.com.br/prt/bap/BAPV025.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 853,
+      "tipo_declarado": "Cadastro e Movimentação (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 3213,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BAPV028",
@@ -467,20 +463,20 @@
       "nome": "Definir Adiantamento de 13° Salário",
       "vertical": "BAP",
       "url_zul": "https://www.saneago.com.br/prt/bap/BAPV032.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 865,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Cadastro e Movimentação (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1480,
+      "botoes": [
+        "Incluir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "botões de escrita: Incluir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "BPA001",

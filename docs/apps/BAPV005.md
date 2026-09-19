@@ -4,24 +4,40 @@
 Recursos Humanos e Pessoal
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a emissão de frequência.
+Permite emitir e imprimir folhas de frequência e relatórios de acompanhamento de frequência dos empregados por unidade organizacional e mês de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bap/BAP005EmitirFrequencia.zul`
+
+## Campos e Filtros da Tela
+- **Referência** (`date` / readonly): Mês e ano de referência da frequência (ex: setembro/2026).
+- **Impressora** (`text` / editável): Código/identificador da impressora.
+- **Impressora** (`text` / readonly): Descrição/nome da impressora selecionada.
+- **Folha de Frequência** (`radio` / editável): Opção de emissão de Folha de Frequência (valor padrão: 1).
+- **Relatório de acompanhamento** (`radio` / editável): Opção de emissão de Relatório de acompanhamento (valor padrão: 2).
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Imprimir**: Executa a emissão/impressão da folha ou relatório de frequência.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BAPV005 (Emissão de Frequência)"
-- "Acessar o aplicativo de emissão de frequência"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Botão de busca/seleção de impressora.
+- **Sem Rotulo** (`submit` / id `-a`): Gatilho de submissão/lookup ZK.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BAPV005`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas e Grade de Resultados
+- Código
+- Unidade Organizacional
+- Sigla
+
+## Perguntas que Responde
+- "emitir folha de frequência no BAPV005"
+- "imprimir relatório de acompanhamento de frequência"
+- "consultar frequência por unidade organizacional"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Administração Pessoal -> Relatório -> Emissão de Frequência).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

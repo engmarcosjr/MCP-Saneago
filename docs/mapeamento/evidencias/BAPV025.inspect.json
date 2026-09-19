@@ -1,0 +1,317 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Agendamento - Alteração de Férias",
+  "inputs": [
+    {
+      "id": "kJoUa8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "kJoUk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU30-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período Aquisitivo",
+      "label": "Período Aquisitivo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU60-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período Aquisitivo",
+      "label": "Período Aquisitivo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU80-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "A",
+      "label": "A",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUq0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Admissão",
+      "label": "Data de Admissão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUw0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período Concessivo",
+      "label": "Período Concessivo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUy0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "A",
+      "label": "A",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU11",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. dias de direito",
+      "label": "Qtd. dias de direito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUf1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. dias falta",
+      "label": "Qtd. dias falta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUj1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. dias Lic. Médica",
+      "label": "Qtd. dias Lic. Médica",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUo1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. dias Lic. Remunerada",
+      "label": "Qtd. dias Lic. Remunerada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUs1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. meses Lic. Não Remunerada",
+      "label": "Qtd. meses Lic. Não Remunerada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUx1",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Inconsistência",
+      "label": "Inconsistência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU02-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Últ. Atualização",
+      "label": "Dt. Últ. Atualização",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUc2-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Dt. Últ. Atualização",
+      "label": "Dt. Últ. Atualização",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Saldo de Férias",
+      "label": "Saldo de Férias",
+      "valor_atual": "0",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUn2-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Saldo de Férias",
+      "label": "Saldo de Férias",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUx2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Parcela única",
+      "label": "Parcela única",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoUz2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "A",
+      "label": "A",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU43",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade de dias",
+      "label": "Quantidade de dias",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kJoU64",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Observações",
+      "label": "Observações",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "kJoUk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoU30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoUx2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoUz2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoU03",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kJoUk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoU30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoUx2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoUz2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kJoU03",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bap/BAP025SolicitaFerias.zul",
+  "codigo": "BAPV025"
+}

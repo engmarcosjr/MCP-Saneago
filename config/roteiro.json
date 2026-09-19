@@ -5157,27 +5157,59 @@
   "BAPV005": {
     "codigo": "BAPV005",
     "nome": "Emissão de Frequência",
-    "url_zul": "https://prod.saneago.com.br/prt/bap/BAPV005.zul",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP005EmitirFrequencia.zul",
     "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a emissão de frequência.",
+    "o_que_faz": "Permite emitir e imprimir folhas de frequência e relatórios de acompanhamento de frequência dos empregados por unidade organizacional e mês de referência.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Referência",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Impressora",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Impressora",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Folha de Frequência",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Relatório de acompanhamento",
+        "tipo": "radio",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "xC7D10"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Emissão de Frequência",
+        "intencao": "Emitir folha de frequência",
         "passos": [
-          "Abrir a aplicação BAPV005",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BAPV005 via menu Administração Pessoal -> Relatório -> Emissão de Frequência",
+          "Selecionar a referência e a opção de relatório desejada",
+          "Clicar no botão Imprimir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de emissão de frequência",
-      "acessar a app BAPV005",
-      "consultar emissão de frequência"
+      "emitir folha de frequência no BAPV005",
+      "imprimir relatório de acompanhamento de frequência",
+      "consultar frequência por unidade organizacional"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAPV008": {
     "codigo": "BAPV008",
@@ -5270,27 +5302,139 @@
   "BAPV025": {
     "codigo": "BAPV025",
     "nome": "Agendamento/Alteração de Férias",
-    "url_zul": "https://prod.saneago.com.br/prt/bap/BAPV025.zul",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP025SolicitaFerias.zul",
     "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a agendamento/alteração de férias.",
-    "tipo": "leitura",
-    "campos": [],
+    "o_que_faz": "Permite consultar, agendar e solicitar alteração de férias de empregados, visualizando períodos aquisitivos, concessivos, saldo de férias e parcelamento.",
+    "tipo": "misto",
+    "campos": [
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Período Aquisitivo",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Período Aquisitivo",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Data de Admissão",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Período Concessivo",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias de direito",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias falta",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias Lic. Médica",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. dias Lic. Remunerada",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Qtd. meses Lic. Não Remunerada",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Inconsistência",
+        "tipo": "textarea",
+        "editavel": false
+      },
+      {
+        "label": "Dt. Últ. Atualização",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Dt. Últ. Atualização",
+        "tipo": "checkbox",
+        "editavel": false
+      },
+      {
+        "label": "Saldo de Férias",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Saldo de Férias",
+        "tipo": "checkbox",
+        "editavel": false
+      },
+      {
+        "label": "Parcela única",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "A",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "label": "Quantidade de dias",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Observações",
+        "tipo": "textarea",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Agendamento/Alteração de Férias",
+        "intencao": "Consultar ou solicitar alteração de férias",
         "passos": [
-          "Abrir a aplicação BAPV025",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BAPV025 via menu Administração Pessoal -> Cadastro -> Agendamento/Alteração de Férias",
+          "Informar a matrícula do empregado e selecionar o período aquisitivo",
+          "Visualizar dados de concessão, saldo e preencher parcelas"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de agendamento/alteração de férias",
-      "acessar a app BAPV025",
-      "consultar agendamento/alteração de férias"
+      "consultar agendamento de férias no BAPV025",
+      "ver saldo e períodos aquisitivos de férias",
+      "solicitar alteração de férias do empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAPV028": {
     "codigo": "BAPV028",
@@ -5440,27 +5584,53 @@
   "BAPV032": {
     "codigo": "BAPV032",
     "nome": "Definir Adiantamento de 13° Salário",
-    "url_zul": "https://prod.saneago.com.br/prt/bap/BAPV032.zul",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP032AdiantamentoDecimoTerceiro.zul",
     "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a definir adiantamento de 13° salário.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "o_que_faz": "Permite cadastrar e definir a solicitação de adiantamento de 13º salário para o empregado logado a partir do mês/ano de referência.",
+    "tipo": "misto",
+    "campos": [
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Referência",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Incluir",
+        "id": "rCOX40"
+      },
+      {
+        "label": "Cancelar",
+        "id": "rCOX70"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Definir Adiantamento de 13° Salário",
+        "intencao": "Solicitar adiantamento de 13º salário",
         "passos": [
-          "Abrir a aplicação BAPV032",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BAPV032 via menu Administração Pessoal -> Consulta -> Definir Adiantamento de 13° Salário",
+          "Informar o mês/ano de referência",
+          "Clicar no botão Incluir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de definir adiantamento de 13° salário",
-      "acessar a app BAPV032",
-      "consultar definir adiantamento de 13° salário"
+      "solicitar adiantamento de 13º salário no BAPV032",
+      "definir adiantamento do décimo terceiro por referência",
+      "cadastrar adiantamento de 13º salário"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BPA001": {
     "codigo": "BPA001",
