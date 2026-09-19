@@ -1,6 +1,6 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:35:04.695Z",
+    "gerado_em": "2026-09-19T09:38:32.498Z",
     "total": 596,
     "completos": 437,
     "pendentes": 159,
@@ -25,7 +25,7 @@
       "url_zul": null,
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 898,
+      "bytes_ficha": 950,
       "botoes": [
         "Ver localização no Mapa"
       ],
@@ -35,7 +35,7 @@
         "sem_url"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9990
     },
@@ -46,7 +46,7 @@
       "url_zul": null,
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 944,
+      "bytes_ficha": 996,
       "botoes": [
         "Ver localização no Mapa"
       ],
@@ -56,7 +56,7 @@
         "sem_url"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9990
     },
@@ -67,7 +67,7 @@
       "url_zul": null,
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 943,
+      "bytes_ficha": 995,
       "botoes": [
         "Ver localização no Mapa"
       ],
@@ -77,7 +77,7 @@
         "sem_url"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9990
     },

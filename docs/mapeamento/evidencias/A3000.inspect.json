@@ -4,13 +4,13 @@
   "inputs": [],
   "botoes": [
     {
-      "id": "uCxZ6-a",
+      "id": "mUQC6-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "uCxZm2",
+      "id": "mUQCm2",
       "name": null,
       "label": "Ver localização no Mapa",
       "tipo": "button"
@@ -18,13 +18,13 @@
   ],
   "buttons": [
     {
-      "id": "uCxZ6-a",
+      "id": "mUQC6-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "uCxZm2",
+      "id": "mUQCm2",
       "name": null,
       "label": "Ver localização no Mapa",
       "tipo": "button"
