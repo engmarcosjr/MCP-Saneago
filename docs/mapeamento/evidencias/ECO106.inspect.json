@@ -3,41 +3,41 @@
   "titulo_tela": "Quantidade de Contas com Débito Automático",
   "inputs": [
     {
-      "id": "mS3Yh",
+      "id": "dPjVh",
       "name": null,
       "tipo": "text",
       "rotulo": "Quantidade Total de Contas com Débito Automático",
       "label": "Quantidade Total de Contas com Débito Automático",
-      "valor_atual": "147.947",
+      "valor_atual": "147.916",
       "editavel": false,
       "readonly": true,
       "maxlength": null
     },
     {
-      "id": "mS3Ym",
+      "id": "dPjVm",
       "name": null,
       "tipo": "text",
       "rotulo": "Quantidade de Contas com Débito Automático na Saneago",
       "label": "Quantidade de Contas com Débito Automático na Saneago",
-      "valor_atual": "135.677",
+      "valor_atual": "135.659",
       "editavel": false,
       "readonly": true,
       "maxlength": null
     },
     {
-      "id": "mS3Yr",
+      "id": "dPjVr",
       "name": null,
       "tipo": "text",
       "rotulo": "Quantidade de Contas com Débito Automático na Subdelegada",
       "label": "Quantidade de Contas com Débito Automático na Subdelegada",
-      "valor_atual": "12.270",
+      "valor_atual": "12.257",
       "editavel": false,
       "readonly": true,
       "maxlength": null
     },
     {
-      "id": "mS3Yx-real",
-      "name": "_pgufpcqt",
+      "id": "dPjVx-real",
+      "name": "_pg7g6u8f1",
       "tipo": "radio",
       "rotulo": "Sim",
       "label": "Sim",
@@ -47,8 +47,8 @@
       "maxlength": null
     },
     {
-      "id": "mS3Yz-real",
-      "name": "_pgufpcqt",
+      "id": "dPjVz-real",
+      "name": "_pg7g6u8f1",
       "tipo": "radio",
       "rotulo": "Não",
       "label": "Não",

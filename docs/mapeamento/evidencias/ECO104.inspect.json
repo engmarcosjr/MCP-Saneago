@@ -3,7 +3,7 @@
   "titulo_tela": "Relação de contas com prazo por período",
   "inputs": [
     {
-      "id": "v5kTl",
+      "id": "hKoAl",
       "name": null,
       "tipo": "text",
       "rotulo": "S",
@@ -14,7 +14,7 @@
       "maxlength": 5
     },
     {
-      "id": "v5kTn-real",
+      "id": "hKoAn-real",
       "name": null,
       "tipo": "text",
       "rotulo": "S",
@@ -25,7 +25,7 @@
       "maxlength": null
     },
     {
-      "id": "v5kTa0",
+      "id": "hKoAa0",
       "name": null,
       "tipo": "text",
       "rotulo": "G",
@@ -36,7 +36,7 @@
       "maxlength": 5
     },
     {
-      "id": "v5kTc0-real",
+      "id": "hKoAc0-real",
       "name": null,
       "tipo": "text",
       "rotulo": "G",
@@ -47,7 +47,7 @@
       "maxlength": null
     },
     {
-      "id": "v5kTs2",
+      "id": "hKoAs2",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -58,7 +58,7 @@
       "maxlength": 3
     },
     {
-      "id": "v5kT_1-real",
+      "id": "hKoA_1-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -69,7 +69,7 @@
       "maxlength": null
     },
     {
-      "id": "v5kTn1",
+      "id": "hKoAn1",
       "name": null,
       "tipo": "text",
       "rotulo": "T",
@@ -80,7 +80,7 @@
       "maxlength": 5
     },
     {
-      "id": "v5kTp1-real",
+      "id": "hKoAp1-real",
       "name": null,
       "tipo": "text",
       "rotulo": "T",
@@ -91,7 +91,7 @@
       "maxlength": null
     },
     {
-      "id": "v5kTa2-real",
+      "id": "hKoAa2-real",
       "name": null,
       "tipo": "date",
       "rotulo": "Período",
@@ -102,7 +102,7 @@
       "maxlength": null
     },
     {
-      "id": "v5kTc2-real",
+      "id": "hKoAc2-real",
       "name": null,
       "tipo": "date",
       "rotulo": "a",
@@ -115,49 +115,49 @@
   ],
   "botoes": [
     {
-      "id": "v5kTn-btn",
+      "id": "hKoAn-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTc0-btn",
+      "id": "hKoAc0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kT_1-btn",
+      "id": "hKoA_1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTp1-btn",
+      "id": "hKoAp1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTa2-btn",
+      "id": "hKoAa2-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTc2-btn",
+      "id": "hKoAc2-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTg2",
+      "id": "hKoAg2",
       "name": null,
       "label": "Executar Job",
       "tipo": "button"
     },
     {
-      "id": "v5kTh2",
+      "id": "hKoAh2",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -165,49 +165,49 @@
   ],
   "buttons": [
     {
-      "id": "v5kTn-btn",
+      "id": "hKoAn-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTc0-btn",
+      "id": "hKoAc0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kT_1-btn",
+      "id": "hKoA_1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTp1-btn",
+      "id": "hKoAp1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTa2-btn",
+      "id": "hKoAa2-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTc2-btn",
+      "id": "hKoAc2-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "v5kTg2",
+      "id": "hKoAg2",
       "name": null,
       "label": "Executar Job",
       "tipo": "button"
     },
     {
-      "id": "v5kTh2",
+      "id": "hKoAh2",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"

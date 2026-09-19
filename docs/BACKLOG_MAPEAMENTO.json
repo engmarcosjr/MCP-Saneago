@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T04:29:44.148Z",
+    "gerado_em": "2026-09-19T04:35:55.934Z",
     "total": 596,
-    "completos": 338,
-    "pendentes": 258,
+    "completos": 341,
+    "pendentes": 255,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -16,7 +16,7 @@
       "ficha_nao_validada": 136,
       "ficha_stub": 54,
       "sem_campos_detectados": 66,
-      "auditoria_pendente": 6
+      "auditoria_pendente": 3
     }
   },
   "apps": [
@@ -2130,17 +2130,18 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO104ContaPrazoPeriodo.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1256,
-      "botoes": [],
+      "bytes_ficha": 1512,
+      "botoes": [
+        "Executar Job",
+        "Cancelar"
+      ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO106",
@@ -2149,17 +2150,15 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO106DebitoAutomatico.zul",
       "tipo_declarado": "Leitura e Consulta (misto)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1370,
+      "bytes_ficha": 1580,
       "botoes": [],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO108",
@@ -2168,17 +2167,18 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO108ListarContasPotenFaturamento.zul",
       "tipo_declarado": "Leitura e Consulta (misto)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1575,
-      "botoes": [],
+      "bytes_ficha": 1911,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
+      ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO112",

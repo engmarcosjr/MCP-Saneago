@@ -21325,11 +21325,11 @@
     "botoes": [
       {
         "label": "Executar Job",
-        "id": "v5kTg2"
+        "id": "hKoAg2"
       },
       {
         "label": "Cancelar",
-        "id": "v5kTh2"
+        "id": "hKoAh2"
       }
     ],
     "operacoes": [
@@ -21518,11 +21518,11 @@
     "botoes": [
       {
         "label": "Consultar",
-        "id": "b1PA54"
+        "id": "n1WT54"
       },
       {
         "label": "Cancelar",
-        "id": "b1PA64"
+        "id": "n1WT64"
       }
     ],
     "operacoes": [
