@@ -446,5 +446,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `FGIV005` | Consulta de documentos digitalizados | nenhum | `bloqueada` | Aplicação não localizada na busca rápida nem no frame da aplicação no portal para o perfil atual.
 - `FGQ006` | Tratar NC | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e acompanhamento de cadastro e trâmites de RACP no tratamento de não conformidades por número e ano sem botões de escrita.
 - `FGQ010` | Auditor | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e pesquisa de cadastro de auditores internos e de sistemas de gestão sem botões de escrita.
+- `FGQ018` | Relatório Geral | `Imprimir`, `Cancelar` | `somente_leitura` | Emissão e relatório geral de Não Conformidades (RNC) por número e ano sem botões de escrita.
+- `FGQ022` | Histórico Auditor | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de histórico de auditorias por código ou matrícula do auditor sem botões de escrita.
+- `FGQ024` | Documentos por UO | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e relação de documentos vinculados por unidade organizacional sem botões de escrita.
+
 
 
