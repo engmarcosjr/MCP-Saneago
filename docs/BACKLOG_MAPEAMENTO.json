@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:25:13.201Z",
+    "gerado_em": "2026-09-19T05:32:25.198Z",
     "total": 596,
-    "completos": 354,
-    "pendentes": 242,
+    "completos": 356,
+    "pendentes": 240,
     "por_classe_seguranca": {
       "indeterminado": 276,
       "candidata_leitura": 153,
@@ -12,10 +12,10 @@
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 94,
+      "sem_roteiro": 93,
       "ficha_nao_validada": 136,
       "ficha_stub": 45,
-      "sem_campos_detectados": 64
+      "sem_campos_detectados": 63
     }
   },
   "apps": [
@@ -777,13 +777,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 8990
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 9000
     },
     {
       "codigo": "BPAV005",
@@ -792,7 +790,7 @@
       "url_zul": "https://www.saneago.com.br/prt/bpa/BPAV005.zul",
       "tipo_declarado": "Bloqueada / Sem Acesso",
       "status_ficha": "inventariado",
-      "bytes_ficha": 851,
+      "bytes_ficha": 842,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
@@ -800,7 +798,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 8990
     },
@@ -8353,13 +8351,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 6990
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 7000
     },
     {
       "codigo": "LQAV081",
