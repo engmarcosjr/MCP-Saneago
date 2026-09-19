@@ -3,7 +3,7 @@
   "titulo_tela": "Consulta de Logradouros",
   "inputs": [
     {
-      "id": "zLDKx1",
+      "id": "eP6Kx1",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -14,7 +14,7 @@
       "maxlength": 4
     },
     {
-      "id": "zLDKi-real",
+      "id": "eP6Ki-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -25,7 +25,7 @@
       "maxlength": null
     },
     {
-      "id": "zLDKy1",
+      "id": "eP6Ky1",
       "name": null,
       "tipo": "text",
       "rotulo": "Bairro",
@@ -36,7 +36,7 @@
       "maxlength": 4
     },
     {
-      "id": "zLDK60-real",
+      "id": "eP6K60-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Bairro",
@@ -47,7 +47,7 @@
       "maxlength": null
     },
     {
-      "id": "zLDKs0",
+      "id": "eP6Ks0",
       "name": null,
       "tipo": "text",
       "rotulo": "Nome do Logradouro",
@@ -60,25 +60,25 @@
   ],
   "botoes": [
     {
-      "id": "zLDKi-btn",
+      "id": "eP6Ki-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "zLDK60-btn",
+      "id": "eP6K60-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "zLDKw0",
+      "id": "eP6Kw0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "zLDKx0",
+      "id": "eP6Kx0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -86,25 +86,25 @@
   ],
   "buttons": [
     {
-      "id": "zLDKi-btn",
+      "id": "eP6Ki-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "zLDK60-btn",
+      "id": "eP6K60-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "zLDKw0",
+      "id": "eP6Kw0",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "zLDKx0",
+      "id": "eP6Kx0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"

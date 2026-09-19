@@ -3,7 +3,7 @@
   "titulo_tela": "Reordenar Rota",
   "inputs": [
     {
-      "id": "vIwBq0",
+      "id": "kDzPq0",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -14,7 +14,7 @@
       "maxlength": 4
     },
     {
-      "id": "vIwBi-real",
+      "id": "kDzPi-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -25,7 +25,7 @@
       "maxlength": null
     },
     {
-      "id": "vIwB30",
+      "id": "kDzP30",
       "name": null,
       "tipo": "text",
       "rotulo": "Grupo de Faturamento",
@@ -36,7 +36,7 @@
       "maxlength": 2
     },
     {
-      "id": "vIwBa0",
+      "id": "kDzPa0",
       "name": null,
       "tipo": "text",
       "rotulo": "Rota",
@@ -49,19 +49,19 @@
   ],
   "botoes": [
     {
-      "id": "vIwBi-btn",
+      "id": "kDzPi-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "vIwBe0",
+      "id": "kDzPe0",
       "name": null,
       "label": "Reordenar",
       "tipo": "button"
     },
     {
-      "id": "vIwBf0",
+      "id": "kDzPf0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -69,19 +69,19 @@
   ],
   "buttons": [
     {
-      "id": "vIwBi-btn",
+      "id": "kDzPi-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "vIwBe0",
+      "id": "kDzPe0",
       "name": null,
       "label": "Reordenar",
       "tipo": "button"
     },
     {
-      "id": "vIwBf0",
+      "id": "kDzPf0",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"

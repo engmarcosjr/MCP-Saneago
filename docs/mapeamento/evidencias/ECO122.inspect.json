@@ -3,7 +3,7 @@
   "titulo_tela": "Manutenção de Bairros",
   "inputs": [
     {
-      "id": "tJ0Up3",
+      "id": "kGUGp3",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -14,7 +14,7 @@
       "maxlength": 4
     },
     {
-      "id": "tJ0Uk-real",
+      "id": "kGUGk-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade",
@@ -25,7 +25,7 @@
       "maxlength": null
     },
     {
-      "id": "tJ0Uq3",
+      "id": "kGUGq3",
       "name": null,
       "tipo": "text",
       "rotulo": "Bairro",
@@ -36,7 +36,7 @@
       "maxlength": 4
     },
     {
-      "id": "tJ0U60-real",
+      "id": "kGUG60-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Bairro",
@@ -47,7 +47,7 @@
       "maxlength": null
     },
     {
-      "id": "tJ0Uq0-real",
+      "id": "kGUGq0-real",
       "name": null,
       "tipo": "combobox",
       "rotulo": "Informar % para contas S/N",
@@ -58,7 +58,7 @@
       "maxlength": null
     },
     {
-      "id": "tJ0Uz0",
+      "id": "kGUGz0",
       "name": null,
       "tipo": "text",
       "rotulo": "Nome",
@@ -69,7 +69,7 @@
       "maxlength": 30
     },
     {
-      "id": "tJ0U51",
+      "id": "kGUG51",
       "name": null,
       "tipo": "text",
       "rotulo": "Distrito",
@@ -80,7 +80,7 @@
       "maxlength": 5
     },
     {
-      "id": "tJ0U71-real",
+      "id": "kGUG71-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Distrito",
@@ -91,7 +91,7 @@
       "maxlength": null
     },
     {
-      "id": "tJ0Ur3",
+      "id": "kGUGr3",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade Emissão",
@@ -102,7 +102,7 @@
       "maxlength": 4
     },
     {
-      "id": "tJ0Uu1-real",
+      "id": "kGUGu1-real",
       "name": null,
       "tipo": "text",
       "rotulo": "Cidade Emissão",
@@ -113,7 +113,7 @@
       "maxlength": null
     },
     {
-      "id": "tJ0Ud2",
+      "id": "kGUGd2",
       "name": null,
       "tipo": "text",
       "rotulo": "Coleta Esgoto (S/N)",
@@ -124,7 +124,7 @@
       "maxlength": 1
     },
     {
-      "id": "tJ0Uh2",
+      "id": "kGUGh2",
       "name": null,
       "tipo": "text",
       "rotulo": "Tratamento Esgoto (S/N)",
@@ -135,7 +135,7 @@
       "maxlength": 1
     },
     {
-      "id": "tJ0Uq2",
+      "id": "kGUGq2",
       "name": null,
       "tipo": "text",
       "rotulo": "% Coleta Esgoto",
@@ -146,7 +146,7 @@
       "maxlength": 3
     },
     {
-      "id": "tJ0Uu2",
+      "id": "kGUGu2",
       "name": null,
       "tipo": "text",
       "rotulo": "% Tratamento Esgoto",
@@ -157,7 +157,7 @@
       "maxlength": 3
     },
     {
-      "id": "tJ0Uz2",
+      "id": "kGUGz2",
       "name": null,
       "tipo": "text",
       "rotulo": "Consumo Mínimo",
@@ -168,8 +168,8 @@
       "maxlength": 3
     },
     {
-      "id": "tJ0U53-real",
-      "name": "_pg23lnra1",
+      "id": "kGUG53-real",
+      "name": "_pgmr5b0b",
       "tipo": "radio",
       "rotulo": "Sintético",
       "label": "Sintético",
@@ -179,8 +179,8 @@
       "maxlength": null
     },
     {
-      "id": "tJ0U63-real",
-      "name": "_pg23lnra1",
+      "id": "kGUG63-real",
+      "name": "_pgmr5b0b",
       "tipo": "radio",
       "rotulo": "Analítico",
       "label": "Analítico",
@@ -192,43 +192,43 @@
   ],
   "botoes": [
     {
-      "id": "tJ0Uk-btn",
+      "id": "kGUGk-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0U60-btn",
+      "id": "kGUG60-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Uq0-btn",
+      "id": "kGUGq0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0U71-btn",
+      "id": "kGUG71-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Uu1-btn",
+      "id": "kGUGu1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Ua3",
+      "id": "kGUGa3",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "tJ0Ue3",
+      "id": "kGUGe3",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -236,43 +236,43 @@
   ],
   "buttons": [
     {
-      "id": "tJ0Uk-btn",
+      "id": "kGUGk-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0U60-btn",
+      "id": "kGUG60-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Uq0-btn",
+      "id": "kGUGq0-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0U71-btn",
+      "id": "kGUG71-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Uu1-btn",
+      "id": "kGUGu1-btn",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "a"
     },
     {
-      "id": "tJ0Ua3",
+      "id": "kGUGa3",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "tJ0Ue3",
+      "id": "kGUGe3",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"

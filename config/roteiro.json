@@ -2676,11 +2676,11 @@
     "botoes": [
       {
         "label": "Consultar",
-        "id": "zLDKw0"
+        "id": "eP6Kw0"
       },
       {
         "label": "Cancelar",
-        "id": "zLDKx0"
+        "id": "eP6Kx0"
       }
     ],
     "operacoes": [
@@ -2739,11 +2739,11 @@
     "botoes": [
       {
         "label": "Reordenar",
-        "id": "vIwBe0"
+        "id": "kDzPe0"
       },
       {
         "label": "Cancelar",
-        "id": "vIwBf0"
+        "id": "kDzPf0"
       }
     ],
     "operacoes": [
@@ -2893,11 +2893,11 @@
     "botoes": [
       {
         "label": "Consultar",
-        "id": "tJ0Ua3"
+        "id": "kGUGa3"
       },
       {
         "label": "Cancelar",
-        "id": "tJ0Ue3"
+        "id": "kGUGe3"
       }
     ],
     "operacoes": [

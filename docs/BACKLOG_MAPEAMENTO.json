@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T04:36:49.591Z",
+    "gerado_em": "2026-09-19T04:42:16.979Z",
     "total": 596,
-    "completos": 341,
-    "pendentes": 255,
+    "completos": 344,
+    "pendentes": 252,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -15,8 +15,7 @@
       "sem_roteiro": 97,
       "ficha_nao_validada": 136,
       "ficha_stub": 54,
-      "sem_campos_detectados": 66,
-      "auditoria_pendente": 3
+      "sem_campos_detectados": 66
     }
   },
   "apps": [
@@ -2247,20 +2246,18 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1207,
+      "bytes_ficha": 1271,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
       "classe_seguranca": "candidata_leitura",
       "motivo_classe": "só botões de leitura: Consultar",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO121",
@@ -2269,20 +2266,18 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO121ReordenarRota.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1112,
+      "bytes_ficha": 1203,
       "botoes": [
         "Reordenar",
         "Cancelar"
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO122",
@@ -2291,20 +2286,18 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO122ManutencaoBairro.zul",
       "tipo_declarado": "Leitura e Consulta (misto)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1971,
+      "bytes_ficha": 2299,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
-      "lacunas": [
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
       "aposentada": false,
-      "prioridade": -1000010
+      "prioridade": 0
     },
     {
       "codigo": "ECO124",
