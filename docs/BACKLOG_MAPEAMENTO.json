@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:11:18.498Z",
+    "gerado_em": "2026-09-19T09:18:44.470Z",
     "total": 596,
-    "completos": 431,
-    "pendentes": 165,
+    "completos": 432,
+    "pendentes": 164,
     "por_classe_seguranca": {
       "indeterminado": 229,
       "candidata_leitura": 195,
@@ -12,10 +12,10 @@
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 82,
+      "sem_roteiro": 80,
       "ficha_nao_validada": 69,
-      "sem_campos_detectados": 5,
-      "ficha_stub": 5
+      "sem_campos_detectados": 6,
+      "ficha_stub": 3
     }
   },
   "apps": [
@@ -9961,18 +9961,18 @@
       "nome": "Painel Estatístico Ouvidoria",
       "vertical": "MGO",
       "url_zul": "https://www.saneago.com.br/prt/mgo/MGOV050.zul",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 536,
+      "tipo_declarado": "Bloqueada / Sem Acesso",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 794,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
       "lacunas": [
         "ficha_stub",
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -10208,41 +10208,37 @@
       "vertical": "MSI",
       "url_zul": "https://www.saneago.com.br/prt/msi/MSI001ExportarContatos.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 703,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 962,
       "botoes": [
         "Ver localização no Mapa"
       ],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MSI070",
       "nome": "Registrar Voto",
       "vertical": "MSI",
       "url_zul": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
-      "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 677,
+      "tipo_declarado": "Informativo / Sem campos de entrada (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 808,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 9990
     },
     {
       "codigo": "MSIV001",

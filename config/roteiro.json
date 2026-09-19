@@ -16849,6 +16849,236 @@
     ],
     "status_doc": "auto"
   },
+  "FGQ006": {
+    "codigo": "FGQ006",
+    "nome": "Tratar NC",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
+    "categoria": "Gestão Integrada / Qualidade",
+    "o_que_faz": "Permite consultar e acompanhar o cadastro e trâmites das Ações Corretivas e Preventivas (RACP) referentes ao tratamento de não conformidades (NC) por número e ano.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Número",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Ano",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "uNgCq0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "uNgCr0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar tratamento de não conformidades (RACP) no FGQ006",
+        "passos": [
+          "Abrir a aplicação FGQ006 via menu Gestão Integrada -> Não Conformidade -> Tratamento NC -> Tratar NC",
+          "Informar o Número e o Ano da RACP",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar tratamento de não conformidades no FGQ006",
+      "pesquisar RACP por número e ano no sistema de gestão integrada",
+      "consultar trâmites de ações corretivas e preventivas no FGQ006"
+    ],
+    "status_doc": "inventariado"
+  },
+  "FGQ010": {
+    "codigo": "FGQ010",
+    "nome": "Auditor",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
+    "categoria": "Gestão Integrada / Auditoria",
+    "o_que_faz": "Permite consultar informações e registros referentes ao cadastro de auditores internos e de sistemas de gestão da qualidade.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "k96M_0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "k96M00"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar auditores cadastrados no FGQ010",
+        "passos": [
+          "Abrir a aplicação FGQ010 via menu Gestão Integrada -> Auditoria -> Cadastro -> Auditor",
+          "Informar ou selecionar o Auditor",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar auditores cadastrados no FGQ010",
+      "pesquisar auditor por código ou matrícula no sistema de gestão integrada",
+      "consultar cadastro de auditores no FGQ010"
+    ],
+    "status_doc": "inventariado"
+  },
+  "FGQ018": {
+    "codigo": "FGQ018",
+    "nome": "Relatório Geral",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ018RelatorioGeralRNC.zul",
+    "categoria": "Gestão Integrada / Qualidade",
+    "o_que_faz": "Permite emitir e imprimir o relatório geral de Não Conformidades (RNC) registradas no sistema de gestão integrada por número e ano.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Número",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Ano",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Imprimir",
+        "id": "vBiLh"
+      },
+      {
+        "label": "Cancelar",
+        "id": "vBiLi"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Emitir relatório geral de RNC no FGQ018",
+        "passos": [
+          "Abrir a aplicação FGQ018 via menu Gestão Integrada -> Não Conformidade -> Consulta -> Relatório Geral",
+          "Informar o Número e o Ano da RNC",
+          "Clicar em Imprimir"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "emitir relatório geral de não conformidades no FGQ018",
+      "pesquisar e imprimir RNC por número e ano no sistema de gestão integrada",
+      "consultar relatório geral de RNC no FGQ018"
+    ],
+    "status_doc": "inventariado"
+  },
+  "FGQ022": {
+    "codigo": "FGQ022",
+    "nome": "Histórico Auditor",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ022HistoricoAuditor.zul",
+    "categoria": "Gestão Integrada / Auditoria",
+    "o_que_faz": "Permite consultar o histórico de auditorias e registros de atuação de auditores cadastrados no sistema de gestão integrada por código ou matrícula.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Auditor",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "kY2H00"
+      },
+      {
+        "label": "Cancelar",
+        "id": "kY2H10"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar histórico de auditor no FGQ022",
+        "passos": [
+          "Abrir a aplicação FGQ022 via menu Gestão Integrada -> Auditoria -> Consulta -> Histórico Auditor",
+          "Informar o código ou matrícula do Auditor",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar histórico de auditor no FGQ022",
+      "pesquisar histórico de auditorias por matrícula ou código no sistema de gestão integrada",
+      "consultar histórico de atuação de auditores no FGQ022"
+    ],
+    "status_doc": "inventariado"
+  },
+  "FGQ024": {
+    "codigo": "FGQ024",
+    "nome": "Documentos por UO",
+    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ024docUO.zul",
+    "categoria": "Gestão Integrada / Documentos",
+    "o_que_faz": "Permite consultar e relacionar documentos do sistema de gestão integrada vinculados por Unidade Organizacional (UO).",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "UO",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "UO",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "fTcWw"
+      },
+      {
+        "label": "Cancelar",
+        "id": "fTcWx"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar documentos por UO no FGQ024",
+        "passos": [
+          "Abrir a aplicação FGQ024 via menu Gestão Integrada -> Documentos -> Consulta -> Documentos por UO",
+          "Informar o código da UO",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar documentos por UO no FGQ024",
+      "pesquisar documentos do sistema de gestão integrada por unidade organizacional",
+      "consultar relação de documentos por UO no FGQ024"
+    ],
+    "status_doc": "inventariado"
+  },
   "G0064": {
     "codigo": "G0064",
     "nome": "GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
@@ -27495,6 +27725,59 @@
     ],
     "status_doc": "auto"
   },
+  "MSI001": {
+    "codigo": "MSI001",
+    "nome": "Exportar Contatos",
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+    "categoria": "Serviços Intranet / Contatos",
+    "o_que_faz": "Exibe a estrutura do organograma corporativo e a localização no mapa em Exportar Contatos.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [
+      {
+        "label": "Ver localização no Mapa",
+        "id": "d76Fm2"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar organograma e localização no mapa no MSI001",
+        "passos": [
+          "Abrir a aplicação MSI001",
+          "Clicar em Ver localização no Mapa"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar organograma em Exportar Contatos no MSI001",
+      "ver localização no mapa no MSI001"
+    ],
+    "status_doc": "inventariado"
+  },
+  "MSI070": {
+    "codigo": "MSI070",
+    "nome": "Registrar Voto",
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
+    "categoria": "Serviços Intranet / Voto",
+    "o_que_faz": "Permite visualizar a página de registro de voto de eleições corporativas no portal corporativo.",
+    "tipo": "leitura",
+    "campos": [],
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Consultar página de registro de voto no MSI070",
+        "passos": [
+          "Abrir a aplicação MSI070",
+          "Visualizar as informações na página"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar página de registro de voto no MSI070",
+      "verificar tela de eleição corporativa no MSI070"
+    ],
+    "status_doc": "inventariado"
+  },
   "MSIV001": {
     "codigo": "MSIV001",
     "nome": "Exportar Contatos",
@@ -32551,236 +32834,6 @@
     "exemplos_intencao": [
       "consultar organograma da Chefia de Gabinete no S0087",
       "ver localização no mapa da Chefia de Gabinete"
-    ],
-    "status_doc": "inventariado"
-  },
-  "FGQ006": {
-    "codigo": "FGQ006",
-    "nome": "Tratar NC",
-    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ006CadastroRACP.zul",
-    "categoria": "Gestão Integrada / Qualidade",
-    "o_que_faz": "Permite consultar e acompanhar o cadastro e trâmites das Ações Corretivas e Preventivas (RACP) referentes ao tratamento de não conformidades (NC) por número e ano.",
-    "tipo": "leitura",
-    "campos": [
-      {
-        "label": "Número",
-        "tipo": "text",
-        "editavel": true
-      },
-      {
-        "label": "Ano",
-        "tipo": "text",
-        "editavel": true
-      }
-    ],
-    "botoes": [
-      {
-        "label": "Consultar",
-        "id": "uNgCq0"
-      },
-      {
-        "label": "Cancelar",
-        "id": "uNgCr0"
-      }
-    ],
-    "operacoes": [
-      {
-        "intencao": "Consultar tratamento de não conformidades (RACP) no FGQ006",
-        "passos": [
-          "Abrir a aplicação FGQ006 via menu Gestão Integrada -> Não Conformidade -> Tratamento NC -> Tratar NC",
-          "Informar o Número e o Ano da RACP",
-          "Clicar em Consultar"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "consultar tratamento de não conformidades no FGQ006",
-      "pesquisar RACP por número e ano no sistema de gestão integrada",
-      "consultar trâmites de ações corretivas e preventivas no FGQ006"
-    ],
-    "status_doc": "inventariado"
-  },
-  "FGQ010": {
-    "codigo": "FGQ010",
-    "nome": "Auditor",
-    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ010Auditor.zul",
-    "categoria": "Gestão Integrada / Auditoria",
-    "o_que_faz": "Permite consultar informações e registros referentes ao cadastro de auditores internos e de sistemas de gestão da qualidade.",
-    "tipo": "leitura",
-    "campos": [
-      {
-        "label": "Auditor",
-        "tipo": "text",
-        "editavel": true
-      },
-      {
-        "label": "Auditor",
-        "tipo": "text",
-        "editavel": false
-      }
-    ],
-    "botoes": [
-      {
-        "label": "Consultar",
-        "id": "k96M_0"
-      },
-      {
-        "label": "Cancelar",
-        "id": "k96M00"
-      }
-    ],
-    "operacoes": [
-      {
-        "intencao": "Consultar auditores cadastrados no FGQ010",
-        "passos": [
-          "Abrir a aplicação FGQ010 via menu Gestão Integrada -> Auditoria -> Cadastro -> Auditor",
-          "Informar ou selecionar o Auditor",
-          "Clicar em Consultar"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "consultar auditores cadastrados no FGQ010",
-      "pesquisar auditor por código ou matrícula no sistema de gestão integrada",
-      "consultar cadastro de auditores no FGQ010"
-    ],
-    "status_doc": "inventariado"
-  },
-  "FGQ018": {
-    "codigo": "FGQ018",
-    "nome": "Relatório Geral",
-    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ018RelatorioGeralRNC.zul",
-    "categoria": "Gestão Integrada / Qualidade",
-    "o_que_faz": "Permite emitir e imprimir o relatório geral de Não Conformidades (RNC) registradas no sistema de gestão integrada por número e ano.",
-    "tipo": "leitura",
-    "campos": [
-      {
-        "label": "Número",
-        "tipo": "text",
-        "editavel": true
-      },
-      {
-        "label": "Ano",
-        "tipo": "text",
-        "editavel": true
-      }
-    ],
-    "botoes": [
-      {
-        "label": "Imprimir",
-        "id": "vBiLh"
-      },
-      {
-        "label": "Cancelar",
-        "id": "vBiLi"
-      }
-    ],
-    "operacoes": [
-      {
-        "intencao": "Emitir relatório geral de RNC no FGQ018",
-        "passos": [
-          "Abrir a aplicação FGQ018 via menu Gestão Integrada -> Não Conformidade -> Consulta -> Relatório Geral",
-          "Informar o Número e o Ano da RNC",
-          "Clicar em Imprimir"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "emitir relatório geral de não conformidades no FGQ018",
-      "pesquisar e imprimir RNC por número e ano no sistema de gestão integrada",
-      "consultar relatório geral de RNC no FGQ018"
-    ],
-    "status_doc": "inventariado"
-  },
-  "FGQ022": {
-    "codigo": "FGQ022",
-    "nome": "Histórico Auditor",
-    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ022HistoricoAuditor.zul",
-    "categoria": "Gestão Integrada / Auditoria",
-    "o_que_faz": "Permite consultar o histórico de auditorias e registros de atuação de auditores cadastrados no sistema de gestão integrada por código ou matrícula.",
-    "tipo": "leitura",
-    "campos": [
-      {
-        "label": "Auditor",
-        "tipo": "text",
-        "editavel": true
-      },
-      {
-        "label": "Auditor",
-        "tipo": "text",
-        "editavel": false
-      }
-    ],
-    "botoes": [
-      {
-        "label": "Consultar",
-        "id": "kY2H00"
-      },
-      {
-        "label": "Cancelar",
-        "id": "kY2H10"
-      }
-    ],
-    "operacoes": [
-      {
-        "intencao": "Consultar histórico de auditor no FGQ022",
-        "passos": [
-          "Abrir a aplicação FGQ022 via menu Gestão Integrada -> Auditoria -> Consulta -> Histórico Auditor",
-          "Informar o código ou matrícula do Auditor",
-          "Clicar em Consultar"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "consultar histórico de auditor no FGQ022",
-      "pesquisar histórico de auditorias por matrícula ou código no sistema de gestão integrada",
-      "consultar histórico de atuação de auditores no FGQ022"
-    ],
-    "status_doc": "inventariado"
-  },
-  "FGQ024": {
-    "codigo": "FGQ024",
-    "nome": "Documentos por UO",
-    "url_zul": "https://www.saneago.com.br/prt/fgq/FGQ024docUO.zul",
-    "categoria": "Gestão Integrada / Documentos",
-    "o_que_faz": "Permite consultar e relacionar documentos do sistema de gestão integrada vinculados por Unidade Organizacional (UO).",
-    "tipo": "leitura",
-    "campos": [
-      {
-        "label": "UO",
-        "tipo": "text",
-        "editavel": true
-      },
-      {
-        "label": "UO",
-        "tipo": "text",
-        "editavel": false
-      }
-    ],
-    "botoes": [
-      {
-        "label": "Consultar",
-        "id": "fTcWw"
-      },
-      {
-        "label": "Cancelar",
-        "id": "fTcWx"
-      }
-    ],
-    "operacoes": [
-      {
-        "intencao": "Consultar documentos por UO no FGQ024",
-        "passos": [
-          "Abrir a aplicação FGQ024 via menu Gestão Integrada -> Documentos -> Consulta -> Documentos por UO",
-          "Informar o código da UO",
-          "Clicar em Consultar"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "consultar documentos por UO no FGQ024",
-      "pesquisar documentos do sistema de gestão integrada por unidade organizacional",
-      "consultar relação de documentos por UO no FGQ024"
     ],
     "status_doc": "inventariado"
   }
