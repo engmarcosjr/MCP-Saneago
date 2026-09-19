@@ -17295,27 +17295,32 @@
   "GPMV005": {
     "codigo": "GPMV005",
     "nome": "Consulta Área Influência",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV005.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta área influência.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM005conAreaInf.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar informações de áreas de influência e afetadas por manobras de registros a partir do código da manobra.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "id": "codigoMnbr",
+        "label": "GPM 005",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Área Influência",
+        "intencao": "Consultar áreas de influência no GPMV005",
         "passos": [
           "Abrir a aplicação GPMV005",
-          "Preencher campos na tela inicial"
+          "Visualizar áreas de influência afetadas pela manobra"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta área influência",
-      "acessar a app GPMV005",
-      "consultar consulta área influência"
+      "consultar áreas de influência no GPMV005",
+      "pesquisar áreas afetadas pela manobra no painel de manobras"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV006": {
     "codigo": "GPMV006",
@@ -17350,27 +17355,57 @@
   "GPMV007": {
     "codigo": "GPMV007",
     "nome": "Inclui Área Afetada não Prevista",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV007.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a inclui área afetada não prevista.",
-    "tipo": "leitura",
-    "campos": [],
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM007incAreaAfe.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite incluir e cadastrar áreas afetadas não previstas em manobras a partir do código da válvula, cidade, bairro e número de quadra.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "id": "codigoValvula",
+        "label": "codigoValvula",
+        "tipo": "text"
+      },
+      {
+        "id": "codigoCidade",
+        "label": "codigoCidade",
+        "tipo": "text"
+      },
+      {
+        "id": "nomeCidade",
+        "label": "nomeCidade",
+        "tipo": "text"
+      },
+      {
+        "id": "codigoBairro",
+        "label": "codigoBairro",
+        "tipo": "text"
+      },
+      {
+        "id": "nomeBairro",
+        "label": "nomeBairro",
+        "tipo": "text"
+      },
+      {
+        "id": "numeroQuadra",
+        "label": "numeroQuadra",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Inclui Área Afetada não Prevista",
+        "intencao": "Incluir área afetada não prevista no GPMV007",
         "passos": [
           "Abrir a aplicação GPMV007",
-          "Preencher campos na tela inicial"
+          "Preencher cidade, bairro e quadra afetada"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de inclui área afetada não prevista",
-      "acessar a app GPMV007",
-      "consultar inclui área afetada não prevista"
+      "incluir área afetada não prevista no GPMV007",
+      "cadastrar quadra ou bairro afetado pela manobra de válvula"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV010": {
     "codigo": "GPMV010",
@@ -17411,27 +17446,67 @@
   "GPMV015": {
     "codigo": "GPMV015",
     "nome": "Registro Fechado por Período",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV015.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registro fechado por período.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM015conManFech.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar e visualizar manobras de registros fechados por período, unidade executora de serviços, cidade e bairro.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "id": "dtPeriodoIni",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "dtPeriodoFim",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "cdUnidadeExecutoraServico",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "nomeUnidadeExecutoraServico",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "codigoCidade",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "nomeCidade",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "codigoBairro",
+        "label": "GPM 015",
+        "tipo": "text"
+      },
+      {
+        "id": "nomeBairro",
+        "label": "GPM 015",
+        "tipo": "text"
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Registro Fechado por Período",
+        "intencao": "Consultar registros fechados por período no GPMV015",
         "passos": [
           "Abrir a aplicação GPMV015",
-          "Preencher campos na tela inicial"
+          "Preencher período ou cidade/bairro desejado"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registro fechado por período",
-      "acessar a app GPMV015",
-      "consultar registro fechado por período"
+      "consultar registros fechados por período no GPMV015",
+      "pesquisar manobras de registros fechados por unidade executora ou cidade"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV016": {
     "codigo": "GPMV016",

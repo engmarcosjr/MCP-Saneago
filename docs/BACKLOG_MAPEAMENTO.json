@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:56:06.346Z",
+    "gerado_em": "2026-09-19T08:03:11.631Z",
     "total": 596,
-    "completos": 405,
-    "pendentes": 191,
+    "completos": 408,
+    "pendentes": 188,
     "por_classe_seguranca": {
       "indeterminado": 246,
       "candidata_leitura": 181,
@@ -13,8 +13,8 @@
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 93,
-      "sem_campos_detectados": 26,
+      "ficha_nao_validada": 90,
+      "sem_campos_detectados": 23,
       "ficha_stub": 10
     }
   },
@@ -6561,20 +6561,17 @@
       "nome": "Consulta Área Influência",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV005.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 818,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1023,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV006",
@@ -6598,20 +6595,17 @@
       "nome": "Inclui Área Afetada não Prevista",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV007.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 850,
+      "tipo_declarado": "Inclusão e Cadastro (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1407,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV010",
@@ -6635,20 +6629,17 @@
       "nome": "Registro Fechado por Período",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV015.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 830,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1140,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV016",

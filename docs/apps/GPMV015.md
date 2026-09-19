@@ -1,27 +1,32 @@
 # GPMV015 - Registro Fechado por Período
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a registro fechado por período.
+Permite consultar e visualizar manobras de registros fechados por período, unidade executora de serviços, cidade e bairro.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM015conManFech.jsp`
+
+## Campos e Filtros da Tela
+- **GPM 015** (`text` / editável): Período inicial e final, unidade executora de serviço, código e nome de cidade, código e nome de bairro para consulta de manobras de registros fechados.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV015 (Registro Fechado por Período)"
-- "Acessar o aplicativo de registro fechado por período"
+## Colunas do Resultado
+Nenhuma grade de resultados acessível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV015`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar registros fechados por período no GPMV015"
+- "pesquisar manobras de registros fechados por unidade executora ou cidade"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Consulta -> Registro Fechado por Período).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

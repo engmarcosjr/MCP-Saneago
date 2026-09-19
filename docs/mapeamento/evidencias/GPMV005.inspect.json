@@ -1,0 +1,31 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Areas Afetadas Pela Manobra:.",
+  "inputs": [
+    {
+      "id": "codigoMnbr",
+      "name": "codigoMnbr",
+      "tipo": "text",
+      "rotulo": "GPM 005",
+      "label": "GPM 005",
+      "valor_atual": "0",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmGPM005",
+      "name": "frmGPM005",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM005conAreaInf.jsp",
+  "codigo": "GPMV005"
+}

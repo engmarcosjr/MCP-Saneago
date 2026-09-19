@@ -1,0 +1,86 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Incluir área afetada não prevista:.",
+  "inputs": [
+    {
+      "id": "codigoValvula",
+      "name": "codigoValvula",
+      "tipo": "text",
+      "rotulo": "codigoValvula",
+      "label": "codigoValvula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "codigoCidade",
+      "label": "codigoCidade",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "nomeCidade",
+      "label": "nomeCidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    },
+    {
+      "id": "codigoBairro",
+      "name": "codigoBairro",
+      "tipo": "text",
+      "rotulo": "codigoBairro",
+      "label": "codigoBairro",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeBairro",
+      "name": "nomeBairro",
+      "tipo": "text",
+      "rotulo": "nomeBairro",
+      "label": "nomeBairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    },
+    {
+      "id": "numeroQuadra",
+      "name": "numeroQuadra",
+      "tipo": "text",
+      "rotulo": "numeroQuadra",
+      "label": "numeroQuadra",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmGPM007",
+      "name": "frmGPM007",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM007incAreaAfe.jsp",
+  "codigo": "GPMV007"
+}
