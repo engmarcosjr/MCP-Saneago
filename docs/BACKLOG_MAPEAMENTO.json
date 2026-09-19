@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:02:42.889Z",
+    "gerado_em": "2026-09-19T09:11:18.498Z",
     "total": 596,
-    "completos": 428,
-    "pendentes": 168,
+    "completos": 431,
+    "pendentes": 165,
     "por_classe_seguranca": {
-      "indeterminado": 230,
-      "candidata_leitura": 194,
+      "indeterminado": 229,
+      "candidata_leitura": 195,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 84,
-      "ficha_nao_validada": 70,
-      "sem_campos_detectados": 6,
-      "ficha_stub": 7
+      "sem_roteiro": 82,
+      "ficha_nao_validada": 69,
+      "sem_campos_detectados": 5,
+      "ficha_stub": 5
     }
   },
   "apps": [
@@ -8090,14 +8090,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 9980
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 10000
     },
     {
       "codigo": "LIGV002",
@@ -8110,14 +8107,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 9980
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 10000
     },
     {
       "codigo": "LQA036",
@@ -9946,20 +9940,21 @@
       "nome": "Registro de Ocorrência Pendente",
       "vertical": "MGO",
       "url_zul": "https://www.saneago.com.br/prt/mgo/MGOV033.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 842,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1790,
+      "botoes": [
+        "Consultar",
+        "Gerar relatório",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Gerar relatório",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MGOV050",

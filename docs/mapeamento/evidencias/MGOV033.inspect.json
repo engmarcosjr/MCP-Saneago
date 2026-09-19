@@ -1,0 +1,165 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "MGO033 - Registro de Ocorrência Pendentes",
+  "inputs": [
+    {
+      "id": "oOLUh-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de relatório",
+      "label": "Tipo de relatório",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oOLU_1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oOLU61-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Origem",
+      "label": "Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oOLUc1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Motivo",
+      "label": "Motivo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oOLUh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLU_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLU61-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLUc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLUg1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oOLUh1",
+      "name": null,
+      "label": "Gerar relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "oOLUi1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oOLUh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLU_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLU61-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLUc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oOLUg1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oOLUh1",
+      "name": null,
+      "label": "Gerar relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "oOLUi1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Data",
+    "Reg./Ano",
+    "N.º Encam.",
+    "Data Encam.",
+    "Origem",
+    "Forma de Contato",
+    "Sigla UO",
+    "Nº AGR/PROCON/AMAE/ARM",
+    "Nº OGE",
+    "Processo",
+    "Motivo",
+    "Número/Ano",
+    "Tipo",
+    "Cidade",
+    "Nº Encam.",
+    "Vencimento",
+    "Prorrogação",
+    "Dias de Vida",
+    "Forma Envio",
+    "Aprovação",
+    "Matrícula"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mgo/MGO033RegistroOcorrenciaPendente.zul",
+  "codigo": "MGOV033"
+}

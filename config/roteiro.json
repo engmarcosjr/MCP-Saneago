@@ -27110,27 +27110,70 @@
   "MGOV033": {
     "codigo": "MGOV033",
     "nome": "Registro de Ocorrência Pendente",
-    "url_zul": "https://prod.saneago.com.br/prt/mgo/MGOV033.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registro de ocorrência pendente.",
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO033RegistroOcorrenciaPendente.zul",
+    "categoria": "Ouvidoria / Consulta",
+    "o_que_faz": "Permite consultar, filtrar e gerar relatórios de registros de ocorrência pendentes da Ouvidoria por tipo de relatório, tipo, origem e motivo.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Tipo de relatório",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": null
+      },
+      {
+        "rotulo": "Tipo",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": null
+      },
+      {
+        "rotulo": "Origem",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": null
+      },
+      {
+        "rotulo": "Motivo",
+        "tipo": "combobox",
+        "editavel": false,
+        "readonly": true,
+        "maxlength": null
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "oOLUg1"
+      },
+      {
+        "label": "Gerar relatório",
+        "id": "oOLUh1"
+      },
+      {
+        "label": "Cancelar",
+        "id": "oOLUi1"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Registro de Ocorrência Pendente",
+        "intencao": "Consultar ocorrências pendentes na ouvidoria no MGOV033",
         "passos": [
           "Abrir a aplicação MGOV033",
-          "Preencher campos na tela inicial"
+          "Selecionar os filtros desejados (Tipo de relatório, Tipo, Origem, Motivo)",
+          "Clicar em Consultar ou Gerar relatório"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registro de ocorrência pendente",
-      "acessar a app MGOV033",
-      "consultar registro de ocorrência pendente"
+      "consultar ocorrências pendentes na ouvidoria no MGOV033",
+      "gerar relatório de ocorrências pendentes da ouvidoria",
+      "pesquisar registros de ocorrência pendente por motivo ou origem"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MGOV059": {
     "codigo": "MGOV059",

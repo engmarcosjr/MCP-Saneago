@@ -474,6 +474,7 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `LIG002` | Mapa Web SanSIG | Botões: nenhum | `bloqueada` | Aplicação não carregou o frame no portal corporativo para o perfil atual.
 - `LIGV002` | Mapa Web SanSIG | Botões: nenhum | `bloqueada` | Aplicação não carregou o frame no portal corporativo para o perfil atual.
 - `MGOV012` | Providência - UO Responsável | Botões: `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e impressão de providências e ocorrências da Ouvidoria por registro de ocorrência ou encaminhamento sem botões de escrita.
+- `MGOV033` | Registro de Ocorrência Pendente | Botões: `Consultar`, `Gerar relatório`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de registros de ocorrências pendentes da Ouvidoria por tipo, origem e motivo sem botões de escrita.
 
 
 
