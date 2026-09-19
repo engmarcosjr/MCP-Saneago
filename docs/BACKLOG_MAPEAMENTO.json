@@ -1,12 +1,12 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:17:03.935Z",
+    "gerado_em": "2026-09-19T05:25:13.201Z",
     "total": 596,
-    "completos": 353,
-    "pendentes": 243,
+    "completos": 354,
+    "pendentes": 242,
     "por_classe_seguranca": {
-      "indeterminado": 277,
-      "candidata_leitura": 152,
+      "indeterminado": 276,
+      "candidata_leitura": 153,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
@@ -14,7 +14,7 @@
       "sem_url": 11,
       "sem_roteiro": 94,
       "ficha_nao_validada": 136,
-      "ficha_stub": 46,
+      "ficha_stub": 45,
       "sem_campos_detectados": 64
     }
   },
@@ -773,7 +773,7 @@
       "url_zul": "https://www.saneago.com.br/prt/bpa/BPAV004.zul",
       "tipo_declarado": "Bloqueada / Sem Acesso",
       "status_ficha": "inventariado",
-      "bytes_ficha": 852,
+      "bytes_ficha": 843,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
@@ -781,7 +781,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 8990
     },
@@ -8347,7 +8347,7 @@
       "url_zul": "https://www.saneago.com.br/prt/lqa/LQAV079.zul",
       "tipo_declarado": "Erro / Bloqueada",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1055,
+      "bytes_ficha": 1020,
       "botoes": [
         "ok"
       ],
@@ -8357,7 +8357,7 @@
         "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 6990
     },
@@ -11955,19 +11955,19 @@
       "nome": "Gastos por Periodo",
       "vertical": "PGT",
       "url_zul": "https://www.saneago.com.br/prt/pgt/PGTV910.zul",
-      "tipo_declarado": null,
-      "status_ficha": null,
-      "bytes_ficha": 766,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub"
+      "tipo_declarado": "Leitura e Consulta (html)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 980,
+      "botoes": [
+        "Consultar"
       ],
-      "completo": false,
-      "tentativas": 1,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 2,
       "aposentada": false,
-      "prioridade": 1990
+      "prioridade": 2000
     },
     {
       "codigo": "PGTV912",

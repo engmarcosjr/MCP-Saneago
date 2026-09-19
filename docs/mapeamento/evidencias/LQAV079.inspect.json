@@ -4,25 +4,25 @@
   "inputs": [],
   "botoes": [
     {
-      "id": "kFjQ0-mask-a",
+      "id": "gNpS0-mask-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "kFjQ0-close",
+      "id": "gNpS0-close",
       "name": null,
       "label": "Close",
       "tipo": "submit"
     },
     {
-      "id": "kFjQa-exp",
+      "id": "gNpSa-exp",
       "name": null,
       "label": "Expand",
       "tipo": "submit"
     },
     {
-      "id": "kFjQd",
+      "id": "gNpSd",
       "name": null,
       "label": "ok",
       "tipo": "button"
@@ -30,25 +30,25 @@
   ],
   "buttons": [
     {
-      "id": "kFjQ0-mask-a",
+      "id": "gNpS0-mask-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "kFjQ0-close",
+      "id": "gNpS0-close",
       "name": null,
       "label": "Close",
       "tipo": "submit"
     },
     {
-      "id": "kFjQa-exp",
+      "id": "gNpSa-exp",
       "name": null,
       "label": "Expand",
       "tipo": "submit"
     },
     {
-      "id": "kFjQd",
+      "id": "gNpSd",
       "name": null,
       "label": "ok",
       "tipo": "button"

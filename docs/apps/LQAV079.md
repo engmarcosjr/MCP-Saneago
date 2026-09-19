@@ -13,13 +13,17 @@ Aplicação de emissão do relatório de Índice de Qualidade da Água (IQA Anua
 - `https://www.saneago.com.br/prt/lqa/LQA079iqaAnual.jsp`
 
 ## Campos e Filtros da Tela
-Nenhum campo interativo detectado na tela inicial (tela de erro ZK exibida).
+Nenhum campo interativo detectado na tela inicial (página de erro ZK exibida).
 
 ## Botões Disponíveis
-- **ok** (botão de confirmação do modal de erro)
-*(Exibe também botões técnicos de modal: `Close`, `Expand` e 1 botão sem rótulo).*
+- **ok**: Botão de confirmação do modal de erro.
 
-## Colunas e Grade de Resultados
+### Botões Ignorados
+- `Sem Rotulo`
+- `Close`
+- `Expand`
+
+## Colunas do Resultado
 Nenhuma grade de resultados visível na tela inicial.
 
 ## Perguntas que Responde
@@ -30,4 +34,4 @@ Nenhuma grade de resultados visível na tela inicial.
 - **Acesso Confirmado**: Erro na aplicação (apresenta página de erro padrão ZK ao abrir).
 
 ---
-*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

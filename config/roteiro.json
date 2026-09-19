@@ -13315,22 +13315,16 @@
     "codigo": "LQAV079",
     "nome": "IQA Anual",
     "url_zul": "https://www.saneago.com.br/prt/lqa/LQA079iqaAnual.jsp",
-    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "categoria": "Controle de Qualidade da Água / Saneago",
     "o_que_faz": "Aplicação de emissão do relatório de Índice de Qualidade da Água (IQA Anual), apresentando página de erro padrão ZK ao abrir.",
-    "tipo": "leitura",
+    "tipo": "erro",
     "campos": [],
-    "botoes": [],
-    "operacoes": [
+    "botoes": [
       {
-        "intencao": "Acessar IQA Anual no LQAV079",
-        "passos": [
-          "Abrir a aplicação LQAV079"
-        ]
+        "label": "ok",
+        "id": "gNpSd",
+        "tipo": "button"
       }
-    ],
-    "exemplos_intencao": [
-      "abrir a tela de iqa anual no LQAV079",
-      "consultar iqa anual"
     ],
     "status_doc": "inventariado"
   },
