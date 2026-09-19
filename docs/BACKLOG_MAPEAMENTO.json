@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:03:26.113Z",
+    "gerado_em": "2026-09-19T06:09:30.785Z",
     "total": 596,
-    "completos": 364,
-    "pendentes": 232,
+    "completos": 366,
+    "pendentes": 230,
     "por_classe_seguranca": {
-      "indeterminado": 273,
-      "candidata_leitura": 156,
+      "indeterminado": 272,
+      "candidata_leitura": 157,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 131,
-      "ficha_stub": 40,
-      "sem_campos_detectados": 57
+      "ficha_nao_validada": 128,
+      "ficha_stub": 37,
+      "sem_campos_detectados": 55
     }
   },
   "apps": [
@@ -6673,21 +6673,17 @@
       "nome": "Registro Fechado",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV010.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 778,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1035,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV015",
@@ -6858,42 +6854,58 @@
       "nome": "Solicitações",
       "vertical": "GSI",
       "url_zul": "https://www.saneago.com.br/prt/gsi/GSIV005.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 770,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Cadastro e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1495,
+      "botoes": [
+        "Pesquisar",
+        "Limpar",
+        "Nova Solicitação",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Pesquisar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GSIV006",
       "nome": "Escolha de Serviço",
       "vertical": "GSI",
       "url_zul": "https://www.saneago.com.br/prt/gsi/GSIV006.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 790,
-      "botoes": [],
+      "tipo_declarado": "Seleção e Abertura de Solicitação (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2331,
+      "botoes": [
+        "SERVIÇOS GERAIS",
+        "GESTÃO INTEGRADA",
+        "SUPERVISÃO DE QUALIDADE / CADASTRO DE MATERIAL",
+        "GERÊNCIA DE TRANSPORTES",
+        "GER. DE OFICINA ELETROMECÂNICA",
+        "AUTOMAÇÃO - ENERGIA - PITOMETRIA E MACROMEDIÇÃO",
+        "CONTRATO",
+        "SUPERVISÃO INFORMAÇÕES CONSOLIDADAS",
+        "GESTÃO ELETRÔNICA DE DOCUMENTOS",
+        "GIS - CADASTRO TÉCNICO E INFORMAÇÕES EXPORTADAS DO SISTEMA",
+        "LABORATÓRIOS - PGPQ",
+        "GERÊNCIA DE TREINAMENTO",
+        "AÇÕES SOCIOAMBIENTAIS",
+        "TECNOLOGIA DA INFORMAÇÃO",
+        "Nova Solicitacao",
+        "Cancelar"
+      ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 9990
     },
     {
       "codigo": "GSIV007",
