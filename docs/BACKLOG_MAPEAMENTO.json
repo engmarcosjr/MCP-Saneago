@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T04:53:47.977Z",
+    "gerado_em": "2026-09-19T05:01:19.339Z",
     "total": 596,
-    "completos": 345,
-    "pendentes": 251,
+    "completos": 350,
+    "pendentes": 246,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -12,10 +12,10 @@
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 97,
+      "sem_roteiro": 94,
       "ficha_nao_validada": 136,
-      "ficha_stub": 51,
-      "sem_campos_detectados": 64
+      "ficha_stub": 48,
+      "sem_campos_detectados": 65
     }
   },
   "apps": [
@@ -4704,13 +4704,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
+      "lacunas": [],
+      "completo": true,
       "tentativas": 3,
       "aposentada": true,
-      "prioridade": -10
+      "prioridade": 0
     },
     {
       "codigo": "ECO823",
@@ -4774,13 +4772,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
+      "lacunas": [],
+      "completo": true,
       "tentativas": 3,
       "aposentada": true,
-      "prioridade": -10
+      "prioridade": 0
     },
     {
       "codigo": "ECO962",
@@ -4793,13 +4789,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
+      "lacunas": [],
+      "completo": true,
       "tentativas": 3,
       "aposentada": true,
-      "prioridade": -10
+      "prioridade": 0
     },
     {
       "codigo": "ECOV010",
@@ -4884,15 +4878,15 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECOV830.zul",
       "tipo_declarado": "Informativo / Sem campos de entrada (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 774,
+      "bytes_ficha": 1223,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "ficha_stub"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": -10
     },
@@ -9168,17 +9162,15 @@
       "url_zul": "/prt/lrs/LRS732relAtendPer.jsp",
       "tipo_declarado": "Leitura e Relatório (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 764,
+      "bytes_ficha": 1505,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub"
-      ],
-      "completo": false,
-      "tentativas": 1,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 2,
       "aposentada": false,
-      "prioridade": 990
+      "prioridade": 1000
     },
     {
       "codigo": "LRS733",
@@ -9323,17 +9315,15 @@
       "url_zul": "https://www.saneago.com.br/prt/lrs/LRSV015.zul",
       "tipo_declarado": "Consulta de Atendimento (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 705,
+      "bytes_ficha": 1339,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub"
-      ],
-      "completo": false,
-      "tentativas": 1,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 2,
       "aposentada": false,
-      "prioridade": 990
+      "prioridade": 1000
     },
     {
       "codigo": "LRSV016",

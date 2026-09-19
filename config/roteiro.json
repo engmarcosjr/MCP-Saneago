@@ -4403,21 +4403,22 @@
     "nome": "Áreas de Inf. dos Reservatórios",
     "url_zul": "https://www.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
     "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Aplicação informativa legada relacionada a escritórios e áreas de influência de reservatórios, aberta sem campos interativos de formulário.",
+    "o_que_faz": "Exibe informações estáticas e áreas de influência dos reservatórios do sistema de abastecimento de água.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Áreas de Influência dos Reservatórios",
+        "intencao": "Consultar áreas de influência dos reservatórios no ECO808",
         "passos": [
-          "Abrir a aplicação ECO808"
+          "Abrir a aplicação ECO808",
+          "Visualizar as informações na página"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir ECO808",
-      "consultar áreas de influência dos reservatórios"
+      "consultar áreas de influência dos reservatórios no ECO808",
+      "ver informações de reservatórios no ECO808"
     ],
     "status_doc": "inventariado"
   },
@@ -9796,30 +9797,6 @@
       }
     ]
   },
-  "ECO808": {
-    "codigo": "ECO808",
-    "nome": "Áreas de Inf. dos Reservatórios",
-    "url_zul": "https://www.saneago.com.br/prt/eco/ECO808AreaInfRes.jsp",
-    "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Exibe informações estáticas e áreas de influência dos reservatórios do sistema de abastecimento de água.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
-    "operacoes": [
-      {
-        "intencao": "Consultar áreas de influência dos reservatórios no ECO808",
-        "passos": [
-          "Abrir a aplicação ECO808",
-          "Visualizar as informações na página"
-        ]
-      }
-    ],
-    "exemplos_intencao": [
-      "consultar áreas de influência dos reservatórios no ECO808",
-      "ver informações de reservatórios no ECO808"
-    ],
-    "status_doc": "inventariado"
-  },
   "ECO811": {
     "codigo": "ECO811",
     "nome": "Doc. do Macroprocesso de Comercialização",
@@ -10100,8 +10077,8 @@
     "codigo": "ECOV830",
     "nome": "WEBCOM - Vídeo Aulas",
     "url_zul": "https://www.saneago.com.br/prt/eco/ECO830VideoAulas.zul",
-    "categoria": "Comercial e Atendimento ao Cliente",
-    "o_que_faz": "Permite consultar e visualizar vídeo aulas do sistema WEBCOM no portal corporativo.",
+    "categoria": "Comercial e Atendimento ao Cliente / Saneago",
+    "o_que_faz": "Permite consultar, assistir e visualizar vídeo aulas e tutoriais de treinamento do sistema comercial WEBCOM no portal corporativo.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [],
@@ -10109,14 +10086,15 @@
       {
         "intencao": "Consultar Vídeo Aulas WEBCOM",
         "passos": [
-          "Abrir a aplicação ECOV830",
-          "Visualizar os vídeos disponíveis"
+          "Abrir aplicação ECOV830",
+          "Visualizar tutoriais e vídeos disponíveis"
         ]
       }
     ],
     "exemplos_intencao": [
       "consultar vídeo aulas no ECOV830",
-      "assistir treinamentos do WEBCOM"
+      "assistir treinamentos e tutoriais do sistema comercial WEBCOM",
+      "como acessar as vídeo aulas do sistema WEBCOM"
     ],
     "status_doc": "inventariado"
   },
@@ -14590,8 +14568,8 @@
     "nome": "Atendimento Por Período",
     "url_zul": "https://www.saneago.com.br/prt/lrs/LRS732relAtendPer.jsp",
     "categoria": "Logística, Redes e Serviços de Campo / Saneago",
-    "o_que_faz": "Permite a emissão e visualização de relatório de serviços atendidos por período.",
-    "tipo": "Leitura e Relatório (jsp)",
+    "o_que_faz": "Permite a emissão, consulta e visualização de relatório gerencial de ordens e registros de serviços atendidos por período de datas no sistema de logística e redes (LRS).",
+    "tipo": "leitura",
     "campos": [
       {
         "id": "dataInicio",
@@ -14608,7 +14586,22 @@
         "max": 10
       }
     ],
-    "botoes": []
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Emitir relatório de serviços atendidos por período no LRS732",
+        "passos": [
+          "Abrir aplicação LRS732",
+          "Informar data inicial e final no campo Periodo"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar relatório de atendimentos por período no LRS732",
+      "emitir relação de serviços atendidos por intervalo de datas",
+      "pesquisar histórico de atendimentos operacionais de campo"
+    ],
+    "status_doc": "inventariado"
   },
   "LRS733": {
     "codigo": "LRS733",
@@ -15121,19 +15114,33 @@
     "nome": "Ocorrências de Esgoto por RA",
     "url_zul": "https://www.saneago.com.br/prt/lrs/LRS015conOcoEsgRA.jsp",
     "categoria": "Logística, Redes e Serviços de Campo / Saneago",
-    "o_que_faz": "Permite a consulta de ocorrências e registros de atendimento (RA) de esgoto.",
-    "tipo": "Consulta de Atendimento (jsp)",
+    "o_que_faz": "Permite a consulta e o rastreamento do histórico de ocorrências e registros de atendimento (RA) vinculados aos serviços de manutenção e redes de esgoto.",
+    "tipo": "leitura",
     "campos": [
       {
-        "nome": "nu_ra",
+        "id": "nu_ra",
         "rotulo": "LRS 015",
         "tipo": "text",
         "editavel": true,
-        "readonly": false,
         "max": null
       }
     ],
-    "botoes": []
+    "botoes": [],
+    "operacoes": [
+      {
+        "intencao": "Consultar ocorrências de esgoto por número de RA no LRSV015",
+        "passos": [
+          "Abrir aplicação LRSV015",
+          "Informar número da RA no campo LRS 015"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar ocorrências de esgoto por RA no LRSV015",
+      "pesquisar histórico de atendimento de esgoto pelo número da RA",
+      "verificar detalhamento de ocorrência técnica de rede de esgoto"
+    ],
+    "status_doc": "inventariado"
   },
   "LRSV016": {
     "codigo": "LRSV016",

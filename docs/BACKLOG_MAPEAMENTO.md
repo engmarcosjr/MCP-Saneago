@@ -2,8 +2,8 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-19T04:53:47.977Z
-- Aplicações: **596** — completas: **345** — pendentes: **251**
+- Gerado em: 2026-09-19T05:01:19.339Z
+- Aplicações: **596** — completas: **350** — pendentes: **246**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
 
@@ -19,42 +19,42 @@
 | Lacuna | Apps |
 |---|---|
 | ficha_nao_validada | 136 |
-| sem_roteiro | 97 |
-| sem_campos_detectados | 64 |
-| ficha_stub | 51 |
+| sem_roteiro | 94 |
+| sem_campos_detectados | 65 |
+| ficha_stub | 48 |
 | sem_url | 11 |
 
 ## Próximos 30 da fila
 
 | # | Código | Nome | Vertical | Classe | Lacunas |
 |---|---|---|---|---|---|
-| 1 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | sem_roteiro |
-| 2 | ECO954 | Painel de Religação | ECO | indeterminado | sem_roteiro |
-| 3 | ECO962 | Painel de Cortes | ECO | indeterminado | sem_roteiro |
-| 4 | ECOV830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
-| 5 | LRS732 | Atendimento Por Período | LRS | indeterminado | ficha_stub |
-| 6 | LRSV015 | Ocorrências de Esgoto por RA | LRS | indeterminado | ficha_stub |
-| 7 | PGT505 | Resumo | PGT | indeterminado | ficha_stub |
-| 8 | PGTV505 | Resumo | PGT | indeterminado | ficha_stub |
-| 9 | PGTV910 | Gastos por Periodo | PGT | indeterminado | ficha_stub |
-| 10 | LQAV079 | IQA Anual | LQA | indeterminado | sem_campos_detectados |
-| 11 | BPAV004 | Gestão de Empregados no Teletrabalho | BPA | sem_acesso | sem_roteiro |
-| 12 | BPAV005 | Reporte de Atividades de Teletrabalho | BPA | sem_acesso | sem_roteiro |
-| 13 | BPAV006 | Painel de Empregados em Teletrabalho | BPA | sem_acesso | sem_roteiro |
-| 14 | BPAV373 | Ranking PDV | BPA | indeterminado | sem_campos_detectados |
-| 15 | GCAV003 | Melhorias Previstas | GCA | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 16 | GPMV001 | Manobra de Registros | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 17 | GPMV002 | Manobra | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 18 | GPMV003 | Seleciona Valvula | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 19 | GPMV006 | Área Afetada | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 20 | GPMV010 | Registro Fechado | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 21 | GSIV005 | Solicitações | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 22 | GSIV006 | Escolha de Serviço | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 23 | GSIV013 | Pesquisa Geral | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 24 | GSPV102 | Trâmite | GSP | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 25 | HVWV009 | Conta | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 26 | HVWV019 | Manutenção | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 27 | JAJ028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 28 | JAJ033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 29 | JAJV028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
-| 30 | JAJV033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 1 | ECOV830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | sem_campos_detectados |
+| 2 | PGT505 | Resumo | PGT | indeterminado | ficha_stub |
+| 3 | PGTV505 | Resumo | PGT | indeterminado | ficha_stub |
+| 4 | PGTV910 | Gastos por Periodo | PGT | indeterminado | ficha_stub |
+| 5 | LQAV079 | IQA Anual | LQA | indeterminado | sem_campos_detectados |
+| 6 | BPAV004 | Gestão de Empregados no Teletrabalho | BPA | sem_acesso | sem_roteiro |
+| 7 | BPAV005 | Reporte de Atividades de Teletrabalho | BPA | sem_acesso | sem_roteiro |
+| 8 | BPAV006 | Painel de Empregados em Teletrabalho | BPA | sem_acesso | sem_roteiro |
+| 9 | BPAV373 | Ranking PDV | BPA | indeterminado | sem_campos_detectados |
+| 10 | GCAV003 | Melhorias Previstas | GCA | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 11 | GPMV001 | Manobra de Registros | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 12 | GPMV002 | Manobra | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 13 | GPMV003 | Seleciona Valvula | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 14 | GPMV006 | Área Afetada | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 15 | GPMV010 | Registro Fechado | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 16 | GSIV005 | Solicitações | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 17 | GSIV006 | Escolha de Serviço | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 18 | GSIV013 | Pesquisa Geral | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 19 | GSPV102 | Trâmite | GSP | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 20 | HVWV009 | Conta | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 21 | HVWV019 | Manutenção | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 22 | JAJ028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 23 | JAJ033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 24 | JAJV028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 25 | JAJV033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 26 | JAJV042 | Consulta Cobrança | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 27 | KRT028 | Lista para Análise | KRT | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 28 | KRTV028 | Lista para Análise | KRT | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 29 | MSIV070 | Registrar Voto | MSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 30 | MTG006 | Andamento Geral | MTG | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |

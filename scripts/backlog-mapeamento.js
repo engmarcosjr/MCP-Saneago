@@ -164,6 +164,7 @@ function lacunas(app, ficha, temRoteiro, reg) {
     DESFECHO_IMPRODUTIVO.includes(auditada.classe_proposta) &&
     reg.tentativas >= MAX_TENTATIVAS
   ) {
+    if (auditada.classe_proposta === 'bloqueada') return [];
     return temRoteiro ? [] : ['sem_roteiro'];
   }
   if (!ficha) out.push('sem_ficha');
