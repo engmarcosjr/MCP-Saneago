@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-12T19:14:24.889Z",
+    "gerado_em": "2026-09-19T03:07:57.902Z",
     "total": 596,
-    "completos": 366,
-    "pendentes": 230,
+    "completos": 343,
+    "pendentes": 253,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -11,11 +11,11 @@
       "sem_acesso": 8
     },
     "por_lacuna": {
-      "sem_roteiro": 91,
-      "ficha_nao_validada": 139,
-      "ficha_stub": 47,
-      "sem_campos_detectados": 65,
-      "sem_url": 2
+      "sem_url": 11,
+      "sem_roteiro": 97,
+      "ficha_nao_validada": 136,
+      "ficha_stub": 52,
+      "sem_campos_detectados": 65
     }
   },
   "apps": [
@@ -32,9 +32,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "A0074",
@@ -49,9 +51,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "A3000",
@@ -66,9 +70,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "AGD001",
@@ -699,9 +705,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 9000
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": 8990
     },
     {
       "codigo": "BPAV005",
@@ -714,9 +722,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 9000
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": 8990
     },
     {
       "codigo": "BPAV006",
@@ -729,9 +739,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 9000
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": 8990
     },
     {
       "codigo": "BPAV354",
@@ -871,9 +883,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 9000
+      "lacunas": [
+        "sem_campos_detectados"
+      ],
+      "completo": false,
+      "prioridade": 8990
     },
     {
       "codigo": "BPAV433",
@@ -1382,9 +1396,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "D4008",
@@ -1399,9 +1415,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "D4014",
@@ -1416,9 +1434,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "D4015",
@@ -1433,9 +1453,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "D4030",
@@ -1470,9 +1492,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     },
     {
       "codigo": "EAC005",
@@ -2247,7 +2271,7 @@
       "url_zul": "https://www.saneago.com.br/prt/eco/ECO151CadastroUsuario.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 4368,
+      "bytes_ficha": 4347,
       "botoes": [
         "Consultar",
         "Cancelar"
@@ -4180,9 +4204,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "sem_campos_detectados"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECO811",
@@ -4195,9 +4221,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "sem_campos_detectados"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECO815",
@@ -4210,9 +4238,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECO823",
@@ -4255,9 +4285,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECO954",
@@ -4270,9 +4302,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECO962",
@@ -4285,9 +4319,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "sem_roteiro"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECOV010",
@@ -4368,9 +4404,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 0
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": -10
     },
     {
       "codigo": "ECS006",
@@ -5728,21 +5766,19 @@
       "nome": "GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS",
       "vertical": "G",
       "url_zul": null,
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 897,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1002,
       "botoes": [
         "Ver localização no Mapa"
       ],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
+      "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada",
         "sem_url"
       ],
       "completo": false,
-      "prioridade": 9970
+      "prioridade": 9990
     },
     {
       "codigo": "GCA003",
@@ -5770,38 +5806,30 @@
       "nome": "Atividades",
       "vertical": "GCA",
       "url_zul": "https://www.saneago.com.br/prt/gca/GCAV001.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 754,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1136,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": 9970
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 10000
     },
     {
       "codigo": "GCAV002",
       "nome": "Atividades Diárias",
       "vertical": "GCA",
       "url_zul": "https://www.saneago.com.br/prt/gca/GCAV002.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 790,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1006,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "prioridade": 9970
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "prioridade": 10000
     },
     {
       "codigo": "GCAV003",
@@ -7894,7 +7922,7 @@
       "url_zul": "/prt/lrs/LRS013extravaza.jsp",
       "tipo_declarado": "Cadastro e Escrita (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1618,
+      "bytes_ficha": 1443,
       "botoes": [],
       "classe_seguranca": "possui_escrita",
       "motivo_classe": "Tipo declarado: Cadastro e Escrita (jsp)",
@@ -8248,9 +8276,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 1000
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": 990
     },
     {
       "codigo": "LRS733",
@@ -8334,7 +8364,7 @@
       "url_zul": "https://www.saneago.com.br/prt/lrs/LRSV012.zul",
       "tipo_declarado": "Formulário Cadastral (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1719,
+      "bytes_ficha": 1519,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
@@ -8349,7 +8379,7 @@
       "url_zul": "https://www.saneago.com.br/prt/lrs/LRSV013.zul",
       "tipo_declarado": "Formulário Cadastral (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1596,
+      "bytes_ficha": 1421,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
@@ -8364,7 +8394,7 @@
       "url_zul": "https://www.saneago.com.br/prt/lrs/LRSV014.zul",
       "tipo_declarado": "Formulário Cadastral (jsp)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 1739,
+      "bytes_ficha": 1539,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
@@ -8383,9 +8413,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 1000
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": 990
     },
     {
       "codigo": "LRSV016",
@@ -10515,9 +10547,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 2000
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": 1990
     },
     {
       "codigo": "PGT510",
@@ -10680,9 +10714,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 2000
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": 1990
     },
     {
       "codigo": "PGTV507",
@@ -10755,9 +10791,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 2000
+      "lacunas": [
+        "ficha_stub"
+      ],
+      "completo": false,
+      "prioridade": 1990
     },
     {
       "codigo": "PGTV912",
@@ -10853,9 +10891,11 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "nenhum botão reconhecido",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 10000
+      "lacunas": [
+        "sem_url"
+      ],
+      "completo": false,
+      "prioridade": 9990
     }
   ]
 }

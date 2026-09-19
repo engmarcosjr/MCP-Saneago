@@ -105,8 +105,31 @@ function codigosComDivergencia() {
   }
 }
 
-function lacunas(app, ficha, temRoteiro) {
+const P_AUDITORIA = path.join(RAIZ, 'docs', 'mapeamento', 'AUDITORIA.jsonl');
+
+function appsAuditadas() {
+  if (!fs.existsSync(P_AUDITORIA)) return new Map();
+  const linhas = fs.readFileSync(P_AUDITORIA, 'utf8').trim().split('\n').filter(Boolean);
+  const mapa = new Map();
+  for (const l of linhas) {
+    try {
+      const obj = JSON.parse(l);
+      mapa.set(obj.codigo, obj);
+    } catch (_) {}
+  }
+  return mapa;
+}
+
+function lacunas(app, ficha, temRoteiro, auditada) {
+  // Ter linha no AUDITORIA.jsonl NAO e prova de app completa: o log registra o
+  // que foi tentado, nao o que ficou bom. Uma versao anterior retornava [] aqui
+  // e 363 apps sumiram da fila -- 6 delas sem roteiro e 10 com ficha stub.
+  // A auditoria continua mandando pelo caminho `auditoria_pendente`, em main().
   const out = [];
+  if (auditada && auditada.classe_proposta === 'bloqueada') {
+    // App que nao abre nao tem lacuna a preencher: o desfecho e final.
+    return temRoteiro ? [] : ['sem_roteiro'];
+  }
   if (!ficha) out.push('sem_ficha');
   else {
     if (ficha.stub) out.push('ficha_stub');
@@ -122,13 +145,15 @@ function main() {
   const catalogo = require(path.join(RAIZ, 'config', 'catalogo_aplicacoes.json'));
   const roteiro = require(path.join(RAIZ, 'config', 'roteiro.json'));
   const comDivergencia = codigosComDivergencia();
+  const auditadas = appsAuditadas();
 
   const apps = catalogo.map((app) => {
     const ficha = lerFicha(app.codigo);
     const temRoteiro = Boolean(roteiro[app.codigo]);
     const vertical = (app.codigo.match(/^[A-Z]+?(?=V?\d)/) || app.codigo.match(/^[A-Z]+/) || ['?'])[0];
     const seg = classificarSeguranca(ficha);
-    const gaps = lacunas(app, ficha, temRoteiro);
+    const auditada = auditadas.get(app.codigo);
+    const gaps = lacunas(app, ficha, temRoteiro, auditada);
     if (comDivergencia.has(app.codigo)) gaps.push('auditoria_pendente');
 
     const idxVertical = ORDEM_VERTICAIS.indexOf(vertical);

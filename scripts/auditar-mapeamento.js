@@ -56,18 +56,48 @@ function normalizarEvidencia(bruto) {
   };
 }
 
-/** Rotulos declarados na ficha, apenas das secoes de campos e de botoes. */
+/**
+ * Rotulos declarados na ficha, apenas das secoes de campos e de botoes.
+ *
+ * As fichas foram escritas em tres formatos ao longo do mapeamento, e ler so um
+ * deixa o C2 cego -- que e o mesmo que nao ter C2:
+ *   1. `## Botoes Disponiveis` + `- **Consultar**: descricao`
+ *   2. `## Botoes Disponiveis` + `- \`Consultar\``
+ *   3. `## Botoes e Acoes`     + tabela markdown `| Consultar | button | ... |`
+ */
 function rotulosDaFicha(md) {
-  const secao = (titulo) => {
-    const re = new RegExp(`^## ${titulo}[^\\n]*\\n([\\s\\S]*?)(?=^## |\\Z)`, 'm');
-    const m = md.match(re);
-    return m ? m[1] : '';
+  // Fatiar por cabecalho em vez de regex com lookahead: a versao anterior usava
+  // `\\Z` (sintaxe de Python) que em JavaScript e a LETRA Z, entao a secao era
+  // cortada no primeiro "Z" do texto. Bug silencioso -- o C2 lia secao truncada.
+  const blocos = md.split(/^## /m).slice(1);
+  const secao = (padrao) => {
+    const re = new RegExp(`^${padrao}`, 'i');
+    const b = blocos.find((x) => re.test(x));
+    return b ? b.slice(b.indexOf('\n') + 1) : '';
   };
-  const extrai = (txt) =>
-    [...txt.matchAll(/^- \*\*([^*]+)\*\*/gm)].map((x) => x[1].replace(/\s*\(.*\)\s*$/, '').trim());
+
+  const extrai = (txt) => {
+    const negrito = [...txt.matchAll(/^- \*\*([^*]+)\*\*/gm)].map((x) => x[1]);
+    const crase = [...txt.matchAll(/^- `([^`]+)`/gm)].map((x) => x[1]);
+    // Tabela: a primeira celula e o rotulo; descarta cabecalho e separador.
+    const tabela = [...txt.matchAll(/^\|\s*([^|]+?)\s*\|/gm)]
+      .map((x) => x[1])
+      .filter(
+        (v) =>
+          v &&
+          !/^[-:\s]+$/.test(v) &&
+          // Cabecalho de tabela, em qualquer combinacao ("Rotulo / Label", "Campo").
+          !/^(r[óo]tulo|campo|nome|label|tipo|id|a[çc][ãa]o[^|]*)(\s*\/\s*(r[óo]tulo|label|nome|campo))?$/i.test(v)
+      );
+    return [...new Set([...negrito, ...crase, ...tabela].map((v) => v.trim()).filter(Boolean))];
+  };
+
+  // "Botoes Ignorados" e declaracao explicita de descarte, nao alegacao de tela.
+  const semIgnorados = (txt) => txt.split(/^###\s+Bot[õo]es Ignorados/m)[0];
+
   return {
-    campos: extrai(secao('Campos[^\\n]*')),
-    botoes: extrai(secao('Bot[õo]es Dispon[íi]veis')),
+    campos: extrai(secao('(Campos|Entradas Identificadas|Filtros)')),
+    botoes: extrai(semIgnorados(secao('Bot[õo]es[^\\n]*'))),
   };
 }
 
@@ -91,7 +121,9 @@ function main() {
   const args = process.argv.slice(2);
   const iLote = args.indexOf('--lote');
   const loteAlvo = iLote !== -1 ? args[iLote + 1] : null;
-  const filtro = args.filter((a, i) => a !== '--lote' && i !== iLote + 1).map((s) => s.toUpperCase());
+  const filtro = args
+    .filter((a, i) => !a.startsWith('--') && (iLote === -1 || i !== iLote + 1))
+    .map((s) => s.toUpperCase());
   const linhas = fs.readFileSync(P_JSONL, 'utf8').trim().split('\n').filter(Boolean);
   const safelist = fs.existsSync(P_SAFELIST) ? fs.readFileSync(P_SAFELIST, 'utf8') : '';
 
