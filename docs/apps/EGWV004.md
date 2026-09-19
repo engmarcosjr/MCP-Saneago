@@ -1,27 +1,34 @@
 # EGWV004 - Compara Consumos Medidos
 
 ## Categoria
-Outros / Administrativo
+Comercial e Grandes Clientes
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a compara consumos medidos.
+Permite consultar e comparar o consumo das contas masters por cidade e mês/ano de referência no sistema de Grandes Clientes Web.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW004FatPCidade.jsp`
+
+## Campos e Filtros da Tela
+- **Cidade** (`select` / editável): Seleção da cidade para consulta do consumo master.
+- **Mês/Ano de Referência** (`text` / editável): Mês e ano de referência no formato MM/AAAA.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV004 (Compara Consumos Medidos)"
-- "Acessar o aplicativo de compara consumos medidos"
+## Colunas do Resultado
+Nenhuma grade de resultados detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV004`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar compara consumos medidos no EGWV004"
+- "comparar consumos medidos de grandes clientes por cidade"
+- "verificar consumo master faturado por cidade e referência"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Consulta -> Compara Consumos Medidos).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

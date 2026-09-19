@@ -1,27 +1,34 @@
 # EGWV006 - Controle do Envio do Resumo
 
 ## Categoria
-Outros / Administrativo
+Comercial e Grandes Clientes
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a controle do envio do resumo.
+Permite consultar o controle de envio individualizado do resumo de faturamento por conta macro ou condomínio no sistema de Grandes Clientes Web.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW006ConsultaEnvioIndividualizado.zul`
+
+## Campos e Filtros da Tela
+- **Conta Macro/Condomínio** (`text` / editável): Número da conta macro ou condomínio.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta do envio individualizado com os filtros informados.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV006 (Controle do Envio do Resumo)"
-- "Acessar o aplicativo de controle do envio do resumo"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV006`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar controle do envio do resumo no EGWV006"
+- "verificar envio individualizado de resumo de faturamento por conta macro ou condomínio"
+- "pesquisar controle de envio de faturamento de grandes clientes no EGWV006"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Consulta -> Controle do Envio do Resumo).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

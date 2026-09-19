@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:25:23.662Z",
+    "gerado_em": "2026-09-19T07:32:49.746Z",
     "total": 596,
-    "completos": 391,
-    "pendentes": 205,
+    "completos": 394,
+    "pendentes": 202,
     "por_classe_seguranca": {
-      "indeterminado": 258,
-      "candidata_leitura": 169,
+      "indeterminado": 257,
+      "candidata_leitura": 170,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 90,
-      "ficha_nao_validada": 101,
-      "sem_campos_detectados": 33,
-      "ficha_stub": 18
+      "sem_roteiro": 89,
+      "ficha_nao_validada": 99,
+      "sem_campos_detectados": 31,
+      "ficha_stub": 17
     }
   },
   "apps": [
@@ -1656,14 +1656,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 9980
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 10000
     },
     {
       "codigo": "EACV005",
@@ -5264,20 +5261,17 @@
       "nome": "Compara Consumos Medidos",
       "vertical": "EGW",
       "url_zul": "https://www.saneago.com.br/prt/egw/EGWV004.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 810,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1178,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "EGWV005",
@@ -5304,20 +5298,20 @@
       "nome": "Controle do Envio do Resumo",
       "vertical": "EGW",
       "url_zul": "https://www.saneago.com.br/prt/egw/EGWV006.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 822,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1256,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "EGWV305",

@@ -435,4 +435,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `EAC799` | Atendimento | nenhum | `bloqueada` | Aplicação não localizada na busca rápida nem no menu de navegação do portal para o perfil atual.
 - `EGW005` | Resumo de Faturamento | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de resumo de faturamento por conta macro ou condomínio sem botões de escrita.
 - `EGWV003` | Consumo Master por Cidade | nenhum | `somente_leitura` | Consulta de relatório de consumo das contas masters por cidade e referência sem botões de escrita.
+- `EGWV004` | Compara Consumos Medidos | nenhum | `somente_leitura` | Consulta e comparação de consumo das contas masters por cidade e referência sem botões de escrita.
+- `EGWV006` | Controle do Envio do Resumo | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de controle de envio individualizado do resumo de faturamento por conta macro ou condomínio sem botões de escrita.
 

@@ -1,0 +1,246 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "Consumo das Contas Masters Por Cidade",
+  "inputs": [
+    {
+      "id": "comboCidade",
+      "name": "comboCidade",
+      "tipo": "select",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "0",
+          "texto": "Selecione"
+        },
+        {
+          "valor": "1",
+          "texto": "GOIANIA"
+        },
+        {
+          "valor": "2",
+          "texto": "ANAPOLIS"
+        },
+        {
+          "valor": "5",
+          "texto": "ITUMBIARA"
+        },
+        {
+          "valor": "6",
+          "texto": "MORRINHOS"
+        },
+        {
+          "valor": "7",
+          "texto": "JATAI"
+        },
+        {
+          "valor": "8",
+          "texto": "CAIAPONIA"
+        },
+        {
+          "valor": "9",
+          "texto": "SANTA HELENA DE GOIAS"
+        },
+        {
+          "valor": "10",
+          "texto": "RIO VERDE"
+        },
+        {
+          "valor": "11",
+          "texto": "QUIRINOPOLIS"
+        },
+        {
+          "valor": "12",
+          "texto": "PONTALINA"
+        },
+        {
+          "valor": "13",
+          "texto": "ITABERAI"
+        },
+        {
+          "valor": "14",
+          "texto": "GOIANESIA"
+        },
+        {
+          "valor": "15",
+          "texto": "PIRACANJUBA"
+        },
+        {
+          "valor": "17",
+          "texto": "LUZIANIA"
+        },
+        {
+          "valor": "18",
+          "texto": "JARAGUA"
+        },
+        {
+          "valor": "19",
+          "texto": "URUANA"
+        },
+        {
+          "valor": "20",
+          "texto": "GOIANDIRA"
+        },
+        {
+          "valor": "21",
+          "texto": "GOIATUBA"
+        },
+        {
+          "valor": "22",
+          "texto": "PIRES DO RIO"
+        },
+        {
+          "valor": "23",
+          "texto": "CRISTALINA"
+        },
+        {
+          "valor": "24",
+          "texto": "GOIAS"
+        },
+        {
+          "valor": "25",
+          "texto": "FORMOSA"
+        },
+        {
+          "valor": "26",
+          "texto": "INHUMAS"
+        },
+        {
+          "valor": "27",
+          "texto": "IPORA"
+        },
+        {
+          "valor": "28",
+          "texto": "SAO LUIS DE MONTES BELOS"
+        },
+        {
+          "valor": "29",
+          "texto": "JUSSARA"
+        },
+        {
+          "valor": "30",
+          "texto": "ANICUNS"
+        },
+        {
+          "valor": "33",
+          "texto": "POSSE"
+        },
+        {
+          "valor": "34",
+          "texto": "ITAUCU"
+        },
+        {
+          "valor": "36",
+          "texto": "ITAPACI"
+        },
+        {
+          "valor": "37",
+          "texto": "ORIZONA"
+        },
+        {
+          "valor": "38",
+          "texto": "VIANOPOLIS"
+        },
+        {
+          "valor": "40",
+          "texto": "PADRE BERNARDO"
+        },
+        {
+          "valor": "41",
+          "texto": "PETROLINA DE GOIAS"
+        },
+        {
+          "valor": "42",
+          "texto": "CRISTIANOPOLIS"
+        },
+        {
+          "valor": "43",
+          "texto": "ITAPURANGA"
+        },
+        {
+          "valor": "45",
+          "texto": "GOIANIRA"
+        },
+        {
+          "valor": "46",
+          "texto": "SAO FRANCISCO DE GOIAS"
+        },
+        {
+          "valor": "47",
+          "texto": "URUACU"
+        },
+        {
+          "valor": "48",
+          "texto": "IACIARA"
+        },
+        {
+          "valor": "49",
+          "texto": "NEROPOLIS"
+        },
+        {
+          "valor": "50",
+          "texto": "CAMPOS BELOS"
+        },
+        {
+          "valor": "52",
+          "texto": "PALMEIRAS DE GOIAS"
+        },
+        {
+          "valor": "53",
+          "texto": "RUBIATABA"
+        },
+        {
+          "valor": "54",
+          "texto": "FIRMINOPOLIS"
+        },
+        {
+          "valor": "55",
+          "texto": "ARAGARCAS"
+        },
+        {
+          "valor": "56",
+          "texto": "CERES"
+        },
+        {
+          "valor": "57",
+          "texto": "NAZARIO"
+        },
+        {
+          "valor": "58",
+          "texto": "CATURAI"
+        }
+      ],
+      "total_opcoes": 318,
+      "opcoes_truncadas": true
+    },
+    {
+      "id": "referencia",
+      "name": "referencia",
+      "tipo": "text",
+      "rotulo": "Mês/Ano de Referência",
+      "label": "Mês/Ano de Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmEGC004",
+      "name": "frmEGC004",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/egw/EGW004FatPCidade.jsp",
+  "codigo": "EGWV004"
+}

@@ -11139,27 +11139,38 @@
   "EGWV004": {
     "codigo": "EGWV004",
     "nome": "Compara Consumos Medidos",
-    "url_zul": "https://prod.saneago.com.br/prt/egw/EGWV004.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a compara consumos medidos.",
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW004FatPCidade.jsp",
+    "categoria": "Comercial e Grandes Clientes",
+    "o_que_faz": "Permite consultar e comparar o consumo das contas masters por cidade e mês/ano de referência.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Cidade",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Mês/Ano de Referência",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Compara Consumos Medidos",
+        "intencao": "Consultar consumo das contas masters por cidade no EGWV004",
         "passos": [
-          "Abrir a aplicação EGWV004",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação EGWV004 via menu Grandes Clientes Web -> Consulta -> Compara Consumos Medidos",
+          "Selecionar a Cidade e informar o Mês/Ano de Referência"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de compara consumos medidos",
-      "acessar a app EGWV004",
-      "consultar compara consumos medidos"
+      "consultar compara consumos medidos no EGWV004",
+      "comparar consumos medidos de grandes clientes por cidade",
+      "verificar consumo master faturado por cidade e referência"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "EGWV005": {
     "codigo": "EGWV005",
@@ -11204,27 +11215,43 @@
   "EGWV006": {
     "codigo": "EGWV006",
     "nome": "Controle do Envio do Resumo",
-    "url_zul": "https://prod.saneago.com.br/prt/egw/EGWV006.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a controle do envio do resumo.",
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW006ConsultaEnvioIndividualizado.zul",
+    "categoria": "Comercial e Grandes Clientes",
+    "o_que_faz": "Permite consultar o controle de envio individualizado do resumo de faturamento por conta macro ou condomínio.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Conta Macro/Condomínio",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "fBnDl"
+      },
+      {
+        "label": "Cancelar",
+        "id": "fBnDm"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Controle do Envio do Resumo",
+        "intencao": "Consultar controle de envio individualizado no EGWV006",
         "passos": [
-          "Abrir a aplicação EGWV006",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação EGWV006 via menu Grandes Clientes Web -> Consulta -> Controle do Envio do Resumo",
+          "Informar a Conta Macro/Condomínio",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de controle do envio do resumo",
-      "acessar a app EGWV006",
-      "consultar controle do envio do resumo"
+      "consultar controle do envio do resumo no EGWV006",
+      "verificar envio individualizado de resumo de faturamento por conta macro ou condomínio",
+      "pesquisar controle de envio de faturamento de grandes clientes no EGWV006"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "EGWV305": {
     "codigo": "EGWV305",
