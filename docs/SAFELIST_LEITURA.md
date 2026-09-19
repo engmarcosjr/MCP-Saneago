@@ -455,6 +455,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `GPMV016` | Paralisação/Intermitência | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de paralisação e intermitência no fornecimento por período de previsão e distrito sem botões de escrita.
 - `GPMV020` | Consulta Registro a Ser Fechado | nenhum | `somente_leitura` | Consulta e pesquisa de válvulas e registros a serem fechados por cidade, bairro e quadra sem botões de escrita.
 - `GSIV007` | Abertura de Solicitação | `Incluir`, `Cancelar` | `possui_escrita` | Abertura e cadastro de solicitação de serviço do usuário com botão Incluir e formulário de dados cadastrais.
+- `HFI033` | Registrar Parecer Transferências de Bens | Botões: `Salvar`, `Salvar e Finalizar`, `Cancelar`, `Adicionar`, `Excluir`, `Close`, `OK` | `possui_escrita` | Registro de parecer de transferência de bens patrimoniais com botões de escrita Salvar, Salvar e Finalizar, Adicionar e Excluir.
+- `HFIV031` | Solicitar Transferência Bem Patrimonial | Botões: `Consultar`, `Novo`, `Cancelar` | `possui_escrita` | Solicitação de transferência de bem patrimonial com botão de ação Novo e consulta por número de transferência.
+- `HFIV032` | Acompanhar Transf. de Bens Patrimoniais | Botões: `Consultar`, `Novo`, `Cancelar` | `possui_escrita` | Acompanhamento e consulta de transferência de bens patrimoniais com botão Novo para criação de solicitação.
 
 
 

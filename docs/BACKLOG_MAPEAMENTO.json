@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:11:56.209Z",
+    "gerado_em": "2026-09-19T08:19:49.408Z",
     "total": 596,
-    "completos": 411,
-    "pendentes": 185,
+    "completos": 414,
+    "pendentes": 182,
     "por_classe_seguranca": {
-      "indeterminado": 244,
-      "candidata_leitura": 182,
-      "possui_escrita": 162,
+      "indeterminado": 241,
+      "candidata_leitura": 184,
+      "possui_escrita": 163,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 87,
-      "sem_campos_detectados": 20,
+      "ficha_nao_validada": 84,
+      "sem_campos_detectados": 17,
       "ficha_stub": 10
     }
   },
@@ -6998,20 +6998,25 @@
       "nome": "Registrar Parecer Transferências de Bens",
       "vertical": "HFI",
       "url_zul": "/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 870,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Registro e Parecer (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2150,
+      "botoes": [
+        "Salvar",
+        "Salvar e Finalizar",
+        "Cancelar",
+        "Adicionar",
+        "Excluir",
+        "Close",
+        "OK"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "botões de escrita: Salvar, Salvar e Finalizar, Excluir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HFI034",
@@ -7063,40 +7068,42 @@
       "nome": "Solicitar Transferência Bem Patrimonial",
       "vertical": "HFI",
       "url_zul": "https://www.saneago.com.br/prt/hfi/HFIV031.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 869,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Inclusão e Solicitação (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1301,
+      "botoes": [
+        "Consultar",
+        "Novo",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HFIV032",
       "nome": "Acompanhar Transf. de Bens Patrimoniais",
       "vertical": "HFI",
       "url_zul": "https://www.saneago.com.br/prt/hfi/HFIV032.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 865,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Consulta e Acompanhamento (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1937,
+      "botoes": [
+        "Consultar",
+        "Novo",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HFIV033",

@@ -1,27 +1,36 @@
 # HFIV031 - Solicitar Transferência Bem Patrimonial
 
 ## Categoria
-Patrimônio e Bens
+Contabilidade Patrimonial / Patrimônio e Bens
 
 ## Tipo
-Leitura (Livre)
+Inclusão e Solicitação (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a solicitar transferência bem patrimonial.
+Permite solicitar a transferência de bens patrimoniais entre unidades organizacionais da Saneago e consultar transferências existentes.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/hfi/HFI031SolicitarTransfBemPatrimonial.zul`
+
+## Campos e Filtros da Tela
+- **Transferência** (`text` / editável): Número identificador da transferência patrimonial.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de transferências patrimoniais cadastradas.
+- **Novo**: Inicia uma nova solicitação de transferência de bem patrimonial.
+- **Cancelar**: Cancela a operação e limpa os campos.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela HFIV031 (Solicitar Transferência Bem Patrimonial)"
-- "Acessar o aplicativo de solicitar transferência bem patrimonial"
+## Colunas do Resultado
+- Nº Inventário
+- Nº Patrimônio
+- Descrição
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `HFIV031`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "solicitar transferência de bem patrimonial no HFIV031"
+- "consultar solicitação de transferência patrimonial"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Contabilidade Patrimonial -> Transferência de Bens -> Solicitar Transferência Bem Patrimonial).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

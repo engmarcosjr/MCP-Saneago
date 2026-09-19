@@ -1,0 +1,209 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "q7GRj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GRk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "q7GRr-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Status",
+      "label": "Status",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GRz-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da Solicitaçõo",
+      "label": "Data da Solicitaçõo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GR00-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "à",
+      "label": "à",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GRx0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da Conclusão",
+      "label": "Data da Conclusão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GRz0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "à",
+      "label": "à",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "q7GRv1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº inventário",
+      "label": "Nº inventário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "q7GRr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GR00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRx0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q7GR_2",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "q7GR02",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "q7GRr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GR00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRx0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q7GRz1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q7GR_2",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "q7GR02",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nº Transferência",
+    "Data da Solicitação",
+    "Responsável - Origem",
+    "Responsável - Destino",
+    "Data de Conclusão",
+    "Status",
+    "Consultar",
+    "Analisar",
+    "Excluir"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hfi/HFI032AcompanharTransfBemPatr.zul",
+  "codigo": "HFIV032"
+}

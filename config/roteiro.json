@@ -18145,27 +18145,113 @@
   "HFI033": {
     "codigo": "HFI033",
     "nome": "Registrar Parecer Transferências de Bens",
-    "url_zul": "/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
-    "categoria": "Patrimônio e Bens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registrar parecer transferências de bens.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI033RegistrarParecerTransfBensPatr.zul",
+    "categoria": "Contabilidade Patrimonial / Patrimônio e Bens",
+    "o_que_faz": "Permite registrar pareceres e efetivar ou tramitar transferências de bens patrimoniais entre unidades organizacionais (origem e destino).",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data da Solicitação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Origem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Responsável - Destino",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data da Efetivação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Parecer",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "rotulo": "U.O. - Destino",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "rotulo": "Observação",
+        "tipo": "textarea",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Salvar",
+        "id": "xDfYo2"
+      },
+      {
+        "label": "Salvar e Finalizar",
+        "id": "xDfYp2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "xDfYq2"
+      },
+      {
+        "label": "Adicionar",
+        "id": "xDfYn3"
+      },
+      {
+        "label": "Excluir",
+        "id": "xDfYo3"
+      },
+      {
+        "label": "Close",
+        "id": "xDfYn4-close"
+      },
+      {
+        "label": "OK",
+        "id": "xDfYt4"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Registrar Parecer Transferências de Bens",
+        "intencao": "Registrar parecer de transferência de bens no HFI033",
         "passos": [
           "Abrir a aplicação HFI033",
-          "Preencher campos na tela inicial"
+          "Selecionar Parecer e U.O. Destino",
+          "Informar Observação",
+          "Clicar em Salvar ou Salvar e Finalizar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registrar parecer transferências de bens",
-      "acessar a app HFI033",
-      "consultar registrar parecer transferências de bens"
+      "registrar parecer de transferência de bens no HFI033",
+      "parecer técnico sobre transferência patrimonial"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HFI034": {
     "codigo": "HFI034",
@@ -18259,52 +18345,129 @@
   "HFIV031": {
     "codigo": "HFIV031",
     "nome": "Solicitar Transferência Bem Patrimonial",
-    "url_zul": "https://prod.saneago.com.br/prt/hfi/HFIV031.zul",
-    "categoria": "Patrimônio e Bens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a solicitar transferência bem patrimonial.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI031SolicitarTransfBemPatrimonial.zul",
+    "categoria": "Contabilidade Patrimonial / Patrimônio e Bens",
+    "o_que_faz": "Permite solicitar a transferência de bens patrimoniais entre unidades organizacionais da Saneago e consultar transferências existentes.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "e41Gl"
+      },
+      {
+        "label": "Novo",
+        "id": "e41Gm"
+      },
+      {
+        "label": "Cancelar",
+        "id": "e41Gq"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Solicitar Transferência Bem Patrimonial",
+        "intencao": "Solicitar transferência de bem patrimonial no HFIV031",
         "passos": [
           "Abrir a aplicação HFIV031",
-          "Preencher campos na tela inicial"
+          "Clicar em Novo para iniciar solicitação ou informar Transferência para consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de solicitar transferência bem patrimonial",
-      "acessar a app HFIV031",
-      "consultar solicitar transferência bem patrimonial"
+      "solicitar transferência de bem patrimonial no HFIV031",
+      "consultar solicitação de transferência patrimonial"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HFIV032": {
     "codigo": "HFIV032",
     "nome": "Acompanhar Transf. de Bens Patrimoniais",
-    "url_zul": "https://prod.saneago.com.br/prt/hfi/HFIV032.zul",
-    "categoria": "Patrimônio e Bens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a acompanhar transf. de bens patrimoniais.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/hfi/HFI032AcompanharTransfBemPatr.zul",
+    "categoria": "Contabilidade Patrimonial / Patrimônio e Bens",
+    "o_que_faz": "Permite acompanhar e consultar o andamento das solicitações de transferências de bens patrimoniais por status, datas de solicitação/conclusão e número de inventário.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Transferência",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Status",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data da Solicitaçõo",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "à",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Data da Conclusão",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "à",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Nº inventário",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "q7GRz1"
+      },
+      {
+        "label": "Novo",
+        "id": "q7GR_2"
+      },
+      {
+        "label": "Cancelar",
+        "id": "q7GR02"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Acompanhar Transf. de Bens Patrimoniais",
+        "intencao": "Acompanhar transferências de bens patrimoniais no HFIV032",
         "passos": [
           "Abrir a aplicação HFIV032",
-          "Preencher campos na tela inicial"
+          "Informar filtros desejados (Transferência, Status, Período ou Inventário)",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de acompanhar transf. de bens patrimoniais",
-      "acessar a app HFIV032",
-      "consultar acompanhar transf. de bens patrimoniais"
+      "acompanhar transferência de bens patrimoniais no HFIV032",
+      "consultar andamento de transferências de patrimônio por status ou período"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HFIV033": {
     "codigo": "HFIV033",

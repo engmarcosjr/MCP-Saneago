@@ -1,0 +1,77 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "e41Gg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "e41Gh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Transferência",
+      "label": "Transferência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    }
+  ],
+  "botoes": [
+    {
+      "id": "e41Gl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "e41Gm",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "e41Gq",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "e41Gl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "e41Gm",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "e41Gq",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nº Inventário",
+    "Nº Patrimônio",
+    "Descrição"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hfi/HFI031SolicitarTransfBemPatrimonial.zul",
+  "codigo": "HFIV031"
+}

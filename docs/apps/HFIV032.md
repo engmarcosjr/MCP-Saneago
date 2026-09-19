@@ -1,27 +1,50 @@
 # HFIV032 - Acompanhar Transf. de Bens Patrimoniais
 
 ## Categoria
-Patrimônio e Bens
+Contabilidade Patrimonial / Patrimônio e Bens
 
 ## Tipo
-Leitura (Livre)
+Consulta e Acompanhamento (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a acompanhar transf. de bens patrimoniais.
+Permite acompanhar e consultar o andamento das solicitações de transferências de bens patrimoniais por status, datas de solicitação/conclusão e número de inventário.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/hfi/HFI032AcompanharTransfBemPatr.zul`
+
+## Campos e Filtros da Tela
+- **Transferência** (`text` / editável): Número da transferência patrimonial.
+- **Status** (`combobox` / editável): Status/situação da transferência.
+- **Data da Solicitaçõo** (`date` / editável): Data inicial do período de solicitação.
+- **à** (`date` / editável): Data final do período.
+- **Data da Conclusão** (`date` / editável): Data inicial do período de conclusão.
+- **Nº inventário** (`text` / editável): Número do inventário do bem patrimonial.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de transferências conforme filtros preenchidos.
+- **Novo**: Atalho para iniciar nova solicitação de transferência de bens.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela HFIV032 (Acompanhar Transf. de Bens Patrimoniais)"
-- "Acessar o aplicativo de acompanhar transf. de bens patrimoniais"
+### Botões Ignorados
+- `Sem Rotulo` (a): Disparadores técnicos de seleção de datas e combobox.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `HFIV032`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Nº Transferência
+- Data da Solicitação
+- Responsável - Origem
+- Responsável - Destino
+- Data de Conclusão
+- Status
+- Consultar
+- Analisar
+- Excluir
+
+## Perguntas que Responde
+- "acompanhar transferência de bens patrimoniais no HFIV032"
+- "consultar andamento de transferências de patrimônio por status ou período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Contabilidade Patrimonial -> Transferência de Bens -> Acompanhar Transf. de Bens Patrimoniais).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
