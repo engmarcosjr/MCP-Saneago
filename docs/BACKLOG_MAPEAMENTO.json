@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:39:10.474Z",
+    "gerado_em": "2026-09-19T05:45:26.385Z",
     "total": 596,
-    "completos": 357,
-    "pendentes": 239,
+    "completos": 359,
+    "pendentes": 237,
     "por_classe_seguranca": {
-      "indeterminado": 276,
-      "candidata_leitura": 153,
+      "indeterminado": 275,
+      "candidata_leitura": 154,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 92,
-      "ficha_nao_validada": 136,
-      "ficha_stub": 45,
-      "sem_campos_detectados": 63
+      "sem_roteiro": 91,
+      "ficha_nao_validada": 135,
+      "ficha_stub": 44,
+      "sem_campos_detectados": 62
     }
   },
   "apps": [
@@ -811,13 +811,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 8990
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 9000
     },
     {
       "codigo": "BPAV354",
@@ -975,7 +973,7 @@
         "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 2,
+      "tentativas": 3,
       "aposentada": false,
       "prioridade": 8990
     },
@@ -6454,21 +6452,21 @@
       "nome": "Melhorias Previstas",
       "vertical": "GCA",
       "url_zul": "https://www.saneago.com.br/prt/gca/GCAV003.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 790,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Cadastro e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1705,
+      "botoes": [
+        "Consultar",
+        "Nova Solicitação",
+        "Limpar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GMQ001",

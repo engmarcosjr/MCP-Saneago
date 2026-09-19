@@ -1,0 +1,209 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "uSOOg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "V0011",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uSOOi-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uSOOo",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uSOOq-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uSOO_0-real",
+      "name": "_pga3ni6g1",
+      "tipo": "radio",
+      "rotulo": "Pendentes",
+      "label": "Pendentes",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uSOO10-real",
+      "name": "_pga3ni6g1",
+      "tipo": "radio",
+      "rotulo": "Aprovadas",
+      "label": "Aprovadas",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uSOO30-real",
+      "name": "_pga3ni6g1",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uSOO90-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período Solicitação",
+      "label": "Período Solicitação",
+      "valor_atual": "09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uSOOd0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "uSOOi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOO90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOk1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uSOOl1",
+      "name": null,
+      "label": "Nova Solicitação",
+      "tipo": "button"
+    },
+    {
+      "id": "uSOOp1",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "uSOOi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOO90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uSOOk1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uSOOl1",
+      "name": null,
+      "label": "Nova Solicitação",
+      "tipo": "button"
+    },
+    {
+      "id": "uSOOp1",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Num. Solicit.",
+    "Cód. Distrito",
+    "Distrito",
+    "Valor",
+    "Status",
+    "Dt Cadastro",
+    "Usu. Cadastro",
+    "Dt Aprovação",
+    "Usu. Aprovação",
+    "Descrição"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gca/GCA003SolicitacaoMelhoria.zul",
+  "codigo": "GCAV003"
+}

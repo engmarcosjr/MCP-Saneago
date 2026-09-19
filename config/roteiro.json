@@ -6146,11 +6146,11 @@
     "botoes": [
       {
         "label": "Simular valor do PDV",
-        "id": "fK2O30"
+        "id": "tIxF30"
       },
       {
         "label": "OK",
-        "id": "fK2Ok0"
+        "id": "tIxFk0"
       }
     ],
     "operacoes": [
@@ -11665,27 +11665,94 @@
   "GCAV003": {
     "codigo": "GCAV003",
     "nome": "Melhorias Previstas",
-    "url_zul": "https://prod.saneago.com.br/prt/gca/GCAV003.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a melhorias previstas.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/gca/GCA003SolicitacaoMelhoria.zul",
+    "categoria": "Controle Atividades / Saneago",
+    "o_que_faz": "Permite consultar e cadastrar solicitações de melhorias previstas por regional, distrito, situação e período de solicitação.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Regional",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Regional",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Distrito",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "label": "Pendentes",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Aprovadas",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Todas",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Período Solicitação",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "a",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "uSOOk1"
+      },
+      {
+        "label": "Nova Solicitação",
+        "id": "uSOOl1"
+      },
+      {
+        "label": "Limpar",
+        "id": "uSOOp1"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Melhorias Previstas",
+        "intencao": "Consultar melhorias previstas no GCAV003",
         "passos": [
           "Abrir a aplicação GCAV003",
-          "Preencher campos na tela inicial"
+          "Selecionar filtros de status ou período",
+          "Clicar em Consultar"
+        ]
+      },
+      {
+        "intencao": "Cadastrar nova solicitação de melhoria no GCAV003",
+        "passos": [
+          "Abrir a aplicação GCAV003",
+          "Clicar em Nova Solicitação"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de melhorias previstas",
-      "acessar a app GCAV003",
-      "consultar melhorias previstas"
+      "consultar melhorias previstas no GCAV003",
+      "pesquisar solicitações de melhoria por período",
+      "cadastrar nova solicitação de melhoria prevista"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GMQV001": {
     "codigo": "GMQV001",

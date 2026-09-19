@@ -1,27 +1,50 @@
 # GCAV003 - Melhorias Previstas
 
 ## Categoria
-Outros / Administrativo
+Controle Atividades / Saneago
 
 ## Tipo
-Leitura (Livre)
+Cadastro e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a melhorias previstas.
+Permite consultar e cadastrar solicitações de melhorias previstas por regional, distrito, situação (pendentes, aprovadas, todas) e período de solicitação.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gca/GCA003SolicitacaoMelhoria.zul`
+
+## Campos e Filtros da Tela
+- **Regional** (`text` / readonly): Código da regional.
+- **Distrito** (`text` / readonly): Distrito operacional.
+- **Pendentes** (`radio` / editável): Filtro de solicitações pendentes.
+- **Aprovadas** (`radio` / editável): Filtro de solicitações aprovadas.
+- **Todas** (`radio` / editável): Filtro de todas as solicitações.
+- **Período Solicitação** (`date` / editável): Data inicial do período de solicitação.
+- **a** (`date` / editável): Data final do período de solicitação.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta das solicitações conforme filtros.
+- **Nova Solicitação**: Abre formulário para inclusão de nova solicitação de melhoria.
+- **Limpar**: Limpa os campos e filtros da tela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GCAV003 (Melhorias Previstas)"
-- "Acessar o aplicativo de melhorias previstas"
+## Colunas do Resultado
+- Num. Solicit.
+- Cód. Distrito
+- Distrito
+- Valor
+- Status
+- Dt Cadastro
+- Usu. Cadastro
+- Dt Aprovação
+- Usu. Aprovação
+- Descrição
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GCAV003`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar melhorias previstas no GCAV003"
+- "pesquisar solicitações de melhoria por período ou status"
+- "cadastrar nova solicitação de melhoria prevista"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
