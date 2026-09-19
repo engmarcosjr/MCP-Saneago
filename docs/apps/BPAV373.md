@@ -16,12 +16,11 @@ Permite consultar o ranking e simular valores referentes ao Plano de Demissão V
 Nenhum campo interativo detectado na tela inicial.
 
 ## Botões Disponíveis
-- **Simular valor do PDV**
-- **OK**
-*(Exibe também botões técnicos de modal sem rótulo textual e botão Close).*
+- **Simular valor do PDV**: Executa a simulação de valores do PDV.
+- **OK**: Confirmação / fechamento de modal informativo.
 
-## Colunas e Grade de Resultados
-Nenhuma grade de resultados visível na tela inicial.
+## Colunas do Resultado
+Nenhuma grade de resultados acessível na tela inicial.
 
 ## Perguntas que Responde
 - "consultar ranking do PDV no BPAV373"
@@ -31,4 +30,4 @@ Nenhuma grade de resultados visível na tela inicial.
 - **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> PDV).
 
 ---
-*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

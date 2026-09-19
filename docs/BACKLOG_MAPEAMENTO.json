@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:32:25.198Z",
+    "gerado_em": "2026-09-19T05:39:10.474Z",
     "total": 596,
-    "completos": 356,
-    "pendentes": 240,
+    "completos": 357,
+    "pendentes": 239,
     "por_classe_seguranca": {
       "indeterminado": 276,
       "candidata_leitura": 153,
@@ -12,7 +12,7 @@
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 93,
+      "sem_roteiro": 92,
       "ficha_nao_validada": 136,
       "ficha_stub": 45,
       "sem_campos_detectados": 63
@@ -794,13 +794,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 8990
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 9000
     },
     {
       "codigo": "BPAV006",
@@ -809,7 +807,7 @@
       "url_zul": "https://www.saneago.com.br/prt/bpa/BPAV006.zul",
       "tipo_declarado": "Bloqueada / Sem Acesso",
       "status_ficha": "inventariado",
-      "bytes_ficha": 849,
+      "bytes_ficha": 840,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
@@ -817,7 +815,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 8990
     },
@@ -966,7 +964,7 @@
       "url_zul": "https://www.saneago.com.br/prt/bpa/BPAV373.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
       "status_ficha": "inventariado",
-      "bytes_ficha": 956,
+      "bytes_ficha": 960,
       "botoes": [
         "Simular valor do PDV",
         "OK"
@@ -977,7 +975,7 @@
         "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 8990
     },

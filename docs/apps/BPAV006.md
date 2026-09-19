@@ -18,7 +18,7 @@ Nenhum campo acessível.
 ## Botões Disponíveis
 Nenhum botão acessível.
 
-## Colunas e Grade de Resultados
+## Colunas do Resultado
 Nenhuma grade de resultados acessível.
 
 ## Perguntas que Responde
@@ -28,4 +28,4 @@ Nenhuma grade de resultados acessível.
 - **Acesso Confirmado**: Não (aplicação não localizada na busca ou menu para o perfil atual).
 
 ---
-*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
