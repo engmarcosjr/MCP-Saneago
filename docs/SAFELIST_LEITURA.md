@@ -430,3 +430,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `BTWV001` | Pedido | `Consultar`, `Novo Pedido`, `Cancelar` | `possui_escrita` | Consulta e cadastro de pedidos de treinamento corporativo com botão de ação Novo Pedido.
 - `BTWV055` | Avaliação de Eficácia do Treinamento | nenhum | `somente_leitura` | Consulta de avaliação de eficácia de treinamento por matrícula e curso sem botões de escrita.
 - `BTWV057` | Consulta Cronograma de Treinamento | nenhum | `somente_leitura` | Consulta de cronograma anual de treinamento por unidade organizacional e ano sem botões de escrita.
+- `BTWV062` | Treinamento por Empregado | nenhum | `somente_leitura` | Consulta de histórico de treinamento por empregado e período sem botões de escrita.
+- `D4030` | COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES - DCO02 | `Ver localização no Mapa` | `somente_leitura` | Consulta de organograma e localização no mapa da Comissão Interna de Prevenção de Acidentes - DCO02 sem botões de escrita.
+- `EAC799` | Atendimento | nenhum | `bloqueada` | Aplicação não localizada na busca rápida nem no menu de navegação do portal para o perfil atual.

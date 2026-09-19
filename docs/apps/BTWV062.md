@@ -1,27 +1,37 @@
 # BTWV062 - Treinamento por Empregado
 
 ## Categoria
-Outros / Administrativo
+Recursos Humanos e Treinamento
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a treinamento por empregado.
+Permite consultar e visualizar os treinamentos realizados por empregado e período.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/btw/BTW062TreinEmp.jsp`
+
+## Campos e Filtros da Tela
+- **Empregado** (`text` / editável): Matrícula do empregado a ser consultado.
+- **Empregado** (`text` / readonly): Nome do empregado correspondente à matrícula.
+- **Periodo** (`text` / editável): Data inicial do período de consulta.
+- **Periodo** (`text` / editável): Data final do período de consulta.
+- **Periodo** (`checkbox` / editável): Opção para considerar pedidos de treinamento.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BTWV062 (Treinamento por Empregado)"
-- "Acessar o aplicativo de treinamento por empregado"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BTWV062`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar treinamento por empregado no BTWV062"
+- "verificar histórico de treinamentos de funcionário por período"
+- "pesquisar cursos realizados por matrícula de empregado"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Treinamento Web -> Consulta -> Treinamento por Empregado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

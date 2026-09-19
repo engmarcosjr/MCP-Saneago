@@ -1,0 +1,75 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "Treinamento por Empregado",
+  "inputs": [
+    {
+      "id": "matricula",
+      "name": "matricula",
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "nomeEmp",
+      "name": "nomeEmp",
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    },
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "CheckPedido",
+      "name": "CheckPedido",
+      "tipo": "checkbox",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmBTW062",
+      "name": "frmBTW062",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/btw/BTW062TreinEmp.jsp",
+  "codigo": "BTWV062"
+}

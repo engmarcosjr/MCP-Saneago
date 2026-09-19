@@ -7071,57 +7071,83 @@
   "BTWV062": {
     "codigo": "BTWV062",
     "nome": "Treinamento por Empregado",
-    "url_zul": "https://prod.saneago.com.br/prt/btw/BTWV062.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a treinamento por empregado.",
+    "url_zul": "https://www.saneago.com.br/prt/btw/BTW062TreinEmp.jsp",
+    "categoria": "Recursos Humanos e Treinamento",
+    "o_que_faz": "Permite consultar e visualizar os treinamentos realizados por empregado e período.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Periodo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Periodo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Periodo",
+        "tipo": "checkbox",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Treinamento por Empregado",
+        "intencao": "Consultar treinamento por empregado",
         "passos": [
-          "Abrir a aplicação BTWV062",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação BTWV062 via menu Treinamento Web -> Consulta -> Treinamento por Empregado",
+          "Informar a matrícula do Empregado e o Período de consulta"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de treinamento por empregado",
-      "acessar a app BTWV062",
-      "consultar treinamento por empregado"
+      "consultar treinamento por empregado no BTWV062",
+      "verificar histórico de treinamentos de funcionário por período",
+      "pesquisar cursos realizados por matrícula de empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "D4030": {
     "codigo": "D4030",
     "nome": "COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES - DCO02",
-    "url_zul": "https://prod.saneago.com.br/prt/d40/D4030.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a comissão interna de prevenção de acidentes - dco02.",
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+    "categoria": "Sistemas Comerciais e Operacionais / Saneago",
+    "o_que_faz": "Exibe a estrutura do organograma corporativo e a localização no mapa da COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES - DCO02.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [
       {
         "label": "Ver localização no Mapa",
-        "id": "n9jSm2"
+        "id": "p0AOm2"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES - DCO02",
+        "intencao": "Consultar organograma e localização da CIPA DCO02",
         "passos": [
           "Abrir a aplicação D4030",
-          "Preencher campos na tela inicial"
+          "Visualizar o organograma e clicar em Ver localização no Mapa se necessário"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de comissão interna de prevenção de acidentes - dco02",
-      "acessar a app D4030",
-      "consultar comissão interna de prevenção de acidentes - dco02"
+      "consultar comissão interna de prevenção de acidentes no D4030",
+      "ver localização no mapa da CIPA DCO02",
+      "acessar o D4030"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "EACV005": {
     "codigo": "EACV005",

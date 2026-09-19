@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:10:04.912Z",
+    "gerado_em": "2026-09-19T07:16:03.301Z",
     "total": 596,
-    "completos": 388,
-    "pendentes": 208,
+    "completos": 389,
+    "pendentes": 207,
     "por_classe_seguranca": {
       "indeterminado": 259,
       "candidata_leitura": 168,
@@ -13,8 +13,8 @@
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 104,
-      "sem_campos_detectados": 35,
+      "ficha_nao_validada": 102,
+      "sem_campos_detectados": 34,
       "ficha_stub": 19
     }
   },
@@ -1485,20 +1485,17 @@
       "nome": "Treinamento por Empregado",
       "vertical": "BTW",
       "url_zul": "https://www.saneago.com.br/prt/btw/BTWV062.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 814,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1342,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "D2000",
@@ -1589,22 +1586,21 @@
       "nome": "COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES - DCO02",
       "vertical": "D",
       "url_zul": "https://www.saneago.com.br/prt/d40/D4030.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 929,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1184,
       "botoes": [
         "Ver localização no Mapa"
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 9990
     },
     {
       "codigo": "D4065",
@@ -1654,18 +1650,18 @@
       "nome": "Atendimento",
       "vertical": "EAC",
       "url_zul": "https://www.saneago.com.br/prt/eac/EAC799AbrirAtendimento.zul",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 553,
+      "tipo_declarado": "Bloqueada / Sem Acesso",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 780,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
       "lacunas": [
         "ficha_stub",
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
       "prioridade": 9980
     },
