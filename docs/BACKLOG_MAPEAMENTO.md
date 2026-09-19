@@ -2,7 +2,7 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-19T04:42:57.351Z
+- Gerado em: 2026-09-19T04:48:24.540Z
 - Aplicações: **596** — completas: **344** — pendentes: **252**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
@@ -20,7 +20,7 @@
 |---|---|
 | ficha_nao_validada | 136 |
 | sem_roteiro | 97 |
-| sem_campos_detectados | 66 |
+| sem_campos_detectados | 67 |
 | ficha_stub | 54 |
 | sem_url | 11 |
 
@@ -30,8 +30,8 @@
 |---|---|---|---|---|---|
 | 1 | ECO954 | Painel de Religação | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
 | 2 | ECO962 | Painel de Cortes | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
-| 3 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | sem_roteiro |
-| 4 | ECO830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
+| 3 | ECO830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub, sem_campos_detectados |
+| 4 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | sem_roteiro |
 | 5 | ECOV830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub |
 | 6 | LRS732 | Atendimento Por Período | LRS | indeterminado | ficha_stub |
 | 7 | LRSV015 | Ocorrências de Esgoto por RA | LRS | indeterminado | ficha_stub |
