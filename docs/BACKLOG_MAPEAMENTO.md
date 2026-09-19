@@ -2,7 +2,7 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-19T09:27:19.963Z
+- Gerado em: 2026-09-19T09:28:01.601Z
 - Aplicações: **596** — completas: **434** — pendentes: **162**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
