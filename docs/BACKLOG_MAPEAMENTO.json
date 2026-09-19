@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:39:12.695Z",
+    "gerado_em": "2026-09-19T07:44:27.087Z",
     "total": 596,
-    "completos": 397,
-    "pendentes": 199,
+    "completos": 400,
+    "pendentes": 196,
     "por_classe_seguranca": {
-      "indeterminado": 254,
-      "candidata_leitura": 173,
+      "indeterminado": 251,
+      "candidata_leitura": 176,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 89,
-      "ficha_nao_validada": 96,
-      "sem_campos_detectados": 29,
+      "ficha_nao_validada": 93,
+      "sem_campos_detectados": 26,
       "ficha_stub": 16
     }
   },
@@ -5779,20 +5779,21 @@
       "nome": "Requisição Obras/Serviços",
       "vertical": "FGC",
       "url_zul": "https://www.saneago.com.br/prt/fgc/FGCV026.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 831,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1534,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGCV028",
@@ -5867,42 +5868,39 @@
       "nome": "Contratos por UO, Cidade, Forn. e Gestor",
       "vertical": "FGC",
       "url_zul": "https://www.saneago.com.br/prt/fgc/FGCV037.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 879,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 3389,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGCV052",
       "nome": "Orçamento de Programas",
       "vertical": "FGC",
       "url_zul": "https://www.saneago.com.br/prt/fgc/FGCV052.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 803,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1591,
       "botoes": [
         "Consultar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "FGCV068",

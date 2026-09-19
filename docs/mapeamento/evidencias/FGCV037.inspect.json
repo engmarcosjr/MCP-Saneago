@@ -1,0 +1,466 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Relação de Contratos",
+  "inputs": [
+    {
+      "id": "pXzOv5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "S0071",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "pXzOi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "SUPER.REGION. OPER.DO INTERIOR",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOw5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "pXzO60-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOx5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Fornecedor",
+      "label": "Fornecedor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pXzOw0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Fornecedor",
+      "label": "Fornecedor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOy5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gestor",
+      "label": "Gestor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pXzOl1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gestor",
+      "label": "Gestor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzO62-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria de contrato",
+      "label": "Categoria de contrato",
+      "valor_atual": "Todas categorias de contrato",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOd2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Modalidade da Licitação",
+      "label": "Modalidade da Licitação",
+      "valor_atual": "Todas as modalidades de licitação",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOk2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Natureza de despesa",
+      "label": "Natureza de despesa",
+      "valor_atual": "Todas",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOt2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período de assinatura",
+      "label": "Período de assinatura",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pXzOv2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "19/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pXzO33-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período de Registro",
+      "label": "Período de Registro",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pXzO53-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pXzOc3-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Situação Contrato",
+      "label": "Situação Contrato",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOd3-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Execução",
+      "label": "Execução",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOe3-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Paralisados",
+      "label": "Paralisados",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOf3-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Contingenciados",
+      "label": "Contingenciados",
+      "valor_atual": "4",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOg3-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Rescindidos",
+      "label": "Rescindidos",
+      "valor_atual": "7",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOn3-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ordenar contratos por",
+      "label": "Ordenar contratos por",
+      "valor_atual": "U.O.",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzOu3-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "e",
+      "label": "e",
+      "valor_atual": "Número do contrato",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pXzO04-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "e",
+      "label": "e",
+      "valor_atual": "Situação",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pXzO60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO62-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOk2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOt2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOv2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO33-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO53-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOn3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOu3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO04-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO94",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pXzOc4",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pXzO60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO62-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOk2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOt2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOv2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO33-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO53-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOn3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzOu3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO04-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pXzO94",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pXzOc4",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Ordem",
+    "U.O.",
+    "Contrato",
+    "Processo",
+    "Fornecedores",
+    "Descrição Objeto",
+    "Assinatura",
+    "Encerramento",
+    "Modalidade",
+    "Nat. Desp.",
+    "Situação",
+    "Gestor",
+    "Valor Atualizado",
+    "Valor Faturado",
+    "Valor Acréscimo",
+    "Valor Glosa",
+    "Saldo Contrato"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/fgc/FGC037RelacaoContratos.zul",
+  "codigo": "FGCV037"
+}

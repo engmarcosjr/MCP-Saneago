@@ -1,0 +1,84 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "aVAXe",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Requisição",
+      "label": "Número da Requisição",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aVAXf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Requisição",
+      "label": "Número da Requisição",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aVAXi",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aVAXj",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "aVAXk",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aVAXi",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aVAXj",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "aVAXk",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Referência",
+    "Conta",
+    "Análise",
+    "Recurso",
+    "Comprometido",
+    "Faturado",
+    "Executado",
+    "Dívida",
+    "Estornado",
+    "Comprometido - Estornado"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/fgc/FGC026ConsultaRequisicao.zul",
+  "codigo": "FGCV026"
+}

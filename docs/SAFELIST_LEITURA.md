@@ -440,5 +440,8 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `EGWV313` | Consumo e Faturamento Individualizados | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de consumo e faturamento individualizados por mês de faturamento, conta e cidade sem botões de escrita.
 - `FGC028` | Fornecedor | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de ficha de fornecedor e representante legal por código sem botões de escrita.
 - `FGCV025` | Consulta Processo Licitatório | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de processos licitatórios sem botões de escrita.
+- `FGCV026` | Requisição Obras/Serviços | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e emissão de relatório de requisições de obras e serviços sem botões de escrita.
+- `FGCV037` | Contratos por UO, Cidade, Forn. e Gestor | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e relação de contratos por UO, cidade, fornecedor, gestor e filtros sem botões de escrita.
+- `FGCV052` | Orçamento de Programas | `Consultar` | `somente_leitura` | Consulta de orçamento de programas e acompanhamento orçamentário por ano e categoria sem botões de escrita.
 
 

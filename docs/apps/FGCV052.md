@@ -1,27 +1,49 @@
 # FGCV052 - Orçamento de Programas
 
 ## Categoria
-Contratos e Integração SAP
+Gestão de Contratos e Suprimentos
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a orçamento de programas.
+Permite consultar e acompanhar o relatório de orçamento de programas e acompanhamento orçamentário por ano e categoria no sistema de Gestão de Contratos.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/fgc/FGC052OrcamentoPrograma.zul`
+
+## Campos e Filtros da Tela
+- **Ano** (`combobox` / readonly): Seleção do ano de exercício orçamentário.
+- **Categoria** (`combobox` / readonly): Seleção da categoria de agrupamento (ex: Unidade Organizacional).
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `kVqYw`)
+- **Consultar**: Executa a consulta do orçamento de programas e exibe os relatórios orçamentários.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela FGCV052 (Orçamento de Programas)"
-- "Acessar o aplicativo de orçamento de programas"
+### Botões Ignorados
+- **Sem Rotulo**: Botões seletores de combobox de ano e categoria (não acionáveis diretamente).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `FGCV052`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Relatório Orçamentário por Categoria
+- Código
+- Orçamento
+- Comprometido Atual
+- Saldo
+- Contratado
+- Reservado
+- Faturado
+- Acréscimo
+- Executado
+- Divida
+- Relatório de Acompanhamento Orçamentário
+- Unidade
+
+## Perguntas que Responde
+- "consultar orçamento de programas no FGCV052"
+- "acompanhar execução orçamentária de programas por ano e categoria"
+- "verificar saldo e valores faturados no orçamento de programas no FGC052"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Gestão Contratos -> Consulta -> Orçamento de Programas).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

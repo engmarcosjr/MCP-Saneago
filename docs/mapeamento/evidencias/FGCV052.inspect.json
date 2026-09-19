@@ -1,0 +1,87 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Orçamento de Programas",
+  "inputs": [
+    {
+      "id": "dWqGi-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dWqGo-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "Unidade Organizacional",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "dWqGi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dWqGo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dWqGw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "dWqGi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dWqGo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dWqGw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Relatório Orçamentário por Categoria",
+    "Código",
+    "Orçamento",
+    "Comprometido Atual",
+    "Saldo",
+    "Contratado",
+    "Reservado",
+    "Faturado",
+    "Acréscimo",
+    "Executado",
+    "Divida",
+    "Relatório de Acompanhamento Orçamentário",
+    "Unidade"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/fgc/FGC052OrcamentoPrograma.zul",
+  "codigo": "FGCV052"
+}
