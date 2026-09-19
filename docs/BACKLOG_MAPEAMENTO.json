@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T04:23:48.006Z",
+    "gerado_em": "2026-09-19T04:29:44.148Z",
     "total": 596,
-    "completos": 336,
-    "pendentes": 260,
+    "completos": 338,
+    "pendentes": 258,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -14,9 +14,9 @@
       "sem_url": 11,
       "sem_roteiro": 97,
       "ficha_nao_validada": 136,
-      "ficha_stub": 55,
-      "sem_campos_detectados": 69,
-      "auditoria_pendente": 9
+      "ficha_stub": 54,
+      "sem_campos_detectados": 66,
+      "auditoria_pendente": 6
     }
   },
   "apps": [
@@ -4677,14 +4677,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": -1000020
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO811",
@@ -4697,14 +4694,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "auditoria_pendente"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": -1000020
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECO815",
@@ -4718,15 +4712,12 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "sem_roteiro",
-        "auditoria_pendente"
+        "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": -1000040
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": -10
     },
     {
       "codigo": "ECO823",
