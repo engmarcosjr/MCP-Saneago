@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T03:34:30.642Z",
+    "gerado_em": "2026-09-19T04:02:58.538Z",
     "total": 596,
-    "completos": 343,
-    "pendentes": 253,
+    "completos": 342,
+    "pendentes": 254,
     "por_classe_seguranca": {
       "indeterminado": 279,
       "candidata_leitura": 150,
@@ -14,8 +14,8 @@
       "sem_url": 11,
       "sem_roteiro": 97,
       "ficha_nao_validada": 136,
-      "ficha_stub": 52,
-      "sem_campos_detectados": 65,
+      "ficha_stub": 55,
+      "sem_campos_detectados": 69,
       "auditoria_pendente": 3
     }
   },
@@ -37,6 +37,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -56,6 +58,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -75,6 +79,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -95,6 +101,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -115,6 +123,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -136,6 +146,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -156,6 +168,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -175,6 +189,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -194,6 +210,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -214,6 +232,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -233,6 +253,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -253,6 +275,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -273,6 +297,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -294,6 +320,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -314,6 +342,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -332,6 +362,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -351,6 +383,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -371,6 +405,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -389,6 +425,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -407,6 +445,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -425,6 +465,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -443,6 +485,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -461,6 +505,8 @@
       "motivo_classe": "botões de escrita: Salvar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -479,6 +525,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -498,6 +546,8 @@
       "motivo_classe": "botões de escrita: Salvar, Excluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -517,6 +567,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -535,6 +587,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -553,6 +607,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -571,6 +627,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -589,6 +647,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -607,6 +667,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -622,6 +684,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -640,6 +704,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -660,6 +726,8 @@
       "motivo_classe": "só botões de leitura: Consultar atualização de dados pelo empregado, Consultar, Relatório",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -675,6 +743,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -693,6 +763,8 @@
       "motivo_classe": "botões de escrita: Salvar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -710,6 +782,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8990
     },
     {
@@ -727,6 +801,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8990
     },
     {
@@ -744,6 +820,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8990
     },
     {
@@ -763,6 +841,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -781,6 +861,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -799,6 +881,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -817,6 +901,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -835,6 +921,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -853,6 +941,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -868,6 +958,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -888,6 +980,8 @@
         "sem_campos_detectados"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8990
     },
     {
@@ -908,6 +1002,8 @@
       "motivo_classe": "só botões de leitura: Consultar atualização de dados pelo empregado, Consultar, Relatório",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -923,6 +1019,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9000
     },
     {
@@ -943,6 +1041,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -963,6 +1063,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -983,6 +1085,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1003,6 +1107,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1023,6 +1129,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1044,6 +1152,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1066,6 +1176,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1086,6 +1198,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1105,6 +1219,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1126,6 +1242,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1146,6 +1264,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1166,6 +1286,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1187,6 +1309,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1207,6 +1331,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1227,6 +1353,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1249,6 +1377,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1269,6 +1399,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1288,6 +1420,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -1308,6 +1442,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1328,6 +1464,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1346,6 +1484,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1364,6 +1504,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1382,6 +1524,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1401,6 +1545,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1420,6 +1566,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1439,6 +1587,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1458,6 +1608,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1478,6 +1630,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1497,6 +1651,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1517,6 +1673,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1535,6 +1693,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -1555,6 +1715,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -1570,6 +1732,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -1588,6 +1752,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1606,6 +1772,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1625,6 +1793,8 @@
       "motivo_classe": "botões de escrita: Incluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1643,6 +1813,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1661,6 +1833,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1679,6 +1853,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1698,6 +1874,8 @@
       "motivo_classe": "botões de escrita: Incluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1716,6 +1894,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 5000
     },
     {
@@ -1731,6 +1911,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1746,6 +1928,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1761,6 +1945,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1776,6 +1962,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1791,6 +1979,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1806,6 +1996,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1821,6 +2013,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1836,6 +2030,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1851,6 +2047,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1866,6 +2064,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 3000
     },
     {
@@ -1885,6 +2085,8 @@
       "motivo_classe": "Tipo declarado: Misto (Consulta e Solicitação de Titularidade)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1900,6 +2102,8 @@
       "motivo_classe": "Tipo declarado: Cadastro e Alteração (misto / zk)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1915,6 +2119,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1930,6 +2136,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1945,6 +2153,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1960,6 +2170,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1978,6 +2190,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -1996,6 +2210,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2014,6 +2230,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2032,6 +2250,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2050,6 +2270,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2068,6 +2290,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2085,6 +2309,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2103,6 +2329,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Relatório (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2122,6 +2350,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2140,6 +2370,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2155,6 +2387,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2173,6 +2407,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2191,6 +2427,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2209,6 +2447,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2227,6 +2467,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2245,6 +2487,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2263,6 +2507,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2281,6 +2527,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2299,6 +2547,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2317,6 +2567,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2335,6 +2587,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2353,6 +2607,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2371,6 +2627,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto / com campos de inclusão/alteração/exclusão)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2389,6 +2647,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2407,6 +2667,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2425,6 +2687,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2443,6 +2707,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2460,6 +2726,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2478,6 +2746,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2496,6 +2766,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2514,6 +2786,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2532,6 +2806,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2550,6 +2826,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2568,6 +2846,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2588,6 +2868,8 @@
       "motivo_classe": "botões de escrita: Incluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2606,6 +2888,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2626,6 +2910,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2644,6 +2930,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2662,6 +2950,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2680,6 +2970,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2698,6 +2990,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2716,6 +3010,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2734,6 +3030,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2751,6 +3049,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2770,6 +3070,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Execução de Job (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2785,6 +3087,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2803,6 +3107,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2821,6 +3127,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2839,6 +3147,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2857,6 +3167,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2875,6 +3187,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2893,6 +3207,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2912,6 +3228,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2931,6 +3249,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2949,6 +3269,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2967,6 +3289,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -2986,6 +3310,8 @@
       "motivo_classe": "Tipo declarado: Operação e Análise de Consumo (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3004,6 +3330,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3023,6 +3351,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir Contas Ativas",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3041,6 +3371,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3059,6 +3391,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3077,6 +3411,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3095,6 +3431,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3114,6 +3452,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3132,6 +3472,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3151,6 +3493,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3169,6 +3513,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3187,6 +3533,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3205,6 +3553,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3223,6 +3573,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3241,6 +3593,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3259,6 +3613,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3277,6 +3633,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3295,6 +3653,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3313,6 +3673,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3331,6 +3693,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3349,6 +3713,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3367,6 +3733,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3385,6 +3753,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3403,6 +3773,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3421,6 +3793,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3439,6 +3813,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3457,6 +3833,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3475,6 +3853,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3493,6 +3873,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3511,6 +3893,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3534,6 +3918,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3552,6 +3938,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3571,6 +3959,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3589,6 +3979,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3607,6 +3999,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3622,6 +4016,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3640,6 +4036,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3658,6 +4056,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3676,6 +4076,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3695,6 +4097,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3713,6 +4117,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3730,6 +4136,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3749,6 +4157,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3767,6 +4177,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3785,6 +4197,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3803,6 +4217,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3821,6 +4237,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3839,6 +4257,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3857,6 +4277,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3875,6 +4297,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3893,6 +4317,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3911,6 +4337,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3929,6 +4357,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3944,6 +4374,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3963,6 +4395,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -3981,6 +4415,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4000,6 +4436,8 @@
       "motivo_classe": "botões de escrita: Incluir, Confirmar/Gravar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4018,6 +4456,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4036,6 +4476,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4054,6 +4496,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4072,6 +4516,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4090,6 +4536,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4108,6 +4556,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4123,6 +4573,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4141,6 +4593,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4159,6 +4613,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4177,6 +4633,8 @@
       "motivo_classe": "Tipo declarado: Escrita e Execução de Processos (zk)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4192,6 +4650,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4210,6 +4670,8 @@
         "auditoria_pendente"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": -1000020
     },
     {
@@ -4228,6 +4690,8 @@
         "auditoria_pendente"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": -1000020
     },
     {
@@ -4242,11 +4706,15 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
+        "ficha_stub",
+        "sem_campos_detectados",
         "sem_roteiro",
         "auditoria_pendente"
       ],
       "completo": false,
-      "prioridade": -1000020
+      "tentativas": 1,
+      "aposentada": false,
+      "prioridade": -1000040
     },
     {
       "codigo": "ECO823",
@@ -4261,6 +4729,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4276,6 +4746,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4293,6 +4765,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": -10
     },
     {
@@ -4307,10 +4781,14 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
+        "ficha_stub",
+        "sem_campos_detectados",
         "sem_roteiro"
       ],
       "completo": false,
-      "prioridade": -10
+      "tentativas": 1,
+      "aposentada": false,
+      "prioridade": -30
     },
     {
       "codigo": "ECO962",
@@ -4324,10 +4802,14 @@
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
+        "ficha_stub",
+        "sem_campos_detectados",
         "sem_roteiro"
       ],
       "completo": false,
-      "prioridade": -10
+      "tentativas": 1,
+      "aposentada": false,
+      "prioridade": -30
     },
     {
       "codigo": "ECOV010",
@@ -4346,6 +4828,8 @@
       "motivo_classe": "Tipo declarado: Misto / Escrita e Consulta (zk)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4361,6 +4845,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto / zk)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4376,6 +4862,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4395,6 +4883,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 0
     },
     {
@@ -4412,6 +4902,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": -10
     },
     {
@@ -4430,6 +4922,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4448,6 +4942,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4466,6 +4962,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4484,6 +4982,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4507,6 +5007,8 @@
       "motivo_classe": "botões de escrita: Remover",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4525,6 +5027,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4540,6 +5044,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4558,6 +5064,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4576,6 +5084,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4599,6 +5109,8 @@
       "motivo_classe": "botões de escrita: Remover",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 4000
     },
     {
@@ -4621,6 +5133,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4642,6 +5156,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -4662,6 +5178,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4682,6 +5200,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4702,6 +5222,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4723,6 +5245,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4744,6 +5268,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4764,6 +5290,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -4782,6 +5310,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -4800,6 +5330,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -4818,6 +5350,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -4836,6 +5370,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -4856,6 +5392,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4874,6 +5412,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -4895,6 +5435,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4914,6 +5456,8 @@
       "motivo_classe": "só botões de leitura: Visualizar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -4934,6 +5478,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4954,6 +5500,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4974,6 +5522,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -4995,6 +5545,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5016,6 +5568,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5037,6 +5591,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5058,6 +5614,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5080,6 +5638,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5101,6 +5661,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5121,6 +5683,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5141,6 +5705,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5160,6 +5726,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5179,6 +5747,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5199,6 +5769,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5220,6 +5792,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5239,6 +5813,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -5257,6 +5833,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5275,6 +5853,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5296,6 +5876,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5317,6 +5899,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5337,6 +5921,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5355,6 +5941,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5375,6 +5963,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5394,6 +5984,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5414,6 +6006,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5432,6 +6026,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5453,6 +6049,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5474,6 +6072,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5494,6 +6094,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5515,6 +6117,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5536,6 +6140,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5557,6 +6163,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5578,6 +6186,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5599,6 +6209,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5619,6 +6231,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5640,6 +6254,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5660,6 +6276,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5680,6 +6298,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5701,6 +6321,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5722,6 +6344,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -5743,6 +6367,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5763,6 +6389,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5782,6 +6410,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5803,6 +6433,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5818,6 +6450,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -5833,6 +6467,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 10000
     },
     {
@@ -5852,6 +6488,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -5872,6 +6510,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5892,6 +6532,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5912,6 +6554,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5932,6 +6576,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -5951,6 +6597,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -5970,6 +6618,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -5989,6 +6639,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6007,6 +6659,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6026,6 +6680,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6044,6 +6700,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6063,6 +6721,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6081,6 +6741,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6099,6 +6761,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6117,6 +6781,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6139,6 +6805,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6173,6 +6841,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6193,6 +6863,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6213,6 +6885,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6232,6 +6906,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6251,6 +6927,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6269,6 +6947,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6288,6 +6968,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6309,6 +6991,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6328,6 +7012,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6349,6 +7035,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6370,6 +7058,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6391,6 +7081,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6409,6 +7101,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6429,6 +7123,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6450,6 +7146,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6468,6 +7166,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6486,6 +7186,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6504,6 +7206,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6524,6 +7228,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6544,6 +7250,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6565,6 +7273,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6585,6 +7295,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6605,6 +7317,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6625,6 +7339,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6645,6 +7361,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6666,6 +7384,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6686,6 +7406,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6706,6 +7428,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6726,6 +7450,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6747,6 +7473,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6766,6 +7494,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6784,6 +7514,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6803,6 +7535,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6824,6 +7558,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6842,6 +7578,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6861,6 +7599,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6880,6 +7620,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -6900,6 +7642,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6921,6 +7665,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -6942,6 +7688,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6962,6 +7710,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -6981,6 +7731,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -7000,6 +7752,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -7020,6 +7774,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7039,6 +7795,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -7057,6 +7815,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7075,6 +7835,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7096,6 +7858,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7116,6 +7880,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7137,6 +7903,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7157,6 +7925,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7177,6 +7947,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7196,6 +7968,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -7214,6 +7988,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7232,6 +8008,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7252,6 +8030,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7271,6 +8051,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -7289,6 +8071,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7308,6 +8092,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7328,6 +8114,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7349,6 +8137,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7368,6 +8158,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -7386,6 +8178,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7404,6 +8198,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7422,6 +8218,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7440,6 +8238,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -7459,6 +8259,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7477,6 +8279,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7495,6 +8299,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7510,6 +8316,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7529,6 +8337,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7544,6 +8354,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7559,9 +8371,13 @@
       ],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [],
-      "completo": true,
-      "prioridade": 7000
+      "lacunas": [
+        "sem_campos_detectados"
+      ],
+      "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
+      "prioridade": 6990
     },
     {
       "codigo": "LQAV081",
@@ -7579,6 +8395,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7594,6 +8412,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7612,6 +8432,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 7000
     },
     {
@@ -7631,6 +8453,8 @@
       "motivo_classe": "botões de escrita: Incluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7649,6 +8473,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7669,6 +8495,8 @@
       "motivo_classe": "botões de escrita: remover, Confirmar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7687,6 +8515,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7705,6 +8535,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7724,6 +8556,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7742,6 +8576,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7761,6 +8597,8 @@
       "motivo_classe": "botões de escrita: Incluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7779,6 +8617,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7799,6 +8639,8 @@
       "motivo_classe": "botões de escrita: remover, Confirmar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7817,6 +8659,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7835,6 +8679,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7854,6 +8700,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7872,6 +8720,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 6000
     },
     {
@@ -7887,6 +8737,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7902,6 +8754,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7917,6 +8771,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7932,6 +8788,8 @@
       "motivo_classe": "Tipo declarado: Cadastro e Escrita (jsp)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7947,6 +8805,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7962,6 +8822,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7977,6 +8839,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -7992,6 +8856,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8007,6 +8873,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8022,6 +8890,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8037,6 +8907,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8052,6 +8924,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8070,6 +8944,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8085,6 +8961,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8100,6 +8978,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8115,6 +8995,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8132,6 +9014,8 @@
       "motivo_classe": "só botões de leitura: consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8147,6 +9031,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8162,6 +9048,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8177,6 +9065,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8192,6 +9082,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8207,6 +9099,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8222,6 +9116,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8237,6 +9133,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8252,6 +9150,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8267,6 +9167,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8284,6 +9186,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 990
     },
     {
@@ -8299,6 +9203,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8314,6 +9220,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8329,6 +9237,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8344,6 +9254,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8359,6 +9271,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8374,6 +9288,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8389,6 +9305,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8404,6 +9322,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8421,6 +9341,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 990
     },
     {
@@ -8436,6 +9358,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8451,6 +9375,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8466,6 +9392,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8481,6 +9409,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8496,6 +9426,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8511,6 +9443,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8526,6 +9460,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8541,6 +9477,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8556,6 +9494,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8571,6 +9511,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8589,6 +9531,8 @@
       "motivo_classe": "só botões de leitura: Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8604,6 +9548,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8622,6 +9568,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8637,6 +9585,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8652,6 +9602,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8667,6 +9619,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8684,6 +9638,8 @@
       "motivo_classe": "só botões de leitura: consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8703,6 +9659,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8721,6 +9679,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8736,6 +9696,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8754,6 +9716,8 @@
       "motivo_classe": "Tipo declarado: Relatório Operacional (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8772,6 +9736,8 @@
       "motivo_classe": "Tipo declarado: Relatório Operacional (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8787,6 +9753,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8802,6 +9770,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8817,6 +9787,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8832,6 +9804,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8847,6 +9821,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8862,6 +9838,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8877,6 +9855,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8892,6 +9872,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8907,6 +9889,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1000
     },
     {
@@ -8928,6 +9912,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -8948,6 +9934,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -8968,6 +9956,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -8989,6 +9979,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9009,6 +10001,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9027,6 +10021,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -9047,6 +10043,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9067,6 +10065,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9085,6 +10085,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -9103,6 +10105,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -9123,6 +10127,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9143,6 +10149,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9166,6 +10174,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9189,6 +10199,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9209,6 +10221,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9229,6 +10243,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9249,6 +10265,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9269,6 +10287,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9289,6 +10309,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9309,6 +10331,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9329,6 +10353,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -9347,6 +10373,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -9367,6 +10395,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -9386,6 +10416,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -9405,6 +10437,8 @@
       "motivo_classe": "botões de escrita: Excluir, Excluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9423,6 +10457,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9441,6 +10477,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9459,6 +10497,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9477,6 +10517,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9496,6 +10538,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9515,6 +10559,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9537,6 +10583,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9557,6 +10605,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9576,6 +10626,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9595,6 +10647,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9613,6 +10667,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9631,6 +10687,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9649,6 +10707,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9667,6 +10727,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9686,6 +10748,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9704,6 +10768,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9722,6 +10788,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9741,6 +10809,8 @@
       "motivo_classe": "botões de escrita: Excluir, Excluir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9759,6 +10829,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9777,6 +10849,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9795,6 +10869,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9814,6 +10890,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9833,6 +10911,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9855,6 +10935,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9875,6 +10957,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9894,6 +10978,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9913,6 +10999,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9931,6 +11019,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9949,6 +11039,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9967,6 +11059,8 @@
       "motivo_classe": "Tipo declarado: Leitura e Consulta (misto)",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -9985,6 +11079,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -10004,6 +11100,8 @@
       "motivo_classe": "só botões de leitura: Consultar, Imprimir",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -10022,6 +11120,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -10040,6 +11140,8 @@
       "motivo_classe": "só botões de leitura: Consultar",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 8000
     },
     {
@@ -10061,6 +11163,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -10080,6 +11184,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10100,6 +11206,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10119,6 +11227,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -10139,6 +11249,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10159,6 +11271,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10179,6 +11293,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10199,6 +11315,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10219,6 +11337,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10239,6 +11359,8 @@
         "sem_roteiro"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10261,6 +11383,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10282,6 +11406,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -10303,6 +11429,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -10323,6 +11451,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10342,6 +11472,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -10360,6 +11492,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -10380,6 +11514,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10400,6 +11536,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10420,6 +11558,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10440,6 +11580,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10460,6 +11602,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9990
     },
     {
@@ -10478,6 +11622,8 @@
         "ficha_nao_validada"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9980
     },
     {
@@ -10493,6 +11639,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10508,6 +11656,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10523,6 +11673,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10538,6 +11690,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10555,6 +11709,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1990
     },
     {
@@ -10570,6 +11726,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10585,6 +11743,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10600,6 +11760,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10615,6 +11777,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10630,6 +11794,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10645,6 +11811,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10660,6 +11828,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10675,6 +11845,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10690,6 +11862,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 2,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10705,6 +11879,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10722,6 +11898,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1990
     },
     {
@@ -10737,6 +11915,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10752,6 +11932,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10767,6 +11949,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10782,6 +11966,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10799,6 +11985,8 @@
         "ficha_stub"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 1990
     },
     {
@@ -10814,6 +12002,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10829,6 +12019,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10844,6 +12036,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10859,6 +12053,8 @@
       "motivo_classe": "nenhum botão reconhecido",
       "lacunas": [],
       "completo": true,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 2000
     },
     {
@@ -10880,6 +12076,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 0,
+      "aposentada": false,
       "prioridade": 9970
     },
     {
@@ -10899,6 +12097,8 @@
         "sem_url"
       ],
       "completo": false,
+      "tentativas": 1,
+      "aposentada": false,
       "prioridade": 9990
     }
   ]

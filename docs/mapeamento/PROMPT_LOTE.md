@@ -80,3 +80,18 @@ Várias telas (BPA*, BAPV*, LRS*, ECO151) trazem nome completo, matrícula, CPF,
 CTPS de quem está logado. **Não versione isso.** Ao gravar a evidência, substitua o
 `valor_atual` desses campos por `[REDIGIDO]` — a estrutura da tela é o que importa,
 o conteúdo não. Convenção 5 do `CLAUDE.md`.
+
+## Aposentadoria — três tentativas e a app sai da fila
+
+Uma app classificada `bloqueada` ou `sem_campos_confirmado` volta à fila até acumular
+**três tentativas reais**. Na terceira, ela é aposentada e não aparece mais.
+
+"Tentativa real" significa **ter reaberto a tela naquele lote**. Reusar a evidência de
+um lote anterior não conta — e a auditoria detecta (checagem C10, que compara o `ts` da
+sua entrada com a data do arquivo de evidência). Foi o que aconteceu no lote-123:
+`ECO808`, `ECO811` e `ECO815` foram "processadas" sem abrir nada, apoiadas em evidência
+de onze dias antes.
+
+Se o reuso for deliberado e justificado, declare `"reusa_evidencia": true` na entrada do
+JSONL e explique no diário. Sem isso, a entrada conta como divergência e a app volta
+para a fila — o carimbo não encurta o caminho.

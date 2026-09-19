@@ -77,7 +77,9 @@ edite as anteriores); se a classe mudar, declare o campo `corrige`.
      Enviar, **ou** um botão cujo efeito você não consegue determinar sem clicar.
      Ambiguidade cai aqui, nunca em `somente_leitura`.
    - `sem_campos_confirmado` — a tela abriu e de fato não tem campo nem botão de ação.
-     Só use com evidência bruta que comprove; é estado final legítimo.
+     Só use com evidência bruta que comprove. **Não é estado final na primeira vez:**
+     a app volta à fila até três tentativas reais, porque tela vazia e falha de render
+     se parecem. Na terceira, o backlog a aposenta sozinho.
    - `sem_acesso` — abriu mas nega permissão para o perfil atual.
    - `bloqueada` — não abriu.
 

@@ -107,27 +107,63 @@ function codigosComDivergencia() {
 
 const P_AUDITORIA = path.join(RAIZ, 'docs', 'mapeamento', 'AUDITORIA.jsonl');
 
+const MAX_TENTATIVAS = 3;
+const DIR_EVID = path.join(RAIZ, 'docs', 'mapeamento', 'evidencias');
+const TOLERANCIA_MS = 6 * 60 * 60 * 1000;
+
+/**
+ * Historico por codigo, com a contagem de tentativas que realmente abriram a tela.
+ *
+ * Uma entrada cuja evidencia e mais velha que ela mesma nao e tentativa: e carimbo.
+ * O lote-123 reescreveu tres fichas apoiado em evidencia de 11 dias antes, sem abrir
+ * nada. Se isso contasse como tentativa, bastaria carimbar tres vezes para aposentar
+ * uma app -- o limite viraria um atalho para nao trabalhar.
+ */
 function appsAuditadas() {
   if (!fs.existsSync(P_AUDITORIA)) return new Map();
-  const linhas = fs.readFileSync(P_AUDITORIA, 'utf8').trim().split('\n').filter(Boolean);
   const mapa = new Map();
-  for (const l of linhas) {
+  for (const l of fs.readFileSync(P_AUDITORIA, 'utf8').trim().split('\n').filter(Boolean)) {
+    let o;
     try {
-      const obj = JSON.parse(l);
-      mapa.set(obj.codigo, obj);
-    } catch (_) {}
+      o = JSON.parse(l);
+    } catch (_) {
+      continue;
+    }
+    const reg = mapa.get(o.codigo) || { ultima: null, tentativas: 0 };
+    reg.ultima = o;
+
+    const pEvid = path.join(DIR_EVID, `${o.codigo}.inspect.json`);
+    const ts = Date.parse(o.ts);
+    let abriuTela = false;
+    if (fs.existsSync(pEvid) && Number.isFinite(ts)) {
+      abriuTela = ts - fs.statSync(pEvid).mtimeMs <= TOLERANCIA_MS;
+    }
+    if (abriuTela) reg.tentativas += 1;
+
+    mapa.set(o.codigo, reg);
   }
   return mapa;
 }
 
-function lacunas(app, ficha, temRoteiro, auditada) {
+/** Desfechos que so se resolvem reabrindo a tela -- nao ha o que redigir sem isso. */
+const DESFECHO_IMPRODUTIVO = ['bloqueada', 'sem_campos_confirmado'];
+
+function lacunas(app, ficha, temRoteiro, reg) {
   // Ter linha no AUDITORIA.jsonl NAO e prova de app completa: o log registra o
   // que foi tentado, nao o que ficou bom. Uma versao anterior retornava [] aqui
   // e 363 apps sumiram da fila -- 6 delas sem roteiro e 10 com ficha stub.
   // A auditoria continua mandando pelo caminho `auditoria_pendente`, em main().
+  const auditada = reg && reg.ultima;
   const out = [];
-  if (auditada && auditada.classe_proposta === 'bloqueada') {
-    // App que nao abre nao tem lacuna a preencher: o desfecho e final.
+
+  // Aposentadoria: apos MAX_TENTATIVAS aberturas reais que nao renderam campo nem
+  // botao, a app sai da fila. ECO811 pode estar vazia de verdade ou ter falhado no
+  // render -- tres tentativas distinguem uma coisa da outra; a quarta so repete.
+  if (
+    auditada &&
+    DESFECHO_IMPRODUTIVO.includes(auditada.classe_proposta) &&
+    reg.tentativas >= MAX_TENTATIVAS
+  ) {
     return temRoteiro ? [] : ['sem_roteiro'];
   }
   if (!ficha) out.push('sem_ficha');
@@ -152,8 +188,9 @@ function main() {
     const temRoteiro = Boolean(roteiro[app.codigo]);
     const vertical = (app.codigo.match(/^[A-Z]+?(?=V?\d)/) || app.codigo.match(/^[A-Z]+/) || ['?'])[0];
     const seg = classificarSeguranca(ficha);
-    const auditada = auditadas.get(app.codigo);
-    const gaps = lacunas(app, ficha, temRoteiro, auditada);
+    const reg = auditadas.get(app.codigo);
+    const auditada = reg && reg.ultima;
+    const gaps = lacunas(app, ficha, temRoteiro, reg);
     if (comDivergencia.has(app.codigo)) gaps.push('auditoria_pendente');
 
     const idxVertical = ORDEM_VERTICAIS.indexOf(vertical);
@@ -170,6 +207,12 @@ function main() {
       motivo_classe: seg.motivo,
       lacunas: gaps,
       completo: gaps.length === 0,
+      tentativas: reg ? reg.tentativas : 0,
+      aposentada: Boolean(
+        auditada &&
+          DESFECHO_IMPRODUTIVO.includes(auditada.classe_proposta) &&
+          reg.tentativas >= MAX_TENTATIVAS
+      ),
       // Divergencia de auditoria vem antes de tudo: e artefato quebrado ja no
       // repositorio, nao lacuna de trabalho ainda nao feito.
       prioridade:
