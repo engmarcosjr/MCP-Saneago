@@ -20994,28 +20994,63 @@
   },
   "LENV146": {
     "codigo": "LENV146",
-    "nome": "Interrupção de Energia",
-    "url_zul": "https://prod.saneago.com.br/prt/len/LENV146.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a interrupção de energia.",
+    "nome": "Controle de Interrupção de Energia",
+    "url_zul": "https://www.saneago.com.br/prt/len/LEN146ControleInterrupcaoEnergia.zul",
+    "categoria": "Gestão Energética / Relatório",
+    "o_que_faz": "Permite emitir relatórios e exportar planilhas de controle de interrupções de energia elétrica por período, cidade e unidade operacional.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Período",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "a",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Unidade Operacional",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Relatório",
+        "id": "k9aG_1"
+      },
+      {
+        "label": "Planilha",
+        "id": "k9aG01"
+      },
+      {
+        "label": "Cancelar",
+        "id": "k9aG11"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Interrupção de Energia",
+        "intencao": "Emitir relatório ou planilha de controle de interrupção de energia no LENV146",
         "passos": [
           "Abrir a aplicação LENV146",
-          "Preencher campos na tela inicial"
+          "Preencher Período, Cidade ou Unidade Operacional",
+          "Clicar em Relatório ou Planilha"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de interrupção de energia",
-      "acessar a app LENV146",
-      "consultar interrupção de energia"
+      "consultar controle de interrupção de energia no LENV146",
+      "emitir relatório de interrupções de energia por período ou cidade",
+      "exportar planilha de interrupções de energia elétrica"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "LQA036": {
     "codigo": "LQA036",

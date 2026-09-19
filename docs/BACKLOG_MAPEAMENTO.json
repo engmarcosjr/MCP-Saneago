@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:48:06.165Z",
+    "gerado_em": "2026-09-19T08:55:23.342Z",
     "total": 596,
-    "completos": 426,
-    "pendentes": 170,
+    "completos": 427,
+    "pendentes": 169,
     "por_classe_seguranca": {
-      "indeterminado": 232,
-      "candidata_leitura": 192,
+      "indeterminado": 231,
+      "candidata_leitura": 193,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 72,
-      "sem_campos_detectados": 8,
+      "ficha_nao_validada": 71,
+      "sem_campos_detectados": 7,
       "ficha_stub": 7
     }
   },
@@ -8063,38 +8063,39 @@
       "nome": "Interrupção de Energia",
       "vertical": "LEN",
       "url_zul": "https://www.saneago.com.br/prt/len/LENV146.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 810,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1692,
+      "botoes": [
+        "Relatório",
+        "Planilha",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Relatório",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "LIG002",
       "nome": "Mapa Web SanSIG",
       "vertical": "LIG",
       "url_zul": "https://sansig.saneago.com.br/",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 521,
+      "tipo_declarado": "Bloqueada / Sem Acesso",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 770,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
       "lacunas": [
         "ficha_stub",
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -8103,18 +8104,18 @@
       "nome": "Mapa Web SanSIG",
       "vertical": "LIG",
       "url_zul": "https://www.saneago.com.br/prt/lig/LIGV002.zul",
-      "tipo_declarado": "Sem Acesso / Restrita ao Perfil Atual",
-      "status_ficha": null,
-      "bytes_ficha": 522,
+      "tipo_declarado": "Bloqueada / Sem Acesso",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 786,
       "botoes": [],
       "classe_seguranca": "sem_acesso",
-      "motivo_classe": "Tipo declarado: Sem Acesso / Restrita ao Perfil Atual",
+      "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
       "lacunas": [
         "ficha_stub",
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
       "prioridade": 9980
     },

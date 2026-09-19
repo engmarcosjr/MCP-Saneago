@@ -1,0 +1,165 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Controle de Interrupção de Energia",
+  "inputs": [
+    {
+      "id": "k9aGd-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "k9aGh-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "k9aGe1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "k9aGq-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "k9aGf1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Operacional",
+      "label": "Unidade Operacional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "k9aGd0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Operacional",
+      "label": "Unidade Operacional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "k9aGd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aG_1",
+      "name": null,
+      "label": "Relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "k9aG01",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "k9aG11",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "k9aGd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aGd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "k9aG_1",
+      "name": null,
+      "label": "Relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "k9aG01",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "k9aG11",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/len/LEN146ControleInterrupcaoEnergia.zul",
+  "codigo": "LENV146"
+}

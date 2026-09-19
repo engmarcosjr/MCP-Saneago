@@ -470,6 +470,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `KRT037` | Relatórios Gerenciais | Botões: nenhum | `somente_leitura` | Emissão e consulta de relatórios gerenciais de AVTO por opção de relatório sem botões de escrita.
 - `KRTV037` | Relatórios Gerenciais | Botões: nenhum | `somente_leitura` | Emissão e consulta de relatórios gerenciais de AVTO por opção de relatório sem botões de escrita.
 - `LENV145` | Interrupção de Energia | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta de registros e interrupções de energia elétrica por cidade, conta ou protocolo sem botões de escrita.
+- `LENV146` | Controle de Interrupção de Energia | Botões: `Relatório`, `Planilha`, `Cancelar` | `somente_leitura` | Emissão de relatório e exportação de planilha de controle de interrupção de energia elétrica sem botões de escrita.
+- `LIG002` | Mapa Web SanSIG | Botões: nenhum | `bloqueada` | Aplicação não carregou o frame no portal corporativo para o perfil atual.
+- `LIGV002` | Mapa Web SanSIG | Botões: nenhum | `bloqueada` | Aplicação não carregou o frame no portal corporativo para o perfil atual.
 
 
 
