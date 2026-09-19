@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:55:36.398Z",
+    "gerado_em": "2026-09-19T09:02:42.889Z",
     "total": 596,
-    "completos": 427,
-    "pendentes": 169,
+    "completos": 428,
+    "pendentes": 168,
     "por_classe_seguranca": {
-      "indeterminado": 231,
-      "candidata_leitura": 193,
+      "indeterminado": 230,
+      "candidata_leitura": 194,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 71,
-      "sem_campos_detectados": 7,
+      "ficha_nao_validada": 70,
+      "sem_campos_detectados": 6,
       "ficha_stub": 7
     }
   },
@@ -8095,7 +8095,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -8115,7 +8115,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -9881,20 +9881,21 @@
       "nome": "Providência - UO Responsável",
       "vertical": "MGO",
       "url_zul": "https://www.saneago.com.br/prt/mgo/MGOV012.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 834,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1614,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MGOV021",

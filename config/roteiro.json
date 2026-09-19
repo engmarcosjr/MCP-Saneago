@@ -26944,27 +26944,63 @@
   "MGOV012": {
     "codigo": "MGOV012",
     "nome": "Providência - UO Responsável",
-    "url_zul": "https://prod.saneago.com.br/prt/mgo/MGOV012.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a providência - uo responsável.",
+    "url_zul": "https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul",
+    "categoria": "Ouvidoria / Cadastro",
+    "o_que_faz": "Permite consultar, visualizar e imprimir providências de encaminhamentos e ocorrências da Ouvidoria por número de registro de ocorrência ou número de encaminhamento.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Registro Ocorrência",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": null
+      },
+      {
+        "rotulo": "Registro Ocorrência",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": 4
+      },
+      {
+        "rotulo": "N° Encaminhamento",
+        "tipo": "text",
+        "editavel": true,
+        "readonly": false,
+        "maxlength": null
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "i9FWw"
+      },
+      {
+        "label": "Imprimir",
+        "id": "i9FW00"
+      },
+      {
+        "label": "Cancelar",
+        "id": "i9FW10"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Providência - UO Responsável",
+        "intencao": "Consultar providências da ouvidoria no MGOV012",
         "passos": [
           "Abrir a aplicação MGOV012",
-          "Preencher campos na tela inicial"
+          "Informar o Registro Ocorrência ou N° Encaminhamento",
+          "Clicar em Consultar ou Imprimir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de providência - uo responsável",
-      "acessar a app MGOV012",
-      "consultar providência - uo responsável"
+      "consultar providências da ouvidoria no MGOV012",
+      "pesquisar ocorrências e encaminhamentos por registro de ocorrência",
+      "verificar providências da UO responsável na ouvidoria"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MGOV021": {
     "codigo": "MGOV021",

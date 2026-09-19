@@ -1,27 +1,50 @@
 # MGOV012 - Providência - UO Responsável
 
 ## Categoria
-Outros / Administrativo
+Ouvidoria / Cadastro
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a providência - uo responsável.
+Permite consultar, visualizar e imprimir providências de encaminhamentos e ocorrências da Ouvidoria por número de registro de ocorrência ou número de encaminhamento.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul`
+
+## Campos e Filtros da Tela
+- **Registro Ocorrência** (`text` / editável): Número e ano do registro de ocorrência.
+- **N° Encaminhamento** (`text` / editável): Número do encaminhamento da providência.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Realiza a consulta das providências conforme os filtros informados.
+- **Imprimir**: Emite relatório impresso das providências da ocorrência.
+- **Cancelar**: Limpa os campos da tela e reinicia os filtros de consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MGOV012 (Providência - UO Responsável)"
-- "Acessar o aplicativo de providência - uo responsável"
+## Colunas do Resultado
+- Data
+- Nome do Arquivo Encaminhado
+- Responsável
+- Descrição
+- Protocolo
+- Nº RA
+- Origem Aplicação
+- Data Conclusão
+- Responsável Concl.
+- Assunto
+- Data Aprovação
+- Responsável Apr.
+- Desc. Conclusão
+- Nome do Arquivo RO
+- Nome do Arquivo UO
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MGOV012`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar providências da ouvidoria no MGOV012"
+- "pesquisar ocorrências e encaminhamentos por registro de ocorrência"
+- "verificar providências da UO responsável na ouvidoria"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Ouvidoria -> Cadastro -> Providência - UO Responsável).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

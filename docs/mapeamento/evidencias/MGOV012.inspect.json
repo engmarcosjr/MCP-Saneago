@@ -1,0 +1,100 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "MGO012 - Providência",
+  "inputs": [
+    {
+      "id": "i9FWl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Registro Ocorrência",
+      "label": "Registro Ocorrência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "i9FWm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Registro Ocorrência",
+      "label": "Registro Ocorrência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "i9FWs",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "N° Encaminhamento",
+      "label": "N° Encaminhamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "i9FWw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "i9FW00",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "i9FW10",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "i9FWw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "i9FW00",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "i9FW10",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Data",
+    "Nome do Arquivo Encaminhado",
+    "Responsável",
+    "Descrição",
+    "Protocolo",
+    "Nº RA",
+    "Origem Aplicação",
+    "Data Conclusão",
+    "Responsável Concl.",
+    "Assunto",
+    "Data Aprovação",
+    "Responsável Apr.",
+    "Desc. Conclusão",
+    "Nome do Arquivo RO",
+    "Nome do Arquivo UO"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mgo/MGO012Providencia.zul",
+  "codigo": "MGOV012"
+}
