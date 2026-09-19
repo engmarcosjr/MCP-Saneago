@@ -18,13 +18,16 @@ Execute **um lote** da Fase 1 do mapeamento: 3 aplicações da fila, inventariad
 da tela real do portal, **sem clicar em nada**. Produza ficha, entrada de roteiro, linha
 de safelist, evidência bruta, linha de auditoria e diário do lote.
 
-**Este lote (lote-02) começa reinspecionando três apps do piloto**, cuja evidência foi
-gravada antes de a tool passar a devolver `url_real` e por isso não é auditável:
-`ECOV413`, `ECO010`, `ECO162`. Regrave a evidência das três, acrescente uma linha **nova**
-no `AUDITORIA.jsonl` para cada (o log é append-only — não edite as linhas antigas), e se
-a classe de alguma mudar, declare o campo `corrige`. Só depois disso siga a fila normal.
+**Nomeie o lote no formato `lote-NNN`** (três dígitos, sequencial), nada além disso.
+O `AUDITORIA.jsonl` já acumulou 123 grafias diferentes do campo `lote` — `lote-01`,
+`22`, `2026-09-08-lote-16` — e isso inutilizou o filtro `--lote`. Consulte a última
+linha do log para saber o próximo número.
 
-Ao terminar as três, **pare**. Não avance para a fila até o revisor conferir.
+**Commite o lote ao terminar**, com a mensagem `docs(mapeamento): lote NNN -- COD1,
+COD2, COD3`. A regra anterior era o revisor commitar; onze dias de trabalho ficaram
+fora do git por causa dela. Commite você, e deixe o revisor auditar o commit.
+
+Ao terminar as três, **pare**.
 
 ## Regras
 
@@ -49,7 +52,7 @@ Rode e cole comando + saída na seção "Verificação e Auditoria" do diário d
 
 ```bash
 node -e "require('./config/roteiro.json')"
-node scripts/auditar-mapeamento.js --lote lote-02
+node scripts/auditar-mapeamento.js --lote lote-NNN
 npm test
 ```
 
@@ -59,5 +62,20 @@ divergência literal como pendência no diário e pare.
 
 ## Saída
 
-Ao terminar, escreva `RELATORIO_LOTE02.md` na raiz: o que foi feito, decisões, a saída dos
+Ao terminar, escreva o diário em `docs/mapeamento/lotes/lote-NNN.md`: o que foi feito, decisões, a saída dos
 três comandos acima, e as pendências. Máximo uma página.
+
+## Formato da ficha — não invente um novo
+
+As fichas existem hoje em três formatos porque cada trecho do loop inventou o seu, e
+o verificador ficou cego em 75 delas até ser consertado. **Use o formato de
+`docs/apps/ECOV413.md`** e não crie variações de cabeçalho de seção (`## Campos e
+Filtros da Tela`, `## Botões Disponíveis`). Se achar que o formato precisa mudar,
+registre no diário e pare — mudança de formato é decisão do revisor, não do lote.
+
+## PII — as telas preenchem o usuário logado
+
+Várias telas (BPA*, BAPV*, LRS*, ECO151) trazem nome completo, matrícula, CPF, PIS e
+CTPS de quem está logado. **Não versione isso.** Ao gravar a evidência, substitua o
+`valor_atual` desses campos por `[REDIGIDO]` — a estrutura da tela é o que importa,
+o conteúdo não. Convenção 5 do `CLAUDE.md`.
