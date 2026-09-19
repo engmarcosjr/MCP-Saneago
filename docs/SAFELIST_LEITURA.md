@@ -412,3 +412,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `HVWV019` | Manutenção | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de histórico e manutenção de cartões corporativos de viagem sem botões de escrita.
 - `JAJ028` | Consulta Judicial | nenhum | `somente_leitura` | Consulta de processos judiciais por escritório, número ou conta sem botões de escrita.
 - `JAJ033` | Agenda Audiência | nenhum | `somente_leitura` | Consulta da agenda de audiências judiciais por período e comarca sem botões de escrita.
+- `JAJV028` | Consulta Judicial | nenhum | `somente_leitura` | Consulta de processos judiciais por escritório, número ou conta sem botões de escrita.
+- `JAJV033` | Agenda Audiência | nenhum | `somente_leitura` | Consulta da agenda de audiências judiciais por período e comarca sem botões de escrita.
+- `JAJV042` | Consulta Cobrança | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de débitos e cobranças por conta ou CPF/CNPJ sem botões de escrita.

@@ -4,24 +4,33 @@
 Apoio Jurídico e Contencioso
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta cobrança.
+Permite consultar débitos e cobranças judiciais e extrajudiciais de clientes por número de conta ou CPF/CNPJ.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/jaj/JAJ042conCobranca.zul`
+
+## Campos e Filtros da Tela
+- **Conta** (`radio` / editável): Opção de filtro por número de conta.
+- **CPF/CNPJ** (`radio` / editável): Opção de filtro por CPF ou CNPJ do titular.
+- **Conta** (`text` / editável): Campo de entrada para o número da conta ou documento selecionado.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de cobrança com os filtros informados.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela JAJV042 (Consulta Cobrança)"
-- "Acessar o aplicativo de consulta cobrança"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `JAJV042`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar cobrança jurídica no JAJV042"
+- "pesquisar débitos e cobranças por conta ou CPF/CNPJ"
+- "verificar situação de cobrança no apoio jurídico"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Apoio Jurídico -> Consulta -> Consulta Cobrança).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

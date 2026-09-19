@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:23:25.749Z",
+    "gerado_em": "2026-09-19T06:34:54.201Z",
     "total": 596,
-    "completos": 372,
-    "pendentes": 224,
+    "completos": 375,
+    "pendentes": 221,
     "por_classe_seguranca": {
-      "indeterminado": 268,
-      "candidata_leitura": 161,
+      "indeterminado": 267,
+      "candidata_leitura": 162,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 122,
-      "ficha_stub": 31,
-      "sem_campos_detectados": 49
+      "ficha_nao_validada": 119,
+      "ficha_stub": 28,
+      "sem_campos_detectados": 46
     }
   },
   "apps": [
@@ -7684,42 +7684,34 @@
       "nome": "Consulta Judicial",
       "vertical": "JAJ",
       "url_zul": "https://www.saneago.com.br/prt/jaj/JAJV028.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 788,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1564,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "JAJV033",
       "nome": "Agenda Audiência",
       "vertical": "JAJ",
       "url_zul": "https://www.saneago.com.br/prt/jaj/JAJV033.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 788,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1359,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "JAJV036",
@@ -7748,21 +7740,20 @@
       "nome": "Consulta Cobrança",
       "vertical": "JAJ",
       "url_zul": "https://www.saneago.com.br/prt/jaj/JAJV042.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 792,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1278,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "JAJV044",

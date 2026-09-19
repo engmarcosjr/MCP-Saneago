@@ -13509,52 +13509,156 @@
   "JAJV028": {
     "codigo": "JAJV028",
     "nome": "Consulta Judicial",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJV028.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ028ConJudicial.jsp",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta judicial.",
+    "o_que_faz": "Permite consultar processos judiciais da Saneago por código do escritório de advocacia, número de processo novo ou antigo, número da conta do cliente ou situação do processo.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Código do Escritório",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Nº Processo (novo)",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "ou",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Número Conta",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Número Conta",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Situação",
+        "tipo": "select",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Judicial",
+        "intencao": "Consultar processo judicial no JAJV028",
         "passos": [
           "Abrir a aplicação JAJV028",
-          "Preencher campos na tela inicial"
+          "Preencher os filtros de escritório, processo ou conta",
+          "Executar a consulta"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta judicial",
-      "acessar a app JAJV028",
-      "consultar consulta judicial"
+      "consultar processo judicial no JAJV028",
+      "pesquisar processos por escritório ou número da conta",
+      "verificar situação de processos judiciais contenciosos"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJV033": {
     "codigo": "JAJV033",
     "nome": "Agenda Audiência",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJV033.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a agenda audiência.",
+    "o_que_faz": "Permite consultar e acompanhar a agenda de audiências judiciais por período, escritório de advocacia, comarca, regional e preposto.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Período",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Período",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Código do Escritório",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Comarca",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Preposto",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Preposto",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Agenda Audiência",
+        "intencao": "Consultar agenda de audiências judiciais no JAJV033",
         "passos": [
           "Abrir a aplicação JAJV033",
-          "Preencher campos na tela inicial"
+          "Preencher os filtros de período, comarca ou preposto",
+          "Executar a consulta"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de agenda audiência",
-      "acessar a app JAJV033",
-      "consultar agenda audiência"
+      "consultar agenda de audiências judiciais no JAJV033",
+      "pesquisar audiências por período ou comarca",
+      "verificar audiências agendadas por preposto ou escritório"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJV036": {
     "codigo": "JAJV036",
@@ -13599,27 +13703,54 @@
   "JAJV042": {
     "codigo": "JAJV042",
     "nome": "Consulta Cobrança",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJV042.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ042conCobranca.zul",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta cobrança.",
+    "o_que_faz": "Permite consultar débitos e cobranças judiciais e extrajudiciais de clientes por número de conta ou CPF/CNPJ.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Conta",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "CPF/CNPJ",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Conta",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "dIPB80"
+      },
+      {
+        "label": "Cancelar",
+        "id": "dIPB90"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Cobrança",
+        "intencao": "Consultar cobrança jurídica no JAJV042",
         "passos": [
           "Abrir a aplicação JAJV042",
-          "Preencher campos na tela inicial"
+          "Selecionar opção Conta ou CPF/CNPJ",
+          "Preencher o campo de pesquisa",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta cobrança",
-      "acessar a app JAJV042",
-      "consultar consulta cobrança"
+      "consultar cobrança jurídica no JAJV042",
+      "pesquisar débitos e cobranças por conta ou CPF/CNPJ",
+      "verificar situação de cobrança no apoio jurídico"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJV044": {
     "codigo": "JAJV044",

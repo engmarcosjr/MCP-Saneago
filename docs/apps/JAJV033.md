@@ -4,24 +4,33 @@
 Apoio Jurídico e Contencioso
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a agenda audiência.
+Permite consultar e acompanhar a agenda de audiências judiciais por período, escritório de advocacia, comarca, regional e preposto.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/jaj/JAJ033agendaAudi.jsp`
+
+## Campos e Filtros da Tela
+- **Período** (`text` / editável): Data inicial e final para consulta da agenda de audiências.
+- **Código do Escritório** (`select` / editável): Seleção do escritório de advocacia credenciado.
+- **Comarca** (`text` / editável): Código e nome da comarca e código e nome da regional.
+- **Preposto** (`text` / editável): Matrícula e nome do preposto designado para a audiência.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela JAJV033 (Agenda Audiência)"
-- "Acessar o aplicativo de agenda audiência"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `JAJV033`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar agenda de audiências judiciais no JAJV033"
+- "pesquisar audiências por período ou comarca"
+- "verificar audiências agendadas por preposto ou escritório"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Apoio Jurídico -> Judicial -> Agenda Audiência).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*
