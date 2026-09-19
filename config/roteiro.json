@@ -3688,27 +3688,34 @@
   "KRT028": {
     "codigo": "KRT028",
     "nome": "Lista para Análise",
-    "url_zul": "/prt/krt/KRT028ListaAnalise.zul",
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul",
     "categoria": "Controle de Processos e AVTO",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a lista para análise.",
+    "o_que_faz": "Permite consultar e listar processos de AVTO (Autorização de Viabilidade Técnica e Operacional) pendentes por etapa de análise.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Selecione a etapa desejada",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Lista para Análise",
+        "intencao": "Consultar lista de AVTO para análise no KRT028",
         "passos": [
           "Abrir a aplicação KRT028",
-          "Preencher campos na tela inicial"
+          "Selecionar a etapa desejada na combobox",
+          "Visualizar a lista de AVTOs retornada na grade"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de lista para análise",
-      "acessar a app KRT028",
-      "consultar lista para análise"
+      "consultar lista de AVTO para análise no KRT028",
+      "listar processos de AVTO por etapa",
+      "verificar prazos e pareceres de AVTOs pendentes"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "KRT029": {
     "codigo": "KRT029",
@@ -14004,27 +14011,34 @@
   "KRTV028": {
     "codigo": "KRTV028",
     "nome": "Lista para Análise",
-    "url_zul": "https://prod.saneago.com.br/prt/krt/KRTV028.zul",
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul",
     "categoria": "Controle de Processos e AVTO",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a lista para análise.",
+    "o_que_faz": "Permite consultar e listar processos de AVTO (Autorização de Viabilidade Técnica e Operacional) pendentes por etapa de análise.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Selecione a etapa desejada",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Lista para Análise",
+        "intencao": "Consultar lista de AVTO para análise no KRTV028",
         "passos": [
           "Abrir a aplicação KRTV028",
-          "Preencher campos na tela inicial"
+          "Selecionar a etapa desejada na combobox",
+          "Visualizar a lista de AVTOs retornada na grade"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de lista para análise",
-      "acessar a app KRTV028",
-      "consultar lista para análise"
+      "consultar lista de AVTO para análise no KRTV028",
+      "listar processos de AVTO por etapa",
+      "verificar prazos e pareceres de AVTOs pendentes"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "KRTV037": {
     "codigo": "KRTV037",
@@ -18528,27 +18542,25 @@
   "MSIV070": {
     "codigo": "MSIV070",
     "nome": "Registrar Voto",
-    "url_zul": "https://prod.saneago.com.br/prt/msi/MSIV070.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a registrar voto.",
+    "url_zul": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
+    "categoria": "Serviços Intranet / Administrativo",
+    "o_que_faz": "Permite registrar e consultar votação de eleições internas (ex: CIPA ou comitês) na intranet corporativa.",
     "tipo": "leitura",
     "campos": [],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Registrar Voto",
+        "intencao": "Consultar registro de voto no MSIV070",
         "passos": [
-          "Abrir a aplicação MSIV070",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação MSIV070"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de registrar voto",
-      "acessar a app MSIV070",
-      "consultar registrar voto"
+      "consultar tela de registro de voto no MSIV070",
+      "acessar votação de eleição interna na intranet"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MSS005": {
     "codigo": "MSS005",

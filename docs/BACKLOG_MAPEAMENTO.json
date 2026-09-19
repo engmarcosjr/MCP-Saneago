@@ -1,9 +1,9 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:35:37.072Z",
+    "gerado_em": "2026-09-19T06:43:42.084Z",
     "total": 596,
-    "completos": 375,
-    "pendentes": 221,
+    "completos": 377,
+    "pendentes": 219,
     "por_classe_seguranca": {
       "indeterminado": 267,
       "candidata_leitura": 162,
@@ -13,9 +13,9 @@
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 119,
-      "ficha_stub": 28,
-      "sem_campos_detectados": 46
+      "ficha_nao_validada": 116,
+      "ficha_stub": 25,
+      "sem_campos_detectados": 44
     }
   },
   "apps": [
@@ -7912,21 +7912,17 @@
       "nome": "Lista para Análise",
       "vertical": "KRT",
       "url_zul": "/prt/krt/KRT028ListaAnalise.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 792,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1301,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "KRT029",
@@ -7995,21 +7991,17 @@
       "nome": "Lista para Análise",
       "vertical": "KRT",
       "url_zul": "https://www.saneago.com.br/prt/krt/KRTV028.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 795,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1303,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "KRTV037",
@@ -10354,21 +10346,19 @@
       "nome": "Registrar Voto",
       "vertical": "MSI",
       "url_zul": "https://www.saneago.com.br/prt/msi/MSIV070.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 770,
+      "tipo_declarado": "Informativo / Sem campos de entrada (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 884,
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
       "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+        "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 0,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 9990
     },
     {
       "codigo": "MSS005",

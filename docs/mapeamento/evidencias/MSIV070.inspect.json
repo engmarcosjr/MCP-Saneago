@@ -1,0 +1,12 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Registro de Voto",
+  "inputs": [],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9",
+  "codigo": "MSIV070"
+}

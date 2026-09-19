@@ -1,27 +1,29 @@
 # MSIV070 - Registrar Voto
 
 ## Categoria
-Outros / Administrativo
+Serviços Intranet / Administrativo
 
 ## Tipo
-Leitura (Livre)
+Informativo / Sem campos de entrada (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a registrar voto.
+Permite registrar e consultar votação de eleições internas (ex: CIPA ou comitês) na intranet corporativa.
 
-## Campos da Tela Inicial
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/msi/MSI070RegistrarVoto.zul?idEleicao=9`
+
+## Campos e Filtros da Tela
 Nenhum campo interativo detectado na tela inicial.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSIV070 (Registrar Voto)"
-- "Acessar o aplicativo de registrar voto"
+## Perguntas que Responde
+- "consultar tela de registro de voto no MSIV070"
+- "acessar votação de eleição interna na intranet"
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSIV070`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Serviços Intranet -> Voto -> Registrar Voto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

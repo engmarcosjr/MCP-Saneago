@@ -1,0 +1,51 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Lista de AVTO's por Etapa",
+  "inputs": [
+    {
+      "id": "pA2Cd-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Selecione a etapa desejada",
+      "label": "Selecione a etapa desejada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pA2Cd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pA2Cd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "colunas": [
+    "Dias na Unidade",
+    "Número AVTO",
+    "Ano AVTO",
+    "Cidade",
+    "Parecer de Água",
+    "Parecer de Esgoto",
+    "U.O.",
+    "Prazo Final",
+    "Empreendedor",
+    "Qtd de Unidades Comerciais",
+    "Qtd de Unidades Residenciais",
+    "Nome Empreendimento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul",
+  "codigo": "KRTV028"
+}

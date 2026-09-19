@@ -4,24 +4,44 @@
 Controle de Processos e AVTO
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a lista para análise.
+Permite consultar e listar processos de AVTO (Autorização de Viabilidade Técnica e Operacional) pendentes por etapa de análise.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul`
+
+## Campos e Filtros da Tela
+- **Selecione a etapa desejada** (`combobox` / readonly): Seleção da etapa de análise das AVTOs.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela KRTV028 (Lista para Análise)"
-- "Acessar o aplicativo de lista para análise"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Acionador de abertura da combobox de etapa.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `KRTV028`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Dias na Unidade
+- Número AVTO
+- Ano AVTO
+- Cidade
+- Parecer de Água
+- Parecer de Esgoto
+- U.O.
+- Prazo Final
+- Empreendedor
+- Qtd de Unidades Comerciais
+- Qtd de Unidades Residenciais
+- Nome Empreendimento
+
+## Perguntas que Responde
+- "consultar lista de AVTO para análise no KRTV028"
+- "listar processos de AVTO por etapa"
+- "verificar prazos e pareceres de AVTOs pendentes"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Controle de AVTOs -> AVTO -> Lista para Análise).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

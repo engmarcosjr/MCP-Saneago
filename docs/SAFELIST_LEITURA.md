@@ -415,3 +415,6 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `JAJV028` | Consulta Judicial | nenhum | `somente_leitura` | Consulta de processos judiciais por escritório, número ou conta sem botões de escrita.
 - `JAJV033` | Agenda Audiência | nenhum | `somente_leitura` | Consulta da agenda de audiências judiciais por período e comarca sem botões de escrita.
 - `JAJV042` | Consulta Cobrança | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de débitos e cobranças por conta ou CPF/CNPJ sem botões de escrita.
+- `KRT028` | Lista para Análise | nenhum | `somente_leitura` | Consulta e listagem de AVTOs por etapa de análise sem botões de escrita.
+- `KRTV028` | Lista para Análise | nenhum | `somente_leitura` | Consulta e listagem de AVTOs por etapa de análise sem botões de escrita.
+- `MSIV070` | Registrar Voto | nenhum | `sem_campos_confirmado` | Tela de registro de voto confirmada sem campos interativos ou botões de ação na tela inicial.
