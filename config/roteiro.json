@@ -30370,27 +30370,88 @@
   "MTGV008": {
     "codigo": "MTGV008",
     "nome": "Consultar Remessas Capturadas",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTGV008.zul",
-    "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consultar remessas capturadas.",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG008ConsultarRemessasCapturadas.zul",
+    "categoria": "Transmissão e Recepção de Arquivos / Remessas",
+    "o_que_faz": "Permite consultar e listar remessas capturadas no sistema de transmissão e recepção de arquivos da Saneago, com filtros por tipo de remessa, distrito, grupo, referência e status de captura.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Leitura",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Retidas",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Entrega Alternativa",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Grupo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Referência",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Capturados",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Disponíveis",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Todos",
+        "tipo": "radio",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "uPwWp0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "uPwWr0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Consultar Remessas Capturadas",
+        "intencao": "Consultar remessas capturadas no MTGV008",
         "passos": [
           "Abrir a aplicação MTGV008",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de remessa e preencher os filtros desejados",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consultar remessas capturadas",
-      "acessar a app MTGV008",
-      "consultar consultar remessas capturadas"
+      "consultar remessas capturadas no MTGV008",
+      "pesquisar arquivos de leitura e retidas por distrito e referência",
+      "verificar remessas disponíveis e capturadas"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MTGV009": {
     "codigo": "MTGV009",
@@ -30615,27 +30676,66 @@
   "MTGV020": {
     "codigo": "MTGV020",
     "nome": "Consulta Fila de Relatórios PDF",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTGV020.zul",
-    "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta fila de relatórios pdf.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG020RelatorioUsuarioVirtual.zul",
+    "categoria": "Transmissão e Recepção de Arquivos / Relatório",
+    "o_que_faz": "Permite consultar, filtrar, atualizar e gerenciar a fila de relatórios em formato PDF gerados no portal corporativo, incluindo exclusão de relatórios selecionados.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Nome do Arquivo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Data Inicial",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Data Final",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": ".PDF",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Filtrar",
+        "id": "eYWFs"
+      },
+      {
+        "label": "Limpar Filtros",
+        "id": "eYWFt"
+      },
+      {
+        "label": "Atualizar",
+        "id": "eYWFq0"
+      },
+      {
+        "label": "Excluir Selecionados",
+        "id": "eYWFr0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Fila de Relatórios PDF",
+        "intencao": "Consultar fila de relatórios PDF no MTGV020",
         "passos": [
           "Abrir a aplicação MTGV020",
-          "Preencher campos na tela inicial"
+          "Informar filtros de busca por nome ou data",
+          "Clicar em Filtrar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta fila de relatórios pdf",
-      "acessar a app MTGV020",
-      "consultar consulta fila de relatórios pdf"
+      "consultar fila de relatórios PDF no MTGV020",
+      "pesquisar relatórios gerados por período",
+      "atualizar fila de relatórios gerados"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "PGT301": {
     "codigo": "PGT301",

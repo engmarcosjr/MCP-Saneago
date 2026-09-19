@@ -1,0 +1,294 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "eYWFe",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome do Arquivo",
+      "label": "Nome do Arquivo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eYWFj-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Inicial",
+      "label": "Data Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eYWFn-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Final",
+      "label": "Data Final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "eYWFo0-real",
+      "tipo": "text",
+      "rotulo": ".PDF",
+      "label": ".PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eYWFj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eYWFn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eYWFs",
+      "name": null,
+      "label": "Filtrar",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFt",
+      "name": null,
+      "label": "Limpar Filtros",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFef",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFof",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFyf",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWF7g",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFhg",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFrg",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWF0h",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFah",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFkh",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFuh",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFf0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "eYWFo0-next",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "eYWFo0-last",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "eYWFq0",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFr0",
+      "name": null,
+      "label": "Excluir Selecionados",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eYWFj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eYWFn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eYWFs",
+      "name": null,
+      "label": "Filtrar",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFt",
+      "name": null,
+      "label": "Limpar Filtros",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFef",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFof",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFyf",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWF7g",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFhg",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFrg",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWF0h",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFah",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFkh",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFuh",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFf0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "eYWFo0-next",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "eYWFo0-last",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "eYWFq0",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "eYWFr0",
+      "name": null,
+      "label": "Excluir Selecionados",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Arquivo",
+    "Data/Hora Criacao",
+    "Ultima Visualizacao",
+    "Tamanho",
+    "Tipo",
+    "Baixar"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mtg/MTG020RelatorioUsuarioVirtual.zul",
+  "codigo": "MTGV020"
+}

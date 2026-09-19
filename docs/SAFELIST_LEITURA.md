@@ -480,6 +480,8 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `MSI070` | Registrar Voto | Botões: nenhum | `sem_campos_confirmado` | Tela de registro de voto corporativo carregou sem campos de entrada ou botões de ação na tela inicial.
 - `MTG001` | Capturar Remessa | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de arquivos de remessa para captura por distrito sem botões de escrita.
 - `MTGV001` | Capturar Remessa | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de arquivos de remessa para captura por distrito sem botões de escrita.
+- `MTGV008` | Consultar Remessas Capturadas | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de remessas capturadas por distrito, grupo e referência sem botões de escrita.
+- `MTGV020` | Consulta Fila de Relatórios PDF | Botões: `Filtrar`, `Limpar Filtros`, `Atualizar`, `Excluir Selecionados` | `possui_escrita` | Consulta da fila de relatórios PDF com filtros por arquivo e data, contendo botão de escrita Excluir Selecionados.
 
 
 

@@ -1,27 +1,59 @@
 # MTGV008 - Consultar Remessas Capturadas
 
 ## Categoria
-Financeiro, Tesouraria e Remessas
+Transmissão e Recepção de Arquivos / Remessas
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consultar remessas capturadas.
+Permite consultar e listar remessas capturadas no sistema de transmissão e recepção de arquivos da Saneago, com filtros por tipo de remessa (Leitura, Retidas, Entrega Alternativa), distrito, grupo, referência e status de captura.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mtg/MTG008ConsultarRemessasCapturadas.zul`
+
+## Campos e Filtros da Tela
+- **Leitura** (`radio` / editável): Opção de tipo de remessa Leitura.
+- **Retidas** (`radio` / editável): Opção de tipo de remessa Retidas.
+- **Entrega Alternativa** (`radio` / editável): Opção de tipo de remessa Entrega Alternativa.
+- **Distrito** (`text` / editável): Código do distrito.
+- **Distrito** (`text` / readonly): Descrição e seleção do distrito.
+- **Grupo** (`text` / editável): Grupo de faturamento.
+- **Referência** (`date` / editável): Mês e ano de referência da remessa.
+- **Capturados** (`radio` / editável): Filtro por arquivos capturados.
+- **Disponíveis** (`radio` / editável): Filtro por arquivos disponíveis.
+- **Todos** (`radio` / editável): Filtro por todos os status de remessa.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a busca de remessas capturadas com base nos filtros informados.
+- **Cancelar**: Limpa os campos da consulta e reinicia o formulário.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MTGV008 (Consultar Remessas Capturadas)"
-- "Acessar o aplicativo de consultar remessas capturadas"
+### Botões Ignorados
+- `Sem Rotulo` (gatilhos de abertura de combobox / calendário ZK).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MTGV008`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Distrito
+- Cidade
+- Grupo
+- Arquivo
+- Matrícula
+- Status
+- Data/Hora de Geração
+- Data/Hora de Acesso
+- Qtde. Contas
+- Com Hidrômetro
+- Sem Hidrômetro
+- Reaviso
+- Tx. Res. Sólidos
+- Total
+
+## Perguntas que Responde
+- "consultar remessas capturadas no MTGV008"
+- "pesquisar arquivos de leitura e retidas por distrito e referência"
+- "verificar remessas disponíveis e capturadas"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via Transmissao Rec.Arquivos -> Remessas -> Consultar Remessas Capturadas).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

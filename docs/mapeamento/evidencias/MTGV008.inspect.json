@@ -1,0 +1,188 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Consulta Remessas Capturadas",
+  "inputs": [
+    {
+      "id": "uPwWd-real",
+      "name": "_pg656npd",
+      "tipo": "radio",
+      "rotulo": "Leitura",
+      "label": "Leitura",
+      "valor_atual": "Leitura",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWe-real",
+      "name": "_pg656npd",
+      "tipo": "radio",
+      "rotulo": "Retidas",
+      "label": "Retidas",
+      "valor_atual": "Retida",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWf-real",
+      "name": "_pg656npd",
+      "tipo": "radio",
+      "rotulo": "Entrega Alternativa",
+      "label": "Entrega Alternativa",
+      "valor_atual": "Alternativa",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWo-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uPwW70",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "uPwWc0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWi0-real",
+      "name": "_pg3e3mpq",
+      "tipo": "radio",
+      "rotulo": "Capturados",
+      "label": "Capturados",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWj0-real",
+      "name": "_pg3e3mpq",
+      "tipo": "radio",
+      "rotulo": "Disponíveis",
+      "label": "Disponíveis",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uPwWk0-real",
+      "name": "_pg3e3mpq",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "uPwWo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uPwWc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uPwWp0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uPwWr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "uPwWo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uPwWc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uPwWp0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uPwWr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Distrito",
+    "Cidade",
+    "Grupo",
+    "Arquivo",
+    "Matrícula",
+    "Status",
+    "Data/Hora de Geração",
+    "Data/Hora de Acesso",
+    "Qtde. Contas",
+    "Com Hidrômetro",
+    "Sem Hidrômetro",
+    "Reaviso",
+    "Tx. Res. Sólidos",
+    "Total"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mtg/MTG008ConsultarRemessasCapturadas.zul",
+  "codigo": "MTGV008"
+}

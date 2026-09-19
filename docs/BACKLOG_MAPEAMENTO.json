@@ -1,21 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:28:01.601Z",
+    "gerado_em": "2026-09-19T09:34:21.208Z",
     "total": 596,
-    "completos": 434,
-    "pendentes": 162,
+    "completos": 437,
+    "pendentes": 159,
     "por_classe_seguranca": {
-      "indeterminado": 227,
-      "candidata_leitura": 197,
-      "possui_escrita": 164,
+      "indeterminado": 225,
+      "candidata_leitura": 198,
+      "possui_escrita": 165,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 80,
-      "ficha_nao_validada": 67,
-      "sem_campos_detectados": 6,
-      "ficha_stub": 1
+      "sem_roteiro": 79,
+      "ficha_nao_validada": 65,
+      "sem_campos_detectados": 4
     }
   },
   "apps": [
@@ -9967,14 +9966,11 @@
       "botoes": [],
       "classe_seguranca": "sem_acesso",
       "motivo_classe": "Tipo declarado: Bloqueada / Sem Acesso",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": 9980
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 10000
     },
     {
       "codigo": "MGOV059",
@@ -11332,20 +11328,20 @@
       "nome": "Consultar Remessas Capturadas",
       "vertical": "MTG",
       "url_zul": "https://www.saneago.com.br/prt/mtg/MTGV008.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 840,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2209,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "MTGV009",
@@ -11462,20 +11458,22 @@
       "nome": "Consulta Fila de Relatórios PDF",
       "vertical": "MTG",
       "url_zul": "https://www.saneago.com.br/prt/mtg/MTGV020.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 852,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Operação com Escrita (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1791,
+      "botoes": [
+        "Filtrar",
+        "Limpar Filtros",
+        "Atualizar",
+        "Excluir Selecionados"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "botões de escrita: Excluir Selecionados",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "PGT301",
