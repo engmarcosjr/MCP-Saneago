@@ -1,0 +1,305 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Abertura de Ocorrência",
+  "inputs": [
+    {
+      "id": "vQ3Zf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código da Manobra",
+      "label": "Código da Manobra",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zmf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zp-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zjf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Responsável",
+      "label": "Unidade Responsável",
+      "valor_atual": "V0011",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zd0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Responsável",
+      "label": "Unidade Responsável",
+      "valor_atual": "ITEM NÃO ENCONTRADO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zhf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Z11-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zif",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zq1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Znf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Reservatório",
+      "label": "Reservatório",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Ze2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Reservatório",
+      "label": "Reservatório",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Z03-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Previsão de Início",
+      "label": "Previsão de Início",
+      "valor_atual": "21/08/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Z43-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "19/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zd3-real",
+      "name": "_pg4iur2",
+      "tipo": "radio",
+      "rotulo": "Abertas",
+      "label": "Abertas",
+      "valor_atual": "Abertas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Ze3-real",
+      "name": "_pg4iur2",
+      "tipo": "radio",
+      "rotulo": "Fechadas",
+      "label": "Fechadas",
+      "valor_atual": "Fechadas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vQ3Zf3-real",
+      "name": "_pg4iur2",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "Todas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "vQ3Zp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Zd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Ze2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z03-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z43-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Zj3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "vQ3Zm3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "vQ3Zp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Zd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Ze2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z03-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Z43-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vQ3Zj3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "vQ3Zm3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Manobra",
+    "Serviço",
+    "Un. Responsável",
+    "Cidade",
+    "Reservatório",
+    "Bairro",
+    "Logradouro",
+    "Data Início",
+    "Data Término",
+    "Data Normalização",
+    "Código",
+    "Descrição",
+    "Complemento(Quadras)",
+    "Equipe",
+    "Nome Responsável",
+    "Tipo Equipe",
+    "Categoria"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+  "codigo": "GPMV002"
+}

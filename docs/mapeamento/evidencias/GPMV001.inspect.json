@@ -1,0 +1,305 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Abertura de Ocorrência",
+  "inputs": [
+    {
+      "id": "cLSMf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código da Manobra",
+      "label": "Código da Manobra",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMmf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMp-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMjf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Responsável",
+      "label": "Unidade Responsável",
+      "valor_atual": "V0011",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMd0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Responsável",
+      "label": "Unidade Responsável",
+      "valor_atual": "ITEM NÃO ENCONTRADO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMhf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSM11-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMif",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMq1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMnf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Reservatório",
+      "label": "Reservatório",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMe2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Reservatório",
+      "label": "Reservatório",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cLSM03-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Previsão de Início",
+      "label": "Previsão de Início",
+      "valor_atual": "21/08/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSM43-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "19/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMd3-real",
+      "name": "_pgcfjlcs1",
+      "tipo": "radio",
+      "rotulo": "Abertas",
+      "label": "Abertas",
+      "valor_atual": "Abertas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMe3-real",
+      "name": "_pgcfjlcs1",
+      "tipo": "radio",
+      "rotulo": "Fechadas",
+      "label": "Fechadas",
+      "valor_atual": "Fechadas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cLSMf3-real",
+      "name": "_pgcfjlcs1",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "Todas",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "cLSMp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMe2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM03-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM43-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMj3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cLSMm3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "cLSMp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMe2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM03-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSM43-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cLSMj3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cLSMm3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Manobra",
+    "Serviço",
+    "Un. Responsável",
+    "Cidade",
+    "Reservatório",
+    "Bairro",
+    "Logradouro",
+    "Data Início",
+    "Data Término",
+    "Data Normalização",
+    "Código",
+    "Descrição",
+    "Complemento(Quadras)",
+    "Equipe",
+    "Nome Responsável",
+    "Tipo Equipe",
+    "Categoria"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+  "codigo": "GPMV001"
+}

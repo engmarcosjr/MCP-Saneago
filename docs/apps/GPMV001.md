@@ -1,27 +1,60 @@
 # GPMV001 - Manobra de Registros
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a manobra de registros.
+Permite consultar e visualizar aberturas de ocorrência e manobras de registros por código, serviço, unidade responsável, cidade, bairro, reservatório, período de previsão de início e situação (abertas, fechadas, todas).
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul`
+
+## Campos e Filtros da Tela
+- **Código da Manobra** (`text` / editável): Código da Manobra.
+- **Serviço** (`text` / editável): Código e descrição do serviço.
+- **Unidade Responsável** (`text` / editável): Código da Unidade Responsável.
+- **Cidade** (`text` / editável): Cidade da manobra.
+- **Bairro** (`text` / readonly): Bairro selecionado.
+- **Reservatório** (`text` / editável): Código e descrição do reservatório.
+- **Previsão de Início** (`date` / editável): Data inicial da previsão de início da manobra.
+- **a** (`date` / editável): Data final do período de previsão.
+- **Abertas** (`radio` / editável): Filtro de manobras abertas.
+- **Fechadas** (`radio` / editável): Filtro de manobras fechadas.
+- **Todas** (`radio` / editável): Filtro de todas as manobras.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de ocorrências e manobras com os filtros informados.
+- **Cancelar**: Limpa os filtros e campos da tela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV001 (Manobra de Registros)"
-- "Acessar o aplicativo de manobra de registros"
+## Colunas do Resultado
+- Manobra
+- Serviço
+- Un. Responsável
+- Cidade
+- Reservatório
+- Bairro
+- Logradouro
+- Data Início
+- Data Término
+- Data Normalização
+- Código
+- Descrição
+- Complemento(Quadras)
+- Equipe
+- Nome Responsável
+- Tipo Equipe
+- Categoria
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar manobras de registros no GPMV001"
+- "pesquisar ocorrências de manobras por cidade ou reservatório"
+- "verificar manobras abertas ou fechadas no painel de manobras"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Cadastro -> Manobra de Registros).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

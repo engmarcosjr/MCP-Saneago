@@ -4,25 +4,25 @@
   "inputs": [],
   "botoes": [
     {
-      "id": "tIxF30",
+      "id": "aGzL30",
       "name": null,
       "label": "Simular valor do PDV",
       "tipo": "button"
     },
     {
-      "id": "tIxFe0-mask-a",
+      "id": "aGzLe0-mask-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "tIxFe0-close",
+      "id": "aGzLe0-close",
       "name": null,
       "label": "Close",
       "tipo": "submit"
     },
     {
-      "id": "tIxFk0",
+      "id": "aGzLk0",
       "name": null,
       "label": "OK",
       "tipo": "button"
@@ -30,25 +30,25 @@
   ],
   "buttons": [
     {
-      "id": "tIxF30",
+      "id": "aGzL30",
       "name": null,
       "label": "Simular valor do PDV",
       "tipo": "button"
     },
     {
-      "id": "tIxFe0-mask-a",
+      "id": "aGzLe0-mask-a",
       "name": null,
       "label": "Sem Rotulo",
       "tipo": "submit"
     },
     {
-      "id": "tIxFe0-close",
+      "id": "aGzLe0-close",
       "name": null,
       "label": "Close",
       "tipo": "submit"
     },
     {
-      "id": "tIxFk0",
+      "id": "aGzLk0",
       "name": null,
       "label": "OK",
       "tipo": "button"

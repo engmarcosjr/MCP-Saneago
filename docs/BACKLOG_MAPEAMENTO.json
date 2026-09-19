@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:46:19.989Z",
+    "gerado_em": "2026-09-19T05:53:32.270Z",
     "total": 596,
-    "completos": 359,
-    "pendentes": 237,
+    "completos": 361,
+    "pendentes": 235,
     "por_classe_seguranca": {
-      "indeterminado": 275,
-      "candidata_leitura": 154,
+      "indeterminado": 273,
+      "candidata_leitura": 156,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 135,
-      "ficha_stub": 44,
-      "sem_campos_detectados": 62
+      "ficha_nao_validada": 133,
+      "ficha_stub": 42,
+      "sem_campos_detectados": 60
     }
   },
   "apps": [
@@ -973,7 +973,7 @@
         "sem_campos_detectados"
       ],
       "completo": false,
-      "tentativas": 3,
+      "tentativas": 4,
       "aposentada": false,
       "prioridade": 8990
     },
@@ -6561,42 +6561,40 @@
       "nome": "Manobra de Registros",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV001.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 794,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2144,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV002",
       "nome": "Manobra",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV002.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 742,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2080,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV003",

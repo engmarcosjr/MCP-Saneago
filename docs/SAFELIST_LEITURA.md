@@ -399,3 +399,5 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `EGWV402` | Faturamento | `Visualizar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e visualização de gráfico de faturamento por conta sem botões de escrita.
 - `FGCV018` | Processo | `Consultar`, `Imprimir`, `Cancelar` | `somente_leitura` | Consulta e impressão de processos de contrato sem botões de escrita.
 - `GCAV003` | Melhorias Previstas | `Consultar`, `Nova Solicitação`, `Limpar` | `possui_escrita` | Tela de cadastro e consulta de solicitações de melhoria com botão Nova Solicitação.
+- `GPMV001` | Manobra de Registros | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e visualização de manobras de registros e abertura de ocorrências sem botões de escrita.
+- `GPMV002` | Manobra | `Consultar`, `Cancelar` | `somente_leitura` | Consulta e visualização de manobras de registros e abertura de ocorrências sem botões de escrita.

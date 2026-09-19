@@ -6146,11 +6146,11 @@
     "botoes": [
       {
         "label": "Simular valor do PDV",
-        "id": "tIxF30"
+        "id": "aGzL30"
       },
       {
         "label": "OK",
-        "id": "tIxFk0"
+        "id": "aGzLk0"
       }
     ],
     "operacoes": [
@@ -11801,52 +11801,184 @@
   "GPMV001": {
     "codigo": "GPMV001",
     "nome": "Manobra de Registros",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV001.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a manobra de registros.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar e visualizar aberturas de ocorrência e manobras de registros por código, serviço, unidade responsável, cidade, bairro, reservatório, período de previsão de início e situação (abertas, fechadas, todas).",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Código da Manobra",
+        "id": "cLSMf",
+        "tipo": "text"
+      },
+      {
+        "label": "Serviço",
+        "id": "cLSMmf",
+        "tipo": "text"
+      },
+      {
+        "label": "Unidade Responsável",
+        "id": "cLSMjf",
+        "tipo": "text"
+      },
+      {
+        "label": "Cidade",
+        "id": "cLSMhf",
+        "tipo": "text"
+      },
+      {
+        "label": "Bairro",
+        "id": "cLSMif",
+        "tipo": "text"
+      },
+      {
+        "label": "Reservatório",
+        "id": "cLSMnf",
+        "tipo": "text"
+      },
+      {
+        "label": "Previsão de Início",
+        "id": "cLSM03-real",
+        "tipo": "date"
+      },
+      {
+        "label": "a",
+        "id": "cLSM43-real",
+        "tipo": "date"
+      },
+      {
+        "label": "Abertas",
+        "id": "cLSMd3-real",
+        "tipo": "radio"
+      },
+      {
+        "label": "Fechadas",
+        "id": "cLSMe3-real",
+        "tipo": "radio"
+      },
+      {
+        "label": "Todas",
+        "id": "cLSMf3-real",
+        "tipo": "radio"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "cLSMj3"
+      },
+      {
+        "label": "Cancelar",
+        "id": "cLSMm3"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Manobra de Registros",
+        "intencao": "Consultar manobras de registros no GPMV001",
         "passos": [
           "Abrir a aplicação GPMV001",
-          "Preencher campos na tela inicial"
+          "Preencher filtros desejados",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de manobra de registros",
-      "acessar a app GPMV001",
-      "consultar manobra de registros"
+      "consultar manobras de registros no GPMV001",
+      "pesquisar ocorrências de manobras por cidade ou reservatório",
+      "verificar manobras abertas ou fechadas no painel de manobras"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV002": {
     "codigo": "GPMV002",
     "nome": "Manobra",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV002.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a manobra.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM001AberturaOcorrencia.zul",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar e visualizar informações de manobras de registros por código, serviço, unidade responsável, cidade, bairro, reservatório, período de previsão de início e situação (abertas, fechadas, todas).",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Código da Manobra",
+        "id": "vQ3Zf",
+        "tipo": "text"
+      },
+      {
+        "label": "Serviço",
+        "id": "vQ3Zmf",
+        "tipo": "text"
+      },
+      {
+        "label": "Unidade Responsável",
+        "id": "vQ3Zjf",
+        "tipo": "text"
+      },
+      {
+        "label": "Cidade",
+        "id": "vQ3Zhf",
+        "tipo": "text"
+      },
+      {
+        "label": "Bairro",
+        "id": "vQ3Zif",
+        "tipo": "text"
+      },
+      {
+        "label": "Reservatório",
+        "id": "vQ3Znf",
+        "tipo": "text"
+      },
+      {
+        "label": "Previsão de Início",
+        "id": "vQ3Z03-real",
+        "tipo": "date"
+      },
+      {
+        "label": "a",
+        "id": "vQ3Z43-real",
+        "tipo": "date"
+      },
+      {
+        "label": "Abertas",
+        "id": "vQ3Zd3-real",
+        "tipo": "radio"
+      },
+      {
+        "label": "Fechadas",
+        "id": "vQ3Ze3-real",
+        "tipo": "radio"
+      },
+      {
+        "label": "Todas",
+        "id": "vQ3Zf3-real",
+        "tipo": "radio"
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "vQ3Zj3"
+      },
+      {
+        "label": "Cancelar",
+        "id": "vQ3Zm3"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Manobra",
+        "intencao": "Consultar manobras no GPMV002",
         "passos": [
           "Abrir a aplicação GPMV002",
-          "Preencher campos na tela inicial"
+          "Preencher filtros desejados",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de manobra",
-      "acessar a app GPMV002",
-      "consultar manobra"
+      "consultar manobras no GPMV002",
+      "pesquisar ocorrências de manobras por cidade ou reservatório",
+      "verificar manobras abertas ou fechadas no painel de manobras"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV003": {
     "codigo": "GPMV003",
