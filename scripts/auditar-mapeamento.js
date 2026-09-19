@@ -268,6 +268,25 @@ function main() {
       }
     }
 
+    // ---- Checagem 11: entrada nova declarando a MESMA evidencia da anterior.
+    //
+    // A C10 usa o mtime do arquivo, que qualquer reinspecao posterior sobrescreve:
+    // carimbar hoje e reinspecionar amanha apaga o rastro do carimbo. O hash fica no
+    // log para sempre, entao a C11 e a que sustenta a auditoria historica.
+    //
+    // O ZK gera uuids de componente novos a cada sessao (yQOCj -> j14Qj), entao uma
+    // reinspecao real praticamente sempre muda o hash. Telas .jsp sem componente ZK
+    // podem repetir byte a byte -- nesse caso o executor declara que reabriu.
+    if (anterior && e.sha256_evidencia && anterior.sha256_evidencia === e.sha256_evidencia) {
+      if (!e.reusa_evidencia && !e.reinspecao_confirmada) {
+        falha(
+          cod,
+          'C11 evidencia-repetida',
+          `declara a mesma evidência do lote "${anterior.lote}" (${String(e.sha256_evidencia).slice(0, 12)}) — nada foi reinspecionado; use "reinspecao_confirmada": true se a tela foi reaberta e saiu idêntica, ou "reusa_evidencia": true se o reuso é intencional`
+        );
+      }
+    }
+
     // ---- Checagem 8: contagens do JSONL reconciliam com a evidencia.
     if (typeof e.n_campos === 'number' && e.n_campos !== rotulosCampos.length) {
       falha(cod, 'C8 contagem', `JSONL diz ${e.n_campos} campos, evidência tem ${rotulosCampos.length}`);
