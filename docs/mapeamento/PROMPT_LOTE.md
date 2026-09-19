@@ -1,6 +1,10 @@
 # Pacote de trabalho — Mapeamento Fase 1, um lote
 
-> Prompt reutilizável a cada lote. Lançado via `omniclaude -p "$(cat docs/mapeamento/PROMPT_LOTE.md)"`.
+> Prompt reutilizável a cada lote.
+>
+> **Modelo:** `gemini-3.7-flash-medium[1m]`. O sufixo `[1m]` não é decoração — sem ele o
+> Claude Code não reconhece o modelo no catálogo, assume janela de 200k e o auto-compact
+> corta o contexto no meio do lote. Lançado via `omniclaude -p "$(cat docs/mapeamento/PROMPT_LOTE.md)"`.
 > Ver `docs/historico/PLANO_MAPEAMENTO.md` §4 para o comando completo de lançamento.
 
 ## Contexto
