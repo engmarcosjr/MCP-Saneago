@@ -4,24 +4,49 @@
 Apoio Jurídico e Contencioso
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a rodízio de processos.
+Permite consultar e acompanhar o rodízio e distribuição de processos judiciais e guias iniciais por escritório e cidade.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/jaj/JAJ060RodizioProcesso.zul`
+
+## Campos e Filtros da Tela
+- **Processo Judicial** (`radio` / editável): Opção de filtro para rodízio de processo judicial.
+- **Guia Inicial** (`radio` / editável): Opção de filtro para rodízio de guia inicial.
+- **Escritório de Origem** (`combobox` / readonly): Seleção do escritório de origem.
+- **Cidade** (`text` / editável): Código da cidade.
+- **Cidade** (`text` / readonly): Nome da cidade.
+- **Cidade** (`checkbox` / editável): Seleção de todas as cidades / filtro de cidade.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta do rodízio de processos com base nos filtros informados.
+- **Cancelar**: Limpa os campos da tela de consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela JAJV060 (Rodízio de Processos)"
-- "Acessar o aplicativo de rodízio de processos"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Acionadores técnicos de seleção e combobox.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `JAJV060`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Contas
+- Usuário
+- Nº Proc.
+- Vara
+- Valor Ajuiz.(R$)
+- Mensagem
+- Andamento
+- Situação Água
+- Nº Guia.
+- Situação Guia.
+- Valor Guia.
+
+## Perguntas que Responde
+- "consultar rodízio de processos no JAJV060"
+- "pesquisar distribuição de processos judiciais por escritório"
+- "verificar guias iniciais e processos em rodízio no jurídico"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Apoio Jurídico -> Cobrança -> Rodízio de Processos).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

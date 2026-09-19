@@ -1,0 +1,141 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "JAJ060 - Rodízio de Processos",
+  "inputs": [
+    {
+      "id": "uWoHi-real",
+      "name": "_pgj782v41",
+      "tipo": "radio",
+      "rotulo": "Processo Judicial",
+      "label": "Processo Judicial",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uWoHj-real",
+      "name": "_pgj782v41",
+      "tipo": "radio",
+      "rotulo": "Guia Inicial",
+      "label": "Guia Inicial",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uWoHq-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Escritório de Origem",
+      "label": "Escritório de Origem",
+      "valor_atual": "3057291 - SANEAGO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uWoH73",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "uWoH10-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uWoHh0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "uWoHq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uWoH10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uWoHt0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uWoHv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "uWoHq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uWoH10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uWoHt0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "uWoHv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Contas",
+    "Usuário",
+    "Nº Proc.",
+    "Vara",
+    "Valor Ajuiz.(R$)",
+    "Mensagem",
+    "Andamento",
+    "Situação Água",
+    "Nº Guia.",
+    "Situação Guia.",
+    "Valor Guia."
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/jaj/JAJ060RodizioProcesso.zul",
+  "codigo": "JAJV060"
+}

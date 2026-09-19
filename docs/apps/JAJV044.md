@@ -4,24 +4,42 @@
 Apoio Jurídico e Contencioso
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a relatório de contas com o escritório.
+Permite consultar e emitir relatório de relação de contas de cobrança vinculadas a escritórios jurídicos.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/jaj/JAJ044relacaoContasComEscritorio.zul`
+
+## Campos e Filtros da Tela
+- **Código do Escritório** (`combobox` / readonly): Seleção do código do escritório jurídico.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta da relação de contas vinculadas ao escritório.
+- **Imprimir**: Emite relatório impresso da relação de contas com o escritório.
+- **Cancelar**: Limpa os campos da tela de consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela JAJV044 (Relatório de Contas Com o Escritório)"
-- "Acessar o aplicativo de relatório de contas com o escritório"
+### Botões Ignorados
+- **Sem Rotulo** (`a` / id `-btn`): Acionador de abertura da combobox de código do escritório.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `JAJV044`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- ExtraJudicial
+- Judicial
+- Total
+- Código
+- Cidade
+- Qtde Contas
+- Valor débito no envio (R$)
+- Qtde contas
+
+## Perguntas que Responde
+- "consultar relação de contas com o escritório no JAJV044"
+- "emitir relatório de contas com escritório jurídico"
+- "verificar quantidade e valor de débito de contas em cobrança por escritório"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Apoio Jurídico -> Relatório -> Relatório de Contas Com o Escritório).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:35:25.189Z",
+    "gerado_em": "2026-09-19T08:42:21.645Z",
     "total": 596,
-    "completos": 420,
-    "pendentes": 176,
+    "completos": 423,
+    "pendentes": 173,
     "por_classe_seguranca": {
-      "indeterminado": 235,
-      "candidata_leitura": 189,
+      "indeterminado": 233,
+      "candidata_leitura": 191,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 78,
-      "sem_campos_detectados": 14,
+      "ficha_nao_validada": 75,
+      "sem_campos_detectados": 11,
       "ficha_stub": 7
     }
   },
@@ -7696,40 +7696,41 @@
       "nome": "Relatório de Contas Com o Escritório",
       "vertical": "JAJ",
       "url_zul": "https://www.saneago.com.br/prt/jaj/JAJV044.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 872,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1502,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "JAJV060",
       "nome": "Rodízio de Processos",
       "vertical": "JAJ",
       "url_zul": "https://www.saneago.com.br/prt/jaj/JAJV060.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 804,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1762,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "KOC004",
@@ -7865,20 +7866,17 @@
       "nome": "Análise e Encaminhamento",
       "vertical": "KRT",
       "url_zul": "/prt/krt/KRT029AnaliseEncaminhamento.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 816,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1299,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "KRT037",

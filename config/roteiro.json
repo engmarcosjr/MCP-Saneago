@@ -20306,52 +20306,113 @@
   "JAJV044": {
     "codigo": "JAJV044",
     "nome": "Relatório de Contas Com o Escritório",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJV044.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ044relacaoContasComEscritorio.zul",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a relatório de contas com o escritório.",
+    "o_que_faz": "Permite consultar e emitir relatório de relação de contas de cobrança vinculadas a escritórios jurídicos.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Código do Escritório",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "tRiCk"
+      },
+      {
+        "label": "Imprimir",
+        "id": "tRiCm"
+      },
+      {
+        "label": "Cancelar",
+        "id": "tRiCo"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Relatório de Contas Com o Escritório",
+        "intencao": "Consultar relação de contas com o escritório no JAJV044",
         "passos": [
           "Abrir a aplicação JAJV044",
-          "Preencher campos na tela inicial"
+          "Selecionar o Código do Escritório",
+          "Clicar em Consultar ou Imprimir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de relatório de contas com o escritório",
-      "acessar a app JAJV044",
-      "consultar relatório de contas com o escritório"
+      "consultar relação de contas com o escritório no JAJV044",
+      "emitir relatório de contas com escritório jurídico",
+      "verificar quantidade e valor de débito de contas em cobrança por escritório"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJV060": {
     "codigo": "JAJV060",
     "nome": "Rodízio de Processos",
-    "url_zul": "https://prod.saneago.com.br/prt/jaj/JAJV060.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ060RodizioProcesso.zul",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a rodízio de processos.",
+    "o_que_faz": "Permite consultar e acompanhar o rodízio e distribuição de processos judiciais e guias iniciais por escritório e cidade.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Processo Judicial",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "rotulo": "Guia Inicial",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "rotulo": "Escritório de Origem",
+        "tipo": "combobox",
+        "editavel": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Cidade",
+        "tipo": "checkbox",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "uWoHt0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "uWoHv0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Rodízio de Processos",
+        "intencao": "Consultar rodízio de processos no JAJV060",
         "passos": [
           "Abrir a aplicação JAJV060",
-          "Preencher campos na tela inicial"
+          "Selecionar tipo de processo, escritório de origem e cidade",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de rodízio de processos",
-      "acessar a app JAJV060",
-      "consultar rodízio de processos"
+      "consultar rodízio de processos no JAJV060",
+      "pesquisar distribuição de processos judiciais por escritório",
+      "verificar guias iniciais e processos em rodízio no jurídico"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "KOCV004": {
     "codigo": "KOCV004",
@@ -20587,27 +20648,33 @@
   "KRT029": {
     "codigo": "KRT029",
     "nome": "Análise e Encaminhamento",
-    "url_zul": "/prt/krt/KRT029AnaliseEncaminhamento.zul",
+    "url_zul": "https://www.saneago.com.br/prt/krt/KRT028ListaAnalise.zul",
     "categoria": "Controle de Processos e AVTO",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a análise e encaminhamento.",
+    "o_que_faz": "Permite consultar e listar processos de AVTO (Autorização de Viabilidade Técnica e Operacional) por etapa para análise e encaminhamento.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "rotulo": "Selecione a etapa desejada",
+        "tipo": "combobox",
+        "editavel": false
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Análise e Encaminhamento",
+        "intencao": "Consultar processos de AVTO para análise e encaminhamento no KRT029",
         "passos": [
           "Abrir a aplicação KRT029",
-          "Preencher campos na tela inicial"
+          "Selecionar a etapa desejada"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de análise e encaminhamento",
-      "acessar a app KRT029",
-      "consultar análise e encaminhamento"
+      "consultar processos de AVTO para análise e encaminhamento no KRT029",
+      "listar AVTOs por etapa de análise",
+      "verificar pareceres e prazos de AVTOs pendentes"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "KRT037": {
     "codigo": "KRT037",
