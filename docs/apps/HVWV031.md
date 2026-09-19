@@ -4,25 +4,34 @@
 Prestação de Contas e Viagens
 
 ## Tipo
-Leitura (Livre)
+Impressão e Relatório (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a impressão termo.
+Permite reimprimir termos de responsabilidade e entrega de cartão de viagem para empregados da Saneago.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/hvw/HVW031ReimpressaoTermo.zul`
+
+## Campos e Filtros da Tela
+- **Empregado** (`text` / editável): Matrícula do empregado.
+- **Empregado** (`text` / readonly): Nome do empregado selecionado.
 
 ## Botões Disponíveis
-- **Relatório** (ID ZK: `m4KNz`)
-- **Cancelar** (ID ZK: `m4KN_0`)
+- **Relatório**: Gera e emite o relatório do termo de compromisso e responsabilidade de viagem para impressão.
+- **Cancelar**: Limpa os filtros e campos informados.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela HVWV031 (Impressão Termo)"
-- "Acessar o aplicativo de impressão termo"
+### Botões Ignorados
+- `Sem Rotulo` (a): Botão técnico de busca rápida e seleção de empregado.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `HVWV031`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+Nenhuma coluna identificada na tela inicial.
+
+## Perguntas que Responde
+- "reimprimir termo de responsabilidade de cartão viagem no HVWV031"
+- "imprimir termo de entrega de cartão viagem para empregado"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu do portal).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

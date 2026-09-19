@@ -1,0 +1,72 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "nKBJf-real",
+      "name": "_pgpr18g2",
+      "tipo": "radio",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "conta",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nKBJg-real",
+      "name": "_pgpr18g2",
+      "tipo": "radio",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "cpfCnpj",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nKBJm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "nKBJ80",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "nKBJ90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "nKBJ80",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "nKBJ90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/jaj/JAJ042conCobranca.zul",
+  "codigo": "JAJ042"
+}

@@ -1,0 +1,306 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "aIGPg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Solicitação",
+      "label": "Nº Solicitação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo Empregado",
+      "label": "Tipo Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPmm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPs-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPnm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPd0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Lotação",
+      "label": "U.O. Lotação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPh1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data prevista de saída",
+      "label": "Data prevista de saída",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "aIGPl1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data prevista de chegada",
+      "label": "Data prevista de chegada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "aIGPp1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motivo Viagem",
+      "label": "Motivo Viagem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPu1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Viagem via",
+      "label": "Viagem via",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPy1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGP12",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Total Previsto",
+      "label": "Valor Total Previsto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPu6",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Atividades realizadas",
+      "label": "Atividades realizadas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPy6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Status da viagem",
+      "label": "Status da viagem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGP27-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da prestação",
+      "label": "Data da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "aIGP67",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula da prestação",
+      "label": "Matrícula da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIGPa7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Situação da prestação",
+      "label": "Situação da prestação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aIGPs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIGPv2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPh3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGP34-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPu4-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPm5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPi7",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIGPo7",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aIGPs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIGPv2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPh3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGP34-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPu4-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPm5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aIGPi7",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIGPo7",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Calculado",
+    "Realizado Cartão",
+    "Realizado Dinheiro",
+    "Limite Ultrapassado",
+    "Cartão",
+    "Dinheiro",
+    "Total / Análise"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/hvw/HVW050PrestarContasCartao.zul",
+  "codigo": "HVWV050"
+}

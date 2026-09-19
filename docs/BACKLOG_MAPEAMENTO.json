@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:26:19.318Z",
+    "gerado_em": "2026-09-19T08:34:55.400Z",
     "total": 596,
-    "completos": 417,
-    "pendentes": 179,
+    "completos": 420,
+    "pendentes": 176,
     "por_classe_seguranca": {
-      "indeterminado": 238,
-      "candidata_leitura": 186,
+      "indeterminado": 235,
+      "candidata_leitura": 189,
       "possui_escrita": 164,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 81,
-      "sem_campos_detectados": 15,
-      "ficha_stub": 9
+      "ficha_nao_validada": 78,
+      "sem_campos_detectados": 14,
+      "ficha_stub": 7
     }
   },
   "apps": [
@@ -7459,43 +7459,40 @@
       "nome": "Impressão Termo",
       "vertical": "HVW",
       "url_zul": "https://www.saneago.com.br/prt/hvw/HVWV031.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 796,
+      "tipo_declarado": "Impressão e Relatório (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1227,
       "botoes": [
         "Relatório",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Relatório",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "HVWV050",
       "nome": "Prestar Contas Cartão Corporativo",
       "vertical": "HVW",
       "url_zul": "https://www.saneago.com.br/prt/hvw/HVWV050.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 858,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2852,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "JAJ028",
@@ -7558,23 +7555,20 @@
       "nome": "Consulta Cobrança",
       "vertical": "JAJ",
       "url_zul": "/prt/jaj/JAJ042conCobranca.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 795,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1263,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "JAJ044",

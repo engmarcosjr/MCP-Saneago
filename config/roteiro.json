@@ -19609,67 +19609,168 @@
   "HVWV031": {
     "codigo": "HVWV031",
     "nome": "Impressão Termo",
-    "url_zul": "https://prod.saneago.com.br/prt/hvw/HVWV031.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW031ReimpressaoTermo.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a impressão termo.",
+    "o_que_faz": "Permite reimprimir termos de responsabilidade e entrega de cartão de viagem para empregados da Saneago.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "rotulo": "Empregado",
         "tipo": "text",
         "editavel": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": false
       }
     ],
     "botoes": [
       {
         "label": "Relatório",
-        "id": "m4KNz"
+        "id": "jE1Yz"
       },
       {
         "label": "Cancelar",
-        "id": "m4KN_0"
+        "id": "jE1Y_0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Impressão Termo",
+        "intencao": "Reimprimir termo de responsabilidade de cartão viagem no HVWV031",
         "passos": [
           "Abrir a aplicação HVWV031",
-          "Preencher campos na tela inicial"
+          "Informar matrícula do Empregado",
+          "Clicar em Relatório"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de impressão termo",
-      "acessar a app HVWV031",
-      "consultar impressão termo"
+      "reimprimir termo de responsabilidade de cartão viagem no HVWV031",
+      "imprimir termo de entrega de cartão viagem para empregado"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "HVWV050": {
     "codigo": "HVWV050",
     "nome": "Prestar Contas Cartão Corporativo",
-    "url_zul": "https://prod.saneago.com.br/prt/hvw/HVWV050.zul",
+    "url_zul": "https://www.saneago.com.br/prt/hvw/HVW050PrestarContasCartao.zul",
     "categoria": "Prestação de Contas e Viagens",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a prestar contas cartão corporativo.",
+    "o_que_faz": "Permite consultar e acompanhar as prestações de contas de despesas e viagens realizadas com cartão corporativo por número de solicitação ou empregado.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Nº Solicitação",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Tipo Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "U.O. Lotação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data prevista de saída",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data prevista de chegada",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Motivo Viagem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Viagem via",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Tipo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Valor Total Previsto",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Atividades realizadas",
+        "tipo": "textarea",
+        "editavel": true
+      },
+      {
+        "rotulo": "Status da viagem",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Data da prestação",
+        "tipo": "date",
+        "editavel": false
+      },
+      {
+        "rotulo": "Matrícula da prestação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Situação da prestação",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "aIGPi7"
+      },
+      {
+        "label": "Cancelar",
+        "id": "aIGPo7"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Prestar Contas Cartão Corporativo",
+        "intencao": "Consultar prestação de contas de cartão corporativo no HVWV050",
         "passos": [
           "Abrir a aplicação HVWV050",
-          "Preencher campos na tela inicial"
+          "Informar o número da solicitação ou matrícula do empregado",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de prestar contas cartão corporativo",
-      "acessar a app HVWV050",
-      "consultar prestar contas cartão corporativo"
+      "consultar prestação de contas de cartão corporativo no HVWV050",
+      "verificar despesas e valores realizados no cartão corporativo por solicitação",
+      "acompanhar situação de prestação de contas de viagem com cartão"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJ028": {
     "codigo": "JAJ028",
@@ -19868,13 +19969,23 @@
   "JAJ042": {
     "codigo": "JAJ042",
     "nome": "Consulta Cobrança",
-    "url_zul": "/prt/jaj/JAJ042conCobranca.zul",
+    "url_zul": "https://www.saneago.com.br/prt/jaj/JAJ042conCobranca.zul",
     "categoria": "Apoio Jurídico e Contencioso",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta cobrança.",
+    "o_que_faz": "Permite consultar informações de cobrança judicial e extrajudicial vinculadas a contas de clientes ou por CPF/CNPJ.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Conta:",
+        "rotulo": "Conta",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "rotulo": "CPF/CNPJ",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "rotulo": "Conta",
         "tipo": "text",
         "editavel": true
       }
@@ -19882,28 +19993,29 @@
     "botoes": [
       {
         "label": "Consultar",
-        "id": "aFwU80"
+        "id": "nKBJ80"
       },
       {
         "label": "Cancelar",
-        "id": "aFwU90"
+        "id": "nKBJ90"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Cobrança",
+        "intencao": "Consultar cobrança por conta no JAJ042",
         "passos": [
           "Abrir a aplicação JAJ042",
-          "Preencher campos na tela inicial"
+          "Selecionar opção Conta ou CPF/CNPJ e informar valor",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta cobrança",
-      "acessar a app JAJ042",
-      "consultar consulta cobrança"
+      "consultar cobrança por conta no JAJ042",
+      "pesquisar cobrança judicial de cliente por CPF ou CNPJ",
+      "verificar histórico de cobrança no módulo jurídico"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "JAJ060": {
     "codigo": "JAJ060",

@@ -461,6 +461,10 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `HFIV033` | Registrar Parecer Transferências de Bens | Botões: `Salvar`, `Salvar e Finalizar`, `Cancelar`, `Adicionar`, `Excluir`, `Close`, `OK` | `possui_escrita` | Registro de parecer de transferência de bens patrimoniais com botões de escrita Salvar, Salvar e Finalizar, Adicionar e Excluir.
 - `HVW031` | Impressão Termo | Botões: `Relatório`, `Cancelar` | `somente_leitura` | Reimpressão e emissão de termo de compromisso de viagem com botões Relatório e Cancelar.
 - `HVWV018` | Manter Empregados com Cartão Viagem | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e acompanhamento de cartões de viagem de empregados com botões Consultar e Cancelar.
+- `HVWV031` | Impressão Termo | Botões: `Relatório`, `Cancelar` | `somente_leitura` | Reimpressão e emissão de termo de compromisso de viagem com botões Relatório e Cancelar.
+- `HVWV050` | Prestar Contas Cartão Corporativo | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e prestação de contas de viagens com cartão corporativo com botões Consultar e Cancelar.
+- `JAJ042` | Consulta Cobrança | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta de cobranças judiciais e extrajudiciais por conta ou CPF/CNPJ com botões Consultar e Cancelar.
+
 
 
 
