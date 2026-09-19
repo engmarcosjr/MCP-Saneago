@@ -1,0 +1,65 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago - ECO609",
+  "inputs": [
+    {
+      "id": "oVZQf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oVZQj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oVZQl",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oVZQj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "oVZQl",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Data Inicio Vínculo",
+    "Data Fim Vínculo",
+    "Vínculo",
+    "Documento Fiscal",
+    "Referência",
+    "Valor Pendente",
+    "Valor Pago",
+    "Banco/Agência/Posto",
+    "Documento Baixa",
+    "Motivo Acerto",
+    "Data Vencimento",
+    "Data Pagamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO609ConsultaDebitosBaixadosCliente.zul",
+  "codigo": "ECO609"
+}

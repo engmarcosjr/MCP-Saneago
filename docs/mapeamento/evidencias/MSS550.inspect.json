@@ -1,0 +1,73 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "b1tVd0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "b1tVh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "b1tVh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b1tV00",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "b1tV20",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "b1tVh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b1tV00",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "b1tV20",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS550ConsultaAcessoComplementar.zul",
+  "codigo": "MSS550"
+}

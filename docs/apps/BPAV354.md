@@ -1,27 +1,37 @@
 # BPAV354 - Avaliação do Empregado
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a avaliação do empregado.
+Permite consultar a avaliação de desempenho dos empregados por Unidade Organizacional e referência, com visualização do histórico de avaliações.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA354AvaliacaoDesempenho.zul`
+
+## Campos e Filtros da Tela
+- **Unidade Organizacional** (input de texto, editável)
+- **Unidade Organizacional** (input de texto, somente leitura)
+- **Referência Avaliação** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
+- **Ver Histórico de Avaliações**
+*(Exibe também 2 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV354 (Avaliação do Empregado)"
-- "Acessar o aplicativo de avaliação do empregado"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV354`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar avaliação do empregado no BPAV354"
+- "ver histórico de avaliações por UO"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Gestão de Desempenho).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

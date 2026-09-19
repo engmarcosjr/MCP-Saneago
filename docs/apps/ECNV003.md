@@ -1,29 +1,30 @@
-# ECNV003 - Enviar Fatura por Conta
+# ECNV003 — Enviar Fatura por Conta
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** ECNV003
+- **Nome:** Enviar Fatura por Conta
+- **Módulo:** SISTEMA DE PROTESTO CARTORÁRIO > Protesto Cartorário
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/ecn/ECN003EnvioFaturaProtesto.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de consulta de faturas por conta para envio a protesto cartorário com botões Consultar e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Número de Conta/DV | text | Sim | `kCzLf` |
+| Número de Conta/DV | text | Não | `kCzLg` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a enviar fatura por conta.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `kCzLk` | Consulta faturas da conta informada |
+| Cancelar | button | `kCzLn` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-- **Número de Conta/DV** (text): Editável
-- **Número de Conta/DV** (text): Somente Leitura
-
-## Botões Disponíveis
-- **Consultar** (ID ZK: `iQMIk`)
-- **Cancelar** (ID ZK: `iQMIn`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECNV003 (Enviar Fatura por Conta)"
-- "Acessar o aplicativo de enviar fatura por conta"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECNV003`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+## Colunas / Tabelas
+- Referência
+- Fatura
+- Vencimento
+- Valor (R$)
+- Titularidade

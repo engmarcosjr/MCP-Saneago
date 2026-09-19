@@ -1,0 +1,103 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO410 - Cancelamento de Débito/Crédito",
+  "inputs": [
+    {
+      "id": "aYUEj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do documento",
+      "label": "Número do documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "aYUEr",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aYUEs",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 1
+    },
+    {
+      "id": "aYUEz-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aYUEz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYUE30",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aYUE50",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aYUEz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYUE30",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aYUE50",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Número",
+    "Situação",
+    "Conta",
+    "Data Emissão",
+    "Data Venc.",
+    "CPF/CNPJ",
+    "Valor"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO410CancelaDebitoCredito.zul",
+  "codigo": "ECO410"
+}

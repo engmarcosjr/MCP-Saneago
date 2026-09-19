@@ -1,0 +1,265 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Relatório de Erros",
+  "inputs": [
+    {
+      "id": "h6RAh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "h6RAj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RA50-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAd0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de medição",
+      "label": "Período de medição",
+      "valor_atual": "21/08/2026 a 20/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAm0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAu0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo Serviço",
+      "label": "Tipo Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAe1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAn1-real",
+      "name": "_pg3niqsr1",
+      "tipo": "radio",
+      "rotulo": "Resumido",
+      "label": "Resumido",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAo1-real",
+      "name": "_pg3niqsr1",
+      "tipo": "radio",
+      "rotulo": "Detalhado",
+      "label": "Detalhado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAp1-real",
+      "name": "_pg3niqsr1",
+      "tipo": "radio",
+      "rotulo": "Listagem",
+      "label": "Listagem",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAy1-real",
+      "name": "_pgu9dpe7",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "1",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RAz1-real",
+      "name": "_pgu9dpe7",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "2",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "h6RA72-real",
+      "name": "_pgi1pash",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "h6RA82-real",
+      "name": "_pgi1pash",
+      "tipo": "radio",
+      "rotulo": "XLSX",
+      "label": "XLSX",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "h6RAj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RA50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAu0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RA01-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "h6RAc2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "h6RAd2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "h6RAj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RA50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RAu0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "h6RA01-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "h6RAc2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "h6RAd2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS008RelatorioApontamentoErros.zul",
+  "codigo": "ECS008"
+}

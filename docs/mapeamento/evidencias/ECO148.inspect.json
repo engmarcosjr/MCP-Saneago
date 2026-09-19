@@ -1,0 +1,106 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago - ECO148",
+  "inputs": [
+    {
+      "id": "pI9Mk-real",
+      "name": "_pggr34ms",
+      "tipo": "radio",
+      "rotulo": "Pessoa Física",
+      "label": "Pessoa Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pI9Mm-real",
+      "name": "_pggr34ms",
+      "tipo": "radio",
+      "rotulo": "Pessoa Jurídica",
+      "label": "Pessoa Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pI9Mt",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "pI9Mz",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CNPJ",
+      "label": "CNPJ",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 18
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pI9M30",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pI9M70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pI9M30",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pI9M70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Tipo de Telefone",
+    "Número",
+    "Ramal",
+    "Excluir?",
+    "Data",
+    "Data Desligamento",
+    "CPF",
+    "Nome",
+    "Participação",
+    "CNPJ",
+    "Nome Fantasia",
+    "Razão Social",
+    "Conta",
+    "Endereço",
+    "Proprietário",
+    "Titular",
+    "Cotitular",
+    "ECO151",
+    "ECO506",
+    "ECO707",
+    "ECO712",
+    "ECO010"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO148CadastroCpfCnpj.zul",
+  "codigo": "ECO148"
+}

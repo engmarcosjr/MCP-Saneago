@@ -1,0 +1,221 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Relação de contas com prazo por período",
+  "inputs": [
+    {
+      "id": "v5kTl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "v5kTn-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v5kTa0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "v5kTc0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v5kTs2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "v5kT_1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v5kTn1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "v5kTp1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v5kTa2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v5kTc2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "v5kTn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kT_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTp1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTa2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTc2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTg2",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "v5kTh2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "v5kTn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kT_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTp1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTa2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTc2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v5kTg2",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "v5kTh2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO104ContaPrazoPeriodo.zul",
+  "codigo": "ECO104"
+}

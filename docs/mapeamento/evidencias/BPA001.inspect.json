@@ -1,0 +1,338 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "BPA001",
+  "inputs": [
+    {
+      "id": "hSPW43",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "T0002",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWm-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPW33",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável",
+      "label": "Responsável",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPW70-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Responsável",
+      "label": "Responsável",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWu4-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWx4-real",
+      "name": "_pghvtcfn",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWy4-real",
+      "name": "_pghvtcfn",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPW25-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPW55-real",
+      "name": "_pgk1dao31",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPW65-real",
+      "name": "_pgk1dao31",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWb5-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWe5-real",
+      "name": "_pgahnfp4",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWf5-real",
+      "name": "_pgahnfp4",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWk5-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWn5-real",
+      "name": "_pgmoafq41",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWo5-real",
+      "name": "_pgmoafq41",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWt5-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWw5-real",
+      "name": "_pgihehs51",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hSPWx5-real",
+      "name": "_pgihehs51",
+      "tipo": "radio",
+      "rotulo": "Situação Empregado",
+      "label": "Situação Empregado",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hSPWm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWq0",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "hSPWr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "hSPWu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPW25-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWb5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWk5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWt5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPW51-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hSPWm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWq0",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "hSPWr0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "hSPWu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPW25-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWb5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWk5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPWt5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hSPW51-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Martícula",
+    "Nome",
+    "Cargo",
+    "U.O Contábil",
+    "Situação Empregado"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA001ConfirmaPlanoLotacao.zul",
+  "codigo": "BPA001"
+}

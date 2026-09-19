@@ -1,0 +1,62 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago - ECO402",
+  "inputs": [
+    {
+      "id": "dO0Of",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "dO0Oj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "dO0Ok",
+      "name": null,
+      "label": "Imprimir Contas Ativas",
+      "tipo": "button"
+    },
+    {
+      "id": "dO0Ol",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "dO0Oj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "dO0Ok",
+      "name": null,
+      "label": "Imprimir Contas Ativas",
+      "tipo": "button"
+    },
+    {
+      "id": "dO0Ol",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO402CadBraille.zul",
+  "codigo": "ECO402"
+}

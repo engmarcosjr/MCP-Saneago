@@ -1,14 +1,31 @@
 # BPAV005 - Reporte de Atividades de Teletrabalho
 
 ## Categoria
-RH & Pessoal / Teletrabalho
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Sem Permissão / Restrita ao Perfil
+Bloqueada / Sem Acesso
 
 ## O que faz
-Variante visual/legada de reporte de atividades de teletrabalho.
+Aplicação de reporte de atividades de teletrabalho. Não localizada na busca direta e inacessível via menu de navegação para o perfil atual.
+
+## URL Real / Atalho Direto
+- Inacessível (não localizada na busca nem no menu)
+
+## Campos e Filtros da Tela
+Nenhum campo acessível.
+
+## Botões Disponíveis
+Nenhum botão acessível.
+
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados acessível.
+
+## Perguntas que Responde
+- "reportar atividades de teletrabalho no BPAV005"
 
 ## Status de Acesso
-- **Sem Acesso / Não Disponível no Perfil Atual**: Não acessível diretamente na busca ou menu.
-- **Alternativa Acessível**: Utilizar `BPA005 - Reporte de Atividades de Teletrabalho`.
+- **Acesso Confirmado**: Não (aplicação não localizada na busca ou menu para o perfil atual).
+
+---
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

@@ -1,0 +1,310 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Anormalidades não criticadas na ECO359",
+  "inputs": [
+    {
+      "id": "iFANe-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "iFANm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iFANo-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iFAN40",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "iFANc0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iFANe0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iFANv0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "iFAN44",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iFAN21-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iFANp1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iFANr1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iFAN72",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "iFANc2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "iFANh2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Rota",
+      "label": "Rota",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "iFANn2-real",
+      "name": "_pg4tm2gj",
+      "tipo": "radio",
+      "rotulo": "Grande",
+      "label": "Grande",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iFANo2-real",
+      "name": "_pg4tm2gj",
+      "tipo": "radio",
+      "rotulo": "Normal",
+      "label": "Normal",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iFANp2-real",
+      "name": "_pg4tm2gj",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iFANe-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANe0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFAN21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANr1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANt2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iFANu2",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "iFANw2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iFANe-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANe0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFAN21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANr1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFANt2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iFANu2",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "iFANw2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Pesquisar Contas:",
+    "Rota",
+    "Sequencial",
+    "Conta",
+    "Crítica",
+    "Consumo",
+    "Ocorrência",
+    "Hidrômetro",
+    "ECO303",
+    "Analisado",
+    "Responsável Análise"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO385SegundaCriticaConsumo.zul",
+  "codigo": "ECO385"
+}

@@ -1,0 +1,219 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECS010 - Gerar Resumo Faturamento",
+  "inputs": [
+    {
+      "id": "xOfRo-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOfRw-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de medição",
+      "label": "Período de medição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOfR40",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "xOfR60",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOfR80",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xOfR90",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "xOfRo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOfRw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOfRl0",
+      "name": null,
+      "label": "PDF",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRq0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRs0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRu0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRc1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "xOfRo1",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRp1",
+      "name": null,
+      "label": "Remover",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRu1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "xOfRo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOfRw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xOfRl0",
+      "name": null,
+      "label": "PDF",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRq0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRs0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRu0",
+      "name": null,
+      "label": "XLS",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRc1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "xOfRo1",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRp1",
+      "name": null,
+      "label": "Remover",
+      "tipo": "button"
+    },
+    {
+      "id": "xOfRu1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Resumo Faturamento",
+    "Planilha SAP",
+    "Listagem",
+    "Código",
+    "Nome"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS010GerarResumoFaturamento.zul",
+  "codigo": "ECSV010"
+}

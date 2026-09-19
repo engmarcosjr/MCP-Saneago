@@ -1,29 +1,46 @@
-# LRSV105 - Lançamento de serviços executados
+# LRSV105 — Lançamento de serviços executados
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV105
+- **Nome:** Lançamento de serviços executados
+- **Módulo:** Atendimento ao Publico > Cadastro
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS105CadastraRetornoRA.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `possui_escrita`
+- **Motivo:** Tela ZK de cadastro de retorno de RA e lançamento de serviços executados com fluxo de gravação de serviços.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| R.A. | text | Sim | `p66Rl` |
+| Programação | text | Sim | `p66Rq` |
+| Serviço Resposta | text | Sim | `p66R3o` |
+| Serviço Resposta | text | Não (readonly) | `p66Ry-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a lançamento de serviços executados.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `p66Ri1` | Consulta a RA ou programação para retorno e lançamento |
+| Cancelar | button | `p66Rk1` | Cancela a operação e limpa a tela |
 
-## Campos da Tela Inicial
-- **Programação:** (text): Editável
-- **Sem Rotulo** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `p66Ry-btn`, tipo: `a`) — botão auxiliar de lookup do campo Serviço Resposta.
 
-## Botões Disponíveis
-- **Consultar** (ID ZK: `i53Zi1`)
-- **Cancelar** (ID ZK: `i53Zk1`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV105 (Lançamento de serviços executados)"
-- "Acessar o aplicativo de lançamento de serviços executados"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV105`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- RA
+- Programação
+- Data Solicitação
+- Serviço Solicitação
+- Serviço Resposta
+- Código
+- Descrição
+- Equipe
+- Nome Responsável
+- Tipo Equipe
+- Categoria
+- Frota
+- Placa
+- Marca
+- Modelo
+- Cor

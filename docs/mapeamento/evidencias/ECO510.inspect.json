@@ -1,0 +1,261 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO510 - Comunicado de Débito",
+  "inputs": [
+    {
+      "id": "n8DTr-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "06/2016",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTt-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "06/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "n8DT10",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "n8DT30-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTr0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "n8DTt0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTe1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "n8DTl1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n8DT22",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "n8DT32",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTc2-real",
+      "name": "_pgc1q1hn",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTe2-real",
+      "name": "_pgc1q1hn",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "n8DTl2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor do débito a partir de R$",
+      "label": "Valor do débito a partir de R$",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "n8DTr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DT30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTs2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "n8DT83",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "n8DT93",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "n8DTr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DT30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "n8DTs2-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "n8DT83",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "n8DT93",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Situação Água",
+    "Conta",
+    "Nome",
+    "Endereço",
+    "Codificação",
+    "Valor Historico"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO510ComunicadoDebito.zul",
+  "codigo": "ECO510"
+}

@@ -1,0 +1,128 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "d7ZWs-real",
+      "name": "_pggjijga",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d7ZWt-real",
+      "name": "_pggjijga",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d7ZW30",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "d7ZW50-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d7ZWt0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "R.A.",
+      "label": "R.A.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d7ZW01",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d7ZW11",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "d7ZW50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d7ZW51",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "d7ZW61",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "d7ZW50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d7ZW51",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "d7ZW61",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO348CadastroGrandeGeradorOleo.zul",
+  "codigo": "ECO348"
+}

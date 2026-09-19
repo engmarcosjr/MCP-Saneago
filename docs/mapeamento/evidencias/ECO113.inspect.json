@@ -1,0 +1,57 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Histórico de Conta Individualizada",
+  "inputs": [
+    {
+      "id": "jD3Oe",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Individualizada/DV",
+      "label": "Conta Individualizada/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jD3Ok",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jD3Ol",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jD3Ok",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jD3Ol",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Histórico",
+    "Conta Macro",
+    "Data/Hora Inclusão",
+    "Matrícula Inclusão",
+    "Data/Hora Exclusão",
+    "Matrícula Exclusão"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO113HistoricoContaIndividual.zul",
+  "codigo": "ECO113"
+}

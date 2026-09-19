@@ -1,0 +1,142 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "wDJJl0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matricula",
+      "label": "Matricula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wDJJg-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matricula",
+      "label": "Matricula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wDJJ_0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wDJJ10-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wDJJ60-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Filtro Situação",
+      "label": "Filtro Situação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wDJJg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ90",
+      "name": null,
+      "label": "Emitir",
+      "tipo": "button"
+    },
+    {
+      "id": "wDJJa0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wDJJg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wDJJ90",
+      "name": null,
+      "label": "Emitir",
+      "tipo": "button"
+    },
+    {
+      "id": "wDJJa0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT918OrdemTrafegoMotorista.zul",
+  "codigo": "PGTV918"
+}

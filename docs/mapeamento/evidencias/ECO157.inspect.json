@@ -1,0 +1,141 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO157 - Codificações Existentes",
+  "inputs": [
+    {
+      "id": "jUERi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "jUERm-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "ITEM NÃO ENCONTRADO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jUER70",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gr.Fatur.",
+      "label": "Gr.Fatur.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jUERd0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Rota",
+      "label": "Rota",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jUERj0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Seq. Inicial",
+      "label": "Seq. Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jUERs0-real",
+      "name": "_pgu8q1ik",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jUERt0-real",
+      "name": "_pgu8q1ik",
+      "tipo": "radio",
+      "rotulo": "Planilha",
+      "label": "Planilha",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jUERm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jUERx0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jUERz0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jUERm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jUERx0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jUERz0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Seq.",
+    "Id. Conta",
+    "N° Conta",
+    "Usuário",
+    "S.A.",
+    "S.E.",
+    "ECO.",
+    "Endereço",
+    "Nº.",
+    "Qd.",
+    "Lt.",
+    "Hidrômetro"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO157CodificacaoExistente.zul",
+  "codigo": "ECO157"
+}

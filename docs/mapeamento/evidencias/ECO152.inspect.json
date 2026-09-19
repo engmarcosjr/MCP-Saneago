@@ -1,0 +1,63 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO152 Autorizacao Debito Automatico",
+  "inputs": [
+    {
+      "id": "j7wXf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "j7wXj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "j7wXo",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "j7wXj",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "j7wXo",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Histórico de Débito Automático",
+    "Dados Bancários",
+    "Data",
+    "Tipo Operação",
+    "Operador",
+    "Banco",
+    "Agência",
+    "Conta Corrente",
+    "Autorização Cliente",
+    "Autorização Banco",
+    "Notificação Banco",
+    "Dt. Oper."
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO152AutorizacaoDebitoAutomatico.zul",
+  "codigo": "ECO152"
+}

@@ -1,27 +1,45 @@
-# LRSV041 - Relatório de recomposição asfáltica
+# LRSV041 - Relatório de Recomposição Asfáltica
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Relatório Operacional (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a relatório de recomposição asfáltica.
+Permite a consulta e geração de relatório de recomposição asfáltica por cidade, bairro, UO, período de corte e situação.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS041RelatorioRecomposicaoAsfaltica.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (eZ5S84: input de texto, editável)
+- **Cidade** (eZ5Si-real: input de texto, readonly)
+- **Bairro** (eZ5S94: input de texto, readonly)
+- **Bairro** (eZ5S60-real: input de texto, readonly)
+- **UO** (eZ5Sa4: input de texto, readonly)
+- **UO** (eZ5Sv0-real: input de texto, readonly)
+- **Período de Corte** (eZ5Sh1-real: input de data, editável)
+- **a** (eZ5Sj1-real: input de data, editável)
+- **Situação** (eZ5Sq1-real: combobox, readonly)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Sem Rotulo** (`eZ5Si-btn`: a) — abridor de combobox/pesquisa (ignorado)
+- **Sem Rotulo** (`eZ5Sh1-btn`: a) — abridor de calendário/data (ignorado)
+- **Sem Rotulo** (`eZ5Sj1-btn`: a) — abridor de calendário/data (ignorado)
+- **Sem Rotulo** (`eZ5Sq1-btn`: a) — abridor de combobox (ignorado)
+- **Consultar** (`eZ5Su1`: button) — consulta e filtragem
+- **Cancelar** (`eZ5Sv1`: button) — cancelamento/limpeza
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV041 (Relatório de recomposição asfáltica)"
-- "Acessar o aplicativo de relatório de recomposição asfáltica"
+## Colunas da Listagem
+- Listagem dos Lotes
+- Situação
+- Unidade Organizacional
+- E-mail do Destinatário
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV041`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Observações de Segurança e Automação
+- Tela ZK de relatório e consulta de recomposição asfáltica (`LRS041RelatorioRecomposicaoAsfaltica.zul`).
+- Contém apenas botões de consulta (`Consultar`) e controle (`Cancelar`), sem botões de escrita.
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

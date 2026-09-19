@@ -1,0 +1,667 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "EGW001 - Cadastro de Contrato Comercial",
+  "inputs": [
+    {
+      "id": "tW3Di",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Contrato",
+      "label": "Contrato",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Contrato",
+      "label": "Contrato",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "tW3Dq-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Aditivo",
+      "label": "Aditivo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dw-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de aditivo",
+      "label": "Tipo de aditivo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3D20-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Db0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dc0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3D81-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Contrato",
+      "label": "Tipo de Contrato",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3De1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Modelo Contrato",
+      "label": "Modelo Contrato",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dm1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Processo",
+      "label": "Processo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dn1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Processo",
+      "label": "Processo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "tW3Daf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gestor",
+      "label": "Gestor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dx1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gestor",
+      "label": "Gestor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Di2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Assinatura",
+      "label": "Data de Assinatura",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tW3Do2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Vigência (meses)",
+      "label": "Vigência (meses)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "tW3Du2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Término",
+      "label": "Data de Término",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "tW3Dbf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3D33-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dp3",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Objeto",
+      "label": "Objeto",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dcf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dz3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dj4-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Inclusão",
+      "label": "Data de Inclusão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Df5-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Responsável",
+      "label": "Responsável",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dn5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Do5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "file",
+      "tipo": "file",
+      "rotulo": "Anexar Arquivo",
+      "label": "Anexar Arquivo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dp7-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Conta",
+      "label": "Tipo de Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Dy7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "tW3Dz7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "tW3D58",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome",
+      "label": "Nome",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 35
+    },
+    {
+      "id": "tW3Dc8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Consumo Estimado (m³)",
+      "label": "Consumo Estimado (m³)",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "tW3Di8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "(%) Fatur. Esgoto",
+      "label": "(%) Fatur. Esgoto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "tW3Dp8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bloco/Torre",
+      "label": "Bloco/Torre",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tW3Dv8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidades Atendidas",
+      "label": "Unidades Atendidas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "tW3D09",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ligações",
+      "label": "Ligações",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    }
+  ],
+  "botoes": [
+    {
+      "id": "tW3Dq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Ds",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3D20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dg0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dk0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3D81-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3De1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dx1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Di2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3D33-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dz3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Df5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dp5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Ds5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "tW3Dm6",
+      "name": null,
+      "label": "Anexar PDF",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dr6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "tW3Dp7-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dq7",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3D29-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "tW3Dq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Ds",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3D20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dg0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dk0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3D81-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3De1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dx1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Di2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3D33-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dz3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Df5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dp5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Ds5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "tW3Dm6",
+      "name": null,
+      "label": "Anexar PDF",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3Dr6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "tW3Dp7-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tW3Dq7",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "tW3D29-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "CPF",
+    "Nome Pessoa",
+    "Nº Aditivo",
+    "Nome Anexo",
+    "Abrir Anexo",
+    "Excluir Anexo",
+    "Conta"
+  ],
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/egw/EGW001CadastroContratoComercial.zul",
+  "codigo": "EGWV001"
+}

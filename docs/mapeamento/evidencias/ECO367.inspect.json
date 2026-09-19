@@ -1,0 +1,375 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "SANEAGO - ECO367",
+  "inputs": [
+    {
+      "id": "gSALg-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "gSALq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "gSALs-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL90",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "gSALj0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "gSALl0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL21",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL25",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "gSALc1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSALz1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "gSAL02-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSALi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL35",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "gSALs2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gSALd3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 2
+    },
+    {
+      "id": "gSALk3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Rota",
+      "label": "Rota",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 2
+    },
+    {
+      "id": "gSALs3-real",
+      "name": "_pgto3ato",
+      "tipo": "radio",
+      "rotulo": "Grande",
+      "label": "Grande",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSALu3-real",
+      "name": "_pgto3ato",
+      "tipo": "radio",
+      "rotulo": "Normal",
+      "label": "Normal",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSALw3-real",
+      "name": "_pgto3ato",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL34-real",
+      "name": "_pg1jjc9t1",
+      "tipo": "radio",
+      "rotulo": "Acima",
+      "label": "Acima",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL54-real",
+      "name": "_pg1jjc9t1",
+      "tipo": "radio",
+      "rotulo": "Abaixo",
+      "label": "Abaixo",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSAL94",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "de",
+      "label": "de",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "gSALj4-real",
+      "name": "_pgqt8g0m1",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gSALl4-real",
+      "name": "_pgqt8g0m1",
+      "tipo": "radio",
+      "rotulo": "Planilha",
+      "label": "Planilha",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "gSALg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSAL02-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALs2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALp4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "gSALq4",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "gSALg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALc1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSAL02-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALs2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gSALp4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "gSALq4",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO367MediaConsumo.zul",
+  "codigo": "ECO367"
+}

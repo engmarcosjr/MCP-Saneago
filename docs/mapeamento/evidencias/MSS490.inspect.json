@@ -1,0 +1,110 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "wBnOy0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "wBnOh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wBnO10-real",
+      "name": "_pgqb0qbk1",
+      "tipo": "radio",
+      "rotulo": "Ativos",
+      "label": "Ativos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wBnO20-real",
+      "name": "_pgqb0qbk1",
+      "tipo": "radio",
+      "rotulo": "Inativos",
+      "label": "Inativos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wBnO30-real",
+      "name": "_pgqb0qbk1",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wBnOh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wBnO90",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wBnOb0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wBnOh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wBnO90",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wBnOb0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código da Aplicação",
+    "Nome da Aplicação",
+    "Situação da Aplicação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS490ConsultaAplicacaoSistema.zul",
+  "codigo": "MSS490"
+}

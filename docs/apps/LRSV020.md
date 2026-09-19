@@ -1,27 +1,29 @@
 # LRSV020 - Paralisações no Abastecimento de Água
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Relatório Operacional (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a paralisações no abastecimento de água.
+Permite a geração e visualização de relatório de paralisações no abastecimento de água por regional e mês/ano de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS020paralisa.jsp`
+
+## Campos e Filtros da Tela
+- **LRS 020** (ano_ref: input de texto, editável, max 4)
+- **LRS 020** (mes_ref: input de texto, editável, max 2)
+- **LRS 020** (cd_regional: input de texto, editável)
+- **LRS 020** (no_regional: input de texto, readonly)
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV020 (Paralisações no Abastecimento de Água)"
-- "Acessar o aplicativo de paralisações no abastecimento de água"
+## Observações de Segurança e Automação
+- Tela JSP de relatório de paralisações no abastecimento de água (`LRS020paralisa.jsp`).
+- Não contém botões de escrita na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV020`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

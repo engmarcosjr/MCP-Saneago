@@ -1,27 +1,48 @@
 # ECSV006 - Erros do Distrito por Período
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a erros do distrito por período.
+Permite consultar e apontar erros de medição do distrito por período com filtros por tipo (leitura, retidas, revisão de leitura, análise crítica, corte, revisão de corte, religação).
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul`
+
+## Campos e Filtros da Tela
+- **Distrito** (input de texto, editável, maxlength 5)
+- **Distrito** (input de texto, somente leitura)
+- **Sigla** (input de texto, somente leitura, maxlength 6)
+- **Período de Medição** (combobox, somente leitura)
+- **Leitura** (radio button, editável)
+- **Retidas** (radio button, editável)
+- **Revisao de Leitura** (radio button, editável)
+- **Análise Crítica** (radio button, editável)
+- **Corte** (radio button, editável)
+- **Revisão de Corte** (radio button, editável)
+- **Religação** (radio button, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Avançar**
+- **Cancelar**
+*(Exibe também 2 botões técnicos de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECSV006 (Erros do Distrito por Período)"
-- "Acessar o aplicativo de erros do distrito por período"
+## Colunas e Grade de Resultados
+- Ligação
+- Hidrômetro
+- Erro
+- Pesquisar Conta(s):
+- Conta
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECSV006`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar erros de medição do distrito no ECSV006"
+- "listar apontamento de erros de medição por período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

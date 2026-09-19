@@ -1,0 +1,105 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO470 - Fatura Digital",
+  "inputs": [
+    {
+      "id": "wKuRg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "wKuRh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "wKuRz-real",
+      "name": "_pg3e44p61",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wKuR_0-real",
+      "name": "_pg3e44p61",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wKuRa0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "wKuRc0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wKuRy0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wKuR11",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wKuRy0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wKuR11",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO470FaturaEmail.zul",
+  "codigo": "ECO470"
+}

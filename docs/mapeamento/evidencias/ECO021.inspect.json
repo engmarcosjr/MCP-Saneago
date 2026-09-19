@@ -1,0 +1,76 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Aterar Cpf/Cnpj de contas com titularidade",
+  "inputs": [
+    {
+      "id": "jNANg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "jNANh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jNANl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jNANn",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jNANl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jNANn",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Sequencial",
+    "Motivo",
+    "Solicitante",
+    "Situação",
+    "Data/Hora Solicitação",
+    "Data Inicial do Contrato",
+    "Data Final Contrato",
+    "Data Provável Efetivação",
+    "Número RA",
+    "CPF/CNPJ Proprietário",
+    "Tipo",
+    "Nome",
+    "CPF/CNPJ Titular",
+    "Observação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO021AlterarCpfCnpjConta.zul",
+  "codigo": "ECO021"
+}

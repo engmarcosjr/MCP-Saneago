@@ -1,0 +1,243 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "pMQZm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "pMQZo-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZ73",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZb0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZ93",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "pMQZz0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZ83",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "pMQZm1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZ72-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data inicial",
+      "label": "Data inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZd2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data final",
+      "label": "Data final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pMQZk2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "IQA Inicial",
+      "label": "IQA Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "pMQZq2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "IQA Final",
+      "label": "IQA Final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pMQZo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZ72-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZu2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pMQZv2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pMQZo-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZ72-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pMQZu2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pMQZv2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA083ResumoIrregularidades.zul",
+  "codigo": "LQAV083"
+}

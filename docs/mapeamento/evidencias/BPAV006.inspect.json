@@ -1,0 +1,8 @@
+{
+  "codigo": "BPAV006",
+  "url_real": null,
+  "erro": "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('.z-menupopup-open .z-menuitem-text').filter({ hasText: 'Painel de Empregados em Teletrabalho' }).first()\n",
+  "inputs": [],
+  "botoes": [],
+  "mensagens": []
+}

@@ -1,0 +1,343 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "lBYGp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "lBYGr-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGk4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "lBYGf0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lBYG11-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYG21-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGe1-real",
+      "name": "_pg27e0nf",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGf1-real",
+      "name": "_pg27e0nf",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGm1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Atualização de Cadastro Desde",
+      "label": "Atualização de Cadastro Desde",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGs1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Titularidade",
+      "label": "Titularidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGm4-real",
+      "name": "_pgk69ris1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "true",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGp4-real",
+      "name": "_pgk69ris1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYG42-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação da água",
+      "label": "Situação da água",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGa2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "TCF",
+      "label": "TCF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGn4-real",
+      "name": "_pghe3fpj",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "true",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGq4-real",
+      "name": "_pghe3fpj",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGn2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGs2-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Títulos Pendentes para Reenvio",
+      "label": "Títulos Pendentes para Reenvio",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "lBYGz2-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Contas sem Protesto",
+      "label": "Contas sem Protesto",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "lBYGr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGs1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG42-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGa2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG23",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lBYG43",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lBYGr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGs1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG42-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGa2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYGn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lBYG23",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lBYG43",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Conta",
+    "Referência Selecionada",
+    "Fatura",
+    "CPF/CNPJ",
+    "Nome do Titular",
+    "Endereço",
+    "CEP",
+    "Celular",
+    "Valor",
+    "Valor Total"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecn/ECN004EnvioFaturaProtestoEmMassa.zul",
+  "codigo": "ECN004"
+}

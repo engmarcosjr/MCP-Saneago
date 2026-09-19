@@ -1,27 +1,35 @@
-# LRSV702 - Emite Serviços Executados em Atraso
+# LRSV702 — Emite Serviços Executados em Atraso
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
 
-## Tipo
-Leitura (Livre)
+- **Código:** LRSV702
+- **Nome:** Emite Serviços Executados em Atraso
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS702emiteServi.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de emissão de relatório de serviços executados em atraso por distrito, serviço e referência mês/ano, sem botões de escrita identificados na carga inicial.
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a emite serviços executados em atraso.
+## Campos de Entrada (Filtros de Parâmetros)
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+| Rótulo / Label | ID | Name | Tipo | Editável | Readonly | Maxlength | Valor Padrão |
+|---|---|---|---|---|---|---|---|
+| Distrito | `codigoUnidadeOrganizacional` | `codigoUnidadeOrganizacional` | `text` | Sim | Não | 5 | `""` |
+| Distrito | `nomeUnidadeOrganizacional` | `nomeUnidadeOrganizacional` | `text` | Não | Sim | 45 | `"Digite Código Distrito ou Consulte [ver]"` |
+| Serviço | `codigoServico` | `codigoServico` | `text` | Não | Sim | 4 | `""` |
+| Serviço | `descricaoServico` | `descricaoServico` | `text` | Não | Sim | 45 | `"Imprime Todos Serviços ou Consulte [Ver]"` |
+| Referência | `cFrmMes` | `cFrmMes` | `select` | Sim | Não | - | `"00"` (13 opções) |
+| Referência | `cFrmAno` | `cFrmAno` | `select` | Sim | Não | - | `"0000"` (6 opções) |
+| Tipo de relatório | - | `tipoRelatorio` | `radio` | Sim | Não | - | `"1"` |
+| Tipo de relatório | - | `tipoRelatorio` | `radio` | Sim | Não | - | `"2"` |
+| Tipo de relatório | - | `tipoRelatorio` | `radio` | Sim | Não | - | `"3"` |
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+## Botões e Ações
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV702 (Emite Serviços Executados em Atraso)"
-- "Acessar o aplicativo de emite serviços executados em atraso"
+Nenhum botão detectado no DOM inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV702`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Decisões de Mapeamento e Segurança
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+- **Formulário:** `frmLRS702` (POST).
+- **Classificação:** `somente_leitura` para emissão de relatório gerencial de atrasos.

@@ -1,29 +1,36 @@
 # MSSV402 - Consulta Usuários por A. Complementar
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta usuários por a. complementar.
+Permite consultar os usuários associados a acessos complementares por sistema, com opção de impressão.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS402UsuarioAcessoComplementar.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `d4bPy`)
-- **Imprimir** (ID ZK: `d4bPz`)
-- **Cancelar** (ID ZK: `d4bP_0`)
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV402 (Consulta Usuários por A. Complementar)"
-- "Acessar o aplicativo de consulta usuários por a. complementar"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV402`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar usuários com acesso complementar no MSSV402"
+- "listar permissões complementares de usuários por sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

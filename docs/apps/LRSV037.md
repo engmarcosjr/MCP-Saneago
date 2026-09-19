@@ -1,32 +1,41 @@
-# LRSV037 - Serviço executado por conta
+# LRSV037 — Serviço executado por conta
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV037
+- **Nome:** Serviço executado por conta
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS037ServicoExecutadoConta.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela ZK de emissão de relatório de serviços executados por conta por regional, distrito, período e serviço com botões Imprimir e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Regional | text | Sim | `bNoTk2` |
+| Regional | text | Não (readonly) | `bNoTi-real` |
+| Distrito | text | Sim | `bNoTl2` |
+| Distrito | text | Não (readonly) | `bNoT60-real` |
+| Período | date | Sim | `bNoTt0-real` |
+| a | date | Sim | `bNoTv0-real` |
+| Serviço | text | Sim | `bNoTm2` |
+| Serviço | text | Não (readonly) | `bNoT51-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a serviço executado por conta.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Imprimir | button | `bNoT82` | Emite o relatório de serviços executados por conta |
+| Cancelar | button | `bNoT92` | Limpa os filtros e cancela a consulta |
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (date): Editável
-- **a** (date): Editável
-- **Sem Rotulo** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `bNoTi-btn`, tipo: `a`) — botão auxiliar de lookup do campo Regional.
+- `Sem Rotulo` (id: `bNoT60-btn`, tipo: `a`) — botão auxiliar de lookup do campo Distrito.
+- `Sem Rotulo` (id: `bNoTt0-btn`, tipo: `a`) — botão auxiliar de acionamento do calendário do campo Período.
+- `Sem Rotulo` (id: `bNoTv0-btn`, tipo: `a`) — botão auxiliar de acionamento do calendário do campo a.
+- `Sem Rotulo` (id: `bNoT51-btn`, tipo: `a`) — botão auxiliar de lookup do campo Serviço.
+- `Sem Rotulo` (id: `bNoTu1-a`, tipo: `submit`) — elemento de submit oculto/estrutural ZK.
 
-## Botões Disponíveis
-- **Imprimir** (ID ZK: `p3AJ82`)
-- **Cancelar** (ID ZK: `p3AJ92`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV037 (Serviço executado por conta)"
-- "Acessar o aplicativo de serviço executado por conta"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV037`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- Serviço
+- Descrição

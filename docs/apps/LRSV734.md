@@ -1,27 +1,25 @@
-# LRSV734 - Atendimento Por Código de Serviço
+# LRSV734 — Atendimento Por Código de Serviço
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV734
+- **Nome:** Atendimento Por Código de Serviço
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS734relAtendCod.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de relatório de serviços atendidos por código de serviço e período, sem botões de escrita identificados na carga inicial.
 
-## Tipo
-Leitura (Livre)
+## Campos Mapeados
+| Rótulo | ID / Name | Tipo | Editável | Observação |
+|---|---|---|---|---|
+| Periodo | dataInicio | text | Sim | Período inicial (maxlength 10) |
+| Periodo | dataFim | text | Sim | Período final (maxlength 10) |
+| Serviço | codigoServico | text | Sim | Código do serviço (maxlength 7) |
+| Serviço | descricaoServico | text | Não | Descrição do serviço (maxlength 40) |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a atendimento por código de serviço.
+## Botões Mapeados
+Nenhum botão de ação identificado na carga inicial.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV734 (Atendimento Por Código de Serviço)"
-- "Acessar o aplicativo de atendimento por código de serviço"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV734`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Botões Ignorados
+Nenhum.

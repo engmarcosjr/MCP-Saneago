@@ -1,27 +1,33 @@
 # EGWV005 - Resumo de Faturamento
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a resumo de faturamento.
+Permite consultar o resumo de faturamento por conta macro ou condomínio.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW005EnvioResumoFaturamento.zul`
+
+## Campos e Filtros da Tela
+- **Conta Macro/Condomínio** (input de texto, editável, maxlength 7)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV005 (Resumo de Faturamento)"
-- "Acessar o aplicativo de resumo de faturamento"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV005`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar resumo de faturamento no EGWV005"
+- "pesquisar faturamento por conta macro/condomínio"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Cadastro).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

@@ -1,7 +1,7 @@
 # Pacote de trabalho — Mapeamento Fase 1, um lote
 
 > Prompt reutilizável a cada lote. Lançado via `omniclaude -p "$(cat docs/mapeamento/PROMPT_LOTE.md)"`.
-> Ver `PLANO_MAPEAMENTO.md` §4 para o comando completo de lançamento.
+> Ver `docs/historico/PLANO_MAPEAMENTO.md` §4 para o comando completo de lançamento.
 
 ## Contexto
 
@@ -9,7 +9,7 @@ Você está no repositório MCP-Saneago. Leia, nesta ordem, antes de agir:
 
 1. `.claude/commands/mapear.md` — **a especificação completa do que fazer. Ela prevalece
    sobre este resumo em qualquer divergência.**
-2. `PLANO_MAPEAMENTO.md` — por que este trabalho existe e onde ele para.
+2. `docs/historico/PLANO_MAPEAMENTO.md` — por que este trabalho existe e onde ele para.
 3. `CLAUDE.md` — as convenções do projeto, em especial as de nº 6 a 10.
 
 ## Tarefa

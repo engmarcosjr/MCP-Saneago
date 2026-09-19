@@ -1,0 +1,152 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Gerar Planilha de Controle",
+  "inputs": [
+    {
+      "id": "aIDAk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "aIDAm-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIDA80-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de medição",
+      "label": "Período de medição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIDAg0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIDAo0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Fase Contratual",
+      "label": "Fase Contratual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIDAw0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Inicial da Fase Contratual",
+      "label": "Data Inicial da Fase Contratual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIDA21-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Final da Fase Contratual",
+      "label": "Data Final da Fase Contratual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aIDAm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDA80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDAg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDA61",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIDA81",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aIDAm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDA80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDAg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIDA61",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIDA81",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS007GerarPlanilha.zul",
+  "codigo": "ECS007"
+}

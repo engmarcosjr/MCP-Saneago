@@ -1,29 +1,36 @@
 # MSSV401 - Consulta A. Complementar por Sistema
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta a. complementar por sistema.
+Permite consultar e imprimir acessos complementares cadastrados por sistema no portal corporativo.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS401ConsultaSistemaComplementar.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `y5CW40`)
-- **Imprimir** (ID ZK: `y5CW50`)
-- **Cancelar** (ID ZK: `y5CW60`)
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV401 (Consulta A. Complementar por Sistema)"
-- "Acessar o aplicativo de consulta a. complementar por sistema"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV401`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar acessos complementares no MSSV401"
+- "imprimir permissões complementares por sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

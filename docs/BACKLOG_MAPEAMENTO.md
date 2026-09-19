@@ -2,59 +2,59 @@
 
 > Gerado por `node scripts/backlog-mapeamento.js`. Não edite à mão.
 
-- Gerado em: 2026-09-08T13:47:36.667Z
-- Aplicações: **596** — completas: **12** — pendentes: **584**
+- Gerado em: 2026-09-12T19:14:24.889Z
+- Aplicações: **596** — completas: **366** — pendentes: **230**
 
 ## Classe de segurança (preliminar, derivada de ficha + botões)
 
 | Classe | Apps |
 |---|---|
-| indeterminado | 328 |
-| possui_escrita | 142 |
-| candidata_leitura | 116 |
-| sem_acesso | 10 |
+| indeterminado | 279 |
+| possui_escrita | 159 |
+| candidata_leitura | 150 |
+| sem_acesso | 8 |
 
 ## Lacunas
 
 | Lacuna | Apps |
 |---|---|
-| ficha_nao_validada | 316 |
-| sem_roteiro | 266 |
-| sem_campos_detectados | 157 |
-| ficha_stub | 91 |
-| sem_url | 11 |
+| ficha_nao_validada | 139 |
+| sem_roteiro | 91 |
+| sem_campos_detectados | 65 |
+| ficha_stub | 47 |
+| sem_url | 2 |
 
 ## Próximos 30 da fila
 
 | # | Código | Nome | Vertical | Classe | Lacunas |
 |---|---|---|---|---|---|
-| 1 | ECO815 | Coletânea de Diretrizes Comerciais | ECO | indeterminado | ficha_stub, sem_campos_detectados, sem_roteiro |
-| 2 | ECO825 | Coletânea Regulação dos Serviços | ECO | indeterminado | sem_campos_detectados, ficha_nao_validada |
-| 3 | ECO830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | ficha_stub, sem_roteiro |
-| 4 | ECO954 | Painel de Religação | ECO | sem_acesso | ficha_stub, sem_roteiro |
-| 5 | ECO962 | Painel de Cortes | ECO | sem_acesso | ficha_stub, sem_roteiro |
-| 6 | ECOV112 | Relaciona Contas Condomínio | ECO | indeterminado | sem_campos_detectados, ficha_nao_validada |
-| 7 | ECOV411 | Abertura de Financiamento | ECO | indeterminado | sem_campos_detectados, ficha_nao_validada |
-| 8 | ECOV830 | WEBCOM - Vídeo Aulas | ECO | indeterminado | sem_campos_detectados, ficha_nao_validada |
-| 9 | ECO021 | Alterar CPF/CNPJ Débito | ECO | indeterminado | ficha_nao_validada |
-| 10 | ECO103 | Qtde de Contas com Prazo em Vigor | ECO | candidata_leitura | sem_roteiro |
-| 11 | ECO104 | Contas com Prazo por Período | ECO | indeterminado | sem_roteiro |
-| 12 | ECO106 | Quantidade de Contas em Débito Automátic | ECO | possui_escrita | sem_roteiro |
-| 13 | ECO108 | Relação de contas potencial faturamento | ECO | possui_escrita | sem_roteiro |
-| 14 | ECO112 | Relaciona Contas Condomínio | ECO | possui_escrita | sem_roteiro |
-| 15 | ECO113 | Histórico de Conta Individual | ECO | candidata_leitura | sem_roteiro |
-| 16 | ECO118 | Bairros | ECO | candidata_leitura | sem_roteiro |
-| 17 | ECO120 | Logradouros por Nome/Bairro | ECO | candidata_leitura | sem_roteiro |
-| 18 | ECO121 | Reordenação Codificação de Massa | ECO | indeterminado | sem_roteiro |
-| 19 | ECO122 | Manutenção de Bairros | ECO | possui_escrita | sem_roteiro |
-| 20 | ECO124 | Atualiza Data Vencimento/Cliente | ECO | possui_escrita | sem_roteiro |
-| 21 | ECO130 | Relação de Clientes p/ Categoria | ECO | possui_escrita | sem_roteiro |
-| 22 | ECO131 | Atividades | ECO | indeterminado | ficha_nao_validada |
-| 23 | ECO133 | Cronograma de Atividades | ECO | candidata_leitura | sem_roteiro |
-| 24 | ECO135 | Atualiza CEP de Usuários | ECO | indeterminado | ficha_nao_validada |
-| 25 | ECO139 | Entrega de Contas | ECO | candidata_leitura | sem_roteiro |
-| 26 | ECO144 | Endereço Alternativo | ECO | candidata_leitura | sem_roteiro |
-| 27 | ECO145 | Órgãos Públicos Cadastrados | ECO | possui_escrita | sem_roteiro |
-| 28 | ECO146 | Controle de Fatura Digital | ECO | possui_escrita | sem_roteiro |
-| 29 | ECO148 | Cadastro de Clientes | ECO | possui_escrita | sem_roteiro |
-| 30 | ECO150 | Boletim de Recadastramento | ECO | possui_escrita | sem_roteiro |
+| 1 | G0064 | GERÊNCIA DE PLANEJAMENTO DE RECURSOS HUMANOS | G | indeterminado | sem_campos_detectados, ficha_nao_validada, sem_url |
+| 2 | GCAV001 | Atividades | GCA | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 3 | GCAV002 | Atividades Diárias | GCA | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 4 | GCAV003 | Melhorias Previstas | GCA | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 5 | GPMV001 | Manobra de Registros | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 6 | GPMV002 | Manobra | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 7 | GPMV003 | Seleciona Valvula | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 8 | GPMV006 | Área Afetada | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 9 | GPMV010 | Registro Fechado | GPM | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 10 | GSIV005 | Solicitações | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 11 | GSIV006 | Escolha de Serviço | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 12 | GSIV013 | Pesquisa Geral | GSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 13 | GSPV102 | Trâmite | GSP | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 14 | HVWV009 | Conta | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 15 | HVWV019 | Manutenção | HVW | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 16 | JAJ028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 17 | JAJ033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 18 | JAJV028 | Consulta Judicial | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 19 | JAJV033 | Agenda Audiência | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 20 | JAJV042 | Consulta Cobrança | JAJ | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 21 | KRT028 | Lista para Análise | KRT | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 22 | KRTV028 | Lista para Análise | KRT | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 23 | MSIV070 | Registrar Voto | MSI | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 24 | MTG006 | Andamento Geral | MTG | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 25 | MTGV002 | Enviar Retorno | MTG | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 26 | MTGV006 | Andamento Geral | MTG | indeterminado | ficha_stub, sem_campos_detectados, ficha_nao_validada |
+| 27 | S0072 | SUPER. DE RECURSOS HUMANOS | S | indeterminado | sem_campos_detectados, ficha_nao_validada, sem_url |
+| 28 | BAP002 | Contracheque | BAP | indeterminado | ficha_stub, ficha_nao_validada |
+| 29 | BAPV002 | Contracheque | BAP | indeterminado | ficha_stub, ficha_nao_validada |
+| 30 | BAPV005 | Emissão de Frequência | BAP | indeterminado | sem_campos_detectados, ficha_nao_validada |

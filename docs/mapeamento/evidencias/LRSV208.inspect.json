@@ -1,0 +1,59 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "new page title",
+  "inputs": [
+    {
+      "id": "zV0H3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da RA",
+      "label": "Número da RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "zV0H4",
+      "name": null,
+      "label": "consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zV0H6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "zV0H4",
+      "name": null,
+      "label": "consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zV0H6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Número Distribuição",
+    "Sequencia",
+    "Código Serviço Resposta",
+    "Código Serviço Retorno",
+    "Data Emissão",
+    "Data Distribuição",
+    "Data Execução",
+    "Equipe"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS208ConsultaRADS.zul",
+  "codigo": "LRSV208"
+}

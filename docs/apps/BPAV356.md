@@ -1,28 +1,36 @@
 # BPAV356 - Resultado Avaliação de Desempenho
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a resultado avaliação de desempenho.
+Permite consultar as notas, competências avaliadas e o resultado da avaliação de desempenho individual de empregados por ciclo/referência.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Somente Leitura
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA356ResultadoAvaliacaoDesempenho.zul`
+
+## Campos e Filtros da Tela
+- **Referência Avaliação** (input de texto, somente leitura)
+- **Empregado** (input de texto, somente leitura)
+- **Empregado** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `cKtJa0`)
-- **Cancelar** (ID ZK: `cKtJb0`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV356 (Resultado Avaliação de Desempenho)"
-- "Acessar o aplicativo de resultado avaliação de desempenho"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV356`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar resultado da avaliação de desempenho no BPAV356"
+- "verificar notas de desempenho do colaborador"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Gestão de Desempenho).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

@@ -1,0 +1,224 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO711 - RA em Execução/Executado",
+  "inputs": [
+    {
+      "id": "qYpTj-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "EM EXECUÇÃO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "qYpTt-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "qYpTu-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "qYpT64",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "qYpT30-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "qYpTr0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Executora",
+      "label": "Unidade Executora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "qYpTt0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Executora",
+      "label": "Unidade Executora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "qYpT74",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Serviço",
+      "label": "Código Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 6
+    },
+    {
+      "id": "qYpTh1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Serviço",
+      "label": "Código Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "qYpTj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpT30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpT_2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "qYpT12",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "qYpTj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpT30-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpTh1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "qYpT_2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "qYpT12",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Número RA",
+    "Situação",
+    "Data Execução",
+    "Telefone",
+    "Endereço",
+    "Número Imóvel",
+    "Quadra",
+    "Lote",
+    "Data Solicitação",
+    "Nome",
+    "Conta",
+    "Id. Lig.",
+    "Serviço"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO711ConsultaRaExecucao.zul",
+  "codigo": "ECO711"
+}

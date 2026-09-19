@@ -1,0 +1,114 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "rFkEv1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "T0002",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "rFkEi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "rFkE10-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "rFkE40-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "rFkEi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rFkE10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rFkE80",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rFkEa0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "rFkEi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rFkE10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rFkE80",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rFkEa0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Matrícula",
+    "Nome do Empregado",
+    "Telefone",
+    "Modalidade",
+    "Tipo de revezamento",
+    "Dias de revezamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA004GestaoEmpregadosTeletrabalho.zul",
+  "codigo": "BPA004"
+}

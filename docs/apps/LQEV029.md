@@ -1,30 +1,42 @@
 # LQEV029 - Amostras Liberadas por Período
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a amostras liberadas por período.
+Permite consultar amostras laboratoriais liberadas por sistema de tratamento e período de agendamento.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (date): Editável
-- **a** (date): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE029ConAmostras.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Período** (input de data, editável)
+- **a** (input de data, editável)
+- **a** (checkbox, editável, valor atual "on")
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `i2cKb0`)
-- **Cancelar** (ID ZK: `i2cKd0`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV029 (Amostras Liberadas por Período)"
-- "Acessar o aplicativo de amostras liberadas por período"
+## Colunas e Grade de Resultados
+- Protocolo
+- Sistema
+- Ponto de Coleta
+- Produto
+- Data Agendamento
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV029`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar amostras liberadas no LQEV029"
+- "pesquisar amostras por sistema e período no LQEV029"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

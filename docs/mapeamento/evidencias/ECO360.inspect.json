@@ -1,0 +1,334 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Contas com Ocorrência",
+  "inputs": [
+    {
+      "id": "b0UEg-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "b0UEn",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "b0UEp-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEa0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "b0UEc0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEg4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "b0UEz0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEk1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "b0UEm1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEh4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "b0UE82-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEu2-real",
+      "name": "_pgeitvt91",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "nao",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b0UEv2-real",
+      "name": "_pgeitvt91",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "sim",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b0UE_3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "b0UE43",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Rota",
+      "label": "Rota",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "b0UEi4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ocorrência",
+      "label": "Ocorrência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "b0UEd3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ocorrência",
+      "label": "Ocorrência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "b0UEg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UE82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEd3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEt3",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE34",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE44",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE54",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "b0UEg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEc0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEm1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UE82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEd3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "b0UEt3",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE34",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE44",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "b0UE54",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO360ContaComOcorrencia.zul",
+  "codigo": "ECO360"
+}

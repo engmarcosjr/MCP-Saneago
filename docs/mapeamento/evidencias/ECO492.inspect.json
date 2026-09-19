@@ -1,0 +1,147 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO492 - Códigos de Lançamento",
+  "inputs": [
+    {
+      "id": "b8UOh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lançamento",
+      "label": "Lançamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "b8UOi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lançamento",
+      "label": "Lançamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "b8UOj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lançamento",
+      "label": "Lançamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UOs-real",
+      "name": "_pgvo5bss",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UOt-real",
+      "name": "_pgvo5bss",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UO10-real",
+      "name": "_pgmj83a9",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UO20-real",
+      "name": "_pgmj83a9",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UOb0-real",
+      "name": "_pg1vqied",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "b8UOc0-real",
+      "name": "_pg1vqied",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "b8UOg0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "b8UOi0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "b8UOg0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "b8UOi0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Descrição",
+    "REF",
+    "LAN",
+    "AVU",
+    "CON",
+    "Sintético",
+    "Valor"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO492CodigoLancamento.zul",
+  "codigo": "ECO492"
+}

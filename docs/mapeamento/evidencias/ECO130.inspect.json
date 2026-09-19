@@ -1,0 +1,464 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO130 - Relação de Clientes por Categoria/SubCategoria",
+  "inputs": [
+    {
+      "id": "s1RIm-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "s1RIw",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "s1RIy-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência",
+      "label": "Superintendência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIf0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "s1RIp0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "s1RIr0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI81",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RId6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "s1RIi1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI62",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "s1RI82-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIq2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIe6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "s1RI_3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIl3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "s1RIr3-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI_4-real",
+      "name": "_pgfvlik9",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI14-real",
+      "name": "_pgfvlik9",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI74",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "SubCategoria",
+      "label": "SubCategoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "s1RIg4-real",
+      "name": "_pgvfp3oe1",
+      "tipo": "radio",
+      "rotulo": "Com",
+      "label": "Com",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIi4-real",
+      "name": "_pgvfp3oe1",
+      "tipo": "radio",
+      "rotulo": "Sem",
+      "label": "Sem",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIk4-real",
+      "name": "_pgvfp3oe1",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIq4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "SubCategoria",
+      "label": "SubCategoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "s1RIz4-real",
+      "name": "_pgh3j4h3",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI05-real",
+      "name": "_pgh3j4h3",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI25-real",
+      "name": "_pgh3j4h3",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RI85",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "SubCategoria",
+      "label": "SubCategoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "s1RIf5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Situação Lig. Água",
+      "label": "Situação Lig. Água",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "s1RIn5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Situação Lig. Esgoto",
+      "label": "Situação Lig. Esgoto",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "s1RIx5-real",
+      "name": "_pgcp8mcm",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s1RIy5-real",
+      "name": "_pgcp8mcm",
+      "tipo": "radio",
+      "rotulo": "Planilha",
+      "label": "Planilha",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "s1RIm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIr0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIi1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI_3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIr3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI16",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "s1RI26",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "s1RIm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIr0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIi1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI_3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RIr3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s1RI16",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "s1RI26",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO130RelacaoClienteCategoria.zul",
+  "codigo": "ECO130"
+}

@@ -1,27 +1,38 @@
 # BPAV001 - Plano de Lotação
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a plano de lotação.
+Permite visualizar e confirmar o plano de lotação de empregados por unidade e responsável, com indicação de situação dos colaboradores.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA001ConfirmaPlanoLotacao.zul`
+
+## Campos e Filtros da Tela
+- **Unidade** (input de texto, somente leitura)
+- **Unidade** (input de texto, somente leitura)
+- **Responsável** (input de texto, somente leitura)
+- **Responsável** (input de texto, somente leitura)
+- *(Múltiplos campos de Situação Empregado em combobox e radio buttons editáveis).*
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Salvar**
+- **Cancelar**
+*(Exibe também 7 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV001 (Plano de Lotação)"
-- "Acessar o aplicativo de plano de lotação"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar plano de lotação no BPAV001"
+- "confirmar lotação de empregados por unidade"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Cadastro).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

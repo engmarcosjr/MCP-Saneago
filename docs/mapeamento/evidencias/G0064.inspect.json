@@ -1,0 +1,38 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "new page title",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "aAJP6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aAJPm2",
+      "name": null,
+      "label": "Ver localização no Mapa",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aAJP6-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "aAJPm2",
+      "name": null,
+      "label": "Ver localização no Mapa",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/msi/MSI003Organograma.zul",
+  "codigo": "G0064"
+}

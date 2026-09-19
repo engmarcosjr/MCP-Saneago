@@ -1,27 +1,32 @@
 # BPAV372 - Inscrição PDV
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Informativo / Sem campos
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a inscrição pdv.
+Tela de inscrição no Plano de Demissão Voluntária (PDV). Confirmada sem campos interativos e sem botões de ação no momento do acesso.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA372InscricaoPDV.zul`
+
+## Campos e Filtros da Tela
+Nenhum campo interativo na tela inicial.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+Nenhum botão de ação na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV372 (Inscrição PDV)"
-- "Acessar o aplicativo de inscrição pdv"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV372`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar inscrição no PDV no BPAV372"
+- "verificar status de adesão ao PDV"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (tela confirmada sem campos ou botões interativos via menu Planejamento Rec Humanos -> PDV).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

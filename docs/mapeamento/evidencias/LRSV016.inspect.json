@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Consulta Registros de Atendimentos - Esgoto:.",
+  "inputs": [
+    {
+      "id": "cd_bairro",
+      "name": "cd_bairro",
+      "tipo": "text",
+      "rotulo": "LRS 016",
+      "label": "LRS 016",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "no_bairro",
+      "name": "no_bairro",
+      "tipo": "text",
+      "rotulo": "LRS 016",
+      "label": "LRS 016",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "LRS 016",
+      "label": "LRS 016",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "LRS 016",
+      "label": "LRS 016",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS016",
+      "name": "frmLRS016",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS016conOcoEsgEn.jsp",
+  "codigo": "LRSV016"
+}

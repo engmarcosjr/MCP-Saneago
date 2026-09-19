@@ -1,0 +1,128 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "fM8Ke-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período do Recebimento",
+      "label": "Período do Recebimento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fM8Ki-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "à",
+      "label": "à",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fM8Ko-real",
+      "name": "_pgb1fi751",
+      "tipo": "radio",
+      "rotulo": "Saneamento de Goiás S/A",
+      "label": "Saneamento de Goiás S/A",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fM8Kq-real",
+      "name": "_pgb1fi751",
+      "tipo": "radio",
+      "rotulo": "Consórcio Águas Lindas",
+      "label": "Consórcio Águas Lindas",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fM8Ks-real",
+      "name": "_pgb1fi751",
+      "tipo": "radio",
+      "rotulo": "Subdelegatária",
+      "label": "Subdelegatária",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "fM8Ke-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fM8Ki-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fM8Kv",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "fM8Kx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "fM8Ke-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fM8Ki-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fM8Kv",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "fM8Kx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Ordem",
+    "Código",
+    "Nome do Agente Arrecadador",
+    "Valor SANEAGO em R$",
+    "Valor CAESB em R$",
+    "Valor Subdelegatária em R$",
+    "Valor Taxa de Resíduos Sólidos em R$",
+    "Valor Total em R$",
+    "Percentual"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO607ArrecadacaoDiaria.zul",
+  "codigo": "ECO607"
+}

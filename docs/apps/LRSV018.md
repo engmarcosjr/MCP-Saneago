@@ -1,27 +1,29 @@
 # LRSV018 - Serviços Executados no Interior
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Relatório Operacional (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a serviços executados no interior.
+Permite a geração e visualização de relatório de serviços executados no interior por regional e mês/ano de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS018relServExec.jsp`
+
+## Campos e Filtros da Tela
+- **LRS 018** (ano_ref: input de texto, editável, max 4)
+- **LRS 018** (mes_ref: input de texto, editável, max 2)
+- **LRS 018** (cd_regional: input de texto, editável)
+- **LRS 018** (no_regional: input de texto, readonly)
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV018 (Serviços Executados no Interior)"
-- "Acessar o aplicativo de serviços executados no interior"
+## Observações de Segurança e Automação
+- Tela JSP de relatório de serviços executados no interior (`LRS018relServExec.jsp`).
+- Não contém botões de escrita na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV018`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

@@ -1,0 +1,92 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO506 - Consulta Pendente",
+  "inputs": [
+    {
+      "id": "qRgSg-real",
+      "name": "_pgpueq3j1",
+      "tipo": "radio",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "conta",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "qRgSh-real",
+      "name": "_pgpueq3j1",
+      "tipo": "radio",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "cpfCnpj",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "qRgSp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "qRgSq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [
+    {
+      "id": "qRgS41",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "qRgS61",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "qRgS41",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "qRgS61",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Total Débito Histórico (R$)",
+    "Selecione",
+    "Número Conta",
+    "Situação Água",
+    "Situação Esgoto",
+    "Total Débito"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO506ConsultaDebitoAberto.zul",
+  "codigo": "ECO506"
+}

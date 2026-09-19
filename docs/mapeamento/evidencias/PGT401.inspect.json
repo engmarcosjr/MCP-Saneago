@@ -1,0 +1,237 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "xO2R19",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome",
+      "label": "Nome",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2Rj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome",
+      "label": "Nome",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xO2R10",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Apelido",
+      "label": "Apelido",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2R29",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xO2R90-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xO2Rt0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2Rm1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nr. Registro",
+      "label": "Nr. Registro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "xO2Rq1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "UF",
+      "label": "UF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2Rw1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data 1º",
+      "label": "Data 1º",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2R_2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Expedº",
+      "label": "Expedº",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "xO2R42-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Validade",
+      "label": "Validade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xO2R82",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "xO2Rj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2Rt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R01",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "xO2Rq1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2Rw1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R42-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "xO2Rj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2Rt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R01",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "xO2Rq1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2Rw1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "xO2R42-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "colunas": [
+    "Veiculo",
+    "Motorista",
+    "CPF",
+    "CNH",
+    "Anexo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT401CadastroMotorista.zul",
+  "codigo": "PGT401"
+}

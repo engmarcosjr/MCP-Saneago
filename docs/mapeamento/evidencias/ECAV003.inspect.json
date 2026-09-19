@@ -1,0 +1,169 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECA003",
+  "inputs": [
+    {
+      "id": "rXnXi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "rXnXj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "rXnXj2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empresa Responsável",
+      "label": "Empresa Responsável",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "rXnX70-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empresa Responsável",
+      "label": "Empresa Responsável",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "rXnXt0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano de Referência",
+      "label": "Mês/Ano de Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "rXnX01-real",
+      "name": "_pgakh9po1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "rXnX11-real",
+      "name": "_pgakh9po1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "rXnXj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnX70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnXt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnXb1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rXnXc1",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "rXnXf1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "rXnXj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnX70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnXt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "rXnXb1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rXnXc1",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "rXnXf1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Cidade",
+    "Empresa Responsável",
+    "Mês/Ano Referência",
+    "Ativo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eca/ECA003PlanejamentoRecadastramento.zul",
+  "codigo": "ECAV003"
+}

@@ -1,27 +1,33 @@
 # LQAV079 - IQA Anual
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Erro / Bloqueada
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a iqa anual.
+Aplicação de emissão do relatório de Índice de Qualidade da Água (IQA Anual). No ambiente atual, a tela apresenta página de erro padrão do sistema ZK ao ser aberta.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqa/LQA079iqaAnual.jsp`
+
+## Campos e Filtros da Tela
+Nenhum campo interativo detectado na tela inicial (tela de erro ZK exibida).
 
 ## Botões Disponíveis
-- **ok** (ID ZK: `lK1Id`)
+- **ok** (botão de confirmação do modal de erro)
+*(Exibe também botões técnicos de modal: `Close`, `Expand` e 1 botão sem rótulo).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQAV079 (IQA Anual)"
-- "Acessar o aplicativo de iqa anual"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQAV079`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "emitir IQA Anual no LQAV079"
+- "consultar índice de qualidade da água anual"
+
+## Status de Acesso
+- **Acesso Confirmado**: Erro na aplicação (apresenta página de erro padrão ZK ao abrir).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

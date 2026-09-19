@@ -1,0 +1,149 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Aplicações Acesso",
+  "inputs": [
+    {
+      "id": "kLMW62",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Operador Recebedor",
+      "label": "Operador Recebedor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "kLMWk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Operador Recebedor",
+      "label": "Operador Recebedor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kLMW72",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Operador Autorizador",
+      "label": "Operador Autorizador",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "kLMWa0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Operador Autorizador",
+      "label": "Operador Autorizador",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kLMW82",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "kLMWz0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "kLMWk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWa0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWh1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kLMWk1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kLMWk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWa0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWz0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kLMWh1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kLMWk1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Mat. Recebedor",
+    "Nome Recebedor",
+    "Função",
+    "Nome Função",
+    "Nível de Acesso",
+    "Mat. Autorizador",
+    "Nome Autorizador"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS126AplicacoesAcesso.zul",
+  "codigo": "MSS126"
+}

@@ -1,0 +1,234 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "nWMTf-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTk-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Atividade",
+      "label": "Atividade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTm-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Atividade",
+      "label": "Atividade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTc2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nWMTu-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTd0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nWMTh0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTn0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTo0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Submetidos",
+      "label": "Submetidos",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTp0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Sucesso",
+      "label": "Sucesso",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nWMTq0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Ressalva",
+      "label": "Ressalva",
+      "valor_atual": "4,5",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "nWMTf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTy1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "nWMTz1",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "nWMT_2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "nWMTf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTm-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nWMTy1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "nWMTz1",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "nWMT_2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Cidade",
+    "Job",
+    "Grupo",
+    "Referência",
+    "Qtd.Reg",
+    "Impressora",
+    "Data/Hora",
+    "Situação",
+    "Cod.",
+    "Nome",
+    "Distrito",
+    "Submissão",
+    "Execução"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO131Atividades.zul",
+  "codigo": "ECO131"
+}

@@ -1,0 +1,86 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Atendimento:.",
+  "inputs": [
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoUnidadeOrganizacional",
+      "name": "codigoUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeUnidadeOrganizacional",
+      "name": "nomeUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoEquipe",
+      "name": "codigoEquipe",
+      "tipo": "text",
+      "rotulo": "Equipe",
+      "label": "Equipe",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "descricaoEquipe",
+      "name": "descricaoEquipe",
+      "tipo": "text",
+      "rotulo": "Equipe",
+      "label": "Equipe",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 25
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS314",
+      "name": "frmLRS314",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS314relTempPad.jsp",
+  "codigo": "LRS314"
+}

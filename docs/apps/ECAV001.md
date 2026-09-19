@@ -1,27 +1,58 @@
 # ECAV001 - Distribuição de Rotas
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a distribuição de rotas.
+Permite consultar e visualizar a distribuição de rotas de recadastramento por cidade, período, grupo de faturamento, rota, bairro e logradouro.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eca/ECA001DistribuicaoRotas.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (input de texto, editável, maxlength 4)
+- **Cidade** (input de texto, somente leitura)
+- **Período Recadastramento** (combobox, somente leitura)
+- **Grupo de Faturamento** (combobox, somente leitura)
+- **Grupo de Faturamento** (checkbox, somente leitura)
+- **Rota** (combobox, somente leitura)
+- **Bairro** (input de texto, somente leitura, maxlength 4)
+- **Bairro** (input de texto, somente leitura)
+- **Logradouro** (input de texto, somente leitura, maxlength 4)
+- **Logradouro** (input de texto, somente leitura)
+- **Quadra** (input de texto, somente leitura, maxlength 8)
+- **Lote** (input de texto, somente leitura, maxlength 9)
+- **Número** (input de texto, somente leitura, maxlength 5)
+- **Situação** (combobox, somente leitura, valor atual "NÃO DISTRIBUÍDO")
+- **Sequencia** (input de texto, editável, maxlength 7)
+- **Lista de Contas** (textarea, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
+*(Exibe também 8 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECAV001 (Distribuição de Rotas)"
-- "Acessar o aplicativo de distribuição de rotas"
+## Colunas e Grade de Resultados
+- Rota
+- Sequência
+- Conta
+- Logradouro
+- Número
+- Quadra
+- Lote
+- Bairro
+- Cidade
+- Motivo da Reprovação
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECAV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar distribuição de rotas no ECAV001"
+- "listar rotas e contas de recadastramento por período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Cadastro Comercial).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

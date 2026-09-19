@@ -1,0 +1,82 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "iKyN01",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Função",
+      "label": "Função",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iKyNh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Função",
+      "label": "Função",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iKyNh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iKyNz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iKyN00",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iKyNh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iKyNz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iKyN00",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Matrícula",
+    "Nome Usuário",
+    "Autorizador",
+    "Nome Autorizador",
+    "C",
+    "A",
+    "I",
+    "E"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS503ConsultaAcessoCobol.zul",
+  "codigo": "MSSV503"
+}

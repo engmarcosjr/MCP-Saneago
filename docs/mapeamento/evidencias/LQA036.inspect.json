@@ -1,0 +1,171 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Consulta de Análises",
+  "inputs": [
+    {
+      "id": "lQWEv2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "lQWEg-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lQWEw2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema de Tramento",
+      "label": "Sistema de Tramento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "lQWE20-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema de Tramento",
+      "label": "Sistema de Tramento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "lQWEm0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "lQWEg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWE20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWEm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWEq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWEs0",
+      "name": null,
+      "label": "Ocultar Colunas",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWEt0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWE11-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lQWEg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWE20-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWEm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "lQWEq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWEs0",
+      "name": null,
+      "label": "Ocultar Colunas",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWEt0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "lQWE11-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Cidade",
+    "Sistema de Tratamento",
+    "Área de Influência",
+    "Bairro",
+    "Ponto",
+    "Localização",
+    "Data da Análise",
+    "Temp.",
+    "Cloro",
+    "Flúor",
+    "Turb.",
+    "Cor",
+    "Ph",
+    "Colif. Totais",
+    "E. Coli",
+    "Bac. Heter"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA036RelatorioSISAGUA.zul",
+  "codigo": "LQA036"
+}

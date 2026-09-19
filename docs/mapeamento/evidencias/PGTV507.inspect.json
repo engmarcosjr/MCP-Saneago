@@ -1,0 +1,105 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "mXGMb1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "mXGMi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mXGM00-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mXGMv0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número. O.T",
+      "label": "Número. O.T",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "mXGMi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mXGM30",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "mXGM60-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "mXGMi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mXGM30",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "mXGM60-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Número",
+    "Início Deslocamento",
+    "Término Deslocamento",
+    "Uo Solicitante",
+    "Data Solictação",
+    "Itinerário",
+    "À Disp.",
+    "Viagem",
+    "Status"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul?in=1",
+  "codigo": "PGTV507"
+}

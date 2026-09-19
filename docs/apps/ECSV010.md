@@ -1,36 +1,48 @@
 # ECSV010 - Gerar Resumo do Faturamento
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a gerar resumo do faturamento.
+Permite gerar resumo de faturamento e planilhas SAP por ano, período de medição e lote, com exportação para PDF e XLS.
 
-## Campos da Tela Inicial
-- **Lote** (text): Somente Leitura
-- **Sem Rotulo** (text): Somente Leitura
-- **/** (text): Somente Leitura
-- **/** (text): Somente Leitura
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/ecs/ECS010GerarResumoFaturamento.zul`
+
+## Campos e Filtros da Tela
+- **Ano** (combobox, somente leitura, valor atual "2026")
+- **Período de medição** (combobox, somente leitura)
+- **Lote** (input de texto, somente leitura, maxlength 5)
+- **Lote** (input de texto, somente leitura)
+- **/** (input de texto, somente leitura)
+- **/** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **PDF** (ID ZK: `tDBAl0`)
-- **XLS** (ID ZK: `tDBAq0`)
-- **XLS** (ID ZK: `tDBAs0`)
-- **XLS** (ID ZK: `tDBAu0`)
-- **Cancelar** (ID ZK: `tDBAx0`)
-- **Adicionar** (ID ZK: `tDBAo1`)
-- **Remover** (ID ZK: `tDBAp1`)
+- **PDF**
+- **XLS**
+- **XLS**
+- **XLS**
+- **Cancelar**
+- **Adicionar**
+- **Remover**
+*(Exibe também 4 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECSV010 (Gerar Resumo do Faturamento)"
-- "Acessar o aplicativo de gerar resumo do faturamento"
+## Colunas e Grade de Resultados
+- Resumo Faturamento
+- Planilha SAP
+- Listagem
+- Código
+- Nome
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECSV010`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "gerar resumo de faturamento no ECSV010"
+- "emitir planilha SAP do faturamento no ECSV010"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

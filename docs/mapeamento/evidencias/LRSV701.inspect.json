@@ -1,0 +1,316 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "r1FNu3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "r1FNh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN_0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN40-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN80-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Até",
+      "label": "Até",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNv3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "r1FNi0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN41-real",
+      "name": "_pgtgm4bd1",
+      "tipo": "radio",
+      "rotulo": "Pendente",
+      "label": "Pendente",
+      "valor_atual": "pendente",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN61-real",
+      "name": "_pgtgm4bd1",
+      "tipo": "radio",
+      "rotulo": "Executado",
+      "label": "Executado",
+      "valor_atual": "executado",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN81-real",
+      "name": "_pgtgm4bd1",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "todos",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNe1-real",
+      "name": "_pg3ha20o",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "no_prazo",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNg1-real",
+      "name": "_pg3ha20o",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "atrasado",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNi1-real",
+      "name": "_pg3ha20o",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "todos",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNo1-real",
+      "name": "_pgc2m1ib",
+      "tipo": "radio",
+      "rotulo": "Saneago",
+      "label": "Saneago",
+      "valor_atual": "saneago",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNq1-real",
+      "name": "_pgc2m1ib",
+      "tipo": "radio",
+      "rotulo": "Subdelegada",
+      "label": "Subdelegada",
+      "valor_atual": "subdelegada",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNs1-real",
+      "name": "_pgc2m1ib",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "todos",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FNy1-real",
+      "name": "_pgk7c7eq",
+      "tipo": "radio",
+      "rotulo": "Data Emissão",
+      "label": "Data Emissão",
+      "valor_atual": "data_emissao",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN_2-real",
+      "name": "_pgk7c7eq",
+      "tipo": "radio",
+      "rotulo": "Data Prevista",
+      "label": "Data Prevista",
+      "valor_atual": "data_prevista",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r1FN12-real",
+      "name": "_pgk7c7eq",
+      "tipo": "radio",
+      "rotulo": "Cód. Serviço",
+      "label": "Cód. Serviço",
+      "valor_atual": "codigo_servico",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "r1FNh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FNi0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN42",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "r1FN62",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "r1FNh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FNi0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r1FN42",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "r1FN62",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "N° RA",
+    "N° Seq",
+    "Conta",
+    "Cod. Seviço",
+    "Serviço",
+    "Cidade",
+    "Bairro",
+    "Data Solicit.",
+    "Data Distri.",
+    "Data Emis.",
+    "Hora Emis.",
+    "Data Exec.",
+    "Hora Exec.",
+    "Qt. Hr. Prev.",
+    "Tempo Pdr.",
+    "Peso Serv.",
+    "Diferença",
+    "Regis. Atend.",
+    "Cad. Usu."
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS701RelServicosExec.zul",
+  "codigo": "LRSV701"
+}

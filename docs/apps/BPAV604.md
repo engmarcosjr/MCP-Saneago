@@ -1,27 +1,32 @@
 # BPAV604 - Painel da Trilha
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Informativo / Sem campos
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a painel da trilha.
+Painel da Trilha do Conhecimento da Saneago. Confirmada sem campos interativos e sem botões de ação na tela inicial no momento do acesso.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA604PainelDaTrilha.zul`
+
+## Campos e Filtros da Tela
+Nenhum campo interativo na tela inicial.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+Nenhum botão de ação na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV604 (Painel da Trilha)"
-- "Acessar o aplicativo de painel da trilha"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV604`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar painel da trilha no BPAV604"
+- "acessar trilha do conhecimento da Saneago"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (tela confirmada sem campos ou botões interativos via menu Planejamento Rec Humanos -> Trilha do Conhecimento).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

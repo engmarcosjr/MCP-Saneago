@@ -1,27 +1,35 @@
 # LQAV071 - Demonstrativo Qtdes de Contas por Bairro
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a demonstrativo qtdes de contas por bairro.
+Permite emitir e consultar o demonstrativo de quantidade de contas por bairro por regional (GRS) e cidade.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqa/LQA071qtdeContas.jsp`
+
+## Campos e Filtros da Tela
+- **GRS** (input de texto, somente leitura, maxlength 6)
+- **GRS** (input de texto, somente leitura)
+- **Cidades** (input de texto, somente leitura, maxlength 6)
+- **Cidades** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+Nenhum botão de ação na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQAV071 (Demonstrativo Qtdes de Contas por Bairro)"
-- "Acessar o aplicativo de demonstrativo qtdes de contas por bairro"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQAV071`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar demonstrativo de contas por bairro no LQAV071"
+- "verificar quantidade de contas por bairro e cidade"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu CONTROLE DE QUALIDADE DA ÁGUA).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

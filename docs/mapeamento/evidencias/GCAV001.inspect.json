@@ -1,0 +1,152 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Cadastro de Atividades:.",
+  "inputs": [
+    {
+      "id": "numeroMelhoriaPrevista",
+      "name": "numeroMelhoriaPrevista",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoRegional",
+      "name": "codigoRegional",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "0002",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeRegional",
+      "name": "nomeRegional",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoDistrito",
+      "name": "codigoDistrito",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeDistrito",
+      "name": "nomeDistrito",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 30
+    },
+    {
+      "id": "siglaDistrito",
+      "name": "siglaDistrito",
+      "tipo": "text",
+      "rotulo": "Código Melhoria Prevista",
+      "label": "Código Melhoria Prevista",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": null,
+      "name": "dataAtividade",
+      "tipo": "text",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 20
+    },
+    {
+      "id": "valorAtividade",
+      "name": "valorAtividade",
+      "tipo": "text",
+      "rotulo": "Valor",
+      "label": "Valor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 17
+    },
+    {
+      "id": null,
+      "name": "descricaoAtividade",
+      "tipo": "textarea",
+      "rotulo": "Valor",
+      "label": "Valor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "contador",
+      "tipo": "text",
+      "rotulo": "Valor",
+      "label": "Valor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Periodo de",
+      "label": "Periodo de",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": null,
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Periodo de",
+      "label": "Periodo de",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": null,
+      "name": "frmAtividades",
+      "action": null,
+      "method": "get"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gca/GCA001atividades.jsp",
+  "codigo": "GCAV001"
+}

@@ -1,0 +1,197 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "LRS017",
+  "inputs": [
+    {
+      "id": "m1HYs1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "m1HYj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "m1HY40-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de implantação",
+      "label": "Tipo de implantação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "m1HYb0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Implantação",
+      "label": "Data de Implantação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "m1HYk0-real",
+      "name": "_pgi9bh0g1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "m1HYl0-real",
+      "name": "_pgi9bh0g1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "m1HYu0-real",
+      "name": "_pgseg77d1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "m1HYv0-real",
+      "name": "_pgseg77d1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "m1HY21",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Funcionário Responsárvel",
+      "label": "Funcionário Responsárvel",
+      "valor_atual": "M[REDIGIDO] - [REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "m1HY91-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data do cadastro",
+      "label": "Data do cadastro",
+      "valor_atual": "09/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [
+    {
+      "id": "m1HYj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HY40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HYb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HY91-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HYd1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "m1HYh1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "m1HYj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HY40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HYb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HY91-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "m1HYd1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "m1HYh1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS017CadSituacaoDistritoSIPSAP.zul",
+  "codigo": "LRSV017"
+}

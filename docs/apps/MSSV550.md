@@ -1,28 +1,35 @@
 # MSSV550 - Consulta A. Complementar por Aplicação
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta a. complementar por aplicação.
+Permite consultar acessos complementares cadastrados por aplicação e sistema no portal corporativo.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS550ConsultaAcessoComplementar.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `c9SO00`)
-- **Cancelar** (ID ZK: `c9SO20`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV550 (Consulta A. Complementar por Aplicação)"
-- "Acessar o aplicativo de consulta a. complementar por aplicação"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV550`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar acessos complementares por aplicação no MSSV550"
+- "pesquisar permissões complementares por sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

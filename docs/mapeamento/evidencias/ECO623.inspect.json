@@ -1,0 +1,299 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "dRkAh-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período do Recebimento",
+      "label": "Período do Recebimento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAl-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "A",
+      "label": "A",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAs",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência: S",
+      "label": "Superintendência: S",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "dRkAu-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Superintendência: S",
+      "label": "Superintendência: S",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAf0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional: G",
+      "label": "Regional: G",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "dRkAh0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional: G",
+      "label": "Regional: G",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAl3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "dRkA31-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAp1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito: T",
+      "label": "Distrito: T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "dRkAr1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito: T",
+      "label": "Distrito: T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAm3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "dRkAd2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dRkAx2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo de Faturamento",
+      "label": "Grupo de Faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "dRkA23-real",
+      "name": "_pgcoh1r61",
+      "tipo": "radio",
+      "rotulo": "Apenas Órgãos Agrupadores",
+      "label": "Apenas Órgãos Agrupadores",
+      "valor_atual": "A",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "dRkA43-real",
+      "name": "_pgcoh1r61",
+      "tipo": "radio",
+      "rotulo": "Sem Órgão Agrupador",
+      "label": "Sem Órgão Agrupador",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "dRkA63-real",
+      "name": "_pgcoh1r61",
+      "tipo": "radio",
+      "rotulo": "Geral",
+      "label": "Geral",
+      "valor_atual": "G",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "dRkAh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAh0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkA31-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAr1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkA93",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "dRkAa3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "dRkAh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAh0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkA31-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAr1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkAd2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "dRkA93",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "dRkAa3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO623ArrecadacaoDiaria.zul",
+  "codigo": "ECO623"
+}

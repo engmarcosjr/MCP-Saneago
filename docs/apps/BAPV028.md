@@ -1,27 +1,44 @@
 # BAPV028 - Enviar Nota Fiscal
 
 ## Categoria
-Recursos Humanos e Pessoal
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a enviar nota fiscal.
+Permite enviar e consultar notas fiscais de dependentes vinculadas a serviços, preenchendo referência, data de emissão, número, série, valor e CPF/CNPJ.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bap/BAP028EnviaNotaDependente.zul`
+
+## Campos e Filtros da Tela
+- **Empregado** (input de texto, somente leitura)
+- **Empregado** (input de texto, somente leitura)
+- **Referência Serviço** (input de data, editável)
+- **Data Emissão** (input de data, editável)
+- **Número Nota Fiscal** (input de texto, editável)
+- **Série Nota Fiscal** (input de texto, editável)
+- **Valor** (input de texto, editável)
+- **Física** (radio button, editável)
+- **Jurídica** (radio button, editável)
+- **CPF** (input de texto, editável)
+- *(Campos informativos de Abrir Nota).*
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Cancelar**
+- **OK**
+*(Exibe também múltiplos botões técnicos sem rótulo textual e botão Close no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BAPV028 (Enviar Nota Fiscal)"
-- "Acessar o aplicativo de enviar nota fiscal"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BAPV028`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "enviar nota fiscal de dependente no BAPV028"
+- "consultar notas fiscais enviadas por empregado"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Administração Pessoal -> Cadastro).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

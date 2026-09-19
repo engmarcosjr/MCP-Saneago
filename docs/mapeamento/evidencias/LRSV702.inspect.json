@@ -1,0 +1,203 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Atendimento:.",
+  "inputs": [
+    {
+      "id": "codigoUnidadeOrganizacional",
+      "name": "codigoUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeUnidadeOrganizacional",
+      "name": "nomeUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "Digite Código Distrito ou Consulte [ver]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 45
+    },
+    {
+      "id": "codigoServico",
+      "name": "codigoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "descricaoServico",
+      "name": "descricaoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "Imprime Todos Serviços ou Consulte [Ver]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 45
+    },
+    {
+      "id": "cFrmMes",
+      "name": "cFrmMes",
+      "tipo": "select",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "00",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "00",
+          "texto": "Mês:"
+        },
+        {
+          "valor": "01",
+          "texto": "01-Jan"
+        },
+        {
+          "valor": "02",
+          "texto": "02-Fev"
+        },
+        {
+          "valor": "03",
+          "texto": "03-Mar"
+        },
+        {
+          "valor": "04",
+          "texto": "04-Abr"
+        },
+        {
+          "valor": "05",
+          "texto": "05-Mai"
+        },
+        {
+          "valor": "06",
+          "texto": "06-Jun"
+        },
+        {
+          "valor": "07",
+          "texto": "07-Jul"
+        },
+        {
+          "valor": "08",
+          "texto": "08-Ago"
+        },
+        {
+          "valor": "09",
+          "texto": "09-Set"
+        },
+        {
+          "valor": "10",
+          "texto": "10-Out"
+        },
+        {
+          "valor": "11",
+          "texto": "11-Nov"
+        },
+        {
+          "valor": "12",
+          "texto": "12-Dez"
+        }
+      ],
+      "total_opcoes": 13,
+      "opcoes_truncadas": false
+    },
+    {
+      "id": "cFrmAno",
+      "name": "cFrmAno",
+      "tipo": "select",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "0000",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "0000",
+          "texto": "Ano:"
+        },
+        {
+          "valor": "2026",
+          "texto": "2026"
+        },
+        {
+          "valor": "2025",
+          "texto": "2025"
+        },
+        {
+          "valor": "2024",
+          "texto": "2024"
+        },
+        {
+          "valor": "2023",
+          "texto": "2023"
+        },
+        {
+          "valor": "2022",
+          "texto": "2022"
+        }
+      ],
+      "total_opcoes": 6,
+      "opcoes_truncadas": false
+    },
+    {
+      "id": null,
+      "name": "tipoRelatorio",
+      "tipo": "radio",
+      "rotulo": "Tipo de relatório",
+      "label": "Tipo de relatório",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "tipoRelatorio",
+      "tipo": "radio",
+      "rotulo": "Tipo de relatório",
+      "label": "Tipo de relatório",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "tipoRelatorio",
+      "tipo": "radio",
+      "rotulo": "Tipo de relatório",
+      "label": "Tipo de relatório",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS702",
+      "name": "frmLRS702",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS702emiteServi.jsp",
+  "codigo": "LRSV702"
+}

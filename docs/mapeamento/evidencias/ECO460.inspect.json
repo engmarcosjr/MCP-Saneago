@@ -1,0 +1,161 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Faturamento Avulso",
+  "inputs": [
+    {
+      "id": "r5nJm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/Dv",
+      "label": "Conta/Dv",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "r5nJn",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/Dv",
+      "label": "Conta/Dv",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "r5nJt",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento",
+      "label": "Número do Documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "r5nJg0-real",
+      "name": "_pg5hubjh1",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r5nJh0-real",
+      "name": "_pg5hubjh1",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r5nJs0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "r5nJu0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r5nJj1-real",
+      "name": "_pgva2imt1",
+      "tipo": "radio",
+      "rotulo": "Abertos",
+      "label": "Abertos",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r5nJk1-real",
+      "name": "_pgva2imt1",
+      "tipo": "radio",
+      "rotulo": "Pagos",
+      "label": "Pagos",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r5nJl1-real",
+      "name": "_pgva2imt1",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "r5nJu0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r5nJp1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "r5nJq1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "r5nJu0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r5nJp1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "r5nJq1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO460FaturamentoAvulso.zul",
+  "codigo": "ECO460"
+}

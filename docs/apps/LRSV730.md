@@ -1,27 +1,30 @@
-# LRSV730 - Atendimento Serv. p/ UO e Período
+# LRSV730 — Atendimento Serv. p/ UO e Período
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
 
-## Tipo
-Leitura (Livre)
+- **Código:** LRSV730
+- **Nome:** Atendimento Serv. p/ UO e Período
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS730atendServUo.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de relatório de serviços atendidos por U.O. em período específico, sem botões de escrita identificados na carga inicial.
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a atendimento serv. p/ uo e período.
+## Campos de Entrada (Filtros de Parâmetros)
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+| Rótulo / Label | ID | Name | Tipo | Editável | Readonly | Maxlength | Valor Padrão |
+|---|---|---|---|---|---|---|---|
+| Periodo | `dataInicio` | `dataInicio` | `text` | Sim | Não | 10 | `""` |
+| Periodo | `dataFim` | `dataFim` | `text` | Sim | Não | 10 | `""` |
+| U.O. | `codigoUO` | `codigoUO` | `text` | Sim | Não | 7 | `""` |
+| U.O. | `nomeUO` | `nomeUO` | `text` | Não | Sim | 40 | `""` |
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+## Botões e Ações
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV730 (Atendimento Serv. p/ UO e Período)"
-- "Acessar o aplicativo de atendimento serv. p/ uo e período"
+Nenhum botão detectado no DOM inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV730`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Decisões de Mapeamento e Segurança
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+- **Formulário:** `frmLRS730` (POST).
+- **Classificação:** `somente_leitura` para relatório operacional de serviços atendidos.

@@ -1,0 +1,62 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "BAP373",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "yNqG30",
+      "name": null,
+      "label": "Simular valor do PDV",
+      "tipo": "button"
+    },
+    {
+      "id": "yNqGe0-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "yNqGe0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "yNqGk0",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "yNqG30",
+      "name": null,
+      "label": "Simular valor do PDV",
+      "tipo": "button"
+    },
+    {
+      "id": "yNqGe0-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "yNqGe0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "yNqGk0",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA373RankingPDV.zul",
+  "codigo": "BPAV373"
+}

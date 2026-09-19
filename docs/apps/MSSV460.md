@@ -1,29 +1,36 @@
 # MSSV460 - Consulta Usuários por Sistema
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta usuários por sistema.
+Permite consultar e emitir relatório de usuários cadastrados por sistema, visualizando detalhes de acessos e códigos de permissão.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS460ConsultaUsuarioAplicacao.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `eYmHz`)
-- **Imprimir** (ID ZK: `eYmH_0`)
-- **Cancelar** (ID ZK: `eYmH00`)
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV460 (Consulta Usuários por Sistema)"
-- "Acessar o aplicativo de consulta usuários por sistema"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV460`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar usuários por sistema no MSSV460"
+- "imprimir relação de usuários cadastrados no sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

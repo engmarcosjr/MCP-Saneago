@@ -1,0 +1,180 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO349 - Concessão de Crédito de Óleo Fornecido teste",
+  "inputs": [
+    {
+      "id": "cVjSh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade de Atendimento da Coleta",
+      "label": "Unidade de Atendimento da Coleta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "cVjSj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade de Atendimento da Coleta",
+      "label": "Unidade de Atendimento da Coleta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cVjS60-real",
+      "name": "_pg36tp2k",
+      "tipo": "radio",
+      "rotulo": "Grande Gerador",
+      "label": "Grande Gerador",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cVjS80-real",
+      "name": "_pg36tp2k",
+      "tipo": "radio",
+      "rotulo": "Pequeno Gerador",
+      "label": "Pequeno Gerador",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cVjSh0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "cVjSj0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cVjS01-real",
+      "name": "_pgreqs5k",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cVjS11-real",
+      "name": "_pgreqs5k",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cVjSc1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "cVjSe1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "cVjSj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cVjSe1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cVjSy1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cVjSz1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "cVjSj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cVjSe1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cVjSy1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "cVjSz1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "RA",
+    "Data",
+    "Litros",
+    "Valor",
+    "Conta Beneficiada",
+    "Matrícula"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO349ConcessaoCreditoOleoFornecido.zul",
+  "codigo": "ECO349"
+}

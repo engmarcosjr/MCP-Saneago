@@ -1,27 +1,39 @@
 # EGWV402 - Faturamento
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a faturamento.
+Permite consultar e visualizar gráficos de faturamento por conta, período, data e opção de filtrar apenas contas individualizadas.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW402GraficoFaturamento.zul`
+
+## Campos e Filtros da Tela
+- **Conta** (input de data, editável)
+- **Conta** (combobox, editável)
+- **Conta** (input de texto, editável)
+- **Conta** (checkbox, editável)
+- **Apenas contas individualizadas** (checkbox, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Visualizar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 2 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV402 (Faturamento)"
-- "Acessar o aplicativo de faturamento"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV402`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar gráfico de faturamento no EGWV402"
+- "visualizar faturamento por conta e período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Gráfico).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

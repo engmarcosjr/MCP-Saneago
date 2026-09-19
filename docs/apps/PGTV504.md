@@ -1,35 +1,35 @@
-# PGTV504 - Registro Offline
+# PGTV504 — Registro Offline
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV504
+- **Nome:** Registro Offline
+- **Módulo:** Gestão Transporte > Ordem Tráfego
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT504OrdemTrafegoOff.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `possui_escrita`
+- **Motivo:** Tela de registro offline de ordem de tráfego com campos de formulário e botões Validar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Posto Serviço | combobox | Sim | `eKBCe-real` |
+| Solicitante | text | Não | `eKBCo` |
+| Solicitante | combobox | Sim | `eKBCq-real` |
+| Motorista | text | Sim | `eKBCi2` |
+| Motorista | text | Não | `eKBC_0-real` |
+| Licença | text | Sim | `eKBCm0` |
+| Cód. Veículo | text | Sim | `eKBCu0` |
+| Placa Veículo | text | Sim | `eKBC11` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a registro offline.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Validar | button | `eKBCo0` | Valida dados de solicitante/motorista |
+| Validar | button | `eKBCw0` | Valida dados do veículo |
+| Validar | button | `eKBC31` | Valida dados da ordem offline |
 
-## Campos da Tela Inicial
-- **Solicitante:** (text): Somente Leitura
-- **Sem Rotulo** (text): Editável
-- **Licença:** (text): Editável
-- **Cód. Veículo:** (text): Editável
-- **Placa Veículo:** (text): Editável
-- **Posto Serviço:** (combobox): Somente Leitura
-- **Sem Rotulo** (combobox): Somente Leitura
-
-## Botões Disponíveis
-- **Validar** (ID ZK: `jU0Ho0`)
-- **Validar** (ID ZK: `jU0Hw0`)
-- **Validar** (ID ZK: `jU0H31`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV504 (Registro Offline)"
-- "Acessar o aplicativo de registro offline"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV504`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `eKBCe-btn`) — acionador do combobox Posto Serviço
+- `Sem Rotulo` (a, `eKBCq-btn`) — acionador do combobox Solicitante
+- `Sem Rotulo` (a, `eKBC_0-btn`) — acionador de busca do Motorista

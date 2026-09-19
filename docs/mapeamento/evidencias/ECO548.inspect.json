@@ -1,0 +1,67 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "kIYZg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "kIYZh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [
+    {
+      "id": "kIYZr6",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kIYZt6",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kIYZr6",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kIYZt6",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Data Inicio Vínculo",
+    "Data Fim Vínculo",
+    "Vínculo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO548SegundaVia.zul",
+  "codigo": "ECO548"
+}

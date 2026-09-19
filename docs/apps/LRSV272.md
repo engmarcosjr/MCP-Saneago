@@ -1,27 +1,35 @@
 # LRSV272 - Acompanhar Atendimento
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Consulta Operacional (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a acompanhar atendimento.
+Permite monitorar e acompanhar o atendimento de serviços de campo por unidade organizacional, data e situação.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS272MonitorarAtendimento.zul`
+
+## Campos e Filtros da Tela
+- **Un.Organizacional** (zWcAo7: input de texto, editável)
+- **Un.Organizacional** (zWcAw-real: input de texto, readonly)
+- **Data** (zWcAe0-real: input de data, editável)
+- **Data** (zWcAf0-real: combobox, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Sem Rotulo** (`zWcAw-btn`: a) — abridor de combobox/pesquisa (ignorado)
+- **Sem Rotulo** (`zWcAe0-btn`: a) — abridor de calendário/data (ignorado)
+- **Sem Rotulo** (`zWcAf0-btn`: a) — abridor de combobox (ignorado)
+- **Consultar** (`zWcAh0`: button) — consulta de atendimentos
+- **Filtros** (`zWcAi0`: button) — exibição/ajuste de filtros
+- **Cancelar** (`zWcAj0`: button) — cancelamento/limpeza
+- **Sem Rotulo** (`zWcAd1`: button) — botão auxiliar/ignorado
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV272 (Acompanhar Atendimento)"
-- "Acessar o aplicativo de acompanhar atendimento"
+## Observações de Segurança e Automação
+- Tela ZK de monitoramento e acompanhamento de atendimentos (`LRS272MonitorarAtendimento.zul`).
+- Contém apenas botões de consulta (`Consultar`), controle de filtros (`Filtros`) e cancelamento (`Cancelar`), sem botões de escrita.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV272`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

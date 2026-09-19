@@ -1,27 +1,35 @@
-# ECNV006 - Relatório
+# ECNV006 — Relatório
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** ECNV006
+- **Nome:** Relatório
+- **Módulo:** SISTEMA DE PROTESTO CARTORÁRIO > Protesto Cartorário
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/ecn/ECN006RelatoriosProtesto.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de relatórios de protestos cartorários com filtros por superintendência, regional, distrito e botões Relatório e Planilha.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Superintendência | text | Sim | `uKCYi` |
+| Superintendência | text | Não | `uKCYk-real` |
+| Regional | text | Sim | `uKCY70` |
+| Regional | text | Não | `uKCY90-real` |
+| Distrito | text | Sim | `uKCYl1` |
+| Distrito | text | Não | `uKCYn1-real` |
+| Opção | combobox | Não | `uKCY82-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a relatório.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Relatório | button | `uKCYw2` | Emite relatório de protestos cartorários |
+| Planilha | button | `uKCYx2` | Exporta relatório em planilha |
+| Cancelar | button | `uKCYy2` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECNV006 (Relatório)"
-- "Acessar o aplicativo de relatório"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECNV006`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `uKCYk-btn`) — acionador de busca da Superintendência
+- `Sem Rotulo` (a, `uKCY90-btn`) — acionador de busca da Regional
+- `Sem Rotulo` (a, `uKCYn1-btn`) — acionador de busca do Distrito
+- `Sem Rotulo` (a, `uKCY82-btn`) — acionador do combobox Opção

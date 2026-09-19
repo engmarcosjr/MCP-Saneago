@@ -1,0 +1,67 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "yCbSg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "yCbSm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome do Proprietário",
+      "label": "Nome do Proprietário",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "yCbSp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yCbSr",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "yCbSp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "yCbSr",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Data",
+    "Campo (Cod - Desc)",
+    "Situação Anterior do Campo",
+    "Matrícula",
+    "Motivo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO187HistoricoCadastroUsuario.zul",
+  "codigo": "ECO187"
+}

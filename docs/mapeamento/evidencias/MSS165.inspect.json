@@ -1,0 +1,128 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "vCfH63",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "vCfHg-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vCfH53",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "vCfH50-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vCfHp0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "GSI - Solicitação (Incluir/Excluir)",
+      "label": "GSI - Solicitação (Incluir/Excluir)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "vCfHg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vCfH50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vCfHs0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "vCfHv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "vCfHg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vCfH50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vCfHs0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "vCfHv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Excluir",
+    "Código",
+    "Descrição Impressora",
+    "Solicitação",
+    "Data Acesso",
+    "Matrícula",
+    "Nome",
+    "UO lotação",
+    "UO Atuação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS165UsuarioVirtual.zul",
+  "codigo": "MSS165"
+}

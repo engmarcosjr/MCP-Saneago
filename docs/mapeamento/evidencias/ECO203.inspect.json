@@ -1,0 +1,93 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO203 - Laceação Hidrômetro",
+  "inputs": [
+    {
+      "id": "hLBWg-real",
+      "name": "_pgk9rvvs1",
+      "tipo": "radio",
+      "rotulo": "Por Conta",
+      "label": "Por Conta",
+      "valor_atual": "CONTA",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hLBWh-real",
+      "name": "_pgk9rvvs1",
+      "tipo": "radio",
+      "rotulo": "Por Rota",
+      "label": "Por Rota",
+      "valor_atual": "ROTA",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hLBWu",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "hLBWv",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hLBWz1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hLBW12",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hLBWz1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hLBW12",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Conta",
+    "Ligação",
+    "Tipo",
+    "Hidrômetro",
+    "Data Lacração",
+    "Tipo de Lacre",
+    "Número Lacre",
+    "Forma de Entrega",
+    "Histórico"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO203LacracaoHidrometro.zul",
+  "codigo": "ECO203"
+}

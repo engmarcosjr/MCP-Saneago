@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatório de Paralisações no Abastecimento de Água:.",
+  "inputs": [
+    {
+      "id": "ano_ref",
+      "name": "ano_ref",
+      "tipo": "text",
+      "rotulo": "LRS 020",
+      "label": "LRS 020",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mes_ref",
+      "name": "mes_ref",
+      "tipo": "text",
+      "rotulo": "LRS 020",
+      "label": "LRS 020",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "cd_regional",
+      "name": "cd_regional",
+      "tipo": "text",
+      "rotulo": "LRS 020",
+      "label": "LRS 020",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_regional",
+      "name": "no_regional",
+      "tipo": "text",
+      "rotulo": "LRS 020",
+      "label": "LRS 020",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS020",
+      "name": "frmLRS020",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS020paralisa.jsp",
+  "codigo": "LRSV020"
+}

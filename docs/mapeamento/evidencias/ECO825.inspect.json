@@ -1,0 +1,41 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO823 - Política de Titularidade",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "eJlU50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eJlUc-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eJlU50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "eJlUc-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Nome",
+    "Descrição"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO825ColetaneaRegulacaoServicos.zul",
+  "codigo": "ECO825"
+}

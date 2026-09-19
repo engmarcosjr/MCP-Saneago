@@ -1,0 +1,152 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "LQA - Irregularidades detectadas no IQA",
+  "inputs": [
+    {
+      "id": "codigoRegional",
+      "name": "codigoRegional",
+      "tipo": "text",
+      "rotulo": "GRS",
+      "label": "GRS",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeRegional",
+      "name": "nomeRegional",
+      "tipo": "text",
+      "rotulo": "GRS",
+      "label": "GRS",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoSistema",
+      "name": "codigoSistema",
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "nomeSistema",
+      "name": "nomeSistema",
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoTipoAgua",
+      "name": "codigoTipoAgua",
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "descTipoAgua",
+      "name": "descTipoAgua",
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Período inicial",
+      "label": "Período inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Período final",
+      "label": "Período final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "valorIQACalcInic",
+      "name": "valorIQACalcInic",
+      "tipo": "text",
+      "rotulo": "IQA inicial",
+      "label": "IQA inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "valorIQACalcFinal",
+      "name": "valorIQACalcFinal",
+      "tipo": "text",
+      "rotulo": "IQA final",
+      "label": "IQA final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLQA082",
+      "name": "frmLQA082",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA082irregular.jsp",
+  "codigo": "LQAV082"
+}

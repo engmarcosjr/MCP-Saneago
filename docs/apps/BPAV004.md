@@ -1,14 +1,31 @@
 # BPAV004 - Gestão de Empregados no Teletrabalho
 
 ## Categoria
-RH & Pessoal / Teletrabalho
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Sem Permissão / Restrita ao Perfil
+Bloqueada / Sem Acesso
 
 ## O que faz
-Variante visual/legada de gestão de teletrabalho (substituída ou restrita em relação ao `BPA004`).
+Aplicação de gestão de empregados em teletrabalho. Não localizada na busca direta e inacessível via menu de navegação para o perfil atual.
+
+## URL Real / Atalho Direto
+- Inacessível (não localizada na busca nem no menu)
+
+## Campos e Filtros da Tela
+Nenhum campo acessível.
+
+## Botões Disponíveis
+Nenhum botão acessível.
+
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados acessível.
+
+## Perguntas que Responde
+- "gerenciar empregados em teletrabalho no BPAV004"
 
 ## Status de Acesso
-- **Sem Acesso / Não Disponível no Perfil Atual**: A aplicação não está visível na busca direta nem acessível via menu para as permissões da matrícula em uso.
-- **Alternativa Acessível**: Utilizar `BPA004 - Gestão de Empregados no Teletrabalho`.
+- **Acesso Confirmado**: Não (aplicação não localizada na busca ou menu para o perfil atual).
+
+---
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

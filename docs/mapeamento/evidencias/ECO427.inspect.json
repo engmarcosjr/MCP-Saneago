@@ -1,0 +1,128 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Termo de Ocorrência de Irregularidade",
+  "inputs": [
+    {
+      "id": "pYxOi-real",
+      "name": "_pgfm0o091",
+      "tipo": "radio",
+      "rotulo": "RA",
+      "label": "RA",
+      "valor_atual": "RA",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pYxOj-real",
+      "name": "_pgfm0o091",
+      "tipo": "radio",
+      "rotulo": "Parâmetros",
+      "label": "Parâmetros",
+      "valor_atual": "PARAMETROS",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pYxOx",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do RA",
+      "label": "Número do RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "pYxO20",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Conta",
+      "label": "Número da Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pYxO90",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Proprietário",
+      "label": "Proprietário",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pYxOr5-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo do Termo de Ocorrência",
+      "label": "Tipo do Termo de Ocorrência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pYxO16-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Emitir BCC",
+      "label": "Emitir BCC",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pYxOr5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pYxO56",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pYxO66",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pYxOr5-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pYxO56",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pYxO66",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO427conIrreg.zul",
+  "codigo": "ECO427"
+}

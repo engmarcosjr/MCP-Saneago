@@ -1,0 +1,60 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "q4TLg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "q4TLl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q4TLm",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "q4TLl",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q4TLm",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "ENTREGA DA FATURA OU DO COMUNICADO DE SUA NÃO EMISSÃO NO ATO DA LEITURA",
+    "ENTREGA DA FATURA NÃO EMITIDA NO ATO DA LEITURA",
+    "Referência",
+    "Data/Hora",
+    "Tipo Entrega",
+    "Liberação ou Retenção",
+    "Leitura",
+    "Ocorrência",
+    "Lançar erros"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO139EntregaContas.zul",
+  "codigo": "ECO139"
+}

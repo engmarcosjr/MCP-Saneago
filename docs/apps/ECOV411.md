@@ -1,27 +1,32 @@
 # ECOV411 - Abertura de Financiamento
 
 ## Categoria
-Comercial e Atendimento ao Cliente
+Comercial e Atendimento ao Cliente / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a abertura de financiamento.
+Permite consultar informações sobre abertura de financiamento por conta e número de financiamento.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eco/ECO411AberturaFinanciamento.zul`
+
+## Campos e Filtros da Tela
+- **Conta** (input de texto, editável, maxlength 7)
+- **Conta** (input de texto, editável, maxlength 1)
+- **Número do Financiamento** (input de texto, editável, maxlength 8)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- `Consultar`
+- `Cancelar`
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECOV411 (Abertura de Financiamento)"
-- "Acessar o aplicativo de abertura de financiamento"
+## Perguntas que Responde
+- "consultar abertura de financiamento no ECOV411"
+- "pesquisar financiamento por conta"
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECOV411`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 08/09/2026 (Status: inventariado).*

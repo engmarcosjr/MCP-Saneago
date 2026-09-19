@@ -1,0 +1,61 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "k1zY9",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Usuario",
+      "label": "Usuario",
+      "valor_atual": "M[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "k1zYa",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Usuario",
+      "label": "Usuario",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "k1zYi",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "k1zYk",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "k1zYi",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "k1zYk",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS008MantemTelefoneEmpregado.zul",
+  "codigo": "MSSV008"
+}

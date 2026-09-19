@@ -1,0 +1,85 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO407 - Cadastramento de Códigos de Lançamentos",
+  "inputs": [
+    {
+      "id": "iKQVr6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento",
+      "label": "Código de Lançamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "iKQVj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento",
+      "label": "Código de Lançamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iKQVj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iKQVz",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "iKQV20",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iKQV60",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iKQVj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iKQVz",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "iKQV20",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iKQV60",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO407CadastrarLancamentos.zul",
+  "codigo": "ECO407"
+}

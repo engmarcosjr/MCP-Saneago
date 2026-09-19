@@ -1,29 +1,32 @@
-# LRSV024 - Indicadores do SIPSAP por Período
+# LRSV024 — Indicadores do SIPSAP por Período
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV024
+- **Nome:** Indicadores do SIPSAP por Período
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS024IndiceSIPSAPPeriodo.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela ZK de emissão de relatório de indicadores do SIPSAP por período e distrito opcional com botão Gerar Relatório.
 
-## Tipo
-Escrita (Gated/Confirmar)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Período de referência | date | Sim | `aYOGd-real` |
+| a | date | Sim | `aYOGh-real` |
+| Distrito (opcional) | text | Sim | `aYOGj0` |
+| Distrito (opcional) | text | Não (readonly) | `aYOGp-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a indicadores do sipsap por período.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Gerar Relatório | button | `aYOG60` | Emite o relatório de indicadores por período |
 
-## Campos da Tela Inicial
-- **Período de referência:** (date): Editável
-- **a** (date): Editável
-- **Sem Rotulo** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `aYOGd-btn`, tipo: `a`) — abridor de datepicker Período de referência.
+- `Sem Rotulo` (id: `aYOGh-btn`, tipo: `a`) — abridor de datepicker a.
+- `Sem Rotulo` (id: `aYOGp-btn`, tipo: `a`) — abridor/pesquisador de Distrito (opcional).
 
-## Botões Disponíveis
-- **Gerar Relatório** (ID ZK: `vE4C60`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV024 (Indicadores do SIPSAP por Período)"
-- "Acessar o aplicativo de indicadores do sipsap por período"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV024`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+Nenhuma coluna tabular identificada na tela inicial.

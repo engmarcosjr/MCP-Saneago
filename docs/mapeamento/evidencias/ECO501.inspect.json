@@ -1,0 +1,90 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO501 - Revisão de Corte e Religação",
+  "inputs": [
+    {
+      "id": "kWnVi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "kWnVj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "kWnVq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Corte",
+      "label": "Corte",
+      "valor_atual": "6",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kWnVr",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Corte",
+      "label": "Corte",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "kWnVv",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kWnVx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kWnVv",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "kWnVx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nº do Corte",
+    "Data Emissão",
+    "Motivo",
+    "Data Solicitação Revisão",
+    "Data Solicitação Religação",
+    "Status do Corte"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO501CorteRevisaoReligacao.zul",
+  "codigo": "ECO501"
+}

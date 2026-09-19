@@ -1,0 +1,97 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatorio de Serviços Atendidos Por Codigo de Serviço em um Período:.",
+  "inputs": [
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 40
+    },
+    {
+      "id": "codigoServico",
+      "name": "codigoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "descricaoServico",
+      "name": "descricaoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 40
+    },
+    {
+      "id": "tipo",
+      "name": "tipo",
+      "tipo": "text",
+      "rotulo": "Tipo",
+      "label": "Tipo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS735",
+      "name": "frmLRS735",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS735relRACidBai.jsp",
+  "codigo": "LRSV735"
+}

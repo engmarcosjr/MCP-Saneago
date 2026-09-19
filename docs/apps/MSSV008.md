@@ -1,29 +1,34 @@
 # MSSV008 - Cadastro de Telefone por Matrícula
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a cadastro de telefone por matrícula.
+Permite consultar os telefones cadastrados por matrícula e nome do usuário/empregado.
 
-## Campos da Tela Inicial
-- **Usuario:** (text): Somente Leitura
-- **Usuario:** (text): Somente Leitura
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS008MantemTelefoneEmpregado.zul`
+
+## Campos e Filtros da Tela
+- **Usuario** (input de texto, somente leitura, matrícula)
+- **Usuario** (input de texto, somente leitura, nome)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `xWhAi`)
-- **Cancelar** (ID ZK: `xWhAk`)
+- **Consultar**
+- **Cancelar**
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV008 (Cadastro de Telefone por Matrícula)"
-- "Acessar o aplicativo de cadastro de telefone por matrícula"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV008`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar telefones do empregado no MSSV008"
+- "pesquisar telefones cadastrados por matrícula"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Telefone).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

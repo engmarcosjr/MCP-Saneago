@@ -1,0 +1,76 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Quantidade de Contas com Débito Automático",
+  "inputs": [
+    {
+      "id": "mS3Yh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade Total de Contas com Débito Automático",
+      "label": "Quantidade Total de Contas com Débito Automático",
+      "valor_atual": "147.947",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mS3Ym",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade de Contas com Débito Automático na Saneago",
+      "label": "Quantidade de Contas com Débito Automático na Saneago",
+      "valor_atual": "135.677",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mS3Yr",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade de Contas com Débito Automático na Subdelegada",
+      "label": "Quantidade de Contas com Débito Automático na Subdelegada",
+      "valor_atual": "12.270",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mS3Yx-real",
+      "name": "_pgufpcqt",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "mS3Yz-real",
+      "name": "_pgufpcqt",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [
+    "Banco",
+    "Quantidade de Contas",
+    "Código",
+    "Nome",
+    "Total",
+    "Saneago",
+    "Subdelegada"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO106DebitoAutomatico.zul",
+  "codigo": "ECO106"
+}

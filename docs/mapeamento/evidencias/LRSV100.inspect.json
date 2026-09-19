@@ -1,0 +1,117 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "new page title",
+  "inputs": [
+    {
+      "id": "i83It",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "i83Iv-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "i83I01",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Veículo",
+      "label": "Veículo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "i83Iv-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "i83I41",
+      "name": null,
+      "label": "Listar Todas",
+      "tipo": "button"
+    },
+    {
+      "id": "i83I43",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "i83Ib3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "i83Iv-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "i83I41",
+      "name": null,
+      "label": "Listar Todas",
+      "tipo": "button"
+    },
+    {
+      "id": "i83I43",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "i83Ib3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Frota",
+    "Placa",
+    "Marca",
+    "Modelo",
+    "Cor",
+    "Última atualização do kit cesta",
+    "Código",
+    "Código SAP",
+    "Descrição",
+    "Qtdade Estoque Veículo",
+    "Utilizado Sem baixa no SAP",
+    "Unidade Medida",
+    "RA's Pendentes",
+    "Veículo",
+    "Qtde consumo anterior",
+    "Qtde estoque",
+    "Data/Hora",
+    "Tipo Movimentação",
+    "Operador de Movimentação",
+    "Quantidade"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS100ManterEstoqueMaterialPorViatura.zul",
+  "codigo": "LRSV100"
+}

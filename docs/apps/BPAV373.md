@@ -1,28 +1,34 @@
 # BPAV373 - Ranking PDV
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a ranking pdv.
+Permite consultar o ranking e simular valores referentes ao Plano de Demissão Voluntária (PDV).
 
-## Campos da Tela Inicial
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA373RankingPDV.zul`
+
+## Campos e Filtros da Tela
 Nenhum campo interativo detectado na tela inicial.
 
 ## Botões Disponíveis
-- **Simular valor do PDV** (ID ZK: `p4JS30`)
-- **OK** (ID ZK: `p4JSk0`)
+- **Simular valor do PDV**
+- **OK**
+*(Exibe também botões técnicos de modal sem rótulo textual e botão Close).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV373 (Ranking PDV)"
-- "Acessar o aplicativo de ranking pdv"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV373`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar ranking do PDV no BPAV373"
+- "simular valor do PDV"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> PDV).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

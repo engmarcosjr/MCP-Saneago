@@ -1,28 +1,38 @@
 # ECAV004 - Autorizar Rotas para Distribuição
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a autorizar rotas para distribuição.
+Permite consultar as rotas e o total de contas disponíveis para autorização de distribuição por cidade, período de recadastramento e grupo de faturamento.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eca/ECA004AutorizaDistribuicao.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (input de texto, editável, maxlength 4)
+- **Cidade** (input de texto, somente leitura)
+- **Período Recadastramento** (combobox, somente leitura)
+- **Grupo de Faturamento** (combobox, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `zROQn0`)
-- **Cancelar** (ID ZK: `zROQo0`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECAV004 (Autorizar Rotas para Distribuição)"
-- "Acessar o aplicativo de autorizar rotas para distribuição"
+## Colunas e Grade de Resultados
+- Rota
+- Total de Contas
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECAV004`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar rotas para autorização no ECAV004"
+- "verificar total de contas por rota para distribuição"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Cadastro Comercial).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

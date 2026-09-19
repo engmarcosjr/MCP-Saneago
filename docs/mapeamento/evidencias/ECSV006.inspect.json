@@ -1,0 +1,190 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Erros Medição",
+  "inputs": [
+    {
+      "id": "a1KPi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "a1KPk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1KP00",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "a1KP70-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de Medição",
+      "label": "Período de Medição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPg0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Leitura",
+      "label": "Leitura",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPi0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Retidas",
+      "label": "Retidas",
+      "valor_atual": "7",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPk0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Revisao de Leitura",
+      "label": "Revisao de Leitura",
+      "valor_atual": "5",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPm0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Análise Crítica",
+      "label": "Análise Crítica",
+      "valor_atual": "9",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPo0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Corte",
+      "label": "Corte",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPq0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Revisão de Corte",
+      "label": "Revisão de Corte",
+      "valor_atual": "4",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1KPs0-real",
+      "name": "_pg366is31",
+      "tipo": "radio",
+      "rotulo": "Religação",
+      "label": "Religação",
+      "valor_atual": "6",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "a1KPk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1KP70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1KPw0",
+      "name": null,
+      "label": "Avançar",
+      "tipo": "button"
+    },
+    {
+      "id": "a1KPx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "a1KPk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1KP70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1KPw0",
+      "name": null,
+      "label": "Avançar",
+      "tipo": "button"
+    },
+    {
+      "id": "a1KPx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Ligação",
+    "Hidrômetro",
+    "Erro",
+    "Pesquisar Conta(s):",
+    "Conta"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul",
+  "codigo": "ECSV006"
+}

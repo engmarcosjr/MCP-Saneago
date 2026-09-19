@@ -1,28 +1,28 @@
-# ECNV007 - Consultar Protesto
+# ECNV007 — Consultar Protesto
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** ECNV007
+- **Nome:** Consultar Protesto
+- **Módulo:** SISTEMA DE PROTESTO CARTORÁRIO > Protesto Cartorário
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/ecn/ECN007ConsultarProtesto.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Consulta de protestos cartorários por CPF/CNPJ com botões Consultar e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Filtros | combobox | Não | `eT1Zl-real` |
+| Pessoa Física | radio | Sim | `eT1Zv-real` (`_pgvs4sle1`) |
+| Pessoa Jurídica | radio | Sim | `eT1Zx-real` (`_pgvs4sle1`) |
+| CPF | text | Sim | `eT1Z30` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a consultar protesto.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `eT1Zx0` | Consulta protestos do titular informado |
+| Cancelar | button | `eT1Zy0` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-- **CPF** (text): Editável
-
-## Botões Disponíveis
-- **Consultar** (ID ZK: `g2RHx0`)
-- **Cancelar** (ID ZK: `g2RHy0`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECNV007 (Consultar Protesto)"
-- "Acessar o aplicativo de consultar protesto"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECNV007`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `eT1Zl-btn`) — acionador do combobox Filtros

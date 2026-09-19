@@ -1,0 +1,96 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Acompanhamento Avaliação",
+  "inputs": [
+    {
+      "id": "fPgH55",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "T0002",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "fPgHg-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "fPgH00-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Referência Avaliação",
+      "label": "Referência Avaliação",
+      "valor_atual": "12/2025",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "fPgHg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fPgH00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fPgH60",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "fPgH70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "fPgHg-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fPgH00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "fPgH60",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "fPgH70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA361AcompanhamentoAvaliacao.zul",
+  "codigo": "BPAV361"
+}

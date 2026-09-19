@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatório de Servicos Comerciais Executados:.",
+  "inputs": [
+    {
+      "id": "ano_ref",
+      "name": "ano_ref",
+      "tipo": "text",
+      "rotulo": "LRS 022",
+      "label": "LRS 022",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mes_ref",
+      "name": "mes_ref",
+      "tipo": "text",
+      "rotulo": "LRS 022",
+      "label": "LRS 022",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "cd_un_exec_serv",
+      "name": "cd_un_exec_serv",
+      "tipo": "text",
+      "rotulo": "LRS 022",
+      "label": "LRS 022",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_un_exec_serv",
+      "name": "no_un_exec_serv",
+      "tipo": "text",
+      "rotulo": "LRS 022",
+      "label": "LRS 022",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS022",
+      "name": "frmLRS022",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS022servComExe.jsp",
+  "codigo": "LRSV022"
+}

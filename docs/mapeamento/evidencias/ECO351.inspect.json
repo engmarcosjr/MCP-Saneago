@@ -1,0 +1,204 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "wTMAt1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade de Atendimento",
+      "label": "Unidade de Atendimento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "wTMAj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade de Atendimento",
+      "label": "Unidade de Atendimento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wTMA30-real",
+      "name": "_pggqj3pf1",
+      "tipo": "radio",
+      "rotulo": "Pequeno Gerador",
+      "label": "Pequeno Gerador",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMA40-real",
+      "name": "_pggqj3pf1",
+      "tipo": "radio",
+      "rotulo": "Grande Coletor",
+      "label": "Grande Coletor",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMA50-real",
+      "name": "_pggqj3pf1",
+      "tipo": "radio",
+      "rotulo": "Ambos",
+      "label": "Ambos",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMAb0-real",
+      "name": "_pg5kfgqm1",
+      "tipo": "radio",
+      "rotulo": "Aberta",
+      "label": "Aberta",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMAc0-real",
+      "name": "_pg5kfgqm1",
+      "tipo": "radio",
+      "rotulo": "Fechada",
+      "label": "Fechada",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMAd0-real",
+      "name": "_pg5kfgqm1",
+      "tipo": "radio",
+      "rotulo": "Cancelada",
+      "label": "Cancelada",
+      "valor_atual": "4",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMAe0-real",
+      "name": "_pg5kfgqm1",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wTMAj0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Inicial",
+      "label": "Data Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "wTMAn0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Final",
+      "label": "Data Final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wTMAj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAj0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAn0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wTMAu0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wTMAj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAj0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAn0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wTMAq0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wTMAu0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "RA",
+    "Data Crédito",
+    "Conta",
+    "Volume Crédito",
+    "Valor Crédito",
+    "Volume Coletado",
+    "Complemento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO351ListagemColetaOleo.zul",
+  "codigo": "ECO351"
+}

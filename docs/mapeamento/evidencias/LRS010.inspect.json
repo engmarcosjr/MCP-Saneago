@@ -1,0 +1,269 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "LRS010",
+  "inputs": [
+    {
+      "id": "v9UNp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código da DS",
+      "label": "Código da DS",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v9UNr7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Un.Organizacional",
+      "label": "Un.Organizacional",
+      "valor_atual": "V0011",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v9UNz-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Un.Organizacional",
+      "label": "Un.Organizacional",
+      "valor_atual": "SUPERV. DIST. SERV. ESTAT. E. M. AP. TEC.-ANÁPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v9UNk0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Equipe",
+      "label": "Equipe",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "v9UNl0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Equipe",
+      "label": "Equipe",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "v9UN61",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Placa da viatura",
+      "label": "Placa da viatura",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v9UNt1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v9UN_2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "RAs/Progs",
+      "label": "RAs/Progs",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "v9UN12",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "v9UNc2-real",
+      "name": "_pgtusi4s1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "true",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "v9UNd2-real",
+      "name": "_pgtusi4s1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "false",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "v9UNz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v9UNm0",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN71",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNt1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v9UN22",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN32",
+      "name": null,
+      "label": "Remover",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN42",
+      "name": null,
+      "label": "Pesquisar RAs",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN93",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNa3",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNd3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "v9UNz-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v9UNm0",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN71",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNt1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "v9UN22",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN32",
+      "name": null,
+      "label": "Remover",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN42",
+      "name": null,
+      "label": "Pesquisar RAs",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UN93",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNa3",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "v9UNd3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Equipe",
+    "Nome Responsável",
+    "Tipo Equipe",
+    "Categoria",
+    "Código",
+    "Placa",
+    "Marca",
+    "Modelo",
+    "Prioritário",
+    "RA/Prog",
+    "Endereço",
+    "Serviço"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS010DistribuicaoServico.zul",
+  "codigo": "LRS010"
+}

@@ -1,0 +1,56 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Informe o período",
+      "label": "Informe o período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Informe o período",
+      "label": "Informe o período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [
+    {
+      "id": null,
+      "name": null,
+      "label": "Consultar",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": null,
+      "name": null,
+      "label": "Consultar",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmJCJ015",
+      "name": "frmJCJ015",
+      "action": "PGT910Resultado.jsp",
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT910RelCustVeic.jsp",
+  "codigo": "PGTV910"
+}

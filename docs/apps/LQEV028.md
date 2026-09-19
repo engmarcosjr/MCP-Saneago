@@ -1,27 +1,44 @@
 # LQEV028 - Ocorrências nas Análises
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a ocorrências nas análises.
+Permite consultar análises laboratoriais e ocorrências por número/ano da amostra, sistema de esgotamento e período.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE028cadastroOcorrenciaAnalise.zul`
+
+## Campos e Filtros da Tela
+- **Número/Ano da Amostra** (input de texto, editável)
+- **/** (input de texto, editável, maxlength 4)
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Período** (input de data, editável)
+- **a** (input de data, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV028 (Ocorrências nas Análises)"
-- "Acessar o aplicativo de ocorrências nas análises"
+## Colunas e Grade de Resultados
+- descricao
+- conteúdo
+- Parâmetro
+- Ocorrência
+- Ponto de Coleta
+- Número/Ano Amostra
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV028`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar ocorrências nas análises no LQEV028"
+- "pesquisar análises laboratoriais por amostra e período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

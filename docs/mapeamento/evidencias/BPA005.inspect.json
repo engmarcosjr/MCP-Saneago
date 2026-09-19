@@ -1,0 +1,193 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "oMuZd3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "V0011",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 8
+    },
+    {
+      "id": "oMuZk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "SUPERV. DIST. SERV. ESTAT. E. M. AP. TEC.-ANÁPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oMuZe3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 10
+    },
+    {
+      "id": "oMuZ80-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oMuZ11-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Início",
+      "label": "Data Início",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oMuZ71-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Fim",
+      "label": "Data Fim",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oMuZy1",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Atividades",
+      "label": "Atividades",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oMuZk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ71-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZd1",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZf1",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZg1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZ22-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oMuZk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ11-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZ71-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oMuZd1",
+      "name": null,
+      "label": "Salvar",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZf1",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZg1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oMuZ22-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Nome",
+    "Período",
+    "Atividades",
+    "Situação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA005ReporteAtividadesTeletrabalho.zul",
+  "codigo": "BPA005"
+}

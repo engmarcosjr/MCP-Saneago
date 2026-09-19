@@ -1,0 +1,110 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Cadastra Inventário por Distrito",
+  "inputs": [
+    {
+      "id": "iYkLo",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iYkLq-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iYkLo0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iYkLq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iYkLc0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iYkLe0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "iYkLk0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iYkLq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iYkLc0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iYkLe0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "iYkLk0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Distrito",
+    "Dt. Exec",
+    "RA Corte Asf.",
+    "RA Orig.",
+    "Larg.",
+    "Compr.",
+    "Area",
+    "Bairro",
+    "Logr.",
+    "Qd.",
+    "Lote",
+    "Numero",
+    "E-mail"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS034ValidaRaCorteAsfalto.zul",
+  "codigo": "LRSV034"
+}

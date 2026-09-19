@@ -1,0 +1,343 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "w6hWe-real",
+      "name": "_pgna5pm11",
+      "tipo": "radio",
+      "rotulo": "Leitura",
+      "label": "Leitura",
+      "valor_atual": "leitura",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWf-real",
+      "name": "_pgna5pm11",
+      "tipo": "radio",
+      "rotulo": "Corte",
+      "label": "Corte",
+      "valor_atual": "corte",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hW59",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ocorrência",
+      "label": "Ocorrência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "w6hWn-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ocorrência",
+      "label": "Ocorrência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "w6hW60-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Retenção",
+      "label": "Tipo de Retenção",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWb0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Necessidade de Leitura",
+      "label": "Necessidade de Leitura",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWf0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Permissão de Uso",
+      "label": "Permissão de Uso",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWm0-real",
+      "name": "_pg9vc7fr",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "t",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWn0-real",
+      "name": "_pg9vc7fr",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "S",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWo0-real",
+      "name": "_pg9vc7fr",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hW89",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Orientação da Foto",
+      "label": "Orientação da Foto",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "w6hWw0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Orientação da Foto",
+      "label": "Orientação da Foto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWg1-real",
+      "name": "_pgfrj6nd1",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "t",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWh1-real",
+      "name": "_pgfrj6nd1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "s",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWi1-real",
+      "name": "_pgfrj6nd1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "n",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWo1-real",
+      "name": "_pgqn26rk1",
+      "tipo": "radio",
+      "rotulo": "Todas",
+      "label": "Todas",
+      "valor_atual": "t",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWp1-real",
+      "name": "_pgqn26rk1",
+      "tipo": "radio",
+      "rotulo": "Ativo",
+      "label": "Ativo",
+      "valor_atual": "s",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "w6hWq1-real",
+      "name": "_pgqn26rk1",
+      "tipo": "radio",
+      "rotulo": "Inativo",
+      "label": "Inativo",
+      "valor_atual": "n",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "w6hWn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hW60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hW43",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW53",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW63",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW73",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hWe3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "w6hWn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hW60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hWw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "w6hW43",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW53",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW63",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hW73",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "w6hWe3-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Descrição",
+    "Necessidade",
+    "Permissão",
+    "Foto",
+    "Contabilização",
+    "Situação",
+    "Retenção",
+    "Ações"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO204ControleOcorrencia.zul",
+  "codigo": "ECO204"
+}

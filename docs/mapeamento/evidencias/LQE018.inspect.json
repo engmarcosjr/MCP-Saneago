@@ -1,0 +1,184 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Cadastro de Ocorrência nas Amostras",
+  "inputs": [
+    {
+      "id": "eR5Kc",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Protocolo",
+      "label": "Protocolo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eR5Ke",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "eR5Kj-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Fase em que ocorreu",
+      "label": "Fase em que ocorreu",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eR5Ko-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ocorrência",
+      "label": "Ocorrência",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eR5Kt-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data da Ocorrência",
+      "label": "Data da Ocorrência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eR5Ky",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade de Frascos",
+      "label": "Quantidade de Frascos",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "eR5K20",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Encaminhamento",
+      "label": "Encaminhamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eR5Kj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5Ko-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5Kt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5K70",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5K80",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5Kb0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5Kd0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eR5Kj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5Ko-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5Kt-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eR5K70",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5K80",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5Kb0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "eR5Kd0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "descricao",
+    "conteúdo",
+    "Descrição",
+    "Fase",
+    "Qtde. Frascos",
+    "Data",
+    "Encaminhamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqe/LQE018cadOcoAmtr.zul",
+  "codigo": "LQE018"
+}

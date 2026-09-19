@@ -1,27 +1,36 @@
-# LRSV301 - Relação Mensal Duração Serviço Encerrado
+# LRSV301 - Relação de Serviços
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Relatório Operacional (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a relação mensal duração serviço encerrado.
+Emite a relação de serviços operacionais executados e pendentes por período de referência, distrito e tipo de serviço.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS301RelServico.zul`
+
+## Campos e Filtros da Tela
+- **Referência** (jTvZi-real: input de data, editável)
+- **a** (jTvZm-real: input de data, editável)
+- **Distrito** (jTvZt: input de texto, editável, maxlength: 6)
+- **Distrito** (jTvZv-real: input de texto, readonly)
+- **Serviço** (jTvZc1: input de texto, editável, maxlength: 5)
+- **Serviço** (jTvZh0-real: input de texto, readonly)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Sem Rotulo** (`jTvZi-btn`: a) — abridor de calendário/data (ignorado)
+- **Sem Rotulo** (`jTvZm-btn`: a) — abridor de calendário/data (ignorado)
+- **Sem Rotulo** (`jTvZv-btn`: a) — abridor de combobox/pesquisa (ignorado)
+- **Sem Rotulo** (`jTvZh0-btn`: a) — abridor de combobox/pesquisa (ignorado)
+- **Consultar** (`jTvZz0`: button) — emissão/consulta do relatório
+- **Cancelar** (`jTvZ_1`: button) — cancelamento/limpeza
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV301 (Relação Mensal Duração Serviço Encerrado)"
-- "Acessar o aplicativo de relação mensal duração serviço encerrado"
+## Observações de Segurança e Automação
+- Tela ZK de relatório de serviços (`LRS301RelServico.zul`).
+- Não contém botões de gravação ou escrita, apenas botões de consulta/emissão (`Consultar`) e cancelamento (`Cancelar`).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV301`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

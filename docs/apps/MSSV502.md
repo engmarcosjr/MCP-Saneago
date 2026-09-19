@@ -1,29 +1,35 @@
 # MSSV502 - Sistemas e Aplicações Cobol - Legado
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a sistemas e aplicações cobol - legado.
+Permite consultar funções e sistemas Cobol legados cadastrados no portal corporativo por nome, com opção de impressão.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS502ConsultaFuncaoCobol.zul`
+
+## Campos e Filtros da Tela
+- **Nome** (input de texto, editável)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `rKFL10`)
-- **Imprimir** (ID ZK: `rKFL20`)
-- **Cancelar** (ID ZK: `rKFL30`)
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV502 (Sistemas e Aplicações Cobol - Legado)"
-- "Acessar o aplicativo de sistemas e aplicações cobol - legado"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV502`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar funções Cobol legadas no MSSV502"
+- "pesquisar sistemas Cobol por nome"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Portal Legado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

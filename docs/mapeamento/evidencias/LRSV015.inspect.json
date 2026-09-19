@@ -1,0 +1,31 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Consulta Registros de Atendimentos - Esgoto:.",
+  "inputs": [
+    {
+      "id": "nu_ra",
+      "name": "nu_ra",
+      "tipo": "text",
+      "rotulo": "LRS 015",
+      "label": "LRS 015",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS015",
+      "name": "frmLRS015",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS015conOcoEsgRA.jsp",
+  "codigo": "LRSV015"
+}

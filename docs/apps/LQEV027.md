@@ -1,33 +1,40 @@
 # LQEV027 - Laudos Laboratoriais
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a laudos laboratoriais.
+Permite gerar e emitir laudos laboratoriais por tipo de laudo e protocolo, com opções de agrupar em PDF único.
 
-## Campos da Tela Inicial
-- **Protocolo:** (text): Editável
-- **/** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE027GeraLaudos.zul`
+
+## Campos e Filtros da Tela
+- **Tipo de Laudo** (combobox, somente leitura, valor atual "Novo Relatório de Ensaio")
+- **Protocolo** (input de texto, editável)
+- **/** (input de texto, editável, maxlength 4)
+- **/** (checkbox, editável, valor atual "on")
+- **Imprimir em PDF Único** (checkbox, editável, valor atual "on")
 
 ## Botões Disponíveis
-- **adicionar** (ID ZK: `t9eBr`)
-- **remover** (ID ZK: `t9eBs`)
-- **Sem Rotulo** (ID ZK: `t9eBz`)
-- **Sem Rotulo** (ID ZK: `t9eB_0`)
-- **Confirmar** (ID ZK: `t9eBj0`)
-- **Cancelar** (ID ZK: `t9eBk0`)
+- **adicionar**
+- **remover**
+- **Confirmar**
+- **Cancelar**
+*(Exibe também 4 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV027 (Laudos Laboratoriais)"
-- "Acessar o aplicativo de laudos laboratoriais"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV027`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "gerar laudos laboratoriais no LQEV027"
+- "emitir laudo de análise por protocolo no LQEV027"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

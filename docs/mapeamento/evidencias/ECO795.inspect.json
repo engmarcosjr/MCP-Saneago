@@ -1,0 +1,72 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO795 - Retorno Registro Atendimento",
+  "inputs": [
+    {
+      "id": "wU1Pd",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Número/DV",
+      "label": "Conta Número/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "wU1Pg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "wU1Pl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do R.A",
+      "label": "Número do R.A",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wU1Po",
+      "name": null,
+      "label": "Executar",
+      "tipo": "button"
+    },
+    {
+      "id": "wU1Pp",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wU1Po",
+      "name": null,
+      "label": "Executar",
+      "tipo": "button"
+    },
+    {
+      "id": "wU1Pp",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO795RetornoRegistroAtendimento.zul",
+  "codigo": "ECO795"
+}

@@ -1,0 +1,185 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO536 - Relação Para Revisão de Corte",
+  "inputs": [
+    {
+      "id": "r8CZv-real",
+      "name": "_pgtmtib71",
+      "tipo": "radio",
+      "rotulo": "Dif. Consumo",
+      "label": "Dif. Consumo",
+      "valor_atual": "D",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "r8CZ60",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "r8CZ80-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r8CZp0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 7
+    },
+    {
+      "id": "r8CZv6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 7
+    },
+    {
+      "id": "r8CZ_1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r8CZm1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo faturamento",
+      "label": "Grupo faturamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "r8CZw6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "r8CZ_2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "r8CZl2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Débito",
+      "label": "Valor Débito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 15
+    }
+  ],
+  "botoes": [
+    {
+      "id": "r8CZ80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZ_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZ_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZp2",
+      "name": null,
+      "label": "Próxima tela",
+      "tipo": "button"
+    },
+    {
+      "id": "r8CZq2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "r8CZ80-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZ_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZ_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "r8CZp2",
+      "name": null,
+      "label": "Próxima tela",
+      "tipo": "button"
+    },
+    {
+      "id": "r8CZq2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO536RelacaoParaRevisaoDeCorte.zul",
+  "codigo": "ECO536"
+}

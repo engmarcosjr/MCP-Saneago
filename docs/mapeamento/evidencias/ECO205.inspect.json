@@ -1,0 +1,94 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ConsultaHidrometro",
+  "inputs": [
+    {
+      "id": "rHITh-real",
+      "name": "_pgsp27a81",
+      "tipo": "radio",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "rHITi-real",
+      "name": "_pgsp27a81",
+      "tipo": "radio",
+      "rotulo": "Hidrômetro",
+      "label": "Hidrômetro",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "rHITq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "rHITr",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "rHITx",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Hidrômetro",
+      "label": "Hidrômetro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 12
+    }
+  ],
+  "botoes": [
+    {
+      "id": "rHIT00",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rHIT20",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "rHIT00",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "rHIT20",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO205ConsultaHidrometro.zul",
+  "codigo": "ECO205"
+}

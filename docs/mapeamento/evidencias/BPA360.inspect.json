@@ -1,0 +1,62 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "rTSW80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "rTSWu1-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "rTSWu1-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "rTSW_2",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "rTSW80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "rTSWu1-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "rTSWu1-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "rTSW_2",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA360AvaliacaoGestores.zul",
+  "codigo": "BPA360"
+}

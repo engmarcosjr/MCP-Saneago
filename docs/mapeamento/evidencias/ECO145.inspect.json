@@ -1,0 +1,95 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago - ECO145",
+  "inputs": [
+    {
+      "id": "j2xYk0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "j2xYj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "j2xY30-real",
+      "name": "_pgls5e2g",
+      "tipo": "radio",
+      "rotulo": "por código",
+      "label": "por código",
+      "valor_atual": "C",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "j2xY50-real",
+      "name": "_pgls5e2g",
+      "tipo": "radio",
+      "rotulo": "por nome",
+      "label": "por nome",
+      "valor_atual": "N",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "j2xYj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "j2xY80",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "j2xY90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "j2xYj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "j2xY80",
+      "name": null,
+      "label": "Executar Job",
+      "tipo": "button"
+    },
+    {
+      "id": "j2xY90",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO145OrgaoPublico.zul",
+  "codigo": "ECO145"
+}

@@ -1,27 +1,41 @@
 # BPAV433 - Histórico Funcional
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a histórico funcional.
+Permite consultar detalhadamente o histórico funcional do empregado, incluindo cargos, lotações, adicionais de insalubridade/periculosidade e emitir relatório.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA433HistoricoFuncional.zul`
+
+## Campos e Filtros da Tela
+- **Empregado** (input de texto, somente leitura, matrícula)
+- **Empregado** (input de texto, somente leitura, nome)
+- **A partir de** (combobox, editável)
+- **Sexo** (input de texto, somente leitura)
+- **Dt. Nasc.** (input de data, somente leitura)
+- *(Diversos outros campos cadastrais somente leitura e checkboxes informativos).*
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar atualização de dados pelo empregado**
+- **Consultar**
+- **Relatório**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV433 (Histórico Funcional)"
-- "Acessar o aplicativo de histórico funcional"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV433`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar histórico funcional do colaborador no BPAV433"
+- "emitir relatório de histórico funcional"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Consultas).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

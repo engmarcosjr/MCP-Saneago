@@ -1,0 +1,70 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "aSZDh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Macro/Condomínio",
+      "label": "Conta Macro/Condomínio",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aSZDi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Macro/Condomínio",
+      "label": "Conta Macro/Condomínio",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aSZDo2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aSZDs2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aSZDo2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aSZDs2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Contas Individuais Relacionadas a Conta do Condomínio",
+    "Pesquisar Conta(s):",
+    "Conta",
+    "Nome",
+    "Codificação",
+    "Complemento",
+    "Hidrômetro",
+    "Tipo da Ligação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO112RelacionaContasCondominio.zul",
+  "codigo": "ECO112"
+}

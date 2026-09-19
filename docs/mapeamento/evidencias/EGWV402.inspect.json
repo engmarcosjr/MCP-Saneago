@@ -1,0 +1,152 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Faturamento",
+  "inputs": [
+    {
+      "id": "nDgAs-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "nDgAu-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nDgAw",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "nDgAy",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "nDgA_0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "nDgA10-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "nDgA30-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Apenas contas individualizadas",
+      "label": "Apenas contas individualizadas",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "nDgAs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nDgAu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nDgA50",
+      "name": null,
+      "label": "Visualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "nDgA60",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "nDgA70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "nDgAs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nDgAu-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "nDgA50",
+      "name": null,
+      "label": "Visualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "nDgA60",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "nDgA70",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/egw/EGW402GraficoFaturamento.zul",
+  "codigo": "EGWV402"
+}

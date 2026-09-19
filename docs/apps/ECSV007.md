@@ -1,27 +1,33 @@
-# ECSV007 - Gerar Planilha
+# ECSV007 — Gerar Planilha
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** ECSV007
+- **Nome:** Gerar Planilha
+- **Módulo:** SISTEMA DE CONTROLE DE SERVIÇOS
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/ecs/ECS007GerarPlanilha.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de geração e consulta de planilha de controle de medição por distrito e lote com botões Consultar e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Distrito | text | Sim | `wXrIk` |
+| Distrito | text | Não | `wXrIm-real` |
+| Período de medição | combobox | Não | `wXrI80-real` |
+| Lote | combobox | Não | `wXrIg0-real` |
+| Fase Contratual | text | Não | `wXrIo0` |
+| Data Inicial da Fase Contratual | date | Não | `wXrIw0-real` |
+| Data Final da Fase Contratual | date | Não | `wXrI21-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a gerar planilha.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `wXrI61` | Consulta dados para geração da planilha de controle |
+| Cancelar | button | `wXrI81` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECSV007 (Gerar Planilha)"
-- "Acessar o aplicativo de gerar planilha"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECSV007`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `wXrIm-btn`) — acionador de busca do Distrito
+- `Sem Rotulo` (a, `wXrI80-btn`) — acionador do combobox Período de medição
+- `Sem Rotulo` (a, `wXrIg0-btn`) — acionador do combobox Lote

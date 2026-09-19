@@ -1,27 +1,44 @@
 # ECAV003 - Planejamento de Recadastramento
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a planejamento de recadastramento.
+Permite planejar e gerenciar o recadastramento comercial por cidade, empresa responsável, mês/ano de referência e status ativo.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eca/ECA003PlanejamentoRecadastramento.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (input de texto, editável, maxlength 4)
+- **Cidade** (input de texto, somente leitura)
+- **Empresa Responsável** (input de texto, editável)
+- **Empresa Responsável** (input de texto, somente leitura)
+- **Mês/Ano de Referência** (input de data, editável, maxlength 7)
+- **Sim** (radio button, editável, valor atual "S")
+- **Não** (radio button, editável, valor atual "N")
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Incluir**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECAV003 (Planejamento de Recadastramento)"
-- "Acessar o aplicativo de planejamento de recadastramento"
+## Colunas e Grade de Resultados
+- Cidade
+- Empresa Responsável
+- Mês/Ano Referência
+- Ativo
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECAV003`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar planejamento de recadastramento no ECAV003"
+- "incluir planejamento de recadastramento por cidade e empresa"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Cadastro Comercial).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

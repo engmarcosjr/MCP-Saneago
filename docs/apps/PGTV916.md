@@ -1,28 +1,35 @@
-# PGTV916 - Motoristas
+# PGTV916 — Motoristas
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV916
+- **Nome:** Motoristas
+- **Módulo:** Gestão Transporte > Relatórios
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT916RelatorioMotorista.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de relatório de motoristas com filtros por UO, tipo de autorização e formato de saída com botão Imprimir.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| U.O | text | Sim | `kCsWf` |
+| U.O | text | Não | `kCsWh-real` |
+| U.O | checkbox | Sim | `kCsW_0-real` |
+| Todos os motoristas cadastrados | radio | Sim | `kCsW50-real` (`_pgn61d1d`) |
+| Apenas os motoristas com autorização válida | radio | Sim | `kCsW70-real` (`_pgn61d1d`) |
+| Apenas os motoristas com autorização vencida | radio | Sim | `kCsW90-real` (`_pgn61d1d`) |
+| Autorizações a vencer nos próximos 2 meses | radio | Sim | `kCsWb0-real` (`_pgn61d1d`) |
+| PDF | radio | Sim | `kCsWh0-real` (`_pgf7ub8i`) |
+| Planilha | radio | Sim | `kCsWj0-real` (`_pgf7ub8i`) |
+| Não | radio | Sim | `kCsWp0-real` (`_pgvhdhj71`) |
+| Sim | radio | Sim | `kCsWr0-real` (`_pgvhdhj71`) |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a motoristas.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Imprimir | button | `kCsWu0` | Emite/imprime o relatório de motoristas conforme filtros |
+| Cancelar | button | `kCsWv0` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-
-## Botões Disponíveis
-- **Imprimir** (ID ZK: `pLtYu0`)
-- **Cancelar** (ID ZK: `pLtYv0`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV916 (Motoristas)"
-- "Acessar o aplicativo de motoristas"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV916`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `kCsWh-btn`) — acionador/consulta da U.O

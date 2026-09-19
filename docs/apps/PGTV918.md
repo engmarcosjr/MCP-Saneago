@@ -1,27 +1,32 @@
-# PGTV918 - Ordem de tráfego por motorista
+# PGTV918 — Ordem de tráfego por motorista
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV918
+- **Nome:** Ordem de tráfego por motorista
+- **Módulo:** Gestão Transporte > Relatórios
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT918OrdemTrafegoMotorista.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de relatório de ordem de tráfego por motorista com filtros por matrícula, período e situação com botão Emitir.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Matricula | text | Sim | `wDJJl0` |
+| Matricula | text | Não | `wDJJg-real` |
+| Período | date | Sim | `wDJJ_0-real` |
+| a | date | Sim | `wDJJ10-real` |
+| Filtro Situação | combobox | Sim | `wDJJ60-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a ordem de tráfego por motorista.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Emitir | button | `wDJJ90` | Emite relatório de ordem de tráfego por motorista |
+| Cancelar | button | `wDJJa0` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV918 (Ordem de tráfego por motorista)"
-- "Acessar o aplicativo de ordem de tráfego por motorista"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV918`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `wDJJg-btn`) — acionador/consulta da Matrícula
+- `Sem Rotulo` (a, `wDJJ_0-btn`) — acionador do datebox Período
+- `Sem Rotulo` (a, `wDJJ10-btn`) — acionador do datebox a
+- `Sem Rotulo` (a, `wDJJ60-btn`) — acionador do combobox Filtro Situação

@@ -1,0 +1,175 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "eKBCe-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Posto Serviço",
+      "label": "Posto Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eKBCo",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eKBCq-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eKBCi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motorista",
+      "label": "Motorista",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "eKBC_0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motorista",
+      "label": "Motorista",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eKBCm0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Licença",
+      "label": "Licença",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eKBCu0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cód. Veículo",
+      "label": "Cód. Veículo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eKBC11",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Placa Veículo",
+      "label": "Placa Veículo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eKBCe-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBCq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBC_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBCo0",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    },
+    {
+      "id": "eKBCw0",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    },
+    {
+      "id": "eKBC31",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eKBCe-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBCq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBC_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eKBCo0",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    },
+    {
+      "id": "eKBCw0",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    },
+    {
+      "id": "eKBC31",
+      "name": null,
+      "label": "Validar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT504OrdemTrafegoOff.zul",
+  "codigo": "PGTV504"
+}

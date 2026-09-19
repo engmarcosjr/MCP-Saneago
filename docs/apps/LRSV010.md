@@ -1,40 +1,56 @@
-# LRSV010 - Distribuição de Serviço
+# LRSV010 — Distribuição de Serviço
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV010
+- **Nome:** Distribuição de Serviço
+- **Módulo:** Atendimento ao Publico > Cadastro
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS010DistribuicaoServico.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `possui_escrita`
+- **Motivo:** Tela mista de distribuição de serviços com botões de escrita e manipulação de registros (Adicionar, Remover, Incluir, Pesquisar RAs, Consultar, Cancelar).
 
-## Tipo
-Escrita (Gated/Confirmar)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Código da DS | text | Sim | `wC8Wp` |
+| Un.Organizacional | text | Sim | `wC8Wr7` |
+| Un.Organizacional | text | Não (readonly) | `wC8Wz-real` |
+| Equipe | text | Sim | `wC8Wk0` |
+| Equipe | text | Não (readonly) | `wC8Wl0` |
+| Placa da viatura | text | Sim | `wC8W61` |
+| Data | date | Sim | `wC8Wt1-real` |
+| RAs/Progs | text | Sim | `wC8W_2` |
+| / | text | Sim | `wC8W12` |
+| Sim | radio | Sim | `wC8Wc2-real` (name: `_pgbhr10h`) |
+| Não | radio | Sim | `wC8Wd2-real` (name: `_pgbhr10h`) |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a distribuição de serviço.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Adicionar | button | `wC8W22` | Adiciona serviço ou RA à distribuição da equipe |
+| Remover | button | `wC8W32` | Remove serviço ou RA selecionado da distribuição |
+| Pesquisar RAs | button | `wC8W42` | Abre pesquisa e seleção de RAs disponíveis |
+| Consultar | button | `wC8W93` | Executa consulta da distribuição de serviço |
+| Incluir | button | `wC8Wa3` | Grava e inclui a nova distribuição de serviço |
+| Cancelar | button | `wC8Wd3` | Cancela a operação e limpa o formulário |
 
-## Campos da Tela Inicial
-- **Código da DS:** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Somente Leitura
-- **Placa da viatura:** (text): Editável
-- **Sem Rotulo** (date): Editável
-- **/** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `wC8Wz-btn`, tipo: `a`) — abridor de lookup Un.Organizacional.
+- `Sem Rotulo` (id: `wC8Wm0`, tipo: `button`) — botão auxiliar de seleção de equipe.
+- `Sem Rotulo` (id: `wC8W71`, tipo: `button`) — botão auxiliar de seleção de viatura.
+- `Sem Rotulo` (id: `wC8Wt1-btn`, tipo: `a`) — abridor de datepicker Data.
 
-## Botões Disponíveis
-- **Sem Rotulo** (ID ZK: `cVyUm0`)
-- **Sem Rotulo** (ID ZK: `cVyU71`)
-- **Adicionar** (ID ZK: `cVyU22`)
-- **Remover** (ID ZK: `cVyU32`)
-- **Pesquisar RAs** (ID ZK: `cVyU42`)
-- **Consultar** (ID ZK: `cVyU93`)
-- **Incluir** (ID ZK: `cVyUa3`)
-- **Cancelar** (ID ZK: `cVyUd3`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV010 (Distribuição de Serviço)"
-- "Acessar o aplicativo de distribuição de serviço"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV010`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- Equipe
+- Nome Responsável
+- Tipo Equipe
+- Categoria
+- Código
+- Placa
+- Marca
+- Modelo
+- Prioritário
+- RA/Prog
+- Endereço
+- Serviço

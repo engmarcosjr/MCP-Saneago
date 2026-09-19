@@ -1,0 +1,110 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Solicitar Titularidade",
+  "inputs": [
+    {
+      "id": "c3QIj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "c3QIk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "c3QIq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do RA",
+      "label": "Número do RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    }
+  ],
+  "botoes": [
+    {
+      "id": "c3QIu",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "c3QIv",
+      "name": null,
+      "label": "Solicitar",
+      "tipo": "button"
+    },
+    {
+      "id": "c3QIy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "c3QIu",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "c3QIv",
+      "name": null,
+      "label": "Solicitar",
+      "tipo": "button"
+    },
+    {
+      "id": "c3QIy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Data/Hora de Solicitação",
+    "Nome Titular",
+    "Tipo Pessoa",
+    "CPF/CNPJ Titular",
+    "Início Contrato",
+    "Motivo",
+    "Situação",
+    "Esg. Diferenciado",
+    "Categoria",
+    "Subcategoria",
+    "Economia",
+    "Unidade",
+    "Consumo Estimado m³/mês",
+    "Peso (%)",
+    "Documento",
+    "Referência",
+    "CPF/CNPJ",
+    "Valor",
+    "Parcelamento",
+    "Financiamento",
+    "ATENÇÃO",
+    "Descrição",
+    "Valor Original",
+    "Valor Deflacionado",
+    "Detalhamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO010Titularidade.zul",
+  "codigo": "ECOV010"
+}

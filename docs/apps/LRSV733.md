@@ -1,27 +1,30 @@
-# LRSV733 - Atendimento Por Cidade
+# LRSV733 — Atendimento Por Cidade
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
 
-## Tipo
-Leitura (Livre)
+- **Código:** LRSV733
+- **Nome:** Atendimento Por Cidade
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS733relAtendCid.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de relatório de serviços atendidos por cidade e período, sem botões de escrita identificados na carga inicial.
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a atendimento por cidade.
+## Campos de Entrada (Filtros de Parâmetros)
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+| Rótulo / Label | ID | Name | Tipo | Editável | Readonly | Maxlength | Valor Padrão |
+|---|---|---|---|---|---|---|---|
+| Periodo | `dataInicio` | `dataInicio` | `text` | Sim | Não | 10 | `""` |
+| Periodo | `dataFim` | `dataFim` | `text` | Sim | Não | 10 | `""` |
+| Cidade | `codigoCidade` | `codigoCidade` | `text` | Sim | Não | 7 | `""` |
+| Cidade | `nomeCidade` | `nomeCidade` | `text` | Não | Sim | 40 | `""` |
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+## Botões e Ações
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV733 (Atendimento Por Cidade)"
-- "Acessar o aplicativo de atendimento por cidade"
+Nenhum botão detectado no DOM inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV733`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Decisões de Mapeamento e Segurança
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+- **Formulário:** `frmLRS733` (POST).
+- **Classificação:** `somente_leitura` para emissão de relatório de serviços atendidos por município.

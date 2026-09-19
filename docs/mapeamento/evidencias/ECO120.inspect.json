@@ -1,0 +1,129 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Consulta de Logradouros",
+  "inputs": [
+    {
+      "id": "zLDKx1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "zLDKi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "zLDKy1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "zLDK60-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "zLDKs0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome do Logradouro",
+      "label": "Nome do Logradouro",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 35
+    }
+  ],
+  "botoes": [
+    {
+      "id": "zLDKi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zLDK60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zLDKw0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zLDKx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "zLDKi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zLDK60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zLDKw0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zLDKx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Cód. Bairro",
+    "Bairro",
+    "Cód. Logradouro",
+    "Tipo",
+    "Logradouro",
+    "CEP",
+    "Superintendência",
+    "Regional",
+    "Distrito",
+    "ECO154"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO120ConsultaLogradouro.zul",
+  "codigo": "ECO120"
+}

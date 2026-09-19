@@ -1,28 +1,31 @@
-# LRSV019 - Índices do SIPSAP
+# LRSV019 — Índices do SIPSAP
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV019
+- **Nome:** Índices do SIPSAP
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS019IndiceSIPSAP.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela mista de geração e emissão de relatório de índices do SIPSAP por tipo e mês/ano de referência com botão Gerar Relatório.
 
-## Tipo
-Escrita (Gated/Confirmar)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Tipo de Relatório | combobox | Sim | `eK6Yb-real` |
+| Mês/Ano referência | date | Sim | `eK6Yi-real` |
+| Completo | radio | Sim | `eK6Yo-real` (name: `_pgje2dv9`) |
+| Desagregado | radio | Sim | `eK6Yp-real` (name: `_pgje2dv9`) |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a índices do sipsap.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Gerar Relatório | button | `eK6Ys` | Gera e emite o relatório de índices do SIPSAP |
 
-## Campos da Tela Inicial
-- **Mês/Ano referência:** (date): Editável
-- **Tipo de Relatório:** (combobox): Somente Leitura
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `eK6Yb-btn`, tipo: `a`) — abridor de combobox Tipo de Relatório.
+- `Sem Rotulo` (id: `eK6Yi-btn`, tipo: `a`) — abridor de datepicker Mês/Ano referência.
 
-## Botões Disponíveis
-- **Gerar Relatório** (ID ZK: `zQpOs`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV019 (Índices do SIPSAP)"
-- "Acessar o aplicativo de índices do sipsap"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV019`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+Nenhuma coluna tabular identificada na tela inicial.

@@ -1,0 +1,154 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "PGT913",
+  "inputs": [
+    {
+      "id": "wNFUn-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wNFUp-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "até",
+      "label": "até",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wNFUv",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Placa do Veículo",
+      "label": "Placa do Veículo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "wNFUx-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Placa do Veículo",
+      "label": "Placa do Veículo",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wNFU20",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Lista de Placas",
+      "label": "Lista de Placas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wNFUn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wNFUp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wNFUw",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFU30",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUj0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUk0",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wNFUn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wNFUp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wNFUw",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFU30",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUj0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUk0",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "wNFUl0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT913RelatorioMovimentacaoVeiculo.zul",
+  "codigo": "PGT913"
+}

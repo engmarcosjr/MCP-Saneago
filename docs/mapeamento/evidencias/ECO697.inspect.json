@@ -1,0 +1,72 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Consulta Valores de Documentnos",
+  "inputs": [
+    {
+      "id": "lWaJh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento",
+      "label": "Número do Documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [
+    {
+      "id": "lWaJk",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lWaJl",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "lWaJn-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "lWaJk",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "lWaJl",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "lWaJn-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Doc. Fiscal\n\t\nConta\n\t\nReferência\n\t\nSituação\n\t\nData Venc.\n\t\nBanco\n\t\nData Pgto\n\t\nValor",
+    "Doc. Fiscal",
+    "Conta",
+    "Referência",
+    "Situação",
+    "Data Venc.",
+    "Banco",
+    "Data Pgto",
+    "Valor"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO697ConsultaDadosDocumento.zul",
+  "codigo": "ECO697"
+}

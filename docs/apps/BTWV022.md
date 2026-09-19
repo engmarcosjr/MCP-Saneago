@@ -1,27 +1,38 @@
 # BTWV022 - Pedidos Por Empregado
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a pedidos por empregado.
+Permite consultar pedidos de treinamento realizados por empregado dentro de um período específico.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/btw/BTW022PedidoEmpregado.zul`
+
+## Campos e Filtros da Tela
+- **Período** (input de data, editável)
+- **a** (input de data, editável)
+- **Empregado** (input de texto, editável)
+- **Empregado** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Voltar**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BTWV022 (Pedidos Por Empregado)"
-- "Acessar o aplicativo de pedidos por empregado"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BTWV022`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar pedidos de treinamento no BTWV022"
+- "pesquisar solicitações de cursos por empregado"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Treinamento Web -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

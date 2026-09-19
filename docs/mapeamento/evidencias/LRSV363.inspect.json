@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Atendimento:.",
+  "inputs": [
+    {
+      "id": "dataInicial",
+      "name": "dataInicial",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFinal",
+      "name": "dataFinal",
+      "tipo": "text",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoUnidadeOrganizacional",
+      "name": "codigoUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "nomeUnidadeOrganizacional",
+      "name": "nomeUnidadeOrganizacional",
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS363",
+      "name": "frmLRS363",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS363relMensal.jsp",
+  "codigo": "LRSV363"
+}

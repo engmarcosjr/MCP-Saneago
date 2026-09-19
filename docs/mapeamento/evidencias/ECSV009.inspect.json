@@ -1,0 +1,223 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Gerenciar Planilha de Controle",
+  "inputs": [
+    {
+      "id": "iSNAj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iSNAl-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iSNA70-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iSNAf0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de medição",
+      "label": "Período de medição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iSNAo0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iSNAw0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "Todas as geradas",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iSNA51-real",
+      "name": "_pgd3a0fm1",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iSNA61-real",
+      "name": "_pgd3a0fm1",
+      "tipo": "radio",
+      "rotulo": "XLSX",
+      "label": "XLSX",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iSNAr1-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Aprovação",
+      "label": "Aprovação",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iSNAl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNA70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAo0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAa1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iSNAd1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "iSNAe1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iSNAl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNA70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAo0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAw0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iSNAa1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iSNAd1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "iSNAe1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Contrato",
+    "Distrito",
+    "Geração",
+    "Aprovação",
+    "N° Lote",
+    "N° Fornecedor",
+    "Código",
+    "Nome",
+    "Período de Medição",
+    "Data e Hora",
+    "Matrícula",
+    "Situação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS009GerenciarPlanilhaControle.zul",
+  "codigo": "ECSV009"
+}

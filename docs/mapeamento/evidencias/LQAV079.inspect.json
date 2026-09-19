@@ -1,0 +1,62 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "SANEAGO - SANEAGO - Página de erro padrão",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "kFjQ0-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQ0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQa-exp",
+      "name": null,
+      "label": "Expand",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQd",
+      "name": null,
+      "label": "ok",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kFjQ0-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQ0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQa-exp",
+      "name": null,
+      "label": "Expand",
+      "tipo": "submit"
+    },
+    {
+      "id": "kFjQd",
+      "name": null,
+      "label": "ok",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA079iqaAnual.jsp",
+  "codigo": "LQAV079"
+}

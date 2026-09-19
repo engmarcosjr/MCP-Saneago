@@ -1,0 +1,196 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Consulta de Amostras",
+  "inputs": [
+    {
+      "id": "jHSRi2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. do Laboratório",
+      "label": "U.O. do Laboratório",
+      "valor_atual": "V0011",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "jHSRj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. do Laboratório",
+      "label": "U.O. do Laboratório",
+      "valor_atual": "SUPERV. DIST. SERV. ESTAT. E. M. AP. TEC.-ANÁPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jHSRj2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema de Tratamento",
+      "label": "Sistema de Tratamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "jHSR70-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema de Tratamento",
+      "label": "Sistema de Tratamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jHSRt0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Ponto de Coleta",
+      "label": "Ponto de Coleta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jHSR_1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período de Agendamento",
+      "label": "Período de Agendamento",
+      "valor_atual": "11/08/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jHSR21-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "11/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jHSRj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSRt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR61",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jHSR71",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "jHSRm1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jHSRj-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSRt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR_1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jHSR61",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jHSR71",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "jHSRm1-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Data",
+    "Número/Ano",
+    "ETE",
+    "Ponto de Coleta",
+    "N° Ocorrências",
+    "Ir para Agendamento",
+    "Ir para Recebimento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqe/LQE025ConsultaAmostra.zul",
+  "codigo": "LQEV025"
+}

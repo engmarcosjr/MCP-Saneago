@@ -1,0 +1,104 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECN007 Consultar Protesto",
+  "inputs": [
+    {
+      "id": "eT1Zl-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Filtros",
+      "label": "Filtros",
+      "valor_atual": "CPF/CNPJ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "eT1Zv-real",
+      "name": "_pgvs4sle1",
+      "tipo": "radio",
+      "rotulo": "Pessoa Física",
+      "label": "Pessoa Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eT1Zx-real",
+      "name": "_pgvs4sle1",
+      "tipo": "radio",
+      "rotulo": "Pessoa Jurídica",
+      "label": "Pessoa Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eT1Z30",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eT1Zl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eT1Zx0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eT1Zy0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eT1Zl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "eT1Zx0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eT1Zy0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Conta",
+    "Referência",
+    "Documento",
+    "Valor",
+    "Data de Envio",
+    "Situação Atual",
+    "Consultar Documento",
+    "Tratativa"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecn/ECN007ConsultarProtesto.zul",
+  "codigo": "ECNV007"
+}

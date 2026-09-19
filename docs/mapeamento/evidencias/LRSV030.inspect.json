@@ -1,0 +1,129 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "pNbMo3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Solicitação",
+      "label": "Serviço Solicitação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pNbMh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Solicitação",
+      "label": "Serviço Solicitação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pNbMp3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Resposta",
+      "label": "Serviço Resposta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pNbM40-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Resposta",
+      "label": "Serviço Resposta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pNbMh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pNbM40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pNbMr0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pNbMv0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pNbMw0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pNbMh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pNbM40-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pNbMr0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pNbMv0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "pNbMw0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Descrição",
+    "Data Vínculo",
+    "Remover",
+    "Serviço Solicitação",
+    "Serviço Resposta",
+    "Matrícula Vínculo",
+    "Data Cancelamento",
+    "Matrícula Cancelamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS030ServicoRespostaSolicitacao.zul",
+  "codigo": "LRSV030"
+}

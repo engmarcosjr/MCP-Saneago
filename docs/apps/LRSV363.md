@@ -1,27 +1,30 @@
-# LRSV363 - Relação Mensal de Serviços Atendidos
+# LRSV363 — Relação Mensal de Serviços Atendidos
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
 
-## Tipo
-Leitura (Livre)
+- **Código:** LRSV363
+- **Nome:** Relação Mensal de Serviços Atendidos
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS363relMensal.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de emissão/consulta de relatório de serviços atendidos por período e unidade, sem botões de escrita identificados na carga inicial.
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a relação mensal de serviços atendidos.
+## Campos de Entrada (Filtros de Parâmetros)
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+| Rótulo / Label | ID | Name | Tipo | Editável | Readonly | Maxlength | Valor Padrão |
+|---|---|---|---|---|---|---|---|
+| Período | `dataInicial` | `dataInicial` | `text` | Sim | Não | 10 | `""` |
+| Período | `dataFinal` | `dataFinal` | `text` | Sim | Não | 10 | `""` |
+| Unidade | `codigoUnidadeOrganizacional` | `codigoUnidadeOrganizacional` | `text` | Sim | Não | 9 | `""` |
+| Unidade | `nomeUnidadeOrganizacional` | `nomeUnidadeOrganizacional` | `text` | Não | Sim | - | `""` |
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+## Botões e Ações
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV363 (Relação Mensal de Serviços Atendidos)"
-- "Acessar o aplicativo de relação mensal de serviços atendidos"
+Nenhum botão detectado no DOM inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV363`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Decisões de Mapeamento e Segurança
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+- **Formulário:** `frmLRS363` (POST).
+- **Classificação:** `somente_leitura` para consulta e emissão de relatório mensal.

@@ -1,0 +1,190 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Erros Medição",
+  "inputs": [
+    {
+      "id": "vX5Vi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "vX5Vk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vX5V00",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "vX5V70-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Período de Medição",
+      "label": "Período de Medição",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vg0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Leitura",
+      "label": "Leitura",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vi0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Retidas",
+      "label": "Retidas",
+      "valor_atual": "7",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vk0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Revisao de Leitura",
+      "label": "Revisao de Leitura",
+      "valor_atual": "5",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vm0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Análise Crítica",
+      "label": "Análise Crítica",
+      "valor_atual": "9",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vo0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Corte",
+      "label": "Corte",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vq0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Revisão de Corte",
+      "label": "Revisão de Corte",
+      "valor_atual": "4",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "vX5Vs0-real",
+      "name": "_pg7r4595",
+      "tipo": "radio",
+      "rotulo": "Religação",
+      "label": "Religação",
+      "valor_atual": "6",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "vX5Vk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vX5V70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vX5Vw0",
+      "name": null,
+      "label": "Avançar",
+      "tipo": "button"
+    },
+    {
+      "id": "vX5Vx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "vX5Vk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vX5V70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "vX5Vw0",
+      "name": null,
+      "label": "Avançar",
+      "tipo": "button"
+    },
+    {
+      "id": "vX5Vx0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Ligação",
+    "Hidrômetro",
+    "Erro",
+    "Pesquisar Conta(s):",
+    "Conta"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecs/ECS006ApontamentoErroMedicao.zul",
+  "codigo": "ECS006"
+}

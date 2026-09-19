@@ -1,28 +1,35 @@
 # MSSV500 - Usuário com Acesso Especial - BZ103
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a usuário com acesso especial - bz103.
+Permite consultar usuários com autorização de acesso especial a funções legadas (BZ103).
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS500ConsultaAcessoEspecial.zul`
+
+## Campos e Filtros da Tela
+- **Função** (input de texto, editável)
+- **Função** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `dExIz`)
-- **Cancelar** (ID ZK: `dExI00`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV500 (Usuário com Acesso Especial - BZ103)"
-- "Acessar o aplicativo de usuário com acesso especial - bz103"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV500`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar acessos especiais no MSSV500"
+- "pesquisar usuários autorizados à função BZ103"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Portal Legado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

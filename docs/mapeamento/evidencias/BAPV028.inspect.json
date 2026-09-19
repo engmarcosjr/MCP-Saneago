@@ -1,0 +1,411 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "BAP028",
+  "inputs": [
+    {
+      "id": "oYmQu3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 9
+    },
+    {
+      "id": "oYmQj-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQ71-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência Serviço",
+      "label": "Referência Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQb1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Emissão",
+      "label": "Data Emissão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQk1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Nota Fiscal",
+      "label": "Número Nota Fiscal",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQo1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Série Nota Fiscal",
+      "label": "Série Nota Fiscal",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "oYmQs1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor",
+      "label": "Valor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQz1-real",
+      "name": "_pg9fb6en",
+      "tipo": "radio",
+      "rotulo": "Física",
+      "label": "Física",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQ_2-real",
+      "name": "_pg9fb6en",
+      "tipo": "radio",
+      "rotulo": "Jurídica",
+      "label": "Jurídica",
+      "valor_atual": "J",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQ32",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 18
+    },
+    {
+      "id": "oYmQw4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Abrir Nota",
+      "label": "Abrir Nota",
+      "valor_atual": "ACEITA",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQa5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Abrir Nota",
+      "label": "Abrir Nota",
+      "valor_atual": "ACEITA",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQp5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Abrir Nota",
+      "label": "Abrir Nota",
+      "valor_atual": "ACEITA",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQ36",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Abrir Nota",
+      "label": "Abrir Nota",
+      "valor_atual": "ACEITA",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oYmQi6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Abrir Nota",
+      "label": "Abrir Nota",
+      "valor_atual": "ACEITA",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oYmQ30",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQd0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQ71-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oYmQb1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oYmQy4",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ_5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQc5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQe5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQr5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQt5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ56",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ76",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQk6",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQm6",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ62-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQb4-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQb4-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQh4",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oYmQ30",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQd0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQ71-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oYmQb1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oYmQy4",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ_5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQc5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQe5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQr5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQt5",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ56",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ76",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQk6",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQm6",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oYmQ62-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQb4-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQb4-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "oYmQh4",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nome",
+    "Idade",
+    "Cálculo IRRF",
+    "Referência Pagamento",
+    "Referência Serviço",
+    "Número da Nota",
+    "Série da Nota",
+    "Data Emissão Nota",
+    "Data Envio Nota",
+    "Valor da Nota por Dependente",
+    "Valor Pago por Dependente",
+    "Status",
+    "Justif. Recusa",
+    "Abrir Nota"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bap/BAP028EnviaNotaDependente.zul",
+  "codigo": "BAPV028"
+}

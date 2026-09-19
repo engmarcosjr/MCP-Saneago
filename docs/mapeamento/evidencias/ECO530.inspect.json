@@ -1,0 +1,141 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO530 - Cadastro e Negociação de Irregularidade",
+  "inputs": [
+    {
+      "id": "z4kKg-real",
+      "name": "_pghs6kun1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "z4kKh-real",
+      "name": "_pghs6kun1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "z4kKu3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Órgão Pagador",
+      "label": "Órgão Pagador",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "z4kK12-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Órgão Pagador",
+      "label": "Órgão Pagador",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "z4kKb3-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "z4kKd3-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "até",
+      "label": "até",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [
+    {
+      "id": "z4kK12-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKb3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKd3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKh3",
+      "name": null,
+      "label": "Gerar",
+      "tipo": "button"
+    },
+    {
+      "id": "z4kKi3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "z4kK12-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKb3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKd3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "z4kKh3",
+      "name": null,
+      "label": "Gerar",
+      "tipo": "button"
+    },
+    {
+      "id": "z4kKi3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO530DebitosPorOrgaoPagador.zul",
+  "codigo": "ECO530"
+}

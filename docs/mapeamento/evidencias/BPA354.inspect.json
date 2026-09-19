@@ -1,0 +1,108 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "wAoT06",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "T0002",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "wAoTk-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wAoTq0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Referência Avaliação",
+      "label": "Referência Avaliação",
+      "valor_atual": "12/2025",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wAoTk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wAoTq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wAoT33",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wAoT93",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "wAoTb3",
+      "name": null,
+      "label": "Ver Histórico de Avaliações",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wAoTk-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wAoTq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wAoT33",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wAoT93",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "wAoTb3",
+      "name": null,
+      "label": "Ver Histórico de Avaliações",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA354AvaliacaoDesempenho.zul",
+  "codigo": "BPA354"
+}

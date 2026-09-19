@@ -1,0 +1,135 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "mG5Lg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Conta/DV",
+      "label": "Número Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "mG5Lo-real",
+      "name": "_pgnf4nul1",
+      "tipo": "radio",
+      "rotulo": "Parcelamento",
+      "label": "Parcelamento",
+      "valor_atual": "P",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "mG5Lp-real",
+      "name": "_pgnf4nul1",
+      "tipo": "radio",
+      "rotulo": "Financiamento",
+      "label": "Financiamento",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "mG5Lu-real",
+      "name": "_pgs3dssn1",
+      "tipo": "radio",
+      "rotulo": "Resumida",
+      "label": "Resumida",
+      "valor_atual": "R",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "mG5Lv-real",
+      "name": "_pgs3dssn1",
+      "tipo": "radio",
+      "rotulo": "Completo",
+      "label": "Completo",
+      "valor_atual": "C",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "mG5Ly",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "mG5L_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "mG5Ly",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "mG5L_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Data Início Vínculo",
+    "Data Fim Vínculo",
+    "Vínculo",
+    "Detalhar",
+    "Origem",
+    "Situação",
+    "Número",
+    "Data Negociação",
+    "Valor (R$)",
+    "Parcela(s)",
+    "Negociado",
+    "Entrada",
+    "Valor",
+    "Quantidade",
+    "Emitida(s)",
+    "Aberta(s)",
+    "Baixada(s)",
+    "Cancelada(s)",
+    "Mat. Responsável",
+    "Ref. Contábil",
+    "N° Fat. Avulso",
+    "Taxa Juro (%)",
+    "Histórico",
+    "Multa",
+    "At. Monetária",
+    "Juros",
+    "Lanç. Futuro",
+    "Desconto",
+    "Correção",
+    "N° Conta",
+    "N° Documento Fiscal",
+    "Mês/Ano",
+    "N° Parcela",
+    "Cód. Lançamento",
+    "Mês Ano",
+    "Descrição",
+    "Cancelado",
+    "Mat. Cancelamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO505ConsultaParcelamento.zul",
+  "codigo": "ECO505"
+}

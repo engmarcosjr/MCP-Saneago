@@ -1,30 +1,30 @@
-# PGTV511 - Empregados Ordem de Tráfego
+# PGTV511 — Empregados Ordem de Tráfego
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV511
+- **Nome:** Empregados Ordem de Tráfego
+- **Módulo:** Gestão Transporte > Ordem Tráfego
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT511EmpregadoOrdemTrafego.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `possui_escrita`
+- **Motivo:** Tela de cadastro e associação de empregados a ordens de tráfego com botão Incluir.
 
-## Tipo
-Escrita (Gated/Confirmar)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Ordem de Tráfego | text | Não | `oT3Hc` |
+| Ordem de Tráfego | text | Não | `oT3Hd` |
+| Empregado | text | Sim | `oT3Hp0` |
+| Empregado | text | Não | `oT3Hl-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a empregados ordem de tráfego.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Close | submit | `oT3H0-close` | Fecha a janela modal de empregados |
+| Incluir | button | `oT3Hc0` | Inclui/associa empregado na ordem de tráfego |
+| Cancelar | button | `oT3He0` | Cancela operação / fecha janela |
 
-## Campos da Tela Inicial
-- **Ordem de Tráfego:** (text): Somente Leitura
-- **Ordem de Tráfego:** (text): Somente Leitura
-- **Sem Rotulo** (text): Editável
-
-## Botões Disponíveis
-- **Incluir** (ID ZK: `v8jMc0`)
-- **Cancelar** (ID ZK: `v8jMe0`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV511 (Empregados Ordem de Tráfego)"
-- "Acessar o aplicativo de empregados ordem de tráfego"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV511`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `oT3Hl-btn`) — acionador de busca do Empregado
+- `Sem Rotulo` (submit, `oT3H20-a`) — submit auxiliar da grid/tabela

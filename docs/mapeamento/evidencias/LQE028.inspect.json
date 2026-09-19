@@ -1,0 +1,148 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Consulta de Análises",
+  "inputs": [
+    {
+      "id": "kFLRd",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número/Ano da Amostra",
+      "label": "Número/Ano da Amostra",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "kFLRf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "kFLRg1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "kFLR60-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "kFLRr0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "kFLRt0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "kFLRs",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "kFLR60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRr0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRy0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "kFLRs",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "kFLR60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRr0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRt0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "kFLRy0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "descricao",
+    "conteúdo",
+    "Parâmetro",
+    "Ocorrência",
+    "Ponto de Coleta",
+    "Número/Ano Amostra"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqe/LQE028cadastroOcorrenciaAnalise.zul",
+  "codigo": "LQE028"
+}

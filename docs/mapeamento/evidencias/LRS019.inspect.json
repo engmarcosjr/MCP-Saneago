@@ -1,0 +1,95 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "new page title",
+  "inputs": [
+    {
+      "id": "tDbNb-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Relatório",
+      "label": "Tipo de Relatório",
+      "valor_atual": "Serviços Executados",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tDbNi-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano referência",
+      "label": "Mês/Ano referência",
+      "valor_atual": "set/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tDbNo-real",
+      "name": "_pgu07ibn",
+      "tipo": "radio",
+      "rotulo": "Completo",
+      "label": "Completo",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "tDbNp-real",
+      "name": "_pgu07ibn",
+      "tipo": "radio",
+      "rotulo": "Desagregado",
+      "label": "Desagregado",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "tDbNb-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tDbNi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tDbNs",
+      "name": null,
+      "label": "Gerar Relatório",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "tDbNb-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tDbNi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "tDbNs",
+      "name": null,
+      "label": "Gerar Relatório",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS019IndiceSIPSAP.zul",
+  "codigo": "LRS019"
+}

@@ -1,0 +1,102 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO592 - Negociação de Débito Particular",
+  "inputs": [
+    {
+      "id": "eBkZi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "eBkZj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "eBkZn",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ",
+      "label": "CPF/CNPJ",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eBkZq-real",
+      "name": "_pgg64ueg",
+      "tipo": "radio",
+      "rotulo": "Pessoa Física",
+      "label": "Pessoa Física",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "eBkZr-real",
+      "name": "_pgg64ueg",
+      "tipo": "radio",
+      "rotulo": "Pessoa Jurídica",
+      "label": "Pessoa Jurídica",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "eBkZz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eBkZ_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "eBkZz",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "eBkZ_0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Conta",
+    "Cliente",
+    "Data Inicio Vínculo",
+    "Data Fim Vínculo",
+    "CPF/CNPJ",
+    "Data Início Vínculo",
+    "Vínculo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO592NegociaDebitoParticular.zul",
+  "codigo": "ECO592"
+}

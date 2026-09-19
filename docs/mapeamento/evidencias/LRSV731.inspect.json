@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatorio de Serviços Atendidos Pelo Atendente num\n  Periodo:.",
+  "inputs": [
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "matriculaOperador",
+      "name": "matriculaOperador",
+      "tipo": "text",
+      "rotulo": "Matricula",
+      "label": "Matricula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "nomeOperador",
+      "name": "nomeOperador",
+      "tipo": "text",
+      "rotulo": "Matricula",
+      "label": "Matricula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 40
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS731",
+      "name": "frmLRS731",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS731relAtend.jsp",
+  "codigo": "LRSV731"
+}

@@ -1,0 +1,119 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "pOXOl-real",
+      "name": "_pg0bjqdu",
+      "tipo": "radio",
+      "rotulo": "UO",
+      "label": "UO",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pOXOm-real",
+      "name": "_pg0bjqdu",
+      "tipo": "radio",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pOXOr-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pOXOw-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Considerar UOs Inferiores?",
+      "label": "Considerar UOs Inferiores?",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pOXOn0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano de Análise",
+      "label": "Ano de Análise",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pOXOr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pOXOk1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pOXOm1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pOXOr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pOXOk1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pOXOm1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Matrícula",
+    "Nome",
+    "Dias de Direito",
+    "Saldo Férias",
+    "Per. Aquisit.",
+    "Per. Concessivo",
+    "Abono",
+    "Qt Dias de falta",
+    "Qt Dias Licença Saúde",
+    "Qt Meses Lic. Remun.",
+    "Qt Meses Lic. NÃO Remun.",
+    "Status"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bap/BAP030ConsultarFerias.zul",
+  "codigo": "BAPV030"
+}

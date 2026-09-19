@@ -1,27 +1,37 @@
 # LRSV014 - Paralisações no Abastecimento de Água
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Formulário Cadastral (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a paralisações no abastecimento de água.
+Permite a consulta e lançamento cadastral de paralisações no abastecimento de água por distrito e mês/ano de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS014paraliza.jsp`
+
+## Campos e Filtros da Tela
+- **LRS 014** (cd_distrito: input de texto, editável)
+- **LRS 014** (no_distrito: input de texto, readonly)
+- **LRS 014** (ano_ref: input de texto, editável, max 4)
+- **LRS 014** (mes_ref: input de texto, editável, max 2)
+- **[REDIGIDO]** (qt_oco_agua: input de texto, editável, max 10)
+- **[REDIGIDO]** (horasOcorrencia: input de texto, editável, max 4)
+- **[REDIGIDO]** (minutosOcorrencia: input de texto, editável, max 2)
+- **[REDIGIDO]** (qt_eco_afet: input de texto, editável, max 10)
+- **[REDIGIDO]** (qt_oco_agua: input de texto, editável, max 10)
+- **[REDIGIDO]** (horasOcorrencia: input de texto, editável, max 4)
+- **[REDIGIDO]** (minutosOcorrencia: input de texto, editável, max 2)
+- **[REDIGIDO]** (qt_eco_afet: input de texto, editável, max 10)
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV014 (Paralisações no Abastecimento de Água)"
-- "Acessar o aplicativo de paralisações no abastecimento de água"
+## Observações de Segurança e Automação
+- Tela JSP de cadastro e lançamento de paralisações no abastecimento de água (`LRS014paraliza.jsp`).
+- Contém campos cadastrais para registro de quantidades de ocorrências, economias afetadas, horas e minutos.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV014`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

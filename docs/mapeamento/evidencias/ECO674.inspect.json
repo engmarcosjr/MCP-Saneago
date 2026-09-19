@@ -1,0 +1,201 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "SANEAGO ECO674",
+  "inputs": [
+    {
+      "id": "u9jIh-real",
+      "name": "_pg1ersok",
+      "tipo": "radio",
+      "rotulo": "Efetivados",
+      "label": "Efetivados",
+      "valor_atual": "efetivo",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIi-real",
+      "name": "_pg1ersok",
+      "tipo": "radio",
+      "rotulo": "Solicitação de Devolução",
+      "label": "Solicitação de Devolução",
+      "valor_atual": "devolvido",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Identificador",
+      "label": "Identificador",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 25
+    },
+    {
+      "id": "u9jI60",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Id da Transação",
+      "label": "Id da Transação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jId0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período do Pagamento",
+      "label": "Período do Pagamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIf0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período do Pagamento",
+      "label": "Período do Pagamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIm0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período final do Pagamento",
+      "label": "Período final do Pagamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIo0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período final do Pagamento",
+      "label": "Período final do Pagamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jIv0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor",
+      "label": "Valor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "u9jI11",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Valor Total",
+      "label": "Valor Total",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "u9jId0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "u9jIm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "u9jIu1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "u9jIy1",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "u9jIz1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "u9jId0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "u9jIm0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "u9jIu1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "u9jIy1",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "u9jIz1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Lista de Pix Efetivados",
+    "Id Transação",
+    "Conta",
+    "Documento",
+    "Valor",
+    "Data/Hora Pagamento",
+    "Valor Total Pago",
+    "Documento Pago",
+    "Valor Devolução",
+    "Situação",
+    "Data/Hora Solicitação",
+    "Data/Hora Retorno",
+    "CPF/CNPJ",
+    "Nome do Pagador",
+    "Motivo Não Devolução"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO674ConsultarPix.zul",
+  "codigo": "ECO674"
+}

@@ -1,0 +1,107 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "new page title",
+  "inputs": [
+    {
+      "id": "aYOGd-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período de referência",
+      "label": "Período de referência",
+      "valor_atual": "set/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aYOGh-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "set/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aYOGj0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito (opcional)",
+      "label": "Distrito (opcional)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aYOGp-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito (opcional)",
+      "label": "Distrito (opcional)",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aYOGd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOGh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOGp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOG60",
+      "name": null,
+      "label": "Gerar Relatório",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aYOGd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOGh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOGp-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aYOG60",
+      "name": null,
+      "label": "Gerar Relatório",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS024IndiceSIPSAPPeriodo.zul",
+  "codigo": "LRSV024"
+}

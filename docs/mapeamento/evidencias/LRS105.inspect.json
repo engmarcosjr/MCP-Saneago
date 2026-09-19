@@ -1,0 +1,112 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Atendimento SIPSAP",
+  "inputs": [
+    {
+      "id": "aSWXl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "R.A.",
+      "label": "R.A.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aSWXq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Programação",
+      "label": "Programação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aSWX3o",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Resposta",
+      "label": "Serviço Resposta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aSWXy-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço Resposta",
+      "label": "Serviço Resposta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aSWXy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aSWXi1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aSWXk1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aSWXy-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aSWXi1",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aSWXk1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "RA",
+    "Programação",
+    "Data Solicitação",
+    "Serviço Solicitação",
+    "Serviço Resposta",
+    "Código",
+    "Descrição",
+    "Equipe",
+    "Nome Responsável",
+    "Tipo Equipe",
+    "Categoria",
+    "Frota",
+    "Placa",
+    "Marca",
+    "Modelo",
+    "Cor"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS105CadastraRetornoRA.zul",
+  "codigo": "LRS105"
+}

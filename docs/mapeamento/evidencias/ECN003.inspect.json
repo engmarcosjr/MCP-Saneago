@@ -1,0 +1,67 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECN003 - Enviar Fatura para Protesto Cartorário",
+  "inputs": [
+    {
+      "id": "xZyRf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "xZyRg",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [
+    {
+      "id": "xZyRk",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "xZyRn",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "xZyRk",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "xZyRn",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Referência",
+    "Fatura",
+    "Vencimento",
+    "Valor (R$)",
+    "Titularidade"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/ecn/ECN003EnvioFaturaProtesto.zul",
+  "codigo": "ECN003"
+}

@@ -1,0 +1,67 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO415 - Consulta Débito",
+  "inputs": [
+    {
+      "id": "sQkIf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Conta/DV",
+      "label": "Número Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "sQkIl-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano Ref.",
+      "label": "Mês/Ano Ref.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "sQkIp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "sQkIs",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "sQkIp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "sQkIs",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Data Inicio Vínculo",
+    "Data Fim Vínculo",
+    "Vínculo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO415ConsultaDebito.zul",
+  "codigo": "ECO415"
+}

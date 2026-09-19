@@ -1,0 +1,95 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "aFAGe",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento do Prazo",
+      "label": "Número do Documento do Prazo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "aFAGk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Conta",
+      "label": "Número da Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aFAGl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Conta",
+      "label": "Número da Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "aFAGq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número RA",
+      "label": "Número RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aFAGu",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aFAGv",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "aFAGy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aFAGu",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aFAGv",
+      "name": null,
+      "label": "Novo",
+      "tipo": "button"
+    },
+    {
+      "id": "aFAGy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO520UsuarioComCorteSuspenso.zul",
+  "codigo": "ECO520"
+}

@@ -1,27 +1,46 @@
 # LQAV081 - Gráfico do IQA Médio por Cidade
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a gráfico do iqa médio por cidade.
+Permite consultar e imprimir o gráfico do Índice de Qualidade da Água (IQA Médio) por cidade, sistema, regional, fase, tipo de água e período.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqa/LQA081GraficoIQAMedio.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (radio button, editável)
+- **Sistema** (radio button, editável)
+- **Regional** (input de texto, editável)
+- **Regional** (input de texto, somente leitura)
+- **Fase** (múltiplos checkboxes/inputs de fase)
+- **Tipo de água** (input de texto, editável)
+- **Tipo de água** (input de texto, somente leitura)
+- **Data inicial** (input de data, editável)
+- **Data final** (input de data, editável)
+- **IQA Inicial** (input de texto, editável)
+- **IQA Final** (input de texto, editável)
+- **Retrato** (radio button, editável)
+- **Paisagem** (radio button, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 7 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQAV081 (Gráfico do IQA Médio por Cidade)"
-- "Acessar o aplicativo de gráfico do iqa médio por cidade"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQAV081`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar gráfico do IQA médio no LQAV081"
+- "imprimir gráfico de qualidade da água por cidade e sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu CONTROLE DE QUALIDADE DA ÁGUA).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

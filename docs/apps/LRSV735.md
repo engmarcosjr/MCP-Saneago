@@ -1,27 +1,28 @@
-# LRSV735 - RA-RI por Cidade e Bairro
+# LRSV735 — RA-RI por Cidade e Bairro
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV735
+- **Nome:** RA-RI por Cidade e Bairro
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS735relRACidBai.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de relatório de RA/RI por cidade, bairro e período, sem botões de escrita identificados na carga inicial.
 
-## Tipo
-Leitura (Livre)
+## Campos Mapeados
+| Rótulo | ID / Name | Tipo | Editável | Observação |
+|---|---|---|---|---|
+| Periodo | dataInicio | text | Sim | Período inicial (maxlength 10) |
+| Periodo | dataFim | text | Sim | Período final (maxlength 10) |
+| Cidade | codigoCidade | text | Sim | Código da cidade (maxlength 7) |
+| Cidade | nomeCidade | text | Não | Nome da cidade (maxlength 40) |
+| Serviço | codigoServico | text | Sim | Código do serviço (maxlength 7) |
+| Serviço | descricaoServico | text | Não | Descrição do serviço (maxlength 40) |
+| Tipo | tipo | text | Não | Tipo (maxlength 7) |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a ra-ri por cidade e bairro.
+## Botões Mapeados
+Nenhum botão de ação identificado na carga inicial.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV735 (RA-RI por Cidade e Bairro)"
-- "Acessar o aplicativo de ra-ri por cidade e bairro"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV735`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Botões Ignorados
+Nenhum.

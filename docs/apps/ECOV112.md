@@ -1,27 +1,41 @@
 # ECOV112 - Relaciona Contas Condomínio
 
 ## Categoria
-Comercial e Atendimento ao Cliente
+Comercial e Atendimento ao Cliente / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto / zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a relaciona contas condomínio.
+Permite consultar contas individuais vinculadas e relacionadas a uma conta macro de condomínio.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eco/ECO112RelacionaContasCondominio.zul`
+
+## Campos e Filtros da Tela
+- **Conta Macro/Condomínio** (input de texto, editável, maxlength 7)
+- **Conta Macro/Condomínio** (input de texto, somente leitura / descrição)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- `Consultar`
+- `Cancelar`
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECOV112 (Relaciona Contas Condomínio)"
-- "Acessar o aplicativo de relaciona contas condomínio"
+## Colunas e Grade de Resultados
+- Contas Individuais Relacionadas a Conta do Condomínio
+- Pesquisar Conta(s):
+- Conta
+- Nome
+- Codificação
+- Complemento
+- Hidrômetro
+- Tipo da Ligação
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECOV112`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar contas de condomínio no ECOV112"
+- "listar contas individuais relacionadas a condomínio"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 08/09/2026 (Status: inventariado).*

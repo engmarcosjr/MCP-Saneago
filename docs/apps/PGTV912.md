@@ -1,27 +1,32 @@
-# PGTV912 - Ordens de Tráfego p/ Período e Situação
+# PGTV912 — Ordens de Tráfego p/ Período e Situação
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV912
+- **Nome:** Ordens de Tráfego p/ Período e Situação
+- **Módulo:** Gestão Transporte > Relatórios
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT912RelatorioOrdemTrafego.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela de relatório de ordens de tráfego por período e situação com botão Consultar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Período | date | Sim | `hS8Ud-real` |
+| a | date | Sim | `hS8Uf-real` |
+| Situações | checkbox | Sim | `hS8Ul-real` |
+| Aberta | checkbox | Sim | `hS8Um-real` |
+| Reservada | checkbox | Sim | `hS8Un-real` |
+| Empenhada | checkbox | Sim | `hS8Uo-real` |
+| Encerrada | checkbox | Sim | `hS8Up-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a ordens de tráfego p/ período e situação.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `hS8Ut` | Consulta ordens de tráfego conforme período e situações selecionadas |
+| Cancelar | button | `hS8Uv` | Cancela operação / limpa filtros |
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV912 (Ordens de Tráfego p/ Período e Situação)"
-- "Acessar o aplicativo de ordens de tráfego p/ período e situação"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV912`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+### Botões Ignorados (Auxiliares/Navegação)
+- `Sem Rotulo` (a, `hS8Ud-btn`) — acionador do datebox Período
+- `Sem Rotulo` (a, `hS8Uf-btn`) — acionador do datebox a

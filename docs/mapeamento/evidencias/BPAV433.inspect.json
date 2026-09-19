@@ -1,0 +1,647 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Histórico Funcional",
+  "inputs": [
+    {
+      "id": "a1UCv9",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 8
+    },
+    {
+      "id": "a1UCi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC00-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "A partir de",
+      "label": "A partir de",
+      "valor_atual": "2021",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCo0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sexo",
+      "label": "Sexo",
+      "valor_atual": "Masculino",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCs0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Nasc.",
+      "label": "Dt. Nasc.",
+      "valor_atual": "15/11/1991",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCu0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Dt. Nasc.",
+      "label": "Dt. Nasc.",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCw0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Insalubridade",
+      "label": "Insalubridade",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCy0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Periculosidade",
+      "label": "Periculosidade",
+      "valor_atual": "on",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC21",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Naturalidade",
+      "label": "Naturalidade",
+      "valor_atual": "2",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC41",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Naturalidade",
+      "label": "Naturalidade",
+      "valor_atual": "ANAPOLIS(GO)",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC91",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Estado Civil",
+      "label": "Estado Civil",
+      "valor_atual": "SOLTEIRO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCd1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Gr. Instr.",
+      "label": "Gr. Instr.",
+      "valor_atual": "SEGUNDO GRAU COMPLETO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCi1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CTPS",
+      "label": "CTPS",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCm1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Série",
+      "label": "Série",
+      "valor_atual": "30",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCq1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UF",
+      "label": "UF",
+      "valor_atual": "GO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCu1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "PIS",
+      "label": "PIS",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCz1-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Admissão",
+      "label": "Dt. Admissão",
+      "valor_atual": "12/04/2021",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC22-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Ult. Pagto.",
+      "label": "Dt. Ult. Pagto.",
+      "valor_atual": "01/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC62-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Ult. PHA.",
+      "label": "Dt. Ult. PHA.",
+      "valor_atual": "01/04/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCb2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "C. Identidade",
+      "label": "C. Identidade",
+      "valor_atual": "[REDIGIDO]           ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCf2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Órgão Exp.",
+      "label": "Órgão Exp.",
+      "valor_atual": "      ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCj2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UF",
+      "label": "UF",
+      "valor_atual": "GO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCn2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF",
+      "label": "CPF",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCs2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "T0002",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCu2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade Organizacional",
+      "label": "Unidade Organizacional",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCw9",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Contábil",
+      "label": "UO Contábil",
+      "valor_atual": "B0232",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC13-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Contábil",
+      "label": "UO Contábil",
+      "valor_atual": "ADMINISTRATIVO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCx9",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Contábil SAP",
+      "label": "UO Contábil SAP",
+      "valor_atual": "B0232",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCo3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Contábil SAP",
+      "label": "UO Contábil SAP",
+      "valor_atual": "ADMINISTRATIVO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC74",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Centro de Custo SAP",
+      "label": "Centro de Custo SAP",
+      "valor_atual": "1096O00002",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCc4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cargo",
+      "label": "Cargo",
+      "valor_atual": "21.06.1.00",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCe4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cargo",
+      "label": "Cargo",
+      "valor_atual": "Técnico em Edificações I           ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCi4-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Ingresso",
+      "label": "Dt. Ingresso",
+      "valor_atual": "12/04/2021",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCn4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tabela Salarial",
+      "label": "Tabela Salarial",
+      "valor_atual": "3",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCr4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nível Sal.",
+      "label": "Nível Sal.",
+      "valor_atual": "13",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCv4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo Pagto",
+      "label": "Tipo Pagto",
+      "valor_atual": "MENSAL",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCz4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Horas Trabalhadas Mensal",
+      "label": "Horas Trabalhadas Mensal",
+      "valor_atual": "200",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC35",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cargo Lotação",
+      "label": "Cargo Lotação",
+      "valor_atual": "08.34.0.99",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC55",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cargo Lotação",
+      "label": "Cargo Lotação",
+      "valor_atual": "GERENTE                            ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCa5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Função",
+      "label": "Função",
+      "valor_atual": "715",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCc5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Função",
+      "label": "Função",
+      "valor_atual": "GFG B1                             ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCg5-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Dt. Ingresso",
+      "label": "Dt. Ingresso",
+      "valor_atual": "29/07/2025",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCk5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Vínculo",
+      "label": "Vínculo",
+      "valor_atual": "CONTRATO TRABALHO CLT",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCp5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CNT Contábil",
+      "label": "CNT Contábil",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCt5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo Estabilidade",
+      "label": "Tipo Estabilidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCx5-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "De",
+      "label": "De",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC06-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Até",
+      "label": "Até",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC56",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sindicato",
+      "label": "Sindicato",
+      "valor_atual": "SIND. TEC. INDUSTRIAL SINTEC",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UC96",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Situação de Pagto",
+      "label": "Situação de Pagto",
+      "valor_atual": "NORMAL",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCd6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modalidade de Pagto",
+      "label": "Modalidade de Pagto",
+      "valor_atual": "CREDITO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCi6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Rescisão",
+      "label": "Rescisão",
+      "valor_atual": " ",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "a1UCm6-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "a1UC00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1UCf9",
+      "name": null,
+      "label": "Consultar atualização de dados pelo empregado",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCg9",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCh9",
+      "name": null,
+      "label": "Relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCi9",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "a1UC00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "a1UCf9",
+      "name": null,
+      "label": "Consultar atualização de dados pelo empregado",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCg9",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCh9",
+      "name": null,
+      "label": "Relatório",
+      "tipo": "button"
+    },
+    {
+      "id": "a1UCi9",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA433HistoricoFuncional.zul",
+  "codigo": "BPAV433"
+}

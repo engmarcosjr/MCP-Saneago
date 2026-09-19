@@ -1,0 +1,72 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Saneago - ECO411",
+  "inputs": [
+    {
+      "id": "zI6Yk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "zI6Yl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta",
+      "label": "Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "zI6Ys",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Financiamento",
+      "label": "Número do Financiamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    }
+  ],
+  "botoes": [
+    {
+      "id": "zI6Yw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zI6Yx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "zI6Yw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zI6Yx",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO411AberturaFinanciamento.zul",
+  "codigo": "ECOV411"
+}

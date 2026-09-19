@@ -1,27 +1,27 @@
-# PGTV909 - Veículos Próprios
+# PGTV909 — Veículos Próprios
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV909
+- **Nome:** Veículos Próprios
+- **Módulo:** Gestão Transporte > Relatórios
+- **Tecnologia:** html
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT909RelVeicProp.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela HTML de relatório de veículos próprios com opções de agrupamento, saída e situações do veículo.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Tipo de Agrupamento | select | Sim | `tipoAgrupamento` |
+| Saída do Relatório | radio | Sim | `saida` (video) |
+| Saída do Relatório | radio | Sim | `saida` (planilha) |
+| Situações do Veículo | checkbox | Sim | `stDisponivel` |
+| Disponível | checkbox | Sim | `stReservado` |
+| Reservado | checkbox | Sim | `stEmpenhado` |
+| Empenhado | checkbox | Sim | `stInativo` |
+| Inativo | checkbox | Sim | `stLeiloado` |
+| Leiloado | checkbox | Sim | `stSucata` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a veículos próprios.
-
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV909 (Veículos Próprios)"
-- "Acessar o aplicativo de veículos próprios"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV909`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Botões e Ações
+Nenhum botão detectado na tela inicial (submissão via formulário post `frmPGT909` para `PGT909Resultado.jsp`).

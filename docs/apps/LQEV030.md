@@ -1,31 +1,42 @@
 # LQEV030 - Resultados das Análises - Planilha
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a resultados das análises - planilha.
+Permite consultar e exportar em planilha os resultados analíticos laboratoriais de esgoto por sistema, período de coleta, pontos de coleta e seleção de parâmetros físico-químicos e biológicos.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Data de Coleta Inicial** (date): Editável
-- **Data de Coleta Final** (date): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE030ResultadoAnalisePlanilha.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Data de Coleta Inicial** (input de data, editável)
+- **Data de Coleta Final** (input de data, editável)
+- **Pontos de Coleta** (checkbox, editável)
+- **Parâmetros** (checkbox, editável)
+- **Todos** (checkbox, editável)
+- *(Múltiplos checkboxes de parâmetros laboratoriais analíticos disponíveis para seleção).*
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `iZMVu0`)
-- **Imprimir** (ID ZK: `iZMVv0`)
-- **Cancelar** (ID ZK: `iZMVw0`)
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 4 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV030 (Resultados das Análises - Planilha)"
-- "Acessar o aplicativo de resultados das análises - planilha"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV030`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar resultados das análises em planilha no LQEV030"
+- "imprimir planilha de resultados analíticos por sistema e período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

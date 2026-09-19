@@ -1,0 +1,124 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "jDNZb2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Aplicação",
+      "label": "Aplicação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "jDNZh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Aplicação",
+      "label": "Aplicação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jDNZ00-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Imprimir",
+      "label": "Imprimir",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jDNZh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jDNZ00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jDNZ40",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "jDNZ70",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jDNZ80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jDNZh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jDNZ00-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jDNZ40",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "jDNZ70",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jDNZ80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Unidade Organizacional",
+    "Matrícula",
+    "Usuário",
+    "Perfil",
+    "Matrizes",
+    "C",
+    "A",
+    "I",
+    "E",
+    "Matriz",
+    "Autorizador",
+    "Validade Consulta",
+    "Validade Alteração",
+    "Validade Inclusão",
+    "Validade Exclusão"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS480ConsultaAcessoUsuarioAplicacao.zul",
+  "codigo": "MSSV480"
+}

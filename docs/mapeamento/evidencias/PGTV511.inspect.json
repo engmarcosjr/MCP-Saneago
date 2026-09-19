@@ -1,0 +1,123 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "oT3Hc",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ordem de Tráfego",
+      "label": "Ordem de Tráfego",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oT3Hd",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ordem de Tráfego",
+      "label": "Ordem de Tráfego",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "oT3Hp0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "oT3Hl-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Empregado",
+      "label": "Empregado",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oT3H0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "oT3Hl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oT3H20-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oT3Hc0",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "oT3He0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oT3H0-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "oT3Hl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "oT3H20-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "oT3Hc0",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "oT3He0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Empregados Envolvidos",
+    "Matrícula",
+    "Nome"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT511EmpregadoOrdemTrafego.zul",
+  "codigo": "PGTV511"
+}

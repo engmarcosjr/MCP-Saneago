@@ -1,0 +1,266 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "gPCWi-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW33",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade Subdelegada",
+      "label": "Cidade Subdelegada",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "gPCWq-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade Subdelegada",
+      "label": "Cidade Subdelegada",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW90-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gPCWd0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW43",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento",
+      "label": "Código de Lançamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "gPCWl0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento",
+      "label": "Código de Lançamento",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW51-real",
+      "name": "_pg28qt2j",
+      "tipo": "radio",
+      "rotulo": "GERAL",
+      "label": "GERAL",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW61-real",
+      "name": "_pg28qt2j",
+      "tipo": "radio",
+      "rotulo": "SANEAGO",
+      "label": "SANEAGO",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW71-real",
+      "name": "_pg28qt2j",
+      "tipo": "radio",
+      "rotulo": "SUBDELEGATÁRIA",
+      "label": "SUBDELEGATÁRIA",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "gPCW53",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento Inibir",
+      "label": "Código de Lançamento Inibir",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "gPCWu1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código de Lançamento Inibir",
+      "label": "Código de Lançamento Inibir",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "gPCWe2",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Lista de Códigos",
+      "label": "Lista de Códigos",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "gPCWq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCW90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWu1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCW92",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWg2",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWq2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWr2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "gPCWq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCW90-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCWu1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "gPCW92",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWg2",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWq2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "gPCWr2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO193RelAnaliticoFat.zul",
+  "codigo": "ECO193"
+}

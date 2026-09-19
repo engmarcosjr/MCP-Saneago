@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatorio de Serviços Atendidos Pela U.O. num Periodo:.",
+  "inputs": [
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoUO",
+      "name": "codigoUO",
+      "tipo": "text",
+      "rotulo": "U.O.",
+      "label": "U.O.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "nomeUO",
+      "name": "nomeUO",
+      "tipo": "text",
+      "rotulo": "U.O.",
+      "label": "U.O.",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 40
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS730",
+      "name": "frmLRS730",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS730atendServUo.jsp",
+  "codigo": "LRSV730"
+}

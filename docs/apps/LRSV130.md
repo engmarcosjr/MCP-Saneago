@@ -1,29 +1,41 @@
-# LRSV130 - Equipes
+# LRSV130 — Equipes
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV130
+- **Nome:** Equipes
+- **Módulo:** Atendimento ao Publico > Cadastro
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS130ManterEquipe.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela mista de consulta e listagem de equipes por distrito, situação e tipo com botões Consultar e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Distrito | text | Sim | `g1DVp` |
+| Distrito | text | Não (readonly) | `g1DVr-real` |
+| Situação | checkbox | Sim | `g1DVb0-real` |
+| Ativa | checkbox | Sim | `g1DVc0-real` |
+| Saneago | radio | Sim | `g1DVi0-real` |
+| Subdelegada | radio | Sim | `g1DVj0-real` |
+| Terceirizada | radio | Sim | `g1DVk0-real` |
+| Todos | radio | Sim | `g1DVl0-real` |
+| Código da Equipe | text | Sim | `g1DVr0` |
+| Tipo de equipe | combobox | Não (readonly) | `g1DVb2-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a equipes.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `g1DVg2` | Consulta e lista as equipes conforme filtros informados |
+| Cancelar | button | `g1DVk2` | Cancela e limpa os campos de pesquisa |
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Código da Equipe:** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `g1DVr-btn`, tipo: `a`) — botão auxiliar de lookup do campo Distrito.
+- `Sem Rotulo` (id: `g1DVb2-btn`, tipo: `a`) — abridor de combobox do campo Tipo de equipe.
 
-## Botões Disponíveis
-- **Consultar** (ID ZK: `m32Jg2`)
-- **Cancelar** (ID ZK: `m32Jk2`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV130 (Equipes)"
-- "Acessar o aplicativo de equipes"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV130`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- Código da Equipe
+- Nome do Responsável
+- Tipo de Equipe
+- Equipe

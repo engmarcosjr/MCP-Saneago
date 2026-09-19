@@ -1,30 +1,41 @@
-# LRSV030 - Serviço resposta por serviço solicitação
+# LRSV030 — Serviço resposta por serviço solicitação
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV030
+- **Nome:** Serviço resposta por serviço solicitação
+- **Módulo:** Atendimento ao Publico > Cadastro
+- **Tecnologia:** zk
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS030ServicoRespostaSolicitacao.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela ZK de consulta e impressão de serviços resposta por serviço solicitação com botões Consultar, Imprimir e Cancelar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Serviço Solicitação | text | Sim | `pNbMo3` |
+| Serviço Solicitação | text | Não (readonly) | `pNbMh-real` |
+| Serviço Resposta | text | Sim | `pNbMp3` |
+| Serviço Resposta | text | Não (readonly) | `pNbM40-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a serviço resposta por serviço solicitação.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `pNbMr0` | Consulta os vínculos de serviço solicitação e resposta |
+| Imprimir | button | `pNbMv0` | Emite relatório/impressão dos vínculos listados |
+| Cancelar | button | `pNbMw0` | Limpa os filtros e cancela a consulta atual |
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `pNbMh-btn`, tipo: `a`) — abridor/pesquisador de Serviço Solicitação.
+- `Sem Rotulo` (id: `pNbM40-btn`, tipo: `a`) — abridor/pesquisador de Serviço Resposta.
 
-## Botões Disponíveis
-- **Consultar** (ID ZK: `r4UKr0`)
-- **Imprimir** (ID ZK: `r4UKv0`)
-- **Cancelar** (ID ZK: `r4UKw0`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV030 (Serviço resposta por serviço solicitação)"
-- "Acessar o aplicativo de serviço resposta por serviço solicitação"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV030`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- Código
+- Descrição
+- Data Vínculo
+- Remover
+- Serviço Solicitação
+- Serviço Resposta
+- Matrícula Vínculo
+- Data Cancelamento
+- Matrícula Cancelamento

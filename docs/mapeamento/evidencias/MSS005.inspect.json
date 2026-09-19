@@ -1,0 +1,73 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "hS8Oz",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Telefone",
+      "label": "Telefone",
+      "valor_atual": "(62)98245-0520",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 50
+    },
+    {
+      "id": "hS8Ot0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Email",
+      "label": "Email",
+      "valor_atual": "eng.marcosjr@hotmail.com",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 50
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hS8O90",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8O31",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8Oc1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hS8O90",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8O31",
+      "name": null,
+      "label": "Excluir",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8Oc1",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mss/MSS005RecuperarSenha.zul",
+  "codigo": "MSS005"
+}

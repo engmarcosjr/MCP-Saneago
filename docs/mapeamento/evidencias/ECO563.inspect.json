@@ -1,0 +1,99 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago - ECO563",
+  "inputs": [
+    {
+      "id": "hXCFe",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Conta",
+      "label": "Número Conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "hXCFm-real",
+      "name": "_pgcrgsm5",
+      "tipo": "radio",
+      "rotulo": "Pendentes",
+      "label": "Pendentes",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hXCFo-real",
+      "name": "_pgcrgsm5",
+      "tipo": "radio",
+      "rotulo": "Pagas",
+      "label": "Pagas",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hXCFq-real",
+      "name": "_pgcrgsm5",
+      "tipo": "radio",
+      "rotulo": "Parceladas",
+      "label": "Parceladas",
+      "valor_atual": "3",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hXCFs-real",
+      "name": "_pgcrgsm5",
+      "tipo": "radio",
+      "rotulo": "Zeradas",
+      "label": "Zeradas",
+      "valor_atual": "4",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hXCFu-real",
+      "name": "_pgcrgsm5",
+      "tipo": "radio",
+      "rotulo": "Canceladas",
+      "label": "Canceladas",
+      "valor_atual": "5",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hXCFm0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hXCFm0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "CPF/CNPJ",
+    "Cliente",
+    "Data Inicio Vínculo",
+    "Data Fim Vínculo",
+    "Vínculo"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO563ExtratoDebito.zul",
+  "codigo": "ECO563"
+}

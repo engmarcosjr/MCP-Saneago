@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatorio de Serviços Atendidos Por Codigo de Serviço em um Período:.",
+  "inputs": [
+    {
+      "id": "dataInicio",
+      "name": "dataInicio",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "dataFim",
+      "name": "dataFim",
+      "tipo": "text",
+      "rotulo": "Periodo",
+      "label": "Periodo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "codigoServico",
+      "name": "codigoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "descricaoServico",
+      "name": "descricaoServico",
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 40
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS734",
+      "name": "frmLRS734",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS734relAtendCod.jsp",
+  "codigo": "LRS734"
+}

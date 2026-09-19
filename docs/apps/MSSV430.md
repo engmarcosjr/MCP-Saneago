@@ -1,30 +1,39 @@
 # MSSV430 - Consulta Usuários por Perfil
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta usuários por perfil.
+Permite consultar os usuários vinculados a perfis por sistema, com opções de filtrar por ativos ou todos os acessos, e exportação via impressão ou planilha.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS430ConsultaPerfilSistema.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Todos os Acessos** (radio button, editável)
+- **Apenas Ativos** (radio button, editável)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `qQKX60`)
-- **Imprimir** (ID ZK: `qQKX70`)
-- **Planilha** (ID ZK: `qQKX80`)
-- **Cancelar** (ID ZK: `qQKX90`)
+- **Consultar**
+- **Imprimir**
+- **Planilha**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV430 (Consulta Usuários por Perfil)"
-- "Acessar o aplicativo de consulta usuários por perfil"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV430`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar usuários por perfil no MSSV430"
+- "listar colaboradores com determinado perfil de sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

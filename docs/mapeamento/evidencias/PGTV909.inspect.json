@@ -1,0 +1,139 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatório de Veículos Próprios:.",
+  "inputs": [
+    {
+      "id": "tipoAgrupamento",
+      "name": "tipoAgrupamento",
+      "tipo": "select",
+      "rotulo": "Tipo de Agrupamento",
+      "label": "Tipo de Agrupamento",
+      "valor_atual": "UO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "UO",
+          "texto": "Unidade Organizacional"
+        },
+        {
+          "valor": "Categoria",
+          "texto": "Categoria de Veículo"
+        },
+        {
+          "valor": "Ano",
+          "texto": "Ano de Fabricação"
+        },
+        {
+          "valor": "Placa",
+          "texto": "Final da Placa"
+        }
+      ],
+      "total_opcoes": 4,
+      "opcoes_truncadas": false
+    },
+    {
+      "id": null,
+      "name": "saida",
+      "tipo": "radio",
+      "rotulo": "Saída do Relatório",
+      "label": "Saída do Relatório",
+      "valor_atual": "video",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "saida",
+      "tipo": "radio",
+      "rotulo": "Saída do Relatório",
+      "label": "Saída do Relatório",
+      "valor_atual": "planilha",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "stDisponivel",
+      "name": "stDisponivel",
+      "tipo": "checkbox",
+      "rotulo": "Situações do Veículo",
+      "label": "Situações do Veículo",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "stReservado",
+      "name": "stReservado",
+      "tipo": "checkbox",
+      "rotulo": "Disponível",
+      "label": "Disponível",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "stEmpenhado",
+      "name": "stEmpenhado",
+      "tipo": "checkbox",
+      "rotulo": "Reservado",
+      "label": "Reservado",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "stInativo",
+      "name": "stInativo",
+      "tipo": "checkbox",
+      "rotulo": "Empenhado",
+      "label": "Empenhado",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "stLeiloado",
+      "name": "stLeiloado",
+      "tipo": "checkbox",
+      "rotulo": "Inativo",
+      "label": "Inativo",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "stSucata",
+      "name": "stSucata",
+      "tipo": "checkbox",
+      "rotulo": "Leiloado",
+      "label": "Leiloado",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmPGT909",
+      "name": "frmPGT909",
+      "action": "PGT909Resultado.jsp",
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT909RelVeicProp.jsp",
+  "codigo": "PGTV909"
+}

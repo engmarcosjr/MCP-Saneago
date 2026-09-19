@@ -1,0 +1,62 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [],
+  "botoes": [
+    {
+      "id": "bUpU80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "bUpUu1-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "bUpUu1-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "bUpU_2",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "bUpU80",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "bUpUu1-mask-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "bUpUu1-close",
+      "name": null,
+      "label": "Close",
+      "tipo": "submit"
+    },
+    {
+      "id": "bUpU_2",
+      "name": null,
+      "label": "OK",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/bpa/BPA359Autoavaliacao.zul",
+  "codigo": "BPA359"
+}

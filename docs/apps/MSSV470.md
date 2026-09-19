@@ -1,28 +1,38 @@
 # MSSV470 - Consulta Perfis por Sistema
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta perfis por sistema.
+Permite consultar a lista de perfis de acesso cadastrados por sistema no portal corporativo, com filtros por ativos, inativos ou todos.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS470ConsultaPerfilSistema.zul`
+
+## Campos e Filtros da Tela
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Ativos** (radio button, editável)
+- **Inativos** (radio button, editável)
+- **Todos** (radio button, editável)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `s1GF50`)
-- **Cancelar** (ID ZK: `s1GF70`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV470 (Consulta Perfis por Sistema)"
-- "Acessar o aplicativo de consulta perfis por sistema"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV470`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar perfis por sistema no MSSV470"
+- "listar perfis ativos e inativos de um sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

@@ -1,0 +1,765 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO151 - Cadastro de Usuário",
+  "inputs": [
+    {
+      "id": "pLRMk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da conta/DV",
+      "label": "Número da conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pLRMl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da conta/DV",
+      "label": "Número da conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "pLRMs0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do RA",
+      "label": "Número do RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "pLRM_1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Codificação",
+      "label": "Codificação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "pLRM01",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Codificação",
+      "label": "Codificação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "pLRM11",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Codificação",
+      "label": "Codificação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "pLRM21",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Codificação",
+      "label": "Codificação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "pLRM31",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Codificação",
+      "label": "Codificação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "pLRM1w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "pLRMc1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMz1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo Proprietário",
+      "label": "Tipo Proprietário",
+      "valor_atual": "Pessoa Física",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM82",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ do Proprietário",
+      "label": "CPF/CNPJ do Proprietário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM92",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ do Proprietário",
+      "label": "CPF/CNPJ do Proprietário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMh2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo Titular/Usuário",
+      "label": "Tipo Titular/Usuário",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMr2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ do Titular/Usuário",
+      "label": "CPF/CNPJ do Titular/Usuário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMs2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CPF/CNPJ do Titular/Usuário",
+      "label": "CPF/CNPJ do Titular/Usuário",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMz2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Ocupação Imóvel",
+      "label": "Data Ocupação Imóvel",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pLRMb3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Macro",
+      "label": "Conta Macro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 7
+    },
+    {
+      "id": "pLRMc3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta Macro",
+      "label": "Conta Macro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 1
+    },
+    {
+      "id": "pLRMj3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Fone Residencial (ddd + telefone)",
+      "label": "Fone Residencial (ddd + telefone)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "pLRMp3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Fone Celular (ddd + telefone)",
+      "label": "Fone Celular (ddd + telefone)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 14
+    },
+    {
+      "id": "pLRMv3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "CEP",
+      "label": "CEP",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "pLRM2w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM44-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM3w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "pLRMt4-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMg5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Logradouro",
+      "label": "Logradouro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "pLRMi5-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Logradouro",
+      "label": "Logradouro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM36",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quadra",
+      "label": "Quadra",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 8
+    },
+    {
+      "id": "pLRM96",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lote",
+      "label": "Lote",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "pLRMf6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número",
+      "label": "Número",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "pLRMk6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Complemento",
+      "label": "Complemento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 15
+    },
+    {
+      "id": "pLRMr6-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Pavimentação",
+      "label": "Tipo de Pavimentação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMx6",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Área Construída(m²)",
+      "label": "Área Construída(m²)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM27",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Área Verde(m²)",
+      "label": "Área Verde(m²)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM97",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Vol. de Água Piscina",
+      "label": "Vol. de Água Piscina",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM6w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Órgão Agrupador",
+      "label": "Órgão Agrupador",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "pLRMi7-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Órgão Agrupador",
+      "label": "Órgão Agrupador",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM38-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Órgão Público",
+      "label": "Órgão Público",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMa8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grande Usuário",
+      "label": "Grande Usuário",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMh8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Capacidade Reservatório(l)",
+      "label": "Capacidade Reservatório(l)",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMo8",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Vencimento Alternativo",
+      "label": "Vencimento Alternativo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMu8-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Benefício S.E.C.",
+      "label": "Benefício S.E.C.",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM19-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Identificação da Conta",
+      "label": "Identificação da Conta",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMa9-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Motivo/Inclusão",
+      "label": "Motivo/Inclusão",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMh9-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Padrão de Ligação",
+      "label": "Padrão de Ligação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMn9-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Inclusão",
+      "label": "Data de Inclusão",
+      "valor_atual": "08/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMks",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Motivo/Observação",
+      "label": "Motivo/Observação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 140
+    },
+    {
+      "id": "pLRMrs-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano Cad./Recad.",
+      "label": "Mês/Ano Cad./Recad.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pLRM5w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "pLRM_t-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRMlt-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Alterado em",
+      "label": "Alterado em",
+      "valor_atual": "08/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "pLRM4w",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 7
+    },
+    {
+      "id": "pLRMut-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "pLRMp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMu",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMz1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMh2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMz2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM43",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMr6-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMu8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM19-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMa9-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMh9-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMrs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM_t-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "pLRMp",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMu",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMz1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMh2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMz2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM43",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "pLRMr6-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMu8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM19-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMa9-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMh9-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRMrs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "pLRM_t-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO151CadastroUsuario.zul",
+  "codigo": "ECO151"
+}

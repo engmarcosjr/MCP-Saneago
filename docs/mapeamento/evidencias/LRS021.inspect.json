@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Relatório de Extravasamento de Esgoto Sanitário:.",
+  "inputs": [
+    {
+      "id": "ano_ref",
+      "name": "ano_ref",
+      "tipo": "text",
+      "rotulo": "LRS 021",
+      "label": "LRS 021",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mes_ref",
+      "name": "mes_ref",
+      "tipo": "text",
+      "rotulo": "LRS 021",
+      "label": "LRS 021",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "cd_regional",
+      "name": "cd_regional",
+      "tipo": "text",
+      "rotulo": "LRS 021",
+      "label": "LRS 021",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_regional",
+      "name": "no_regional",
+      "tipo": "text",
+      "rotulo": "LRS 021",
+      "label": "LRS 021",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS021",
+      "name": "frmLRS021",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS021extravaza.jsp",
+  "codigo": "LRS021"
+}

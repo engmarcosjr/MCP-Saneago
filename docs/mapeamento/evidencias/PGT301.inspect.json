@@ -1,0 +1,695 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "f70Bp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Contrato",
+      "label": "Nº Contrato",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Br",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "f70Bx",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Descrição Contrato",
+      "label": "Descrição Contrato",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70B10-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Cadastro",
+      "label": "Data Cadastro",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B60-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bb0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Detalhe Categoria",
+      "label": "Detalhe Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bg0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Marca",
+      "label": "Marca",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bl0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bq0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Combustivel",
+      "label": "Combustivel",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bv0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Cor",
+      "label": "Cor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70B_1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Numero Chassi",
+      "label": "Numero Chassi",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 17
+    },
+    {
+      "id": "f70B41",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano Fabricação",
+      "label": "Ano Fabricação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B91",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano Modelo",
+      "label": "Ano Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Be1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "RENAVAN",
+      "label": "RENAVAN",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "f70Bo1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Motor",
+      "label": "Número Motor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 21
+    },
+    {
+      "id": "f70Bt1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Capacidade",
+      "label": "Capacidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 6
+    },
+    {
+      "id": "f70By1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Unidade Capacidade",
+      "label": "Unidade Capacidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70B32",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Consumo min.",
+      "label": "Consumo min.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B52",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Consumo Max.",
+      "label": "Consumo Max.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Ba2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Placa",
+      "label": "Placa",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "f70Bf2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Emplacamento",
+      "label": "Data Emplacamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Brh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bn2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bsh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Origem",
+      "label": "Lotação Origem",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B93-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Origem",
+      "label": "Lotação Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bth",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bw3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bf4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome Proprietário",
+      "label": "Nome Proprietário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bk4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Licença",
+      "label": "Licença",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bp4-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bu4-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Status",
+      "label": "Status",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Buh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio",
+      "label": "Código Patrimônio",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "f70B15-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio",
+      "label": "Código Patrimônio",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Bl5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio SAP",
+      "label": "Código Patrimônio SAP",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 12
+    },
+    {
+      "id": "f70B56",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B76-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70Be7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade",
+      "label": "Quantidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70By7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "f70B_8-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "f70B69",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade",
+      "label": "Quantidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "f70Bs",
+      "name": null,
+      "label": "Ver",
+      "tipo": "button"
+    },
+    {
+      "id": "f70B10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bv0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70By1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B93-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bw3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bp4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B15-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B76-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B_8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bdh",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "f70Bhh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "f70Bs",
+      "name": null,
+      "label": "Ver",
+      "tipo": "button"
+    },
+    {
+      "id": "f70B10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bv0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70By1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B93-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bw3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bp4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B15-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B76-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70B_8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "f70Bdh",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "f70Bhh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT301Veiculo.zul",
+  "codigo": "PGT301"
+}

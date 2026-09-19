@@ -1,30 +1,57 @@
 # ECOV010 - Solicitar Titularidade
 
 ## Categoria
-Comercial e Atendimento ao Cliente
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Misto / Escrita e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a solicitar titularidade.
+Permite consultar e solicitar a alteração de titularidade da conta/ligação e Registro de Atendimento.
 
-## Campos da Tela Inicial
-- **Número de Conta/DV** (text): Editável
-- **Número de Conta/DV** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eco/ECO010Titularidade.zul`
+
+## Campos e Filtros da Tela
+- **Número de Conta/DV** (input de texto, editável, max 7)
+- **Número de Conta/DV** (input de texto, editável, max 1)
+- **Número do RA** (input de texto, editável, max 11)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `yUXRu`)
-- **Solicitar** (ID ZK: `yUXRv`)
-- **Cancelar** (ID ZK: `yUXRy`)
+- **Consultar**
+- **Solicitar**
+- **Cancelar**
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECOV010 (Solicitar Titularidade)"
-- "Acessar o aplicativo de solicitar titularidade"
+## Colunas e Grade de Resultados
+- **Data/Hora de Solicitação**
+- **Nome Titular**
+- **Tipo Pessoa**
+- **CPF/CNPJ Titular**
+- **Início Contrato**
+- **Motivo**
+- **Situação**
+- **Esg. Diferenciado**
+- **Categoria**
+- **Subcategoria**
+- **Economia**
+- **Unidade**
+- **Consumo Estimado m³/mês**
+- **Peso (%)**
+- **Documento**
+- **Referência**
+- **CPF/CNPJ**
+- **Valor**
+- **Parcelamento**
+- **Financiamento**
+- **ATENÇÃO**
+- **Descrição**
+- **Valor Original**
+- **Valor Deflacionado**
+- **Detalhamento**
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECOV010`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Observações de Segurança e Automação
+- Contém botão **Solicitar**, configurando potencial operação de escrita/solicitação de troca de titularidade.
+- Operações de solicitação devem ser estritamente bloqueadas para automação sem gate de escrita.
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

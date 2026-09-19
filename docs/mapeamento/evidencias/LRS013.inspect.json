@@ -1,0 +1,141 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Cadastro de Extravasamentos de Esgoto:.",
+  "inputs": [
+    {
+      "id": "cd_distrito",
+      "name": "cd_distrito",
+      "tipo": "text",
+      "rotulo": "LRS 013",
+      "label": "LRS 013",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_distrito",
+      "name": "no_distrito",
+      "tipo": "text",
+      "rotulo": "LRS 013",
+      "label": "LRS 013",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "ano_ref",
+      "name": "ano_ref",
+      "tipo": "text",
+      "rotulo": "LRS 013",
+      "label": "LRS 013",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mes_ref",
+      "name": "mes_ref",
+      "tipo": "text",
+      "rotulo": "LRS 013",
+      "label": "LRS 013",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "qt_oco_esgo",
+      "name": "qt_oco_esgo",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "horasOcorrencia",
+      "name": "horasOcorrencia",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "minutosOcorrencia",
+      "name": "minutosOcorrencia",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "qt_serv_prest_dis",
+      "name": "qt_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "qt_oco_esgo",
+      "name": "qt_oco_esgo",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "horasOcorrencia",
+      "name": "horasOcorrencia",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "minutosOcorrencia",
+      "name": "minutosOcorrencia",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS013",
+      "name": "frmLRS013",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS013extravaza.jsp",
+  "codigo": "LRS013"
+}

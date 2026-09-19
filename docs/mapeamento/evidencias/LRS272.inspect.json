@@ -1,0 +1,143 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Monitorar Atendimento",
+  "inputs": [
+    {
+      "id": "hZOGo7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Un.Organizacional",
+      "label": "Un.Organizacional",
+      "valor_atual": "V0011",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hZOGw-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Un.Organizacional",
+      "label": "Un.Organizacional",
+      "valor_atual": "SUPERV. DIST. SERV. ESTAT. E. M. AP. TEC.-ANÁPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "hZOGe0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "09/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hZOGf0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Data",
+      "label": "Data",
+      "valor_atual": "Todos",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hZOGw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGe0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGh0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGi0",
+      "name": null,
+      "label": "Filtros",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGj0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGd1",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hZOGw-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGe0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hZOGh0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGi0",
+      "name": null,
+      "label": "Filtros",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGj0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "hZOGd1",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS272MonitorarAtendimento.zul",
+  "codigo": "LRS272"
+}

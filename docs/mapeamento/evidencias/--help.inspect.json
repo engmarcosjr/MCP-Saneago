@@ -1,0 +1,8 @@
+{
+  "codigo": "--help",
+  "url_real": null,
+  "erro": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('row', { name: /(?:)/i }).first().locator('button').first()\u001b[22m\n",
+  "inputs": [],
+  "botoes": [],
+  "mensagens": []
+}

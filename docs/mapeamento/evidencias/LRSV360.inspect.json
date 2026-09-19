@@ -1,0 +1,151 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Resumo de Material",
+  "inputs": [
+    {
+      "id": "hQbC10-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano",
+      "label": "Mês/Ano",
+      "valor_atual": "09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbC60-real",
+      "name": "_pggcjtss1",
+      "tipo": "radio",
+      "rotulo": "Estado",
+      "label": "Estado",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbC80-real",
+      "name": "_pggcjtss1",
+      "tipo": "radio",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbCa0-real",
+      "name": "_pggcjtss1",
+      "tipo": "radio",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbCq1-real",
+      "name": "_pge1pdj8",
+      "tipo": "radio",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "radioAgruparPorServico",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbCs1-real",
+      "name": "_pge1pdj8",
+      "tipo": "radio",
+      "rotulo": "Material",
+      "label": "Material",
+      "valor_atual": "radioAgruparPorMaterial",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbCc4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hQbCq2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hQbC10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hQbCq2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hQbC_4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "hQbC04",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hQbC10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hQbCq2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hQbC_4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "hQbC04",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS360ResumoMaterial.zul",
+  "codigo": "LRSV360"
+}

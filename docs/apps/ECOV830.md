@@ -1,27 +1,29 @@
 # ECOV830 - WEBCOM - Vídeo Aulas
 
 ## Categoria
-Comercial e Atendimento ao Cliente
+Comercial e Atendimento ao Cliente / Saneago
 
 ## Tipo
-Leitura (Livre)
+Informativo / Sem campos de entrada (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a webcom - vídeo aulas.
+Permite consultar e visualizar vídeo aulas do sistema WEBCOM no portal corporativo.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/eco/ECO830VideoAulas.zul`
+
+## Campos e Filtros da Tela
+Nenhum campo de filtro ou entrada na tela inicial.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECOV830 (WEBCOM - Vídeo Aulas)"
-- "Acessar o aplicativo de webcom - vídeo aulas"
+## Perguntas que Responde
+- "consultar vídeo aulas no ECOV830"
+- "assistir treinamentos do WEBCOM"
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECOV830`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 08/09/2026 (Status: inventariado).*

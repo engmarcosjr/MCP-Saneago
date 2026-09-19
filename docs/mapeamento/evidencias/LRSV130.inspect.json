@@ -1,0 +1,178 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Manter Equipe",
+  "inputs": [
+    {
+      "id": "g1DVp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "g1DVr-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVb0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVc0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Ativa",
+      "label": "Ativa",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVi0-real",
+      "name": "_pgmlfb02",
+      "tipo": "radio",
+      "rotulo": "Saneago",
+      "label": "Saneago",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVj0-real",
+      "name": "_pgmlfb02",
+      "tipo": "radio",
+      "rotulo": "Subdelegada",
+      "label": "Subdelegada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVk0-real",
+      "name": "_pgmlfb02",
+      "tipo": "radio",
+      "rotulo": "Terceirizada",
+      "label": "Terceirizada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVl0-real",
+      "name": "_pgmlfb02",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "g1DVr0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código da Equipe",
+      "label": "Código da Equipe",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "g1DVb2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de equipe",
+      "label": "Tipo de equipe",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "g1DVr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "g1DVb2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "g1DVg2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "g1DVk2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "g1DVr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "g1DVb2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "g1DVg2",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "g1DVk2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código da Equipe",
+    "Nome do Responsável",
+    "Tipo de Equipe",
+    "Equipe"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS130ManterEquipe.zul",
+  "codigo": "LRSV130"
+}

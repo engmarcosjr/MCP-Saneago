@@ -1,27 +1,36 @@
 # BPAV361 - Gerenciamento e Devolutiva - Avaliaçoes
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a gerenciamento e devolutiva - avaliaçoes.
+Permite consultar o acompanhamento, gerenciamento e devolutiva das avaliações de desempenho por Unidade Organizacional e período de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA361AcompanhamentoAvaliacao.zul`
+
+## Campos e Filtros da Tela
+- **Unidade Organizacional** (input de texto, editável)
+- **Unidade Organizacional** (input de texto, somente leitura)
+- **Referência Avaliação** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
+*(Exibe também 2 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV361 (Gerenciamento e Devolutiva - Avaliaçoes)"
-- "Acessar o aplicativo de gerenciamento e devolutiva - avaliaçoes"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV361`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar acompanhamento de avaliações no BPAV361"
+- "verificar devolutiva das avaliações por UO"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Gestão de Desempenho).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

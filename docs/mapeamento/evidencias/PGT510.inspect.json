@@ -1,0 +1,127 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "cNBBb1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "cNBBi-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cNBB_0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cNBB00-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Aberta",
+      "label": "Aberta",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cNBB10-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Reservada",
+      "label": "Reservada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cNBBv0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número. O.T",
+      "label": "Número. O.T",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "cNBBi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cNBB30",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "cNBB60-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "cNBBi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cNBB30",
+      "name": null,
+      "label": "Atualizar",
+      "tipo": "button"
+    },
+    {
+      "id": "cNBB60-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Número",
+    "Início Deslocamento",
+    "Término Deslocamento",
+    "Uo Solicitante",
+    "Data Solictação",
+    "Itinerário",
+    "À Disp.",
+    "Viagem",
+    "Status"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul",
+  "codigo": "PGT510"
+}

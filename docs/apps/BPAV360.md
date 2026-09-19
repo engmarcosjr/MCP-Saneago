@@ -1,27 +1,34 @@
 # BPAV360 - Avaliação de Desempenho dos Gestores
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a avaliação de desempenho dos gestores.
+Tela de avaliação de desempenho de gestores no portal corporativo.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bpa/BPA360AvaliacaoGestores.zul`
+
+## Campos e Filtros da Tela
+Nenhum campo interativo na tela inicial.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Cancelar**
+- **OK**
+*(Exibe também botões técnicos de modal sem rótulo textual e botão Close).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BPAV360 (Avaliação de Desempenho dos Gestores)"
-- "Acessar o aplicativo de avaliação de desempenho dos gestores"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BPAV360`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar avaliação de desempenho dos gestores no BPAV360"
+- "avaliar gestores no portal corporativo"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Planejamento Rec Humanos -> Gestão de Desempenho).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

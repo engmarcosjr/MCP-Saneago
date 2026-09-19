@@ -1,0 +1,106 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO213 - Aferição Hidrômetro",
+  "inputs": [
+    {
+      "id": "xC1Aj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "xC1Ak",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta/DV",
+      "label": "Número de conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xC1Ar",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Laudo",
+      "label": "Laudo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "xC1As",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Laudo",
+      "label": "Laudo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    }
+  ],
+  "botoes": [
+    {
+      "id": "xC1Aw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "xC1A30",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "xC1Aw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "xC1A30",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Consultar",
+    "Laudo",
+    "Ano",
+    "Hidrômetro",
+    "Data da Solicitação",
+    "Data da Emissão",
+    "Data da Aferição",
+    "Matrícula",
+    "RA",
+    "ECO701",
+    "Ligação",
+    "Temperatura",
+    "Capacidade",
+    "Tecnologia",
+    "Diâmetro",
+    "Marca",
+    "Forma de Aquisição",
+    "Q3",
+    "Q4",
+    "Vazão (l/h)",
+    "Limites Admissíveis (%)",
+    "Resultado dos Ensaios (Variações %)"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO213AfericaoHidrometro.zul",
+  "codigo": "ECO213"
+}

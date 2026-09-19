@@ -1,0 +1,125 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO488 - RefaturamentoDebito",
+  "inputs": [
+    {
+      "id": "q3hCk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "q3hCl",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de Conta/DV",
+      "label": "Número de Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    },
+    {
+      "id": "q3hCs-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "q3hC60",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento",
+      "label": "Número do Documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "q3hC70",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do Documento",
+      "label": "Número do Documento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 1
+    }
+  ],
+  "botoes": [
+    {
+      "id": "q3hCs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q3hCm0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q3hCn0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "q3hCs-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "q3hCm0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "q3hCn0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Categorias\\Economias\\Peso",
+    "Categoria",
+    "Descrição",
+    "Economia",
+    "Peso",
+    "Consumo das Ligações",
+    "Ligação",
+    "Tipo",
+    "Medido",
+    "Médio",
+    "Estimado",
+    "Informado",
+    "Limite Superior",
+    "TCF",
+    "Volume Água",
+    "Volume Esgoto",
+    "Leitura Anterior",
+    "Leitura Atual"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO488RefaturamentoDebito.zul",
+  "codigo": "ECO488"
+}

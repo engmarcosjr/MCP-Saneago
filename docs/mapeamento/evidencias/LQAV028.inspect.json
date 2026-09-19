@@ -1,0 +1,42 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "LQA - Índice de Qualidade da Água.",
+  "inputs": [
+    {
+      "id": "cd_manan",
+      "name": "cd_manan",
+      "tipo": "text",
+      "rotulo": "LQA 028",
+      "label": "LQA 028",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_manan",
+      "name": "no_manan",
+      "tipo": "text",
+      "rotulo": "LQA 028",
+      "label": "LQA 028",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLQA028",
+      "name": "frmLQA028",
+      "action": "LQA028cadMananc.jsp",
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA028cadMananc.jsp",
+  "codigo": "LQAV028"
+}

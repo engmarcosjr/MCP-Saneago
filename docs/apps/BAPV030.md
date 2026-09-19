@@ -1,27 +1,38 @@
 # BAPV030 - Escala de Férias
 
 ## Categoria
-Recursos Humanos e Pessoal
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a escala de férias.
+Permite consultar a escala de férias de empregados por Unidade Organizacional (UO) ou colaborador individual, com opção de incluir UOs inferiores e ano de análise.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/bap/BAP030ConsultarFerias.zul`
+
+## Campos e Filtros da Tela
+- **UO** (radio button, editável)
+- **Empregado** (radio button, editável)
+- **Unidade Organizacional** (combobox, editável)
+- **Considerar UOs Inferiores?** (checkbox, editável)
+- **Ano de Análise** (input de texto, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Cancelar**
+*(Exibe também 1 botão técnico de combobox sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela BAPV030 (Escala de Férias)"
-- "Acessar o aplicativo de escala de férias"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `BAPV030`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar escala de férias no BAPV030"
+- "pesquisar férias programadas por UO e ano"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Administração Pessoal -> Consulta).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

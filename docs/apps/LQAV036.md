@@ -1,31 +1,54 @@
 # LQAV036 - DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a dados para construção do relat siságua.
+Permite consultar análises laboratoriais para elaboração do relatório SISÁGUA por cidade, sistema de tratamento e mês/ano de referência, com opção de ocultar colunas.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Referência:** (date): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqa/LQA036RelatorioSISAGUA.zul`
+
+## Campos e Filtros da Tela
+- **Cidade** (input de texto, editável)
+- **Cidade** (input de texto, somente leitura)
+- **Sistema de Tramento** (input de texto, editável)
+- **Sistema de Tramento** (input de texto, somente leitura)
+- **Referência** (input de data, editável)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `eNrJq0`)
-- **Ocultar Colunas** (ID ZK: `eNrJs0`)
-- **Cancelar** (ID ZK: `eNrJt0`)
+- **Consultar**
+- **Ocultar Colunas**
+- **Cancelar**
+*(Exibe também 4 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQAV036 (DADOS PARA CONSTRUÇÃO DO RELAT SISÁGUA)"
-- "Acessar o aplicativo de dados para construção do relat siságua"
+## Colunas e Grade de Resultados
+- Cidade
+- Sistema de Tratamento
+- Área de Influência
+- Bairro
+- Ponto
+- Localização
+- Data da Análise
+- Temp.
+- Cloro
+- Flúor
+- Turb.
+- Cor
+- Ph
+- Colif. Totais
+- E. Coli
+- Bac. Heter
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQAV036`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar dados do relatório SISÁGUA no LQAV036"
+- "pesquisar análises de água tratada por cidade e sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu CONTROLE DE QUALIDADE DA ÁGUA).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

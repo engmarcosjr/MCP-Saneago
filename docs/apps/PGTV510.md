@@ -1,27 +1,41 @@
-# PGTV510 - Atendimento
+# PGTV510 — Atendimento
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV510
+- **Nome:** Atendimento
+- **Módulo:** Gestão Transporte > Ordem Tráfego
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT510AtendimentoOrdemTrafego.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela mista de consulta e atendimento de ordens de tráfego com filtros de posto de serviço e status, e botão Atualizar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Posto de Serviço | text | Sim | `yCOFb1` |
+| Posto de Serviço | text | Não (readonly) | `yCOFi-real` |
+| Posto de Serviço | checkbox | Sim | `yCOF_0-real` |
+| Aberta | checkbox | Sim | `yCOF00-real` |
+| Reservada | checkbox | Sim | `yCOF10-real` |
+| Número. O.T | text | Sim | `yCOFv0` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a atendimento.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Atualizar | button | `yCOF30` | Atualiza a listagem de ordens de tráfego |
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `yCOFi-btn`, tipo: `a`) — botão auxiliar de lookup do campo Posto de Serviço.
+- `Sem Rotulo` (id: `yCOF60-a`, tipo: `submit`) — elemento de submit auxiliar do formulário.
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV510 (Atendimento)"
-- "Acessar o aplicativo de atendimento"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV510`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+- Número
+- Início Deslocamento
+- Término Deslocamento
+- Uo Solicitante
+- Data Solictação
+- Itinerário
+- À Disp.
+- Viagem
+- Status

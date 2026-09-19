@@ -1,0 +1,85 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Saneago",
+  "inputs": [
+    {
+      "id": "aBVVi",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aBVVj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Conta/DV",
+      "label": "Conta/DV",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 1
+    },
+    {
+      "id": "aBVVr-real",
+      "name": "_pga40533",
+      "tipo": "radio",
+      "rotulo": "3 anos",
+      "label": "3 anos",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aBVVs-real",
+      "name": "_pga40533",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aBVVw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aBVVy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aBVVw",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aBVVy",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "ATENÇÃO"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO712HistoricoUsuario.zul",
+  "codigo": "ECO712"
+}

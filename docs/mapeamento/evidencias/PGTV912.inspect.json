@@ -1,0 +1,148 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Relatórios de Ordem de Tráfego",
+  "inputs": [
+    {
+      "id": "hS8Ud-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Período",
+      "label": "Período",
+      "valor_atual": "10/08/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Uf-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "09/09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Ul-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Situações",
+      "label": "Situações",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Um-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Aberta",
+      "label": "Aberta",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Un-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Reservada",
+      "label": "Reservada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Uo-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Empenhada",
+      "label": "Empenhada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "hS8Up-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Encerrada",
+      "label": "Encerrada",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "hS8Ud-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hS8Uf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hS8Ut",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8Uv",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "hS8Ud-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hS8Uf-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "hS8Ut",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "hS8Uv",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nº OT",
+    "Início Deslocamento",
+    "Term. Deslocamento",
+    "Pst. Serviço",
+    "Local Embarque",
+    "Itinerário",
+    "Situação"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT912RelatorioOrdemTrafego.zul",
+  "codigo": "PGTV912"
+}

@@ -1,31 +1,40 @@
-# LRSV017 - Cadastrar situação do distrito SIPSAP
+# LRSV017 — Situação Distrito SIP/SAP
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
+- **Código:** LRSV017
+- **Nome:** Situação Distrito SIP/SAP
+- **Módulo:** Atendimento ao Publico > Cadastro
+- **Tecnologia:** misto
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS017CadSituacaoDistritoSIPSAP.zul`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela mista de cadastro e situação de distrito SIP/SAP com botões de consulta e cancelamento (Consultar, Cancelar).
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Distrito | text | Sim | `m1HYs1` |
+| Distrito | text | Não (readonly) | `m1HYj-real` |
+| Tipo de implantação | combobox | Não (readonly) | `m1HY40-real` |
+| Data de Implantação | date | Sim | `m1HYb0-real` |
+| Sim | radio | Sim | `m1HYk0-real` (name: `_pgi9bh0g1`) |
+| Não | radio | Sim | `m1HYl0-real` (name: `_pgi9bh0g1`) |
+| Sim | radio | Sim | `m1HYu0-real` (name: `_pgseg77d1`) |
+| Não | radio | Sim | `m1HYv0-real` (name: `_pgseg77d1`) |
+| Funcionário Responsárvel | text | Não (readonly) | `m1HY21` |
+| Data do cadastro | date | Não (readonly) | `m1HY91-real` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a cadastrar situação do distrito sipsap.
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | button | `m1HYd1` | Executa a consulta da situação do distrito |
+| Cancelar | button | `m1HYh1` | Cancela a operação e limpa o formulário |
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Data de Implantação** (date): Editável
-- **Funcionário Responsárvel** (text): Somente Leitura
-- **Data do cadastro** (date): Somente Leitura
+### Elementos Auxiliares Ignorados
+- `Sem Rotulo` (id: `m1HYj-btn`, tipo: `a`) — abridor de lookup Distrito.
+- `Sem Rotulo` (id: `m1HY40-btn`, tipo: `a`) — abridor de combobox Tipo de implantação.
+- `Sem Rotulo` (id: `m1HYb0-btn`, tipo: `a`) — abridor de datepicker Data de Implantação.
+- `Sem Rotulo` (id: `m1HY91-btn`, tipo: `a`) — abridor de datepicker Data do cadastro.
 
-## Botões Disponíveis
-- **Consultar** (ID ZK: `hGyNd1`)
-- **Cancelar** (ID ZK: `hGyNh1`)
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV017 (Cadastrar situação do distrito SIPSAP)"
-- "Acessar o aplicativo de cadastrar situação do distrito sipsap"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV017`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Colunas da Grade
+Nenhuma coluna tabular identificada na tela inicial.

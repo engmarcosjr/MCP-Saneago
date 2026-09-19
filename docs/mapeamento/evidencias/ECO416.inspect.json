@@ -1,0 +1,252 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO416 - Simulação de Conta",
+  "inputs": [
+    {
+      "id": "d4uOh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número de conta",
+      "label": "Número de conta",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "d4uOn-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "d4uOk0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cliente",
+      "label": "Cliente",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d4uOr0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Volume a Calcular",
+      "label": "Volume a Calcular",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d4uOy0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Fonte Alternativa",
+      "label": "Fonte Alternativa",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d4uO41",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Mínimo",
+      "label": "Mínimo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "d4uOb1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Estimado",
+      "label": "Estimado",
+      "valor_atual": "0",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 2
+    },
+    {
+      "id": "d4uOi1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "(%) Fatur. Esgoto",
+      "label": "(%) Fatur. Esgoto",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 4
+    },
+    {
+      "id": "d4uO_2-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d4uO05",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Subcategoria",
+      "label": "Subcategoria",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "d4uO82-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Subcategoria",
+      "label": "Subcategoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "d4uOu2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Economia",
+      "label": "Economia",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "d4uO03",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Unidade",
+      "label": "Unidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "d4uOn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uOr",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uOt",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uO_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uO82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uO23",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uO73-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "d4uOn-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uOr",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uOt",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uO_2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uO82-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "d4uO23",
+      "name": null,
+      "label": "Adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "d4uO73-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Categoria",
+    "Subcategoria",
+    "Economia",
+    "Unidade",
+    "Consumo Estimado m³/mês",
+    "Peso (%)",
+    "Código",
+    "Descrição do Lançamento",
+    "Valor do Lançamento"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO416SimulacaoConta.zul",
+  "codigo": "ECO416"
+}

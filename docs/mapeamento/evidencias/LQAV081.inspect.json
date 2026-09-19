@@ -1,0 +1,313 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "iXQEy-real",
+      "name": "_pgpujpfc1",
+      "tipo": "radio",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQE_0-real",
+      "name": "_pgpujpfc1",
+      "tipo": "radio",
+      "rotulo": "Sistema",
+      "label": "Sistema",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEf0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iXQEh0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Regional",
+      "label": "Regional",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEy7-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Fase",
+      "label": "Fase",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQE18-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Fase",
+      "label": "Fase",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQE58-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Fase",
+      "label": "Fase",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQE98-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Fase",
+      "label": "Fase",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "iXQE21-real",
+      "tipo": "text",
+      "rotulo": "Fase",
+      "label": "Fase",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEg3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "iXQEl1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Tipo de água",
+      "label": "Tipo de água",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "iXQE62-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data inicial",
+      "label": "Data inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEc2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data final",
+      "label": "Data final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEj2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "IQA Inicial",
+      "label": "IQA Inicial",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iXQEp2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "IQA Final",
+      "label": "IQA Final",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "iXQEx2-real",
+      "name": "_pg1vgp17",
+      "tipo": "radio",
+      "rotulo": "Retrato",
+      "label": "Retrato",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iXQEz2-real",
+      "name": "_pg1vgp17",
+      "tipo": "radio",
+      "rotulo": "Paisagem",
+      "label": "Paisagem",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iXQEh0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE11-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "iXQE21-next",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "iXQE21-last",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "iXQEl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE62-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQEc2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE23",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "iXQE33",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iXQEh0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE11-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "iXQE21-next",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": null,
+      "name": "iXQE21-last",
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "iXQEl1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE62-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQEc2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iXQE23",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "iXQE33",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Fase"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA081GraficoIQAMedio.zul",
+  "codigo": "LQAV081"
+}

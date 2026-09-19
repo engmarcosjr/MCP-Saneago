@@ -1,28 +1,53 @@
 # ECSV009 - Gerenciar Planilha de Controle
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a gerenciar planilha de controle.
+Permite consultar e gerenciar planilhas de controle de medição por distrito, ano, período, lote e situação, com visualização em grade e exportação PDF/XLSX.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/ecs/ECS009GerenciarPlanilhaControle.zul`
+
+## Campos e Filtros da Tela
+- **Distrito** (input de texto, editável, maxlength 5)
+- **Distrito** (input de texto, editável)
+- **Ano** (combobox, somente leitura, valor atual "2026")
+- **Período de medição** (combobox, somente leitura)
+- **Lote** (combobox, somente leitura)
+- **Situação** (combobox, somente leitura, valor atual "Todas as geradas")
+- **PDF** (radio button, editável)
+- **XLSX** (radio button, editável)
+- **Aprovação** (checkbox, editável, valor atual "on")
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `oAvKa1`)
-- **Cancelar** (ID ZK: `oAvKd1`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 6 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela ECSV009 (Gerenciar Planilha de Controle)"
-- "Acessar o aplicativo de gerenciar planilha de controle"
+## Colunas e Grade de Resultados
+- Contrato
+- Distrito
+- Geração
+- Aprovação
+- N° Lote
+- N° Fornecedor
+- Código
+- Nome
+- Período de Medição
+- Data e Hora
+- Matrícula
+- Situação
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `ECSV009`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "gerenciar planilha de controle no ECSV009"
+- "consultar planilhas de medição e aprovação por distrito"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu QUANTIFICAÇÃO DE SERVIÇOS COMERCIAIS).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

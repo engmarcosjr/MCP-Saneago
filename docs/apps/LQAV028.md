@@ -1,27 +1,33 @@
 # LQAV028 - Cadastro de Mananciais/Bacias
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a cadastro de mananciais/bacias.
+Permite consultar informações cadastrais de mananciais e bacias hidrográficas no sistema de Índice de Qualidade da Água (LQA).
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqa/LQA028cadMananc.jsp`
+
+## Campos e Filtros da Tela
+- **LQA 028** (input de texto, editável, id `cd_manan`)
+- **LQA 028** (input de texto, somente leitura, id `no_manan`)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+Nenhum botão de ação na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQAV028 (Cadastro de Mananciais/Bacias)"
-- "Acessar o aplicativo de cadastro de mananciais/bacias"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQAV028`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar cadastro de mananciais no LQAV028"
+- "pesquisar bacias hidrográficas cadastradas no LQA"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu CONTROLE DE QUALIDADE DA ÁGUA).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

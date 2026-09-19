@@ -1,27 +1,31 @@
 # LRSV314 - Análise tempo padrão/execução/perfomance
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Relatório Operacional (html)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a análise tempo padrão/execução/perfomance.
+Gera relatório de análise de tempo padrão, execução e performance de serviços por período, unidade organizacional e equipe.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS314relTempPad.jsp`
+
+## Campos e Filtros da Tela
+- **Período** (dataInicial: input de texto, editável, maxlength: 10)
+- **Período** (dataFinal: input de texto, editável, maxlength: 10)
+- **Unidade** (codigoUnidadeOrganizacional: input de texto, editável, maxlength: 5)
+- **Unidade** (nomeUnidadeOrganizacional: input de texto, readonly)
+- **Equipe** (codigoEquipe: input de texto, editável, maxlength: 4)
+- **Equipe** (descricaoEquipe: input de texto, readonly, maxlength: 25)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- Nenhum botão declarado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV314 (Análise tempo padrão/execução/perfomance)"
-- "Acessar o aplicativo de análise tempo padrão/execução/perfomance"
+## Observações de Segurança e Automação
+- Tela JSP legada com formulário (`frmLRS314`) para geração de relatório analítico de tempo e performance (`LRS314relTempPad.jsp`).
+- Não possui botões de escrita ou gravação de dados na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV314`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

@@ -1,0 +1,219 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Impressão de RA",
+  "inputs": [
+    {
+      "id": "mCQHh-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "2 - EM EXECUÇÃO",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mCQHq2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Executora",
+      "label": "UO Executora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "mCQHr-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "UO Executora",
+      "label": "UO Executora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mCQHb0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla UO Executora",
+      "label": "Sigla UO Executora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "mCQHi0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Emissão",
+      "label": "Data Emissão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "mCQHq0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Hora Emissão",
+      "label": "Hora Emissão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "mCQHr0-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Hora Emissão",
+      "label": "Hora Emissão",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "mCQHr2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Serviço",
+      "label": "Código Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mCQH01-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Serviço",
+      "label": "Código Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "mCQHm1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número do RA",
+      "label": "Número do RA",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "mCQHs2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mCQHw1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Impressora",
+      "label": "Impressora",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "mCQHr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHi0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQH01-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHw1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHe2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "mCQHf2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "mCQHr-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHi0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQH01-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHw1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "mCQHe2",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "mCQHf2",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO728ImpressaoRA.zul",
+  "codigo": "ECO728"
+}

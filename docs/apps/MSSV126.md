@@ -1,30 +1,39 @@
 # MSSV126 - Consulta Acessos Legado por Usuário
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta acessos legado por usuário.
+Permite consultar os acessos aos sistemas legados por operador recebedor, operador autorizador e sistema.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/mss/MSS126AplicacoesAcesso.zul`
+
+## Campos e Filtros da Tela
+- **Operador Recebedor** (input de texto, editável)
+- **Operador Recebedor** (input de texto, somente leitura)
+- **Operador Autorizador** (input de texto, editável)
+- **Operador Autorizador** (input de texto, somente leitura)
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `bCvIh1`)
-- **Cancelar** (ID ZK: `bCvIk1`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 3 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela MSSV126 (Consulta Acessos Legado por Usuário)"
-- "Acessar o aplicativo de consulta acessos legado por usuário"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `MSSV126`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar acessos legados por operador no MSSV126"
+- "pesquisar funções autorizadas por sistema"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Segurança -> Portal Legado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

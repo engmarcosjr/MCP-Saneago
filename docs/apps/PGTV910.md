@@ -1,27 +1,22 @@
-# PGTV910 - Gastos por Periodo
+# PGTV910 — Gastos por Periodo
 
-## Categoria
-Outros / Administrativo
+## Informações Gerais
+- **Código:** PGTV910
+- **Nome:** Gastos por Periodo
+- **Módulo:** Gestão Transporte > Relatórios
+- **Tecnologia:** html
+- **URL Real:** `https://www.saneago.com.br/prt/pgt/PGT910RelCustVeic.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela HTML de relatório de gastos e custos por período com botão Consultar.
 
-## Tipo
-Leitura (Livre)
+## Entradas Identificadas
+| Rótulo | Tipo | Editável | ID / Nome |
+|---|---|---|---|
+| Informe o período | text | Sim | `dataInicial` |
+| Informe o período | text | Sim | `dataFinal` |
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a gastos por periodo.
-
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
-
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
-
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela PGTV910 (Gastos por Periodo)"
-- "Acessar o aplicativo de gastos por periodo"
-
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `PGTV910`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Botões e Ações
+| Rótulo | Tipo | ID | Ação Prevista |
+|---|---|---|---|
+| Consultar | submit | null | Consulta o relatório de gastos do período |

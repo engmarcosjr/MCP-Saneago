@@ -1,27 +1,47 @@
 # LQEV018 - Cadastro de Ocorrêcias nas Amostras
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (misto)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a cadastro de ocorrêcias nas amostras.
+Permite consultar e cadastrar ocorrências em amostras de esgoto por protocolo, fase, tipo de ocorrência, data, quantidade de frascos e encaminhamento.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE018cadOcoAmtr.zul`
+
+## Campos e Filtros da Tela
+- **Protocolo** (input de texto, editável)
+- **/** (input de texto, editável, maxlength 4)
+- **Fase em que ocorreu** (combobox, somente leitura)
+- **Ocorrência** (combobox, somente leitura)
+- **Data da Ocorrência** (input de data, editável)
+- **Quantidade de Frascos** (input de texto, editável, maxlength 4)
+- **Encaminhamento** (textarea, editável)
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Incluir**
+- **Cancelar**
+*(Exibe também 4 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV018 (Cadastro de Ocorrêcias nas Amostras)"
-- "Acessar o aplicativo de cadastro de ocorrêcias nas amostras"
+## Colunas e Grade de Resultados
+- descricao
+- conteúdo
+- Descrição
+- Fase
+- Qtde. Frascos
+- Data
+- Encaminhamento
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV018`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar ocorrências em amostras no LQEV018"
+- "cadastrar ocorrência na amostra por protocolo"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

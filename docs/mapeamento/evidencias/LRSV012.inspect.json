@@ -1,0 +1,152 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Cadastro de Serviços Executados:.",
+  "inputs": [
+    {
+      "id": "cd_distrito",
+      "name": "cd_distrito",
+      "tipo": "text",
+      "rotulo": "LRS 012",
+      "label": "LRS 012",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "no_distrito",
+      "name": "no_distrito",
+      "tipo": "text",
+      "rotulo": "LRS 012",
+      "label": "LRS 012",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "ano_ref",
+      "name": "ano_ref",
+      "tipo": "text",
+      "rotulo": "LRS 012",
+      "label": "LRS 012",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "mes_ref",
+      "name": "mes_ref",
+      "tipo": "text",
+      "rotulo": "LRS 012",
+      "label": "LRS 012",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "tp_serv_prest_dis",
+      "name": "tp_serv_prest_dis",
+      "tipo": "text",
+      "rotulo": "[REDIGIDO]",
+      "label": "[REDIGIDO]",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLRS012",
+      "name": "frmLRS012",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lrs/LRS012servRealiza.jsp",
+  "codigo": "LRSV012"
+}

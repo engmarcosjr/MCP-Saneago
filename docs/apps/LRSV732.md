@@ -1,27 +1,28 @@
-# LRSV732 - Atendimento Por Período
+# LRSV732 — Atendimento Por Período
 
-## Categoria
-Logística, Redes e Serviços de Campo
+## Informações Gerais
 
-## Tipo
-Leitura (Livre)
+- **Código:** LRSV732
+- **Nome:** Atendimento Por Período
+- **Módulo:** Atendimento ao Publico > Relatório
+- **Tecnologia:** JSP / HTML legado
+- **URL Real:** `https://www.saneago.com.br/prt/lrs/LRS732relAtendPer.jsp`
+- **Status:** inventariado
+- **Classe Proposta:** `somente_leitura`
+- **Motivo:** Tela JSP legada de relatório de serviços atendidos por período, sem botões de escrita identificados na carga inicial.
 
-## O que faz
-Permite visualizar e gerenciar informações relacionadas a atendimento por período.
+## Campos de Entrada (Filtros de Parâmetros)
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+| Rótulo / Label | ID | Name | Tipo | Editável | Readonly | Maxlength | Valor Padrão |
+|---|---|---|---|---|---|---|---|
+| Periodo | `dataInicio` | `dataInicio` | `text` | Sim | Não | 10 | `""` |
+| Periodo | `dataFim` | `dataFim` | `text` | Sim | Não | 10 | `""` |
 
-## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+## Botões e Ações
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV732 (Atendimento Por Período)"
-- "Acessar o aplicativo de atendimento por período"
+Nenhum botão detectado no DOM inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV732`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Decisões de Mapeamento e Segurança
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+- **Formulário:** `frmLRS732` (POST).
+- **Classificação:** `somente_leitura` para emissão de relatório geral de serviços atendidos no período.

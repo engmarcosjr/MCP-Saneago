@@ -1,33 +1,43 @@
 # LQEV039 - Relatório do IQEt por data
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a relatório do iqet por data.
+Permite consultar e emitir o relatório do Índice de Qualidade de Esgoto Tratado (IQEt) por superintendência, regional, distrito, sistema e período de referência.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Referência:** (date): Editável
-- **até** (date): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE039RelatorioIQEt.zul`
+
+## Campos e Filtros da Tela
+- **Superintendência** (input de texto, editável)
+- **Superintendência** (input de texto, somente leitura)
+- **Regional** (input de texto, editável)
+- **Regional** (input de texto, somente leitura)
+- **Distrito** (input de texto, editável)
+- **Distrito** (input de texto, somente leitura)
+- **Sistema** (input de texto, editável)
+- **Sistema** (input de texto, somente leitura)
+- **Referência** (input de data, editável)
+- **até** (input de data, editável)
 
 ## Botões Disponíveis
-- **Imprimir** (ID ZK: `xChV72`)
-- **Cancelar** (ID ZK: `xChV82`)
+- **Imprimir**
+- **Cancelar**
+*(Exibe também 6 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV039 (Relatório do IQEt por data)"
-- "Acessar o aplicativo de relatório do iqet por data"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV039`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "emitir relatório do IQEt no LQEV039"
+- "consultar índice de qualidade de esgoto tratado por sistema e período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

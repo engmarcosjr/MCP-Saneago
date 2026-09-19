@@ -1,0 +1,402 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "CONSUMO DE HIDRÔMETROS INSTALADOS OU TROCADOS",
+  "inputs": [
+    {
+      "id": "jOsVj",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "jOsVl-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsV10",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVb0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "jOsVd0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVu0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVw5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "jOsV21-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVr1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 5
+    },
+    {
+      "id": "jOsVt1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsV92",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Sigla",
+      "label": "Sigla",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVx5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 3
+    },
+    {
+      "id": "jOsVi2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsV53-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Mês/Ano do Mov.",
+      "label": "Mês/Ano do Mov.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "jOsV73",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Total de Contas Movimentadas",
+      "label": "Total de Contas Movimentadas",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVf3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. de Meses Antes",
+      "label": "Qtd. de Meses Antes",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "jOsVn3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Qtd. de Meses Depois",
+      "label": "Qtd. de Meses Depois",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "jOsVx3-real",
+      "name": "_pgal65rt1",
+      "tipo": "radio",
+      "rotulo": "Instalação",
+      "label": "Instalação",
+      "valor_atual": "I",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVy3-real",
+      "name": "_pgal65rt1",
+      "tipo": "radio",
+      "rotulo": "Troca",
+      "label": "Troca",
+      "valor_atual": "T",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVz3-real",
+      "name": "_pgal65rt1",
+      "tipo": "radio",
+      "rotulo": "Geral",
+      "label": "Geral",
+      "valor_atual": "G",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsV84-real",
+      "name": "_pgma04oh",
+      "tipo": "radio",
+      "rotulo": "Estimado acima de 100 m³",
+      "label": "Estimado acima de 100 m³",
+      "valor_atual": "101",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsV94-real",
+      "name": "_pgma04oh",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVj4-real",
+      "name": "_pg62g8ge1",
+      "tipo": "radio",
+      "rotulo": "Água",
+      "label": "Água",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVk4-real",
+      "name": "_pg62g8ge1",
+      "tipo": "radio",
+      "rotulo": "Esgoto",
+      "label": "Esgoto",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVl4-real",
+      "name": "_pg62g8ge1",
+      "tipo": "radio",
+      "rotulo": "Ambos",
+      "label": "Ambos",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "jOsVt4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Característica",
+      "label": "Característica",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    }
+  ],
+  "botoes": [
+    {
+      "id": "jOsVl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsVd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsV21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsV53-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsVx4",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsVy4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsVz4",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsV_5",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "jOsVl-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsVd0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsV21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsV53-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "jOsVx4",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsVy4",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsVz4",
+      "name": null,
+      "label": "Planilha",
+      "tipo": "button"
+    },
+    {
+      "id": "jOsV_5",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Referência",
+    "Consumo",
+    "Valor",
+    "Contas Faturadas"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO212HidrometrosInstaladosTrocados.zul",
+  "codigo": "ECO212"
+}

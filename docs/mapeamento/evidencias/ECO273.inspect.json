@@ -1,0 +1,248 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "ECO273 - Hidrômetros com Volume Acumulado/Vida Útil Vencida",
+  "inputs": [
+    {
+      "id": "wHiBo",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "wHiBq-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "S",
+      "label": "S",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wHiBd0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "wHiBf0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "G",
+      "label": "G",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wHiBjb",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "wHiB21-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wHiBq1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    },
+    {
+      "id": "wHiBs1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "T",
+      "label": "T",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wHiBkb",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "wHiBf2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "wHiB_3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "wHiB63",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Idade",
+      "label": "Idade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 2
+    },
+    {
+      "id": "wHiB83",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 2
+    }
+  ],
+  "botoes": [
+    {
+      "id": "wHiBq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiB21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBs1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBd3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wHiBe3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "wHiBq-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBf0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiB21-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBs1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "wHiBd3",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "wHiBe3",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Capacidade",
+    "Volume Acumulado",
+    "Tempo de Instalação",
+    "Individualizadas",
+    "Total"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO273HidrometroVencido.zul",
+  "codigo": "ECO273"
+}

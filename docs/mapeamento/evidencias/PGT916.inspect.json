@@ -1,0 +1,172 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "aASUf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O",
+      "label": "U.O",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUh-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O",
+      "label": "U.O",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aASU_0-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "U.O",
+      "label": "U.O",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASU50-real",
+      "name": "_pgnd2rgv",
+      "tipo": "radio",
+      "rotulo": "Todos os motoristas cadastrados",
+      "label": "Todos os motoristas cadastrados",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASU70-real",
+      "name": "_pgnd2rgv",
+      "tipo": "radio",
+      "rotulo": "Apenas os motoristas com autorização válida",
+      "label": "Apenas os motoristas com autorização válida",
+      "valor_atual": "APENAS_AUTORIZADOS",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASU90-real",
+      "name": "_pgnd2rgv",
+      "tipo": "radio",
+      "rotulo": "Apenas os motoristas com autorização vencida",
+      "label": "Apenas os motoristas com autorização vencida",
+      "valor_atual": "APENAS_NAO_AUTORIZADOS",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUb0-real",
+      "name": "_pgnd2rgv",
+      "tipo": "radio",
+      "rotulo": "Autorizações a vencer nos próximos 2 meses",
+      "label": "Autorizações a vencer nos próximos 2 meses",
+      "valor_atual": "A_VENCER_AUTORIZACAO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUh0-real",
+      "name": "_pgg4p01l1",
+      "tipo": "radio",
+      "rotulo": "PDF",
+      "label": "PDF",
+      "valor_atual": "pdf",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUj0-real",
+      "name": "_pgg4p01l1",
+      "tipo": "radio",
+      "rotulo": "Planilha",
+      "label": "Planilha",
+      "valor_atual": "xls",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUp0-real",
+      "name": "_pgc5nueo",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "nao",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aASUr0-real",
+      "name": "_pgc5nueo",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "sim",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aASUh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aASUu0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "aASUv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aASUh-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aASUu0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "aASUv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT916RelatorioMotorista.zul",
+  "codigo": "PGT916"
+}

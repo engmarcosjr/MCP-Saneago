@@ -1,0 +1,64 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Empregados por projeto:.",
+  "inputs": [
+    {
+      "id": "codigoRegional",
+      "name": "codigoRegional",
+      "tipo": "text",
+      "rotulo": "GRS",
+      "label": "GRS",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "nomeRegional",
+      "name": "nomeRegional",
+      "tipo": "text",
+      "rotulo": "GRS",
+      "label": "GRS",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "Cidades",
+      "label": "Cidades",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 6
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "Cidades",
+      "label": "Cidades",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmLQA071",
+      "name": "frmLQA071",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqa/LQA071qtdeContas.jsp",
+  "codigo": "LQAV071"
+}

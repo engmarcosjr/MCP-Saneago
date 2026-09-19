@@ -1,0 +1,317 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "s2bMu-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data/Hora",
+      "label": "Data/Hora",
+      "valor_atual": "09/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMw-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Data/Hora",
+      "label": "Data/Hora",
+      "valor_atual": "11:56",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM46",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "T0002",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM20-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "DISTRITO-ANAPOLIS",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMn0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "COORD.TRANSP.GRS ANAPOLIS                         ",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMs0",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Embarque",
+      "label": "Embarque",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM91",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Embarque",
+      "label": "Embarque",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMq1",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Embarque",
+      "label": "Embarque",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM72-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data/Hora Início",
+      "label": "Data/Hora Início",
+      "valor_atual": "09/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM82-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Data/Hora Início",
+      "label": "Data/Hora Início",
+      "valor_atual": "11:56",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMh2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data/Hora Término",
+      "label": "Data/Hora Término",
+      "valor_atual": "09/09/2026",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMi2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Data/Hora Término",
+      "label": "Data/Hora Término",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM36",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 9
+    },
+    {
+      "id": "s2bMz2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Matrícula",
+      "label": "Matrícula",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMm3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Telefone",
+      "label": "Telefone",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMo3",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ramal",
+      "label": "Ramal",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "s2bM34-real",
+      "name": "_pgfd3hhm1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM44-real",
+      "name": "_pgfd3hhm1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bM94-real",
+      "name": "_pgg6s1tg1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMa4-real",
+      "name": "_pgg6s1tg1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMf4-real",
+      "name": "_pgln4svq1",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "2",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "s2bMg4-real",
+      "name": "_pgln4svq1",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "1",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "s2bMn0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bM72-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bMh2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bMr5",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    },
+    {
+      "id": "s2bMs5",
+      "name": null,
+      "label": "Enviar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "s2bMn0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bM72-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bMh2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "s2bMr5",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    },
+    {
+      "id": "s2bMs5",
+      "name": null,
+      "label": "Enviar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT500CadastroOrdemTrafego.zul",
+  "codigo": "PGTV500"
+}

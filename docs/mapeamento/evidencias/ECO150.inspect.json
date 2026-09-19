@@ -1,0 +1,128 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "ECO150 - Boletim de Recadastramento",
+  "inputs": [
+    {
+      "id": "oWKGg-real",
+      "name": "_pghep4vl1",
+      "tipo": "radio",
+      "rotulo": "Por Conta",
+      "label": "Por Conta",
+      "valor_atual": "CONTA",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKGh-real",
+      "name": "_pghep4vl1",
+      "tipo": "radio",
+      "rotulo": "Por Distrito",
+      "label": "Por Distrito",
+      "valor_atual": "DISTRITO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKGi-real",
+      "name": "_pghep4vl1",
+      "tipo": "radio",
+      "rotulo": "Por Referência de Recadastramento",
+      "label": "Por Referência de Recadastramento",
+      "valor_atual": "RECADASTRAMENTO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKGj-real",
+      "name": "_pghep4vl1",
+      "tipo": "radio",
+      "rotulo": "Em Branco",
+      "label": "Em Branco",
+      "valor_atual": "BRANCO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKGq-real",
+      "name": "_pgres6a",
+      "tipo": "radio",
+      "rotulo": "Sim",
+      "label": "Sim",
+      "valor_atual": "SIM",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKGr-real",
+      "name": "_pgres6a",
+      "tipo": "radio",
+      "rotulo": "Não",
+      "label": "Não",
+      "valor_atual": "NAO",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "oWKG40",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Lista de Contas",
+      "label": "Lista de Contas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "oWKG50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oWKGg8",
+      "name": null,
+      "label": "Gerar Boletim",
+      "tipo": "button"
+    },
+    {
+      "id": "oWKGh8",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "oWKG50",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "oWKGg8",
+      "name": null,
+      "label": "Gerar Boletim",
+      "tipo": "button"
+    },
+    {
+      "id": "oWKGh8",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/eco/ECO150BoletimRecadastramento.zul",
+  "codigo": "ECO150"
+}

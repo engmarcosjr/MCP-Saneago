@@ -1,27 +1,37 @@
 # LRSV208 - Consulta RA's com D.S.
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Consulta Operacional (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta ra's com d.s..
+Permite consultar informações e histórico de distribuição e execução de serviços (D.S.) vinculados a uma RA (Registro de Atendimento).
 
-## Campos da Tela Inicial
-- **Número da RA:** (text): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS208ConsultaRADS.zul`
+
+## Campos e Filtros da Tela
+- **Número da RA** (zV0H3: input de texto, editável)
 
 ## Botões Disponíveis
-- **consultar** (ID ZK: `hGxW4`)
+- **consultar** (`zV0H4`: button) — consulta e busca por RA
+- **Sem Rotulo** (`zV0H6-a`: submit) — submit/ignorado
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV208 (Consulta RA's com D.S.)"
-- "Acessar o aplicativo de consulta ra's com d.s."
+## Colunas da Listagem
+- Número Distribuição
+- Sequencia
+- Código Serviço Resposta
+- Código Serviço Retorno
+- Data Emissão
+- Data Distribuição
+- Data Execução
+- Equipe
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV208`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Observações de Segurança e Automação
+- Tela ZK de consulta de D.S. por RA (`LRS208ConsultaRADS.zul`).
+- Não contém botões de escrita, apenas botão de consulta (`consultar`).
 
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

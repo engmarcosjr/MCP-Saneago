@@ -1,27 +1,42 @@
 # EGWV001 - Contrato Comercial
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a contrato comercial.
+Permite consultar, emitir e gerenciar contratos comerciais de grandes clientes, aditivos, dados de faturamento, anexos em PDF e parâmetros contratuais.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW001CadastroContratoComercial.zul`
+
+## Campos e Filtros da Tela
+- **Contrato** (input de texto, editável)
+- **Aditivo** (combobox, editável)
+- **Tipo de aditivo** (combobox, somente leitura)
+- **Tipo** (combobox, somente leitura)
+- **CPF/CNPJ** (input de texto, editável)
+- **Tipo de Contrato** (combobox, somente leitura)
+- *(Múltiplos campos de parâmetros comerciais, vigência, faturamento e anexos).*
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**
+- **Imprimir**
+- **Cancelar**
+- **Anexar PDF**
+*(Exibe também 17 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV001 (Contrato Comercial)"
-- "Acessar o aplicativo de contrato comercial"
+## Colunas e Grade de Resultados
+Nenhuma grade de resultados visível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar contrato comercial no EGWV001"
+- "pesquisar contratos de grandes clientes por CPF/CNPJ"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Cadastro).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 12/09/2026 (Status: inventariado).*

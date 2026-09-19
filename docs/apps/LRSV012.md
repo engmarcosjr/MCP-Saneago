@@ -1,27 +1,37 @@
 # LRSV012 - Serviço Executado no Interior
 
 ## Categoria
-Logística, Redes e Serviços de Campo
+Logística, Redes e Serviços de Campo / Saneago
 
 ## Tipo
-Leitura (Livre)
+Formulário Cadastral (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a serviço executado no interior.
+Permite a consulta e lançamento cadastral de serviços executados no interior por distrito e mês/ano de referência.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lrs/LRS012servRealiza.jsp`
+
+## Campos e Filtros da Tela
+- **LRS 012** (cd_distrito: input de texto, editável)
+- **LRS 012** (no_distrito: input de texto, readonly)
+- **LRS 012** (ano_ref: input de texto, editável, max 4)
+- **LRS 012** (mes_ref: input de texto, editável, max 2)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
+- **[REDIGIDO]** (tp_serv_prest_dis: input de texto, editável, max 10)
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LRSV012 (Serviço Executado no Interior)"
-- "Acessar o aplicativo de serviço executado no interior"
+## Observações de Segurança e Automação
+- Tela JSP de cadastro e lançamento de serviços executados (`LRS012servRealiza.jsp`).
+- Contém campos cadastrais para digitação de quantidades por tipo de serviço prestado.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LRSV012`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
-
----
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+## Status
+Status: inventariado

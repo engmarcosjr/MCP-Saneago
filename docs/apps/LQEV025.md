@@ -1,31 +1,46 @@
 # LQEV025 - Consultar Amostras
 
 ## Categoria
-Outros / Administrativo
+Sistemas Comerciais e Operacionais / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consultar amostras.
+Permite consultar amostras laboratoriais e agendamentos de coletas por laboratório, sistema de tratamento, ponto de coleta e período.
 
-## Campos da Tela Inicial
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (text): Editável
-- **Sem Rotulo** (date): Editável
-- **a** (date): Editável
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/lqe/LQE025ConsultaAmostra.zul`
+
+## Campos e Filtros da Tela
+- **U.O. do Laboratório** (input de texto, editável, maxlength 5)
+- **U.O. do Laboratório** (input de texto, somente leitura)
+- **Sistema de Tratamento** (input de texto, editável, maxlength 9)
+- **Sistema de Tratamento** (input de texto, somente leitura)
+- **Ponto de Coleta** (combobox, somente leitura)
+- **Período de Agendamento** (input de data, editável)
+- **a** (input de data, editável)
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `e2lU61`)
-- **Cancelar** (ID ZK: `e2lU71`)
+- **Consultar**
+- **Cancelar**
+*(Exibe também 6 botões técnicos sem rótulo textual no ZK).*
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela LQEV025 (Consultar Amostras)"
-- "Acessar o aplicativo de consultar amostras"
+## Colunas e Grade de Resultados
+- Data
+- Número/Ano
+- ETE
+- Ponto de Coleta
+- N° Ocorrências
+- Ir para Agendamento
+- Ir para Recebimento
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `LQEV025`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar amostras de esgoto no LQEV025"
+- "pesquisar amostras por laboratório e sistema de tratamento"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Indice Qualidade Esgoto).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 11/09/2026 (Status: inventariado).*

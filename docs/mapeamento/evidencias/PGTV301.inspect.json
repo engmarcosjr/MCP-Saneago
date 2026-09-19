@@ -1,0 +1,695 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "",
+  "inputs": [
+    {
+      "id": "aIiRp",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nº Contrato",
+      "label": "Nº Contrato",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRr",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano",
+      "label": "Ano",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "aIiRx",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Descrição Contrato",
+      "label": "Descrição Contrato",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR10-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Cadastro",
+      "label": "Data Cadastro",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR60-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Categoria",
+      "label": "Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRb0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Detalhe Categoria",
+      "label": "Detalhe Categoria",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRg0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Marca",
+      "label": "Marca",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRl0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRq0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Combustivel",
+      "label": "Combustivel",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRv0-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Cor",
+      "label": "Cor",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR_1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Numero Chassi",
+      "label": "Numero Chassi",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 17
+    },
+    {
+      "id": "aIiR41",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano Fabricação",
+      "label": "Ano Fabricação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR91",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Ano Modelo",
+      "label": "Ano Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRe1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "RENAVAN",
+      "label": "RENAVAN",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "aIiRo1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número Motor",
+      "label": "Número Motor",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 21
+    },
+    {
+      "id": "aIiRt1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Capacidade",
+      "label": "Capacidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 6
+    },
+    {
+      "id": "aIiRy1-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Unidade Capacidade",
+      "label": "Unidade Capacidade",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR32",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Consumo min.",
+      "label": "Consumo min.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR52",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Consumo Max.",
+      "label": "Consumo Max.",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRa2",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Placa",
+      "label": "Placa",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    },
+    {
+      "id": "aIiRf2-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data Emplacamento",
+      "label": "Data Emplacamento",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRrh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRn2-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Atual",
+      "label": "Lotação Atual",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRsh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Origem",
+      "label": "Lotação Origem",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR93-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Lotação Origem",
+      "label": "Lotação Origem",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRth",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRw3-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Posto de Serviço",
+      "label": "Posto de Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRf4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Nome Proprietário",
+      "label": "Nome Proprietário",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRk4",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Licença",
+      "label": "Licença",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRp4-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Situação",
+      "label": "Situação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRu4-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Status",
+      "label": "Status",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRuh",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio",
+      "label": "Código Patrimônio",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 10
+    },
+    {
+      "id": "aIiR15-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio",
+      "label": "Código Patrimônio",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRl5",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Código Patrimônio SAP",
+      "label": "Código Patrimônio SAP",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 12
+    },
+    {
+      "id": "aIiR56",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR76-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRe7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade",
+      "label": "Quantidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiRy7",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR_8-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Modelo",
+      "label": "Modelo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "aIiR69",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Quantidade",
+      "label": "Quantidade",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "aIiRs",
+      "name": null,
+      "label": "Ver",
+      "tipo": "button"
+    },
+    {
+      "id": "aIiR10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRv0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRy1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR93-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRw3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRp4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR15-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR76-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR_8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRdh",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIiRhh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "aIiRs",
+      "name": null,
+      "label": "Ver",
+      "tipo": "button"
+    },
+    {
+      "id": "aIiR10-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR60-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRb0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRg0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRl0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRv0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRy1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRf2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRn2-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR93-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRw3-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRp4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRu4-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR15-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR76-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiR_8-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "aIiRdh",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "aIiRhh",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT301Veiculo.zul",
+  "codigo": "PGTV301"
+}

@@ -1,0 +1,166 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "LQE027 - Gera Laudos",
+  "inputs": [
+    {
+      "id": "uNmMd-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Laudo",
+      "label": "Tipo de Laudo",
+      "valor_atual": "Novo Relatório de Ensaio",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "uNmMk",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Protocolo",
+      "label": "Protocolo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uNmMm",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "uNmM30-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "/",
+      "label": "/",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "uNmM70-real",
+      "name": null,
+      "tipo": "checkbox",
+      "rotulo": "Imprimir em PDF Único",
+      "label": "Imprimir em PDF Único",
+      "valor_atual": "on",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "uNmMd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uNmMr",
+      "name": null,
+      "label": "adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMs",
+      "name": null,
+      "label": "remover",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMx-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "uNmMz",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmM_0",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMj0",
+      "name": null,
+      "label": "Confirmar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMk0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "uNmMd-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "uNmMr",
+      "name": null,
+      "label": "adicionar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMs",
+      "name": null,
+      "label": "remover",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMx-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "uNmMz",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmM_0",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMj0",
+      "name": null,
+      "label": "Confirmar",
+      "tipo": "button"
+    },
+    {
+      "id": "uNmMk0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/lqe/LQE027GeraLaudos.zul",
+  "codigo": "LQEV027"
+}
