@@ -1,27 +1,35 @@
 # EGWV003 - Consumo Master por Cidade
 
 ## Categoria
-Outros / Administrativo
+Comercial e Grandes Clientes
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consumo master por cidade.
+Permite consultar e visualizar o relatório de consumo das contas masters por cidade, bairro e mês/ano de referência no sistema de Grandes Clientes Web.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/egw/EGW003RelConsMast.jsp`
+
+## Campos e Filtros da Tela
+- **Cidade** (`select` / editável): Seleção da cidade para consulta do consumo master.
+- **Bairro** (`select` / editável): Seleção do bairro correspondente (opcional).
+- **Mês/Ano de Referência** (`text` / editável): Mês e ano de referência no formato MM/AAAA.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela EGWV003 (Consumo Master por Cidade)"
-- "Acessar o aplicativo de consumo master por cidade"
+## Colunas do Resultado
+Nenhuma coluna em grade detectada na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `EGWV003`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar consumo master por cidade no EGWV003"
+- "verificar relatório de consumo de contas master por município"
+- "pesquisar consumo de grandes clientes por cidade e referência"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Grandes Clientes Web -> Consulta -> Consumo Master por Cidade).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

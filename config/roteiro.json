@@ -10981,6 +10981,47 @@
     ],
     "status_doc": "inventariado"
   },
+  "EGW005": {
+    "codigo": "EGW005",
+    "nome": "Resumo de Faturamento",
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW005EnvioResumoFaturamento.zul",
+    "categoria": "Comercial e Grandes Clientes",
+    "o_que_faz": "Permite consultar o resumo de faturamento por conta macro ou condomínio.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Conta Macro/Condomínio",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "sE3Vl"
+      },
+      {
+        "label": "Cancelar",
+        "id": "sE3Vp"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar resumo de faturamento no EGW005",
+        "passos": [
+          "Abrir a aplicação EGW005 via menu Grandes Clientes Web -> Cadastro -> Resumo de Faturamento",
+          "Informar Conta Macro/Condomínio",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar resumo de faturamento no EGW005",
+      "pesquisar faturamento por conta macro/condomínio",
+      "verificar faturamento de grandes clientes no EGW005"
+    ],
+    "status_doc": "inventariado"
+  },
   "EGWV001": {
     "codigo": "EGWV001",
     "nome": "Contrato Comercial",
@@ -11057,27 +11098,43 @@
   "EGWV003": {
     "codigo": "EGWV003",
     "nome": "Consumo Master por Cidade",
-    "url_zul": "https://prod.saneago.com.br/prt/egw/EGWV003.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consumo master por cidade.",
+    "url_zul": "https://www.saneago.com.br/prt/egw/EGW003RelConsMast.jsp",
+    "categoria": "Comercial e Grandes Clientes",
+    "o_que_faz": "Permite consultar e visualizar o relatório de consumo das contas masters por cidade, bairro e mês/ano de referência.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "label": "Cidade",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Bairro",
+        "tipo": "select",
+        "editavel": true
+      },
+      {
+        "label": "Mês/Ano de Referência",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consumo Master por Cidade",
+        "intencao": "Consultar consumo master por cidade no EGWV003",
         "passos": [
-          "Abrir a aplicação EGWV003",
-          "Preencher campos na tela inicial"
+          "Abrir a aplicação EGWV003 via menu Grandes Clientes Web -> Consulta -> Consumo Master por Cidade",
+          "Selecionar a Cidade, opcionalmente o Bairro e informar o Mês/Ano de Referência"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consumo master por cidade",
-      "acessar a app EGWV003",
-      "consultar consumo master por cidade"
+      "consultar consumo master por cidade no EGWV003",
+      "verificar relatório de consumo de contas master por município",
+      "pesquisar consumo de grandes clientes por cidade e referência"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "EGWV004": {
     "codigo": "EGWV004",

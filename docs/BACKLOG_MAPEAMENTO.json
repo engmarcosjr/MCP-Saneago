@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T07:16:03.301Z",
+    "gerado_em": "2026-09-19T07:25:23.662Z",
     "total": 596,
-    "completos": 389,
-    "pendentes": 207,
+    "completos": 391,
+    "pendentes": 205,
     "por_classe_seguranca": {
-      "indeterminado": 259,
-      "candidata_leitura": 168,
+      "indeterminado": 258,
+      "candidata_leitura": 169,
       "possui_escrita": 161,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 91,
-      "ficha_nao_validada": 102,
-      "sem_campos_detectados": 34,
-      "ficha_stub": 19
+      "sem_roteiro": 90,
+      "ficha_nao_validada": 101,
+      "sem_campos_detectados": 33,
+      "ficha_stub": 18
     }
   },
   "apps": [
@@ -1661,7 +1661,7 @@
         "sem_roteiro"
       ],
       "completo": false,
-      "tentativas": 1,
+      "tentativas": 2,
       "aposentada": false,
       "prioridade": 9980
     },
@@ -5094,22 +5094,19 @@
       "vertical": "EGW",
       "url_zul": "https://www.saneago.com.br/prt/egw/EGW005EnvioResumoFaturamento.zul",
       "tipo_declarado": "Leitura e Consulta (zk)",
-      "status_ficha": null,
-      "bytes_ficha": 794,
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1116,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "EGW006",
@@ -5250,20 +5247,17 @@
       "nome": "Consumo Master por Cidade",
       "vertical": "EGW",
       "url_zul": "https://www.saneago.com.br/prt/egw/EGWV003.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 814,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1297,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "EGWV004",

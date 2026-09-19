@@ -1,0 +1,265 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": "Consumo das Contas Masters",
+  "inputs": [
+    {
+      "id": "comboCidade",
+      "name": "comboCidade",
+      "tipo": "select",
+      "rotulo": "Cidade",
+      "label": "Cidade",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "0",
+          "texto": "Selecione"
+        },
+        {
+          "valor": "409",
+          "texto": "ABADIA DE GOIAS"
+        },
+        {
+          "valor": "233",
+          "texto": "ACREUNA"
+        },
+        {
+          "valor": "354",
+          "texto": "ADELANDIA"
+        },
+        {
+          "valor": "344",
+          "texto": "AGUA FRIA DE GOIAS"
+        },
+        {
+          "valor": "131",
+          "texto": "AGUA LIMPA"
+        },
+        {
+          "valor": "516",
+          "texto": "AGUAS LINDAS DE GOIAS"
+        },
+        {
+          "valor": "132",
+          "texto": "ALEXANIA"
+        },
+        {
+          "valor": "134",
+          "texto": "ALOANDIA"
+        },
+        {
+          "valor": "359",
+          "texto": "ALTO HORIZONTE"
+        },
+        {
+          "valor": "86",
+          "texto": "ALTO PARAISO DE GOIAS"
+        },
+        {
+          "valor": "94",
+          "texto": "ALVORADA DO NORTE"
+        },
+        {
+          "valor": "340",
+          "texto": "AMARALINA"
+        },
+        {
+          "valor": "238",
+          "texto": "AMERICANO DO BRASIL"
+        },
+        {
+          "valor": "136",
+          "texto": "AMORINOPOLIS"
+        },
+        {
+          "valor": "2",
+          "texto": "ANAPOLIS"
+        },
+        {
+          "valor": "138",
+          "texto": "ANHANGUERA"
+        },
+        {
+          "valor": "30",
+          "texto": "ANICUNS"
+        },
+        {
+          "valor": "139",
+          "texto": "APARECIDA DE GOIANIA"
+        },
+        {
+          "valor": "236",
+          "texto": "APARECIDA DO RIO DOCE"
+        },
+        {
+          "valor": "140",
+          "texto": "APORE"
+        },
+        {
+          "valor": "87",
+          "texto": "ARACU"
+        },
+        {
+          "valor": "55",
+          "texto": "ARAGARCAS"
+        },
+        {
+          "valor": "141",
+          "texto": "ARAGOIANIA"
+        },
+        {
+          "valor": "295",
+          "texto": "ARAGUAPAZ"
+        },
+        {
+          "valor": "253",
+          "texto": "ARENOPOLIS"
+        },
+        {
+          "valor": "145",
+          "texto": "ARUANA"
+        },
+        {
+          "valor": "114",
+          "texto": "AURILANDIA"
+        },
+        {
+          "valor": "147",
+          "texto": "AVELINOPOLIS"
+        },
+        {
+          "valor": "150",
+          "texto": "BALIZA"
+        },
+        {
+          "valor": "110",
+          "texto": "BARRO ALTO"
+        },
+        {
+          "valor": "97",
+          "texto": "BELA VISTA DE GOIAS"
+        },
+        {
+          "valor": "151",
+          "texto": "BOM JARDIM DE GOIAS"
+        },
+        {
+          "valor": "85",
+          "texto": "BOM JESUS DE GOIAS"
+        },
+        {
+          "valor": "269",
+          "texto": "BONFINOPOLIS"
+        },
+        {
+          "valor": "414",
+          "texto": "BONOPOLIS"
+        },
+        {
+          "valor": "152",
+          "texto": "BRAZABRANTES"
+        },
+        {
+          "valor": "154",
+          "texto": "BRITANIA"
+        },
+        {
+          "valor": "401",
+          "texto": "BURITI DE GOIAS"
+        },
+        {
+          "valor": "331",
+          "texto": "BURITINOPOLIS"
+        },
+        {
+          "valor": "66",
+          "texto": "CABECEIRAS"
+        },
+        {
+          "valor": "155",
+          "texto": "CACHOEIRA ALTA"
+        },
+        {
+          "valor": "125",
+          "texto": "CACHOEIRA DOURADA"
+        },
+        {
+          "valor": "59",
+          "texto": "CACU"
+        },
+        {
+          "valor": "8",
+          "texto": "CAIAPONIA"
+        },
+        {
+          "valor": "343",
+          "texto": "CALDAZINHA"
+        },
+        {
+          "valor": "157",
+          "texto": "CAMPESTRE DE GOIAS"
+        },
+        {
+          "valor": "314",
+          "texto": "CAMPINACU"
+        },
+        {
+          "valor": "100",
+          "texto": "CAMPINORTE"
+        },
+        {
+          "valor": "115",
+          "texto": "CAMPO ALEGRE DE GOIAS"
+        }
+      ],
+      "total_opcoes": 318,
+      "opcoes_truncadas": true
+    },
+    {
+      "id": "comboBairro",
+      "name": "comboBairro",
+      "tipo": "select",
+      "rotulo": "Bairro",
+      "label": "Bairro",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null,
+      "opcoes": [
+        {
+          "valor": "0",
+          "texto": "Selecione (opcional)"
+        }
+      ],
+      "total_opcoes": 1,
+      "opcoes_truncadas": false
+    },
+    {
+      "id": "referencia",
+      "name": "referencia",
+      "tipo": "text",
+      "rotulo": "Mês/Ano de Referência",
+      "label": "Mês/Ano de Referência",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 7
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmEGC003",
+      "name": "frmEGC003",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/egw/EGW003RelConsMast.jsp",
+  "codigo": "EGWV003"
+}
