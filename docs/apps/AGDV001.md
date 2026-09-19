@@ -1,32 +1,46 @@
 # AGDV001 - Consulta de RDs
 
 ## Categoria
-Outros / Administrativo
+Gestão de Documentos / Consulta
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta de rds.
+Permite consultar e visualizar Resoluções de Diretoria (RDs) e documentos normativos, com filtros por tipo de documento, número, assunto e período da data de criação.
 
-## Campos da Tela Inicial
-- **Número** (text): Editável
-- **Assunto** (text): Editável
-- **Sem Rotulo** (date): Editável
-- **a** (date): Editável
-- **Sem Rotulo** (combobox): Somente Leitura
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul`
+
+## Campos e Filtros da Tela
+- **Tipo de Documento** (`combobox` / editável): Seleção do tipo de documento.
+- **Número** (`text` / editável): Número de identificação da RD/documento.
+- **Assunto** (`text` / editável): Assunto da RD/documento.
+- **Data de Criação** (`date` / editável): Data inicial do período de criação.
+- **a** (`date` / editável): Data final do período de criação.
 
 ## Botões Disponíveis
-- **Consultar** (ID ZK: `zL1Cb0`)
-- **Limpar** (ID ZK: `zL1Cc0`)
+- **Consultar**: Executa a busca das RDs conforme os filtros informados.
+- **Limpar**: Limpa os campos de filtro da tela.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela AGDV001 (Consulta de RDs)"
-- "Acessar o aplicativo de consulta de rds"
+### Botões Ignorados
+- `Sem Rotulo` (botões técnicos ZK de dropdown e calendário).
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `AGDV001`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Colunas do Resultado
+- Número
+- Interessado
+- Assunto
+- Assunto Complementar
+- Conclusão
+- Download
+
+## Perguntas que Responde
+- "consultar resoluções de diretoria no AGDV001"
+- "pesquisar RD por número ou assunto no AGDV001"
+- "buscar resoluções criadas por período no AGDV001"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 15/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

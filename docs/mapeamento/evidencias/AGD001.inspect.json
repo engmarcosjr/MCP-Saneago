@@ -1,0 +1,137 @@
+{
+  "tecnologia": "zk",
+  "titulo_tela": "Modelo",
+  "inputs": [
+    {
+      "id": "iFeMi-real",
+      "name": null,
+      "tipo": "combobox",
+      "rotulo": "Tipo de Documento",
+      "label": "Tipo de Documento",
+      "valor_atual": "--- Selecione ---",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iFeMq",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número",
+      "label": "Número",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 50
+    },
+    {
+      "id": "iFeMy",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Assunto",
+      "label": "Assunto",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 50
+    },
+    {
+      "id": "iFeM50-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Data de Criação",
+      "label": "Data de Criação",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "iFeM70-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "a",
+      "label": "a",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "iFeMi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeM50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeM70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeMb0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iFeMc0",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "iFeMi-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeM50-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeM70-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "iFeMb0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "iFeMc0",
+      "name": null,
+      "label": "Limpar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Número",
+    "Interessado",
+    "Assunto",
+    "Assunto Complementar",
+    "Conclusão",
+    "Download"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
+  "codigo": "AGD001"
+}

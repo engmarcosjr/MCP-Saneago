@@ -89,11 +89,16 @@
   "AGDV001": {
     "codigo": "AGDV001",
     "nome": "Consulta de RDs",
-    "url_zul": "https://prod.saneago.com.br/prt/agd/AGDV001.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta de rds.",
+    "url_zul": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
+    "categoria": "Gestão de Documentos / Consulta",
+    "o_que_faz": "Permite consultar e visualizar Resoluções de Diretoria (RDs) e documentos normativos, com filtros por tipo de documento, número, assunto e período da data de criação.",
     "tipo": "leitura",
     "campos": [
+      {
+        "label": "Tipo de Documento",
+        "tipo": "combobox",
+        "editavel": true
+      },
       {
         "label": "Número",
         "tipo": "text",
@@ -105,7 +110,7 @@
         "editavel": true
       },
       {
-        "label": "Sem Rotulo",
+        "label": "Data de Criação",
         "tipo": "date",
         "editavel": true
       },
@@ -113,37 +118,34 @@
         "label": "a",
         "tipo": "date",
         "editavel": true
-      },
-      {
-        "label": "Sem Rotulo",
-        "tipo": "combobox"
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "zL1Cb0"
+        "id": "hUdRb0"
       },
       {
         "label": "Limpar",
-        "id": "zL1Cc0"
+        "id": "hUdRc0"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta de RDs",
+        "intencao": "Consultar resoluções de diretoria no AGDV001",
         "passos": [
           "Abrir a aplicação AGDV001",
-          "Preencher campos na tela inicial"
+          "Preencher os filtros desejados (tipo, número, assunto ou período)",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta de rds",
-      "acessar a app AGDV001",
-      "consultar consulta de rds"
+      "consultar resoluções de diretoria no AGDV001",
+      "pesquisar RD por número ou assunto no AGDV001",
+      "buscar resoluções criadas por período no AGDV001"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP002": {
     "codigo": "BAP002",
@@ -204,18 +206,23 @@
   "BAP004": {
     "codigo": "BAP004",
     "nome": "Atualização CTPS",
-    "url_zul": "/bap/BAP004AtualizarCTPS.zul",
-    "categoria": "Recursos Humanos e Pessoal",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a atualização ctps.",
+    "url_zul": "https://www.saneago.com.br/prt/bap/BAP004AtualizarCTPS.zul",
+    "categoria": "Recursos Humanos e Pessoal / Folha de Pagamento",
+    "o_que_faz": "Permite consultar informações e histórico de atualização de CTPS por empregado e data de corte.",
     "tipo": "leitura",
     "campos": [
       {
-        "label": "Sem Rotulo",
+        "label": "Empregado",
         "tipo": "text",
         "editavel": true
       },
       {
-        "label": "Informações após data:",
+        "label": "Empregado",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Informações após data",
         "tipo": "date",
         "editavel": true
       }
@@ -223,28 +230,28 @@
     "botoes": [
       {
         "label": "Consultar",
-        "id": "sFhD30"
+        "id": "nTSG30"
       },
       {
         "label": "Cancelar",
-        "id": "sFhD40"
+        "id": "nTSG40"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Atualização CTPS",
+        "intencao": "Consultar atualização de CTPS de empregado no BAP004",
         "passos": [
           "Abrir a aplicação BAP004",
-          "Preencher campos na tela inicial"
+          "Informar a matrícula do empregado e data de corte",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de atualização ctps",
-      "acessar a app BAP004",
-      "consultar atualização ctps"
+      "consultar atualização de CTPS de empregado no BAP004",
+      "pesquisar histórico de CTPS após determinada data no BAP004"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "BAP005": {
     "codigo": "BAP005",
@@ -32946,6 +32953,67 @@
     "exemplos_intencao": [
       "consultar organograma da Chefia de Gabinete no S0087",
       "ver localização no mapa da Chefia de Gabinete"
+    ],
+    "status_doc": "inventariado"
+  },
+  "AGD001": {
+    "codigo": "AGD001",
+    "nome": "Consulta de RDs",
+    "url_zul": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
+    "categoria": "Gestão de Documentos / Consulta",
+    "o_que_faz": "Permite consultar e visualizar Resoluções de Diretoria (RDs) e documentos normativos, com filtros por tipo de documento, número, assunto e período da data de criação.",
+    "tipo": "leitura",
+    "campos": [
+      {
+        "label": "Tipo de Documento",
+        "tipo": "combobox",
+        "editavel": true
+      },
+      {
+        "label": "Número",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Assunto",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Data de Criação",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "a",
+        "tipo": "date",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "iFeMb0"
+      },
+      {
+        "label": "Limpar",
+        "id": "iFeMc0"
+      }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar resoluções de diretoria no AGD001",
+        "passos": [
+          "Abrir a aplicação AGD001",
+          "Preencher os filtros desejados (tipo, número, assunto ou período)",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar resoluções de diretoria no AGD001",
+      "pesquisar RD por número ou assunto no AGD001",
+      "buscar resoluções criadas por período no AGD001"
     ],
     "status_doc": "inventariado"
   }

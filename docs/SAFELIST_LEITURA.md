@@ -482,6 +482,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `MTGV001` | Capturar Remessa | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de arquivos de remessa para captura por distrito sem botões de escrita.
 - `MTGV008` | Consultar Remessas Capturadas | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta e listagem de remessas capturadas por distrito, grupo e referência sem botões de escrita.
 - `MTGV020` | Consulta Fila de Relatórios PDF | Botões: `Filtrar`, `Limpar Filtros`, `Atualizar`, `Excluir Selecionados` | `possui_escrita` | Consulta da fila de relatórios PDF com filtros por arquivo e data, contendo botão de escrita Excluir Selecionados.
+- `AGD001` | Consulta de RDs | Botões: `Consultar`, `Limpar` | `somente_leitura` | Consulta e visualização de Resoluções de Diretoria por tipo de documento, número, assunto e período sem botões de escrita.
+- `AGDV001` | Consulta de RDs | Botões: `Consultar`, `Limpar` | `somente_leitura` | Consulta e visualização de Resoluções de Diretoria por tipo de documento, número, assunto e período sem botões de escrita.
+- `BAP004` | Atualização CTPS | Botões: `Consultar`, `Cancelar` | `somente_leitura` | Consulta de informações e histórico de atualização de CTPS por empregado e data de corte sem botões de escrita.
 
 
 

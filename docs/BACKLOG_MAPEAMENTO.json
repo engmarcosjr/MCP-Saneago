@@ -1,19 +1,19 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T09:39:17.580Z",
+    "gerado_em": "2026-09-19T09:47:24.145Z",
     "total": 596,
-    "completos": 437,
-    "pendentes": 159,
+    "completos": 440,
+    "pendentes": 156,
     "por_classe_seguranca": {
-      "indeterminado": 225,
-      "candidata_leitura": 198,
+      "indeterminado": 223,
+      "candidata_leitura": 200,
       "possui_escrita": 165,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
-      "sem_roteiro": 79,
-      "ficha_nao_validada": 65,
+      "ficha_nao_validada": 63,
+      "sem_roteiro": 78,
       "sem_campos_detectados": 4
     }
   },
@@ -86,44 +86,40 @@
       "nome": "Consulta de RDs",
       "vertical": "AGD",
       "url_zul": "https://www.saneago.com.br/prt/agd/AGD001ConsultaRDs.zul",
-      "tipo_declarado": "Leitura (Consulta)",
-      "status_ficha": null,
-      "bytes_ficha": 1181,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1507,
       "botoes": [
         "Consultar",
         "Limpar"
       ],
       "classe_seguranca": "candidata_leitura",
       "motivo_classe": "só botões de leitura: Consultar",
-      "lacunas": [
-        "sem_roteiro"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "AGDV001",
       "nome": "Consulta de RDs",
       "vertical": "AGD",
       "url_zul": "https://www.saneago.com.br/prt/agd/AGDV001.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 917,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1511,
       "botoes": [
         "Consultar",
         "Limpar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "BAP002",
@@ -150,22 +146,20 @@
       "nome": "Atualização CTPS",
       "vertical": "BAP",
       "url_zul": "/bap/BAP004AtualizarCTPS.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 846,
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1250,
       "botoes": [
         "Consultar",
         "Cancelar"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9990
+      "prioridade": 10000
     },
     {
       "codigo": "BAP005",
