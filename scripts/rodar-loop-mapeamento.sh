@@ -59,9 +59,23 @@ while :; do
   esac
 
   # A arvore tem de estar limpa: e o que permite auditar e reverter cada lote.
-  if [ -n "$(git status --porcelain)" ]; then
+  #
+  # Excecao: BACKLOG_MAPEAMENTO.{json,md} sao artefatos DERIVADOS, regenerados a
+  # cada execucao do backlog. O executor commita o lote e em seguida regenera o
+  # backlog, sujando a arvore logo depois do proprio commit -- e o loop parava por
+  # causa disso. Aqui eles sao recolhidos num commit de rotina; qualquer outra
+  # sujeira continua parando o loop.
+  if [ -n "$(git status --porcelain -- ':!docs/BACKLOG_MAPEAMENTO.json' ':!docs/BACKLOG_MAPEAMENTO.md')" ]; then
     registrar "working tree sujo antes do lote — parando para revisão humana"
+    git status --porcelain | tee -a "$LOG_LOOP"
     exit 1
+  fi
+  if [ -n "$(git status --porcelain -- docs/BACKLOG_MAPEAMENTO.json docs/BACKLOG_MAPEAMENTO.md)" ]; then
+    git add docs/BACKLOG_MAPEAMENTO.json docs/BACKLOG_MAPEAMENTO.md
+    git commit -q -m "chore(mapeamento): atualizar backlog derivado
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
+    registrar "backlog derivado recolhido em commit de rotina"
   fi
 
   antes=$(divergencias_atuais)
