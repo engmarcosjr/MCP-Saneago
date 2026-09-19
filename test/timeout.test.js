@@ -18,15 +18,22 @@ const net = require("node:net");
 const { SupervisorioHttpClient } = require("../src/supervisorio_http");
 
 function servidorMudo() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     // Aceita a conexao TCP e nunca fala nada — o caso patologico que trava o MCP.
     const srv = net.createServer(() => {});
+    srv.once("error", (err) => reject(err));
     srv.listen(0, "127.0.0.1", () => resolve(srv));
   });
 }
 
-test("supervisorio: request rejeita por timeout em vez de ficar pendurado", async () => {
-  const srv = await servidorMudo();
+test("supervisorio: request rejeita por timeout em vez de ficar pendurado", async (t) => {
+  let srv;
+  try {
+    srv = await servidorMudo();
+  } catch (err) {
+    if (err.code === "EPERM") return t.skip("Sandbox impede listen em 127.0.0.1");
+    throw err;
+  }
   const { port } = srv.address();
   try {
     const client = new SupervisorioHttpClient({
@@ -51,8 +58,14 @@ test("supervisorio: request rejeita por timeout em vez de ficar pendurado", asyn
   }
 });
 
-test("supervisorio: mensagem de timeout identifica o endpoint", async () => {
-  const srv = await servidorMudo();
+test("supervisorio: mensagem de timeout identifica o endpoint", async (t) => {
+  let srv;
+  try {
+    srv = await servidorMudo();
+  } catch (err) {
+    if (err.code === "EPERM") return t.skip("Sandbox impede listen em 127.0.0.1");
+    throw err;
+  }
   const { port } = srv.address();
   try {
     const client = new SupervisorioHttpClient({
@@ -86,7 +99,13 @@ const { ZimbraClient } = (() => {
 
 test("zimbra: request rejeita por timeout em vez de ficar pendurado", async (t) => {
   if (!ZimbraClient) return t.skip("cliente Zimbra nao exportado como classe");
-  const srv = await servidorMudo();
+  let srv;
+  try {
+    srv = await servidorMudo();
+  } catch (err) {
+    if (err.code === "EPERM") return t.skip("Sandbox impede listen em 127.0.0.1");
+    throw err;
+  }
   const { port } = srv.address();
   try {
     const client = new ZimbraClient({ hostname: "127.0.0.1", hostHeader: "127.0.0.1", timeoutMs: 300 });

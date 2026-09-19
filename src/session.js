@@ -128,7 +128,10 @@ async function getOrCreateSession() {
   }
 
   console.error("[Session] Iniciando novo navegador...");
-  activeBrowser = await chromium.launch({ headless: true });
+  activeBrowser = await chromium.launch({
+    headless: true,
+    args: ["--single-process", "--disable-gpu"],
+  });
   
   // Tenta carregar storageState existente
   const contextOptions = {

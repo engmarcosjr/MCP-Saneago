@@ -201,7 +201,10 @@ async function listarAnexosDocflow({ processo, ano, htmlMock = null, limiteArqui
   }
 
   const { chromium } = require("playwright");
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+    args: ["--single-process", "--disable-gpu"],
+  });
   const page = await browser.newPage();
   
   try {
