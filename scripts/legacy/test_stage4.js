@@ -1,7 +1,7 @@
-const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
-const { preencherCampo, clicarBotao } = require("./executor");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { inspecionarTela } = require("../../src/inspector");
+const { preencherCampo, clicarBotao } = require("../../src/executor");
+const { closeSession } = require("../../src/session");
 
 async function main() {
   console.log("=== INICIANDO TESTE ETAPA 4: EXECUTOR POR UI VIVA ===");

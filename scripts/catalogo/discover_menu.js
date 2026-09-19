@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const { getOrCreateSession, closeSession } = require('./session');
+const { getOrCreateSession, closeSession } = require('../../src/session');
 
-const MENU_COMPLETO_PATH = path.resolve(__dirname, '../config/menu_completo.json');
+const MENU_COMPLETO_PATH = path.resolve(__dirname, '../../config/menu_completo.json');
 
 function loadMenuCompletoCheckpoint() {
   if (fs.existsSync(MENU_COMPLETO_PATH)) {

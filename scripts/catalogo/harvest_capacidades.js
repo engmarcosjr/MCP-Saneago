@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
-const { getOrCreateSession, closeSession } = require('./session');
-const { abrirApp } = require('./portal');
-const { inspecionarTela } = require('./inspector');
+const { getOrCreateSession, closeSession } = require('../../src/session');
+const { abrirApp } = require('../../src/portal');
+const { inspecionarTela } = require('../../src/inspector');
 
-const ROOT_DIR = path.resolve(__dirname, '..');
+const ROOT_DIR = path.resolve(__dirname, '../..');
 const CATALOGO_PATH = path.join(ROOT_DIR, 'config', 'catalogo_aplicacoes.json');
 const DEFAULT_SAIDA_PATH = path.join(ROOT_DIR, 'config', 'capacidades.json');
 

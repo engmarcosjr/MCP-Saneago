@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { inspecionarTela } = require("../../src/inspector");
+const { closeSession } = require("../../src/session");
 
-const catalogoPath = path.resolve(__dirname, "../config/catalogo_aplicacoes.json");
-const roteiroPath = path.resolve(__dirname, "../config/roteiro.json");
-const docsDir = path.resolve(__dirname, "../docs/apps");
+const catalogoPath = path.resolve(__dirname, "../../config/catalogo_aplicacoes.json");
+const roteiroPath = path.resolve(__dirname, "../../config/roteiro.json");
+const docsDir = path.resolve(__dirname, "../../docs/apps");
 
 // Garantir diretório de docs
 if (!fs.existsSync(docsDir)) {

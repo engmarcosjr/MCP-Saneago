@@ -34,7 +34,18 @@ async function inspecionarAppEGravar(codigo) {
 }
 
 async function main() {
-  const lote = ['ECO811', 'ECO815', 'ECO823'];
+  let lote = process.argv.slice(2);
+  if (lote.length === 0) {
+    const { execSync } = require('child_process');
+    try {
+      const saida = execSync('node scripts/backlog-mapeamento.js --proximo 3', { encoding: 'utf8' });
+      const itens = JSON.parse(saida);
+      lote = itens.map(i => i.codigo);
+    } catch (e) {
+      console.error('Falha ao obter proximo do backlog:', e.message);
+      process.exit(1);
+    }
+  }
   for (const cod of lote) {
     await inspecionarAppEGravar(cod);
   }

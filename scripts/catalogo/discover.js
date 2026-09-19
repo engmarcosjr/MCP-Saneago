@@ -1,10 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const { getOrCreateSession, closeSession } = require("./session");
+const { getOrCreateSession, closeSession } = require("../../src/session");
 const { runMenuDiscovery } = require("./discover_menu");
 
-const CATALOGO_PATH = path.resolve(__dirname, "../config/catalogo_aplicacoes.json");
-const MENU_COMPLETO_PATH = path.resolve(__dirname, "../config/menu_completo.json");
+const CATALOGO_PATH = path.resolve(__dirname, "../../config/catalogo_aplicacoes.json");
+const MENU_COMPLETO_PATH = path.resolve(__dirname, "../../config/menu_completo.json");
 
 const ZK_SEARCH_CEILING = 13; // Teto empírico do ZK na busca "Localizar Aplicação"
 

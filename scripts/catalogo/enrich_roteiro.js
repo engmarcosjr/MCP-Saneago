@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const roteiroPath = path.resolve(__dirname, "../config/roteiro.json");
-const docsDir = path.resolve(__dirname, "../docs/apps");
+const roteiroPath = path.resolve(__dirname, "../../config/roteiro.json");
+const docsDir = path.resolve(__dirname, "../../docs/apps");
 
 if (!fs.existsSync(docsDir)) {
   fs.mkdirSync(docsDir, { recursive: true });

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { classificarCapacidade } = require('./classificar_capacidades');
 
-const ROOT_DIR = path.resolve(__dirname, '..');
+const ROOT_DIR = path.resolve(__dirname, '../..');
 const DEFAULT_ENTRADA = path.join(ROOT_DIR, 'config', 'capacidades.json');
 const DEFAULT_SAIDA = path.join(ROOT_DIR, 'config', 'indice_capacidades.json');
 

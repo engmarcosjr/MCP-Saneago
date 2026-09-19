@@ -1,7 +1,7 @@
-const { abrirApp } = require("./portal");
-const { preencherCampo, clicarBotao } = require("./executor");
-const { inspecionarTela } = require("./inspector");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { preencherCampo, clicarBotao } = require("../../src/executor");
+const { inspecionarTela } = require("../../src/inspector");
+const { closeSession } = require("../../src/session");
 
 const RA = process.argv[2] || "1812692026";
 

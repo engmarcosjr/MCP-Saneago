@@ -1,6 +1,6 @@
-const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { inspecionarTela } = require("../../src/inspector");
+const { closeSession } = require("../../src/session");
 
 async function main() {
   console.log("=== INICIANDO TESTE ETAPA 3: INSPETOR DE TELA ===");

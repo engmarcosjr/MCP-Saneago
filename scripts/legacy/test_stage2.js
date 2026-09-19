@@ -1,5 +1,5 @@
-const { abrirApp } = require("./portal");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { closeSession } = require("../../src/session");
 
 async function main() {
   console.log("=== INICIANDO TESTE ETAPA 2: ABRIR APLICACAO E ACHAR FRAME ===");

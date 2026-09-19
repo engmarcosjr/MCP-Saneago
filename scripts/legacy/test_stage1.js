@@ -1,4 +1,4 @@
-const { getOrCreateSession, closeSession } = require("./session");
+const { getOrCreateSession, closeSession } = require("../../src/session");
 
 async function main() {
   console.log("=== INICIANDO TESTE ETAPA 1: SESSAO VIVA ===");

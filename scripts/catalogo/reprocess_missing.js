@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
-const { abrirApp } = require("./portal");
-const { inspecionarTela } = require("./inspector");
-const { closeSession } = require("./session");
+const { abrirApp } = require("../../src/portal");
+const { inspecionarTela } = require("../../src/inspector");
+const { closeSession } = require("../../src/session");
 
 const missingApps = [
   { codigo: "ECO808", nome: "Áreas de Inf. dos Reservatórios" },
@@ -17,8 +17,8 @@ const missingApps = [
   { codigo: "MTG006", nome: "Andamento Geral" }
 ];
 
-const roteiroPath = path.resolve(__dirname, "../config/roteiro.json");
-const docsDir = path.resolve(__dirname, "../docs/apps");
+const roteiroPath = path.resolve(__dirname, "../../config/roteiro.json");
+const docsDir = path.resolve(__dirname, "../../docs/apps");
 
 function carregarRoteiro() {
   if (fs.existsSync(roteiroPath)) {
