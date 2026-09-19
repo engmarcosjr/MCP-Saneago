@@ -26,6 +26,15 @@ lote=0
 
 registrar() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG_LOOP"; }
 
+# Conjunto ordenado "CODIGO|checagem" das divergencias abertas agora.
+divergencias_atuais() {
+  node scripts/auditar-mapeamento.js --json 2>/dev/null \
+    | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{try{
+        const d=JSON.parse(s).divergencias||[];
+        console.log(d.map(x=>x.codigo+'|'+x.checagem).sort().join('\n'));
+      }catch(e){console.log('')}})"
+}
+
 registrar "início do loop | modelo=$MODELO | max_lotes=${MAX_LOTES:-ilimitado}"
 
 while :; do
@@ -55,6 +64,7 @@ while :; do
     exit 1
   fi
 
+  antes=$(divergencias_atuais)
   lote=$(( lote + 1 ))
   registrar "lote $lote: iniciando"
 
@@ -67,10 +77,17 @@ while :; do
   registrar "lote $lote: executor terminou (exit=$?)"
 
   # Prova, nao autorrelato: a auditoria e quem diz se o lote vale.
-  if node scripts/auditar-mapeamento.js >> "$LOG_LOOP" 2>&1; then
-    registrar "lote $lote: auditoria OK"
+  #
+  # Avaliar o DELTA, nao o estado absoluto. O log carrega divergencias historicas
+  # (os carimbos dos lotes 09 e 11, por exemplo) que nao sao culpa do lote atual e
+  # que voltam para a fila sozinhas. Comparar o total travaria o loop para sempre.
+  depois=$(divergencias_atuais)
+  novas=$(comm -13 <(echo "$antes") <(echo "$depois"))
+  if [ -z "$novas" ]; then
+    registrar "lote $lote: auditoria sem divergencia nova"
   else
-    registrar "lote $lote: AUDITORIA COM DIVERGENCIA — parando para revisão humana"
+    registrar "lote $lote: DIVERGENCIA NOVA — parando para revisão humana"
+    echo "$novas" | tee -a "$LOG_LOOP"
     exit 1
   fi
 
