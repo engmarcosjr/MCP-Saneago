@@ -1,0 +1,206 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Abertura de Solicitação do Usuário",
+  "inputs": [
+    {
+      "id": "cBBZf",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Número da Solicitação",
+      "label": "Número da Solicitação",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 9
+    },
+    {
+      "id": "cBBZqb",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 9
+    },
+    {
+      "id": "cBBZp-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Solicitante",
+      "label": "Solicitante",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cBBZrb",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Solicitante",
+      "label": "U.O. Solicitante",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 9
+    },
+    {
+      "id": "cBBZq0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "U.O. Solicitante",
+      "label": "U.O. Solicitante",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cBBZvb",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "cBBZb1-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Serviço",
+      "label": "Serviço",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "cBBZu1",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Telefone Contato",
+      "label": "Telefone Contato",
+      "valor_atual": "[REDIGIDO]",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 11
+    },
+    {
+      "id": "cBBZy1",
+      "name": null,
+      "tipo": "textarea",
+      "rotulo": "Descrição",
+      "label": "Descrição",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "cBBZ54",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Anexo",
+      "label": "Anexo",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": null,
+      "name": "file",
+      "tipo": "file",
+      "rotulo": "Anexo",
+      "label": "Anexo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "cBBZq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cBBZb1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cBBZ64",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "cBBZ15",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "cBBZ35",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "cBBZq0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cBBZb1-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "cBBZ64",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "button"
+    },
+    {
+      "id": "cBBZ15",
+      "name": null,
+      "label": "Incluir",
+      "tipo": "button"
+    },
+    {
+      "id": "cBBZ35",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Nome Arquivo",
+    "Tamanho"
+  ],
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gsi/GSI007AberturaSolicitacaoUsuario.zul",
+  "codigo": "GSIV007"
+}

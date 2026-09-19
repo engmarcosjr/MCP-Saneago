@@ -1,27 +1,32 @@
 # GPMV020 - Consulta Registro a Ser Fechado
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (jsp)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a consulta registro a ser fechado.
+Permite pesquisar e consultar válvulas e registros a serem fechados por cidade, bairro e quadra.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM020pesValvula.jsp`
+
+## Campos e Filtros da Tela
+- **GPM 020** (`text` / editável): Código e nome da cidade, código e nome do bairro e número da quadra para pesquisa de válvulas a serem fechadas.
 
 ## Botões Disponíveis
 Nenhum botão detectado na tela inicial.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV020 (Consulta Registro a Ser Fechado)"
-- "Acessar o aplicativo de consulta registro a ser fechado"
+## Colunas do Resultado
+Nenhuma grade de resultados acessível na tela inicial.
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV020`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar registro a ser fechado no GPMV020"
+- "pesquisar válvulas a serem fechadas por cidade e bairro"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Consulta -> Consulta Registro a Ser Fechado).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

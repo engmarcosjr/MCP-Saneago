@@ -1,0 +1,75 @@
+{
+  "tecnologia": "html",
+  "titulo_tela": ".:Pesquisa Valvulas:.",
+  "inputs": [
+    {
+      "id": "codigoCidade",
+      "name": "codigoCidade",
+      "tipo": "text",
+      "rotulo": "GPM 020",
+      "label": "GPM 020",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 3
+    },
+    {
+      "id": "nomeCidade",
+      "name": "nomeCidade",
+      "tipo": "text",
+      "rotulo": "GPM 020",
+      "label": "GPM 020",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 35
+    },
+    {
+      "id": "codigoBairro",
+      "name": "codigoBairro",
+      "tipo": "text",
+      "rotulo": "GPM 020",
+      "label": "GPM 020",
+      "valor_atual": "0",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 4
+    },
+    {
+      "id": "nomeBairro",
+      "name": "nomeBairro",
+      "tipo": "text",
+      "rotulo": "GPM 020",
+      "label": "GPM 020",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": 35
+    },
+    {
+      "id": "numeroQuadra",
+      "name": "numeroQuadra",
+      "tipo": "text",
+      "rotulo": "GPM 020",
+      "label": "GPM 020",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 5
+    }
+  ],
+  "botoes": [],
+  "buttons": [],
+  "colunas": [],
+  "forms": [
+    {
+      "id": "frmGPM020",
+      "name": "frmGPM020",
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/gpm/GPM020pesValvula.jsp",
+  "codigo": "GPMV020"
+}

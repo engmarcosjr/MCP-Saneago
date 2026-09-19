@@ -1,27 +1,40 @@
 # GPMV016 - Paralisação/Intermitência
 
 ## Categoria
-Outros / Administrativo
+Painel Manobras / Saneago
 
 ## Tipo
-Leitura (Livre)
+Leitura e Consulta (zk)
 
 ## O que faz
-Permite visualizar e gerenciar informações relacionadas a paralisação/intermitência.
+Permite consultar e visualizar informações de paralisação e intermitência por período de previsão de início e distrito.
 
-## Campos da Tela Inicial
-Nenhum campo interativo detectado na tela inicial.
+## URL Real / Atalho Direto
+- `https://www.saneago.com.br/prt/gpm/GPM016ParalizacaoIntermitencia.zul`
+
+## Campos e Filtros da Tela
+- **Período da Previsão de Início** (`date` / editável): Data inicial do período da previsão de início.
+- **a** (`date` / editável): Data final do período da previsão de início.
+- **Distrito** (`text` / editável): Código e descrição do distrito.
 
 ## Botões Disponíveis
-Nenhum botão detectado na tela inicial.
+- **Consultar**: Executa a consulta de paralisação e intermitência com os filtros informados.
+- **Cancelar**: Limpa os campos da consulta.
 
-## Exemplos de Intenção (Linguagem Natural)
-- "Abrir a tela GPMV016 (Paralisação/Intermitência)"
-- "Acessar o aplicativo de paralisação/intermitência"
+## Colunas do Resultado
+- Tipo
+- Distrito
+- Total de Horas
+- Qtd. Paralizações
+- Economias Afetadas
+- Manobras
 
-## Roteiro de Operação
-1. **Abrir a aplicação:** use a tool `saneago_abrir_e_inspecionar` com o código `GPMV016`.
-2. **Preencher os campos necessários** e clicar nos botões de consulta/ação conforme o fluxo desejado.
+## Perguntas que Responde
+- "consultar paralisação e intermitência no GPMV016"
+- "pesquisar histórico de interrupções por distrito ou período"
+
+## Status de Acesso
+- **Acesso Confirmado**: Sim (perfil atual possui acesso e visualização da tela via menu Painel Manobras -> Consulta -> Paralisação/Intermitência).
 
 ---
-*Documento gerado automaticamente pelo MCP-Saneago em 16/07/2026 (Status: auto).*
+*Documento inventariado com evidência de tela em 19/09/2026 (Status: inventariado).*

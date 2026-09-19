@@ -17511,52 +17511,112 @@
   "GPMV016": {
     "codigo": "GPMV016",
     "nome": "Paralisação/Intermitência",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV016.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a paralisação/intermitência.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM016ParalizacaoIntermitencia.zul",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite consultar e visualizar informações de paralisação e intermitência por período de previsão de início e distrito.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "rotulo": "Período da Previsão de Início",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "a",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Distrito",
+        "tipo": "text",
+        "editavel": false
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "o8wVb0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "o8wVd0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Paralisação/Intermitência",
+        "intencao": "Consultar paralisação e intermitência no GPMV016",
         "passos": [
           "Abrir a aplicação GPMV016",
-          "Preencher campos na tela inicial"
+          "Informar Período da Previsão de Início e Distrito",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de paralisação/intermitência",
-      "acessar a app GPMV016",
-      "consultar paralisação/intermitência"
+      "consultar paralisação e intermitência no GPMV016",
+      "pesquisar histórico de interrupções por distrito ou período"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GPMV020": {
     "codigo": "GPMV020",
     "nome": "Consulta Registro a Ser Fechado",
-    "url_zul": "https://prod.saneago.com.br/prt/gpm/GPMV020.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a consulta registro a ser fechado.",
+    "url_zul": "https://www.saneago.com.br/prt/gpm/GPM020pesValvula.jsp",
+    "categoria": "Painel Manobras / Saneago",
+    "o_que_faz": "Permite pesquisar e consultar válvulas e registros a serem fechados por cidade, bairro e quadra.",
     "tipo": "leitura",
-    "campos": [],
+    "campos": [
+      {
+        "id": "codigoCidade",
+        "rotulo": "GPM 020",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "id": "nomeCidade",
+        "rotulo": "GPM 020",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "id": "codigoBairro",
+        "rotulo": "GPM 020",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "id": "nomeBairro",
+        "rotulo": "GPM 020",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "id": "numeroQuadra",
+        "rotulo": "GPM 020",
+        "tipo": "text",
+        "editavel": true
+      }
+    ],
     "botoes": [],
     "operacoes": [
       {
-        "intencao": "Acessar Consulta Registro a Ser Fechado",
+        "intencao": "Consultar registro a ser fechado no GPMV020",
         "passos": [
           "Abrir a aplicação GPMV020",
-          "Preencher campos na tela inicial"
+          "Informar Cidade, Bairro ou Quadra para pesquisar válvulas"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de consulta registro a ser fechado",
-      "acessar a app GPMV020",
-      "consultar consulta registro a ser fechado"
+      "consultar registro a ser fechado no GPMV020",
+      "pesquisar válvulas a serem fechadas por cidade e bairro"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GSIV005": {
     "codigo": "GSIV005",
@@ -17717,27 +17777,92 @@
   "GSIV007": {
     "codigo": "GSIV007",
     "nome": "Abertura de Solicitação",
-    "url_zul": "https://prod.saneago.com.br/prt/gsi/GSIV007.zul",
-    "categoria": "Outros / Administrativo",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a abertura de solicitação.",
-    "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "url_zul": "https://www.saneago.com.br/prt/gsi/GSI007AberturaSolicitacaoUsuario.zul",
+    "categoria": "Solicitações de Serviço / Saneago",
+    "o_que_faz": "Permite a abertura e inclusão de novas solicitações de serviços internos da Saneago, com preenchimento de U.O. solicitante, serviço, contato, descrição detalhada e upload de arquivos anexos.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "rotulo": "Número da Solicitação",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Solicitante",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Solicitante",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "U.O. Solicitante",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "U.O. Solicitante",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Serviço",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Serviço",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Telefone Contato",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "rotulo": "Descrição",
+        "tipo": "textarea",
+        "editavel": true
+      },
+      {
+        "rotulo": "Anexo",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "rotulo": "Anexo",
+        "tipo": "file",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Incluir",
+        "id": "cBBZ15"
+      },
+      {
+        "label": "Cancelar",
+        "id": "cBBZ35"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Abertura de Solicitação",
+        "intencao": "Abrir solicitação de serviço no GSIV007",
         "passos": [
           "Abrir a aplicação GSIV007",
-          "Preencher campos na tela inicial"
+          "Informar U.O. Solicitante, Serviço, Descrição e Anexos",
+          "Clicar em Incluir"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de abertura de solicitação",
-      "acessar a app GSIV007",
-      "consultar abertura de solicitação"
+      "abrir solicitação de serviço no GSIV007",
+      "incluir nova solicitação interna no GSI"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "GSIV013": {
     "codigo": "GSIV013",

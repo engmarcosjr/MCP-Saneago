@@ -452,6 +452,9 @@ Aplicações auditadas e classificadas para fins de automação e permissão de 
 - `GPMV005` | Consulta Área Influência | nenhum | `somente_leitura` | Consulta de áreas de influência e afetadas por manobras de registros sem botões de escrita.
 - `GPMV007` | Inclui Área Afetada não Prevista | nenhum | `possui_escrita` | Inclusão e cadastro de áreas afetadas não previstas em manobras de válvulas.
 - `GPMV015` | Registro Fechado por Período | nenhum | `somente_leitura` | Consulta de manobras de registros fechados por período e filtros sem botões de escrita.
+- `GPMV016` | Paralisação/Intermitência | `Consultar`, `Cancelar` | `somente_leitura` | Consulta de paralisação e intermitência no fornecimento por período de previsão e distrito sem botões de escrita.
+- `GPMV020` | Consulta Registro a Ser Fechado | nenhum | `somente_leitura` | Consulta e pesquisa de válvulas e registros a serem fechados por cidade, bairro e quadra sem botões de escrita.
+- `GSIV007` | Abertura de Solicitação | `Incluir`, `Cancelar` | `possui_escrita` | Abertura e cadastro de solicitação de serviço do usuário com botão Incluir e formulário de dados cadastrais.
 
 
 

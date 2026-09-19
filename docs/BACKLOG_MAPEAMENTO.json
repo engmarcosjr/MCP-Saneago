@@ -1,20 +1,20 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T08:03:11.631Z",
+    "gerado_em": "2026-09-19T08:11:56.209Z",
     "total": 596,
-    "completos": 408,
-    "pendentes": 188,
+    "completos": 411,
+    "pendentes": 185,
     "por_classe_seguranca": {
-      "indeterminado": 246,
-      "candidata_leitura": 181,
-      "possui_escrita": 161,
+      "indeterminado": 244,
+      "candidata_leitura": 182,
+      "possui_escrita": 162,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 84,
-      "ficha_nao_validada": 90,
-      "sem_campos_detectados": 23,
+      "ficha_nao_validada": 87,
+      "sem_campos_detectados": 20,
       "ficha_stub": 10
     }
   },
@@ -6646,40 +6646,37 @@
       "nome": "Paralisação/Intermitência",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV016.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 826,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1346,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GPMV020",
       "nome": "Consulta Registro a Ser Fechado",
       "vertical": "GPM",
       "url_zul": "https://www.saneago.com.br/prt/gpm/GPMV020.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 838,
+      "tipo_declarado": "Leitura e Consulta (jsp)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1051,
       "botoes": [],
       "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "motivo_classe": "nenhum botão reconhecido",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GSI005",
@@ -6848,20 +6845,20 @@
       "nome": "Abertura de Solicitação",
       "vertical": "GSI",
       "url_zul": "https://www.saneago.com.br/prt/gsi/GSIV007.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 814,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Inclusão e Cadastro (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1741,
+      "botoes": [
+        "Incluir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "botões de escrita: Incluir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9980
+      "prioridade": 10000
     },
     {
       "codigo": "GSIV013",
