@@ -99,3 +99,10 @@ de onze dias antes.
 Se o reuso for deliberado e justificado, declare `"reusa_evidencia": true` na entrada do
 JSONL e explique no diário. Sem isso, a entrada conta como divergência e a app volta
 para a fila — o carimbo não encurta o caminho.
+
+Há uma segunda checagem, a **C11**, que compara o `sha256_evidencia` da sua entrada com
+o da entrada anterior do mesmo código. Hash repetido significa que nada foi reinspecionado.
+O ZK gera ids de componente novos a cada sessão, então uma reinspeção real quase sempre
+muda o hash. Se você reabriu a tela e ela saiu byte-idêntica — acontece em `.jsp` sem
+componente ZK —, declare `"reinspecao_confirmada": true`. Não declare isso sem ter
+reaberto: é a sua afirmação de que o trabalho foi feito.
