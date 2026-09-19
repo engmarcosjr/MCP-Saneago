@@ -1,12 +1,12 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T05:02:46.201Z",
+    "gerado_em": "2026-09-19T05:17:03.935Z",
     "total": 596,
-    "completos": 350,
-    "pendentes": 246,
+    "completos": 353,
+    "pendentes": 243,
     "por_classe_seguranca": {
-      "indeterminado": 279,
-      "candidata_leitura": 150,
+      "indeterminado": 277,
+      "candidata_leitura": 152,
       "possui_escrita": 159,
       "sem_acesso": 8
     },
@@ -14,8 +14,8 @@
       "sem_url": 11,
       "sem_roteiro": 94,
       "ficha_nao_validada": 136,
-      "ficha_stub": 48,
-      "sem_campos_detectados": 65
+      "ficha_stub": 46,
+      "sem_campos_detectados": 64
     }
   },
   "apps": [
@@ -4882,13 +4882,11 @@
       "botoes": [],
       "classe_seguranca": "indeterminado",
       "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "sem_campos_detectados"
-      ],
-      "completo": false,
-      "tentativas": 2,
-      "aposentada": false,
-      "prioridade": -10
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 3,
+      "aposentada": true,
+      "prioridade": 0
     },
     {
       "codigo": "ECS006",
@@ -11679,19 +11677,20 @@
       "nome": "Resumo",
       "vertical": "PGT",
       "url_zul": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
-      "tipo_declarado": null,
-      "status_ficha": null,
-      "bytes_ficha": 738,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1169,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 1,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 2,
       "aposentada": false,
-      "prioridade": 1990
+      "prioridade": 2000
     },
     {
       "codigo": "PGT510",
@@ -11868,19 +11867,20 @@
       "nome": "Resumo",
       "vertical": "PGT",
       "url_zul": "https://www.saneago.com.br/prt/pgt/PGTV505.zul",
-      "tipo_declarado": null,
-      "status_ficha": null,
-      "bytes_ficha": 740,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1172,
+      "botoes": [
+        "Consultar",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 1,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 2,
       "aposentada": false,
-      "prioridade": 1990
+      "prioridade": 2000
     },
     {
       "codigo": "PGTV507",

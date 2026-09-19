@@ -10086,8 +10086,7 @@
       {
         "intencao": "Consultar Vídeo Aulas WEBCOM",
         "passos": [
-          "Abrir aplicação ECOV830",
-          "Visualizar tutoriais e vídeos disponíveis"
+          "Abrir tela informativa de vídeo aulas do WEBCOM"
         ]
       }
     ],
@@ -20541,28 +20540,42 @@
     "codigo": "PGTV505",
     "nome": "Resumo",
     "url_zul": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
-    "categoria": "Gestão Transporte > Ordem Tráfego",
-    "o_que_faz": "Consulta resumo de Ordem de Tráfego por número de OT.",
+    "categoria": "Gestão Transporte / Saneago",
+    "o_que_faz": "Permite consultar o resumo e andamento de Ordens de Tráfego (OT) no sistema de Gestão de Transportes.",
     "tipo": "somente_leitura",
     "campos": [
       {
-        "label": "Número O.T",
+        "rotulo": "Número O.T",
         "tipo": "text",
         "editavel": true,
-        "id": "rBxGo"
+        "id": "qGXTo"
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "rBxGs",
+        "id": "qGXTs",
         "tipo": "button"
       },
       {
         "label": "Cancelar",
-        "id": "rBxGy",
+        "id": "qGXTy",
         "tipo": "button"
       }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar Resumo de Ordem de Tráfego",
+        "passos": [
+          "Preencher campo Número O.T",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar resumo de ordem de tráfego no PGTV505",
+      "verificar andamento de OT por número",
+      "consultar dados da ordem de tráfego no módulo de transporte"
     ],
     "status_doc": "inventariado"
   },
@@ -28548,28 +28561,42 @@
     "codigo": "PGT505",
     "nome": "Resumo",
     "url_zul": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
-    "categoria": "Gestão Transporte > Ordem Tráfego",
-    "o_que_faz": "Consulta resumo de Ordem de Tráfego por número de OT.",
+    "categoria": "Gestão Transporte / Saneago",
+    "o_que_faz": "Permite consultar o resumo e andamento de Ordens de Tráfego (OT) no sistema de Gestão de Transportes.",
     "tipo": "somente_leitura",
     "campos": [
       {
-        "label": "Número O.T",
+        "rotulo": "Número O.T",
         "tipo": "text",
         "editavel": true,
-        "id": "qSXXo"
+        "id": "p0VBo"
       }
     ],
     "botoes": [
       {
         "label": "Consultar",
-        "id": "qSXXs",
+        "id": "p0VBs",
         "tipo": "button"
       },
       {
         "label": "Cancelar",
-        "id": "qSXXy",
+        "id": "p0VBy",
         "tipo": "button"
       }
+    ],
+    "operacoes": [
+      {
+        "intencao": "Consultar Resumo de Ordem de Tráfego",
+        "passos": [
+          "Preencher campo Número O.T",
+          "Clicar em Consultar"
+        ]
+      }
+    ],
+    "exemplos_intencao": [
+      "consultar resumo de ordem de tráfego no PGT505",
+      "verificar andamento de OT por número",
+      "consultar dados da ordem de tráfego no módulo de transporte"
     ],
     "status_doc": "inventariado"
   },

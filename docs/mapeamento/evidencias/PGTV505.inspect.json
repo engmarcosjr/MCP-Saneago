@@ -3,7 +3,7 @@
   "titulo_tela": "",
   "inputs": [
     {
-      "id": "rBxGo",
+      "id": "qGXTo",
       "name": null,
       "tipo": "text",
       "rotulo": "Número O.T",
@@ -16,13 +16,13 @@
   ],
   "botoes": [
     {
-      "id": "rBxGs",
+      "id": "qGXTs",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "rBxGy",
+      "id": "qGXTy",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -30,13 +30,13 @@
   ],
   "buttons": [
     {
-      "id": "rBxGs",
+      "id": "qGXTs",
       "name": null,
       "label": "Consultar",
       "tipo": "button"
     },
     {
-      "id": "rBxGy",
+      "id": "qGXTy",
       "name": null,
       "label": "Cancelar",
       "tipo": "button"
@@ -45,6 +45,5 @@
   "colunas": [],
   "forms": [],
   "lists": [],
-  "url_real": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul",
-  "codigo": "PGTV505"
+  "url_real": "https://www.saneago.com.br/prt/pgt/PGT505Resumo.zul"
 }
