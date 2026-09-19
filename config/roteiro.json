@@ -4874,27 +4874,109 @@
   "MTG006": {
     "codigo": "MTG006",
     "nome": "Andamento Geral",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTG006andGeral.jsp",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG006AndamentoGeral.zul",
     "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a andamento geral.",
+    "o_que_faz": "Permite consultar e emitir relatórios sobre o andamento geral da transmissão e processamento de arquivos de leitura, faturamento, contas retidas e entregas alternativas por referência, grupo e distrito.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Leitura",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Retidas",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Entrega Alternativa",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Referência",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Grupo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Todos",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Abertos",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Fechado",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Processando",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Processado",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Atrasados",
+        "tipo": "radio",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "zY9Rt0"
+      },
+      {
+        "label": "Imprimir",
+        "id": "zY9Ru0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "zY9Rv0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Andamento Geral",
+        "intencao": "Consultar andamento geral de arquivos no MTG006",
         "passos": [
           "Abrir a aplicação MTG006",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de processamento (Leitura, Retidas ou Entrega Alternativa)",
+          "Informar Referência, Grupo e Distrito",
+          "Selecionar a situação desejada",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de andamento geral",
-      "acessar a app MTG006",
-      "consultar andamento geral"
+      "consultar andamento geral de arquivos de leitura no MTG006",
+      "verificar processamento de arquivos por grupo e referência",
+      "emitir relatório de contas retidas e andamento de transmissão"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "AGDV001": {
     "codigo": "AGDV001",
@@ -20575,32 +20657,39 @@
   "MTGV002": {
     "codigo": "MTGV002",
     "nome": "Enviar Retorno",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTGV002.zul",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG002EnviarRetorno.zul",
     "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a enviar retorno.",
-    "tipo": "leitura",
-    "campos": [],
+    "o_que_faz": "Permite realizar o upload e envio de arquivos de retorno de leitura, reaviso, contas retidas e entregas alternativas para processamento no sistema.",
+    "tipo": "escrita",
+    "campos": [
+      {
+        "label": "Entrega Alternativas",
+        "tipo": "file",
+        "editavel": true
+      }
+    ],
     "botoes": [
       {
         "label": "Adicionar arquivo(s) de retorno",
-        "id": "xIpOl"
+        "id": "g39Pl"
       }
     ],
     "operacoes": [
       {
-        "intencao": "Acessar Enviar Retorno",
+        "intencao": "Enviar arquivo de retorno no MTGV002",
         "passos": [
           "Abrir a aplicação MTGV002",
-          "Preencher campos na tela inicial"
+          "Clicar em Adicionar arquivo(s) de retorno",
+          "Selecionar o arquivo para upload"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de enviar retorno",
-      "acessar a app MTGV002",
-      "consultar enviar retorno"
+      "enviar arquivo de retorno de leitura no MTGV002",
+      "fazer upload de arquivo de retorno de entrega alternativa",
+      "acompanhar status de arquivos de retorno enviados"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MTGV005": {
     "codigo": "MTGV005",
@@ -20645,27 +20734,109 @@
   "MTGV006": {
     "codigo": "MTGV006",
     "nome": "Andamento Geral",
-    "url_zul": "https://prod.saneago.com.br/prt/mtg/MTGV006.zul",
+    "url_zul": "https://www.saneago.com.br/prt/mtg/MTG006AndamentoGeral.zul",
     "categoria": "Financeiro, Tesouraria e Remessas",
-    "o_que_faz": "Permite visualizar e gerenciar informações relacionadas a andamento geral.",
+    "o_que_faz": "Permite consultar e emitir relatórios sobre o andamento geral da transmissão e processamento de arquivos de leitura, faturamento, contas retidas e entregas alternativas por referência, grupo e distrito.",
     "tipo": "leitura",
-    "campos": [],
-    "botoes": [],
+    "campos": [
+      {
+        "label": "Leitura",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Retidas",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Entrega Alternativa",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Referência",
+        "tipo": "date",
+        "editavel": true
+      },
+      {
+        "label": "Grupo",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": true
+      },
+      {
+        "label": "Distrito",
+        "tipo": "text",
+        "editavel": false
+      },
+      {
+        "label": "Todos",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Abertos",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Fechado",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Processando",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Processado",
+        "tipo": "radio",
+        "editavel": true
+      },
+      {
+        "label": "Atrasados",
+        "tipo": "radio",
+        "editavel": true
+      }
+    ],
+    "botoes": [
+      {
+        "label": "Consultar",
+        "id": "b3xEt0"
+      },
+      {
+        "label": "Imprimir",
+        "id": "b3xEu0"
+      },
+      {
+        "label": "Cancelar",
+        "id": "b3xEv0"
+      }
+    ],
     "operacoes": [
       {
-        "intencao": "Acessar Andamento Geral",
+        "intencao": "Consultar andamento geral de arquivos no MTGV006",
         "passos": [
           "Abrir a aplicação MTGV006",
-          "Preencher campos na tela inicial"
+          "Selecionar o tipo de processamento (Leitura, Retidas ou Entrega Alternativa)",
+          "Informar Referência, Grupo e Distrito",
+          "Selecionar a situação desejada",
+          "Clicar em Consultar"
         ]
       }
     ],
     "exemplos_intencao": [
-      "abrir a tela de andamento geral",
-      "acessar a app MTGV006",
-      "consultar andamento geral"
+      "consultar andamento geral de arquivos de leitura no MTGV006",
+      "verificar processamento de arquivos por grupo e referência",
+      "emitir relatório de contas retidas e andamento de transmissão"
     ],
-    "status_doc": "auto"
+    "status_doc": "inventariado"
   },
   "MTGV008": {
     "codigo": "MTGV008",

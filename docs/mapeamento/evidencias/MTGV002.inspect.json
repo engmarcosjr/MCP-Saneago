@@ -1,0 +1,66 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Enviar Retorno",
+  "inputs": [
+    {
+      "id": null,
+      "name": "file",
+      "tipo": "file",
+      "rotulo": "Entrega Alternativas",
+      "label": "Entrega Alternativas",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "g39P5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "g39Pl",
+      "name": null,
+      "label": "Adicionar arquivo(s) de retorno",
+      "tipo": "button"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "g39P5-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    },
+    {
+      "id": "g39Pl",
+      "name": null,
+      "label": "Adicionar arquivo(s) de retorno",
+      "tipo": "button"
+    }
+  ],
+  "colunas": [
+    "Sequenciais Esperados",
+    "Distrito",
+    "Leitura/Reaviso",
+    "Retidas",
+    "Entrega Alternativas",
+    "Nome do Arquivo",
+    "Status / Erro",
+    "Ação"
+  ],
+  "forms": [
+    {
+      "id": null,
+      "name": null,
+      "action": null,
+      "method": "post"
+    }
+  ],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mtg/MTG002EnviarRetorno.zul",
+  "codigo": "MTGV002"
+}

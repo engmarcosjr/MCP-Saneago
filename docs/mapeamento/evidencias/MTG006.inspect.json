@@ -1,0 +1,239 @@
+{
+  "tecnologia": "misto",
+  "titulo_tela": "Andamento Geral",
+  "inputs": [
+    {
+      "id": "zY9Rh-real",
+      "name": "_pgn5np3c1",
+      "tipo": "radio",
+      "rotulo": "Leitura",
+      "label": "Leitura",
+      "valor_atual": "Leitura",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Ri-real",
+      "name": "_pgn5np3c1",
+      "tipo": "radio",
+      "rotulo": "Retidas",
+      "label": "Retidas",
+      "valor_atual": "Retida",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rj-real",
+      "name": "_pgn5np3c1",
+      "tipo": "radio",
+      "rotulo": "Entrega Alternativa",
+      "label": "Entrega Alternativa",
+      "valor_atual": "Alternativa",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Ro-real",
+      "name": null,
+      "tipo": "date",
+      "rotulo": "Referência",
+      "label": "Referência",
+      "valor_atual": "09/2026",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rs",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Grupo",
+      "label": "Grupo",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": 2
+    },
+    {
+      "id": "zY9Ry",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9R_0-real",
+      "name": null,
+      "tipo": "text",
+      "rotulo": "Distrito",
+      "label": "Distrito",
+      "valor_atual": "",
+      "editavel": false,
+      "readonly": true,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rk0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Todos",
+      "label": "Todos",
+      "valor_atual": "T",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rl0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Abertos",
+      "label": "Abertos",
+      "valor_atual": "A",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rm0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Fechado",
+      "label": "Fechado",
+      "valor_atual": "F",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rn0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Processando",
+      "label": "Processando",
+      "valor_atual": "P",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Ro0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Processado",
+      "label": "Processado",
+      "valor_atual": "PR",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    },
+    {
+      "id": "zY9Rp0-real",
+      "name": "_pgoqkhs51",
+      "tipo": "radio",
+      "rotulo": "Atrasados",
+      "label": "Atrasados",
+      "valor_atual": "FP",
+      "editavel": true,
+      "readonly": false,
+      "maxlength": null
+    }
+  ],
+  "botoes": [
+    {
+      "id": "zY9Ro-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zY9R_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zY9Rt0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Ru0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Rv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Ry0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "zY9Ro-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zY9R_0-btn",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "a"
+    },
+    {
+      "id": "zY9Rt0",
+      "name": null,
+      "label": "Consultar",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Ru0",
+      "name": null,
+      "label": "Imprimir",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Rv0",
+      "name": null,
+      "label": "Cancelar",
+      "tipo": "button"
+    },
+    {
+      "id": "zY9Ry0-a",
+      "name": null,
+      "label": "Sem Rotulo",
+      "tipo": "submit"
+    }
+  ],
+  "colunas": [
+    "Código",
+    "Cidade",
+    "Grupo",
+    "Situação",
+    "Data e Hora",
+    "Sequencial",
+    "Contas Retornadas",
+    "Contas Pendentes"
+  ],
+  "forms": [],
+  "lists": [],
+  "url_real": "https://www.saneago.com.br/prt/mtg/MTG006AndamentoGeral.zul",
+  "codigo": "MTG006"
+}

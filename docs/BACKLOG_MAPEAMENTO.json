@@ -1,21 +1,21 @@
 {
   "resumo": {
-    "gerado_em": "2026-09-19T06:43:42.084Z",
+    "gerado_em": "2026-09-19T06:49:16.285Z",
     "total": 596,
-    "completos": 377,
-    "pendentes": 219,
+    "completos": 380,
+    "pendentes": 216,
     "por_classe_seguranca": {
-      "indeterminado": 267,
-      "candidata_leitura": 162,
-      "possui_escrita": 159,
+      "indeterminado": 264,
+      "candidata_leitura": 164,
+      "possui_escrita": 160,
       "sem_acesso": 8
     },
     "por_lacuna": {
       "sem_url": 11,
       "sem_roteiro": 91,
-      "ficha_nao_validada": 116,
-      "ficha_stub": 25,
-      "sem_campos_detectados": 44
+      "ficha_nao_validada": 113,
+      "ficha_stub": 22,
+      "sem_campos_detectados": 41
     }
   },
   "apps": [
@@ -11155,21 +11155,21 @@
       "nome": "Andamento Geral",
       "vertical": "MTG",
       "url_zul": "/prt/mtg/MTG006andGeral.jsp",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 781,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2385,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "MTG008",
@@ -11355,23 +11355,19 @@
       "nome": "Enviar Retorno",
       "vertical": "MTG",
       "url_zul": "https://www.saneago.com.br/prt/mtg/MTGV002.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 794,
+      "tipo_declarado": "Formulário de Escrita / Upload (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 1339,
       "botoes": [
         "Adicionar arquivo(s) de retorno"
       ],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
-      ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "possui_escrita",
+      "motivo_classe": "Tipo declarado: Formulário de Escrita / Upload (zk)",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "MTGV005",
@@ -11400,21 +11396,21 @@
       "nome": "Andamento Geral",
       "vertical": "MTG",
       "url_zul": "https://www.saneago.com.br/prt/mtg/MTGV006.zul",
-      "tipo_declarado": "Leitura (Livre)",
-      "status_ficha": "auto",
-      "bytes_ficha": 784,
-      "botoes": [],
-      "classe_seguranca": "indeterminado",
-      "motivo_classe": "ficha gerada em lote, tela não inspecionada",
-      "lacunas": [
-        "ficha_stub",
-        "sem_campos_detectados",
-        "ficha_nao_validada"
+      "tipo_declarado": "Leitura e Consulta (zk)",
+      "status_ficha": "inventariado",
+      "bytes_ficha": 2428,
+      "botoes": [
+        "Consultar",
+        "Imprimir",
+        "Cancelar"
       ],
-      "completo": false,
-      "tentativas": 0,
+      "classe_seguranca": "candidata_leitura",
+      "motivo_classe": "só botões de leitura: Consultar, Imprimir",
+      "lacunas": [],
+      "completo": true,
+      "tentativas": 1,
       "aposentada": false,
-      "prioridade": 9970
+      "prioridade": 10000
     },
     {
       "codigo": "MTGV008",
