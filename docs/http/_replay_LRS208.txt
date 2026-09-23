@@ -1,0 +1,12 @@
+REPLAY HTTP — LRS208
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js LRS208 numeroRA 31041602025
+Tempo: 207 ms | linhas: 1
+
+GET /prt/lrs/LRS208ConsultaRADS.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<numeroRA> data_0={"value":"31041602025","start":11}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+(sem echo)
+
+LINHAS LIDAS (primeiras 5):
+  1938617 | 2 | 5057 | 5105 | 31/10/2025 | 03/11/2025 | 03/11/2025 | 1303

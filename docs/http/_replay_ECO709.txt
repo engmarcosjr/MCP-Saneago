@@ -1,0 +1,10 @@
+REPLAY HTTP — ECO709 (RAs por Logradouro)
+Data: 2026-08-06
+Reproduzir: node -e "require(./src/http/eco709)" — ver src/http/eco709.js consultar({cidade:2,bairro:81,logradouro:1945,dataInicial:01/01/2024,dataFinal:31/12/2024})
+Tempo: 434 ms | linhas: 14
+
+Filtros macro caixaPesquisa resolvidos por resolverFilho(idMacro, txtCodigo) em src/http/zk-tree.js
+
+LINHAS LIDAS (2 primeiras, nome mascarado):
+  31856102023 | 15/04/2024 | 15/04/2024 | EXECUTADO | 2655625-1 | BRUNO ******* ******* | 1207 - PARCELAMENTO / FINANCIAMENTO
+  12463622023 | 01/02/2024 | 01/02/2024 | EXECUTADO | 2655625-1 | BRUNO ******* ******* | 1312 - INFORMACOES TITULARIDADE

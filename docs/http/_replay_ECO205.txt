@@ -1,0 +1,13 @@
+REPLAY HTTP — ECO205
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js ECO205 intbxContaConsulta 2238097
+Tempo: 158 ms | linhas: 2
+
+GET /prt/eco/ECO205ConsultaHidrometro.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<intbxContaConsulta> data_0={"value":2238097,"start":7}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+POST /prt/zkau  cmd_0=echo opt_0=i data_0={"":["onConsultar"]}
+
+LINHAS LIDAS (primeiras 5):
+  A17G702790 | 03/03/2017 | 0 | INSTALADO
+  A17G702790 | 03/03/2017 | 0

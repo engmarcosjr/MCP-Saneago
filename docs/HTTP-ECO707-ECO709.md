@@ -99,12 +99,7 @@ quadra | lote | número | serviço solicitado`. Traz a **conta**, e RAs de rede
 aparecem com conta `0000000-0` e só o endereço — é assim que se recupera a RA
 que não está amarrada a nenhuma conta.
 
-> **Estado**: o contrato acima está confirmado pela captura, mas a implementação
-> HTTP (`Revisão-Contas-Esgoto/src/portal/eco709.js`) ainda **não** está
-> funcionando: falta mapear o uuid do `txtCodigo` interno de cada macro
-> `caixaPesquisa` — pegar o primeiro `txtCodigo` da árvore preenche só a cidade,
-> e a tela responde "Favor informar o código da cidade". O ECO707 cobre o caso
-> de uso principal, então isto ficou pendente.
+> **Estado**: **CONFIRMADO E OPERACIONAL**. A resolução dos UUIDs das macros `caixaPesquisa` (`pesquisaCidade`, `pesquisaBairro`, `pesquisaLogradouro`, `pesquisaServico`) foi corrigida no utilitário `resolverFilho` em `src/http/zk-tree.js`. O cliente HTTP `src/http/eco709.js` está 100% funcional e testado em Node (cidade 2, bairro 81, logradouro 1945), devolvendo registros reais em < 1 s.
 
 ## Como capturar de novo
 

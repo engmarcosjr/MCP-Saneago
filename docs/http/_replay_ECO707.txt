@@ -1,0 +1,14 @@
+REPLAY HTTP — ECO707
+Data: 2026-08-06
+Reproduzir: node scripts/replay_http.js ECO707 intbxConta 2238097
+Tempo: 103 ms | linhas: 3
+
+GET /prt/eco/ECO707ConsultaRAConta.zul
+POST /prt/zkau  cmd_0=onChange uuid_0=<intbxConta> data_0={"value":2238097,"start":7}
+                cmd_1=onClick  uuid_1=<btnConsultar>
+POST /prt/zkau  cmd_0=echo opt_0=i data_0={"":["onConsultar"]}
+
+LINHAS LIDAS (primeiras 5):
+  15383462024 | 25/06/2024 | 25/06/2024 | EXECUTADO | 1259 - CREDITO/DEVOLUCAO VALOR PAGTO. DUPLICIDADE
+  04053112020 | 06/04/2020 | 06/04/2020 | EXECUTADO | 1315 - FECHAMENTO ATENDIMENTO - TITULARIDADE
+  01879002017 | 26/04/2017 | 26/04/2017 | EXECUTADO | 1214 - INFORMACOES DE VALORES DA CONTA
