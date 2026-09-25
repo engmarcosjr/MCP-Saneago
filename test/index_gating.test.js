@@ -13,6 +13,7 @@ const WRITE_TOOLS = [
   "saneago_clicar_botao",
   "saneago_abrir_ra",
   "saneago_lrs105_lancar_servico",
+  "saneago_eco010_efetivar_titularidade",
 ];
 
 async function getToolsList(env = {}) {
@@ -44,6 +45,7 @@ test("sem flags de escrita: nenhuma tool de escrita e exposta no tools/list", as
     SANEAGO_ALLOW_RA_WRITE: "0",
     SANEAGO_ALLOW_GENERIC_WRITE: "0",
     SANEAGO_ALLOW_LRS105_WRITE: "0",
+    SANEAGO_ALLOW_TITULARIDADE_WRITE: "0",
   });
 
   for (const wt of WRITE_TOOLS) {
@@ -81,6 +83,21 @@ test("SANEAGO_ALLOW_LRS105_WRITE=1 expoe apenas saneago_lrs105_lancar_servico en
   assert.strictEqual(tools.includes("saneago_abrir_ra"), false);
   assert.strictEqual(tools.includes("saneago_preencher_campo"), false);
   assert.strictEqual(tools.includes("saneago_clicar_botao"), false);
+});
+
+test("SANEAGO_ALLOW_TITULARIDADE_WRITE=1 expoe apenas saneago_eco010_efetivar_titularidade entre as de escrita", async () => {
+  const tools = await getToolsList({
+    SANEAGO_ALLOW_RA_WRITE: "0",
+    SANEAGO_ALLOW_GENERIC_WRITE: "0",
+    SANEAGO_ALLOW_LRS105_WRITE: "0",
+    SANEAGO_ALLOW_TITULARIDADE_WRITE: "1",
+    SANEAGO_ALLOW_WRITE: "0",
+  });
+
+  assert.strictEqual(tools.includes("saneago_eco010_efetivar_titularidade"), true);
+  assert.strictEqual(tools.includes("saneago_abrir_ra"), false);
+  assert.strictEqual(tools.includes("saneago_lrs105_lancar_servico"), false);
+  assert.strictEqual(tools.includes("saneago_preencher_campo"), false);
 });
 
 test("SANEAGO_ALLOW_GENERIC_WRITE=1 expoe preencher_campo e clicar_botao", async () => {

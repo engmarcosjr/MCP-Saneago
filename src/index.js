@@ -18,6 +18,7 @@ const { consultarAsfalto } = require("./tools/lrs041");
 const { abrirRA } = require("./tools/eco701");
 const { lancarServicoExecutado, verificarEstatisticaLRS105 } = require("./tools/lrs105");
 const { descobrirAplicacao } = require("./tools/descobrir");
+const { efetivarTitularidade } = require("./tools/eco010");
 const { consultarLogradouro } = require("./tools/eco709");
 const { pesquisarAsfaltoLocal } = require("./tools/asfalto_local");
 const { consultarProcessoDocflow, pesquisarProcessosDocflowLocal, listarAnexosDocflow } = require("./tools/docflow");
@@ -64,6 +65,10 @@ const ALLOW_LRS105_WRITE =
   LEGACY_ALLOW_WRITE ||
   process.env.SANEAGO_ALLOW_LRS105_WRITE === '1' ||
   process.env.SANEAGO_ALLOW_LRS105_WRITE === 'true';
+const ALLOW_TITULARIDADE_WRITE =
+  LEGACY_ALLOW_WRITE ||
+  process.env.SANEAGO_ALLOW_TITULARIDADE_WRITE === '1' ||
+  process.env.SANEAGO_ALLOW_TITULARIDADE_WRITE === 'true';
 
 // Definicao das Ferramentas
 server.setRequestHandler(ListToolsRequestSchema, async () => {
@@ -578,6 +583,25 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     });
   }
 
+  if (ALLOW_TITULARIDADE_WRITE) {
+    tools.push({
+      name: "saneago_eco010_efetivar_titularidade",
+      description: "Oficializa a titularidade de uma conta no ECO010 (motivo 8 - OFICIALIZAÇÃO DE TITULARIDADE), por HTTP/zkau. Primeiro use confirmar:false: faz Solicitar, Dados corretos=Sim, Motivo 8, Observação e Prosseguir, e para antes do Incluir (nada é gravado). Somente após o usuário confirmar em uma nova mensagem, repita com confirmar:true e o confirmationToken. Se cpfEsperado for informado e não bater com o CPF do cliente na tela, nada é feito. Status JA_EFETIVADA quando o motivo 8 vem desabilitado.",
+      inputSchema: {
+        type: "object",
+        properties: {
+          conta: { type: "string", description: "Número da conta, com ou sem DV (ex: '246119-6' ou '246119')." },
+          dv: { type: "string", description: "Dígito verificador, se não vier junto da conta." },
+          cpfEsperado: { type: "string", description: "CPF atestado na Receita. Recomendado: a tool aborta se o CPF do cliente na tela for outro." },
+          observacao: { type: "string", description: "Texto da Observação.", default: "Confirmado CPF com a Receita Federal" },
+          confirmar: { type: "boolean", description: "true grava (Incluir + Sim). false só prepara." },
+          confirmationToken: { type: "string", description: "Token do preview. Obrigatório e de uso único com confirmar:true." },
+        },
+        required: ["conta", "confirmar"],
+      },
+    });
+  }
+
   if (ALLOW_LRS105_WRITE) {
     tools.push({
       name: "saneago_lrs105_lancar_servico",
@@ -780,6 +804,18 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         } catch (error) {
           throw error;
         }
+      }
+
+      case "saneago_eco010_efetivar_titularidade": {
+        if (!ALLOW_TITULARIDADE_WRITE) throw new Error("Oficialização de titularidade no ECO010 está desabilitada.");
+        const args = request.params.arguments || {};
+        if (args.confirmar) consumeConfirmed("saneago_eco010_efetivar_titularidade", args);
+        const resultado = await efetivarTitularidade(args);
+        if (!args.confirmar && resultado.ok) {
+          const confirmationToken = createPending("saneago_eco010_efetivar_titularidade", args);
+          resultado.message += `\n\nToken de confirmação: ${confirmationToken}`;
+        }
+        return { content: [{ type: "text", text: resultado.message }] };
       }
 
       case "saneago_lrs105_lancar_servico": {
